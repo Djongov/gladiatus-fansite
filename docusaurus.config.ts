@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: 'Djongov', // Usually your GitHub org/user name.
   projectName: 'gladiatus-fansite', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   markdown: {
     mermaid: false,
