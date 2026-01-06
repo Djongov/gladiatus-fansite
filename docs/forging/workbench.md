@@ -25,11 +25,11 @@ In the Forge, there is a very special tab called Workbench. The Workbench can re
 With the coming of Forging, the items also got themselves Durability and Conditioning.
 
 ![Durability and Conditioning](https://gladiatusfansite.blob.core.windows.net/images/Forging/Conditioning/Durability_conditioning.png "Durability and Conditioning")
-## Durability {#Durability}
+## Durability
 ---------------------------------
 
 Item has a fixed durability. The durability is higher on higher item levels. When the item drops below 100% nothing really happens. However, if the item completely breaks, reaching 0 durability, its stats will suffer and the item will go as it is one quality color behind (Unconfirmed). If you have an **Orange** item that breaks to 0 durability, its stats will be as if it was **Purple**
-## Conditioning {#Conditioning}
+## Conditioning
 -------------------------------------
 
 When the item reaches 100% Durability, it can now be conditioned. Conditioning increases all of the stats on the item as it is the next quality level. Conditioning increases the stats of an item with the exact amount as it is the next quality color. A **Blue** item for example, conditioned will have the stats as if the item was **Purple**
@@ -52,7 +52,7 @@ Durability is lost by receiving hits in every fight you do, no matter if it's an
 You can see the total loss of durability from that fight and in each round - what items have lost durability. Boots, Weapons, Amulets, Rings are heavily damaged in most fights. Gloves, Helmets and Chest Armours are rarely hit.
 
 In Dungeons and Circus Turma the tank will take almost all durability hits because he is getting hit almost all of the time. Therefore, your damage dealing mercs and healer might not need repair at all!
-## Repairing {#Repairing}
+## Repairing
 -------------------------------
 
 You can repair your items in the Workbench section of the Forge. Simply navigate to Forge -> Workbench
@@ -100,7 +100,7 @@ The 1x ![Leather](https://gladiatusfansite.blob.core.windows.net/images/Forging/
 So let's see what the difference in stats between a conditioned item and non-conditioned item is:
 
 ![Non-conditioned VS conditioned item](https://gladiatusfansite.blob.core.windows.net/images/Forging/Conditioning/Conditioning.png "Non-conditioned VS conditioned item")
-## Conclusion {#Conclusion}
+## Conclusion
 ---------------------------------
 
 Let's summarize what we learned about repairing

@@ -26,7 +26,7 @@ Expeditions
 - [Camulodunum](#Camulodunum "Camulodunum")
 - [Cambria](#Cambria "Cambria")
 - [Mona Isle](#Mona_Isle "Mona Isle")
-## Bank of Thames {#Bank_of_Thames}
+## Bank of Thames
 -----------------------------------------
 
 **Description**
@@ -230,7 +230,7 @@ stats from 100 defeats
 - Very good item drop chance
 - Drops mostly Blue but good chance for higher qualities
 - Very interesting experience points range. Sometimes will go as low as 15 but will never do 16 and 17. Mostly it will be 18 or 19 and rarely 20
-## Forest Fortress {#Forest_Fortress}
+## Forest Fortress
 -------------------------------------------
 
 **Description**
@@ -342,7 +342,7 @@ Callirius
  **Armour:** 28946-31604*  
  **Damage:** 871-1070  
 **Item level drop**: ???
-## The Moor {#The_Moor}
+## The Moor
 -----------------------------
 
 **Description**
@@ -454,7 +454,7 @@ Nodens
  **Armour:**  43381  
  **Damage:** 734-901  
 **Item level drop**: 152-
-## Camp Cassivellaunus {#Camp_Cassivellaunus}
+## Camp Cassivellaunus
 ---------------------------------------------------
 
 **Description**
@@ -566,7 +566,7 @@ Cassivellaunus
  **Armour:** 29007  
  **Damage:** 832-1022  
 **Item level drop**: 161-
-## Kent {#Kent}
+## Kent
 ---------------------
 
 **Description**
@@ -678,7 +678,7 @@ Taximagulus
  **Armour:**  33738  
  **Damage:** 1452-1783  
 **Item level drop**: ???
-## The Ford {#The_Ford}
+## The Ford
 -----------------------------
 
 **Description**
@@ -790,7 +790,7 @@ Opponent_boss
  **Armour:**  0-0  
  **Damage:** 0-0/1-1  
 **Item level drop**: 1
-## Camulodunum {#Camulodunum}
+## Camulodunum
 -----------------------------------
 
 **Description**
@@ -903,7 +903,7 @@ Caratacus
  **Armour:** 90595  
  **Damage:** 1486-1824  
 **Item level drop**: 197-
-## Cambria {#Cambria}
+## Cambria
 ---------------------------
 
 **Description**
@@ -1015,7 +1015,7 @@ Ordovicer
  **Armour:** 49630  
  **Damage:** 1866-2291  
 **Item level drop**: 1
-## Mona Isle {#Mona_Isle}
+## Mona Isle
 -------------------------------
 
 **Description**

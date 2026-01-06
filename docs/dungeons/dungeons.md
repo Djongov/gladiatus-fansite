@@ -12,8 +12,6 @@ Gladiatus Dungeons
 
 Dungeons in Gladiatus are adventures against mighty enemies. You and your group of 5 will defeat legendary bosses throughout the game and find epic gear. All you need to know about the basics of the dungeons you can read it on the Game guide page and the dungeons themselves with all the details will be here. Just read on.
 
-[https://gladiatus.gamerz-bg.com/game-guide#Dungeons](/game-guide#Dungeons)
-
 ![Alpha & Omega](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Alpha_and_Omega/Alpha_Omega_overview.png "Alpha & Omega")
 
 Here are some facts about dungeons:
@@ -33,7 +31,7 @@ Here are some facts about dungeons:
 - Normal regeneration of a dungeon point is 1 hour 30 minutes for 1 point. With Centurion this is reduced to 1 hour for dungeon point. Different costumes can lower that even more or micro events throughout the year
 - Dungeon points start at 12 and can become 24 with Centurion. [Underworld](/underworld "Underworld") medium difficulty costume prize can increase them to 48 dungeon points
 - First really hard bosses are Zagrash in Italy at level 78 ([Zagrash's Fort](/dungeons/italy-dungeons "Zagrash's Fort")) and Papa Sasama in Africa at level 80 ([Fairground](/dungeons/africa-dungeons "Fairground")). These two bosses can really be a roadblock for you, even if you are decently geared. At that level (78 or 80) you will be comfortably farming Fenrirson in Italy starting from level 73 ([Gioll Passage](/dungeons/italy-dungeons "Gioll Passage")). Quick dungeon and easy boss. However, at around 78 you might want to go and progress and this is where you hit the wall. You can't beat those two bosses who are next in line and therefore going to Africa at 80 is a bit pointless. You just need to gear up and give them a hard time. The guide to handle this is here - [https://gladiatus.gamerz-bg.com/article?id=65](#)
- 
+
 **Choose a country:**
 
 **[Italy](/dungeons/italy-dungeons "Italy Dungeons") (Level 10/15/60/65/68/70/73/78)**

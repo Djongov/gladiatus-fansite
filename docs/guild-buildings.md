@@ -27,7 +27,7 @@ Table of Contents
 - [Guild market](#Guild-market "Guild market")
 - [Warehouse](#Warehouse "Warehouse")
 - [Training grounds](#Training-grounds "Training grounds")
-## What is a guild {#What-is-a-guild}
+## What is a guild
 -------------------------------------------
 
 Players have the choice of creating or joining a guild. In this guild, members through joint effort will be building guild buildings that benefit all players in the guild. Creating a guild costs nothing. The only requirement is level 5. Once the guild is created it will start with 5 buildings - Forum Gladiatorius, Bank, War Master Hall, Library and a Bathhouse, all Level 1. The player who creates the building becomes the Master. Other players may join the guild by finding it and making an application.
@@ -61,7 +61,7 @@ The Master can decide to disband the guild which will delete it and all the gold
 **Joining a guild**
 
 You can only join a guild from the same server. There is no cross-server guild join options.
-## Guild Logos {#Guild-logos}
+## Guild Logos
 -----------------------------------
 
 The guild can have its own banner and a logo which are combined into the guild flag. Here are the logos you can choose from:
@@ -77,7 +77,7 @@ The guild can have its own banner and a logo which are combined into the guild f
 ![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_17.png)![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_18.png)![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_19.png)![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_20.png)
 
 ![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_21.png)![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_22.png)![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_23.png)![](https://s5-bg.gladiatus.gameforge.com/game/9234/img/logo/0/2_24.png)
-## Guild Banners {#Guild-Banners}
+## Guild Banners
 ---------------------------------------
 
 ![](https://s30-en.gladiatus.gameforge.com/game/9234/img/logo/0/1_1.jpg)![](https://s30-en.gladiatus.gameforge.com/game/9234/img/logo/0/1_2.jpg)![](https://s30-en.gladiatus.gameforge.com/game/9234/img/logo/0/1_3.jpg)
@@ -91,7 +91,7 @@ The guild can have its own banner and a logo which are combined into the guild f
 So you can choose any combination of logo and a banner and your guild flag will be looking something like this:
 
 ![](https://s30-en.gladiatus.gameforge.com/game/9234/img/logo/0/tmp/1-1.png)
-## Guild Ranks {#Guild-Ranks}
+## Guild Ranks
 -----------------------------------
 
 Guild ranks in a guild can be completely modified to your own choice but the default ones are:
@@ -115,11 +115,11 @@ So the master rank has full control of the guild and its administration. He can:
 **Admin** - Admins are powerful members of the guild who can do everything that the master can, except kick the Master. They can kick other Admins.
 
 **Member** - this is just a normal member who can use the guild buildings and their benefit but cannot make any changes to the guild organization
-## Guild Buildings {#Guild-Buildings}
+## Guild Buildings
 -------------------------------------------
 
 Guild buildings are all the guild is about. They are very expensive for the individual player so the idea is that everyone donates into the guild bank, the gold will stay in the guild vault and the money will be ready to be used for building. Once the gold needed to construct a building is in the guild bank, the construction itself is instant. There is a discount available on the price of guild buildings. It is 3% of the price per 1 player with Centurio with a maximum of 30% cost reduction. This means that 10 players with Centurio activated in the guild will provide the max discount for buildings. There are 12 buildings and each building has up to 20 Levels. Not all buildings can reach level 20. Each level costs more to expand. At higher levels the buildings are so expensive that by the time the gold is accumulated into the bank, the guild is exposed to attack from another guild and part of this gold can be lost so there are different tactic in how players organize to make the payments. Some guilds decide on a specific date and hour and everyone donates at the same time or players package the donation gold to the admins and they do it when the needed sum is gathered.
-## Forum Gladiatorius {#Forum-Gladiatorius}
+## Forum Gladiatorius
 -------------------------------------------------
 
 **Description**
@@ -240,7 +240,7 @@ Number of members: 57
 Price: 936.209.559 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")
 
 Number of members: 60
-## Bank {#Bank}
+## Bank
 ---------------------
 
 **Description**
@@ -281,7 +281,7 @@ Level: 15 | Price: 228.032.229 ![Gold](https://gladiatusfansite.blob.core.window
  Level: 18 | Price: 517.978.628 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Amount of gold in vault: 36%  
 Level: 19 | Price: 660.658.112 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Amount of gold in vault: 38%  
  Level: 20 | Price: 832.186.274 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Amount of gold in vault: 40%
-## Villa Medici {#Villa-Medici}
+## Villa Medici
 -------------------------------------
 
 **Description**
@@ -324,7 +324,7 @@ Level: 15 | Price: 112.185.834 ![Gold](https://gladiatusfansite.blob.core.window
  Level: 16 | Price: 149.991.717 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Healing: 32%, 6 Doctors  
  Level: 17 | Price: 197.036.870 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Healing: 34%, 6 Doctors  
  Level: 18 | Price: 254.831.803 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Healing: 36%, 7 Doctors
-## War Master Hall {#War-Master-Hall}
+## War Master Hall
 -------------------------------------------
 
 **Description**
@@ -383,7 +383,7 @@ Level: 15 | Price: 8.321.199 ![Gold](https://gladiatusfansite.blob.core.windows.
  Level: 18 | Price: 18.901.729 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Guild battles: 36 | Battle reports: 180  
 Level: 19 | Price: 24.108.293 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Guild battles: 28 | Battle reports: 190  
  Level: 20 | Price: 30.367.584 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Guild battles: 40 | Battle reports: 200
-## Library {#Library}
+## Library
 ---------------------------
 
 **Description**
@@ -430,7 +430,7 @@ The higher the building level - more recipes can be stored for activating. Multi
 Level: 18 | Price: 27.507.828 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Recipes: 36  
  Level: 19 | Price: 35.084.980 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Recipes: 38  
  Level: 20 | Price: 44.194.173 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Recipes: 40
-## Negotium X {#Negotium-X}
+## Negotium X
 ---------------------------------
 
 **Description**
@@ -475,7 +475,7 @@ Negotium X is a jail for dungeon bosses. Whenever a boss is defeated, he is take
  Level: 18 | Price: 254.831.803 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Bosses: 36  
 Level: 19 | Price: 325.026.341 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Bosses: 38  
  Level: 20 | Price: 409.413.666 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Bosses: 40
-## Templum {#Templum}
+## Templum
 ---------------------------
 
 **Description**
@@ -530,7 +530,7 @@ Level: 17 | Price: 7.792.110 ![Gold](https://gladiatusfansite.blob.core.windows.
  Level: 18 | Price: 10.077.696 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Prayer time: 18  
 Level: 19 | Price: 12.853.641 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Prayer time: 17  
  Level: 20 | Price: 16.190.861 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Prayer time: 18
-## Bathhouse {#Bathhouse}
+## Bathhouse
 -------------------------------
 
 **Description**
@@ -579,7 +579,7 @@ Level: 15 | Price: 42.239.949![Gold](https://gladiatusfansite.blob.core.windows.
 Level: 18 | Price: 95.948.679 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Regeneration: +18%  
  Level: 19 | Price: 122.378.164 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Regeneration: +19%  
  Level: 20 | Price: 154.151.483 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Regeneration: +20%
-## Guild market {#Guild-market}
+## Guild market
 -------------------------------------
 
 **Description**
@@ -642,7 +642,7 @@ Admins can also decide what guild ranks can buy and sell items on the market.
  Level: 18 | Price: 38.892.262 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Items: 36  
 Level: 19 | Price: 49.605.307 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Items: 38  
  Level: 20 | Price: 62.484.445 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | Items: 40
-## Warehouse {#Warehouse}
+## Warehouse
 -------------------------------
 
 **Description**
@@ -699,7 +699,7 @@ Admins can also administrate what guild ranks can put or withdraw items.
  ![](https://s30-en.gladiatus.gameforge.com/game/9234/img/guild/building_overview/storage_3.png)  
  Level: 15 | Price: 3.859.241.517 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | 12 Shelves  
  Level: 16 | Price: 5.159.780.352 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") | 12 Shelves
-## Training grounds {#Training-grounds}
+## Training grounds
 ---------------------------------------------
 
 **Description**

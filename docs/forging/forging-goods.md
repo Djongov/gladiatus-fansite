@@ -140,30 +140,30 @@ Ok let's look at the materials by categories. If you want to know exactly what p
     - [Cuprit](#Cuprit "Cuprit")
     - [Hellstone](#Hellstone "Hellstone")
  
-**Materials** {#Materials}
+**Materials**
 -----------------------------------
 
 This is the category of Materials forging goods. Wood, Copper, Iron and Leather are considered generic building blocks of every base item and are not taking part in any prefix or suffix - only base items
 
-    **Wood** {#Wood}
+    **Wood**
 
 ![Wood](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Wood.png "Wood")
 
     A rare building block type of material. Save them as they are really rare   **Drops from:**   Has 5% chance to drop from any mob   **Smelts in large quantities from:**   Rarely found in Smelts but can be found in smelts mostly in which the base items that consists of Wood like Spear and Egyptian Shield
 
-    **Rarity:**   Very Rare       **Copper** {#Copper}
+    **Rarity:**   Very Rare       **Copper**
 
 ![Copper](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Copper.png "Copper")
 
-    A rare building block type of material. Save them as they are really rare    **Drops from:**   Has 5% chance to drop from any mob   **Smelts in large quantities from:**   Rarely found in Smelts but can be found in smelts mostly in which the base items that consists of Copper like Khopesh, Copper plate and most helmets    **Rarity:**   Rare        **Leather** {#Leather}
+    A rare building block type of material. Save them as they are really rare    **Drops from:**   Has 5% chance to drop from any mob   **Smelts in large quantities from:**   Rarely found in Smelts but can be found in smelts mostly in which the base items that consists of Copper like Khopesh, Copper plate and most helmets    **Rarity:**   Rare        **Leather**
 
 ![Leather](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Leather.png "Leather")
 
-    A rare building block type of material. Save them as they are really rare    **Drops from:**   Has 5% chance to drop from any mob    **Smelts in large quantities from:**   Rarely found in Smelts but can be found in smelts mostly in which the base items that consists of Leather like Hard leather bandages, Plate gauntlets, Hard leather armour    **Rarity:**   Medium        **Iron** {#Iron}
+    A rare building block type of material. Save them as they are really rare    **Drops from:**   Has 5% chance to drop from any mob    **Smelts in large quantities from:**   Rarely found in Smelts but can be found in smelts mostly in which the base items that consists of Leather like Hard leather bandages, Plate gauntlets, Hard leather armour    **Rarity:**   Medium        **Iron**
 
 ![Iron](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Iron.png "Iron")
 
-    A rare building block type of material. Save them as they are really rare    **Drops from:**   Has 5% chance to drop from any mob    **Smelts in large quantities from:**   Rarely found in Smelts but can be found in smelts mostly in which the base items that consists of Iron like Titanium Shield, Spectacled Helmet    **Rarity:**   Rare        **Wool** {#Wool}
+    A rare building block type of material. Save them as they are really rare    **Drops from:**   Has 5% chance to drop from any mob    **Smelts in large quantities from:**   Rarely found in Smelts but can be found in smelts mostly in which the base items that consists of Iron like Titanium Shield, Spectacled Helmet    **Rarity:**   Rare        **Wool**
 
 ![Wool](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Wool.png "Wool")
 
@@ -177,7 +177,7 @@ Drops 25% from Medusa in Misty Mountains    **Smelts in large quantities from:**
 Drops 25% from Undead Holder in Lost Harbour  
 Drops 25% from Barbarian in Barbarian Village  
 Drops 25% from Fled Slave in Pirate Harbour    **Smelts in large quantities from:**    [of Triumph](/suffixes/item-suffixes#of_Triumph "of Triumph"), [of Hesitation](/suffixes/item-suffixes#of_Hesitation "of Hesitation"), [of Confusion](/suffixes/item-suffixes#of_Confusion "of Confusion"), [of Hindrance](/suffixes/item-suffixes#of_Hindrance "of Hindrance"), [of Reversion](/suffixes/item-suffixes#of_Reversion "of Reversion")  
-   **Rarity:**   Common       **Hemp** {#Hemp}
+   **Rarity:**   Common       **Hemp**
 
 ![Hemp](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Hemp.png "Hemp")
 
@@ -202,7 +202,7 @@ Drops 25% from Harpy in Misty Mountains    **Smelts in large quantities from:** 
 
     Used in low-mid level prefixes   **Drops from:**   Drops 45% from Giant Wild Boar in The green forest  
 Drops 45% from Medusa in Misty Mountains  
-Drops 25% from Wild Boar in Wolf Cave    **Smelts in large quantities from:**   [Zickezackes](/prefixes/item-prefixes#Zickezackes "Zickezackes"), [Gadriewens](/prefixes/item-prefixes#Gadriewens "Gadriewens"), [Kerrannas](/prefixes/item-prefixes#Kerrannas "Kerrannas"), [Frientas](/prefixes/item-prefixes#Frientas "Frientas")   **Rarity:**   Medium       **Velvet** {#Velvet}
+Drops 25% from Wild Boar in Wolf Cave    **Smelts in large quantities from:**   [Zickezackes](/prefixes/item-prefixes#Zickezackes "Zickezackes"), [Gadriewens](/prefixes/item-prefixes#Gadriewens "Gadriewens"), [Kerrannas](/prefixes/item-prefixes#Kerrannas "Kerrannas"), [Frientas](/prefixes/item-prefixes#Frientas "Frientas")   **Rarity:**   Medium       **Velvet**
 
 ![Velvet](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Velvet.png "Velvet")
 
@@ -219,7 +219,7 @@ Drops 25% from Crocodile in Lost Harbour    **Smelts in large quantities from:**
 
 This is the category of Monster Parts. Primarily rare materials
 
-    **Fur** {#Fur}
+    **Fur**
 
 ![Fur](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Fur.png "Fur")
 
@@ -237,21 +237,21 @@ Drops 45% from Alphawolf in Wolf Cave
 Drops 45% from Assassin in Pirate Harbour  
 Drops 25 % from Bone Golem in Dragon Remains  
 Drops 25% from Skeleton Berserker in Vandal Village  
-Drops 25% from Bone Shaman in Bridge    **Smelts in large quantities from:**   [of Brutality](/suffixes/item-suffixes#of_Brutality "of Brutality"), [of Vigour](/suffixes/item-suffixes#of_Vigour "of Vigour"), [of Success](/suffixes/item-suffixes#of_Success "of Success"), [of Satisfaction](/suffixes/item-suffixes#of_Satisfaction "of Satisfaction"), [of Attrition](/suffixes/item-suffixes#of_Attrition "of Attrition"), [of Repentance ](/suffixes/item-suffixes#of_Repentance "of Repentance")   **Rarity:**   Common       **Scale** {#Scale}
+Drops 25% from Bone Shaman in Bridge    **Smelts in large quantities from:**   [of Brutality](/suffixes/item-suffixes#of_Brutality "of Brutality"), [of Vigour](/suffixes/item-suffixes#of_Vigour "of Vigour"), [of Success](/suffixes/item-suffixes#of_Success "of Success"), [of Satisfaction](/suffixes/item-suffixes#of_Satisfaction "of Satisfaction"), [of Attrition](/suffixes/item-suffixes#of_Attrition "of Attrition"), [of Repentance ](/suffixes/item-suffixes#of_Repentance "of Repentance")   **Rarity:**   Common       **Scale**
 
 ![Scale](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Scale.png "Scale")
 
     Used in mid-level prefixes   **Drops from:**   Drops 70% from Tatzelwurm in Mine  
 Drops 45% from Crocodile in Lost Harbour  
 Drops 25% from Lich in Vandal Village  
-Drops 25% from Cobra in Bridge    **Smelts in large quantities from:**   [Melaneos](/prefixes/item-prefixes#Melaneos "Melaneos"), [Umfetas](/prefixes/item-prefixes#Umfetas "Umfetas"), [Gidras](/prefixes/item-prefixes#Gidras "Gidras")   **Rarity:**   Medium       **Claw** {#Claw}
+Drops 25% from Cobra in Bridge    **Smelts in large quantities from:**   [Melaneos](/prefixes/item-prefixes#Melaneos "Melaneos"), [Umfetas](/prefixes/item-prefixes#Umfetas "Umfetas"), [Gidras](/prefixes/item-prefixes#Gidras "Gidras")   **Rarity:**   Medium       **Claw**
 
 ![Claw](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Claw.png "Claw")
 
     Rare material that drops primarily from mobs and does not act in any known prefixes or suffixes yet   **Drops from:**   Drops 45% from Mokele Mbembe in Lost Harbour  
 Drops 25% from Cheetah in Mesoai-Oasis  
 Drops 25% from Werebear in The green forest  
-Drops 25% from Minotaur Chief in Ancient Temple    **Smelts in large quantities from:**   Unknown   **Rarity:**   Rare       **Fang** {#Fang}
+Drops 25% from Minotaur Chief in Ancient Temple    **Smelts in large quantities from:**   Unknown   **Rarity:**   Rare       **Fang**
 
 ![Fang](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Fang.png "Fang")
 
@@ -299,62 +299,62 @@ Drops 25% from Giant Beetle in Blood Cave    **Smelts in large quantities from:*
 -----------------------------------
 
 Gemstones is a material category comprised of precious gemstones, primarily used in healing prefixes and suffixes
-## **Lapis Lazuli** {#Lapis_Lazuli}
+## **Lapis Lazuli**
 
 ![Lapis Lazuli](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Lapis_Lazuli.png "Lapis Lazuli")
 
     A material rarely used in mid-level prefixes   **Drops from:**   Drops 45% from Elephant in Mesoai-Oasis  
 Drops 45% from Undead Holder in Lost Harbour  
 Drops 25 % from Teuton Lord in Teuton Camp  
-Drops 25% from Barbarian Warrior in Barbarian Village    **Smelts in large quantities from:**   [Fustriels](/prefixes/item-prefixes#Fustriels "Fustriels")   **Rarity:**   Rare       **Amethyst** {#Amethyst}
+Drops 25% from Barbarian Warrior in Barbarian Village    **Smelts in large quantities from:**   [Fustriels](/prefixes/item-prefixes#Fustriels "Fustriels")   **Rarity:**   Rare       **Amethyst**
 
 ![Amethyst](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Amethyst.png "Amethyst")
 
     An important material used in variety of mid-high level prefixes   **Drops from:**   Drops 45 % from Lemures in Dragon Remains  
 Drops 45% from Tribal Magician in Umpokta Tribe  
 Drops 45% from Jarl in Vandal Village  
-Drops 25 % from Sidr in Teuton Camp    **Smelts in large quantities from:**   [Valerius](/prefixes/item-prefixes#Valerius "Valerius"), [Mateus](/prefixes/item-prefixes#Mateus "Mateus"), [Marcellus](/prefixes/item-prefixes#Marcellus "Marcellus"), [Constantius](/prefixes/item-prefixes#Constantius "Constantius"), [Servius](/prefixes/item-prefixes#Servius "Servius"), [Dexterus](/prefixes/item-prefixes#Dexterus "Dexterus"), [Giganticus](/prefixes/item-prefixes#Giganticus "Giganticus")   **Rarity:**   Common       **Amber** {#Amber}
+Drops 25 % from Sidr in Teuton Camp    **Smelts in large quantities from:**   [Valerius](/prefixes/item-prefixes#Valerius "Valerius"), [Mateus](/prefixes/item-prefixes#Mateus "Mateus"), [Marcellus](/prefixes/item-prefixes#Marcellus "Marcellus"), [Constantius](/prefixes/item-prefixes#Constantius "Constantius"), [Servius](/prefixes/item-prefixes#Servius "Servius"), [Dexterus](/prefixes/item-prefixes#Dexterus "Dexterus"), [Giganticus](/prefixes/item-prefixes#Giganticus "Giganticus")   **Rarity:**   Common       **Amber**
 
 ![Amber](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Amber.png "Amber")
 
     A common material in mid-level suffixes   **Drops from:**   Drops 45% from Vandal Warrior in Vandal Village  
 Drops 45% from Seth Priest in Bridge  
 Drops 25% from Nachzehrer in Cursed Village  
-Drops 25% from Tribal Warrior in Bridge    **Smelts in large quantities from:**   [of Concentration](/suffixes/item-suffixes#of_Concentration "of Concentration"), [of Life](/suffixes/item-suffixes#of_Life "of Life"), [of Baptism](/suffixes/item-suffixes#of_Baptism "of Baptism"), [of Cleverness](/suffixes/item-suffixes#of_Cleverness "of Cleverness"), [of Peace](/suffixes/item-suffixes#of_Peace "of Peace")   **Rarity:**   Common/Medium       **Aquamarine** {#Aquamarine}
+Drops 25% from Tribal Warrior in Bridge    **Smelts in large quantities from:**   [of Concentration](/suffixes/item-suffixes#of_Concentration "of Concentration"), [of Life](/suffixes/item-suffixes#of_Life "of Life"), [of Baptism](/suffixes/item-suffixes#of_Baptism "of Baptism"), [of Cleverness](/suffixes/item-suffixes#of_Cleverness "of Cleverness"), [of Peace](/suffixes/item-suffixes#of_Peace "of Peace")   **Rarity:**   Common/Medium       **Aquamarine**
 
 ![Aquamarine](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Aquamarine.png "Aquamarine")
 
     Used in mid-level suffixes   **Drops from:**   Drops 45% from Giant Water Snake in Lost Harbour  
 Drops 25% from Tax Collector in Bridge  
-Drops 25% from Seth Priest in Bridge    **Smelts in large quantities from:**   [of Light](/suffixes/item-suffixes#of_Light "of Light"), [of the Sun](/suffixes/item-suffixes#of_the_Sun "of the Sun"), [of Harmony](/suffixes/item-suffixes#of_Harmony "of Harmony"), [of Merit](/suffixes/item-suffixes#of_Merit "of Merit"), [of Income](/suffixes/item-suffixes#of_Income "of Income"), [of the Amazons](/suffixes/item-suffixes#of_the_Amazons "of the Amazons")   **Rarity:**   Medium       **Jasper** {#Jasper}
+Drops 25% from Seth Priest in Bridge    **Smelts in large quantities from:**   [of Light](/suffixes/item-suffixes#of_Light "of Light"), [of the Sun](/suffixes/item-suffixes#of_the_Sun "of the Sun"), [of Harmony](/suffixes/item-suffixes#of_Harmony "of Harmony"), [of Merit](/suffixes/item-suffixes#of_Merit "of Merit"), [of Income](/suffixes/item-suffixes#of_Income "of Income"), [of the Amazons](/suffixes/item-suffixes#of_the_Amazons "of the Amazons")   **Rarity:**   Medium       **Jasper**
 
 ![Jasper](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Jasper.png "Jasper")
 
-    Jasper is a rare gemstone used in high level suffixes   **Drops from:**   Low chance to drop from every mob and higher chance to drop in Underworld    **Smelts in large quantities from:**   [of the Chasm](/suffixes/item-suffixes#of_the_Chasm "of the Chasm"), [of the Spirit](/suffixes/item-suffixes#of_the_Spirit "of the Spirit")   **Rarity:**   Rare       **Sugilite** {#Sugilite}
+    Jasper is a rare gemstone used in high level suffixes   **Drops from:**   Low chance to drop from every mob and higher chance to drop in Underworld    **Smelts in large quantities from:**   [of the Chasm](/suffixes/item-suffixes#of_the_Chasm "of the Chasm"), [of the Spirit](/suffixes/item-suffixes#of_the_Spirit "of the Spirit")   **Rarity:**   Rare       **Sugilite**
 
 ![Sugilite](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Sugilite.png "Sugilite")
 
-    Sugilite is a rare gemstone used in high level prefixes   **Drops from:**   Low chance to drop from every mob and higher chance to drop in Underworld   **Smelts in large quantities from:**   [Angelus](/prefixes/item-prefixes#Angelus "Angelus"), [Magnus, ](/prefixes/item-prefixes#Magnus "Magnus")[Gratias](/prefixes/item-prefixes#Gratias "Gratias")   **Rarity:**   Very rare       **Sapphire** {#Sapphire}
+    Sugilite is a rare gemstone used in high level prefixes   **Drops from:**   Low chance to drop from every mob and higher chance to drop in Underworld   **Smelts in large quantities from:**   [Angelus](/prefixes/item-prefixes#Angelus "Angelus"), [Magnus, ](/prefixes/item-prefixes#Magnus "Magnus")[Gratias](/prefixes/item-prefixes#Gratias "Gratias")   **Rarity:**   Very rare       **Sapphire**
 
 ![Sapphire](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Sapphire.png "Sapphire")
 
     A gemstone used in low level suffixes with healing   **Drops from:**   Drops 45% from Captain in Pirate Harbour  
 Drops 25% from Elusive Recruit in Misty Mountains  
-Drops 25% from Corrupt Soldier in Pirate Harbour    **Smelts in large quantities from:**   [of Emasculation](/suffixes/item-suffixes#of_Emasculation "of Emasculation"), [of Ordinance](/suffixes/item-suffixes#of_Ordinance "of Ordinance"), [of the Blessed](/suffixes/item-suffixes#of_the_Blessed "of the Blessed")   **Rarity:**   Medium       **Garnet** {#Garnet}
+Drops 25% from Corrupt Soldier in Pirate Harbour    **Smelts in large quantities from:**   [of Emasculation](/suffixes/item-suffixes#of_Emasculation "of Emasculation"), [of Ordinance](/suffixes/item-suffixes#of_Ordinance "of Ordinance"), [of the Blessed](/suffixes/item-suffixes#of_the_Blessed "of the Blessed")   **Rarity:**   Medium       **Garnet**
 
 ![Garnet](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Garnet.png "Garnet")
 
     is a common gemstone used in mid-high level prefixes with healing   **Drops from:**   Drops 45% from Necromancer Princess in Vandal Village  
 Drops 45% from Hun in Cursed Village  
 Drops 25 % from Ritualist in Dragon Remains  
-Drops 25% from Renegade Soldier in Bandit Camp    **Smelts in large quantities from:**   [Marcus](/prefixes/item-prefixes#Marcus "Marcus"), [Shivas](/prefixes/item-prefixes#Shivas "Shivas"), [Liloels](/prefixes/item-prefixes#Liloels "Liloels"), [Stoybaers](/prefixes/item-prefixes#Stoybaers "Stoybaers")   **Rarity:**   Common       **Emerald** {#Emerald}
+Drops 25% from Renegade Soldier in Bandit Camp    **Smelts in large quantities from:**   [Marcus](/prefixes/item-prefixes#Marcus "Marcus"), [Shivas](/prefixes/item-prefixes#Shivas "Shivas"), [Liloels](/prefixes/item-prefixes#Liloels "Liloels"), [Stoybaers](/prefixes/item-prefixes#Stoybaers "Stoybaers")   **Rarity:**   Common       **Emerald**
 
 ![Emerald](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Emerald.png "Emerald")
 
     A common gemstone used in high level prefixes with healing   **Drops from:**   Drops 45 % from Ritualist in Dragon Remains  
 Drops 45% from Caravan Guard in Caravan  
 Drops 25% from Elite Guard in Caravan  
-Drops 25 % from Stone Golem in Mine    **Smelts in large quantities from:**   [Aurelius](/prefixes/item-prefixes#Aurelius "Aurelius"), [Mandalus](/prefixes/item-prefixes#Mandalus "Mandalus"), [Silvanus](/prefixes/item-prefixes#Silvanus "Silvanus"), [Spurius](/prefixes/item-prefixes#Spurius "Spurius"), [Vergilius](/prefixes/item-prefixes#Vergilius "Vergilius")   **Rarity:**   Common       **Diamond** {#Diamond}
+Drops 25 % from Stone Golem in Mine    **Smelts in large quantities from:**   [Aurelius](/prefixes/item-prefixes#Aurelius "Aurelius"), [Mandalus](/prefixes/item-prefixes#Mandalus "Mandalus"), [Silvanus](/prefixes/item-prefixes#Silvanus "Silvanus"), [Spurius](/prefixes/item-prefixes#Spurius "Spurius"), [Vergilius](/prefixes/item-prefixes#Vergilius "Vergilius")   **Rarity:**   Common       **Diamond**
 
 ![Diamond](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Diamond.png "Diamond")
 
@@ -365,7 +365,7 @@ Drops 25% from Bandit Chief in Bandit Camp    **Smelts in large quantities from:
 -------------------------
 
 Flasks are important parts of the material system
-## **Scorpion Poison** {#Scorpion_Poison}
+## **Scorpion Poison**
 
 ![Scorpion Poison](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Scorpion_Poison.png "Scorpion Poison")
 
@@ -378,14 +378,14 @@ Drops 25% from Assassinator in Bandit Camp    **Smelts in large quantities from:
     Important material used in high level prefixes such as Lucius. Also used to repair Lucius.   **Drops from:**   Drops 45% from Ancient in Cursed Village  
 Drops 25 % from Barbarian in Teuton Camp  
 Drops 25% from Giant Spider in Cliff Jumper  
-Drops 25% from Demon Elephant in Mesoai-Oasis    **Smelts in large quantities from:**   [Lucius](/prefixes/item-prefixes#Lucius "Lucius"), [Fernabasts](/prefixes/item-prefixes#Fernabasts "Fernabasts"), [Tantus](/prefixes/item-prefixes#Tantus "Tantus"), [Sentarions](/prefixes/item-prefixes#Sentarions "Sentarions")   **Rarity:**   Common       **Antidote** {#Antidote}
+Drops 25% from Demon Elephant in Mesoai-Oasis    **Smelts in large quantities from:**   [Lucius](/prefixes/item-prefixes#Lucius "Lucius"), [Fernabasts](/prefixes/item-prefixes#Fernabasts "Fernabasts"), [Tantus](/prefixes/item-prefixes#Tantus "Tantus"), [Sentarions](/prefixes/item-prefixes#Sentarions "Sentarions")   **Rarity:**   Common       **Antidote**
 
 ![Antidote](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Antidote.png "Antidote")
 
     Used in low-mid level suffixes   **Drops from:**   Drops 45 % from Teuton Lord in Teuton Camp  
 Drops 45% from Bandit Chief in Bandit Camp  
 Drops 25% from Ancient in Cursed Village  
-Drops 25% from Giant Scorpion in Bridge    **Smelts in large quantities from:**   [of Ignorance](/suffixes/item-suffixes#of_Ignorance "of Ignorance"), [of Homunculus](/suffixes/item-suffixes#of_Homunculus "of Homunculus"), [of Self-Discipline](/suffixes/item-suffixes#of_Self-Discipline "of Self-Discipline"), [of Protection](/suffixes/item-suffixes#of_Protection "of Protection"), [of the Moment](/suffixes/item-suffixes#of_the_Moment "of the Moment"), [of Retreat](/suffixes/item-suffixes#of_Retreat "of Retreat"), [of Security](/suffixes/item-suffixes#of_Security "of Security"), [of the Cursed](/suffixes/item-suffixes#of_the_Cursed "of the Cursed")   **Rarity:**   Common       **Adrenaline** {#Adrenaline}
+Drops 25% from Giant Scorpion in Bridge    **Smelts in large quantities from:**   [of Ignorance](/suffixes/item-suffixes#of_Ignorance "of Ignorance"), [of Homunculus](/suffixes/item-suffixes#of_Homunculus "of Homunculus"), [of Self-Discipline](/suffixes/item-suffixes#of_Self-Discipline "of Self-Discipline"), [of Protection](/suffixes/item-suffixes#of_Protection "of Protection"), [of the Moment](/suffixes/item-suffixes#of_the_Moment "of the Moment"), [of Retreat](/suffixes/item-suffixes#of_Retreat "of Retreat"), [of Security](/suffixes/item-suffixes#of_Security "of Security"), [of the Cursed](/suffixes/item-suffixes#of_the_Cursed "of the Cursed")   **Rarity:**   Common       **Adrenaline**
 
 ![Adrenaline](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Adrenaline.png "Adrenaline")
 
@@ -432,7 +432,7 @@ Drops 25% from Centurion in Cave Temple    **Smelts in large quantities from:** 
 -----------------------
 
 Runes is a special category of materials that are generally rare and important part of some good item prefixes and suffixes
-## **Water Seal** {#Water_Seal}
+## **Water Seal**
 
 ![Water Seal](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Water_Seal.png "Water Seal")
 
@@ -471,7 +471,7 @@ Drops 25% from Renegade Mercenary in Bandit Camp   **Smelts in large quantities 
 
     A rare rune that is used for low-mid level suffixes   **Drops from:**   Drops 45% from Man Eater in Bridge  
 Drops 45% from Berserker in Barbarian Village  
-Drops 25% from Awakened Mummy in Bridge   **Smelts in large quantities from:**   [of Silence](/suffixes/item-suffixes#of_Silence "of Silence"), [of Fragmentation](/suffixes/item-suffixes#of_Fragmentation "of Fragmentation")   **Rarity:**   Rare       **Flintstone** {#Flintstone}
+Drops 25% from Awakened Mummy in Bridge   **Smelts in large quantities from:**   [of Silence](/suffixes/item-suffixes#of_Silence "of Silence"), [of Fragmentation](/suffixes/item-suffixes#of_Fragmentation "of Fragmentation")   **Rarity:**   Rare       **Flintstone**
 
 ![Flintstone](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Flintstone.png "Flintstone")
 
@@ -493,28 +493,28 @@ Drops 25 % from Daug in Mine   **Smelts in large quantities from:**   [Umbros](/
 
 Ores are an essential part of the material system
 
-    **Crystal** {#Crystal}
+    **Crystal**
 
 ![Crystal](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Crystal.png "Crystal")
 
     A common ore that is used in a number of important high level prefixes but is very limited in occurrences before character level 90   **Drops from:**   Drops 45 % from Sabre-Tooth Tiger in Koman Mountains  
 Drops 45% from Shaman in Cliff Jumper  
 Drops 45 % from Sidr in Teuton Camp  
-Drops 25% from High Shaman in Cliff Jumper    **Smelts in large quantities from:**   [Manius](/prefixes/item-prefixes#Manius "Manius"), [Gaius](/prefixes/item-prefixes#Gaius "Gaius"), [Belisarius](/prefixes/item-prefixes#Belisarius "Belisarius"), [Antonius](/prefixes/item-prefixes#Antonius "Antonius"), [Titus](/prefixes/item-prefixes#Titus "Titus"), [Quintus](/prefixes/item-prefixes#Quintus "Quintus"), [Pontius](/prefixes/item-prefixes#Pontius "Pontius")   **Rarity:**   Common       **Bronze** {#Bronze}
+Drops 25% from High Shaman in Cliff Jumper    **Smelts in large quantities from:**   [Manius](/prefixes/item-prefixes#Manius "Manius"), [Gaius](/prefixes/item-prefixes#Gaius "Gaius"), [Belisarius](/prefixes/item-prefixes#Belisarius "Belisarius"), [Antonius](/prefixes/item-prefixes#Antonius "Antonius"), [Titus](/prefixes/item-prefixes#Titus "Titus"), [Quintus](/prefixes/item-prefixes#Quintus "Quintus"), [Pontius](/prefixes/item-prefixes#Pontius "Pontius")   **Rarity:**   Common       **Bronze**
 
 ![Bronze](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Bronze.png "Bronze")
 
     A common ore used in some high level suffixes   **Drops from:**   Drops 45% from Legionnaire in Cave Temple  
 Drops 45% from Spy in Caravan  
 Drops 45% from Demon Elephant in Mesoai-Oasis  
-Drops 25 % from Teuton Hero in Teuton Camp    **Smelts in large quantities from:**   [of Retribution](/suffixes/item-suffixes#of_Retribution "of Retribution"), [of the Dragon](/suffixes/item-suffixes#of_the_Dragon "of the Dragon"), [of Hope](/suffixes/item-suffixes#of_Hope "of Hope"), [of the Curse](/suffixes/item-suffixes#of_the_Curse "of the Curse")   **Rarity:**   Common       **Obsidian** {#Obsidian}
+Drops 25 % from Teuton Hero in Teuton Camp    **Smelts in large quantities from:**   [of Retribution](/suffixes/item-suffixes#of_Retribution "of Retribution"), [of the Dragon](/suffixes/item-suffixes#of_the_Dragon "of the Dragon"), [of Hope](/suffixes/item-suffixes#of_Hope "of Hope"), [of the Curse](/suffixes/item-suffixes#of_the_Curse "of the Curse")   **Rarity:**   Common       **Obsidian**
 
 ![Obsidian](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Obsidian.png "Obsidian")
 
     A rare ore that is used in some mid-high level prefixes   **Drops from:**   Drops 45% from High Shaman in Cliff Jumper  
 Drops 45% from Elite Guard in Caravan  
 Drops 25 % from Dracolich in Dragon Remains  
-Drops 25% from Death Knight in Vandal Village    **Smelts in large quantities from:**   [Constantius](/prefixes/item-prefixes#Constantius "Constantius "), [Dairus](/prefixes/item-prefixes#Dairus "Dairus"), [Giganticus](/prefixes/item-prefixes#Giganticus "Giganticus")   **Rarity:**   Rare       **Silver** {#Silver}
+Drops 25% from Death Knight in Vandal Village    **Smelts in large quantities from:**   [Constantius](/prefixes/item-prefixes#Constantius "Constantius "), [Dairus](/prefixes/item-prefixes#Dairus "Dairus"), [Giganticus](/prefixes/item-prefixes#Giganticus "Giganticus")   **Rarity:**   Rare       **Silver**
 
 ![Silver](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Silver.png "Silver")
 
@@ -535,7 +535,7 @@ Drops 25% from Fire Dancer in Blood Cave    **Smelts in large quantities from:**
     A rare ore found in mid-high level prefixes but in small quantities   **Drops from:**   Drops 45 % from Teuton Hero in Teuton Camp  
 Drops 45 % from Daug in Mine  
 Drops 45% from Slave Merchant in Caravan  
-Drops 25% from Caravan Guard in Caravan    **Smelts in large quantities from:**   [Titus](/prefixes/item-prefixes#Titus "Titus"), [Avalonius](/prefixes/item-prefixes#Avalonius "Avalonius"), [Amulius](/prefixes/item-prefixes#Amulius "Amulius")   **Rarity:**   Rare       **Quartz** {#Quartz}
+Drops 25% from Caravan Guard in Caravan    **Smelts in large quantities from:**   [Titus](/prefixes/item-prefixes#Titus "Titus"), [Avalonius](/prefixes/item-prefixes#Avalonius "Avalonius"), [Amulius](/prefixes/item-prefixes#Amulius "Amulius")   **Rarity:**   Rare       **Quartz**
 
 ![Quartz](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Quartz2.png "Quartz")
 
@@ -549,15 +549,15 @@ Drops 25% from Myrmidon in Cave Temple    **Smelts in large quantities from:**  
     A somewhat rare ore that is used in defensive mid-level suffixes   **Drops from:**   Drops 45% from Lich in Vandal Village  
 Drops 45% from Barbarian in Barbarian Village  
 Drops 45% from Tax Collector in Bridge  
-Drops 25% from Slave Merchant in Caravan    **Smelts in large quantities from:**   [of Prevention](/suffixes/item-suffixes#of_Prevention "of Prevention"), [of the Flesh Wound](/suffixes/item-suffixes#of_the_Flesh_Wound "of the Flesh Wound"), [of Parade](/suffixes/item-suffixes#of_Parade "of Parade"), [of Total Defence](/suffixes/item-suffixes#of_Total_Defence "of Total Defence"), [of Blocking](/suffixes/item-suffixes#of_Blocking "of Blocking")   **Rarity:**   Medium       **Almandin** {#Almandin}
+Drops 25% from Slave Merchant in Caravan    **Smelts in large quantities from:**   [of Prevention](/suffixes/item-suffixes#of_Prevention "of Prevention"), [of the Flesh Wound](/suffixes/item-suffixes#of_the_Flesh_Wound "of the Flesh Wound"), [of Parade](/suffixes/item-suffixes#of_Parade "of Parade"), [of Total Defence](/suffixes/item-suffixes#of_Total_Defence "of Total Defence"), [of Blocking](/suffixes/item-suffixes#of_Blocking "of Blocking")   **Rarity:**   Medium       **Almandin**
 
 ![Almandin](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Almandin.png "Almandin")
 
-    A very rare ore that is connected in some way to the Underworld   **Drops from:**   Low chance to drop from any mob. Could have higher chance in the Underworld   **Smelts in large quantities from:**   Unknown   **Rarity:**   Very rare       **Cuprit** {#Cuprit}
+    A very rare ore that is connected in some way to the Underworld   **Drops from:**   Low chance to drop from any mob. Could have higher chance in the Underworld   **Smelts in large quantities from:**   Unknown   **Rarity:**   Very rare       **Cuprit**
 
 ![Cuprit](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Cuprit.png "Cuprit")
 
-    A rare ore that is used in high level suffixes   **Drops from:**   Low chance to drop from any mob. Could have higher chance in the Underworld    **Smelts in large quantities from:**   Unknown   **Rarity:**   Very rare       **Hellstone** {#Hellstone}
+    A rare ore that is used in high level suffixes   **Drops from:**   Low chance to drop from any mob. Could have higher chance in the Underworld    **Smelts in large quantities from:**   Unknown   **Rarity:**   Very rare       **Hellstone**
 
 ![Hellstone](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Hellstone.png "Hellstone")
 

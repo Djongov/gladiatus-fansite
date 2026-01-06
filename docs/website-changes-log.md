@@ -293,7 +293,7 @@ slug: /website-changes-log
 
 **30.03.2018**
 
-\- I am going to be putting verified status on item level drops that are 100% confirmed through enough tries and tests that the chance for mistake is almost 0 - **![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")** (1 hour 45 min)
+\- I am going to be putting verified status on item level drops that are 100% confirmed through enough tries and tests that the chance for mistake is almost 0 - **`✓` Verified (1 hour 45 min)
 
 \- 3.0.3 version will fix 3 NPC stats in Britannia. GMs were good enough to reveal their names. Edited the Britannia page with the now 3 more known NPC names (15 min)
 

@@ -17,7 +17,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-background-color: #D5C19A;
   --ifm-font-color-base: #000000;
-  --ifm-link-color: #000000;
+  --ifm-link-color: #1a4d8f;
+  --ifm-link-hover-color: #0d2d5a;
   --ifm-menu-color: #000000;
   --ifm-navbar-background-color: #D5C19A;
 }
@@ -68,4 +69,63 @@
 [data-theme='dark'] .footer {
   background-color: #1b1b1d !important;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Improve link visibility */
+a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Fix dark mode link hover - make it brighter instead of darker */
+[data-theme='dark'] a:hover {
+  opacity: 1;
+  filter: brightness(1.9);
+}
+
+/* Keep navbar links clean */
+.navbar a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* Keep menu links clean */
+.menu a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.menu a:hover {
+  opacity: 1;
+}
+
+/* Make horizontal rules visible on light background */
+hr {
+  background-color: #8b7355 !important;
+  height: 2px !important;
+  border: none !important;
+  margin: 1.5rem 0 !important;
+}
+
+[data-theme='dark'] hr {
+  background-color: #4a4a4a !important;
+}
+
+.player_name_bg {
+  background-image: url("https://gladiatusfansite.blob.core.windows.net/images/Nameplate.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50px;
+  width: 172px;
+  margin-left: -2px;
+  color: #bfae54;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: center;
 }

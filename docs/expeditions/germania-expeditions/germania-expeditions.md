@@ -27,7 +27,7 @@ Expeditions Menu
 - **[Koman Mountain](#KomanMountain "Koman Mountain")**
 - **[Dragon Remains](#DragonRemains "Dragon Remains")**
  
-**Cave Temple** {#CaveTemple}
+**Cave Temple**
 --------------------------------------
 
 The first expedition once you arrive in Germania is the Cave Temple.
@@ -171,7 +171,7 @@ Soulless
 
  
 
-**The green forest** {#GF}
+**The green forest**
 -----------------------------------
 
 The second expedition in Germania is the Green Forest.
@@ -306,7 +306,7 @@ Werebear
 
  
 
-**Cursed Village** {#CursedVillage} 
+**Cursed Village** 
 ---------------------------------------------
 
 The third expedition in Germania. Things are getting serious now.
@@ -440,7 +440,7 @@ Abomination
 
 
 **Item level drop**: 59-69
-## Death Hill {#DeathHill}
+## Death Hill
 --------------------------------
 
 The fourth expedition in Germania is Death Hill. Relatively easy expedition.
@@ -569,7 +569,7 @@ Necromancer Prince
  **Damage:** 142-174/144-176
 
 **Item level drop**: 63-74
-## Vandal Village {#VandalVillage}
+## Vandal Village
 ----------------------------------------
 
 The fifth expedition in Germania is Vandal Village. It is a high level expedition which means that you will visit it on your next return to Germania.
@@ -702,7 +702,7 @@ Death Knight
 
 
 **Item level drop**: 97-118
-## Mine {#Mine}
+## Mine
 ---------------------
 
 The sixth expedition in Germania is the most pleasant one. Weak opponents, good treasures.
@@ -836,7 +836,7 @@ Tatzelwurm
 
 
 **Item level drop**: 102-123
-## Teuton Camp {#TeutonCamp}
+## Teuton Camp
 ----------------------------------
 
 The seventh expedition in Germania and quite a hard one.
@@ -971,7 +971,7 @@ Seidr
 
 
 **Item level drop**: 107-125
-## Koman Mountain {#KomanMountain}
+## Koman Mountain
 ----------------------------------------
 
 The most amazing expedition in the game. Marvelous creatures.
@@ -1106,7 +1106,7 @@ Dragon
 
 
 **Item level drop**: 109-133
-## Dragon Remains {#DragonRemains}
+## Dragon Remains
 ----------------------------------------
 
 The last expedition in the game. Only for the best gladiators.

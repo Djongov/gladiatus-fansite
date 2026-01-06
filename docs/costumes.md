@@ -10,44 +10,25 @@ Gladiatus costumes are giving bonuses to the one who wears them but with one rul
 
 There are 3 types of costumes:
 
-1. [Everywear Costumes](#Everywear "Everywear Costumes")
---------------------------------------------------------
-
-The normal costumes. Can be found in Expeditions, Dungeons and Chest of Divine Fate or Daily rolls. Read more about them in this page below
+- Everywear Costumes - The normal costumes. Can be found in Expeditions, Dungeons and Chest of Divine Fate or Daily rolls. Read more about them in this page below
 
 ![Everywear costume](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Wrath_of_the_Mountain_male.gif "Everywear costume")
 
-- [Vulcanus Forge](#Vulcanus_Forge "Vulcanus Forge")
-- [Feronia's Earthen Shield](#Feronia_Earthen_Shield "Feronia's Earthen Shield")
-- [Neptune's Fluid Might](#Neptune_Fluid_Might "Neptune's Fluid Might")
-- [Aelous' Aerial Freedom](#Aelous_Aerial_Freedom "Aelous' Aerial Freedom")
-- [Wrath Mountain's Scale Armour](#Wrath_Mountain_Scale_Armour "Wrath Mountain's Scale Armour")
-- [Eagle Eyes](#Eagle_Eyes "Eagle Eyes")
-- [Juno's Breath of Life](#Juno_Breath_of_Life "Juno's Breath of Life")
-- [Pluto's Deadly Mist](#Pluto_Deadly_Mist "Pluto's Deadly Mist")
- 
-2. [Underworld Costumes](/underworld "Underworld Costumes")
-----------------------------------------------------------
-
-Are reward from completing Underworld in Normal, Medium or Hard. Read about it [here](/underworld "Underworld").
+- Underworld Costumes - Are reward from completing Underworld in Normal, Medium or Hard. Read about it in [Underworld](/underworld "Underworld").
 
 ![Underworld costume](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/dis_pater_hard_male.gif "Underworld costume")
 
-3. [Festival/Event Costumes](/events "Festival/Event Costumes")
---------------------------------------------------------------------
-
-Festival Costumes are found like normal costumes but only during a certain event. They are also worn only during events. Read more about events [here](/events "Events").
+- Festival/Event Costumes - Festival Costumes are found like normal costumes but only during a certain event. They are also worn only during events. Read more about it in [Events](/events "Events").
 
 ![Event costume](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Mercurius_male.gif "Event costume")
 
-**Everywear Costumes** {#Everywear}
-============================================
+## Everywear Costumes
 
 Costumes are essential part of the game. They boost certain non-combat aspects of the game. They can drop from expeditions, dungeons, Daily bonuses or [Divine Chest of Faith](/game-guide#Treasury "Divine Chest of Faith") rolls. **Every "background" piece of every costume can only be found** from a [Divine Chest of Faith](/game-guide#Treasury "Divine Chest of Faith") roll.
 
 Costumes are of several parts where you receive bonuses on 1, 3 and 5 or even 7th part. This is a complete list of all costumes and their bonuses:
-## Vulcanus Forge {#Vulcanus_Forge}
------------------------------------------
+
+### Vulcanus Forge
 
 ![Vulcanus Forge male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Vulcan_male.gif "Vulcanus Forge male")![Vulcanus Forge](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Vulcanus_female.png "Vulcanus' Fire of  the Blacksmith")
 
@@ -66,8 +47,8 @@ Costumes are of several parts where you receive bonuses on 1, 3 and 5 or even 7t
 (3) Circus Turma cooldown goes down from 5 to 4 minutes with Centurio and from 15 to 13 minutes without Centurio
 
 ![Vulcanuis bonus 3](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Vulcanus_bonus3.PNG "Vulcanuis bonus 3")
-## Feronia's Earthen Shield {#Feronia_Earthen_Shield}
------------------------------------------------------------
+
+### Feronia's Earthen Shield
 
 ![Feronia's Earthen Shield male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Feronia_Earthen_male.gif "Feronia's Earthen Shield male")![Feronia's Earthen Shield female](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Feronia_Earthen_female.gif "Feronia's Earthen Shield female")
 
@@ -84,8 +65,8 @@ Costumes are of several parts where you receive bonuses on 1, 3 and 5 or even 7t
 ![Feronia's Earthen Shield bonus 2](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Feronia_bonus2.PNG "Feronia's Shield of Earth bonus 2")
 
 (3) When they steal gold from you with an Arena or Turma attack, your Gold loss will be 40% less. If they were going to take 10000![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") from you, with the costume they will loot 6000![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")
-## Neptune's Fluid Might {#Neptune_Fluid_Might}
------------------------------------------------------
+
+### Neptune's Fluid Might
 
 ![Neptune's Fluid Might male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Neptune_Might_male.gif "Neptune's Fluid Might male")![Neptune's Fluid Might female](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Neptune_Might_female.gif "Neptune's Fluid Might female")
 
@@ -102,8 +83,8 @@ Costumes are of several parts where you receive bonuses on 1, 3 and 5 or even 7t
 ![Neptune's Fluid Might bonus 2](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Neptune_bonus2.png "Neptune's Fluid Might bonus 2")
 
 (3) Plain 3 % reduce on Training costs. Could be a lot. Switch to this costume if you have collected a lot of packeted gold and train it
-## Aelous' Aerial Freedom {#Aelous_Aerial_Freedom}
---------------------------------------------------------
+
+### Aelous' Aerial Freedom
 
 ![Aeolis' Aerial Freedom male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Aelous_male.gif "Aeolis' Aerial Freedom male")![Aelous' Aerial Freedom](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Aelous_female.png "Aelous' Freedom of Wind")
 
@@ -122,8 +103,8 @@ Costumes are of several parts where you receive bonuses on 1, 3 and 5 or even 7t
 ![Aelous' Aerial Freedom bonus 2-2](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Aelous_bonus2-2.png "Aelous' Freedom of Wind bonus 2-2")
 
 (3) Dungeon cooldown is down from 5 to to 4 minutes for Centurios and from 10 to 8 minutes for non Centurios
-## Wrath Mountain's Scale Armour {#Wrath_Mountain_Scale_Armour}
----------------------------------------------------------------------
+
+### Wrath Mountain's Scale Armour
 
 ![Wrath Mountain's Scale Armour male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Wrath_of_the_Mountain_male.gif "Wrath Mountain's Scale Armour male")![Wrath Mountain's Scale Armour female](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Wrath_of_the_Mountain_female.gif "Wrath Mountain's Scale Armour female")
 
@@ -150,8 +131,8 @@ That's pretty cool if you add the Secret Knowledge of the Ancients the quest coo
 ![Wrath Mountain's Scale Armour bonus 4 - 2](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Wrath_Mountain_bonus4-2.png "Wrath Mountain's Scale Armour bonus 4 - 2")
 
  ![6 minutes cooldown on quests](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Wrath_Mountain_bonus4-3.png "6 minutes cooldown on quests")
-## Eagle Eyes {#Eagle_Eyes}
----------------------------------
+
+### Eagle Eyes
 
 ![Eagle Eyes male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Eagle_Eyes_male.gif "Eagle Eyes male")![Eagle Eyes female](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Eagle_Eyes_female.gif "Eagle Eyes female")
 
@@ -168,8 +149,8 @@ That's pretty cool if you add the Secret Knowledge of the Ancients the quest coo
 ![Eagle Eyes bonus 2](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Farsightedness_bonus2.png "Farsightedness of the Eagle bonus 2")
 
 (3) The Expedition entry level is reduced by 2. Now this on low level might not be something special but on level 106 to be able to visit Koman Mountain or Dragon Remains on level 110 means quite a lot. On these high levels you are leveling at 1month+ per level so seeing the next dungeon 2 months ahead is actually quite a reward.
-## Juno's Breath of Life {#Juno_Breath_of_Life}
------------------------------------------------------
+
+### Juno's Breath of Life
 
 ![Juno's Breath of Life male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/June_Breath_male.gif "Juno's Breath of Life male")![Juno's Breath of Life](https://gladiatusfansite.blob.core.windows.net/images/Costumes/Juno_female.png "Juno's Breath of Life")
 
@@ -184,8 +165,8 @@ That's pretty cool if you add the Secret Knowledge of the Ancients the quest coo
 (2) Same as Feronia's Shield of Earth's but here is double - 200%. Again that's not quite a lot. Probably at 3000/hour on around 300 Constitution
 
 (3) Expeditions cooldown is down from 5 to to 4 minutes for Centurios and from 10 to 8 minutes for non Centurios
-## Pluto's Deadly Mist {#Pluto_Deadly_Mist}
--------------------------------------------------
+
+### Pluto's Deadly Mist
 
 ![Pluto's Deadly Mist male](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Pluto_male.gif "Pluto's Deadly Mist male")![Pluto's Deadly Mist female](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Pluto_female.gif "Pluto's Deadly Mist female")
 
