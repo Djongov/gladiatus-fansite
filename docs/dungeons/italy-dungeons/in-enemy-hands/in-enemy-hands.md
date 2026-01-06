@@ -1,6 +1,8 @@
 ---
 title: In enemy hands
-slug: /in-enemy-hands/in-enemy-hands
+slug: /dungeons/italy-dungeons/in-enemy-hands
+redirects:
+  - /in-enemy-hands
 ---
 
 In enemy hands
@@ -12,7 +14,7 @@ Entry level: **65**
 
 Dungeon points to complete: **13**
 
-Level on which you can complete: **Boss can be challenging but should not pose any danger to the experienced dungeon hero. Decent geared from previous dungeon should give you a good chance of defeating the boss on entry level. Here is a setup of a 65 level kill - [here](images/Dungeons/Italy/In_enemy_hands/Trakovar_kill_65_level.png "Trakovar kill on Level 65").**
+Level on which you can complete: **Boss can be challenging but should not pose any danger to the experienced dungeon hero. Decent geared from previous dungeon should give you a good chance of defeating the boss on entry level. Here is a setup of a 65 level kill - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/In_enemy_hands/Trakovar_kill_65_level.png "Trakovar kill on Level 65").**
 
 Enemy and boss levels: **72-74**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **70-76 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **71-84 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Barbarian Village](italy-expeditions#BarbarianVillage "Barbarian Village")
+Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions#BarbarianVillage "Barbarian Village")
 
-Advanced Dungeon: **Yes,** [Zagrashs Fort](zagrashs-fort "Zagrashs Fort") (Level 78)
+Advanced Dungeon: **Yes,** [Zagrashs Fort](/zagrashs-fort "Zagrashs Fort") (Level 78)
 
-Previous Dungeon: [Hidden Grave](hidden-grave "Hidden Grave") (Level 60)
+Previous Dungeon: [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave") (Level 60)
 
-Next Dungeon: [The Last Resort](the-last-resort "The Last Resort") (Level 68)
+Next Dungeon: [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort") (Level 68)
 
 **Description**
 

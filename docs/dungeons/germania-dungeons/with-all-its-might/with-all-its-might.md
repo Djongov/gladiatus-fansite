@@ -1,6 +1,8 @@
 ---
 title: With all its might
-slug: /with-all-its-might/with-all-its-might
+slug: /dungeons/germania-dungeons/with-all-its-might
+redirects:
+  - /with-all-its-might
 ---
 
 With all its might
@@ -12,7 +14,7 @@ Entry level: **45**
 
 Dungeon points to complete: **9-**11****
 
-Level on which you can complete: **45. Boss is a little harder than average, especially compared to previous boss from Dark Catacombs. Here is a setup of a 45 level kill but not winning every time. Click [here](images/Dungeons/Germania/With_all_its_might/Oak_Lord_kill_45_level.png "Oak Lord kill on level 45"). You will need your damage dealers to be ~200 dmg to succeed and ~50-51 Level Mercenaries.**
+Level on which you can complete: **45. Boss is a little harder than average, especially compared to previous boss from Dark Catacombs. Here is a setup of a 45 level kill but not winning every time. Click [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/With_all_its_might/Oak_Lord_kill_45_level.png "Oak Lord kill on level 45"). You will need your damage dealers to be ~200 dmg to succeed and ~50-51 Level Mercenaries.**
 
 Enemy and boss levels: **54-56**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **52-58 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **52-64 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [The green forest](germania-expeditions#GF "The green forest")
+Parent Expedition: [The green forest](/expeditions/germania-expeditions#GF "The green forest")
 
-Advanced Dungeon: **Yes,** [Externsteine](Externsteine "Externsteine") (Level 102)
+Advanced Dungeon: **Yes,** [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine") (Level 102)
 
-Previous Dungeon: [Dark Catacombs](dark-catacombs "Dark Catacombs") (Level 40)
+Previous Dungeon: [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs "Dark Catacombs") (Level 40)
 
-Next Dungeon: [Viking Camp](viking-camp "Viking Camp") (Level 50)
+Next Dungeon: [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking Camp") (Level 50)
 
 **Description**
 

@@ -1,6 +1,8 @@
 ---
 title: Wild Farm
-slug: /wild-farm/wild-farm
+slug: /events/wild-farm
+redirects:
+  - /wild-farm
 ---
 
 Wild Farm
@@ -109,7 +111,7 @@ Check out the [Costumes](Costumes "Costumes") page for extended info on the cost
 
 The Golden Bunny will be available during the Wild Farm event and when dragged onto your character picture will award 1 random buff from the Bubona's Bull Armour costume properties for 1 hour. Note however, that the Bunnies will not work if you don't have any piece of the Bubona armour collected. Also, which costume property the Bunny will award relies entirely on the number of discovered set pieces. If you have them all, it will just randomly award one. If it awards you the same buff, it will increase it's duration with another hour (making it 2, 3 and etc)
 
-- During the event all enemies from all sources will start to drop Easter Eggs. Easter eggs are special event food which is low on healing powers but has buffs, just like other [Event items](items#Event "Event items")
+- During the event all enemies from all sources will start to drop Easter Eggs. Easter eggs are special event food which is low on healing powers but has buffs, just like other [Event items](/items#Event "Event items")
  
     Egg (blue)
 

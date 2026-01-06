@@ -1,18 +1,20 @@
 ---
 title: Fairground
-slug: /fairground/fairground
+slug: /dungeons/africa-dungeons/fairground
+redirects:
+  - /fairground
 ---
 
 Fairground
 ==========
 
-Fairground is the first of the high level dungeons in Africa. It is available at level 80 but don't be fooled. The leader of the mighty Umpokta is a formidable boss. You need to be highly geared to face him. A good preparation for him is if you are able to beat Zagrash in [Zagrash's Fort](zagrashs-fort "Zagrash's Fort"). If you beat Zagrash most of the times, you might be able to land some kills on Papa Sasama. Generally, he is an extremely hard boss and you will be waiting for 86 to skip this dungeon and move to the next one. Read the [Zagrash guide](News?id=65 "Zagrash guide") and how to gear up to beat him. Same tactic applies for Papa Sasama but with even higher levels and stats.
+Fairground is the first of the high level dungeons in Africa. It is available at level 80 but don't be fooled. The leader of the mighty Umpokta is a formidable boss. You need to be highly geared to face him. A good preparation for him is if you are able to beat Zagrash in [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort"). If you beat Zagrash most of the times, you might be able to land some kills on Papa Sasama. Generally, he is an extremely hard boss and you will be waiting for 86 to skip this dungeon and move to the next one. Read the [Zagrash guide](News?id=65 "Zagrash guide") and how to gear up to beat him. Same tactic applies for Papa Sasama but with even higher levels and stats.
 
 Entry level: **80**
 
 Dungeon points to complete: **12**
 
-Level on which you can complete: **83-86. If you are beating Zagrash most of the times, you will sometimes beat Papa Sasama. This is the rule. Incredibly hard boss. You need to gear up with multiple Antonius/Gaius/Ichorus gear on your mercenaries and weapons well above 200 damage and some good critical strike. Here is an example of a setup that kills Papa Sasama on level 82 - [here](images/Dungeons/Africa/Fairground/Papa_Sasama_82_kill.png "Papa Sasama 82 lvl kill"). Note that this setup does not farm Papa Sasama and is a very early kill (in terms of gear) and you will need a lot better to farm him or defeat him efficiently.**
+Level on which you can complete: **83-86. If you are beating Zagrash most of the times, you will sometimes beat Papa Sasama. This is the rule. Incredibly hard boss. You need to gear up with multiple Antonius/Gaius/Ichorus gear on your mercenaries and weapons well above 200 damage and some good critical strike. Here is an example of a setup that kills Papa Sasama on level 82 - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Fairground/Papa_Sasama_82_kill.png "Papa Sasama 82 lvl kill"). Note that this setup does not farm Papa Sasama and is a very early kill (in terms of gear) and you will need a lot better to farm him or defeat him efficiently.**
 
 Enemy and boss levels: **89-91**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **87-93 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **88-100 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Umpokta Tribe](africa-expeditions#UmpoktaTribe "Umpokta Tribe")
+Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions#UmpoktaTribe "Umpokta Tribe")
 
-Advanced Dungeon: **Yes,** [Sasama's last journey](sasama-s-last-journey "Sasama's last journey") (Level 92)
+Advanced Dungeon: **Yes,** [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey") (Level 92)
 
-Previous Dungeon: [Zagrash's Fort](zagrashs-fort "Zagrash's Fort") (Level 78)
+Previous Dungeon: [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort") (Level 78)
 
-Next Dungeon: [Under a Blood-red Sky](under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
+Next Dungeon: [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
 
 **Description**
 

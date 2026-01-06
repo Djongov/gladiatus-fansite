@@ -1,6 +1,8 @@
 ---
 title: Alpha & Omega
-slug: /alpha-omega/alpha-omega
+slug: /dungeons/germania-dungeons/alpha-omega
+redirects:
+  - /alpha-omega
 ---
 
 Alpha & Omega
@@ -18,11 +20,11 @@ Minions item level drop: **127-132**
   
 Boss item level drop: **128-141 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Dragon Remains](germania-expeditions#DragonRemains "Dragon Remains")
+Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions#DragonRemains "Dragon Remains")
 
-Advanced Dungeon: **Yes, This is the Advanced Dungeon of** [Late Revenge](late-revenge "Late Revenge") (Level 112)
+Advanced Dungeon: **Yes, This is the Advanced Dungeon of** [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge") (Level 112)
 
-Previous Dungeon: [Late Revenge](late-revenge "Late Revenge") (Level 112)
+Previous Dungeon: [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge") (Level 112)
 
 Next Dungeon: **None, this is the last and the highest level dungeon in the game**
 

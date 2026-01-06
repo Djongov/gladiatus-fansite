@@ -1,6 +1,8 @@
 ---
 title: The Dragon Stronghold
-slug: /the-dragon-stronghold/the-dragon-stronghold
+slug: /dungeons/italy-dungeons/the-dragon-stronghold
+redirects:
+  - /the-dragon-stronghold
 ---
 
 The Dragon Stronghold
@@ -20,13 +22,13 @@ Minions item level drop: **16-23 ![Confirmed](https://gladiatusfansite.blob.core
 
 Boss item level drop: **18-25 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Misty Mountains](italy-expeditions#MistyMountains "Misty Mountains")
+Parent Expedition: [Misty Mountains](/expeditions/italy-expeditions#MistyMountains "Misty Mountains")
 
-Advanced Dungeon: **Yes,** [The True Owner](the-true-owner "The True Owner") (Level 70)
+Advanced Dungeon: **Yes,** [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner") (Level 70)
 
-Previous Dungeon: [On the Run](on-the-run "On the Run") (Level 10)
+Previous Dungeon: [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run") (Level 10)
 
-Next Dungeon: [The Cave of Dark intrigue](the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15)
+Next Dungeon: [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15)
 
 **Description**
 

@@ -1,6 +1,8 @@
 ---
 title: Gustavos Country House
-slug: /gustavos-country-house/gustavos-country-house
+slug: /dungeons/italy-dungeons/gustavos-country-house
+redirects:
+  - /gustavos-country-house
 ---
 
 Gustavos Country House
@@ -20,13 +22,13 @@ Minions item level drop: **9-10 ![Confirmed](https://gladiatusfansite.blob.core.
 
 Boss item level drop: **10-12 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Grimwood](italy-expeditions#Grimwood "Grimwood")
+Parent Expedition: [Grimwood](/expeditions/italy-expeditions#Grimwood "Grimwood")
 
 Advanced Dungeon: **No**
 
 Previous Dungeon: **None, this is the first dungeon in the game**
 
-Next Dungeon: [On the Run](on-the-run "On the Run") (Level 10)
+Next Dungeon: [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run") (Level 10)
 
 **Description**
 

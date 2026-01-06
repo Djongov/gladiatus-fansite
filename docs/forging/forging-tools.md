@@ -1,6 +1,8 @@
 ---
 title: Forging Tools
-slug: /forging-tools/forging-tools
+slug: /forging/forging-tools
+redirects:
+  - /forging-tools
 ---
 
 Forging Tools
@@ -8,7 +10,7 @@ Forging Tools
 
 Forging tools are used to boost Forging capabilities. They can either drop from adventures although extremely rare or they can be purchased from the new vendor Malefica. They cannot be soul bound so they can be sold on the Market too. The forge allows for 3 slots of forging tools and with 4 type of tools in total, there isn't much of a choice on which ones to use. Forging tools come in 3 qualities - Gold, Silver or Bronze.
 
-Certain [Micro Events](events "Micro Events") boost the drop chance with usually 10% which can be really good, however only Silver or Bronze qualities drop. Gold can only be purchased from the Malefica vendor or in the Market from another player.
+Certain [Micro Events](/events "Micro Events") boost the drop chance with usually 10% which can be really good, however only Silver or Bronze qualities drop. Gold can only be purchased from the Malefica vendor or in the Market from another player.
 
 There are 4 types of Forging tools sorted by importance:
 

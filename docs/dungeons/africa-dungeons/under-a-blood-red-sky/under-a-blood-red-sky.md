@@ -1,6 +1,8 @@
 ---
 title: Under a Blood-red Sky
-slug: /under-a-blood-red-sky/under-a-blood-red-sky
+slug: /dungeons/africa-dungeons/under-a-blood-red-sky
+redirects:
+  - /under-a-blood-red-sky
 ---
 
 Under a Blood-red Sky
@@ -12,7 +14,7 @@ Entry level: **86**
   
 Dungeon points to complete: **14**
 
-Level on which you can complete: **86. Boss is easier than Papa Sasama and is not a problem on Level 86. Item level drop goes as high as 107! Here is a setup of a Negotium X early 82 level kill on Shetu who again is weaker than Papa Sasama - [here](images/Dungeons/Africa/Under_a_Blood-Red_Sky/Shetu_bin_Seth_82lvl_kill.png "Shetu bin Seth kill on 82 level").**  
+Level on which you can complete: **86. Boss is easier than Papa Sasama and is not a problem on Level 86. Item level drop goes as high as 107! Here is a setup of a Negotium X early 82 level kill on Shetu who again is weaker than Papa Sasama - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Under_a_Blood-Red_Sky/Shetu_bin_Seth_82lvl_kill.png "Shetu bin Seth kill on 82 level").**  
   
 Enemy and boss levels: **95-97**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **93-99 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **96-107 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Bridge](africa-expeditions#Bridge "Bridge")
+Parent Expedition: [Bridge](/expeditions/africa-expeditions#Bridge "Bridge")
 
-Advanced Dungeon: **This is the Advanced Dungeon** of [Abducted](abducted "Abducted") (Level 25)
+Advanced Dungeon: **This is the Advanced Dungeon** of [Abducted](/dungeons/africa-dungeons/abducted "Abducted") (Level 25)
 
-Previous Dungeon: [Fairground](africa-dungeons "Fairground") (Level 80) or [Mysterious Laboratory](mysterious-laboratory "Mysterious Laboratory") (Level 80, Germania)
+Previous Dungeon: [Fairground](/dungeons/africa-dungeons "Fairground") (Level 80) or [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory "Mysterious Laboratory") (Level 80, Germania)
 
-Next Dungeon: [In the Heart of Decay](in-the-heart-of-decay "In the Heart of Decay") (Level 90)  
+Next Dungeon: [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay") (Level 90)  
   
 **Description**  
 Screams pierce the cold African night air. Another Roman family has been dragged out of their house and into the desert. Usually help comes far too late and there are barely any traces left of the unlucky victims. However, this time torchlight has shrouded the riverbank in a sinister light that allows us a glimpse of the ghostly abductors.

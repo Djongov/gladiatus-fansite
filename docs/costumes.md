@@ -26,24 +26,24 @@ The normal costumes. Can be found in Expeditions, Dungeons and Chest of Divine F
 - [Juno's Breath of Life](#Juno_Breath_of_Life "Juno's Breath of Life")
 - [Pluto's Deadly Mist](#Pluto_Deadly_Mist "Pluto's Deadly Mist")
  
-2. [Underworld Costumes](underworld "Underworld Costumes")
+2. [Underworld Costumes](/underworld "Underworld Costumes")
 ----------------------------------------------------------
 
-Are reward from completing Underworld in Normal, Medium or Hard. Read about it [here](underworld "Underworld").
+Are reward from completing Underworld in Normal, Medium or Hard. Read about it [here](/underworld "Underworld").
 
 ![Underworld costume](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/dis_pater_hard_male.gif "Underworld costume")
 
-3. [Festival/Event Costumes](events "Festival/Event Costumes")
+3. [Festival/Event Costumes](/events "Festival/Event Costumes")
 --------------------------------------------------------------------
 
-Festival Costumes are found like normal costumes but only during a certain event. They are also worn only during events. Read more about events [here](events "Events").
+Festival Costumes are found like normal costumes but only during a certain event. They are also worn only during events. Read more about events [here](/events "Events").
 
 ![Event costume](https://gladiatusfansite.blob.core.windows.net/images/Costumes/gifs/Mercurius_male.gif "Event costume")
 
 **<a id="Everywear"></a>Everywear Costumes**
 ============================================
 
-Costumes are essential part of the game. They boost certain non-combat aspects of the game. They can drop from expeditions, dungeons, Daily bonuses or [Divine Chest of Faith](game-guide#Treasury "Divine Chest of Faith") rolls. **Every "background" piece of every costume can only be found** from a [Divine Chest of Faith](game-guide#Treasury "Divine Chest of Faith") roll.
+Costumes are essential part of the game. They boost certain non-combat aspects of the game. They can drop from expeditions, dungeons, Daily bonuses or [Divine Chest of Faith](/game-guide#Treasury "Divine Chest of Faith") rolls. **Every "background" piece of every costume can only be found** from a [Divine Chest of Faith](/game-guide#Treasury "Divine Chest of Faith") roll.
 
 Costumes are of several parts where you receive bonuses on 1, 3 and 5 or even 7th part. This is a complete list of all costumes and their bonuses:
 

@@ -1,6 +1,8 @@
 ---
 title: Hidden Grave
-slug: /hidden-grave/hidden-grave
+slug: /dungeons/italy-dungeons/hidden-grave
+redirects:
+  - /hidden-grave
 ---
 
 Hidden Grave
@@ -12,7 +14,7 @@ Entry level: **60**
 
 Dungeon points to complete: **8-13 (varies)**
 
-Level on which you can complete: **Boss is strong. Very well geared you might be able to do it on 60-61 level. Just keep your Mercenary at high level ~70 and make sure you have no gaps in your gear. Also, probably a good idea to update your healer with ~1000 Healing so he can cope with the increased strength of the boss. Here is a setup of a Level 60 kill - [here](images/Dungeons/Italy/Hidden_Grave/Nekomar_60_kill.png "Nekromar 60 Level kill").**
+Level on which you can complete: **Boss is strong. Very well geared you might be able to do it on 60-61 level. Just keep your Mercenary at high level ~70 and make sure you have no gaps in your gear. Also, probably a good idea to update your healer with ~1000 Healing so he can cope with the increased strength of the boss. Here is a setup of a Level 60 kill - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Hidden_Grave/Nekomar_60_kill.png "Nekromar 60 Level kill").**
 
 Enemy and boss levels: **69-71**  
   
@@ -22,11 +24,11 @@ Boss item level drop: **68-80 ![Confirmed](https://gladiatusfansite.blob.core.wi
 
 Advanced Dungeon: **No**
 
-Parent Expedition: [Ancient Temple](italy-expeditions#AncientTemple "Ancient Temple")
+Parent Expedition: [Ancient Temple](/expeditions/italy-expeditions#AncientTemple "Ancient Temple")
 
-Previous Dungeon: [Viking Camp](viking-camp "Viking Camp") (Level 50, Germania)
+Previous Dungeon: [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking Camp") (Level 50, Germania)
 
-Next Dungeon: [In enemy hands](in-enemy-hands "In enemy hands") (Level 65)
+Next Dungeon: [In enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In enemy hands") (Level 65)
 
 **Description**
 

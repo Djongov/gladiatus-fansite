@@ -1,6 +1,8 @@
 ---
 title: Italy Expeditions
-slug: /italy-expeditions/italy-expeditions
+slug: /expeditions/italy-expeditions
+redirects:
+  - /italy-expeditions
 ---
 
 **Italy Expeditions**
@@ -42,7 +44,7 @@ If you believe what the old people say around here, there once lived a very popu
 
 **Real level to engage:** 1
 
-**Dungeon:** Yes, **[Gustavos Country House](italy-dungeons "Gustavos Country House")** - Entry level 10
+**Dungeon:** Yes, **[Gustavos Country House](/dungeons/italy-dungeons "Gustavos Country House")** - Entry level 10
 
 **Advanced Dungeon:** No
 
@@ -164,9 +166,9 @@ On the coast in the south-east there is a pirate harbour. There are a lot of sha
 
 **Real level to engage:** 7-8
 
-**Dungeon:** Yes, **[On the Run](italy-dungeons "On the Run")** - Entry level 10
+**Dungeon:** Yes, **[On the Run](/dungeons/italy-dungeons "On the Run")** - Entry level 10
 
-**Advanced Dungeon:** Yes, **[The Last Resort](italy-dungeons "The Last Resort")** - Entry level 68  
+**Advanced Dungeon:** Yes, **[The Last Resort](/dungeons/italy-dungeons "The Last Resort")** - Entry level 68  
 
 
 **Additional Info:** It becomes available too quickly. At level 5 you are most likely not able to kill Wolf in Grimwood even. If you are uber geared and twinked you may start with Fled Slave but that's not entirely easy. If you can fight without losing too many battles fight here. The experience and honour is not that much more than Grimwood but the gold is and gold is really important. Enemies gradually become harder with the boss - Captain raises to level 15-17 which in normal rates is almost impossible to beat at the low levels. Assassin is also really strong with huge variety in the levels. Gold boost is also big with Assassin and Captain.
@@ -286,9 +288,9 @@ The highest pinnacles of the Misty Mountains are hidden from the eyes of wandere
 
 **Real level to engage:** 14-15
 
-**Dungeon:** Yes, **[The Dragon Stronghold](italy-dungeons "The Dragon Stronghold")** - Entry Level 10
+**Dungeon:** Yes, **[The Dragon Stronghold](/dungeons/italy-dungeons "The Dragon Stronghold")** - Entry Level 10
 
-**Advanced Dungeon:** Yes, [**The True Owner**](italy-dungeons "The True Owner") - Entry Level 70
+**Advanced Dungeon:** Yes, [**The True Owner**](/dungeons/italy-dungeons "The True Owner") - Entry Level 70
 
 **Additional Info:** Same as Pirate Harbour, the entry level is a bit low for the creatures you have to fight in this expedition. The real level is more like 15. Elusive Recruit can be farmed easily but the rest are just plain hard. Harpy and Cerberus are jumping with 4-6 levels more which is insane. Same as Pirate Harbour, 3rd enemy and Boss are really a lot stronger than what you would be able to normally fight at this level.
 
@@ -413,9 +415,9 @@ In the hills south of the barbarian village there is a cave system that is calle
 
 **Real level to engage:** 19
 
-**Dungeon:** Yes, **[The Cave of Dark intrigue](italy-dungeons "The Cave of Dark intrigue")** - Entry Level 10
+**Dungeon:** Yes, **[The Cave of Dark intrigue](/dungeons/italy-dungeons "The Cave of Dark intrigue")** - Entry Level 10
 
-**Advanced Dungeon:** Yes, **[Gioll Passage](italy-dungeons "Gioll Passage")** - Entry Level 73
+**Advanced Dungeon:** Yes, **[Gioll Passage](/dungeons/italy-dungeons "Gioll Passage")** - Entry Level 73
 
 **Additional Info:** Typical expedition. Nothing unusual about it. Of course the low entry level doesn't mean that you can fight here at 15. Problem is that you will probably not fully discover the expedition as the fighting level is around 20 and at 20 you are able to travel to Africa. However, Africa is really hard at level 20 so you might want to stay here a bit longer and fight in Wolf Cave. What's interesting about the expedition is that the boss - Werewolf awards really good experience, this is if you are able to fight him without losing too much, otherwise he is not worth if you lose 50% of the fights.
 
@@ -534,7 +536,7 @@ It is long forgotten for which God this temple was erected for. Nonetheless, the
 
 **Real level to engage:** 60
 
-**Dungeon:** Yes, **[Hidden Grave](italy-dungeons "Hidden Grave")** - Entry Level 60
+**Dungeon:** Yes, **[Hidden Grave](/dungeons/italy-dungeons "Hidden Grave")** - Entry Level 60
 
 **Advanced Dungeon:** No
 
@@ -656,9 +658,9 @@ In the far east there is a barbarian village where barbarians live who have not 
 
 **Real level to engage:** 65
 
-**Dungeon:** Yes, **[In enemy hands](italy-dungeons "In enemy hands")** - Entry Level 65
+**Dungeon:** Yes, **[In enemy hands](/dungeons/italy-dungeons "In enemy hands")** - Entry Level 65
 
-**Advanced Dungeon:** Yes, [**Zagrash's Fort**](italy-dungeons "Zagrash's Fort") - Entry Level 78
+**Advanced Dungeon:** Yes, [**Zagrash's Fort**](/dungeons/italy-dungeons "Zagrash's Fort") - Entry Level 78
 
 **Additional Info:** What's typical for the barbarians is that they all have low armour. If you are doing fine in Ancient Temple you might not rush and start all over discovering and doing a new expedition. Rewards are not a lot greater than the Ancient Temple. What's fascinating is the damage of the Berserker. The boss is strong but good drops there.
 

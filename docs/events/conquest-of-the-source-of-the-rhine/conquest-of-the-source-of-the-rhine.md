@@ -1,6 +1,8 @@
 ---
 title: Conquest of the Source of the Rhine
-slug: /conquest-of-the-source-of-the-rhine/conquest-of-the-source-of-the-rhine
+slug: /events/conquest-of-the-source-of-the-rhine
+redirects:
+  - /conquest-of-the-source-of-the-rhine
 ---
 
 Conquest of the Source of the Rhine
@@ -75,7 +77,7 @@ Rewards
 
 ![1st opponent event prize](https://gladiatusfansite.blob.core.windows.net/images/Events/Event_1st_reward.png "1st opponent event prize")
 
-Here is an example of a Grindstone - [click](images/Events/Grindstone_reward.png "Red Grindstone").
+Here is an example of a Grindstone - [click](https://gladiatusfansite.blob.core.windows.net/images/Events/Grindstone_reward.png "Red Grindstone").
 
  
 

@@ -1,6 +1,8 @@
 ---
 title: Africa Expeditions
-slug: /africa-expeditions/africa-expeditions
+slug: /expeditions/africa-expeditions
+redirects:
+  - /africa-expeditions
 ---
 
 **Africa Expeditions**
@@ -50,7 +52,7 @@ It is the generous gift made by the Empire for the Umpokta. After the foundation
 **Real level to engage:** 25  
 
 
-**Dungeon:** Yes, **[Temple of Perdition](africa-dungeons "Temple of Perdition")** - Entry level 20
+**Dungeon:** Yes, **[Temple of Perdition](/dungeons/africa-dungeons "Temple of Perdition")** - Entry level 20
 
 **Advanced Dungeon:** No  
 
@@ -179,9 +181,9 @@ It is the generous gift made by the Empire for the Umpokta. After the foundation
 
 **Real level to engage: 32-33** 
 
-**Dungeon:** Yes, [**Abducted**](africa-dungeons "Abducted") - Entry level 25
+**Dungeon:** Yes, [**Abducted**](/dungeons/africa-dungeons "Abducted") - Entry level 25
 
-**Advanced Dungeon:** Yes, [**Under a Blood-red Sky**](africa-dungeons "Under a Blood-red Sky") - Entry level 86  
+**Advanced Dungeon:** Yes, [**Under a Blood-red Sky**](/dungeons/africa-dungeons "Under a Blood-red Sky") - Entry level 86  
 
 
 **Additional Info:** Funny how strong Man Eater is. You better stay with Tax Collector. Bone Shaman is really strong. Best if you farm Tax Collector until next expedition is available.  
@@ -309,7 +311,7 @@ There`s a rumour amongst the superstitious natives that magical rituals are held
 **Real level to engage:** 35  
 
 
-**Dungeon:** Yes, **[Chamber of Pyro](africa-dungeons "Chamber of Pyro")** - Entry level 30
+**Dungeon:** Yes, **[Chamber of Pyro](/dungeons/africa-dungeons "Chamber of Pyro")** - Entry level 30
 
 **Advanced Dungeon:** No  
 
@@ -447,9 +449,9 @@ Once a thriving Viking outpost, it has in the meantime become a shadow of its fo
 **Real level to engage:** 40-42  
 
 
-**Dungeon:** Yes, **[Poisoned Country](africa-dungeons "Poisoned Country")** - Entry Level 35
+**Dungeon:** Yes, **[Poisoned Country](/dungeons/africa-dungeons "Poisoned Country")** - Entry Level 35
 
-**Advanced Dungeon:** Yes, **[In the Heart of Decay](africa-dungeons "In the Heart of Decay")** - Entry Level 90  
+**Advanced Dungeon:** Yes, **[In the Heart of Decay](/dungeons/africa-dungeons "In the Heart of Decay")** - Entry Level 90  
 
 
 **Additional Info:** Crocodile is pretty weak so it can be attacked easily at lower level. Undead Holder is not as strong as well because he has very low Dexterity which means that he won't be hitting you a lot. Giant Water Snake is strong but beatable as well. Mokele Mbembe is a special case. Can spawn as low as Level 48 and stats are good but not impossible. There is one problem however. Its non-penetrable armor makes him a though opponent. At 7-9.5k it consumes almost all the damage a level ~40 gladiator can do.  
@@ -585,9 +587,9 @@ As far as the Empire is concerned, it is the high-point of civilisation amongst 
 **Real level to engage:** 75  
 
 
-**Dungeon:** Yes, **[Fairground](africa-dungeons "Fairground")** - Entry level 80
+**Dungeon:** Yes, **[Fairground](/dungeons/africa-dungeons "Fairground")** - Entry level 80
 
-**Advanced Dungeon:** Yes, [**Sasama's Last jouney**](africa-dungeons "Sasama's last journey") - Entry level 80  
+**Advanced Dungeon:** Yes, [**Sasama's Last jouney**](/dungeons/africa-dungeons "Sasama's last journey") - Entry level 80  
 
 
 **Additional Info:** Now there are strange things about this expedition. Tribal Warrior and Tribal Magician are pretty doable. However Spirit Warrior has the 3rd biggest Armor in the game. Seth High Priest is one good example of a high end boss. His stats and rewards and treasures are so high that in terms of gold, experience and honour he is among the 110+ bosses. There is something weird about the expedition in my encounters. I did not encounter any item drops while there.

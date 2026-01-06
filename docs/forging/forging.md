@@ -1,6 +1,8 @@
 ---
 title: Forging
-slug: /forging-2/forging-2
+slug: /forging/forging-2
+redirects:
+  - /forging-2
 ---
 
 Forging
@@ -50,7 +52,7 @@ You start dragging materials from your inventory to the Store Resources as shown
 
 https://www.youtube.com/watch?v=XbMyVZxPb2A
 
-**Chance of success** - depends on your character level versus the item level you are forging. If you are forging an item which is lower or within your character's [item level range](game-guide#Item-visibility "item level range"), you will be having optimal success chances of around 50-55%. The game has a maximum of 55% success chance. If you want to go higher, you can benefit from [Forging Tools](forging-tools "Forging Tools") or different Micro Events or Costumes.
+**Chance of success** - depends on your character level versus the item level you are forging. If you are forging an item which is lower or within your character's [item level range](/game-guide#Item-visibility "item level range"), you will be having optimal success chances of around 50-55%. The game has a maximum of 55% success chance. If you want to go higher, you can benefit from [Forging Tools](/forging/forging-tools "Forging Tools") or different Micro Events or Costumes.
 
 **Soul bound** - It always stays on 0%. Not currently known if this ever goes above 0%
 
@@ -89,6 +91,6 @@ https://www.youtube.com/watch?v=TSZ9YCaYawk
 -------------------------------
 
 - You have a total of 6 slots to forge up to 6 items at once. First two only cost ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") and the other 4 cost ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies"). The cost depends on the item level and the item type. Amulets being most expensive and can go as high as 10-20 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") and gloves/shoes/helmets the cheapest, between 3-9 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-- When planning a forge % success chance and when planning on using ![Gold Clover of Fortune](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Clover-gold.png "Gold Clover of Fortune") look for any ongoing events or costumes that could be buffing the forge success chance as the Clovers only boost the basic % success chance. Read more in the [Forging Tools](forging-tools "Forging Tools")
+- When planning a forge % success chance and when planning on using ![Gold Clover of Fortune](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Clover-gold.png "Gold Clover of Fortune") look for any ongoing events or costumes that could be buffing the forge success chance as the Clovers only boost the basic % success chance. Read more in the [Forging Tools](/forging/forging-tools "Forging Tools")
 - Do not gamble with forge success chance %. If you are forging something important, do not let it go below 100%. If seriously in trouble, you can go for 90% but don't go below that ever for a serious item. Unbelievable number of forges had failed on good %-es like 85+
 - Cancelling a forge will refund ALL materials in their original quality. The only thing you will loose is the ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") or ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") used to purchase the forging slot

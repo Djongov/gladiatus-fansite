@@ -1,6 +1,8 @@
 ---
 title: Underworld Medium Difficulty
-slug: /underworld-medium/underworld-medium
+slug: /underworld/underworld-medium
+redirects:
+  - /underworld-medium
 ---
 
 Underworld Medium Difficulty

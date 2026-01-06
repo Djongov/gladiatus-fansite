@@ -1,6 +1,8 @@
 ---
 title: Dark Catacombs
-slug: /dark-catacombs/dark-catacombs
+slug: /dungeons/germania-dungeons/dark-catacombs
+redirects:
+  - /dark-catacombs
 ---
 
 Dark Catacombs
@@ -12,7 +14,7 @@ Entry level: **40**
 
 Dungeon points to complete: **11**
 
-Level on which you can complete: **40. If you want to beat the boss on level 40, you will need to have ~Level 50 mercenaries, you need good and up to date weapons with or with almost 100 damage, and you need Uróthiens and Raylos gear on your damage dealers so their damage is high - 170 +. Here is a setup that is enough to land a kill on Lord Aesteron - [click](images/Dungeons/Germania/Dark_Catacombs/Lord_Aesteron_level_40_kill.png "Lord Aesteron kill on Level 40").**
+Level on which you can complete: **40. If you want to beat the boss on level 40, you will need to have ~Level 50 mercenaries, you need good and up to date weapons with or with almost 100 damage, and you need Uróthiens and Raylos gear on your damage dealers so their damage is high - 170 +. Here is a setup that is enough to land a kill on Lord Aesteron - [click](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Dark_Catacombs/Lord_Aesteron_level_40_kill.png "Lord Aesteron kill on Level 40").**
 
 Enemy and boss levels: **49-51**  
   
@@ -22,11 +24,11 @@ Boss item level drop: **50-61 ![Confirmed](https://gladiatusfansite.blob.core.wi
 
 Advanced Dungeon: **No**
 
-Parent Expedition: [Cave Temple](germania-expeditions#CaveTemple "Cave Temple")
+Parent Expedition: [Cave Temple](/expeditions/germania-expeditions#CaveTemple "Cave Temple")
 
-Previous Dungeon: [Poisoned Country](poisoned-country "Poisoned Country") (Level 35, Africa)
+Previous Dungeon: [Poisoned Country](/dungeons/africa-dungeons/poisoned-country "Poisoned Country") (Level 35, Africa)
 
-Next Dungeon: [With all its might](with-all-its-might "With all its might") (Level 45)
+Next Dungeon: [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might") (Level 45)
 
 **Description**
 

@@ -1,6 +1,8 @@
 ---
 title: Gladiatus Underworld
-slug: /underworld/underworld
+slug: /underworld
+redirects:
+  - /underworld
 ---
 
 Underworld
@@ -41,9 +43,9 @@ Here are some of the rules:
 
 \- Underworld consists of **4 Areas with 3 enemies and a boss** in each. Totaling of **16 enemies**
 
-\- Entering the Underworld you are using **another set of Expedition points - 18x ![Expedition point](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Expedition_point.png "Expedition point")**. The normal Expedition and Dungeon points outside of the Underworld are not consumed. If you run out of the 18 Underworld expedition points, **every attack starts to cost 1** ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") . This means that **you can have 2 defeats tops** if you want to finish Ruby-free/boost free. Also, it's good to know that [Blessing's of Apollo](game-guide#Blessing "Blessing's of Apollo") pact's ​"You have 10% chance of not using up any expedition points." works in the Underworld. The 10% expedition points increase however, doesn't work.
+\- Entering the Underworld you are using **another set of Expedition points - 18x ![Expedition point](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Expedition_point.png "Expedition point")**. The normal Expedition and Dungeon points outside of the Underworld are not consumed. If you run out of the 18 Underworld expedition points, **every attack starts to cost 1** ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") . This means that **you can have 2 defeats tops** if you want to finish Ruby-free/boost free. Also, it's good to know that [Blessing's of Apollo](/game-guide#Blessing "Blessing's of Apollo") pact's ​"You have 10% chance of not using up any expedition points." works in the Underworld. The 10% expedition points increase however, doesn't work.
 
-\- There is one way to top up your Underworld expedition points - Mobilisation, which drops from [Divine Chest of Faith](game-guide#Treasury "Divine Chest of Faith")
+\- There is one way to top up your Underworld expedition points - Mobilisation, which drops from [Divine Chest of Faith](/game-guide#Treasury "Divine Chest of Faith")
 
 ![Mobilisation](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Mobilisation.jpg "Mobilisation")
 
@@ -136,9 +138,9 @@ Cons:
 
 \- You will accumulate a lot of gold while farming expeditions with this costume so be aware of arena attacks. Make sure to have a good spending strategy. Use scrolls or deposits of amulet and rings. Sell them all, train a stat or more and start buying them off from the vendor one by one to spend your gold
 
-\- Even with such a great costume you will still miss some of the ordinary costume bonuses like Neptun's Might or the Wrath's Mountain Scaled Armor. No strategy around that. 2 out of 5 days you will be wearing this and the rest of the days - normal costumes. Except for events. [Event Costumes](events "Event Costumes") are also quite good and will make you wonder which to wear even more. Perhaps a combination of all during a festival event.
+\- Even with such a great costume you will still miss some of the ordinary costume bonuses like Neptun's Might or the Wrath's Mountain Scaled Armor. No strategy around that. 2 out of 5 days you will be wearing this and the rest of the days - normal costumes. Except for events. [Event Costumes](/events "Event Costumes") are also quite good and will make you wonder which to wear even more. Perhaps a combination of all during a festival event.
 
-Example of the Gold dropped by Dragon, the boss in [Koman Mountain](germania-expeditions#KomanMountain "Koman Mountain") (Level 108):
+Example of the Gold dropped by Dragon, the boss in [Koman Mountain](/expeditions/germania-expeditions#KomanMountain "Koman Mountain") (Level 108):
 
 ![Dis Pater Normal costume Gold](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Dis_Pater_costume_Gold.png "Dis Pater Normal costume Gold")
 

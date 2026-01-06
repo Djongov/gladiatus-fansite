@@ -1,6 +1,8 @@
 ---
 title: Poisoned Country
-slug: /poisoned-country/poisoned-country
+slug: /dungeons/africa-dungeons/poisoned-country
+redirects:
+  - /poisoned-country
 ---
 
 Poisoned Country
@@ -12,7 +14,7 @@ Entry level: **35**
 
 Dungeon points to complete: **12**
 
-Level on which you can complete: **35. In order to defeat the boss on level 35, you will need up to date Mercenary, Most if not all gear to be Uróthiens and Raylos or Sugos and good Weapons. 70 or 80 Damage at least. Here is an example of a first try kill and farm of Nithotep on entry level - 35. Click [here](images/Dungeons/Africa/Poisoned_Country/Nithotep_kill_35_level.png "Nithotep kill on Level 35").**
+Level on which you can complete: **35. In order to defeat the boss on level 35, you will need up to date Mercenary, Most if not all gear to be Uróthiens and Raylos or Sugos and good Weapons. 70 or 80 Damage at least. Here is an example of a first try kill and farm of Nithotep on entry level - 35. Click [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Poisoned_Country/Nithotep_kill_35_level.png "Nithotep kill on Level 35").**
 
 Enemy and boss levels: **44-46**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **42-48 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **45-55 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Lost Harbour](africa-expeditions#LostHarbour "Lost Harbour")
+Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions#LostHarbour "Lost Harbour")
 
-Advanced Dungeon: **Yes,** [In the Heart of Decay](in-the-heart-of-decay "In the Heart of Decay")
+Advanced Dungeon: **Yes,** [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay")
 
-Previous Dungeon: [Chamber of Pyro](chamber-of-pyro "Chamber of Pyro") (Level 30)
+Previous Dungeon: [Chamber of Pyro](/dungeons/africa-dungeons/chamber-of-pyro "Chamber of Pyro") (Level 30)
 
-Next Dungeon: [Dark Catacombs](dark-catacombs "Dark Catacombs") (Level 40, [Germania](germania-dungeons "Germania dungeons"))
+Next Dungeon: [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs "Dark Catacombs") (Level 40, [Germania](/dungeons/germania-dungeons "Germania dungeons"))
 
 **Description**
 

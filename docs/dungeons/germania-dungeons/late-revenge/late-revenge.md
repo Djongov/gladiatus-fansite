@@ -1,6 +1,8 @@
 ---
 title: Late Revenge
-slug: /late-revenge/late-revenge
+slug: /dungeons/germania-dungeons/late-revenge
+redirects:
+  - /late-revenge
 ---
 
 Late Revenge
@@ -20,13 +22,13 @@ Minions item level drop: **117-127 ![Confirmed](https://gladiatusfansite.blob.co
   
 Boss item level drop: **120-133 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Dragon Remains](germania-expeditions#DragonRemains "Dragon Remains")
+Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions#DragonRemains "Dragon Remains")
 
-Advanced Dungeon: **Yes,** [Alpha & Omega](alpha-omega "Alpha & Omega") (Level 120)
+Advanced Dungeon: **Yes,** [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega") (Level 120)
 
-Previous Dungeon: [Externsteine](externsteine "Externsteine") (Level 102)
+Previous Dungeon: [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine") (Level 102)
 
-Next Dungeon: [Alpha & Omega](alpha-omega "Alpha & Omega") (120)
+Next Dungeon: [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega") (120)
 
 **Description**
 

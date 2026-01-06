@@ -37,7 +37,7 @@ Hey friends, I have received a number of questions on how you can support me in 
  
 **19.09.2019**
 
-- Added a Translate function to the website which will translate the website actively and is pretty cool! Let me know on my email if there is a language missing! My email on the [About me](about-me "About me") page
+- Added a Translate function to the website which will translate the website actively and is pretty cool! Let me know on my email if there is a language missing! My email on the [About me](/about-me "About me") page
  
 **19.08.2019**
 
@@ -52,7 +52,7 @@ Hey friends, I have received a number of questions on how you can support me in 
  
 **12.08.2019**
 
-- We finally have the name and stats of the Last boss in the game - Antenocitius from [Mona Isle](britannia-expeditions#Mona_Isle "Mona Isle"). Check them out. Huge thanks to [WladimiraPutina](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=player&p=15764&sh=d41d8cd98f00b204e9800998ecf8427e "WladimiraPutina from DE201") from [DE201](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=highscore&sh=d41d8cd98f00b204e9800998ecf8427e "Ranklist of DE201"). Here is a [screenshot](images/Expeditions/Britannia/Mona_Isle/Antenocitius_kill.jpeg "Mona Isle Boss kill - Antenocitius") of his kill. He said it took him a lot of effort to do it on Level 200
+- We finally have the name and stats of the Last boss in the game - Antenocitius from [Mona Isle](/expeditions/britannia-expeditions#Mona_Isle "Mona Isle"). Check them out. Huge thanks to [WladimiraPutina](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=player&p=15764&sh=d41d8cd98f00b204e9800998ecf8427e "WladimiraPutina from DE201") from [DE201](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=highscore&sh=d41d8cd98f00b204e9800998ecf8427e "Ranklist of DE201"). Here is a [screenshot](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Antenocitius_kill.jpeg "Mona Isle Boss kill - Antenocitius") of his kill. He said it took him a lot of effort to do it on Level 200
 - Made some optimizations on the server side for more resilience and security
  
 **06.08.2019**
@@ -116,7 +116,7 @@ Hey friends, I have received a number of questions on how you can support me in 
 **12.11.2018**
 
 - I finally dinged level 120 and fought in the Alpha & Omega dungeon!!! I also immediately created the Dungeon page
-- Go check the [Alpha & Omega](alpha-omega "Alpha & Omega") dungeon page
+- Go check the [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega") dungeon page
  
 **09.11.2018**
 

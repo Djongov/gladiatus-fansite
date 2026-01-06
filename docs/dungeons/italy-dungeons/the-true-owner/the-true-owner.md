@@ -1,18 +1,20 @@
 ---
 title: The True Owner
-slug: /the-true-owner/the-true-owner
+slug: /dungeons/italy-dungeons/the-true-owner
+redirects:
+  - /the-true-owner
 ---
 
 The True Owner
 ==============
 
-The True Owner is the Advanced Dungeon of [The Dragon Stronghold](the-dragon-stronghold "The Dragon Stronghold") in Misty Mountains. It is in between [The Last Resort](the-last-resort "The Last Resort") and [Gioll Passage](gioll-passage "Gioll Passage") with 2-3 levels difference. Knowing that The Last Resort is 14 dungeon points long this one is a real upgrade in any direction
+The True Owner is the Advanced Dungeon of [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold") in Misty Mountains. It is in between [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort") and [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage") with 2-3 levels difference. Knowing that The Last Resort is 14 dungeon points long this one is a real upgrade in any direction
 
 Entry level: **70**
 
 Dungeon points to complete: **12**
 
-Level on which you can complete: **70. The boss isn't challenging for the well-geared. If you are farming Captain Kratos in your previous dungeon you will only need a slight upgrade to be able to beat Gernasch. Here is a setup of a level 70 kill - [here](images/Dungeons/Italy/The_True_Owner/Gernasch_kill_Level_70.png "Gernasch kill on Level 70").**
+Level on which you can complete: **70. The boss isn't challenging for the well-geared. If you are farming Captain Kratos in your previous dungeon you will only need a slight upgrade to be able to beat Gernasch. Here is a setup of a level 70 kill - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_True_Owner/Gernasch_kill_Level_70.png "Gernasch kill on Level 70").**
 
 Enemy and boss levels: **77-83 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **78-91 ![Verified](https://gladiatusfansite.blob.core.
    
 Boss item level drop: **81-89**
 
-Parent Expedition: [Misty Mountains](italy-expeditions#MistyMountains "Misty Mountains")
+Parent Expedition: [Misty Mountains](/expeditions/italy-expeditions#MistyMountains "Misty Mountains")
 
-Advanced Dungeon: **This is the Advanced Dungeon of** [The Dragon Stronghold](the-dragon-stronghold "The Dragon Stronghold") (Level 10)
+Advanced Dungeon: **This is the Advanced Dungeon of** [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold") (Level 10)
 
-Previous Dungeon: [The Last Resort](the-last-resort "The Last Resort") (Level 68)
+Previous Dungeon: [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort") (Level 68)
 
-Next Dungeon: [Gioll Passage](gioll-passage "Gioll Passage") (Level 73)
+Next Dungeon: [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage") (Level 73)
 
 **Description**
 

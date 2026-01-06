@@ -1,6 +1,8 @@
 ---
 title: Revenge of the Dead
-slug: /revenge-of-the-dead/revenge-of-the-dead
+slug: /events/revenge-of-the-dead
+redirects:
+  - /revenge-of-the-dead
 ---
 
 Revenge of the Dead
@@ -78,7 +80,7 @@ Rewards
 
 ![1st opponent event prize](https://gladiatusfansite.blob.core.windows.net/images/Events/Event_1st_reward.png "1st opponent event prize")
 
-Here is an example of a Grindstone - [click](images/Events/Grindstone_reward.png "Red Grindstone").
+Here is an example of a Grindstone - [click](https://gladiatusfansite.blob.core.windows.net/images/Events/Grindstone_reward.png "Red Grindstone").
 
  
 

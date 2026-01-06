@@ -1,6 +1,8 @@
 ---
 title: Britannia Expeditions
-slug: /britannia-expeditions/britannia-expeditions
+slug: /expeditions/britannia-expeditions
+redirects:
+  - /britannia-expeditions
 ---
 
 Britannia Expeditions

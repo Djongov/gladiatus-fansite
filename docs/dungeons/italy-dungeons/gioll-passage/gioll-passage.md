@@ -1,18 +1,20 @@
 ---
 title: Gioll Passage
-slug: /gioll-passage/gioll-passage
+slug: /dungeons/italy-dungeons/gioll-passage
+redirects:
+  - /gioll-passage
 ---
 
 Gioll Passage
 =============
 
-Gioll Passage is the Advanced Dungeon of [The Cave of Dark intrigue](the-cave-of-dark-intrigue "The Cave of Dark intrigue") in the Wolf Cave expedition. It's one of the intermediate Italy dungeons in the mid-high levels and is probably going to serve you only a few levels. It has a strong boss with a strong drop. Real challenge fro the best of Gladiators. It's only 6 dungeon points in length so you can properly farm this dungeon. Boss drops are very good.
+Gioll Passage is the Advanced Dungeon of [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue") in the Wolf Cave expedition. It's one of the intermediate Italy dungeons in the mid-high levels and is probably going to serve you only a few levels. It has a strong boss with a strong drop. Real challenge fro the best of Gladiators. It's only 6 dungeon points in length so you can properly farm this dungeon. Boss drops are very good.
 
 Entry level: **73**
 
 Dungeon points to complete: **6**
 
-Level on which you can complete: **Boss is hard this time. If you are top geared you can expect to beat him on 73-75 and you better do because the drops are good and the dungeon is quick. Now, here is a setup of the very minimum to kill him. This is a lucky kill that is 1 in 10 but at least gives you an idea of what you need in terms of stats. Mercs should be 300 or 300+ damage. All 80+ in level and full Dex. Healer should be ~1100 healing and tank must be full on Charisma and Agility. Here is the setup of the bare minimum to defeat him - [here](images/Dungeons/Italy/Gioll_Passage/Fenrirson_kill_73.png "Fenrirson kill on 73").**
+Level on which you can complete: **Boss is hard this time. If you are top geared you can expect to beat him on 73-75 and you better do because the drops are good and the dungeon is quick. Now, here is a setup of the very minimum to kill him. This is a lucky kill that is 1 in 10 but at least gives you an idea of what you need in terms of stats. Mercs should be 300 or 300+ damage. All 80+ in level and full Dex. Healer should be ~1100 healing and tank must be full on Charisma and Agility. Here is the setup of the bare minimum to defeat him - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Gioll_Passage/Fenrirson_kill_73.png "Fenrirson kill on 73").**
 
 Enemy and boss levels: **82-84**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **80-86 ![Verified](https://gladiatusfansite.blob.core.
   
 Boss item level drop: **83-92 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
 
-Parent Expedition: [Wolf Cave](italy-expeditions#WolfCave "Wolf Cave")
+Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions#WolfCave "Wolf Cave")
 
-Advanced Dungeon: **This is the Advanced Dungeon of** [The Cave of Dark intrigue](the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15)
+Advanced Dungeon: **This is the Advanced Dungeon of** [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15)
 
-Previous Dungeon: [The True Owner](the-true-owner "The True Owner") (Level 70)
+Previous Dungeon: [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner") (Level 70)
 
-Next Dungeon: [Zagrash's Fort](zagrashs-fort "Zagrash's Fort") (Level 78)
+Next Dungeon: [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort") (Level 78)
 
 **Description**
 

@@ -46,7 +46,7 @@ Sugos (22)
 
 [Ichorus (80)](#Ichorus "Ichorus ")
 
-[Marcus (81)](item-prefixes#Marcus "Marcus")
+[Marcus (81)](/prefixes/item-prefixes#Marcus "Marcus")
 
 [Lucius (84)](#Lucius "Lucius")
 
@@ -56,7 +56,7 @@ Sugos (22)
 
 [Antonius (92)](#Antonius "Antonius")
 
-[Vergilius (95)](item-prefixes#Vergilius "Vergilius")
+[Vergilius (95)](/prefixes/item-prefixes#Vergilius "Vergilius")
 
 [Titanius (98)](#Titanius "Titanius")
 

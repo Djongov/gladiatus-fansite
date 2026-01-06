@@ -1,18 +1,20 @@
 ---
 title: The Last Resort
-slug: /the-last-resort/the-last-resort
+slug: /dungeons/italy-dungeons/the-last-resort
+redirects:
+  - /the-last-resort
 ---
 
 The Last Resort
 ===============
 
-The Last Resort is the advanced dungeon of Pirate Harbour and [On the Run](on-the-run "On the Run") dungeon. Its entry level is an unusual but surely welcomed one. Dungeon is extremely long. This is also the first "Advanced" version of a dungeon in the game.
+The Last Resort is the advanced dungeon of Pirate Harbour and [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run") dungeon. Its entry level is an unusual but surely welcomed one. Dungeon is extremely long. This is also the first "Advanced" version of a dungeon in the game.
 
 Entry level: **68**
 
 Dungeon points to complete: **14**
 
-Level on which you can complete: **68 shouldn't be a problem. Boss doesn't seem to be hard. Better weapons and better Mercenary levels compared to previous dungeon and you should be fine. Here is a screenshot of a kill on level 68 - [here](images/Dungeons/Italy/The_Last_Resort/Captain_Kratos_kill_68_level.png "Captain Kratos kill on 68 Level").**
+Level on which you can complete: **68 shouldn't be a problem. Boss doesn't seem to be hard. Better weapons and better Mercenary levels compared to previous dungeon and you should be fine. Here is a screenshot of a kill on level 68 - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Last_Resort/Captain_Kratos_kill_68_level.png "Captain Kratos kill on 68 Level").**
 
 Enemy and boss levels: **77-79**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **75-81 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **76-89 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Pirate Harbour](italy-expeditions#PirateHarbour "Italy - Pirate Harbour - Advanced")
+Parent Expedition: [Pirate Harbour](/expeditions/italy-expeditions#PirateHarbour "Italy - Pirate Harbour - Advanced")
 
-Advanced Dungeon: **This is the Advanced dungeon of** [On the Run](on-the-run "On the Run") (Level 10)
+Advanced Dungeon: **This is the Advanced dungeon of** [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run") (Level 10)
 
-Previous Dungeon: [In enemy hands](in-enemy-hands "In enemy hands") (Level 65)
+Previous Dungeon: [In enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In enemy hands") (Level 65)
 
-Next Dungeon: [The True Owner](the-true-owner "The True Owner") (Level 70)
+Next Dungeon: [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner") (Level 70)
 
 **Description**
 

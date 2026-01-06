@@ -1,6 +1,8 @@
 ---
 title: Game Updates
-slug: /game-updates/game-updates
+slug: /game-updates
+redirects:
+  - /game-updates
 ---
 
 Game Updates and patch information

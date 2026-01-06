@@ -1,6 +1,8 @@
 ---
 title: Chamber of Pyro
-slug: /chamber-of-pyro/chamber-of-pyro
+slug: /dungeons/africa-dungeons/chamber-of-pyro
+redirects:
+  - /chamber-of-pyro
 ---
 
 Chamber of Pyro
@@ -12,7 +14,7 @@ Entry level: **30**
 
 Dungeon points to complete: **10-21. Most of the times it will be between 10-14. 21 is hypothetically the worst luck possible**
 
-Level on which you can complete: **Minions are easy. Pyro is a bit harder but you can kill him with your Abucted mercenary and gear, just make sure you upgrade your Mercenary to current levels (~40 level mercenaries) and upgrade your weapons with 70 damage +. Here is an example of a setup that kills Pyro on level 30 - [here](images/Dungeons/Africa/Chamber_of_Pyro/Pyro_kill_30_level.png "Pyro kill on level 30").**
+Level on which you can complete: **Minions are easy. Pyro is a bit harder but you can kill him with your Abucted mercenary and gear, just make sure you upgrade your Mercenary to current levels (~40 level mercenaries) and upgrade your weapons with 70 damage +. Here is an example of a setup that kills Pyro on level 30 - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Chamber_of_Pyro/Pyro_kill_30_level.png "Pyro kill on level 30").**
 
 Enemy and boss levels: **39-41**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **38-43 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **38-49 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Blood Cave](africa-expeditions#BloodCave "Blood Cave")
+Parent Expedition: [Blood Cave](/expeditions/africa-expeditions#BloodCave "Blood Cave")
 
 Advanced Dungeon: **No**
 
-Previous Dungeon: [Abducted](Abducted "Abducted") (Level 25)
+Previous Dungeon: [Abducted](/dungeons/africa-dungeons/abducted "Abducted") (Level 25)
 
-Next Dungeon: [Poisoned Country](poisoned-country "Poisoned Country") (Level 35)
+Next Dungeon: [Poisoned Country](/dungeons/africa-dungeons/poisoned-country "Poisoned Country") (Level 35)
 
 **Description**
 

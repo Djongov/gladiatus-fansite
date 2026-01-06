@@ -1,6 +1,6 @@
 ---
 title: Zagrash`s Fort
-slug: /zagrashs-fort/zagrash-s-fort
+slug: /zagrashs-fort
 ---
 
 Zagrash`s Fort
@@ -18,7 +18,7 @@ Level on which you can complete: **Realistically 80-85. Extremely hard boss, ver
 - **At least 400 damage and Full Dexterity on all 3 Damage mercs, at least 1400 Healing and Full Charisma and Agility on the tank with at least 8500 Armour**
 - **Get Ichorus gear but don't put too many. You don't want your Mercs to be below 3500 health for sure. At this level you might even get some Gaius/Antonius gear. If you get, that's perfect but Ichorus is also fine as long as you keep them in good health points**
  
- **He is one of the most complex bosses when it comes to his special abilities. They are devastating mass damage attacks and impenetrable shields that protect him. Read about his special abilities on the bottom of this page. Here is a setup of a 82 level kill which is far from farming - [here](images/Dungeons/Italy/Zagrashs_Fort/Zagrash_Kill_82_level.png "Zagrash on Level 82"). For farming state or early kill states read the Zagrash guide [here](#).**
+ **He is one of the most complex bosses when it comes to his special abilities. They are devastating mass damage attacks and impenetrable shields that protect him. Read about his special abilities on the bottom of this page. Here is a setup of a 82 level kill which is far from farming - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Zagrashs_Fort/Zagrash_Kill_82_level.png "Zagrash on Level 82"). For farming state or early kill states read the Zagrash guide [here](#).**
 
 Enemy and boss levels: **87-89**  
   
@@ -26,13 +26,13 @@ Minions item level drop: **85-91 ![Verified](https://gladiatusfansite.blob.core.
   
 Boss item level drop: **86-99 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
 
-Parent Expedition: [Barbarian Village](italy-expeditions#BarbarianVillage "Barbarian Village")
+Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions#BarbarianVillage "Barbarian Village")
 
-Advanced Dungeon: **This is the Advanced Dungeon of** [In Enemy hands](in-enemy-hands "In Enemy hands") (Level 65)
+Advanced Dungeon: **This is the Advanced Dungeon of** [In Enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In Enemy hands") (Level 65)
 
-Previous Dungeon: [Gioll Passage](gioll-passage "Gioll Passage") (Level 73)
+Previous Dungeon: [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage") (Level 73)
 
-Next Dungeon: [Fairground](Fairground "Fairground") (Level 80, [Africa](africa-dungeons "Africa dungeons")) or [Mysterious Laboratory](mysterious-laboratory "Mysterious Laboratory") (Level 80, [Germania](germania-dungeons "Germania dungeons"))
+Next Dungeon: [Fairground](/dungeons/africa-dungeons/fairground "Fairground") (Level 80, [Africa](/dungeons/africa-dungeons "Africa dungeons")) or [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory "Mysterious Laboratory") (Level 80, [Germania](/dungeons/germania-dungeons "Germania dungeons"))
 
 **Description**
 

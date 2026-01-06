@@ -1,6 +1,8 @@
 ---
 title: On the Run
-slug: /on-the-run/on-the-run
+slug: /dungeons/italy-dungeons/on-the-run
+redirects:
+  - /on-the-run
 ---
 
 On the Run
@@ -20,13 +22,13 @@ Minions item level drop: **13-16 ![Confirmed](https://gladiatusfansite.blob.core
 
 Boss item level drop: **15-18 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: **[Pirate Harbour](italy-expeditions#PirateHarbour "Pirate Harbour")**
+Parent Expedition: **[Pirate Harbour](/expeditions/italy-expeditions#PirateHarbour "Pirate Harbour")**
 
-Advanced Dungeon: **Yes,** [The Last Resort](the-last-resort "The Last Resort") (Level 73)
+Advanced Dungeon: **Yes,** [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort") (Level 73)
 
-Previous Dungeon: [Gustavos Country House](gustavos-country-house "Gustavos Country House") (Level 10)
+Previous Dungeon: [Gustavos Country House](/dungeons/italy-dungeons/gustavos-country-house "Gustavos Country House") (Level 10)
 
-Next Dungeon: [The Dragon Stronghold](the-dragon-stronghold "The Dragon Stronghold") (Level 10)
+Next Dungeon: [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold") (Level 10)
 
 **Description**
 

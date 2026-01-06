@@ -1,6 +1,8 @@
 ---
 title: Britannia Dungeons
-slug: /britannia-dungeons/britannia-dungeons
+slug: /dungeons/britannia-dungeons
+redirects:
+  - /britannia-dungeons
 ---
 
 Britannia Dungeons

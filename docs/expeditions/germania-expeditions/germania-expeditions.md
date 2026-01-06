@@ -1,6 +1,8 @@
 ---
 title: Germania Expeditions
-slug: /germania-expeditions/germania-expeditions
+slug: /expeditions/germania-expeditions
+redirects:
+  - /germania-expeditions
 ---
 
 **Germania Expeditions**
@@ -51,7 +53,7 @@ We are born from ashes and ashes we will become. Doesn`t it then make sense for 
 **Real level to engage:** 40  
 
 
-**Dungeon:** Yes, **[Dark Catacombs](germania-dungeons "Dark Catacombs")** - Entry level 40
+**Dungeon:** Yes, **[Dark Catacombs](/dungeons/germania-dungeons "Dark Catacombs")** - Entry level 40
 
 **Advanced Dungeon:** No  
 
@@ -193,9 +195,9 @@ The Green Forest is a bit hard. No problem in beating the Giant Wild Boar but th
 **Real level to engage:** 45  
 
 
-**Dungeon:** Yes, **[With all its might](germania-dungeons "With all its might")** - Entry Level 45
+**Dungeon:** Yes, **[With all its might](/dungeons/germania-dungeons "With all its might")** - Entry Level 45
 
-**Advanced Dungeon:** Yes,[ **Externsteine**](germania-dungeons "Externsteine") - Entry Level 102  
+**Advanced Dungeon:** Yes,[ **Externsteine**](/dungeons/germania-dungeons "Externsteine") - Entry Level 102  
 
 
 **Additional Info:** Boar is really weak so it's doable as soon as you hit 45. You could try Swamp Lord because he is not very strong. You could even try Swamp Spirit. The creatures in this expedition are quite weak with the exception of the Werebear who, same as Soulless, is practically unbeatable on 45-50 levels. The Damage of the Werebear is Divine. It is 333 which is the damage of a 100 level creature.
@@ -323,7 +325,7 @@ The fertile flora and fauna of the area attracts many tribes. That is why it is 
 
 **Real level to engage:**
 
-**Dungeon:** Yes, [**Viking Camp**](germania-dungeons "Viking Camp") - Entry Level 50
+**Dungeon:** Yes, [**Viking Camp**](/dungeons/germania-dungeons "Viking Camp") - Entry Level 50
 
 **Advanced Dungeon:** No  
 
@@ -467,7 +469,7 @@ The loss of the cave temple poses a considerable problem to the dwellers: Where 
 **Real level to engage:** 55  
 
 
-**Dungeon:** Yes, [**Mysterious Laboratory**](germania-dungeons "Mysterious Laboratory") - Entry level **80**
+**Dungeon:** Yes, [**Mysterious Laboratory**](/dungeons/germania-dungeons "Mysterious Laboratory") - Entry level **80**
 
 **Advanced Dungeon:** No  
 

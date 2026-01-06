@@ -1,6 +1,8 @@
 ---
 title: War Against The Numidians
-slug: /war-against-the-numidians/war-against-the-numidians
+slug: /events/war-against-the-numidians
+redirects:
+  - /war-against-the-numidians
 ---
 
 War Against The Numidians
@@ -78,7 +80,7 @@ Rewards
 
 ![1st opponent event prize](https://gladiatusfansite.blob.core.windows.net/images/Events/Event_1st_reward.png "1st opponent event prize")
 
-Here is an example of a Grindstone - [click](images/Events/Grindstone_reward.png "Red Grindstone").
+Here is an example of a Grindstone - [click](https://gladiatusfansite.blob.core.windows.net/images/Events/Grindstone_reward.png "Red Grindstone").
 
  
 

@@ -1,6 +1,8 @@
 ---
 title: Germania Dungeons
-slug: /germania-dungeons/germania-dungeons
+slug: /dungeons/germania-dungeons
+redirects:
+  - /germania-dungeons
 ---
 
 Germania Dungeons
@@ -10,7 +12,7 @@ Germania contains the least number of dungeons but they are all really important
 
 Click on each dungeon link (+picture) to open the full guide of the dungeon
 
-**Level 40 - [Dark Catacombs](dark-catacombs "Dark Catacombs") (Ancient Temple)**
+**Level 40 - [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs "Dark Catacombs") (Ancient Temple)**
 
 [![Dark Catacombs](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Dark_Catacombs/Dark_Catacombs_Overview2.png "Dark Catacombs")](dark-catacombs "Dark Catacombs")
 
@@ -28,7 +30,7 @@ Lord Aesteron
 
 ---
 
-**Level 45 - [With all its might](with-all-its-might "With all its might") (The green forest)**
+**Level 45 - [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might") (The green forest)**
 
 [![With All its might](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/With_all_its_might/With_all_its_might_overview.png "With All its might")](with-all-its-might "With all its might")
 
@@ -46,7 +48,7 @@ Oak Lord
 
 ---
 
-**Level 50 - [Viking Camp](viking-camp "Viking Camp") (Cursed Village)**
+**Level 50 - [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking Camp") (Cursed Village)**
 
 [![Viking Camp](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Viking_Camp/Viking_Camp_Overview.png "Viking Camp")](viking-camp "Viking Camp")
 
@@ -64,7 +66,7 @@ Homo Nautilus
 
 ---
 
-**Level 80 - [Mysterious Laboratory](mysterious-laboratory "Mysterious Laboratory") (Death Hill)**
+**Level 80 - [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory "Mysterious Laboratory") (Death Hill)**
 
 [![Mysterious Laboratory](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Mysterious_Laboratory/Mysterious_Laboratory_Overview.png "Mysterious Laboratory")](mysterious-laboratory "Mysterious Laboratory")
 
@@ -82,7 +84,7 @@ Frank N. Stein
 
 ---
 
-**Level 102 - [Externsteine](Externsteine "Externsteine") (The green forest Advanced)**
+**Level 102 - [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine") (The green forest Advanced)**
 
 [![Externsteine](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Externsteine/Externsteine_Overview.png "Externsteine")](Externsteine "Externsteine")
 
@@ -100,7 +102,7 @@ Wrath Mountain
 
 ---
 
-**Level 112 - [Late Revenge](late-revenge "Late Revenge") (Dragon Remains)**
+**Level 112 - [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge") (Dragon Remains)**
 
 [![Late Revenge](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Late_Revenge/Late_Revenge_Overview.png "Late Revenge")](late-revenge "Late Revenge")
 
@@ -118,7 +120,7 @@ Valerius Filius Gustavo
 
 ---
 
-**Level 120 - [Alpha & Omega](Alpha-Omega "Alpha & Omega") (Dragon Remains Advanced)**
+**Level 120 - [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega") (Dragon Remains Advanced)**
 
 **Boss:**
 

@@ -66,7 +66,7 @@ If you drag an item you will be able to see what the repair will require. Repair
 
 ![Repairing an item](https://gladiatusfansite.blob.core.windows.net/images/Forging/Conditioning/Workbench_interface2.png "Repairing an item")
 
-Repairing an item requires [Forging Goods (materials)](forging-goods "Forging Goods"). It works just like [Forging](forging-2 "Forging"). You will purchase the workbench slot and then you will be able to start dragging materials into the bench. First two workbench slots cost ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") and the other 4 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
+Repairing an item requires [Forging Goods (materials)](/forging/forging-goods "Forging Goods"). It works just like [Forging](/forging/forging-2 "Forging"). You will purchase the workbench slot and then you will be able to start dragging materials into the bench. First two workbench slots cost ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") and the other 4 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
 Once you purchase the slot you can start dragging materials.
 

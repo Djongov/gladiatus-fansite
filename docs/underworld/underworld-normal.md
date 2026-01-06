@@ -1,6 +1,8 @@
 ---
 title: Underworld Normal Difficulty
-slug: /underworld-normal/underworld-normal
+slug: /underworld/underworld-normal
+redirects:
+  - /underworld-normal
 ---
 
 Underworld Normal Difficulty

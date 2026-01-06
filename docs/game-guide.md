@@ -1,6 +1,8 @@
 ---
 title: Gladiatus Game Guide
-slug: /game-guide/game-guide
+slug: /game-guide
+redirects:
+  - /game-guide
 ---
 
 Gladiatus Beginner's Guide
@@ -473,7 +475,7 @@ Godly bonus rank 2
 
 Provides a holy oil that increases your agility for 3 days. However, if you are at max agility it will not work so it's not very useful. Certain [costumes](costumes "costumes") can lower the cooldown
 
-Check more info on Holy Oils [here](items#Misc "Holy Oils")
+Check more info on Holy Oils [here](/items#Misc "Holy Oils")
 
 Godly bonus rank 3
 
@@ -495,7 +497,7 @@ Godly bonus rank 2
 
 Provides a holy oil that increases your intelligence for 3 days. However, if you are at max intelligence it will not work so it's not very useful. Certain [costumes](costumes "costumes") can lower the cooldown
 
-Check more info on Holy Oils [here](items#Misc "Holy Oils")
+Check more info on Holy Oils [here](/items#Misc "Holy Oils")
 
 Godly bonus rank 3
 
@@ -517,7 +519,7 @@ Godly bonus rank 2
 
 Provides a holy oil that increases your dexterity for 3 days. However, if you are at max dexterity it will not work so it's not very useful. Certain [costumes](costumes "costumes") can lower the cooldown
 
-Check more info on Holy Oils [here](items#Misc "Holy Oils")
+Check more info on Holy Oils [here](/items#Misc "Holy Oils")
 
 Godly bonus rank 3
 
@@ -539,7 +541,7 @@ Godly bonus rank 2
 
 This is the most powerful of all gods blessings and is the only oil that will always work, regardless of stats. The damage it proves increases with level and lasts for 3 days. Certain [costumes](costumes "costumes") can lower the cooldown and increase the length of the oil
 
-Check more info on Holy Oils [here](items#Misc "Holy Oils")
+Check more info on Holy Oils [here](/items#Misc "Holy Oils")
 
 Godly bonus rank 3
 
@@ -561,7 +563,7 @@ Godly bonus rank 2
 
 Provides a holy oil that increases your charisma for 3 days. However, if you are at max charisma it will not work so it's not very useful. Certain [costumes](costumes "costumes") can lower the cooldown
 
-Check more info on Holy Oils [here](items#Misc "Holy Oils")
+Check more info on Holy Oils [here](/items#Misc "Holy Oils")
 
 Godly bonus rank 3
 
@@ -583,7 +585,7 @@ Godly bonus rank 2
 
 Very useful oil, however the amount of Armour it proves is very little, ~240 on level 114 character. It lasts for 3 days which is good
 
-Check more info on Holy Oils [here](items#Misc "Holy Oils")
+Check more info on Holy Oils [here](/items#Misc "Holy Oils")
 
 Godly bonus rank 3
 
@@ -703,7 +705,7 @@ Fortunas Die can also drop from mobs as part of the primary drop
 
 ![Hamper](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/hamper.jpg "Hamper")
 
-Hamper is essentially 1x Cervisia ![Cervisia](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Food/special_food/Cervisia.gif "Cervisia")which is a special type of food which gives you 1 day of Centurion. More about it [here](items#Special-food "Special foods").
+Hamper is essentially 1x Cervisia ![Cervisia](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Food/special_food/Cervisia.gif "Cervisia")which is a special type of food which gives you 1 day of Centurion. More about it [here](/items#Special-food "Special foods").
 
 Hamper can only drop from Divine Chest.
 
@@ -974,10 +976,10 @@ or the Dice game where after a purchase of Rubies you are offered to roll a dice
 
  However, ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") can also be obtained without paying in few ways:
 
-- Very low drop % chance from mobs in the game (Expeditions, Dungeons, Events, Underworld). Here is [evidence](images/Startup_guide/Ruby_drop.png "Ruby drop"). There isn't an exact % drop chance but it is extremely low. Can be boosted by Micro Events or costumes
-- From the daily login bonuses. Here is [evidence](images/Startup_guide/Ruby_daily.png "Ruby drop"). 1-2 for a daily bonus and if Rubies are awarded from the bonus weekly it could be 4-6 Rubies. Here is [evidence](images/Startup_guide/Ruby_weekly_bonus.png "evidence").
-- Some Micro [Events](Events "Events") are buffing the entire server and raising the Ruby drop % from expeditions. [Ra's Light Robe](event-costumes "Ra's Light Robe") event costume increases Ruby drop from expeditions by 8%
-- Event items - [Special Food](items#Special-Food "Special Food") or [Event Items](items#Event "Event Items") can award Rubies or Centurio
+- Very low drop % chance from mobs in the game (Expeditions, Dungeons, Events, Underworld). Here is [evidence](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Ruby_drop.png "Ruby drop"). There isn't an exact % drop chance but it is extremely low. Can be boosted by Micro Events or costumes
+- From the daily login bonuses. Here is [evidence](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Ruby_daily.png "Ruby drop"). 1-2 for a daily bonus and if Rubies are awarded from the bonus weekly it could be 4-6 Rubies. Here is [evidence](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Ruby_weekly_bonus.png "evidence").
+- Some Micro [Events](/events "Events") are buffing the entire server and raising the Ruby drop % from expeditions. [Ra's Light Robe](/events/event-costumes "Ra's Light Robe") event costume increases Ruby drop from expeditions by 8%
+- Event items - [Special Food](/items#Special-Food "Special Food") or [Event Items](/items#Event "Event Items") can award Rubies or Centurio
  
 Where can you spend Rubies?
 
@@ -1327,11 +1329,11 @@ How rare is each quality?
 
     **Average**   **Green** 68.58%   **Blue** 27.40%   **Purple** 3.30%   **Orange** 0.70%   **Red** 0.01%   In one word - **Purple**, **Orange** and **Red** are extremely low with Red being unimaginably low
 
-**Purple** you can expect to see from the very beginning but very very rarely. The drop % chance increases to a more suitable level from [Dark Catacombs](germania-dungeons "Dark Catacombs").
+**Purple** you can expect to see from the very beginning but very very rarely. The drop % chance increases to a more suitable level from [Dark Catacombs](/dungeons/germania-dungeons "Dark Catacombs").
 
 **Orange** very rarely in the mid levels 30-40+ and considerably but more often but still very rarely after 102 level
 
-**Red** is so rare that you wouldn't expect one to drop for months or sometimes a year. Best way to obtain such an item is [Forging](forging "Forging")
+**Red** is so rare that you wouldn't expect one to drop for months or sometimes a year. Best way to obtain such an item is [Forging](/forging/forging-general "Forging")
 
 **Primary and Secondary drops**
 
@@ -1378,7 +1380,7 @@ So you can see that the game design restricts you from obtaining a higher than +
 
 - Dungeon bosses item level drop range is so wide that most of the times if you defeat a dungeon boss immediately on entry level, if he rolls to drop you an item of his higher item level range, it will be red for you and unwearable. But this isn't really considered unfair because this is usually just a few levels in difference. Here is an example:
  
-Poisoned Country dungeon. Entry level 35. Character is 35 well equipped and can defeat the boss immediately. The boss item level drop range is 45-54. On Level 35, everything above item level 51 will be in red and unwearable. Here is a direct example with a [screenshot](images/Startup_guide/Dungeons/example_of_high_level_drop_dungeon.png "screenshot"). So this seems like an example for exception where the game allows for higher item level drops to drop but it doesn't seem like a big issue because it's only few levels above which is not really that bad.
+Poisoned Country dungeon. Entry level 35. Character is 35 well equipped and can defeat the boss immediately. The boss item level drop range is 45-54. On Level 35, everything above item level 51 will be in red and unwearable. Here is a direct example with a [screenshot](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Dungeons/example_of_high_level_drop_dungeon.png "screenshot"). So this seems like an example for exception where the game allows for higher item level drops to drop but it doesn't seem like a big issue because it's only few levels above which is not really that bad.
 
 - Another way of obtaining a higher level item is Forging. The game has a built-in protection that will discourage you from trying to forge items that are more than +16 levels above your character by lowering the forge success chance significantly. This is how it goes:
  
@@ -1580,7 +1582,7 @@ Example: Character Level = 115. 115\*5 = 575
 
 **Health points**
 
-Another really important stat is health points. We already mentioned that Health points are closely related to Constitution stat and your character level. When you receive damage, your health drops with the amount of damage you have received. In Gladiatus you can heal yourself by eating food. More you can read more about it on the [Food](items#Food "Food") page. There are other ways to heal yourself, like using the Guild Medic, regenerate health over time just by waiting or using a 100% healing potion.
+Another really important stat is health points. We already mentioned that Health points are closely related to Constitution stat and your character level. When you receive damage, your health drops with the amount of damage you have received. In Gladiatus you can heal yourself by eating food. More you can read more about it on the [Food](/items#Food "Food") page. There are other ways to heal yourself, like using the Guild Medic, regenerate health over time just by waiting or using a 100% healing potion.
 
 Combat statistics
 -----------------
@@ -1766,7 +1768,7 @@ Costs 20 ![Ruby](https://gladiatusfansite.blob.core.windows.net/images/icon_rubi
 <a id="Expeditions"></a>Expeditions
 -----------------------------------
 
-This will be a very basic guide on what Expeditions are. If you are looking for particular expedition opponents and info on them, check out the big [Expeditions](expeditions "Expeditions") page.
+This will be a very basic guide on what Expeditions are. If you are looking for particular expedition opponents and info on them, check out the big [Expeditions](/expeditions "Expeditions") page.
 
 Expeditions are the most essential part of the game. Expeditions are "areas' in the country that you can fight in and unlock at a certain level. Fighting in an expedition costs expedition points - ![Expedition points](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Expedition_point.png "Expedition points"). 1 Attack against and expedition opponent costs 1 ![Expedition points](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Expedition_point.png "Expedition points"). The normal amount of expedition points you have is 12. If you are using Centurio they become 24. With certain Micro Events or Dis Pater Normal Costume they can increase even further. Attacking an opponent and spending an expedition point triggers a cooldown. The default cooldown is 10 minutes, with Centurio 5 minutes and different Micro Events or Costume can decrease this cooldown even further. If you don't want to wait for the cooldown and you want to attack immediately, you can do so but it will cost you 1x ![Ruby](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Ruby") or 1x ![Holy Hourglass](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Holy_Hourglass.png "Holy Hourglass"). If you have ![Holy Hourglass](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Holy_Hourglass.png "Holy Hourglass") it will always take precedence over ![Ruby](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Ruby").
 
@@ -1790,7 +1792,7 @@ This is how a completely learned opponent will look like
 
 ![Opponent stats](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Dragon_Remains/Dracolich_stats.png "Opponent stats")
 
-However, this info is not very specific and will not give you exact details of the stats of the opponent. You can see this on the [Expeditions](expeditions "Expeditions") page where I have a lot more info on expeditions in general.
+However, this info is not very specific and will not give you exact details of the stats of the opponent. You can see this on the [Expeditions](/expeditions "Expeditions") page where I have a lot more info on expeditions in general.
 
 Have in mind that [Event](#Events "Event") expeditions and [Underworld](#Underworld "Underworld") are also types of expeditions and the same rules apply there. More info on their respective sections and pages.
 
@@ -1861,7 +1863,7 @@ So where can you find dungeons? Dungeons are tight to Expeditions. If the partic
 
 ![Dungeon location](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Dungeons/Dungeon_location.png "Dungeon location")
 
-If there is no Dungeon tab - it means that there is no dungeon in this expedition. For a complete list of dungeons check out the big [Dungeons](Dungeons "Dungeons") page.
+If there is no Dungeon tab - it means that there is no dungeon in this expedition. For a complete list of dungeons check out the big [Dungeons](/dungeons "Dungeons") page.
 
 So once you click the Dungeon tab you will be presented with the options to enter the dungeon.
 
@@ -1881,7 +1883,7 @@ You can also cancel a dungeon and start from the beginning whenever you want by 
 
 So once you start the dungeon you will be fighting dungeon minions and the end game is to kill the dungeon boss. The dungeon boss is a lot harder than the minions but his rewards are quite awesome. He always drops an item (100% chance) and this item is always at least of **Blue** quality.
 
-To get to the boss you have to complete the dungeon quests. Dungeon quests are mostly concerned with just killing the minions but sometimes they are connected to finding an item to proceed ahead or just defeat some of the minions. Here is an example of quests in the [Hidden Grave](Hidden-Grave "Hidden Grave") dungeon.
+To get to the boss you have to complete the dungeon quests. Dungeon quests are mostly concerned with just killing the minions but sometimes they are connected to finding an item to proceed ahead or just defeat some of the minions. Here is an example of quests in the [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave") dungeon.
 
 ![Dungeon quests example](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Dungeons/Dungeon_quests.png "Dungeon quests example")
 
@@ -1889,7 +1891,7 @@ Once you complete the quests the boss will be ready to be engaged. Defeating the
 
 Dungeon minions and boss reward very few experience points and gold even on high levels. A dungeon opponent win will grant you gold, experience and instead of Honour - Fame. Fame is a stat that we talked about in the Character stats section of this page.
 
-So for more info on the Dungeons go to the [Dungeons](Dungeons "Dungeons") page.
+So for more info on the Dungeons go to the [Dungeons](/dungeons "Dungeons") page.
 
 **Fighting in Dungeons**
 

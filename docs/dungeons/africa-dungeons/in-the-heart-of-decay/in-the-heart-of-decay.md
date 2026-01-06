@@ -1,6 +1,8 @@
 ---
 title: In the Heart of Decay
-slug: /in-the-heart-of-decay/in-the-heart-of-decay
+slug: /dungeons/africa-dungeons/in-the-heart-of-decay
+redirects:
+  - /in-the-heart-of-decay
 ---
 
 In the Heart of Decay
@@ -16,7 +18,7 @@ Level on which you can complete: **90. Very interesting boss. Apart from the ama
 
 **Tips: Invest in tank gear - at this point Lucius is widely available, although with not good affixes. Take care of your stats with non-Lucius items and get your Agility and Charisma full, the rest fill up with Lucius gear to get as close as possible to 50% blocking and 11k+ Armour. As for damage dealers. Even if you are wearing the same weapons that you used to defeat Papa Sasama, it's all fine. Max damage around 445-450 should be fine for this boss. Just upgrade the level of the mercs. Buy new ones from the Auction House that are level 100+ with high Dexterity (close to 350 base Dexterity).**
 
-**Here is a setup of a level 90 kill with comfortable farming rate (sometimes you lose) - [here](images/Dungeons/Africa/In_the_Heart_of_Decay/Corruption_Kill_level_90.png "Corruption level 90 kill").**
+**Here is a setup of a level 90 kill with comfortable farming rate (sometimes you lose) - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/In_the_Heart_of_Decay/Corruption_Kill_level_90.png "Corruption level 90 kill").**
 
 Enemy and boss levels: **99-101**  
   
@@ -24,13 +26,13 @@ Minions item level drop: **97-103 ![Confirmed](https://gladiatusfansite.blob.cor
   
 Boss item level drop: **99-111 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**  
   
-Parent Expedition: [Lost Harbour](africa-expeditions#LostHarbour "Lost Harbour")
+Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions#LostHarbour "Lost Harbour")
 
-Advanced Dungeon**:** **Yes, this is the advanced dungeon of** [Poisoned Country (Level 35)](poisoned-country "Poisoned Country")
+Advanced Dungeon**:** **Yes, this is the advanced dungeon of** [Poisoned Country (Level 35)](/dungeons/africa-dungeons/poisoned-country "Poisoned Country")
 
-Previous Dungeon: [Under a Blood-red Sky](under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
+Previous Dungeon: [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
 
-Next Dungeon: [Sasama's last journey](sasama-s-last-journey "Sasama's last journey") (Level 92)  
+Next Dungeon: [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey") (Level 92)  
   
 **Description**  
   

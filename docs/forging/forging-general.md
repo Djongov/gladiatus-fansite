@@ -1,6 +1,8 @@
 ---
 title: Gladiatus Forging
-slug: /forging/forging
+slug: /forging/forging-general
+redirects:
+  - /forging
 ---
 
 Gladiatus Forging
@@ -10,21 +12,21 @@ Forging is by far the biggest change that ever came to Gladiatus. As any such ga
 
 So the Forging system is the ability to collect forging goods either by smelting gear or drops from your adventures to ultimately forge an item of your choosing by selecting the prefix and the suffix and to determine what the item quality will be based on the used forging goods. With this came the durability and conditioning of items. More about this below. This is what each component is:
 
-[Forging goods](forging-goods "Forging goods")
+[Forging goods](/forging/forging-goods "Forging goods")
 ----------------------------------------------
 
 Used to craft items. Click on the image below for extensive info
 
 [![Forging goods](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Forging_goods_overview.png "Forging goods")](forging-goods "Forging goods")
 
-[Forging](forging-2 "Forging")
+[Forging](/forging/forging-2 "Forging")
 ------------------------------
 
 Using the forging goods and the required recipe you can forge items of our choosing. Click on the image below for extensive info
 
 [![Forging](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forge/forging.png "Forging")](forging-2 "Forging")
 
-[Smelting](Smelting "Smelting")
+[Smelting](/forging/smelting "Smelting")
 -------------------------------
 
 You can smelt items that you don't need and smelt them down to the basic forging goods. Click on the image below for extensive info
@@ -38,7 +40,7 @@ Workbench gives you the ability to condition an item increasing its strength and
 
 [![Workbench](https://gladiatusfansite.blob.core.windows.net/images/Forging/Conditioning/workbench.png "Workbench")](repair "Item Repair and Conditioning")
 
-[Forging Tools](forging-tools "Forging Tools")
+[Forging Tools](/forging/forging-tools "Forging Tools")
 ----------------------------------------------
 
 Forging tools are a paid optional extra to boost your forging success chance, forging time and etc.

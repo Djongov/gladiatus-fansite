@@ -1,6 +1,8 @@
 ---
 title: Temple of Perdition
-slug: /temple-of-perdition/temple-of-perdition
+slug: /dungeons/africa-dungeons/temple-of-perdition
+redirects:
+  - /temple-of-perdition
 ---
 
 Temple of Perdition
@@ -12,7 +14,7 @@ Entry level: **20**
 
 Dungeon points to complete: **7**
 
-Level on which you can complete: **Extremely hard boss. Minions are hard but still a lot weaker than Themba. If you are slowly paced, extremely well geared you might be able to down him on 23-24 level. Here is a screenshot of the setup of Themba kill on level 24 - [here](images/Dungeons/Africa/Temple_of_Perdition/Themba_kill_24.png "Themba kill on 24 lvl").**
+Level on which you can complete: **Extremely hard boss. Minions are hard but still a lot weaker than Themba. If you are slowly paced, extremely well geared you might be able to down him on 23-24 level. Here is a screenshot of the setup of Themba kill on level 24 - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Temple_of_Perdition/Themba_kill_24.png "Themba kill on 24 lvl").**
 
 Enemy and boss levels: **29-31**
 
@@ -20,13 +22,13 @@ Minions item level drop: **26-33 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **29-39 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Voodoo Temple](africa-expeditions#VoodooTemple "Voodoo Temple")
+Parent Expedition: [Voodoo Temple](/expeditions/africa-expeditions#VoodooTemple "Voodoo Temple")
 
 Advanced Dungeon: **No**
 
-Previous Dungeon: [The Cave of Dark intrigue](the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15, Italy)
+Previous Dungeon: [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15, Italy)
 
-Next Dungeon: [Abducted](abducted "Abducted") (Level 25)
+Next Dungeon: [Abducted](/dungeons/africa-dungeons/abducted "Abducted") (Level 25)
 
 **Description**
 

@@ -1,6 +1,8 @@
 ---
 title: Externsteine
-slug: /externsteine/externsteine
+slug: /dungeons/germania-dungeons/externsteine
+redirects:
+  - /externsteine
 ---
 
 Externsteine
@@ -12,7 +14,7 @@ Entry level: **102**
 
 Dungeon points to complete: ****6 (if you start with Tree Shepherd and ignore the Fanatics)****
 
-Level on which you can complete: ****102. You have enough time to gear up and prepare for this boss. Important to switch to the setup of dungeon character - tank, use a healing mercenary and 3x good Samnits/Murmillo with predominantly Antonius/Gaius (or any other high +Damage gear) and 500+ damage on the Samnits/Murmillos as the boss is immune to critical hits so you have to beat him with high overall damage . Here is an early setup of a 96 level (6 levels before Entry level) kill in Negotium X - [here](images/Dungeons/Germania/Externsteine/Wrath_Mountain_kill_96lvl.png "Wrath Mountain 96 Level kill"). Have in mind that you don't have to be this strong before 102, just make sure you are this strong at 102 so you can start farming this sweet instance right away.****
+Level on which you can complete: ****102. You have enough time to gear up and prepare for this boss. Important to switch to the setup of dungeon character - tank, use a healing mercenary and 3x good Samnits/Murmillo with predominantly Antonius/Gaius (or any other high +Damage gear) and 500+ damage on the Samnits/Murmillos as the boss is immune to critical hits so you have to beat him with high overall damage . Here is an early setup of a 96 level (6 levels before Entry level) kill in Negotium X - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Externsteine/Wrath_Mountain_kill_96lvl.png "Wrath Mountain 96 Level kill"). Have in mind that you don't have to be this strong before 102, just make sure you are this strong at 102 so you can start farming this sweet instance right away.****
 
 Enemy and boss levels: **111-113**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **107-117 ![Confirmed](https://gladiatusfansite.blob.co
   
 Boss item level drop: **109-123 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [The green forest](germania-expeditions#GF "The green forest")
+Parent Expedition: [The green forest](/expeditions/germania-expeditions#GF "The green forest")
 
-Advanced Dungeon: **Yes, it is the Advanced Dungeon of** [With all its might](with-all-its-might "With all its might") (Level 45)
+Advanced Dungeon: **Yes, it is the Advanced Dungeon of** [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might") (Level 45)
 
-Previous Dungeon: [Sasama's last journey](sasama-s-last-journey "Sasama's last journey") (Level 92, [Africa](africa-dungeons "Africa dungeons"))
+Previous Dungeon: [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey") (Level 92, [Africa](/dungeons/africa-dungeons "Africa dungeons"))
 
-Next Dungeon: [Late Revenge](late-revenge "Late Revenge") (Level 112)
+Next Dungeon: [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge") (Level 112)
 
 **Description**
 

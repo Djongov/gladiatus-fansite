@@ -1,6 +1,8 @@
 ---
 title: Desert Nightmare
-slug: /desert-nightmare/desert-nightmare
+slug: /events/desert-nightmare
+redirects:
+  - /desert-nightmare
 ---
 
 **Desert Nightmare**
@@ -85,7 +87,7 @@ Vulture of the ...
     - Fennec of the Underworld level = your char level + 15
     - Vulture of the Damned (boss) level = your char level +20
 - Activating Dis Pater Normal costume doesn't seem to boost or replenish any of the expedition points nor is leveling up
-- Mercurius' Robber's Garments drop from this event expedition. In my experience only the first expedition of the day has a chance to reward part of the costume. More info [here](events "Mercurius' Robber's Garments")
+- Mercurius' Robber's Garments drop from this event expedition. In my experience only the first expedition of the day has a chance to reward part of the costume. More info [here](/events "Mercurius' Robber's Garments")
 - Pumpkins drop from this event
  
 ![Mercurius' Robber's Garments drop](https://gladiatusfansite.blob.core.windows.net/images/Events/Event_Costumes/Mercurius_drop.png "Mercurius' Robber's Garments drop")

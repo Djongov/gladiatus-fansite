@@ -1,18 +1,20 @@
 ---
 title: Sasama`s last journey
-slug: /sasama-s-last-journey/sasama-s-last-journey
+slug: /dungeons/africa-dungeons/sasama-s-last-journey
+redirects:
+  - /sasama-s-last-journey
 ---
 
 Sasama`s last journey
 =====================
 
-Sasama`s last journey is the highest level dungeon in Africa and it will get you ready to depart to Germania for good. The story behind the dungeon is that in the previous lower level dungeon you have defeated the tribal lord Papa Sasama but something is happening in the village even after his death. You come back to investigate. Just 2 levels after In the Heart of Decay, you need to be very prepared to come here. Item level drops are slightly higher so you might want to fight through the dungeon and reset the dungeon before the boss and start over until you gear up to face him. You will stay here for a long time as the next dungeon is far away. The last minions are also very tough. You could be farming the boss easily and still sometimes loose against Voodoo Warrior or Spear Guard. Here is an example of a very good setup that still lost to Spear Guard. It's just that Spear Guard can critical hit very bad and killing your tank in 2 rounds and that's how you loose. Here is an example - click [here](images/Dungeons/Africa/Sasamas_Last_Journey/Spear_Guard_hard_hits.png "Spear Guard hard hits").
+Sasama`s last journey is the highest level dungeon in Africa and it will get you ready to depart to Germania for good. The story behind the dungeon is that in the previous lower level dungeon you have defeated the tribal lord Papa Sasama but something is happening in the village even after his death. You come back to investigate. Just 2 levels after In the Heart of Decay, you need to be very prepared to come here. Item level drops are slightly higher so you might want to fight through the dungeon and reset the dungeon before the boss and start over until you gear up to face him. You will stay here for a long time as the next dungeon is far away. The last minions are also very tough. You could be farming the boss easily and still sometimes loose against Voodoo Warrior or Spear Guard. Here is an example of a very good setup that still lost to Spear Guard. It's just that Spear Guard can critical hit very bad and killing your tank in 2 rounds and that's how you loose. Here is an example - click [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Sasamas_Last_Journey/Spear_Guard_hard_hits.png "Spear Guard hard hits").
 
 Entry level: **92**  
   
 Dungeon points to complete: **11**
 
-Level on which you can complete: **92. Boss is harder than corruption but very managable on 92. Here is a the setup of a character that farms the boss with very little losses on 92 Level - [here](images/Dungeons/Africa/Sasamas_Last_Journey/Ahehu_farm_92.png "Ahehu farm on 92"). Here is also a very early kill on level 87 (Negotium X) - [here](images/Dungeons/Africa/Sasamas_Last_Journey/Akhekhu_kill_87_lvl.png "Akhekhu kill 87").**  
+Level on which you can complete: **92. Boss is harder than corruption but very managable on 92. Here is a the setup of a character that farms the boss with very little losses on 92 Level - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Sasamas_Last_Journey/Ahehu_farm_92.png "Ahehu farm on 92"). Here is also a very early kill on level 87 (Negotium X) - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Sasamas_Last_Journey/Akhekhu_kill_87_lvl.png "Akhekhu kill 87").**  
   
 Enemy and boss levels: **101-103**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **97-107 ![Confirmed](https://gladiatusfansite.blob.cor
   
 Boss item level drop: **100-113 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Umpokta Tribe](africa-expeditions#UmpoktaTribe "Umpokta Tribe")
+Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions#UmpoktaTribe "Umpokta Tribe")
 
-Advanced Dungeon**:** **Yes, this is the Advanced Dungeon of** [Fairground](fairground "Fairground") (Level 80)
+Advanced Dungeon**:** **Yes, this is the Advanced Dungeon of** [Fairground](/dungeons/africa-dungeons/fairground "Fairground") (Level 80)
 
-Previous Dungeon: [In the Heart of Decay](in-the-heart-of-decay "In the Heart of Decay") (Level 90)
+Previous Dungeon: [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay") (Level 90)
 
-Next Dungeon: [Externsteine](Externsteine "Externsteine") (Level 102, [Germania](germania-dungeons "Germania dungeons"))  
+Next Dungeon: [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine") (Level 102, [Germania](/dungeons/germania-dungeons "Germania dungeons"))  
   
 **Description**  
   

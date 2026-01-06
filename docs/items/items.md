@@ -1,6 +1,8 @@
 ---
 title: Gladiatus Items
-slug: /items/items
+slug: /items
+redirects:
+  - /items
 ---
 
 Gladiatus Items
@@ -1064,7 +1066,7 @@ Follow this guide on what foods can combine. In-game you can see this as well by
     **<a id="Special-food"></a>Special food**
 -----------------------------------------
 
-    There is food that is special and does not drop outside of special events. Look at the [events](events "events") page for more info.
+    There is food that is special and does not drop outside of special events. Look at the [events](/events "events") page for more info.
 
     **Mulsum**
 
@@ -1485,7 +1487,7 @@ Event items are special types of items that are only available during an event i
 
 ![Mini-pumpkin description](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Mini-pumpkin_stats.png "Mini-pumpkin description")
 
-Associated with the [Desert Nightmare](desert-nightmare "Desert Nightmare") event. Drag it onto your character picture to activate one of the [Mercurius' Leather Armour](event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
+Associated with the [Desert Nightmare](/events/desert-nightmare "Desert Nightmare") event. Drag it onto your character picture to activate one of the [Mercurius' Leather Armour](/events/event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
 
     **Snowball**
 
@@ -1493,7 +1495,7 @@ Associated with the [Desert Nightmare](desert-nightmare "Desert Nightmare") even
 
 insert description
 
-Associated with the [Ice Tundra](ice-tundra "Ice Tundra") event. Drag it onto your character picture to activate one of the [Saturn's Winter Garment](event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
+Associated with the [Ice Tundra](/events/ice-tundra "Ice Tundra") event. Drag it onto your character picture to activate one of the [Saturn's Winter Garment](/events/event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
 
     **Sun Rune**
 
@@ -1501,7 +1503,7 @@ Associated with the [Ice Tundra](ice-tundra "Ice Tundra") event. Drag it onto yo
 
 ![Sun Rune description](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Sun_Rune_stats.png "Sun Rune description")
 
-Associated with the [On the Nile bank](on-the-nile-bank "On the Nile bank") event. Drag it onto your character picture to activate one of the [Ra's Light Robe's](event-costumes "Ra's Light Robe's") costume properties (if you have collected any)
+Associated with the [On the Nile bank](/events/on-the-nile-bank "On the Nile bank") event. Drag it onto your character picture to activate one of the [Ra's Light Robe's](/events/event-costumes "Ra's Light Robe's") costume properties (if you have collected any)
 
     **Easter event items**
 
@@ -1511,7 +1513,7 @@ Associated with the [On the Nile bank](on-the-nile-bank "On the Nile bank") even
 
 ![Golden Bunny description](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny_stats.png "Golden Bunny description")
 
-Associated with the [Wild Farm](wild-farm "Wild Farm") event. Drag it onto your character picture to activate one of the [Bubona's Bull Armour](event-costumes "Bubona's Bull Armour") costume properties (if you have collected any)
+Associated with the [Wild Farm](/events/wild-farm "Wild Farm") event. Drag it onto your character picture to activate one of the [Bubona's Bull Armour](/events/event-costumes "Bubona's Bull Armour") costume properties (if you have collected any)
 
     **Easter eggs**
 
@@ -1662,7 +1664,7 @@ Works the same as dusts. If you are on max available stats, it will not give you
 
 ![Golden Branch](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Misc/Gold_Branch_stats.png "Golden Branch")
 
-Given as a package when you enter Underworld, it is used to leave the [Underworld](underworld "Underworld") at any time by dragging it onto your character portrait
+Given as a package when you enter Underworld, it is used to leave the [Underworld](/underworld "Underworld") at any time by dragging it onto your character portrait
 
     **Soul Mirror**
 

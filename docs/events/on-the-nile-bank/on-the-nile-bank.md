@@ -1,6 +1,8 @@
 ---
 title: On the Nile bank
-slug: /on-the-nile-bank/on-the-nile-bank
+slug: /events/on-the-nile-bank
+redirects:
+  - /on-the-nile-bank
 ---
 
 On the Nile bank
@@ -103,7 +105,7 @@ Nile Hippo
 
 ![Multiple bonuses](https://gladiatusfansite.blob.core.windows.net/images/Events/On_the_Nile_bank/Multiple_bonuses.png "Multiple bonuses")
 
-3\. It is possible to activate other event items from previous events (in case you saved any) during this even such as ![Mini-pumpkin](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Mini-pumpkin.png "Mini-pumpkin") and ![Golden Bunny](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny.png "Golden Bunny") who are actually representing better event costumes than ![Sun Rune](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Sun_Rune.png "Sun Rune"). Mini-Pumpkin ![Mini-pumpkin](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Mini-pumpkin.png "Mini-pumpkin") - gives bonuses of the [Mercurius' Leather Armour](event-costumes "Mercurius' Leather Armour") which contains -20% training costs and ![Golden Bunny](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny.png "Golden Bunny") does the same but for [Bubona's Bull Armour](event-costumes "Bubona's Bull Armour") which also contains -20% training costs. However, -20% training cost buffs from the bunny and the pumpkin **DO NOT** stack and only grant additional time
+3\. It is possible to activate other event items from previous events (in case you saved any) during this even such as ![Mini-pumpkin](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Mini-pumpkin.png "Mini-pumpkin") and ![Golden Bunny](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny.png "Golden Bunny") who are actually representing better event costumes than ![Sun Rune](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Sun_Rune.png "Sun Rune"). Mini-Pumpkin ![Mini-pumpkin](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Mini-pumpkin.png "Mini-pumpkin") - gives bonuses of the [Mercurius' Leather Armour](/events/event-costumes "Mercurius' Leather Armour") which contains -20% training costs and ![Golden Bunny](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny.png "Golden Bunny") does the same but for [Bubona's Bull Armour](/events/event-costumes "Bubona's Bull Armour") which also contains -20% training costs. However, -20% training cost buffs from the bunny and the pumpkin **DO NOT** stack and only grant additional time
 
 Bottom line - Always save some amount of event items for your next event. You don't have to spend it all on the current event - Especially Bunny and Mini-Pumpkins
 

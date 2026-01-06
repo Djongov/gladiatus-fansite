@@ -1,6 +1,8 @@
 ---
 title: Reconstruction of Rome
-slug: /reconstruction-of-rome/reconstruction-of-rome
+slug: /events/reconstruction-of-rome
+redirects:
+  - /reconstruction-of-rome
 ---
 
 Reconstruction of Rome

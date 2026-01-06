@@ -1,6 +1,8 @@
 ---
 title: Viking Camp
-slug: /viking-camp/viking-camp
+slug: /dungeons/germania-dungeons/viking-camp
+redirects:
+  - /viking-camp
 ---
 
 Viking Camp
@@ -12,7 +14,7 @@ Entry level: **50**
 
 Dungeon points to complete: **11**
 
-Level on which you can complete: **50, boss isn't hard but can drop some good Taliths gear. Here is a setup of a 1st time kill of the boss on Level 50 - click [here](images/Dungeons/Germania/Viking_Camp/Homo_Nautilus_kill_Level_50.png "Homo Nautilus kill on Level 50"). Make sure your Mercenaries are in the 58-62 Level range. Make sure your damage dealers are maxed or high on Dexteritty which should be around ~300 and your weapons a little bit upgraded compared to previous dungeon (around 200 damage on damage dealers) and you will have no problem beating the boss. It's easy compared to other bosses.**
+Level on which you can complete: **50, boss isn't hard but can drop some good Taliths gear. Here is a setup of a 1st time kill of the boss on Level 50 - click [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Viking_Camp/Homo_Nautilus_kill_Level_50.png "Homo Nautilus kill on Level 50"). Make sure your Mercenaries are in the 58-62 Level range. Make sure your damage dealers are maxed or high on Dexteritty which should be around ~300 and your weapons a little bit upgraded compared to previous dungeon (around 200 damage on damage dealers) and you will have no problem beating the boss. It's easy compared to other bosses.**
 
 Enemy and boss levels: **59-61**  
   
@@ -22,11 +24,11 @@ Boss item level drop: **58-70 ![Confirmed](https://gladiatusfansite.blob.core.wi
 
 Advanced Dungeon: **No**
 
-Parent Expedition: [Cursed Village](germania-expeditions#CursedVillage "Cursed Village")
+Parent Expedition: [Cursed Village](/expeditions/germania-expeditions#CursedVillage "Cursed Village")
 
-Previous Dungeon: [With all its might](with-all-its-might "With all its might") (Level 45)
+Previous Dungeon: [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might") (Level 45)
 
-Next Dungeon: [Hidden Grave](hidden-grave "Hidden Grave") (Level 60)
+Next Dungeon: [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave") (Level 60)
 
 **Description**
 

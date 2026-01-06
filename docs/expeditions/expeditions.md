@@ -1,6 +1,8 @@
 ---
 title: Gladiatus Expeditions
-slug: /expeditions/expeditions
+slug: /expeditions
+redirects:
+  - /expeditions
 ---
 
 Gladiatus Expeditions
@@ -12,7 +14,7 @@ Expeditions are the most essential part of the game. Fighting in the expedition 
 
 More about Expedition basics you can find on the Game guide page.
 
-[https://gladiatus.gamerz-bg.com/game-guide#Expeditions](game-guide#Expeditions "Expedition basics")
+[https://gladiatus.gamerz-bg.com/game-guide#Expeditions](/game-guide#Expeditions "Expedition basics")
 
 Details about every expedition and the opponents in it you can find on this page so continue reading on
 
@@ -26,7 +28,7 @@ Some facts about the expeditions:
 - 3rd opponent level range = **From** -1 of 2nd opponent level **To** max lvl of 2nd opponent +3. Example 2nd opponent is level 9-12, this means that 3rd opponent will be 11-15 level in range
 - You can understand the above well if you examine the Expedition spreadsheets here - [http://gladiatus.gamerz-bg.com/spreadsheets](spreadsheets)
 - Quality of Item drops is this: 1st, 2nd and 3rd opponent can drop from Green to Purple. Boss can drop minimal of Blue. This makes the bosses good for farming high quality drops like Orange. It is reported that monsters from Dragon Remains (Germania) can even drop Red quality items + Forging tools at extremely low chance
-- The first expedition where you could find Orange in the past was Mine's (Germania) expedition boss - Tatzelwurm. Since latest patches people have observed some Orange drops on lower levels. Here is a [screenshot](images/Gallery/2016/epic_from_bear.png "Purple from Bear") of a purple drop from Bear in Grimwood
+- The first expedition where you could find Orange in the past was Mine's (Germania) expedition boss - Tatzelwurm. Since latest patches people have observed some Orange drops on lower levels. Here is a [screenshot](https://gladiatusfansite.blob.core.windows.net/images/Gallery/2016/epic_from_bear.png "Purple from Bear") of a purple drop from Bear in Grimwood
 - The base approximate % of item to drop in an expedition is 10%. It can be increased by variety of methods
 - The approximate % of quality drops from high level bosses is: Red - Unknown but has to be 1:10000 as there have only been several sightings. Orange - 1-3%, Purple - 8-10%, Blue - 85-90%
 - Expedition points are max 12, 24 with Centurion, 36 with Centurion + Blessing of Apollo, 48 with Centurion + Dis Pater Normal, 72 with Centurion + Dis Pater Normal + Blessing of Apollo
@@ -37,7 +39,7 @@ Some facts about the expeditions:
  
 **Choose a Country:**
 
-**[Italy](italy-expeditions "Italy expeditions")**
+**[Italy](/expeditions/italy-expeditions "Italy expeditions")**
 
 Minimum level: 1, Costs: 1.250 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")
 
@@ -47,7 +49,7 @@ Expeditions from level 1-75
 
 [![Italy expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Italy_Overview.png "Italy expeditions")](italy-expeditions "Italy expeditions")
 
-**[Africa](africa-expeditions "Africa expeditions")**
+**[Africa](/expeditions/africa-expeditions "Africa expeditions")**
 
 Minimum level: 20, Costs: 1250 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")
 
@@ -57,7 +59,7 @@ Expeditions from level 20-95
 
 [![Africa expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Africa_Overview.png "Africa expeditions")](africa-expeditions "Africa expeditions")
 
-**[Germania](germania-expeditions "Germania Expeditions")**
+**[Germania](/expeditions/germania-expeditions "Germania Expeditions")**
 
 Minimum level: 40, Costs: 3.000 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")
 
@@ -67,7 +69,7 @@ Expeditions from level 40 - 120
 
 [![Germania expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Germania_Overview.png "Germania expeditions")](germania-expeditions "Germania expeditions")
 
-**[Britannia](britannia-expeditions "Britannia expeditions")**
+**[Britannia](/expeditions/britannia-expeditions "Britannia expeditions")**
 
 Minimum level: 120, Costs: 5.500 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")
 

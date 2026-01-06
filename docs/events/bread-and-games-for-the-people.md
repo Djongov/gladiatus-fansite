@@ -1,6 +1,8 @@
 ---
 title: Bread and Games For the People
-slug: /bread-and-games-for-the-people/bread-and-games-for-the-people
+slug: /events/bread-and-games-for-the-people
+redirects:
+  - /bread-and-games-for-the-people
 ---
 
 Bread and Games For the People

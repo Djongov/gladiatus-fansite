@@ -404,7 +404,7 @@ Knowledge is power and the feather is stronger than the sword has often been ass
 
 Library is where you use and activate the Recipes you find on your adventures. First you deposit the recipe into the library.
 
-Here is what the different recipes do - [https://gladiatus.gamerz-bg.com/items#Recipes](items#Recipes "Recipes")
+Here is what the different recipes do - [https://gladiatus.gamerz-bg.com/items#Recipes](/items#Recipes "Recipes")
 
 Activating the recipe will place a buff on all guild members for 4 hours. Activating comes with a cost in ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold"). The higher the level of the recipe, the more stats it buffs. Beware of the prices too. High level recipes 80+ are extremely expensive to activate it might not be worth it.
 

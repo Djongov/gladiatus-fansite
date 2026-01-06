@@ -1,6 +1,8 @@
 ---
 title: Gladiatus Videos
-slug: /videos/videos
+slug: /videos
+redirects:
+  - /videos
 ---
 
 Videos

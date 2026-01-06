@@ -1,6 +1,8 @@
 ---
 title: Gladiatus Smelting
-slug: /smelting/smelting
+slug: /forging/smelting
+redirects:
+  - /smelting
 ---
 
 Gladiatus Smelting
@@ -33,7 +35,7 @@ Here are some facts:
 ![Scroll drop from smelting](https://gladiatusfansite.blob.core.windows.net/images/Forging/Smelting/Scroll_from_smelt.png "Scroll drop from smelting")![Scroll drop from smelting](https://gladiatusfansite.blob.core.windows.net/images/Forging/Smelting/smelt_scroll.png "Scroll drop from smelting")
 
 - What type of materials you will get from the item that you want to smelt is entirely dependent on what the Prefix + Base Item + Suffix cost in materials to make. Therefore we can safely say that the materials that are required to forge an item will also be produced when smelting the same item, however the smelting will not guarantee the same amount of materials that are needed to forge the item
-- The above means that you can specifically target items with the desired Prefix and sometimes even Suffix to get the exact materials you need, knowing what materials are needed to forge these items. [Items](Items "Items") page can be very useful in that case. Example: If you need a lot of Amethysts or Crystals, you can target Gaius or Antonius weapons and smelt them. You can even buy **Green** or **Blue** quality from the Auction House if you need Amethysts to repair
+- The above means that you can specifically target items with the desired Prefix and sometimes even Suffix to get the exact materials you need, knowing what materials are needed to forge these items. [Items](/items-general/items "Items") page can be very useful in that case. Example: If you need a lot of Amethysts or Crystals, you can target Gaius or Antonius weapons and smelt them. You can even buy **Green** or **Blue** quality from the Auction House if you need Amethysts to repair
 - The number of materials you get also depends on what the composition of the item is. If you are smelting Lucius you will get ![Tincture of Stamina](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Tincture_of_Stamina.png "Tincture of Stamina") in bigger quantities because it is also the most fundamental part of crafting a Lucius prefix - 30x ![Tincture of Stamina](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Tincture_of_Stamina.png "Tincture of Stamina")
 - Lesser qualities like **Green** or **Blue** will give less total amount of materials from a smelt than superior qualities like **Purple**/**Orange**/**Red**
 - The quality of the item determines what quality of materials you will get from the smelt. However, there is a rule which needs a little more explaining below

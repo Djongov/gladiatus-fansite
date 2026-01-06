@@ -1,6 +1,8 @@
 ---
 title: The Cave of Dark intrigue
-slug: /the-cave-of-dark-intrigue/the-cave-of-dark-intrigue
+slug: /dungeons/italy-dungeons/the-cave-of-dark-intrigue
+redirects:
+  - /the-cave-of-dark-intrigue
 ---
 
 The Cave of Dark intrigue
@@ -12,7 +14,7 @@ Entry level: **15**
 
 Dungeon points to complete: **6**
 
-Level on which you can complete: **Hard dungeon. Medium minions, extremely hard boss. If you keep your mercenaries 22 Level + and they are all geared up with recent gear and high damage, you can down him on Level 18. Here is a screenshot of a Level 18 setup with successful kills - [here](images/Dungeons/Italy/The_Cave_of_Dark_intrigue/Hell_Dog_kill_18.png "Hell Dog kill on level 18").**
+Level on which you can complete: **Hard dungeon. Medium minions, extremely hard boss. If you keep your mercenaries 22 Level + and they are all geared up with recent gear and high damage, you can down him on Level 18. Here is a screenshot of a Level 18 setup with successful kills - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Cave_of_Dark_intrigue/Hell_Dog_kill_18.png "Hell Dog kill on level 18").**
 
 Enemy and boss levels: **24-26**
 
@@ -20,13 +22,13 @@ Minions item level drop: **22-28 ![Confirmed](https://gladiatusfansite.blob.core
 
 Boss item level drop: **25-31 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Wolf Cave](italy-expeditions#WolfCave "Wolf Cave")
+Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions#WolfCave "Wolf Cave")
 
-Advanced Dungeon: **Yes,** [Gioll Passage](gioll-passage "Gioll Passage") (Level 73)
+Advanced Dungeon: **Yes,** [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage") (Level 73)
 
-Previous Dungeon: [The Dragon Stronghold](the-dragon-stronghold "The Dragon Stronghold") (Level 10)
+Previous Dungeon: [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold") (Level 10)
 
-Next Dungeon: [Temple of Perdition](temple-of-perdition "Temple of Perdition") (Level 20, Africa)
+Next Dungeon: [Temple of Perdition](/dungeons/africa-dungeons/temple-of-perdition "Temple of Perdition") (Level 20, Africa)
 
 **Description**
 

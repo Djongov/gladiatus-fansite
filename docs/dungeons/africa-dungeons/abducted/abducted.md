@@ -1,6 +1,8 @@
 ---
 title: Abducted
-slug: /abducted/abducted
+slug: /dungeons/africa-dungeons/abducted
+redirects:
+  - /abducted
 ---
 
 Abducted
@@ -12,7 +14,7 @@ Entry level: **25**
 
 Dungeon points to complete: **11**
 
-Level on which you can complete: **A lot easier than previous dungeon. Good geared you should be able to farm the dungeon including the boss on level 25. Here is a screenshot of a setup that is never losing on Shetu which means that even weaker setup should do the trick - [here](images/Dungeons/Africa/Abducted/Shetu_kill_25_level.png "Shetu setup").**
+Level on which you can complete: **A lot easier than previous dungeon. Good geared you should be able to farm the dungeon including the boss on level 25. Here is a screenshot of a setup that is never losing on Shetu which means that even weaker setup should do the trick - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Abducted/Shetu_kill_25_level.png "Shetu setup").**
 
 Enemy and boss levels: **34-36**  
   
@@ -20,13 +22,13 @@ Minions item level drop: **32-38 ![Confirmed](https://gladiatusfansite.blob.core
   
 Boss item level drop: **36-43 ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")**
 
-Parent Expedition: [Bridge](africa-expeditions#Bridge "Bridge")
+Parent Expedition: [Bridge](/expeditions/africa-expeditions#Bridge "Bridge")
 
-Advanced Dungeon: **Yes,** [Under a Blood-red Sky](under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
+Advanced Dungeon: **Yes,** [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
 
-Previous Dungeon: [Temple of Perdition](temple-of-perdition "Temple of Perdition") (Level 20)
+Previous Dungeon: [Temple of Perdition](/dungeons/africa-dungeons/temple-of-perdition "Temple of Perdition") (Level 20)
 
-Next Dungeon: [Chamber of Pyro](chamber-of-pyro "Chamber of Pyro") (Level 30)
+Next Dungeon: [Chamber of Pyro](/dungeons/africa-dungeons/chamber-of-pyro "Chamber of Pyro") (Level 30)
 
 **Description**
 

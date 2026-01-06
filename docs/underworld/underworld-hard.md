@@ -1,6 +1,8 @@
 ---
 title: Underworld Hard Difficulty
-slug: /underworld-hard/underworld-hard
+slug: /underworld/underworld-hard
+redirects:
+  - /underworld-hard
 ---
 
 Underworld Hard Difficulty

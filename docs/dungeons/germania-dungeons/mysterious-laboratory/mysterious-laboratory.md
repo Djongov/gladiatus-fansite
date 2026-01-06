@@ -1,6 +1,8 @@
 ---
 title: Mysterious Laboratory
-slug: /mysterious-laboratory/mysterious-laboratory
+slug: /dungeons/germania-dungeons/mysterious-laboratory
+redirects:
+  - /mysterious-laboratory
 ---
 
 Mysterious Laboratory
@@ -12,7 +14,7 @@ Entry level: **80**
 
 Dungeon points to complete: **5-10 (varies)**
 
-Level on which you can complete: **80-82 probably. Boss is hard. Here is a setup of a level 80 kill - [here](images/Dungeons/Germania/Mysterious_Laboratory/Frank_N_Stein_Kill_level_80.png "Frank N. Stein Level 80 kill"). And this setup is of a lucky kill. Don't expect to farm the boss. You can achieve farm status on Frank N. Stein only if you beat Zagrash every now and then.**
+Level on which you can complete: **80-82 probably. Boss is hard. Here is a setup of a level 80 kill - [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Mysterious_Laboratory/Frank_N_Stein_Kill_level_80.png "Frank N. Stein Level 80 kill"). And this setup is of a lucky kill. Don't expect to farm the boss. You can achieve farm status on Frank N. Stein only if you beat Zagrash every now and then.**
 
 Enemy and boss levels: **89-91**  
   
@@ -20,15 +22,15 @@ Minions item level drop: **87-93 ![Verified](https://gladiatusfansite.blob.core.
   
 Boss item level drop: **88-101 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
 
-Parent Expedition: [Death Hill](germania-expeditions#DeathHill "Death Hill")
+Parent Expedition: [Death Hill](/expeditions/germania-expeditions#DeathHill "Death Hill")
 
 Advanced Dungeon: **No**
 
-Previous Dungeon: [Zagrash's Fort](zagrashs-fort "Zagrash's Fort") (Level 78, Italy)
+Previous Dungeon: [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort") (Level 78, Italy)
 
-Same Level Dungeon: [Fairground](Fairground "Fairground") (Level 80, Africa)
+Same Level Dungeon: [Fairground](/dungeons/africa-dungeons/fairground "Fairground") (Level 80, Africa)
 
-Next Dungeon: [Under a Blood-red Sky](under-a-blood-red-sky "Under a Blood-red Sky") (Level 86, Africa)
+Next Dungeon: [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86, Africa)
 
 **Description**
 

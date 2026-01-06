@@ -1,0 +1,102 @@
+{
+  "routes": [
+    { "route": "/home", "redirect": "/home/welcome-to-gladiatus-fansite", "statusCode": 301, "queryParameters": { "id": "1" } },
+    { "route": "/expeditions", "redirect": "/expeditions", "statusCode": 301, "queryParameters": { "id": "2" } },
+    { "route": "/italy-expeditions", "redirect": "/italy-expeditions", "statusCode": 301, "queryParameters": { "id": "5" } },
+    { "route": "/germania-expeditions", "redirect": "/germania-expeditions", "statusCode": 301, "queryParameters": { "id": "3" } },
+    { "route": "/africa-expeditions", "redirect": "/africa-expeditions", "statusCode": 301, "queryParameters": { "id": "15" } },
+
+    { "route": "/dungeons", "redirect": "/dungeons", "statusCode": 301, "queryParameters": { "id": "6" } },
+    { "route": "/italy-dungeons", "redirect": "/italy-dungeons", "statusCode": 301, "queryParameters": { "id": "7" } },
+    { "route": "/africa-dungeons", "redirect": "/africa-dungeons", "statusCode": 301, "queryParameters": { "id": "23" } },
+    { "route": "/germania-dungeons", "redirect": "/germania-dungeons", "statusCode": 301, "queryParameters": { "id": "17" } },
+
+    { "route": "/back-to-expeditions-overview", "redirect": "/back-to-expeditions-overview/expeditions", "statusCode": 301, "queryParameters": { "id": "2" } },
+    { "route": "/underworld", "redirect": "/underworld", "statusCode": 301, "queryParameters": { "id": "20" } },
+    { "route": "/back-to-dungeons-overview", "redirect": "/back-to-dungeons-overview/dungeons", "statusCode": 301, "queryParameters": { "id": "6" } },
+
+    { "route": "/costumes", "redirect": "/costumes/gladiatus-costumes", "statusCode": 301, "queryParameters": { "id": "47" } },
+    { "route": "/guild", "redirect": "/guild/guild-buildings", "statusCode": 301, "queryParameters": { "id": "45" } },
+    { "route": "/events", "redirect": "/events", "statusCode": 301, "queryParameters": { "id": "31" } },
+    { "route": "/forging", "redirect": "/forging", "statusCode": 301, "queryParameters": { "id": "60" } },
+
+    { "route": "/on-the-nile-bank", "redirect": "/on-the-nile-bank", "statusCode": 301, "queryParameters": { "id": "32" } },
+    { "route": "/revenge-of-the-dead", "redirect": "/revenge-of-the-dead", "statusCode": 301, "queryParameters": { "id": "55" } },
+    { "route": "/desert-nightmare", "redirect": "/desert-nightmare", "statusCode": 301, "queryParameters": { "id": "58" } },
+    { "route": "/battle-at-hadrian-s-wall", "redirect": "/battle-at-hadrian-s-wall", "statusCode": 301, "queryParameters": { "id": "61" } },
+
+    { "route": "/ice-tundra", "redirect": "/ice-tundra", "statusCode": 301, "queryParameters": { "id": "71" } },
+    { "route": "/forging-goods", "redirect": "/forging-goods", "statusCode": 301, "queryParameters": { "id": "66" } },
+    { "route": "/forging-2", "redirect": "/forging-2", "statusCode": 301, "queryParameters": { "id": "83" } },
+    { "route": "/smelting", "redirect": "/smelting", "statusCode": 301, "queryParameters": { "id": "67" } },
+
+    { "route": "/repair", "redirect": "/repair/conditioning-workbench", "statusCode": 301, "queryParameters": { "id": "68" } },
+    { "route": "/forging-tools", "redirect": "/forging-tools", "statusCode": 301, "queryParameters": { "id": "69" } },
+    { "route": "/items", "redirect": "/items", "statusCode": 301, "queryParameters": { "id": "76" } },
+    { "route": "/items-general", "redirect": "/items-general/items", "statusCode": 301, "queryParameters": { "id": "76" } },
+
+    { "route": "/prefixes", "redirect": "/prefixes/item-prefixes", "statusCode": 301, "queryParameters": { "id": "74" } },
+    { "route": "/suffixes", "redirect": "/suffixes/item-suffixes", "statusCode": 301, "queryParameters": { "id": "75" } },
+
+    { "route": "/war-against-the-numidians", "redirect": "/war-against-the-numidians", "statusCode": 301, "queryParameters": { "id": "79" } },
+    { "route": "/scrolls-recipes", "redirect": "/scrolls-recipes/scrolls-and-recipes", "statusCode": 301, "queryParameters": { "id": "73" } },
+    { "route": "/bread-and-games-for-the-people", "redirect": "/bread-and-games-for-the-people", "statusCode": 301, "queryParameters": { "id": "82" } },
+
+    { "route": "/gustavos-country-house", "redirect": "/gustavos-country-house", "statusCode": 301, "queryParameters": { "id": "8" } },
+    { "route": "/on-the-run", "redirect": "/on-the-run", "statusCode": 301, "queryParameters": { "id": "9" } },
+    { "route": "/the-dragon-stronghold", "redirect": "/the-dragon-stronghold", "statusCode": 301, "queryParameters": { "id": "12" } },
+    { "route": "/the-cave-of-dark-intrigue", "redirect": "/the-cave-of-dark-intrigue", "statusCode": 301, "queryParameters": { "id": "13" } },
+
+    { "route": "/hidden-grave", "redirect": "/hidden-grave", "statusCode": 301, "queryParameters": { "id": "14" } },
+    { "route": "/in-enemy-hands", "redirect": "/in-enemy-hands", "statusCode": 301, "queryParameters": { "id": "28" } },
+    { "route": "/the-last-resort", "redirect": "/the-last-resort", "statusCode": 301, "queryParameters": { "id": "29" } },
+    { "route": "/the-true-owner", "redirect": "/the-true-owner", "statusCode": 301, "queryParameters": { "id": "30" } },
+
+    { "route": "/gioll-passage", "redirect": "/gioll-passage", "statusCode": 301, "queryParameters": { "id": "34" } },
+    { "route": "/zagrashs-fort", "redirect": "/zagrashs-fort", "statusCode": 301, "queryParameters": { "id": "39" } },
+    { "route": "/temple-of-perdition", "redirect": "/temple-of-perdition", "statusCode": 301, "queryParameters": { "id": "22" } },
+    { "route": "/abducted", "redirect": "/abducted", "statusCode": 301, "queryParameters": { "id": "24" } },
+
+    { "route": "/chamber-of-pyro", "redirect": "/chamber-of-pyro", "statusCode": 301, "queryParameters": { "id": "25" } },
+    { "route": "/poisoned-country", "redirect": "/poisoned-country", "statusCode": 301, "queryParameters": { "id": "26" } },
+    { "route": "/fairground", "redirect": "/fairground", "statusCode": 301, "queryParameters": { "id": "27" } },
+    { "route": "/under-a-blood-red-sky", "redirect": "/under-a-blood-red-sky", "statusCode": 301, "queryParameters": { "id": "40" } },
+
+    { "route": "/in-the-heart-of-decay", "redirect": "/in-the-heart-of-decay", "statusCode": 301, "queryParameters": { "id": "41" } },
+    { "route": "/sasama-s-last-journey", "redirect": "/sasama-s-last-journey", "statusCode": 301, "queryParameters": { "id": "42" } },
+    { "route": "/dark-catacombs", "redirect": "/dark-catacombs", "statusCode": 301, "queryParameters": { "id": "16" } },
+    { "route": "/with-all-its-might", "redirect": "/with-all-its-might", "statusCode": 301, "queryParameters": { "id": "11" } },
+
+    { "route": "/viking-camp", "redirect": "/viking-camp", "statusCode": 301, "queryParameters": { "id": "18" } },
+    { "route": "/mysterious-laboratory", "redirect": "/mysterious-laboratory", "statusCode": 301, "queryParameters": { "id": "19" } },
+    { "route": "/externsteine", "redirect": "/externsteine", "statusCode": 301, "queryParameters": { "id": "10" } },
+    { "route": "/late-revenge", "redirect": "/late-revenge", "statusCode": 301, "queryParameters": { "id": "43" } },
+
+    { "route": "/alpha-omega", "redirect": "/alpha-omega", "statusCode": 301, "queryParameters": { "id": "44" } },
+    { "route": "/event-costumes", "redirect": "/event-costumes", "statusCode": 301, "queryParameters": { "id": "59" } },
+    { "route": "/underworld-normal", "redirect": "/underworld-normal", "statusCode": 301, "queryParameters": { "id": "35" } },
+    { "route": "/underworld-medium", "redirect": "/underworld-medium", "statusCode": 301, "queryParameters": { "id": "36" } },
+
+    { "route": "/underworld-hard", "redirect": "/underworld-hard", "statusCode": 301, "queryParameters": { "id": "37" } },
+    { "route": "/conquest-of-the-source-of-the-rhine", "redirect": "/conquest-of-the-source-of-the-rhine", "statusCode": 301, "queryParameters": { "id": "80" } },
+    { "route": "/wild-farm", "redirect": "/wild-farm", "statusCode": 301, "queryParameters": { "id": "86" } },
+    { "route": "/game-guide", "redirect": "/game-guide", "statusCode": 301, "queryParameters": { "id": "81" } },
+
+    { "route": "/reconstruction-of-rome", "redirect": "/reconstruction-of-rome", "statusCode": 301, "queryParameters": { "id": "87" } },
+    { "route": "/horreum", "redirect": "/horreum/gladiatus-horreum", "statusCode": 301, "queryParameters": { "id": "89" } },
+    { "route": "/prefixes", "redirect": "/prefixes/item-prefixes", "statusCode": 301, "queryParameters": { "id": "74" } },
+    { "route": "/suffixes", "redirect": "/suffixes/item-suffixes", "statusCode": 301, "queryParameters": { "id": "75" } },
+
+    { "route": "/calculator", "redirect": "/calculator/building-and-training-calculator", "statusCode": 301, "queryParameters": { "id": "62" } },
+    { "route": "/game-updates", "redirect": "/game-updates", "statusCode": 301, "queryParameters": { "id": "33" } },
+    { "route": "/formulas", "redirect": "/formulas/gladiatus-formulas", "statusCode": 301, "queryParameters": { "id": "49" } },
+    { "route": "/game-rules", "redirect": "/game-rules/guild-rules", "statusCode": 301, "queryParameters": { "id": "50" } },
+
+    { "route": "/gallery", "redirect": "/gallery", "statusCode": 301, "queryParameters": { "id": "4" } },
+    { "route": "/videos", "redirect": "/videos", "statusCode": 301, "queryParameters": { "id": "21" } },
+    { "route": "/website-changes-log", "redirect": "/website-changes-log", "statusCode": 301, "queryParameters": { "id": "51" } },
+    { "route": "/about-me", "redirect": "/about-me", "statusCode": 301, "queryParameters": { "id": "52" } },
+
+    { "route": "/materials", "redirect": "/materials/forging-goods", "statusCode": 301, "queryParameters": { "id": "66" } }
+  ]
+}

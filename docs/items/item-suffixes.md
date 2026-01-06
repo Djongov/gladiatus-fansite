@@ -8,7 +8,7 @@ redirects:
 Item Suffixes
 =============
 
-As we learned about the prefixes and suffixes and item formation from the [items](items "items") page, the suffix is the 2nd part of the item formation. Prefix + Item base + Suffix forms the complete item. Suffixes are usually bearing the name "of XXXX". There are more than 100 currently known suffixes.
+As we learned about the prefixes and suffixes and item formation from the [items](/items "items") page, the suffix is the 2nd part of the item formation. Prefix + Item base + Suffix forms the complete item. Suffixes are usually bearing the name "of XXXX". There are more than 100 currently known suffixes.
 
 **Important! If you need a certain material (forging good) and you are looking for a suitable prefix or suffix to smelt in order to get as many as you can - Use the [Materials](Materials "Materials") page instead. Under every material i have the prefixes/suffixes that smelts the most of this material**
 
@@ -21,37 +21,37 @@ The list of suffixes below should be complete. I will slowly put the extended in
 
 [of Expansion (25)](#of_Expansion "of Expansion") (+25%)
 
-[of the Amazons (28)](item-suffixes#of_the_Amazons "of the Amazons") (+26%)
+[of the Amazons (28)](/suffixes/item-suffixes#of_the_Amazons "of the Amazons") (+26%)
 
-[of Freedom (38)](item-suffixes#of_Freedom "of Freedom") (+26%)
+[of Freedom (38)](/suffixes/item-suffixes#of_Freedom "of Freedom") (+26%)
 
-[of Prevention (31)](item-suffixes#of_Prevention "of Prevention") (+27%)
+[of Prevention (31)](/suffixes/item-suffixes#of_Prevention "of Prevention") (+27%)
 
-[of Pressure (35)](item-suffixes#of_Pressure "of Pressure") (+31%)
+[of Pressure (35)](/suffixes/item-suffixes#of_Pressure "of Pressure") (+31%)
 
 [of Sickness (32)](#of_Sickness "of Sickness") (+32%)
 
 [of the Behemoth](#of_the_Behemoth "of the Behemoth") (54) (+33%)
 
-[of the Snake (58)](item-suffixes#of_the_Snake "of the Snake") (+35%)
+[of the Snake (58)](/suffixes/item-suffixes#of_the_Snake "of the Snake") (+35%)
 
-[of Despair (52)](item-suffixes#of_Despair "of Despair")(+35%)
+[of Despair (52)](/suffixes/item-suffixes#of_Despair "of Despair")(+35%)
 
 **Top Dexterity suffixes (Dexterity +10% or more)**
 
-[of Distraction (18)](item-suffixes#of_Distraction "of Distraction") (+10%)
+[of Distraction (18)](/suffixes/item-suffixes#of_Distraction "of Distraction") (+10%)
 
-[of Silence (20)](item-suffixes#of_Silence "of Silence") (+20%)
+[of Silence (20)](/suffixes/item-suffixes#of_Silence "of Silence") (+20%)
 
-[of Delicacy (21)](item-suffixes#of_Delicacy "of Delicacy") (+20%)
+[of Delicacy (21)](/suffixes/item-suffixes#of_Delicacy "of Delicacy") (+20%)
 
-[of Despair (52)](item-suffixes#of_Despair "of Despair")(+22%)
+[of Despair (52)](/suffixes/item-suffixes#of_Despair "of Despair")(+22%)
 
-[of Elimination (33)](item-suffixes#of_Elimination "of Elimination") (+28%)
+[of Elimination (33)](/suffixes/item-suffixes#of_Elimination "of Elimination") (+28%)
 
-[of Mars (31)](item-suffixes#of_Mars "of Mars") (+28%)
+[of Mars (31)](/suffixes/item-suffixes#of_Mars "of Mars") (+28%)
 
-[of Aggression (34)](item-suffixes#of_Aggression "of Aggression") (+29%)
+[of Aggression (34)](/suffixes/item-suffixes#of_Aggression "of Aggression") (+29%)
 
 [of Judgement](#of_Judgement "of Judgement") (55) (+35%)
 
@@ -59,9 +59,9 @@ The list of suffixes below should be complete. I will slowly put the extended in
 
 [of Pain (16)](#of_Pain "of Pain") (+20%)
 
-[of Suffering (26)](item-suffixes#of_Suffering "of Suffering") (+21%)
+[of Suffering (26)](/suffixes/item-suffixes#of_Suffering "of Suffering") (+21%)
 
-[of the Flesh Wound (37)](item-suffixes#of_the_Flesh_Wound "of the Flesh Wound") (+30%)
+[of the Flesh Wound (37)](/suffixes/item-suffixes#of_the_Flesh_Wound "of the Flesh Wound") (+30%)
 
 [of Gloom (52)](#of_Gloom "of Gloom") (+35%)
 
@@ -77,88 +77,88 @@ The list of suffixes below should be complete. I will slowly put the extended in
 
 **Top Charisma suffixes (Charisma +20% or more)**
 
-[of Light (22)](item-suffixes#of_Light "of Light") (+20%)
+[of Light (22)](/suffixes/item-suffixes#of_Light "of Light") (+20%)
 
-[of the Sun (22)](item-suffixes#of_the_Sun "of the Sun") (+20%)
+[of the Sun (22)](/suffixes/item-suffixes#of_the_Sun "of the Sun") (+20%)
 
-[of Heaven (35)](item-suffixes#of_Heaven "of Heaven") (+20%)
+[of Heaven (35)](/suffixes/item-suffixes#of_Heaven "of Heaven") (+20%)
 
-[of the Critical Strike (39)](item-suffixes#of_the_Critical_Strike "of the Critical Strike") (+28%, 14 Crit)
+[of the Critical Strike (39)](/suffixes/item-suffixes#of_the_Critical_Strike "of the Critical Strike") (+28%, 14 Crit)
 
-[of Death (36)](item-suffixes#of_Death "of Death") (+28%)
+[of Death (36)](/suffixes/item-suffixes#of_Death "of Death") (+28%)
 
-[of Freedom (38)](item-suffixes#of_Freedom "of Freedom") (+28%)
+[of Freedom (38)](/suffixes/item-suffixes#of_Freedom "of Freedom") (+28%)
 
-[of Languor (58)](item-suffixes#of_Languor "of Languor") (+35%)
+[of Languor (58)](/suffixes/item-suffixes#of_Languor "of Languor") (+35%)
 
 **Top Intelligence suffixes (Intelligence +30% and or Healing)**
 
-[of Alleluia (33)](item-suffixes#of_Alleluia "of Alleluia") (+30%)
+[of Alleluia (33)](/suffixes/item-suffixes#of_Alleluia "of Alleluia") (+30%)
 
-[of Fatuity (36)](item-suffixes#of_Fatuity "of Fatuity") (+31%)
+[of Fatuity (36)](/suffixes/item-suffixes#of_Fatuity "of Fatuity") (+31%)
 
-[of Ingenuity (39)](item-suffixes#of_Ingenuity "of Ingenuity") (+32%)
+[of Ingenuity (39)](/suffixes/item-suffixes#of_Ingenuity "of Ingenuity") (+32%)
 
-[of Solitude (55)](item-suffixes#of_Solitude "of Solitude") (+40%)
+[of Solitude (55)](/suffixes/item-suffixes#of_Solitude "of Solitude") (+40%)
 
 **All Damage suffixes (+Damage/Critical combos)**
 
-[of Riot (25)](item-suffixes#of_Riot "of Riot") (+2 Damage , Armour)
+[of Riot (25)](/suffixes/item-suffixes#of_Riot "of Riot") (+2 Damage , Armour)
 
-[of Promise (47)](item-suffixes#of_Promise "of Promise") (+2 Damage, Armour + Block)
+[of Promise (47)](/suffixes/item-suffixes#of_Promise "of Promise") (+2 Damage, Armour + Block)
 
-[of Fire (41)](item-suffixes#of_Fire "of Fire") (+3 Damage, 18 Crit)
+[of Fire (41)](/suffixes/item-suffixes#of_Fire "of Fire") (+3 Damage, 18 Crit)
 
-[of Assassination (10)](item-suffixes#of_Assassination "of Assassination") (+4 Damage, only 10 level suffix)
+[of Assassination (10)](/suffixes/item-suffixes#of_Assassination "of Assassination") (+4 Damage, only 10 level suffix)
 
-[of the Curse (45)](item-suffixes#of_the_Curse "of the Curse") (+4 Damage)
+[of the Curse (45)](/suffixes/item-suffixes#of_the_Curse "of the Curse") (+4 Damage)
 
-[of Malice (33)](item-suffixes#of_Malice "of Malice") (+4 Damage)
+[of Malice (33)](/suffixes/item-suffixes#of_Malice "of Malice") (+4 Damage)
 
-[of Earth (48)](item-suffixes#of_Earth "of Earth") (+5 Damage, block)
+[of Earth (48)](/suffixes/item-suffixes#of_Earth "of Earth") (+5 Damage, block)
 
-[of Retribution (40)](item-suffixes#of_Retribution "of Retribution") (+5 Damage)
+[of Retribution (40)](/suffixes/item-suffixes#of_Retribution "of Retribution") (+5 Damage)
 
-[of Dominance (42)](item-suffixes#of_Dominance "of Dominance") (+5 Damage, 10 Crit)
+[of Dominance (42)](/suffixes/item-suffixes#of_Dominance "of Dominance") (+5 Damage, 10 Crit)
 
-[of Hope (44)](item-suffixes#of_Hope "of Hope") (+ 6 Damage)
+[of Hope (44)](/suffixes/item-suffixes#of_Hope "of Hope") (+ 6 Damage)
 
-[of Strength (46)](item-suffixes#of_Strength "of Strength") (No + Damage but +20 Crit)
+[of Strength (46)](/suffixes/item-suffixes#of_Strength "of Strength") (No + Damage but +20 Crit)
 
-[of the Dragon (50)](item-suffixes#of_the_Dragon "of the Dragon") (+7 Damage)
+[of the Dragon (50)](/suffixes/item-suffixes#of_the_Dragon "of the Dragon") (+7 Damage)
 
-[of Gloom (52)](item-suffixes#of_Gloom "of Gloom ") (+7 Damage)
+[of Gloom (52)](/suffixes/item-suffixes#of_Gloom "of Gloom ") (+7 Damage)
 
 [of Torment (58)](#of_Torment "of Torment") (+7 damage)
 
 **Top Healing suffixes (+ Healing and Crit healing)**
 
-[of Love (50)](item-suffixes#of_Love "of Love") (+100 Healing, +25 Crit heal)
+[of Love (50)](/suffixes/item-suffixes#of_Love "of Love") (+100 Healing, +25 Crit heal)
 
-[of Attention (35)](item-suffixes#of_Attention "of Attention") (+80 Healing, 21% Int)
+[of Attention (35)](/suffixes/item-suffixes#of_Attention "of Attention") (+80 Healing, 21% Int)
 
 **Top Blocking (+Blocking)**
 
-[of Dominance (42)](item-suffixes#of_Dominance "of Dominance") (+20)
+[of Dominance (42)](/suffixes/item-suffixes#of_Dominance "of Dominance") (+20)
 
-[of Promise (47)](item-suffixes#of_Promise "of Promise") (+25)
+[of Promise (47)](/suffixes/item-suffixes#of_Promise "of Promise") (+25)
 
 **Top 10 suffixes of all**
 --------------------------
 
 [of Gloom (52)](#of_Gloom "of Gloom")
 
-[of the Inferno (58)](item-suffixes#of_the_Inferno "of the Inferno")
+[of the Inferno (58)](/suffixes/item-suffixes#of_the_Inferno "of the Inferno")
 
-[of the Dragon (50)](item-suffixes#of_the_Dragon "of the Dragon")
+[of the Dragon (50)](/suffixes/item-suffixes#of_the_Dragon "of the Dragon")
 
-[of Aggression (34)](item-suffixes#of_Aggression "of Aggression")
+[of Aggression (34)](/suffixes/item-suffixes#of_Aggression "of Aggression")
 
-[of Elimination (33)](item-suffixes#of_Elimination "of Elimination")
+[of Elimination (33)](/suffixes/item-suffixes#of_Elimination "of Elimination")
 
-[of Earth (48)](item-suffixes#of_Earth "of Earth")
+[of Earth (48)](/suffixes/item-suffixes#of_Earth "of Earth")
 
-[of Delicacy (21)](item-suffixes#of_Delicacy "of Delicacy")
+[of Delicacy (21)](/suffixes/item-suffixes#of_Delicacy "of Delicacy")
 
 **Navigation Menu (166 Suffixes)** 
 -----------------------------------

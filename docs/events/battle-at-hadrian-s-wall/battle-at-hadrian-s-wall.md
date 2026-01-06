@@ -1,6 +1,8 @@
 ---
 title: Battle at Hadrian's Wall
-slug: /battle-at-hadrian-s-wall/battle-at-hadrian-s-wall
+slug: /events/battle-at-hadrian-s-wall
+redirects:
+  - /battle-at-hadrian-s-wall
 ---
 
 Battle at Hadrian's Wall
@@ -86,7 +88,7 @@ Rewards
 
 ![1st opponent event prize](https://gladiatusfansite.blob.core.windows.net/images/Events/Event_1st_reward.png "1st opponent event prize")
 
-Here is an example of a Grindstone - [click](images/Events/Grindstone_reward.png "Red Grindstone").
+Here is an example of a Grindstone - [click](https://gladiatusfansite.blob.core.windows.net/images/Events/Grindstone_reward.png "Red Grindstone").
 
  
 

@@ -1,6 +1,8 @@
 ---
 title: Ice Tundra
-slug: /ice-tundra/ice-tundra
+slug: /events/ice-tundra
+redirects:
+  - /ice-tundra
 ---
 
 Ice Tundra

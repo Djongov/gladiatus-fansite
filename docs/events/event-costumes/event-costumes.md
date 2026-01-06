@@ -1,6 +1,8 @@
 ---
 title: Event Costumes
-slug: /event-costumes/event-costumes
+slug: /events/event-costumes
+redirects:
+  - /event-costumes
 ---
 
 **Event Costumes**
