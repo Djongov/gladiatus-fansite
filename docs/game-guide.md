@@ -112,8 +112,7 @@ Events
 Costumes
 
 Underworld
-
-<a id="Creating_a_character"></a>Creating a character
+## Creating a character {#Creating_a_character}
 -----------------------------------------------------
 
 The first thing you need to do to start playing Gladiatus is to create a character on a server. Gladiatus has dedicated servers in 30 different countries:
@@ -208,8 +207,7 @@ This is how portraits look over the course of the game
 ![Gladiator male level 80-90](https://s20-en.gladiatus.gameforge.com/game/9194/img/faces/gladiator_80_m.jpg "Gladiator male level 80-90")![Gladiator female level 80-90](https://s20-en.gladiatus.gameforge.com/game/9194/img/faces/gladiator_80_f.jpg "Gladiator female level 80-90")
 
 Once you choose your gender you are ready to start playing the game
-
-<a id="Overview_Screen"></a>Overview Screen
+## Overview Screen {#Overview_Screen}
 -------------------------------------------
 
 You will be placed in the Overview screen where you can see your character, stats, inventory, bags and everything else
@@ -219,15 +217,13 @@ You will be placed in the Overview screen where you can see your character, stat
 We are going to look at all these individually
 
 The next thing you want to do is verify your email so you can enjoy full featured game. Ever since you clicked Sign Up, an email with an activation link has been sent to your registration email address.
-
-<a id="Statistics"></a>Statistics
+## Statistics {#Statistics}
 ---------------------------------
 
 The tab next to the Overview screen is the Statistics tab. It shows general info for your character. It's pretty self-explanatory so it doesn't need any real clarification. Just for someone who is wondering about the people mugged (via link) it was an old feature of the game that is no longer in the game but remains on the statistics tab. Also the dungeon drop down menu can show you stats of your dungeon journeys
 
 ![Statistics](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Statistics.png "Statistics")
-
-<a id="Victories"></a>Victories
+## Victories {#Victories}
 -------------------------------
 
 Victories in Gladiatus are what we call Achievements in other games. They mostly award titles that your character can have. There are several categories of achievements for different accomplishments in the game. These are the main categories of achievements:
@@ -237,8 +233,7 @@ Victories in Gladiatus are what we call Achievements in other games. They mostly
 Every Victory (achievement) provides Victory points so this measures your total. Different Victories provide different Victory points. From 0 to 30.
 
 Click in-game to check them for more info.
-
-<a id="Familia"></a>Familia
+## Familia {#Familia}
 ---------------------------
 
 Familia is the tab where your friend list resides. When you add someone as your friend it will appear here along with his name, guild and last online status.
@@ -248,8 +243,7 @@ Familia is the tab where your friend list resides. When you add someone as your 
 But how do you befriend someone? It's not from the Familia tab. It's from the character screen. When you look at the other player's character profile there will be a "Invite to your familia" button
 
 ![Add friend](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Familia_add_friend.png "Add friend")
-
-<a id="Pantheon"></a>Pantheon
+## Pantheon {#Pantheon}
 -----------------------------
 
 The Pantheon tab can be found on just beneath the Overview menu
@@ -259,8 +253,7 @@ The Pantheon tab can be found on just beneath the Overview menu
 It consists of 4 submenus
 
 ![Pantheon submenus](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Pantheon_submenus.png "Pantheon submenus")
-
-<a id="Quests"></a>Quests
+## Quests {#Quests}
 -------------------------
 
 Quests are fundamental part of the game. Quests can be with time limit (to be done within a certain time frame) or without expiration date.
@@ -394,8 +387,7 @@ Find X amount of items from expeditions or dungeons
 Work Quests involve you going to work. Quests can be to go to a specific work like Stable Boy for X amount of Hours or general work like work anything for X amount of hours.
 
 ![Work Quest](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Quests/Work_quest.png "Work Quest")
-
-<a id="Missions"></a>Missions
+## Missions {#Missions}
 -----------------------------
 
 Missions are one time achievements that your character can achieve and be rewarded. Rewards are in the form of God favors - ![Mars favor](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/mars_favor.png "Mars favor") ![Diana favor](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/diana_favor.png "Diana favor") ![Apollo favor](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/apollo_favor.png "Apollo favor") ![Mercury favor](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/merkur_favor.png "Mercury favor") ![Mierva favor](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/minerva_favor.png "Mierva favor") ![Vulcanus favor](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/vulcanus_favor.png "Vulcanus favor"). Once you complete a certain mission it will pop up on the screen and the mission will be ready to be completed with the button ![Finish](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/button_finish.jpg "Finish"). You can choose to complete then at any time you want but have in mind that **completing the missions will increase your total (max) favor with the gods**!!! Yes, not only that they give you favor, they also raise your max so you should be completing the missions that you complete right away!
@@ -442,8 +434,7 @@ Command four mercenaries of level X or above
 Use X permanent upgrades or oils on your equipment  
 Buy X equipment items from the merchant or in the auction house  
 Complete X quest
-
-<a id="Gods"></a>Gods
+## Gods {#Gods}
 ---------------------
 
 The Gods system is quite a big one. And plays a significant role in Gladiatus. There are 6 Gods - Mars, Mercury, Diana, Apollo, Minerva and Vulcan. The idea of the God system is to gather favor with the 6 gods individually and then spend this favor to activate buffs that boosts certain stats on your character.
@@ -592,8 +583,7 @@ Godly bonus rank 3
 ![Vulcan godly rank 3](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Vulcan_godly_rank_3.png "Vulcan godly rank 3")
 
 Strong buff to your and your mercenaries. 15% armour and max health points 50%
-
-<a id="Treasury"></a>Treasury
+## Treasury {#Treasury}
 -----------------------------
 
 Treasury tab is the home of the pleasant Chest of Divine Faith
@@ -828,13 +818,11 @@ This parchment gives you the opportunity to permanently change your name. Can al
 This symbol allows you to change your character`s gender. Can also be purchased from the Premium tab for 20 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
 These are the rewards that can be won in the Divine Chest of Fate. Most of these are Premium items and can be found in the Premium tab.
-
-<a id="Guild"></a>Guild
+## Guild {#Guild}
 -----------------------
 
 Guild is one of the most important aspects of the game. Joining a guild gives you social interaction, reduces cost for training, provides centralized guild storage, guild market, guild chat and you can heal your character in the Guild Medic. Being such a big topic, there will be a Guilds page on this website as a separate big article.
-
-<a id="Highscore"></a>Highscore
+## Highscore {#Highscore}
 -------------------------------
 
 The Highscore tab leads to several sub-tabs where you can check different rankings on this particular province or server.
@@ -908,8 +896,7 @@ The guilds highscore tab shows the server guild ranking. Just like Player rankin
 **Search**
 
 The search tab lets you search for a Player, a Guild name or a Guild Tag
-
-<a id="Recruiting"></a>Recruiting
+## Recruiting {#Recruiting}
 ---------------------------------
 
 The Recruiting tab is where you can invite new players to join Gladiatus and start playing on this server. If they are invited through the Recruiting system, they will be connected to you and bring you some rewards.
@@ -931,21 +918,18 @@ Every time your recruit does any of these actions, you will receive ![Recruiting
 And the rewards where you can spend your earned ![Recruiting points](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/icon_recruiting_points.png "Recruiting points") are:
 
 ![Recruiting rewards](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Recruiting_Rewards.png "Recruiting rewards")
-
-<a id="Premium"></a>Premium
+## Premium {#Premium}
 
 The Premium tab is where the magic happens when it comes to ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies"). You can buy them and control your inventory of Premium items and activate Pacts
 
 ![Premium](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium_button.png "Premium")
 
 ![Premium tabs](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium_tab.png "Premium tabs")
-
-<a id="Jeweller"></a>Jeweller
+## Jeweller {#Jeweller}
 -----------------------------
 
 Jeweller is where you can buy Rubies ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") and buy Premium items. Premium items are described in the [Chest of Divine Fate](#Treasury "Chest of Divine Fate") section.
-
-<a id="Rubies"></a>Rubies
+## Rubies {#Rubies}
 -------------------------
 
 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") Rubies is the premium currency in Gladiatus which can be obtained by purchasing it from the Jeweler for real money
@@ -986,15 +970,13 @@ Where can you spend Rubies?
 - To reduce cooldown in Expeditions, Dungeons, Recharge Event expedition points, Forging, Centurio,
  
 Rubies can be used in various other ways but will also be discussed in other sections of the guide
-
-<a id="Inventory-Premium"></a>Inventory-Premium
+## Inventory-Premium {#Inventory-Premium}
 -----------------------------------------------
 
 Inventory in the Premium tab shows you different premium items that you posses. This is from where you can activate them too.
 
 ![Inventory (Premium)](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Premium-inventory.png "Inventory (Premium)")
-
-<a id="Centurion"></a>Centurion
+## Centurion {#Centurion}
 -------------------------------
 
 Rubies are useful for a lot of aspects in the game. First and foremost, to buy a Centurio
@@ -1013,8 +995,7 @@ Rubies are useful for a lot of aspects in the game. First and foremost, to buy a
 - increased dungeon point regeneration
  
 Cost: 15 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") for 14 days
-
-<a id="Pacts"></a>Pacts
+## Pacts {#Pacts}
 -----------------------
 
 Pacts is one of the most fundamental premium features of the game. Pacts can be purchased for Rubies or be won at the Divine Chest of Faith for free.
@@ -1024,8 +1005,7 @@ There are 4 categories of pacts. A Pact of each category costs 15 ![Rubies](http
 **Description**
 
  You will become mightier than you ever dreamed of if you choose to make a pact with either the earthly or divine powers! But you will always have to keep in mind that you an only activate one pact from each category. We wouldn`t want the gods to argue about whose favourite you are; this would cause terrible chaos.
-
- <a id="Blessing"></a>Blessing pacts  
+## Blessing pacts {#Blessing}
 
 ---------------------------------------
 
@@ -1098,8 +1078,7 @@ This is which part in increased exactly:
 If pact is activated - these will get from +1225 to 1838, so a bonus of of 613 HP
 
 Required level to activate this pact: 60
-
-<a id="Seal_Pacts"></a>Seal Pacts
+## Seal Pacts {#Seal_Pacts}
 ---------------------------------
 
 Seal pacts are generally helping out with items. There are 5 types of Seal pacts in the Seal category. Each costs 15 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") for 15 days or 1x ![Seal Blessing](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Seal_Coins_small.png "Seal Blessing") (Blessing Symbol) won from Chest of Divine Fate
@@ -1153,8 +1132,7 @@ Required level to activate this pact: 40
 Default Market longest period is 24h. This doubles it to 48 hours. Also reduces in half the Market fee which by default is 2, 3 and 4 % of the price for 2h, 8h and 24h
 
 Required level to activate this pact: 60
-
-<a id="Honours_Pacts"></a>Honours Pacts
+## Honours Pacts {#Honours_Pacts}
 ---------------------------------------
 
 Honours Pacts target combat capabilities of the character. There are 5 types of Honours pacts in this category. Each costs 15 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") for 15 days or 1x ![Commendation](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Commendation_small.png "Commendation") (Commendation) won from Chest of Divine Fate
@@ -1208,8 +1186,7 @@ Required level to activate this pact: 40
 Interesting pact. Again, value is based on the character level. Might not be so significant on high levels when armors are 20000 armour +
 
 Required level to activate this pact: 60
-
-<a id="Secret_Knowledge_Pacts"></a>Secret knowledge of the artefact collector pacts
+## Secret knowledge of the artefact collector pacts {#Secret_Knowledge_Pacts}
 -----------------------------------------------------------------------------------
 
 Secret knowledge pacts are really oriented around items and quests. There are 5 pacts in this category. Each costs 15 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") for 15 days or 1x ![Secret Formula](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Secret_Formula_small.png "Secret Formula") (Secret Formula) won from Chest of Divine Fate
@@ -1265,18 +1242,15 @@ Required level to activate this pact: 40
 This pact increases your constitution by X based on the character level (beyond the maximum stats). Of the assassins seems to be a lot more reasonable
 
 Required level to activate this pact: 60
-
- <a id="City-View"></a>City View
+## City View {#City-View}
 -------------------------------
 
 q
-
-<a id="Country-View"></a>Country View
+## Country View {#Country-View}
 -------------------------------------
 
 q
-
-<a id="Inventory"></a>Inventory
+## Inventory {#Inventory}
 -------------------------------
 
 What is special about Gladiatus is that you have an inventory and bags and you can move items inside the inventory and between bags or sell them to vendors by dragging them with your mouse. Also you can equip items by dragging them to the appropriate slot. Here is how:
@@ -1290,8 +1264,7 @@ These are your bags and how yo can switch between them:
 This is how you can move items between bags:
 
 ![Moving an item between bags](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/moving_item_between_bags.gif "Moving an item between bags")
-
-<a id="Items"></a>Items
+## Items {#Items}
 -----------------------
 
 In MMO games like Gladiatus, gearing up is the goal of the game. Items in Gladiatus are very similar to World of Warcraft's items. When you hover an item with the mouse you can see its stats and items come in different qualities. You can also drag the items
@@ -1307,8 +1280,7 @@ This is how you can equip an item:
 Now a little bit about Items in general. More and extensive info on the [Items](items-general "Items") page but we will cover basics here. Items can occupy from 1 to 6 slots in your inventory so you need to manage it correctly and efficiently to hold as much item as possible.
 
 An item is formed by a base item + Prefix word + Suffix word. The item level of an item is also formed from the level of the base item + the level of the Prefix + the level of the Suffix. More about [Prefixes](Prefixes "Prefixes") and [Suffixes](Suffixes "Suffixes").
-
-<a id="ItemDrops"></a>Item drops
+## Item drops {#ItemDrops}
 --------------------------------
 
 Items, similar to World of Warcraft come in several come in several colors of quality
@@ -1347,13 +1319,13 @@ Secondary drops even work when you lose the battle!
 
 ![Secondary drop when you loose](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/secondary_drops_lose.png "Secondary drop when you loose")
 
-**<a id="SoulBound"></a>Soul bound** - Equipping an item makes it Soulbound to your character. This means that if you trade it over to someone else, he will not be able to equip it. You can remove the Soulbound status of an item with an item called Mirror which is a premium item and we will talk more about it in Alchemist vendor section.
+**Soul bound** {#SoulBound} - Equipping an item makes it Soulbound to your character. This means that if you trade it over to someone else, he will not be able to equip it. You can remove the Soulbound status of an item with an item called Mirror which is a premium item and we will talk more about it in Alchemist vendor section.
 
 ![Soul bound](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/soulbound_1.png "Soul bound")
 
 ![Soul bound](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/soulbound_warning.png "Soul bound")
 
-**<a id="Item-visibility"></a>Wearing Item levels and visibility**
+**Wearing Item levels and visibility** {#Item-visibility}
 
 Gladiatus is very specific in terms of how and when you can wear your items. The game in general tries and will let you see and drop items with item levels that you can wear. However, it is reasonable to have a limit to what you can wear. This limit is +16 levels above your character level. This means that if you are level 94, you can only wear items up to level 110 (94+16=110). Item that is more than 16 levels above your character will have its item level in Red, just like in the example below:
 
@@ -1413,8 +1385,7 @@ Forging an item that is exactly +16 item levels above your character, on the lim
 and so on...
 
 You can see that with some luck and using costumes or Micro events that boost forging success chance, it is possible to forge a higher level item but it's so risky and so unreasonable that it's just not worth it. That's why the game allows for these 2 ways of obtaining a higher than +16 level items but they are left in there just because they are not such a big issue and blend in the game just fine.
-
-<a id="Packages"></a>Packages
+## Packages {#Packages}
 -----------------------------
 
 Whenever you collect and item, through defeating a mob, repairing or forging an item or buying an item from the Auction House, it will not directly come into your inventory. Instead, it will be sent to your character as a package. The package interface can be found on the top left screen of your game interface with this icon:
@@ -1430,8 +1401,7 @@ so when an item is sent to your character as a package, it will stay there for 7
 As packages can grow large in 7 days, the package interface allows for sorting and searching of your items in your package interface. You can search by name, search by type (Armour or gloves or a recipe) and you can set a minimum quality to be shown. For example, if you are looking for these orange materials and you want only orange materials to be shown so you can drag them to your inventory but you don't want any other quality, you can set type of object to Forging goods, then set the minimum quality to Orange and show only orange materials.
 
 Package system is often used as additional storage because the bag slots and inventory are just not enough to hold all of your items that you find on your adventures. Just be aware that when a package expires it will "sell" the item for the amount it costs to a vendor in ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") and the will deposit the gold directly to your active gold on the character. This may sound good, at least the item is not deleted, at least you will get the gold worth of and this is indeed very generous but there is a danger of piling up too much gold and be easy prey to attackers. Best to spend the gold as soon as the package expires or just do not let the items expire and sell them to vendors at your convenience.
-
-<a id="Gold"></a>Gold
+## Gold {#Gold}
 ---------------------
 
 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")Gold is represented with the icon ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") and is the most essential part of the game.
@@ -1455,8 +1425,7 @@ Gold is used for:
 - Traveling between countries
 - Upgrading items in Magus Hermeticus
 - Build Guild buildings by donating gold to the Guild Bank
- 
-<a id="Leveling"></a>Leveling
+## Leveling {#Leveling}
 -----------------------------
 
 You level up when you reach the experience points required for the next level. So this is what happens when you level up:
@@ -1492,8 +1461,7 @@ When you start the game not all features are available right away. Some of them 
 - Vendors - Unlock at Level
 - Dungeons and Circus Turma - Unlock at Level 10
 - Underworld - Unlocks at Level 100
- 
-<a id="Character_stats"></a>Character stats
+## Character stats {#Character_stats}
 ===========================================
 
 Character stats is a huge topic and this article will be highly scientific getting to every detail for every stat out there
@@ -1647,8 +1615,7 @@ Total Critical healing value **=** (Intelligence/5) \[round down\] + Critical he
 Your maximum cap for amassing Critical healing value = FLOOR.MATH(89.5\*7\*(Character Level-8)/52)+1
 
 Chance for Critical healing = (Critical healing \* 52 / (level-8 ) / 8
-
-<a id="Fighting_in_Gladiatus"></a>Fighting in Gladiatus
+## Fighting in Gladiatus {#Fighting_in_Gladiatus}
 -------------------------------------------------------
 
 Battles in Gladiatus are based on rounds. When the fight begins, Round 1 starts. In each round, Attacker and Defender are exchanging attacks. The first to attack is always the Defender. The winner is determined by whoever does the most damage in a certain number of rounds or whoever dies (reaches 0 Health points) first.
@@ -1664,8 +1631,7 @@ Battles in Gladiatus are based on rounds. When the fight begins, Round 1 starts.
 Every round is also based on [RNG](https://en.wikipedia.org/wiki/Random_number_generation "Randomness"). Because most of the combat stats are maxed at 50% cap and because chance to hit rarely surpasses 60% the randomness of who hits who successfully in a fight or who lands a critical hit is very big. Therefore it is possible to beat a stronger opponent with "lucky" hits. Of course this cannot happen when the difference in powerful two gladiators are is too vast but on close stats the "luck" can really make a difference.
 
 The fights can be examined in the Battle Reports in details
-
-<a id="Speed_Server"></a>Speed Server
+## Speed Server {#Speed_Server}
 -------------------------------------
 
 Speed server is a special server in which the game runs at faster pace. The speed servers were implemented by Gameforge so that new players can catch up quicker and not be discouraged by the huge time required to level up on the high levels. You can recognize if the server is a speed server by opening the drop-down menu in the Register form:
@@ -1685,8 +1651,7 @@ Servers can be in different speeds from x2 up to x5. So what exactly is "quicker
 - Quicker cooldowns on Godly Ranks 1, 2 and 3
 - Shorter buff duration on oils and reinforcements
 - You work quicker. 8 hour stable boy on speed 4 = 2 hours of actual work
- 
-<a id="Tips"></a>Tips & Tricks
+## Tips & Tricks {#Tips}
 ----------------------------------
 
 Here are some tips and tricks that probably won't be known by the new gladiator
@@ -1720,15 +1685,13 @@ Now, what does it take to play like a pro? Well, we basically said it earlier. T
 - **Maximizing stats** - It is almost impossible without being pushed by other players (which is no longer disallowed but might still be illegal if caught) to maximize your stats on low or mid levels. Certainly achievable on levels 110 + but the Gladiator must have followed the above guidelines since the character creation. The max stats cap is Character Level\*5 which means that on level 100 you can train 500 of each stat. If your character has been following the Play like a Pro guidelines since Level 1, it could be possible that 500 of each stat is trained by Level 100. However, selling Gold Forging tools is probably a must at some point to each it. A lot of the players in Britannia (120+) are maxed in stats which means that the riches of Britannia are enormous
 - **Smart spending gold** - One of the requirements to be pro, as we mentioned, is to spend gold only in an efficient way. What does that mean? Yes, most of the gold is spent on training but there is significant gold wasted on, especially on low, mid and early high levels for various items or mercenary and for equipping all of your characters. One good advice is not to spend gold on buffs that you know you will replace easily, not to buy Auction House items that are 2x overpriced compared to vendor price (unless necessary, of course we are not skipping this awesome weapon or Mercenary, just because it is 2x vendor value) and not to go into stupid bidding wars with other players in the Auction House.
 - **Be Active** - that goes without saying. You need to be very active. You should avoid having your cooldowns stay full. Don't let your Expedition points stay full. Same goes for Expedition points and your Underworld cooldowns. Being efficient doesn't mean you have to be a robot who stays online 24/7. If you play it smart, you could have breaks. Worst, mathematically speaking, is to have full cooldowns. Spend your God's favors on cooldown, Do not let your efficient packs such as Blessing pacts run out without noticing. Take rests from the game but just don't do it when full on expedition/dungeon/underworld points. Play on game events. There are at least 2 major events every month. Don't stay offline exactly for the events. They are always related to good buffs or extra expeditions that can bring you training cost reductions or a lot more to fight and farm gold and items from. Do small things like, exhausting all your expedition points before activating Dis Pater Normal costume. Watch your Centurio run out date and time and use Cervisia or other Centio +1 day boosts to maximize your Expedition points. Do not let Centurio expire when you are on full points as when you active you are not getting as much refunded. These things might feel like small or irrelevant in the bigger picture but they are not! They are huge long-term.
- 
-<a id="Country"></a>Country View
+## Country View {#Country}
 --------------------------------
 
 The Country view button is where you can find the Hermit and the Expeditions
 
 ![Country View](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Country_button.png "Country View")
-
-<a id="Hermit"></a>Hermit
+## Hermit {#Hermit}
 -------------------------
 
 Hermit is an important character in Gladiatus.
@@ -1764,8 +1727,7 @@ Your documents are being faked.
 You`re unhappy and don`t feel comfortable in your own skin? How about transforming your soul into another body?
 
 Costs 20 ![Ruby](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Ruby")
-
-<a id="Expeditions"></a>Expeditions
+## Expeditions {#Expeditions}
 -----------------------------------
 
 This will be a very basic guide on what Expeditions are. If you are looking for particular expedition opponents and info on them, check out the big [Expeditions](/expeditions "Expeditions") page.
@@ -1833,8 +1795,7 @@ So when you engage an expedition opponent you will be fighting him for 20 rounds
 You can observe the details of the fight, just after the fight on the battle report or after from the Battle reports interface
 
 ![Expedition fight](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/expedition_fight.png "Expedition fight")
-
-<a id="Dungeons"></a>Dungeons
+## Dungeons {#Dungeons}
 -----------------------------
 
 Just like Expeditions, dungeons are a very essential part of the game. Dungeons are bigger challenges where the opponents are a lot stronger than expeditions but you go in and face them with a group of 5 people. These are not other players but these are NPCs that you recruit to fight with you. Let's start from the beginning. Dungeons become available at Level 10
@@ -1896,6 +1857,5 @@ So for more info on the Dungeons go to the [Dungeons](/dungeons "Dungeons") page
 **Fighting in Dungeons**
 
 So a fight in dungeon
-
-<a id="Town_View"></a>Town View
+## Town View {#Town_View}
 -------------------------------

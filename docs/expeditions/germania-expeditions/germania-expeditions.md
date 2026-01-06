@@ -27,7 +27,7 @@ Expeditions Menu
 - **[Koman Mountain](#KomanMountain "Koman Mountain")**
 - **[Dragon Remains](#DragonRemains "Dragon Remains")**
  
-**<a id="CaveTemple"></a>Cave Temple**
+**Cave Temple** {#CaveTemple}
 --------------------------------------
 
 The first expedition once you arrive in Germania is the Cave Temple.
@@ -171,7 +171,7 @@ Soulless
 
  
 
-**<a id="GF"></a>The green forest**
+**The green forest** {#GF}
 -----------------------------------
 
 The second expedition in Germania is the Green Forest.
@@ -306,7 +306,7 @@ Werebear
 
  
 
-**<a id="CursedVillage"></a>Cursed Village** 
+**Cursed Village** {#CursedVillage} 
 ---------------------------------------------
 
 The third expedition in Germania. Things are getting serious now.
@@ -440,14 +440,7 @@ Abomination
 
 
 **Item level drop**: 59-69
-
- 
-
- 
-
- 
-
-<a id="DeathHill"></a>Death Hill
+## Death Hill {#DeathHill}
 --------------------------------
 
 The fourth expedition in Germania is Death Hill. Relatively easy expedition.
@@ -576,14 +569,7 @@ Necromancer Prince
  **Damage:** 142-174/144-176
 
 **Item level drop**: 63-74
-
- 
-
- 
-
- 
-
-<a id="VandalVillage"></a>Vandal Village
+## Vandal Village {#VandalVillage}
 ----------------------------------------
 
 The fifth expedition in Germania is Vandal Village. It is a high level expedition which means that you will visit it on your next return to Germania.
@@ -716,14 +702,7 @@ Death Knight
 
 
 **Item level drop**: 97-118
-
- 
-
- 
-
- 
-
-<a id="Mine"></a>Mine
+## Mine {#Mine}
 ---------------------
 
 The sixth expedition in Germania is the most pleasant one. Weak opponents, good treasures.
@@ -857,14 +836,7 @@ Tatzelwurm
 
 
 **Item level drop**: 102-123
-
- 
-
- 
-
- 
-
-<a id="TeutonCamp"></a>Teuton Camp
+## Teuton Camp {#TeutonCamp}
 ----------------------------------
 
 The seventh expedition in Germania and quite a hard one.
@@ -999,14 +971,7 @@ Seidr
 
 
 **Item level drop**: 107-125
-
- 
-
- 
-
- 
-
-<a id="KomanMountain"></a>Koman Mountain
+## Koman Mountain {#KomanMountain}
 ----------------------------------------
 
 The most amazing expedition in the game. Marvelous creatures.
@@ -1141,14 +1106,7 @@ Dragon
 
 
 **Item level drop**: 109-133
-
- 
-
- 
-
- 
-
-<a id="DragonRemains"></a>Dragon Remains
+## Dragon Remains {#DragonRemains}
 ----------------------------------------
 
 The last expedition in the game. Only for the best gladiators.

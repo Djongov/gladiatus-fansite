@@ -25,8 +25,7 @@ Expeditions
 - **[Caravan](#Caravan "Caravan")**
 - **[Mesoai-Oasis](#MesoaiOasis "Mesoai-Oasis")**
 - **[Cliff Jumper](#CliffJumper "Cliff Jumper")**
- 
-<a id="VoodooTemple"></a>Voodoo Temple
+## Voodoo Temple {#VoodooTemple}
 --------------------------------------
 
 Voodoo Temple is the first expedition in Africa.
@@ -149,14 +148,7 @@ Seth Priest
  **Armour:**  1164-1250  
  **Damage:**  99-122/105-129  
 **Item level drop**: 36-44
-
- 
-
- 
-
- 
-
-<a id="Bridge"></a>Bridge
+## Bridge {#Bridge}
 -------------------------
 
 Bridge is the second expedition in Africa and while it takes a lot to adapt once you arrive in Africa, this expedition seems to be a bit more reasonable. Fierce and aggressive tribe.
@@ -278,14 +270,7 @@ Bone Shaman
  **Armour:**  2080-2115  
  **Damage:**  113-139/119-146  
 **Item level drop**: 37-50
-
- 
-
- 
-
- 
-
-<a id="BloodCave"></a>Blood Cave
+## Blood Cave {#BloodCave}
 --------------------------------
 
 Blood Cave is the third expedition in Africa.
@@ -416,14 +401,7 @@ Fire Demon
  **Armour:**  1667-1920  
  **Damage:**  70-86/73-90  
 **Item level drop**: 40-56
-
- 
-
- 
-
- 
-
-<a id="LostHarbour"></a>Lost Harbour
+## Lost Harbour {#LostHarbour}
 ------------------------------------
 
 Lost Harbour is the fourth expedition in Africa. It's the last expedition in Africa before going to Germania for the first time so enjoy is as you won't be coming back in a long time. It has interesting dungeons and expedition enemies.
@@ -554,14 +532,7 @@ Mokele Mbembe
  **Armour:**  7774-9525  
  **Damage:**  125-154/130-160  
 **Item level drop**: 43-48*
-
- 
-
- 
-
- 
-
-<a id="UmpoktaTribe"></a>Umpokta Tribe
+## Umpokta Tribe {#UmpoktaTribe}
 --------------------------------------
 
 Umpokta Tribe is the fifth expedition in Africa. Really important one and is the first expedition that you will encounter for your big return to Africa after being in Germania and Italy. It has really crucial dungeons. It houses the Africa's high command.
@@ -691,14 +662,7 @@ Seth High Priest
  **Armour:**  5127-6049  
  **Damage:**  208-343/286-354  
 **Item level drop**: 0*
-
- 
-
- 
-
- 
-
-<a id="Caravan"></a>Caravan
+## Caravan {#Caravan}
 ---------------------------
 
 Caravan is the fifth expedition in Africa and is very fruitful and boosting expedition. Enemies are not impossibly hard and they are more than generous.
@@ -828,14 +792,7 @@ Slave Merchant
  **Armour:**  5443-6649  
  **Damage:**  160-197/164-201  
 **Item level drop**: 103*
-
- 
-
- 
-
- 
-
-<a id="MesoaiOasis"></a>Mesoai Oasis
+## Mesoai Oasis {#MesoaiOasis}
 ------------------------------------
 
 Mesoai Oasis is the fifth expedition in Africa.
@@ -966,14 +923,7 @@ Demon Elephant
  **Armour:**  13283-15422  
  **Damage:** 292-359/298-366  
 **Item level drop**: 89-109
-
- 
-
- 
-
- 
-
-<a id="CliffJumper"></a>Cliff Jumper
+## Cliff Jumper {#CliffJumper}
 ------------------------------------
 
 Cliff Jumper is the fifth expedition in Africa.

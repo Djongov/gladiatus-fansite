@@ -37,8 +37,7 @@ Gladiatus Items
 - **[Scrolls](#Scrolls "Scrolls")**
 - **[Event items](#Event "Event items")**
 - **[Misc](#Misc "Misc")**
- 
-<a id="formation"></a>**Item formation**
+## **Item formation** {#formation}
 ----------------------------------------
 
 In Gladiatus an item is formed from a base item to which a prefix, suffix or both can be applied at the same time.
@@ -103,8 +102,7 @@ If you decide to use it on a Shield - there is no Charisma % on shields! Just li
 This is the same with Dexterity on shoes and Strength on Amulets!!!
 
 So have this in mind when you are looking for the best item to help you max your stats.
-
-<a id="Quality"></a>**Item Quality**
+## **Item Quality** {#Quality}
 ------------------------------------
 
 Items come in 6 qualities. When an item drops it rolls the dice on what quality the item will be.
@@ -130,8 +128,7 @@ Item stats can be upgraded through repairing and conditioning. More about it you
 **Purple** + conditioning = **Orange** value = 150%   
 **Orange** value + conditioning = **Red** value = 175%   
 **Red** + conditioning = 200% value, twice as better as normal **Green** item
-
-<a id="Drop"></a>**Item Drop**
+## **Item Drop** {#Drop}
 ------------------------------
 
 Estimations are that on average the drop rate are around these values. These numbers are from a research on 20 gladiators and their own % drop over the last 7 years. **Red** drops are so rare that this number is mostly prediction while the other 4 for Green-Orange are pure math average.
@@ -155,11 +152,9 @@ Estimations are that on average the drop rate are around these values. These num
 \- Items gold cost raises with their level both when buying or selling them
 
 \- Expedition opponent will only drop items with item level as high as you can wear even if it can drop higher in general. Example: Dracolich in Dragon Remains can drop as high as item level 134 but if you are level 113 he will not drop beyond what you can wear at that level, which is 129 (character level +16)
-
-<a id="Items"></a>Items
+## Items {#Items}
 =======================
-
-<a id="Weapons"></a>**Weapons**
+## **Weapons** {#Weapons}
 -------------------------------
 
 Please note that the Weapons here are sorted by level while in the game forge they are not in the same order
@@ -327,8 +322,7 @@ Resources required: 3x ![Copper](https://gladiatusfansite.blob.core.windows.net/
 ![Spear stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Spear_stats.png "Spear stats")
 
 Resources required: 7x ![Wood](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Wood.png "Wood") 1x ![Leather](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Leather.png "Leather") 3x ![Iron](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Iron.png "Iron")
-
-    <a id="Shields"></a>**Shields**
+## **Shields** {#Shields}
 -------------------------------
 
 Please note that the Shields here are sorted by level while in the game forge they are not in the same order
@@ -428,8 +422,7 @@ Resources required: 3x ![Copper](https://gladiatusfansite.blob.core.windows.net/
 ![Titanium Shield stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Titanium_Shield_stats.png "Titanium Shield stats")
 
 Resources required: 12x ![Iron](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Iron.png "Iron")
-
-    <a id="Armour"></a>**Armour**
+## **Armour** {#Armour}
 -----------------------------
 
 Please note that the Armours here are sorted by level while in the game forge they are not in the same order
@@ -529,8 +522,7 @@ Resources required: 2x ![Copper](https://gladiatusfansite.blob.core.windows.net/
 ![Hard leather armour stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Hard_leather_armour_stats.png "Hard leather armour stats")
 
 Resources required: 12x ![Leather](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Leather.png "Leather")
-
-    <a id="Helmets"></a>**Helmets**
+## **Helmets** {#Helmets}
 -------------------------------
 
 Please note that the Helmets here are sorted by level while in the game forge they are not in the same order
@@ -638,8 +630,7 @@ Resources required: 7x ![Copper](https://gladiatusfansite.blob.core.windows.net/
 ![Brass centurio stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Brass_centurio_stats.png "Brass centurio stats")
 
 Resources required: 7x ![Copper](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Copper.png "Copper") 1x ![Leather](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Leather.png "Leather") 4x ![Iron](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Iron.png "Iron")
-
-    <a id="Gloves"></a>Gloves
+## Gloves {#Gloves}
 -------------------------
 
 Please note that the Gloves here are sorted by level while in the game forge they are not in the same order
@@ -715,8 +706,7 @@ Resources required: 6x ![Leather](https://gladiatusfansite.blob.core.windows.net
 ![Plate gauntlets stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Plate_gauntlets_stats.png "Plate gauntlets stats")
 
 Resources required: 7x ![Leather](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Leather.png "Leather") 5x ![Iron](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Iron.png "Iron")
-
-    <a id="Shoes"></a>Shoes
+## Shoes {#Shoes}
 -----------------------
 
 Please note that the Shoes here are sorted by level while in the game forge they are not in the same order
@@ -800,8 +790,7 @@ Resources required: 5x ![Copper](https://gladiatusfansite.blob.core.windows.net/
 ![Plate boots stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Plate_boots_stats.png "Plate boots stats")
 
 Resources required: 7x ![Leather](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Leather.png "Leather") 6x ![Iron](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Iron.png "Iron")
-
-    <a id="Rings"></a>Rings
+## Rings {#Rings}
 -----------------------
 
 Rings are all with base level of 1 so they are in order shown in the Forge in-game
@@ -857,8 +846,7 @@ Resources required: 2x ![Copper](https://gladiatusfansite.blob.core.windows.net/
 ![Triskele](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Triskele.png "Triskele")
 
 Resources required: 2x ![Copper](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Copper.png "Copper")
-
-    <a id="Amulets"></a>Amulets
+## Amulets {#Amulets}
 ---------------------------
 
 Amulets are all with base level of 1 so they are in order shown in the Forge ingame
@@ -926,8 +914,7 @@ Resources required: 2x ![Copper](https://gladiatusfansite.blob.core.windows.net/
 ![Fibula](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Fibula.png "Fibula")
 
 Resources required: 2x ![Copper](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Copper.png "Copper")
-
-    <a id="Food"></a>Food (Usable)
+## Food (Usable) {#Food}
 ------------------------------
 
 Some facts about food:
@@ -1061,7 +1048,7 @@ Follow this guide on what foods can combine. In-game you can see this as well by
 
 ![Feast](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Food/Feast.png "Feast") = ![Apple](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Food/Apple.png "Apple") +![Chicken](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Food/Chicken.png "Chicken")
 
-    **<a id="Special-food"></a>Special food**
+    **Special food** {#Special-food}
 -----------------------------------------
 
     There is food that is special and does not drop outside of special events. Look at the [events](/events "events") page for more info.
@@ -1101,8 +1088,7 @@ Resets dungeon cooldown
 **![Henqet](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Food/special_food/Henqet.gif "Henqet")**
 
 4 hour of stable boy salary in gold ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold")
-
-    <a id="Reinforcements"></a>Reinforcements
+## Reinforcements {#Reinforcements}
 -----------------------------------------
 
 Reinforcements are temporary buffs to an item that will increase a certain stat. They only last a limited amount of time and are not permanent. Reinforcements boost the character stats, health points and damage. Typical for reinforcements and upgrades is that every color boosts a certain character stat. Here is the order:
@@ -1258,8 +1244,7 @@ Just like any other item, reinforcements can be different quality colors and the
 ![Ginko leaves](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Reinforcements/Ginko_leaves.png "Ginko leaves")
 
 ![Ginko leaves stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Reinforcements/Ginko_leaves_stats.png "Ginko leaves stats")
-
-    <a id="Recipes"></a>Recipes
+## Recipes {#Recipes}
 ---------------------------
 
 Recipes, not to be mistaken for Scrolls are recipes that can be used in the Guild building - Library. A recipe can be activated for X amount of ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") depending on the level of the recipe and can increase stats for all the gladiators in a guild for 4 hours. They are very close to what reinforcements are but are guild-wide effects. The higher the level of the recipe, the more stats it will increase but also the cost and cooldown will increase as well.
@@ -1317,8 +1302,7 @@ Increases damage for 4 hours for all guild members
 ![Blessing of Life](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Recipes/Blessing_of_Life.png "Blessing of Life")
 
 Increases life points for 4 hours for all guild members
-
-    <a id="Upgrades"></a>Upgrades
+## Upgrades {#Upgrades}
 -----------------------------
 
 Upgrades are items that permanently increase a certain stats when applied to an item. The higher the item level of the upgrade item the higher the stats it will increase. Most upgrade items have a minimum item level that they can be applied to so be aware of it. Also, if you are buying an Upgrade item from the Market, make sure it's not Soul bound to the seller because if it is, you will not be able to use it.
@@ -1462,8 +1446,7 @@ Temporarily increases damage on weapons for 1 hour
 ![Detergent sponge stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Upgrades/Detergent_sponge_stats.png "Detergent sponge stats")
 
 Permanently removes an upgrade on any weapon, armour or jewellery. It can remove anything that is under the Upgrades category. The item level of the sponge determines what is the max level of the item that can be used on
-
-    <a id="Scrolls"></a>Scrolls
+## Scrolls {#Scrolls}
 ---------------------------
 
 Scrolls are the recipes of item prefixes and suffixes and can be learned so you can forge items with them. There are a number of different scroll colors and variations but they are not tight or connected to the prefixes/suffixes they represent and are completely random. For more info on what the actual scrolls can be, go to Item Prefixes and Item Suffixes pages. These below are just the variations of scrolls you can find out there.
@@ -1594,8 +1577,7 @@ Drops from mobs during the event and can be donated to rebuild Rome
 ![Cloth stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Cloth_stats.png "Cloth stats")
 
 Drops from mobs during the event and can be donated to rebuild Rome
-
-    <a id="Misc"></a>Misc
+## Misc {#Misc}
 ---------------------
 
 Misc items are items that do not fall into any category or are currently with no wide-spread or known use

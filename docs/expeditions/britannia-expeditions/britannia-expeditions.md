@@ -26,8 +26,7 @@ Expeditions
 - [Camulodunum](#Camulodunum "Camulodunum")
 - [Cambria](#Cambria "Cambria")
 - [Mona Isle](#Mona_Isle "Mona Isle")
- 
-<a id="Bank_of_Thames"></a>Bank of Thames
+## Bank of Thames {#Bank_of_Thames}
 -----------------------------------------
 
 **Description**
@@ -231,8 +230,7 @@ stats from 100 defeats
 - Very good item drop chance
 - Drops mostly Blue but good chance for higher qualities
 - Very interesting experience points range. Sometimes will go as low as 15 but will never do 16 and 17. Mostly it will be 18 or 19 and rarely 20
- 
-    <a id="Forest_Fortress"></a>Forest Fortress
+## Forest Fortress {#Forest_Fortress}
 -------------------------------------------
 
 **Description**
@@ -344,14 +342,7 @@ Callirius
  **Armour:** 28946-31604*  
  **Damage:** 871-1070  
 **Item level drop**: ???
-
- 
-
- 
-
- 
-
-<a id="The_Moor"></a>The Moor
+## The Moor {#The_Moor}
 -----------------------------
 
 **Description**
@@ -463,14 +454,7 @@ Nodens
  **Armour:**  43381  
  **Damage:** 734-901  
 **Item level drop**: 152-
-
- 
-
- 
-
- 
-
-<a id="Camp_Cassivellaunus"></a>Camp Cassivellaunus
+## Camp Cassivellaunus {#Camp_Cassivellaunus}
 ---------------------------------------------------
 
 **Description**
@@ -582,14 +566,7 @@ Cassivellaunus
  **Armour:** 29007  
  **Damage:** 832-1022  
 **Item level drop**: 161-
-
- 
-
- 
-
- 
-
-<a id="Kent"></a>Kent
+## Kent {#Kent}
 ---------------------
 
 **Description**
@@ -701,14 +678,7 @@ Taximagulus
  **Armour:**  33738  
  **Damage:** 1452-1783  
 **Item level drop**: ???
-
- 
-
- 
-
- 
-
-<a id="The_Ford"></a>The Ford
+## The Ford {#The_Ford}
 -----------------------------
 
 **Description**
@@ -820,14 +790,7 @@ Opponent_boss
  **Armour:**  0-0  
  **Damage:** 0-0/1-1  
 **Item level drop**: 1
-
- 
-
- 
-
- 
-
-<a id="Camulodunum"></a>Camulodunum
+## Camulodunum {#Camulodunum}
 -----------------------------------
 
 **Description**
@@ -940,14 +903,7 @@ Caratacus
  **Armour:** 90595  
  **Damage:** 1486-1824  
 **Item level drop**: 197-
-
- 
-
- 
-
- 
-
-<a id="Cambria"></a>Cambria
+## Cambria {#Cambria}
 ---------------------------
 
 **Description**
@@ -1059,14 +1015,7 @@ Ordovicer
  **Armour:** 49630  
  **Damage:** 1866-2291  
 **Item level drop**: 1
-
- 
-
- 
-
- 
-
-<a id="Mona_Isle"></a>Mona Isle
+## Mona Isle {#Mona_Isle}
 -------------------------------
 
 **Description**

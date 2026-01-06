@@ -19,8 +19,7 @@ Table of Contents
 ![Forging](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forge/forging.png "Forging")
 
 In the Forge you can create your own equipment. You can forge all of the equipment items to be found in the game with the scrolls you find on your adventures. Simply collect the necessary resources, add optional tools to make the forging easier, and away you go!
-
-<a id="Interface"></a>Forging Interface
+## Forging Interface {#Interface}
 ---------------------------------------
 
 The first time you enter the forge you will be greeted by the following message:
@@ -30,8 +29,7 @@ The first time you enter the forge you will be greeted by the following message:
 So this is the Forging interface explained:
 
 ![Forging interface explained](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forge/Forging_table_explained.png "Forging interface explained")
-
-<a id="How-forging-works"></a>How Forging works
+## How Forging works {#How-forging-works}
 -----------------------------------------------
 
 In the Items section of the site we learned that an item is formed by applying a Prefix, Base Item and Suffix. Base Items are already available in your Forging interface but the Prefixes and the Suffixes will need to be learned. They are learned from Scrolls found in your adventures, through Smelting or purchased from other players in the Market. Once you choose your desired Prefix, Base item and Suffix you can purchase the Forging slot and begin the forging.
@@ -65,8 +63,7 @@ https://www.youtube.com/watch?v=XbMyVZxPb2A
 When you successfully forge an item and it doesn't fail you will be greeted by this message in the Forging interface:
 
 ![Eureka](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forge/eureka.png "Eureka")
-
-<a id="Fail"></a>Failing a Forge
+## Failing a Forge {#Fail}
 --------------------------------
 
 If you happen to fail a forge (you should always aim for 100% if you are forging something important) you are presented with the following pop-up message:
@@ -86,8 +83,7 @@ Here is a video of what actually happens when you try. This is a very painful fo
 ![Disaster!](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forge/Disaster.png "Disaster!")
 
 https://www.youtube.com/watch?v=TSZ9YCaYawk
-
-<a id="Facts"></a>Forging Facts
+## Forging Facts {#Facts}
 -------------------------------
 
 - You have a total of 6 slots to forge up to 6 items at once. First two only cost ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") and the other 4 cost ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies"). The cost depends on the item level and the item type. Amulets being most expensive and can go as high as 10-20 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") and gloves/shoes/helmets the cheapest, between 3-9 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")

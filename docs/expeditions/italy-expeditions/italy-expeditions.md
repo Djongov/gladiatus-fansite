@@ -24,8 +24,7 @@ Expeditions
 - **[Ancient Temple](#AncientTemple "Ancient Temple")**
 - **[Barbarian Village](#BarbarianVillage "Barbarian Village")**
 - **[Bandit Camp](#BanditCamp "Bandit Camp")**
- 
-<a id="Grimwood"></a>Grimwood
+## Grimwood {#Grimwood}
 -----------------------------
 
 Grimwood is the first expedition in the game. Do not get fooled by it. It has some fearsome animals. Rat is really weak but Lynx is far stronger and it doesn't scale exponentially. Same with Wolf and Bear. Do not expect to start farming Wolf and Bear anytime soon.
@@ -139,14 +138,7 @@ Bear
  **Armour:**  401-591  
  **Damage:**  12-15/15-18  
 **Item level drop**: 8-11
-
- 
-
- 
-
- 
-
-<a id="PirateHarbour"></a>Pirate Harbour
+## Pirate Harbour {#PirateHarbour}
 ----------------------------------------
 
 Pirate Harbour is the second expedition in the game and it's only 5 levels away. However 5 levels might be too quick.
@@ -262,14 +254,7 @@ Captain
  **Armour:** 466-730  
  **Damage:**  23-28/26-32  
 **Item level drop**: 17-20
-
- 
-
- 
-
- 
-
-<a id="MistyMountains"></a>Misty Mountains
+## Misty Mountains {#MistyMountains}
 ------------------------------------------
 
 Pirate Harbour is the third expedition in the game and it opens up at level 10 but not really doable at level 10, just like its dungeon.
@@ -389,14 +374,7 @@ Medusa
  **Armour:**  1405-1708  
  **Damage:**  33-41/35-43  
 **Item level drop**: 18-27
-
- 
-
- 
-
- 
-
-<a id="WolfCave"></a>Wolf Cave
+## Wolf Cave {#WolfCave}
 ------------------------------
 
 Wolf Cave is the fourth expedition in the game and it allows you to enter at level 15.
@@ -510,14 +488,7 @@ Werewolf
  **Armour:**  2749-3077  
  **Damage:**  66-82/71-87  
 **Item level drop**: 28-37
-
- 
-
- 
-
- 
-
-<a id="AncientTemple"></a>Ancient Temple
+## Ancient Temple {#AncientTemple}
 ----------------------------------------
 
 Ancient Temple is the long waited return of our glorious gladiator to Italy. After a long absence you are finally home and it's time for the high level beasts to pay their dues.
@@ -631,14 +602,7 @@ Minotaur Chief
  **Armour:**  4980-8778  
  **Damage:**  187-229/192-235  
 **Item level drop**: 67-86
-
- 
-
- 
-
- 
-
-<a id="BarbarianVillage"></a>Barbarian Village
+## Barbarian Village {#BarbarianVillage}
 ----------------------------------------------
 
 Barbarian Village is an expedition that is second you will see since your return to Italy. Fairly strong enemies and really important dungeons.
@@ -753,14 +717,7 @@ Barbarian Chief
  **Armour:**  5173-6167  
  **Damage:**  162-199/166-203  
 **Item level drop**: 74-84*
-
- 
-
- 
-
- 
-
-<a id="BanditCamp"></a>Bandit Camp
+## Bandit Camp {#BanditCamp}
 ----------------------------------
 
 Bandit Camp is comprised of deserters, criminals and smugglers from the city. Last expedition in Italy. Once you are done here, you won't return home anymore.
