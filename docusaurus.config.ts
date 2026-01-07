@@ -44,6 +44,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+  titleDelimiter: '-',
+
   presets: [
     [
       'classic',
@@ -82,6 +84,16 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Docs',
+        },
+        {
+          to: '/calculator',
+          position: 'left',
+          label: 'Calculators',
+        },
+        {
+          to: '/about-me',
+          position: 'left',
+          label: 'About Me',
         },
         {
           href: 'https://github.com/Djongov/gladiatus-fansite',

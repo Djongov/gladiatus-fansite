@@ -1,6 +1,6 @@
 {
   "routes": [
-    { "route": "/home", "redirect": "/home/welcome-to-gladiatus-fansite", "statusCode": 301, "queryParameters": { "id": "1" } },
+    { "route": "/home", "redirect": "/", "statusCode": 301, "queryParameters": { "id": "1" } },
     { "route": "/expeditions", "redirect": "/expeditions", "statusCode": 301, "queryParameters": { "id": "2" } },
     { "route": "/italy-expeditions", "redirect": "/italy-expeditions", "statusCode": 301, "queryParameters": { "id": "5" } },
     { "route": "/germania-expeditions", "redirect": "/germania-expeditions", "statusCode": 301, "queryParameters": { "id": "3" } },
@@ -88,14 +88,14 @@
     { "route": "/suffixes", "redirect": "/suffixes/item-suffixes", "statusCode": 301, "queryParameters": { "id": "75" } },
 
     { "route": "/calculator", "redirect": "/calculator/building-and-training-calculator", "statusCode": 301, "queryParameters": { "id": "62" } },
-    { "route": "/game-updates", "redirect": "/game-updates", "statusCode": 301, "queryParameters": { "id": "33" } },
+    { "route": "/game-updates", "redirect": "/", "statusCode": 301, "queryParameters": { "id": "33" } },
     { "route": "/formulas", "redirect": "/formulas/gladiatus-formulas", "statusCode": 301, "queryParameters": { "id": "49" } },
-    { "route": "/game-rules", "redirect": "/game-rules/guild-rules", "statusCode": 301, "queryParameters": { "id": "50" } },
+    { "route": "/game-rules", "redirect": "/", "statusCode": 301, "queryParameters": { "id": "50" } },
 
     { "route": "/gallery", "redirect": "/gallery", "statusCode": 301, "queryParameters": { "id": "4" } },
     { "route": "/videos", "redirect": "/videos", "statusCode": 301, "queryParameters": { "id": "21" } },
     { "route": "/website-changes-log", "redirect": "/website-changes-log", "statusCode": 301, "queryParameters": { "id": "51" } },
-    { "route": "/about-me", "redirect": "/about-me", "statusCode": 301, "queryParameters": { "id": "52" } },
+    { "route": "/index.php/about-me/", "redirect": "/about-me", "statusCode": 301, "queryParameters": { "id": "52" } },
 
     { "route": "/materials", "redirect": "/materials/forging-goods", "statusCode": 301, "queryParameters": { "id": "66" } }
   ]

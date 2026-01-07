@@ -46,10 +46,6 @@ We are born from ashes and ashes we will become. Doesn`t it then make sense for 
 **Enemy levels:** 50-58  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Cave-Temple.xlsx "Cave Temple")**
-
-**Link to this expedition: gladiatus.gamerz-bg.com/germania-expeditions#CaveTemple**
-
 **Real level to engage:** 40  
 
 
@@ -188,7 +184,6 @@ The Green Forest is a bit hard. No problem in beating the Giant Wild Boar but th
 **Enemy levels:** 55-63  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Green-Forest.xlsx "The green forest")**
 
 **Link to this expedition: http://gladiatus.gamerz-bg.com/germania-expeditions#GF**
 
@@ -319,7 +314,6 @@ The fertile flora and fauna of the area attracts many tribes. That is why it is 
 
 **Enemy levels: 60-68** 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Cursed-Village.xlsx "Cursed Village")**
 
 **Link to this expedition: gladiatus.gamerz-bg.com/germania-expeditions#CursedVillage** 
 
@@ -455,7 +449,6 @@ The loss of the cave temple poses a considerable problem to the dwellers: Where 
 **Enemy levels:** 65-73  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Death-Hill.xlsx "Death Hill")**
 
 **Link to this expedition: gladiatus.gamerz-bg.com/germania-expeditions#DeathHill** 
 
@@ -584,7 +577,6 @@ The fertile flora and fauna of the area attracts many tribes. That is why it is 
 **Enemy levels:** 104-110  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Vandal-Village.xlsx "Vandal Village")**
 
 **Link to this expedition: http://gladiatus.gamerz-bg.com/germania-expeditions#VandalVillage** 
 
@@ -717,7 +709,6 @@ The pride of this region is its pure ore, which is stored in the mine. But for a
 **Enemy levels:** 108-114  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Mine.xlsx "Mine")**
 
 **Link to this expedition: gladiatus.gamerz-bg.com/germania-expeditions#Mine** 
 
@@ -851,7 +842,6 @@ The Romans fear the aggressive and wild Teutons who live in this camp. They kill
 **Enemy levels:** 112-118  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Teuton-Camp.xlsx "Teuton Camp")**
 
 **Link to this expedition: gladiatus.gamerz-bg.com/germania-expeditions#TeutonCamp** 
 
@@ -986,7 +976,6 @@ Majestically it stands there, the sacred Koman Mountain. Many mountaineers wish 
 **Enemy levels:** 116-122  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Koman-Mountains.xlsx "Koman Mountain")**
 
 **Link to this expedition: gladiatus.gamerz-bg.com/germania-expeditions#KomanMountain** 
 
@@ -1119,7 +1108,6 @@ Anyone can feel his skin crawl when they reach this place. Magic passes through 
 
 **Enemy levels: 120-126** 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Germania/Gladiatus-Germania-Expeditions-Dragon_Remains.xlsx "Dragon Remains")**
 
 **Link to this expedition: gladiatus.gamerz-bg.com/germania-expeditions#DragonRemains** 
 

@@ -37,10 +37,6 @@ If you believe what the old people say around here, there once lived a very popu
 
 **Enemy levels:** 1-10
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Italy/Gladiatus-Italy-Expeditions-Grimwood.xlsx "Grimwood")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/italy-expeditions#Grimwood**
-
 **Real level to engage:** 1
 
 **Dungeon:** Yes, **[Gustavos Country House](/dungeons/italy-dungeons "Gustavos Country House")** - Entry level 10
@@ -152,9 +148,7 @@ On the coast in the south-east there is a pirate harbour. There are a lot of sha
 **Enemy levels:** 8-17  
 
 
-**Link to detailed spreadsheet:** [**here**](spreadsheets/Expeditions/Italy/Gladiatus-Italy-Expeditions-Pirate-Harbour.xlsx "Pirate Harbour")
 
-**Link to expedition: gladiatus.gamerz-bg.com/italy-expeditions#PirateHarbour**
 
 **Real level to engage:** 7-8
 
@@ -267,9 +261,7 @@ The highest pinnacles of the Misty Mountains are hidden from the eyes of wandere
 
 **Enemy levels:** 15-27
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Italy/Gladiatus-Italy-Expeditions-Misty-Mountains.xlsx "Misty Mountains")**
 
-**Link to expedition: gladiatus.gamerz-bg.com/italy-expeditions#MistyMountains** 
 
 **Real level to engage:** 14-15
 
@@ -387,9 +379,7 @@ In the hills south of the barbarian village there is a cave system that is calle
 
 **Enemy levels:** 22-31
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Italy/Gladiatus-Italy-Expeditions-WolfCave.xlsx "Wolf Cave")**
 
-**Link to expedition: gladiatus.gamerz-bg.com/italy-expeditions#WolfCave** 
 
 **Real level to engage:** 19
 
@@ -501,9 +491,7 @@ It is long forgotten for which God this temple was erected for. Nonetheless, the
 
 **Enemy levels:**
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Italy/Gladiatus-Italy-Expeditions-Ancient-Temple.xlsx "Ancient Temple")**
 
-**Link to expedition: gladiatus.gamerz-bg.com/italy-expeditions#AncientTemple** 
 
 **Real level to engage:** 60
 
@@ -616,9 +604,7 @@ In the far east there is a barbarian village where barbarians live who have not 
 **Enemy levels:** 75-83  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Italy/Gladiatus-Italy-Expeditions-Barbarian-Village.xlsx "Barbarian Village")**
 
-**Link to expedition: gladiatus.gamerz-bg.com/italy-expeditions#BarbarianVillage** 
 
 **Real level to engage:** 65
 
@@ -731,9 +717,7 @@ Near the city, hidden in the southern foothills of the Misty Mountains, there is
 **Enemy levels:** 80-88  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Italy/Gladiatus-Italy-Expeditions-Bandit-Camp.xlsx "Bandit Camp")**
 
-**Link to expedition: gladiatus.gamerz-bg.com/italy-expeditions#BanditCamp** 
 
 **Real level to engage:** 70
 

@@ -1,46 +1,8 @@
 ---
 title: Gladiatus Items
+sidebar_label: Items
 slug: /items
-redirects:
-  - /items
 ---
-
-Gladiatus Items
-===============
-
-**Table of Contents**
----------------------
-
-**[Item formation](#formation "Item formation")**
-
-**[Item Quality](#Quality "Item Quality")**
-
-**[Item Drop](#Drop "Item Drop")**
-
-**[Item Prefixes](prefixes "Item Prefixes")**
-
-**[Item Suffixes](Suffixes "Suffixes")**
-
-**[Items](#Items "Items")**
-
-- **[Weapons](#Weapons "Weapons")**
-- **[Shields](#Shields "Shields")**
-- **[Armour](#Armour "Armour")**
-- **[Helmets](#Helmets "Helmets")**
-- **[Gloves](#Gloves "Gloves")**
-- **[Shoes](#Shoes "Shoes")**
-- **[Rings](#Rings "Rings")**
-- **[Amulets](#Amulets "Amulets")**
-- **[Food(Usable)](#Food "Food")**
-- **[Special Food](#Special-food "Special Food")**
-- **[Reinforcements](#Reinforcements "Reinforcements")**
-- **[Recipes](#Recipes "Recipes")**
-- **[Upgrades](#Upgrades "Upgrades")**
-- **[Scrolls](#Scrolls "Scrolls")**
-- **[Event items](#Event "Event items")**
-- **[Misc](#Misc "Misc")**
-## **Item formation**
-----------------------------------------
 
 In Gladiatus an item is formed from a base item to which a prefix, suffix or both can be applied at the same time.
 

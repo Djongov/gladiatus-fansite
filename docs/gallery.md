@@ -1,11 +1,8 @@
 ---
 title: Gladiatus Gallery
+sidebar_label: Gallery
 slug: /gallery
-redirects:
-  - /gallery
 ---
-
-Gallery
 
 This is my Gallery with various screenshots of Gladiatus moments. I have sorted them into:
 

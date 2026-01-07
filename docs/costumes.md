@@ -1,10 +1,8 @@
 ---
 title: Gladiatus Costumes
+sidebar_label: Costumes
 slug: /costumes/gladiatus-costumes
 ---
-
-Gladiatus Costumes
-==================
 
 Gladiatus costumes are giving bonuses to the one who wears them but with one rule - bonuses are not with direct benefits to the strength of the hero (it won't make you better at fighting)
 

@@ -1,12 +1,9 @@
 ---
 title: Gladiatus Events
+sidebar_label: Events
+sidebar_position: 3
 slug: /events
-redirects:
-  - /events
 ---
-
-Events
-======
 
 ![Gladiatus Xmas Logo](https://gladiatusfansite.blob.core.windows.net/images/Events/glaLogo_xmas.png "Gladiatus Xmas Logo")
 

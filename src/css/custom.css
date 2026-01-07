@@ -49,6 +49,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Hide sidebar items with hidden class */
+.theme-doc-sidebar-item-link.hidden,
+.menu__list-item.hidden {
+  display: none !important;
+}
+
 /* Custom footer styling */
 .footer {
   padding: 0.5rem 0 !important;
@@ -129,3 +135,20 @@ hr {
   padding-top: 10px;
   text-align: center;
 }
+
+text-red {
+  color: red;
+}
+
+text-blue {
+  color: blue;
+}
+
+text-green {
+  color: green;
+}
+
+text-orange {
+  color: orange;
+}
+

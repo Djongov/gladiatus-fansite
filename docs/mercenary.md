@@ -1,5 +1,6 @@
 ---
 title: Gladiatus Mercenary
+sidebar_label: Mercenary
 slug: /mercenary/gladiatus-mercenary
 ---
 

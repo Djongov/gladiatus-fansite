@@ -44,10 +44,6 @@ It is the generous gift made by the Empire for the Umpokta. After the foundation
 **Enemy levels:** 30-38  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Voodoo-Temple.xlsx "Voodoo Temple")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#VoodooTemple**
-
 **Real level to engage:** 25  
 
 
@@ -167,9 +163,6 @@ It is the generous gift made by the Empire for the Umpokta. After the foundation
 **Enemy levels:** 35-43  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Bridge.xlsx "Bridge")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#Bridge** 
 
 **Real level to engage: 32-33** 
 
@@ -289,9 +282,6 @@ There`s a rumour amongst the superstitious natives that magical rituals are held
 **Enemy levels:** 40-48  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Blood_Cave.xlsx "Blood Cave")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#BloodCave** 
 
 **Real level to engage:** 35  
 
@@ -420,9 +410,6 @@ Once a thriving Viking outpost, it has in the meantime become a shadow of its fo
 **Enemy levels:** 45-53  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Lost_Harbour.xlsx "Lost Harbour")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#LostHarbour** 
 
 **Real level to engage:** 40-42  
 
@@ -551,10 +538,6 @@ As far as the Empire is concerned, it is the high-point of civilisation amongst 
 **Enemy levels:** 85-93  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Umpokta_Tribe.xlsx "Umpokta Tribe")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#UmpoktaTribe** 
-
 **Real level to engage:** 75  
 
 
@@ -681,10 +664,6 @@ A small shadow over the relationship between the Umpokta tribe and the Empire is
 **Enemy levels:** 90-97  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Caravan.xlsx "Caravan")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#Caravan** 
-
 **Real level to engage:** 80  
 
 
@@ -810,10 +789,6 @@ Fruitfully it lies in the desert and fearful are its dangers. As one of the few 
 
 **Enemy levels:** 95-102  
 
-
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Mesoai-Oasis.xlsx "Mesoai-Oasis")**
-
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#MesoaiOasis** 
 
 **Real level to engage:** 85  
 
@@ -942,9 +917,7 @@ In the religious life of the Umpokta a surreal ritual has become tradition. On e
 **Enemy levels:** 100-107  
 
 
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Africa/Gladiatus-Africa-Expeditions-Cliff_Jumper.xlsx "Cliff Jumper")**
 
-**Link to expedition: gladiatus.gamerz-bg.com/africa-expeditions#CliffJumper** 
 
 **Real level to engage:** 90  
 

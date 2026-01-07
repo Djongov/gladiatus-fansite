@@ -1,20 +1,17 @@
 ---
 title: Gladiatus Dungeons
+sidebar_label: Dungeons
+sidebar_position: 2
 slug: /dungeons
 redirects:
   - /dungeons
 ---
 
-Gladiatus Dungeons
-==================
-
 ![Gladiatus Dungeons](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/wallpaper3_800x600.jpg "Gladiatus Dungeons")
 
 Dungeons in Gladiatus are adventures against mighty enemies. You and your group of 5 will defeat legendary bosses throughout the game and find epic gear. All you need to know about the basics of the dungeons you can read it on the Game guide page and the dungeons themselves with all the details will be here. Just read on.
 
-![Alpha & Omega](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Alpha_and_Omega/Alpha_Omega_overview.png "Alpha & Omega")
-
-Here are some facts about dungeons:
+## Dungeon Facts
 
 - Dungeons become available at level 10
 - There are 25 dungeons in the game. Waiting for Britannia dungeons
@@ -42,10 +39,37 @@ Here are some facts about dungeons:
 
 **[Britannia](/dungeons/britannia-dungeons "Britannia dungeons") (Level 120+ No dungeons in Britannia yet)**
 
-**Check out the Dungeon table with super detailed info of all 25 dungeons!!! - [here](dungeons.html "Dungeon table").**
+## Dungeon Table
 
-Dungeon Arc
------------
+| Dungeon | Country | Entry Level | Parent Expedition | Points Min | Points Max | Points Avg | Enemy Lvl Min | Enemy Lvl Max | Enemy Lvl Avg | Item Lvl Min | Item Lvl Max | Item Lvl Avg | Boss Name | Boss Item Min | Boss Item Max | Boss Item Avg | Difficulty |
+|--------|---------|-------------|------------------|------------|------------|------------|---------------|---------------|---------------|--------------|--------------|--------------|-----------|---------------|---------------|---------------|------------|
+| [Gustavos Country House](/dungeons/italy-dungeons/gustavos-country-house) | Italy | 10 | [Grimwood](italy-expeditions#Grimwood) | 4 | 6 | 5 | 9 | 10 | 9.5 | 9 | 10 | 9.5 | King Gustavo | 10 | 12 | 11 | Easy |
+| [On the Run](/dungeons/italy-dungeons/on-the-run) | Italy | 10 | [Pirate Harbour](italy-expeditions#PirateHarbour) | 11 | 15 | 13 | 14 | 16 | 15 | 13 | 16 | 14.5 | Gnaeus Aurelius Flavio | 15 | 18 | 16.5 | Easy |
+| [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold) | Italy | 10 | [Misty Mountains](italy-expeditions#MistyMountains) | 7 | 7 | 7 | 19 | 21 | 20 | 16 | 23 | 19.5 | Oribas | 18 | 25 | 21.5 | Easy |
+| [The Cave of Dark Intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue) | Italy | 15 | [Wolf Cave](italy-expeditions#WolfCave) | 6 | 6 | 6 | 24 | 26 | 25 | 22 | 28 | 25 | Hell Dog | 25 | 31 | 28 | Medium |
+| [Temple of Perdition](/dungeons/africa-dungeons/temple-of-perdition) | Africa | 20 | [Voodoo Temple](africa-expeditions#VoodooTemple) | 7 | 7 | 7 | 29 | 31 | 30 | 26 | 33 | 29.5 | Themba | 29 | 39 | 34 | Hard |
+| [Abducted](/dungeons/africa-dungeons/abducted) | Africa | 25 | [Bridge](africa-expeditions#Bridge) | 11 | 11 | 11 | 34 | 36 | 35 | 32 | 38 | 35 | Shetu | 36 | 43 | 39.5 | Easy |
+| [Chamber of Pyro](/dungeons/africa-dungeons/chamber-of-pyro) | Africa | 30 | [Blood Cave](africa-expeditions#BloodCave) | 10 | 21 | 15.5 | 39 | 41 | 40 | 38 | 43 | 40.5 | Pyro | 38 | 49 | 43.5 | Easy |
+| [Poisoned Country](/dungeons/africa-dungeons/poisoned-country) | Africa | 35 | [Lost Harbour](africa-expeditions#LostHarbour) | 12 | 12 | 12 | 44 | 46 | 45 | 42 | 48 | 45 | Nithotep | 45 | 55 | 50 | Easy |
+| [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs) | Germania | 40 | [Cave Temple](germania-expeditions#CaveTemple) | 11 | 11 | 11 | 49 | 51 | 50 | 47 | 53 | 50 | Lord Aesteron | 50 | 61 | 55.5 | Easy |
+| [With All Its Might](/dungeons/germania-dungeons/with-all-its-might) | Germania | 45 | [The Green Forest](germania-expeditions#GF) | 9 | 11 | 10 | 54 | 56 | 55 | 52 | 58 | 55 | Oak Lord | 52 | 64 | 58 | Medium |
+| [Viking Camp](/dungeons/germania-dungeons/viking-camp) | Germania | 50 | [Cursed Village](germania-expeditions#CursedVillage) | 11 | 11 | 11 | 59 | 61 | 60 | 56 | 63 | 59.5 | Homo Nautilus | 58 | 70 | 64 | Easy |
+| [Hidden Grave](/dungeons/italy-dungeons/hidden-grave) | Italy | 60 | [Ancient Temple](italy-expeditions#AncientTemple) | 8 | 13 | 10.5 | 69 | 71 | 70 | 67 | 73 | 70 | Nekromar | 68 | 80 | 74 | Hard |
+| [In Enemy Hands](/dungeons/italy-dungeons/in-enemy-hands) | Italy | 65 | [Barbarian Village](italy-expeditions#BarbarianVillage) | 13 | 13 | 13 | 74 | 76 | 75 | 70 | 76 | 73 | Trakovar | 71 | 84 | 77.5 | Easy |
+| [The Last Resort](/dungeons/italy-dungeons/the-last-resort) | Italy | 68 | [Pirate Harbour (A)](italy-expeditions#PirateHarbour) | 14 | 14 | 14 | 77 | 79 | 78 | 75 | 81 | 78 | Captain Kratos | 76 | 89 | 82.5 | Easy |
+| [The True Owner](/dungeons/italy-dungeons/the-true-owner) | Italy | 70 | [Misty Mountains (A)](italy-expeditions#MistyMountains) | 12 | 12 | 12 | 79 | 81 | 80 | 77 | 83 | 80 | Gernasch | 78 | 91 | 84.5 | Easy |
+| [Gioll Passage](/dungeons/italy-dungeons/gioll-passage) | Italy | 73 | [Wolf Cave (A)](italy-expeditions#WolfCave) | 6 | 6 | 6 | 82 | 84 | 83 | 80 | 86 | 83 | Fenrirson | 83 | 92 | 87.5 | Hard |
+| [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort) | Italy | 78 | [Barbarian Village (A)](italy-expeditions#BarbarianVillage) | 15 | 15 | 15 | 87 | 89 | 88 | 85 | 91 | 88 | Zagrash | 86 | 99 | 92.5 | Extremely Hard |
+| [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory) | Germania | 80 | [Death Hill](germania-expeditions#DeathHill) | 5 | 10 | 7.5 | 89 | 91 | 90 | 87 | 93 | 90 | Frank N. Stein | 88 | 100 | 94 | Hard |
+| [Fairground](/dungeons/africa-dungeons/fairground) | Africa | 80 | [Umpokta Tribe](africa-expeditions#UmpoktaTribe) | 12 | 12 | 12 | 89 | 91 | 90 | 87 | 93 | 90 | Papa Sasama | 88 | 100 | 94 | Extremely Hard |
+| [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky) | Africa | 86 | [Bridge (A)](africa-expeditions#Bridge) | 14 | 14 | 14 | 95 | 97 | 96 | 93 | 99 | 96 | Shetu bin Seth | 96 | 107 | 101.5 | Easy |
+| [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay) | Africa | 90 | [Lost Harbour (A)](africa-expeditions#LostHarbour) | 15 | 15 | 15 | 99 | 101 | 100 | 97 | 103 | 100 | Corruption | 99 | 111 | 105 | Medium |
+| [Sasama's Last Journey](/dungeons/africa-dungeons/sasama-s-last-journey) | Africa | 92 | [Umpokta Tribe (A)](africa-expeditions#UmpoktaTribe) | 11 | 11 | 11 | 101 | 103 | 102 | 97 | 107 | 102 | Ahehu | 100 | 113 | 106.5 | Medium |
+| [Externsteine](/dungeons/germania-dungeons/externsteine) | Germania | 102 | [The Green Forest (A)](germania-expeditions#GF) | 6 | 6 | 6 | 111 | 113 | 112 | 107 | 117 | 112 | Wrath of the Mountain | 109 | 123 | 116 | Hard |
+| [Late Revenge](/dungeons/germania-dungeons/late-revenge) | Germania | 112 | [Dragon Remains](germania-expeditions#DragonRemains) | 18 | 18 | 18 | 121 | 123 | 122 | 117 | 127 | 122 | Valerius Filius Gustavo | 120 | 133 | 126.5 | Medium |
+| [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega) | Germania | 120 | [Dragon Remains (A)](germania-expeditions#DragonRemains) | 20 | 20 | 20 | 129 | 131 | 130 | 127 | 133 | 130 | Dracolich | 128 | 141 | 134.5 | Hard |
+
+## Dungeon Arc
 
 The dungeon experience in Gladiatus follows the following leveling arc:
 

@@ -1,12 +1,9 @@
 ---
 title: Gladiatus Expeditions
+sidebar_label: Expeditions
+sidebar_position: 1
 slug: /expeditions
-redirects:
-  - /expeditions
 ---
-
-Gladiatus Expeditions
-=====================
 
 ![Gladiatus Expeditons](https://gladiatusfansite.blob.core.windows.net/images/wallpaper1_800x600.jpg "Gladiatus Expeditons")
 
@@ -81,7 +78,6 @@ Expeditions from level 120 - 200
 
 **Expeditions Sorted by Entry level**
 
-Link to the spreadsheet - [here](spreadsheets/Expeditions.xlsx "Expeditions"). Note that this excludes Britannia for now until i gather more information about the country
 
     **Country** **Expedition** **Entry Level** **Enemy Levels** **Dungeon** **Advanced Dungeon**   Italy Grimwood 1 1-10 Gustavos Country House No   Italy Pirate Harbour 5 8-17 On the Run The Last Resort   Italy Misty Mountains 10 15-24 The Dragon Stronghold The True Owner   Italy Wolf Cave 15 22-31 The Cave of Dark intrigue Gioll Passage   Africa Voodoo Temple 20 30-38 Temple of Perdition No   Africa Bridge 25 35-43 Abducted Under a Blood-red Sky   Africa Blood Cave 30 40-48 Chamber of Pyro No   Africa Lost Harbour 35 45-53 Poisoned Country In the Heart of decay   Germania Cave Temple 40 50-58 Dark Catacombs No   Germania The green forest 45 55-63 With all its might Externsteine   Germania Cursed Village 50 60-68 Viking Camp No   Germania Death Hill 55 65-73 Mysterious Laboratory No   Italy Ancient Temple 60 70-78 Hidden Grave No   Italy Barbarian Village 65 75-83 In enemy hands Zagrashs Fort   Italy Bandit Camp 70 80-88 No No   Africa Umpokta Tribe 75 85-93 Fairground Sasama's Last Journey   Africa Caravan 80 90-97 No No   Africa Mesoai-Oasis 85 95-102 No No   Africa Cliff Jumper 90 100-107 No No   Germania Vandal Village 95 104-110 No No   Germania Mine 100 108-114 No No   Germania Teuton Camp 104 112-118 No No   Germania Koman Mountain 108 116-122 No No   Germania Dragon Remains 112 120-126 Late Revenge Alpha & Omega   **Expeditions Sorted by Country**
 

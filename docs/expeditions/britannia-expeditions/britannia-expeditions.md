@@ -35,12 +35,7 @@ Galerius Senecianus` Diary: DCXCIX a.u.c. We`ve finally found a suitable landing
 
 **Entry level:** 120
 
-**Enemy levels:** 130-140  
-
-
-**Link to detailed spreadsheet: [here](spreadsheets/Expeditions/Britannia/Gladiatus-Britannia-Expeditions-Bank_of_Thames.xlsx "Bank of Thames expedition spreadsheet")**
-
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#Bank\_of\_Thames** 
+**Enemy levels:** 130-140
 
 **Real level to engage:** 120 (118 with Eagle Eyes costume)
 
@@ -241,9 +236,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#Forest\_Fortress**
 
 **Real level to engage:** 130
 
@@ -353,9 +346,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions##The\_Moor**
 
 **Real level to engage:** 140
 
@@ -465,9 +456,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#Camp\_Cassivellaunus**
 
 **Real level to engage:** 150
 
@@ -577,9 +566,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#Kent**
 
 **Real level to engage:** 160
 
@@ -689,9 +676,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#The\_Ford**
 
 **Real level to engage:** 170
 
@@ -801,9 +786,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#Camulodunum**
 
 **Real level to engage:** 180
 
@@ -914,9 +897,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#Cambria**
 
 **Real level to engage:** 190
 
@@ -1026,9 +1007,7 @@ Insert
 
 **Enemy levels:** 
 
-**Link to detailed spreadsheet:** 
 
-**Link to expedition: https://gladiatus.gamerz-bg.com/britannia-expeditions#Mona\_Isle**
 
 **Real level to engage:** 200
 

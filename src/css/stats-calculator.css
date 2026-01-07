@@ -1,0 +1,17 @@
+.calculator input,
+.calculator select {
+  width: 80px;
+}
+
+.options {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.total {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}

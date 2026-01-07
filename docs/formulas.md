@@ -1,5 +1,6 @@
 ---
 title: Gladiatus Formulas
+sidebar_label: Formulas
 slug: /formulas/gladiatus-formulas
 ---
 

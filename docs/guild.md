@@ -1,32 +1,11 @@
 ---
 title: Gladiatus Guild
-slug: /guild/guild-buildings
+sidebar_label: Guild
+slug: /guild
 ---
-
-Gladiatus Guild
-===============
 
 This is the page that will be giving the overall view of what the guild in Gladiatus does and what purpose each individual building has for the benefit of the guild members.
 
-Table of Contents
------------------
-
-- [What is a guild](#What-is-a-guild "What is a guild")
-- [Guild Logos](#Guild-logos "Guild Logos")
-- [Guild Banners](#Guild-Banners "Guild Banners")
-- [Guild ranks](#Guild-Ranks "Guild ranks")
-- [Guild Buildings](#Guild-Buildings "Guild Buildings")
-- [Forum Gladiatorius](#Forum-Gladiatorius "Forum Gladiatorius")
-- [Bank](#Bank "Bank")
-- [Vila Medici](#Villa-Medici "Vila Medici")
-- [War Master Hall](#War-Master-Hall "War Master Hall")
-- [Library](#Library "Library")
-- [Negotium X](#Negotium-X "Negotium X")
-- [Templum](#Templum "Templum")
-- [Bathhouse](#Bathhouse "Bathhouse")
-- [Guild market](#Guild-market "Guild market")
-- [Warehouse](#Warehouse "Warehouse")
-- [Training grounds](#Training-grounds "Training grounds")
 ## What is a guild
 -------------------------------------------
 

@@ -1,10 +1,7 @@
 ---
 title: Gladiatus Items
-slug: /items-general/items
+slug: /items-general
 ---
-
-Gladiatus Items
-===============
 
 **Table of Contents**
 ---------------------

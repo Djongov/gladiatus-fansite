@@ -1,12 +1,10 @@
 ---
 title: Gladiatus Underworld
+sidebar_label: Underworld
 slug: /underworld
 redirects:
   - /underworld
 ---
-
-Underworld
-==========
 
 ![Underworld banner](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Dis_Pater_announcement.jpg "Underworld banner")
 

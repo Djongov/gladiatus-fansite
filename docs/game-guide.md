@@ -1,15 +1,8 @@
 ---
 title: Gladiatus Game Guide
+sidebar_label: Game Guide
 slug: /game-guide
-redirects:
-  - /game-guide
 ---
-
-Gladiatus Beginner's Guide
-==========================
-
-Gladiatus Game Guide
-====================
 
 **Under Construction (75% done)**
 
