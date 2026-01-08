@@ -1,7 +1,9 @@
 ---
 title: Zagrash`s Fort
-slug: /zagrashs-fort
+slug: /dungeons/italy-dungeons/zagrashs-fort
 sidebar_position: 10
+redirect_from:
+  - /zagrash-fort
 ---
 
 Zagrash`s Fort

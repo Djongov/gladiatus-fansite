@@ -12,6 +12,12 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ## Latest website news
 
+### 08.01.2026
+
+Today's migration process:
+
+- working on Expeditions mainly. I've decided to do a big change on Expeditions and split them all into their own file and url
+
 ### 07.01.2026
 
 Today's migration process:

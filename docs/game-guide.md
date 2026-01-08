@@ -1720,8 +1720,8 @@ Your documents are being faked.
 You`re unhappy and don`t feel comfortable in your own skin? How about transforming your soul into another body?
 
 Costs 20 ![Ruby](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Ruby")
-## Expeditions
------------------------------------
+
+## Expedition Basics
 
 This will be a very basic guide on what Expeditions are. If you are looking for particular expedition opponents and info on them, check out the big [Expeditions](/expeditions "Expeditions") page.
 
