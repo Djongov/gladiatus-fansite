@@ -22,7 +22,7 @@ Boss item level drop: **68-80** `✓` Verified
 
 Advanced Dungeon: **No**
 
-Parent Expedition: [Ancient Temple](/expeditions/italy-expeditions#AncientTemple "Ancient Temple")
+Parent Expedition: [Ancient Temple](/expeditions/italy-expeditions/ancient-temple "Ancient Temple")
 
 Previous Dungeon: [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking Camp") (Level 50, Germania)
 

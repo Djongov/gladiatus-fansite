@@ -29,7 +29,7 @@ Minions item level drop: **85-91 ![Verified](https://gladiatusfansite.blob.core.
   
 Boss item level drop: **86-99 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
 
-Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions#BarbarianVillage "Barbarian Village")
+Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions/barbarian-village "Barbarian Village")
 
 Advanced Dungeon: **This is the Advanced Dungeon of** [In Enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In Enemy hands") (Level 65)
 

@@ -23,7 +23,7 @@ Minions item level drop: **107-117 `✓` Verified
   
 Boss item level drop: **109-123 `✓` Verified
 
-Parent Expedition: [The green forest](/expeditions/germania-expeditions#GF "The green forest")
+Parent Expedition: [The green forest](/expeditions/germania-expeditions/the-green-forest "The green forest")
 
 Advanced Dungeon: **Yes, it is the Advanced Dungeon of** [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might") (Level 45)
 

@@ -23,7 +23,7 @@ Minions item level drop: **38-43 `✓` Verified
   
 Boss item level drop: **38-49 `✓` Verified
 
-Parent Expedition: [Blood Cave](/expeditions/africa-expeditions#BloodCave "Blood Cave")
+Parent Expedition: [Blood Cave](/expeditions/africa-expeditions/blood-cave "Blood Cave")
 
 Advanced Dungeon: **No**
 

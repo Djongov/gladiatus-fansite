@@ -23,7 +23,7 @@ Minions item level drop: **26-33 `✓` Verified
   
 Boss item level drop: **29-39 `✓` Verified
 
-Parent Expedition: [Voodoo Temple](/expeditions/africa-expeditions#VoodooTemple "Voodoo Temple")
+Parent Expedition: [Voodoo Temple](/expeditions/africa-expeditions/voodoo-temple "Voodoo Temple")
 
 Advanced Dungeon: **No**
 

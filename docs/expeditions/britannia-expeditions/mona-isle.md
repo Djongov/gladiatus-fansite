@@ -30,10 +30,10 @@ Insert
 |-----------|---------|---------|---------|------|
 | **Name** | <div className="player_name_bg"><div className="playername">Enemy 1</div></div> | <div className="player_name_bg"><div className="playername">Enemy 2</div></div> | <div className="player_name_bg"><div className="playername">Enemy 3</div></div> | <div className="player_name_bg"><div className="playername">Antenociticus</div></div> |
 | **Image** | ![Enemy 1](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Opponent_1.jpg) | ![Enemy 2](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Opponent_2.jpg) | ![Enemy 3](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Antenociticus](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Opponent_boss.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
-| ![Level](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/level.png) **Level** | 0 | 0 | 0 | 216 |
-| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/gold.png) **Gold** | 0 | 0 | 0 | 49432 |
-| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/experience.png) **Experience** | 0 | 0 | 0 | 35 |
-| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/honour.png) **Honour** | 0 | 0 | 0 | 2195 |
+| ![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif) **Level** | 0 | 0 | 0 | 216 |
+| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif) **Gold** | 0 | 0 | 0 | 49432 |
+| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif) **Experience** | 0 | 0 | 0 | 35 |
+| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/icon_honor_small.gif) **Honour** | 0 | 0 | 0 | 2195 |
 | **Strength** | 0 | 0 | 0 | 734 |
 | **Dexterity** | 0 | 0 | 0 | 3240 |
 | **Agility** | 0 | 0 | 0 | 3704 |

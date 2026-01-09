@@ -29,11 +29,11 @@ Insert
 | Attribute | Enemy 1 | Enemy 2 | Enemy 3 | Boss |
 |-----------|---------|---------|---------|------|
 | **Name** | <div className="player_name_bg"><div className="playername">The man from Lindow</div></div> | <div className="player_name_bg"><div className="playername">The woman from Lindow</div></div> | <div className="player_name_bg"><div className="playername">Bandit</div></div> | <div className="player_name_bg"><div className="playername">Nodens</div></div> |
-| **Image** | ![The man from Lindow](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Opponent_1.jpg) | ![The woman from Lindow](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Opponent_2.jpg) | ![Bandit](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Nodens](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Opponent_boss.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
-| ![Level](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/level.png) **Level** | 147 | 147 | 151 | 152 |
-| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/gold.png) **Gold** | 0 | 0 | 0 | 0 |
-| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/experience.png) **Experience** | 0 | 0 | 0 | 0 |
-| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/honour.png) **Honour** | 0 | 0 | 0 | 0 |
+| **Image** | ![The man from Lindow](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Opponent_1.jpg) | ![The woman from Lindow](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Opponent_2.jpg) | ![Bandit](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Nodens](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Nodens.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
+| ![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif) **Level** | 147 | 147 | 151 | 152 |
+| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif) **Gold** | 0 | 0 | 0 | 0 |
+| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif) **Experience** | 0 | 0 | 0 | 0 |
+| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/icon_honor_small.gif) **Honour** | 0 | 0 | 0 | 0 |
 | **Strength** | 1008 | 1257 | 611 | 205 |
 | **Dexterity** | 938 | 857 | 1536 | 1158 |
 | **Agility** | 866 | 1084 | 2885 | 1919 |

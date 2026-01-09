@@ -23,7 +23,7 @@ Minions item level drop: **22-28 `✓` Verified
 
 Boss item level drop: **25-31 `✓` Verified
 
-Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions#WolfCave "Wolf Cave")
+Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions/wolf-cave "Wolf Cave")
 
 Advanced Dungeon: **Yes,** [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage") (Level 73)
 

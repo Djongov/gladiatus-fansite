@@ -25,7 +25,7 @@ Boss item level drop: **50-61 `✓` Verified
 
 Advanced Dungeon: **No**
 
-Parent Expedition: [Cave Temple](/expeditions/germania-expeditions#CaveTemple "Cave Temple")
+Parent Expedition: [Cave Temple](/expeditions/germania-expeditions/cave-temple "Cave Temple")
 
 Previous Dungeon: [Poisoned Country](/dungeons/africa-dungeons/poisoned-country "Poisoned Country") (Level 35, Africa)
 

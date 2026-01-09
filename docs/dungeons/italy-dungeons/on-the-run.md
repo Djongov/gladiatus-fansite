@@ -23,7 +23,7 @@ Minions item level drop: **13-16 `✓` Verified
 
 Boss item level drop: **15-18 `✓` Verified
 
-Parent Expedition: **[Pirate Harbour](/expeditions/italy-expeditions#PirateHarbour "Pirate Harbour")**
+Parent Expedition: **[Pirate Harbour](/expeditions/italy-expeditions/pirate-harbour "Pirate Harbour")**
 
 Advanced Dungeon: **Yes,** [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort") (Level 73)
 

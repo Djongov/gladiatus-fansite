@@ -21,7 +21,7 @@ Minions item level drop: **127-132**
   
 Boss item level drop: **128-141 `✓` Verified
 
-Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions#DragonRemains "Dragon Remains")
+Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions/dragon-remains "Dragon Remains")
 
 Advanced Dungeon: **Yes, This is the Advanced Dungeon of** [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge") (Level 112)
 

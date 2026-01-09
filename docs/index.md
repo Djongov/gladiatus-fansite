@@ -12,15 +12,27 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ## Latest website news
 
+### 09.01.2026
+
+Today's migration progress:
+
+- Finished main work on the expeditions, fixed broken links across dungeons and expeditions
+- Events structure improved
+- Costumes now has individual pages
+- Underworld formatting and costumes taken out into Costumes
+- Big changes to Forging Goods. Now every forging good gets its own page and link
+- Forging pages migrated
+- Guild done and reworked into individual pages
+
 ### 08.01.2026
 
-Today's migration process:
+Today's migration progress:
 
 - working on Expeditions mainly. I've decided to do a big change on Expeditions and split them all into their own file and url
 
 ### 07.01.2026
 
-Today's migration process:
+Today's migration progress:
 
 - Fixed the about me page
 - Calculators rebuilt in JSX

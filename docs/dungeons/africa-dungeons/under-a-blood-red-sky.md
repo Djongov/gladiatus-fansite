@@ -23,7 +23,7 @@ Minions item level drop: **93-99 `✓` Verified
   
 Boss item level drop: **96-107 `✓` Verified
 
-Parent Expedition: [Bridge](/expeditions/africa-expeditions#Bridge "Bridge")
+Parent Expedition: [Bridge](/expeditions/africa-expeditions/bridge "Bridge")
 
 Advanced Dungeon: **This is the Advanced Dungeon** of [Abducted](/dungeons/africa-dungeons/abducted "Abducted") (Level 25)
 

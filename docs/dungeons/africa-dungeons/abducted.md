@@ -23,7 +23,7 @@ Minions item level drop: **32-38 `✓` Verified
   
 Boss item level drop: **36-43 `✓` Verified
 
-Parent Expedition: [Bridge](/expeditions/africa-expeditions#Bridge "Bridge")
+Parent Expedition: [Bridge](/expeditions/africa-expeditions/bridge "Bridge")
 
 Advanced Dungeon: **Yes,** [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
 

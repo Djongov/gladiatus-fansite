@@ -23,7 +23,7 @@ Minions item level drop: **97-107 `✓` Verified
   
 Boss item level drop: **100-113 `✓` Verified
 
-Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions#UmpoktaTribe "Umpokta Tribe")
+Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions/umpokta-tribe "Umpokta Tribe")
 
 Advanced Dungeon**:** **Yes, this is the Advanced Dungeon of** [Fairground](/dungeons/africa-dungeons/fairground "Fairground") (Level 80)
 

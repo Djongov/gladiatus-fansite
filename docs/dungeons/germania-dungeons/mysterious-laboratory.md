@@ -23,7 +23,7 @@ Minions item level drop: **87-93 ![Verified](https://gladiatusfansite.blob.core.
   
 Boss item level drop: **88-101 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
 
-Parent Expedition: [Death Hill](/expeditions/germania-expeditions#DeathHill "Death Hill")
+Parent Expedition: [Death Hill](/expeditions/germania-expeditions/death-hill "Death Hill")
 
 Advanced Dungeon: **No**
 

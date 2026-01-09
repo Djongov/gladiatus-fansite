@@ -23,7 +23,7 @@ Minions item level drop: **117-127 `✓` Verified
   
 Boss item level drop: **120-133 `✓` Verified
 
-Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions#DragonRemains "Dragon Remains")
+Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions/dragon-remains "Dragon Remains")
 
 Advanced Dungeon: **Yes,** [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega") (Level 120)
 

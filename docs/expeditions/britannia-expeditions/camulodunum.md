@@ -30,10 +30,10 @@ Insert
 |-----------|---------|---------|---------|------|
 | **Name** | <div className="player_name_bg"><div className="playername">City Guard</div></div> | <div className="player_name_bg"><div className="playername">Settler Trinovantes</div></div> | <div className="player_name_bg"><div className="playername">Warrior Trinovantes</div></div> | <div className="player_name_bg"><div className="playername">Caratacus</div></div> |
 | **Image** | ![City Guard](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Camulodunum/Opponent_1.jpg) | ![Settler Trinovantes](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Camulodunum/Opponent_2.jpg) | ![Warrior Trinovantes](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Camulodunum/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Caratacus](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Camulodunum/Opponent_boss.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
-| ![Level](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/level.png) **Level** | 0 | 195 | 0 | 0 |
-| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/gold.png) **Gold** | 0 | 20421 | 0 | 30174 |
-| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/experience.png) **Experience** | 0 | 24 | 0 | 30 |
-| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/honour.png) **Honour** | 0 | 1387 | 0 | 1252 |
+| ![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif) **Level** | 0 | 195 | 0 | 0 |
+| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif) **Gold** | 0 | 20421 | 0 | 30174 |
+| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif) **Experience** | 0 | 24 | 0 | 30 |
+| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/icon_honor_small.gif) **Honour** | 0 | 1387 | 0 | 1252 |
 | **Strength** | 1590 | 2652 | 0 | 1773 |
 | **Dexterity** | 2134 | 1998 | 2314 | 2068 |
 | **Agility** | 1969 | 2115 | 0 | 2206 |

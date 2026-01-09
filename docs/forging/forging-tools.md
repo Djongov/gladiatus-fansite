@@ -5,132 +5,128 @@ redirects:
   - /forging-tools
 ---
 
-Forging Tools
-=============
+Forging tools are used to boost forging capabilities. They can either drop from adventures (although extremely rare) or be purchased from the vendor Malefica. They cannot be soul bound, so they can be sold on the Market. The forge allows for 3 slots of forging tools, and with 4 types of tools in total, there isn't much choice on which ones to use. Forging tools come in 3 qualities: **Gold**, **Silver**, or **Bronze**.
 
-Forging tools are used to boost Forging capabilities. They can either drop from adventures although extremely rare or they can be purchased from the new vendor Malefica. They cannot be soul bound so they can be sold on the Market too. The forge allows for 3 slots of forging tools and with 4 type of tools in total, there isn't much of a choice on which ones to use. Forging tools come in 3 qualities - Gold, Silver or Bronze.
+Certain [Micro Events](/events "Micro Events") boost the drop chance by 10%, which can be really good. However, only Silver or Bronze qualities drop. Gold can only be purchased from Malefica or on the Market from another player.
 
-Certain [Micro Events](/events "Micro Events") boost the drop chance with usually 10% which can be really good, however only Silver or Bronze qualities drop. Gold can only be purchased from the Malefica vendor or in the Market from another player.
+---
 
-There are 4 types of Forging tools sorted by importance:
+## Tool Types
 
-**Clover of Fortune**
+There are 4 types of forging tools, sorted by importance:
 
-These are the most important tools. Pretty much forging without them is way too risky of a job as the default forging % success rate cannot exceed 55% on its own without buffs. However, please note that the clovers increase the **base** success chance of a forge. If event or costume boosts the global % chance of forging, the clover is not affected by this. Example: Forging chance is 40%, an event boosts it to 50%, if you insert a Gold Clover your % will be 90% instead of 100%. This is because the clover will boost your base % which 40 - 40\*2 = 80 % (needs further explaining) + 10% from the event = 90%.
+---
 
-**Hint:** Also when you want to calculate how much a clover will boost your %, open a calculator and multiply by exactly the amount that the clover says. if 40% base - do 40\*1.2 (for Bronze Clover) = 48%
+## Clover of Fortune
 
-**Gold Clover**
+These are the most important tools. Forging without them is way too risky, as the default forging success rate cannot exceed 55% on its own without buffs. However, please note that clovers increase the **base** success chance of a forge. If an event or costume boosts the global forging chance, the clover is not affected by this.
+
+**Example:** Forging chance is 40%, an event boosts it to 50%. If you insert a Gold Clover, your percentage will be 90% instead of 100%. This is because the clover boosts your base percentage: 40 × 2 = 80% + 10% from the event = 90%.
+
+**Hint:** To calculate how much a clover will boost your percentage, multiply by exactly the amount the clover states. For example, if 40% base with a Bronze Clover: 40 × 1.2 = 48%.
+
+### Gold Clover
 
 ![Gold Clover of Fortune](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Clover-gold.png "Gold Clover of Fortune")
 
-2 times success when forging
+- **Effect:** 2× success when forging
+- **Merchant Price:** 110![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 110![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Silver Clover**
+### Silver Clover
 
 ![Silver Clover of Fortune](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Clover-silver.png "Silver Clover of Fortune")
 
-1.5 times success when forging
+- **Effect:** 1.5× success when forging
+- **Merchant Price:** 50![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 50![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Bronze Clover**
+### Bronze Clover
 
 ![Bronze Clover of Fortune](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Clover-bronze.png "Bronze Clover of Fortune")
 
-1.2 times success when forging
+- **Effect:** 1.2× success when forging
+- **Merchant Price:** 30![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 30![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
+---
 
-**Bellows of Austerity**
-------------------------
+## Bellows of Austerity
 
-Bellows is arguably the second most important forging tool you can use. It reduces the forging goods material costs and when you try to craft something in **Orange** or **Red**, this is of vital importance. If you have already invested some materials into the forge and you apply a Bellows, the excess of materials will be send back to you as a package so you don't lose it.
+Bellows are arguably the second most important forging tool. They reduce forging goods material costs, which is of vital importance when crafting **Orange** or **Red** quality items. If you have already invested materials into the forge and apply Bellows, the excess materials will be sent back to you as a package, so you don't lose them.
 
-**Gold Bellows**
+### Gold Bellows
 
 ![Gold Bellows of Austerity](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Bellows-gold.png "Gold Bellows of Austerity")
 
--50% resource costs when forging
+- **Effect:** -50% resource costs when forging
+- **Merchant Price:** 100![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 100![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Silver Bellows**
+### Silver Bellows
 
 ![Silver Bellows of Austerity](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Bellows-silver.png "Silver Bellows of Austerity")
 
--30% resource costs when forging
+- **Effect:** -30% resource costs when forging
+- **Merchant Price:** 50![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 50![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Bronze Bellows**
+### Bronze Bellows
 
 ![Bronze Bellows of Austerity](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Bellows-bronze.png "Bronze Bellows of Austerity")
 
--15% resource costs when forging
+- **Effect:** -15% resource costs when forging
+- **Merchant Price:** 30![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 30![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
+---
 
-**Anvil of Calibre**
---------------------
+## Anvil of Calibre
 
-Anvils add an extra % chance for your item to roll the higher of your possible qualities. For example if you are using predominantly **Orange** materials, the anvil will add % for your item to roll **Red**.
+Anvils add an extra percentage chance for your item to roll the higher of your possible qualities. For example, if you are using predominantly **Orange** materials, the anvil will add a chance for your item to roll **Red**.
 
-Anvil works very well when using only Orange materials for example. It will give you flat % chance for Red. However, when you are using multiple qualities of materials it will boost the highest % of the highest quality. Here is an example:
+Anvils work very well when using only Orange materials. They give you a flat percentage chance for Red. However, when using multiple qualities of materials, they boost the highest percentage of the highest quality. Here is an example:
 
 ![How Anvil works](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/How_Anvil_works.gif "How Anvil works")
 
-**Gold Anvil**
+### Gold Anvil
 
 ![Gold Anvil of Calibre](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Anvil-gold.png "Gold Anvil of Calibre")
 
-+30% chance of a higher level of quality
+- **Effect:** +30% chance of a higher level of quality
+- **Merchant Price:** 90![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 90![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Silver Anvil**
+### Silver Anvil
 
 ![Silver Anvil of Calibre](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Anvil-silver.png "Silver Anvil of Calibre")
 
-+20% chance of a higher level of quality
+- **Effect:** +20% chance of a higher level of quality
+- **Merchant Price:** 60![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 60![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Bronze Anvil**
+### Bronze Anvil
 
 ![Bronze Anvil of Calibre](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Anvil-bronze.png "Bronze Anvil of Calibre")
 
-+10% chance of a higher level of quality
+- **Effect:** +10% chance of a higher level of quality
+- **Merchant Price:** 40![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 40![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
+---
 
-**Smith's Hammer of Urgency**
------------------------------
+## Smith's Hammer of Urgency
 
-This is absolutely the least important tool and i think it's rarely used. Well, if you are in a hurry, you can go for it. The price actually reflects this very accurately. It's few times cheaper than the other 3 tools and the fact that you have 3 tool slots makes this tool even more rarely used. Probably useful if you try a low priority forge or when you forge entirely **Red** item where you don't need an Anvil and you can occupy your third slot with a hammer.
+This is the least important tool and is rarely used. If you are in a hurry, you can use it. The price reflects this accurately—it's several times cheaper than the other tools, and the fact that you have 3 tool slots makes this tool even more rarely used. It's probably useful for low-priority forges or when forging entirely **Red** items where you don't need an Anvil and can occupy your third slot with a Hammer.
 
-**Gold Hammer**
+### Gold Hammer
 
 ![Gold Smith's Hammer of Urgency](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Hammer-gold.png "Gold Smith's Hammer of Urgency")
 
--50% Forging time
+- **Effect:** -50% forging time
+- **Merchant Price:** 25![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 25![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Silver Hammer**
+### Silver Hammer
 
 ![Silver Smith's Hammer of Urgency](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Hammer-silver.png "Silver Smith's Hammer of Urgency")
 
--30% Forging time
+- **Effect:** -30% forging time
+- **Merchant Price:** 15![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
 
-Merchant price: 15![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
-
-**Bronze Hammer**
+### Bronze Hammer
 
 ![Bronze Smith's Hammer of Urgency](https://gladiatusfansite.blob.core.windows.net/images/Forging/Tools/Hammer-bronze.png "Bronze Smith's Hammer of Urgency")
 
--15% Forging time
-
-Merchant price: 10![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")
+- **Effect:** -15% forging time
+- **Merchant Price:** 10![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies")

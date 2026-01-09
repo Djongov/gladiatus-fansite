@@ -27,7 +27,7 @@ Minions item level drop: **97-103 `✓` Verified
   
 Boss item level drop: **99-111 `✓` Verified  
   
-Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions#LostHarbour "Lost Harbour")
+Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions/lost-harbour "Lost Harbour")
 
 Advanced Dungeon**:** **Yes, this is the advanced dungeon of** [Poisoned Country (Level 35)](/dungeons/africa-dungeons/poisoned-country "Poisoned Country")
 

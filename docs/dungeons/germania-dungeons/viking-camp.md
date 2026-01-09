@@ -25,7 +25,7 @@ Boss item level drop: **58-70 `✓` Verified
 
 Advanced Dungeon: **No**
 
-Parent Expedition: [Cursed Village](/expeditions/germania-expeditions#CursedVillage "Cursed Village")
+Parent Expedition: [Cursed Village](/expeditions/germania-expeditions/cursed-village "Cursed Village")
 
 Previous Dungeon: [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might") (Level 45)
 

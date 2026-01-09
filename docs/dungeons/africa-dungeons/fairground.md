@@ -23,7 +23,7 @@ Minions item level drop: **87-93 `✓` Verified
   
 Boss item level drop: **88-100 `✓` Verified
 
-Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions#UmpoktaTribe "Umpokta Tribe")
+Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions/umpokta-tribe "Umpokta Tribe")
 
 Advanced Dungeon: **Yes,** [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey") (Level 92)
 

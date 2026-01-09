@@ -23,7 +23,7 @@ Minions item level drop: **16-23 `✓` Verified
 
 Boss item level drop: **18-25 `✓` Verified
 
-Parent Expedition: [Misty Mountains](/expeditions/italy-expeditions#MistyMountains "Misty Mountains")
+Parent Expedition: [Misty Mountains](/expeditions/italy-expeditions/misty-mountains "Misty Mountains")
 
 Advanced Dungeon: **Yes,** [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner") (Level 70)
 

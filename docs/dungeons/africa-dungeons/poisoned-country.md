@@ -23,7 +23,7 @@ Minions item level drop: **42-48 `✓` Verified
   
 Boss item level drop: **45-55 `✓` Verified
 
-Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions#LostHarbour "Lost Harbour")
+Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions/lost-harbour "Lost Harbour")
 
 Advanced Dungeon: **Yes,** [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay")
 

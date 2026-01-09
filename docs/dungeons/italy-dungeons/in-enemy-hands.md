@@ -23,7 +23,7 @@ Minions item level drop: **70-76 `✓` Verified
   
 Boss item level drop: **71-84 `✓` Verified
 
-Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions#BarbarianVillage "Barbarian Village")
+Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions/barbarian-village "Barbarian Village")
 
 Advanced Dungeon: **Yes,** [Zagrashs Fort](/zagrashs-fort "Zagrashs Fort") (Level 78)
 

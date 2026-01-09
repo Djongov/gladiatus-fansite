@@ -20,7 +20,7 @@ Minions item level drop: **80-86 ![Verified](https://gladiatusfansite.blob.core.
   
 Boss item level drop: **83-92 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
 
-Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions#WolfCave "Wolf Cave")
+Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions/wolf-cave "Wolf Cave")
 
 Advanced Dungeon: **This is the Advanced Dungeon of** [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15)
 

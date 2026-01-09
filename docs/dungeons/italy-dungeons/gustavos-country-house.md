@@ -20,7 +20,7 @@ Minions item level drop: **9-10** `✓` Verified
 
 Boss item level drop: **10-12** `✓` Verified
 
-Parent Expedition: [Grimwood](/expeditions/italy-expeditions#grimwood "Grimwood")
+Parent Expedition: [Grimwood](/expeditions/italy-expeditions/grimwood "Grimwood")
 
 Advanced Dungeon: **No**
 

@@ -30,10 +30,10 @@ Insert
 |-----------|---------|---------|---------|------|
 | **Name** | <div className="player_name_bg"><div className="playername">Leech</div></div> | <div className="player_name_bg"><div className="playername">Water Spider</div></div> | <div className="player_name_bg"><div className="playername">Caratacus</div></div> | <div className="player_name_bg"><div className="playername">Boss Enemy</div></div> |
 | **Image** | ![Leech](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Ford/Opponent_1.jpg) | ![Water Spider](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Ford/Opponent_2.jpg) | ![Caratacus](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Ford/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Boss Enemy](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Ford/Opponent_boss.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
-| ![Level](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/level.png) **Level** | 183 | 183 | 187 | 0 |
-| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/gold.png) **Gold** | 22640 | 21440 | 36704 | 0 |
-| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/experience.png) **Experience** | 24 | 28 | 24 | 0 |
-| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/honour.png) **Honour** | 1647 | 1491 | 1522 | 0 |
+| ![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif) **Level** | 183 | 183 | 187 | 0 |
+| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif) **Gold** | 22640 | 21440 | 36704 | 0 |
+| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif) **Experience** | 24 | 28 | 24 | 0 |
+| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/icon_honor_small.gif) **Honour** | 1647 | 1491 | 1522 | 0 |
 | **Strength** | 1573 | 1134 | 1870 | 0 |
 | **Dexterity** | 1784 | 1967 | 2805 | 0 |
 | **Agility** | 2754 | 3843 | 3927 | 0 |

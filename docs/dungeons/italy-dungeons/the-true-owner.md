@@ -23,7 +23,7 @@ Minions item level drop: **78-91 ![Verified](https://gladiatusfansite.blob.core.
    
 Boss item level drop: **81-89**
 
-Parent Expedition: [Misty Mountains](/expeditions/italy-expeditions#MistyMountains "Misty Mountains")
+Parent Expedition: [Misty Mountains](/expeditions/italy-expeditions/misty-mountains "Misty Mountains")
 
 Advanced Dungeon: **This is the Advanced Dungeon of** [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold") (Level 10)
 

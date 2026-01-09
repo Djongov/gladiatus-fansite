@@ -30,10 +30,10 @@ Insert
 |-----------|---------|---------|---------|------|
 | **Name** | <div className="player_name_bg"><div className="playername">Cingetorix</div></div> | <div className="player_name_bg"><div className="playername">Segovax</div></div> | <div className="player_name_bg"><div className="playername">Carvilius</div></div> | <div className="player_name_bg"><div className="playername">Taximagulus</div></div> |
 | **Image** | ![Cingetorix](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Kent/Opponent_1.jpg) | ![Segovax](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Kent/Opponent_2.jpg) | ![Carvilius](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Kent/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Taximagulus](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Kent/Opponent_boss.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
-| ![Level](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/level.png) **Level** | 174 | 172 | 177 | 178 |
-| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/gold.png) **Gold** | 0 | 0 | 0 | 0 |
-| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/experience.png) **Experience** | 0 | 0 | 0 | 0 |
-| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/honour.png) **Honour** | 0 | 0 | 0 | 0 |
+| ![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif) **Level** | 174 | 172 | 177 | 178 |
+| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif) **Gold** | 0 | 0 | 0 | 0 |
+| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif) **Experience** | 0 | 0 | 0 | 0 |
+| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/icon_honor_small.gif) **Honour** | 0 | 0 | 0 | 0 |
 | **Strength** | 1496 | 1754 | 849 | 284 |
 | **Dexterity** | 1696 | 1419 | 2212 | 1780 |
 | **Agility** | 1400 | 1505 | 3717 | 2492 |
