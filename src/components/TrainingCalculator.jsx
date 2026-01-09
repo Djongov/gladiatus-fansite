@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function StatsCalculator() {
+export default function TrainingCalculator() {
   // initial state
   const initialStats = {
     strengthFrom: 5, strengthTo: '',
@@ -89,7 +89,6 @@ export default function StatsCalculator() {
 
   return (
     <div style={{ overflowX: 'auto', textAlign: 'center' }}>
-      <h2>Training Calculator</h2>
       <table>
         <thead>
           <tr>

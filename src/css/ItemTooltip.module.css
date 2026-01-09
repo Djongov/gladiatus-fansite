@@ -1,0 +1,50 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  image-rendering: smooth;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  z-index: 1000;
+  background: linear-gradient(#1a1a1a, #0b0b0b);
+  border: 1px solid #c2a66a;
+  padding: 8px 10px;
+  min-width: 260px;
+  color: #dcdcdc;
+  font-size: 13px;
+  font-weight: bolder;
+  box-shadow: 0 0 12px rgba(0,0,0,0.9);
+}
+
+.wrapper:hover .tooltip {
+  display: block;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Rarity colors (Gladiatus-like) */
+.common { color: #ffffff; }
+.green { color: #1eff00; }
+.blue { color: #0070dd; }
+.purple { color: #a335ee; }
+.orange { color: #ff8000; }
+.red { color: #ff0000; }
+
+.level {
+    color: #9b9b9b;
+}
+
+.enchant {
+    color: green
+}

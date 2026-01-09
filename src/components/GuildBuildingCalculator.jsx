@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function BuildingCalculator() {
+export default function GuildBuildingCalculator() {
   const initialBuildings = {
     forumFrom: 1, forumTo: '',
     bathhouseFrom: 1, bathhouseTo: '',
@@ -93,7 +93,6 @@ export default function BuildingCalculator() {
 
   return (
     <div style={{ overflowX: 'auto', textAlign: 'center' }}>
-      <h2>Guild Buildings Calculator</h2>
       <table>
         <thead>
           <tr>
