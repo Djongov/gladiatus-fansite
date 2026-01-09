@@ -14,7 +14,7 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ### 09.01.2026
 
-Today's migration progress:
+Today's migration progress (huge effort):
 
 - Finished main work on the expeditions, fixed broken links across dungeons and expeditions
 - Events structure improved
@@ -23,6 +23,10 @@ Today's migration progress:
 - Big changes to Forging Goods. Now every forging good gets its own page and link
 - Forging pages migrated
 - Guild done and reworked into individual pages
+- Huge breakthrough for displaying items, with React, with tooltips
+- Extracted all the base items, prefixes and suffixes into json files and objects
+- Item prefixes and suffixes now display great and are searchable and sortable
+- Split the big Items markdown into smaller ones under Items
 
 ### 08.01.2026
 

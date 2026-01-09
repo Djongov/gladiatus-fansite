@@ -1,0 +1,102 @@
+---
+title: Gladiatus Items
+sidebar_label: Items
+slug: /items
+---
+
+import ItemTooltip from '@site/src/components/ItemTooltip';
+
+In Gladiatus an item is formed from a base item to which a prefix, suffix or both can be applied at the same time.
+
+Here is an example:
+
+We have an item - Club
+
+<ItemTooltip
+  name="Club"
+  rarity="green"
+  image="https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Club.png"
+  damage="1 – 3"
+  level={1}
+  stats={[
+  ]}
+  gold="14"
+/>
+
+![Club](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Club.png "Club")
+
+![Club stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Club_stats.png "Club stats")
+
+Club has basic item level of 1. Then we apply a Prefix and the stats from the prefix are applied to the Club. However, every prefix adds item levels to the base item. The formula is scroll level -10. In our example we will use Taliths. Taliths scroll is 55 item level, which means that it will add 45 levels to the Club
+
+![Taliths prefix](https://gladiatusfansite.blob.core.windows.net/images/Items/Prefixes/Taliths.png "Taliths prefix")
+
+So base level of Club is 1 + 45 levels from Taliths prefix and the result is Taliths Club (46 item level)
+
+![Taliths Club](https://gladiatusfansite.blob.core.windows.net/images/Items/Taliths_Club.png "Taliths Club")
+
+Now, let's apply a Suffix. Suffixes work the same way as Prefixes. It will add the stats from the suffix to our item + item levels (scroll -10). Let's use "of Fatuity"
+
+![of Fatuity suffix](https://gladiatusfansite.blob.core.windows.net/images/Items/Suffixes/of_Fatuity.png "of Fatuity suffix")
+
+In our case Fatuity will add 46-10=36 item levels to our Taliths Club
+
+![Taliths Club of Fatuity](https://gladiatusfansite.blob.core.windows.net/images/Items/Taliths_Club_of_Fatuity.png "Taliths Club of Fatuity")
+
+So the result is Taliths Club of Fatuity. All the stats from the prefix and the suffix are added to the item as well as item levels 1+45+36=82
+
+This is how item is formed.
+
+**Interesting fact!** Did you know that you can't have certain stats on certain item slots in Gladiatus
+
+- You can't have Charisma +% on Shields
+- You can't have Agility +% on Chest Armours
+- You can't have Dexterity +% on Shoes
+- You can't have Strength +% on Jewelry (Amulets and Rings)
+ 
+Example:
+
+"of Suffering", i am using this suffix because it has both Agility and Charisma and is good for example but this applies to both prefixes and suffixes:
+
+Agility +21%
+
+Charisma +17%
+
+![of Suffering](https://gladiatusfansite.blob.core.windows.net/images/Items/Suffixes/of_Suffering.png "of Suffering")
+
+This is how a normal "of Suffering" items looks like:
+
+![Amulet of Suffering](https://gladiatusfansite.blob.core.windows.net/images/Items/Suffixes/Examples/Amulet_of_Suffering.png "Amulet of Suffering")
+
+However, If you decide to use it on an Chest Armour - there is no Agility! In fact there cannot be + "Agility %" on any Chest Armour in Gladiatus! No matter what suffix or prefix you use. You can have Agility +X but not Agility +XX%
+
+![Chest armour of Suffering](https://gladiatusfansite.blob.core.windows.net/images/Items/Suffixes/Examples/Chest_Armour_of_Suffering.png "Chest armour of Suffering")
+
+If you decide to use it on a Shield - there is no Charisma % on shields! Just like the Chest Armours are with Agility, shields cannot have Charisma +XX %. You can have Charisma +XX but not Charisma +XX%
+
+![Shield of Suffering](https://gladiatusfansite.blob.core.windows.net/images/Items/Suffixes/Examples/Shield_of_Suffering.png "Shield of Suffering")
+
+This is the same with Dexterity on shoes and Strength on Amulets!!!
+
+So have this in mind when you are looking for the best item to help you max your stats.
+
+## Item Categories
+
+Browse items by category:
+
+- [Item Quality](/items/item-quality) - Learn about item quality levels
+- [Item Drop](/items/item-drop) - Understanding how items drop
+- [Weapons](/items/weapons) - All weapon types
+- [Shields](/items/shields) - Shield items
+- [Armour](/items/armour) - Body armour
+- [Helmets](/items/helmets) - Head protection
+- [Gloves](/items/gloves) - Hand equipment
+- [Shoes](/items/shoes) - Footwear
+- [Rings](/items/rings) - Ring accessories
+- [Amulets](/items/amulets) - Amulet accessories
+- [Food](/items/food) - Consumable food items
+- [Reinforcements](/items/reinforcements) - Item reinforcements
+- [Recipes](/items/recipes) - Crafting recipes
+- [Upgrades](/items/upgrades) - Item upgrades
+- [Scrolls](/items/scrolls) - Prefix and suffix scrolls
+- [Miscellaneous](/items/misc) - Other items

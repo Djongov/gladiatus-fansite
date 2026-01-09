@@ -1,327 +1,4743 @@
 [
-  {
-    "Name": "Leandronimus",
-    "Damage": 0,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 3,
-    "Strength %": 29,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 3,
-    "Agility %": 21,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 3,
-    "Charisma %": 28,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 69
-  },
-  {
-    "Name": "Lepidus",
-    "Damage": 12,
-    "Armor": 300,
-    "Health": 0,
-    "Strength": 30,
-    "Strength %": 0,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 0,
-    "Agility %": 30,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 30,
-    "Charisma %": 0,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 30,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 94
-  },
-  {
-    "Name": "Lethe`s",
-    "Damage": 19,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 0,
-    "Strength %": 0,
-    "Dexterity": 25,
-    "Dexterity %": 0,
-    "Agility": 11,
-    "Agility %": 17,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": -38,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 33,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 101
-  },
-  {
-    "Name": "Asphodel`s",
-    "Damage": 0,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 60,
-    "Strength %": 0,
-    "Dexterity": 36,
-    "Dexterity %": 0,
-    "Agility": 0,
-    "Agility %": 0,
-    "Constitution": 35,
-    "Constitution %": 31,
-    "Charisma": 0,
-    "Charisma %": 0,
-    "Intelligence": 19,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 36,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 102
-  },
-  {
-    "Name": "Aulus`",
-    "Damage": 13,
-    "Armor": 781,
-    "Health": 466,
-    "Strength": 18,
-    "Strength %": 0,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 11,
-    "Agility %": 27,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": 0,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 50,
-    "Critical attack value": 0,
-    "Block value": 50,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 120
-  },
-  {
-    "Name": "Aurelius",
-    "Damage": 0,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 0,
-    "Strength %": 0,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 15,
-    "Agility %": 0,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": 0,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 145,
-    "Critical attack value": 15,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 100
-  },
-  {
-    "Name": "Antonius",
-    "Damage": 16,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 0,
-    "Strength %": 0,
-    "Dexterity": 25,
-    "Dexterity %": 0,
-    "Agility": 35,
-    "Agility %": 0,
-    "Constitution": 0,
-    "Constitution %": 25,
-    "Charisma": 0,
-    "Charisma %": 0,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 0
-  },
-  {
-    "Name": "Barbekuus",
-    "Damage": 0,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 4,
-    "Strength %": 24,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 0,
-    "Agility %": 18,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 4,
-    "Charisma %": 20,
-    "Intelligence": 0,
-    "Intelligence %": -3,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 65
-  },
-  {
-    "Name": "Beasthammers",
-    "Damage": 6,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 6,
-    "Strength %": 13,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 0,
-    "Agility %": 0,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": 0,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 32
-  },
-  {
-    "Name": "Belisarius",
-    "Damage": 15,
-    "Armor": 600,
-    "Health": 600,
-    "Strength": 0,
-    "Strength %": 0,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 0,
-    "Agility %": 0,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": 0,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 96
-  },
-  {
-    "Name": "Kerrannas",
-    "Damage": 0,
-    "Armor": 0,
-    "Health": 0,
-    "Strength": 0,
-    "Strength %": 22,
-    "Dexterity": 0,
-    "Dexterity %": 22,
-    "Agility": 0,
-    "Agility %": 22,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": 0,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 33
-  },
-  {
-    "Name": "Korks",
-    "Damage": 0,
-    "Armor": 113,
-    "Health": 0,
-    "Strength": 0,
-    "Strength %": 0,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 0,
-    "Agility %": 0,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": -4,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 10,
-    "Critical attack value": 0,
-    "Block value": 42,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 59
-  },
-  {
-    "Name": "Kosmonas",
-    "Damage": 0,
-    "Armor": 0,
-    "Health": 26,
-    "Strength": 0,
-    "Strength %": 0,
-    "Dexterity": 0,
-    "Dexterity %": 0,
-    "Agility": 0,
-    "Agility %": 0,
-    "Constitution": 0,
-    "Constitution %": 0,
-    "Charisma": 0,
-    "Charisma %": -6,
-    "Intelligence": 0,
-    "Intelligence %": 0,
-    "Healing": 0,
-    "Critical healing value": 0,
-    "Critical attack value": 0,
-    "Block value": 0,
-    "Hardening value": 0,
-    "Threat": 0,
-    "Level": 17
-  }
+    {
+        "name": "Accas",
+        "level": 140,
+        "gold": 580989,
+        "stats": {
+            "strength": {
+                "flat": 8,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 14,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": -34,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 19,
+                "percent": 26
+            },
+            "critical_healing_value": {
+                "flat": 50,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 44,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hydra Scale": 1,
+            "Soul Essence": 73,
+            "Sphinx Feather": 1
+        }
+    },
+    {
+        "name": "Adendathiels",
+        "level": 36,
+        "gold": 64348,
+        "stats": {
+            "damage": {
+                "flat": 6,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 8,
+                "percent": 22
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -5
+            }
+        },
+        "materials": {
+            "Water Seal": 1,
+            "Flintstone": 16
+        }
+    },
+    {
+        "name": "Africanus`",
+        "level": 120,
+        "gold": 0,
+        "stats": {
+            "health": {
+                "flat": 537,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 16
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -18
+            },
+            "intelligence": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Ambrosius`",
+        "level": 106,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 23,
+                "percent": 0
+            },
+            "health": {
+                "flat": 250,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 17,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -10
+            },
+            "constitution": {
+                "flat": 39,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 39,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 51,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Almandin": 2,
+            "Hydra Scale": 25,
+            "Soul Essence": 8
+        }
+    },
+    {
+        "name": "Amelias",
+        "level": 30,
+        "gold": 69570,
+        "stats": {
+            "damage": {
+                "flat": 2,
+                "percent": 0
+            },
+            "health": {
+                "flat": 100,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 15,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Amoviels",
+        "level": 16,
+        "gold": 43750,
+        "stats": {
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 10
+        }
+    },
+    {
+        "name": "Amulius",
+        "level": 105,
+        "gold": 254356,
+        "stats": {
+            "damage": {
+                "flat": 16,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 15
+            },
+            "block_value": {
+                "flat": 31,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 56,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 34,
+            "Amethyst": 18,
+            "Crystal": 2
+        }
+    },
+    {
+        "name": "Anchorons",
+        "level": 80,
+        "gold": 211320,
+        "stats": {
+            "damage": {
+                "flat": -6,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -35
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -25
+            },
+            "intelligence": {
+                "flat": 4,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 76,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 6,
+            "Garnet": 20,
+            "Tincture of Stamina": 9
+        }
+    },
+    {
+        "name": "Angelus`",
+        "level": 112,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 31,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": -45,
+                "percent": 8
+            },
+            "charisma": {
+                "flat": -18,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 200,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 21,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Antonius",
+        "level": 92,
+        "gold": 240798,
+        "stats": {
+            "damage": {
+                "flat": 16,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 35,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 25,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 25,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 4,
+            "Amethyst": 18,
+            "Crystal": 30
+        }
+    },
+    {
+        "name": "Appius",
+        "level": 82,
+        "gold": 279090,
+        "stats": {
+            "damage": {
+                "flat": 4,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 350,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 30,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 25,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 5,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 2,
+            "Storm Rune": 17,
+            "Tincture of Stamina": 7
+        }
+    },
+    {
+        "name": "Arpagius`",
+        "level": 114,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 21,
+                "percent": 0
+            },
+            "health": {
+                "flat": 324,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 21,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 22
+            },
+            "constitution": {
+                "flat": -13,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 30
+            },
+            "threat": {
+                "flat": 52,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Asayseths",
+        "level": 32,
+        "gold": 86081,
+        "stats": {
+            "damage": {
+                "flat": 3,
+                "percent": 0
+            },
+            "health": {
+                "flat": 140,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 6
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 12
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 6
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Asendacs",
+        "level": 29,
+        "gold": 83722,
+        "stats": {
+            "armor": {
+                "flat": 220,
+                "percent": 0
+            },
+            "health": {
+                "flat": 90,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Wool": 1,
+            "Hemp": 2,
+            "Linen Strip": 14
+        }
+    },
+    {
+        "name": "Ashitills",
+        "level": 40,
+        "gold": 106950,
+        "stats": {
+            "damage": {
+                "flat": 6,
+                "percent": 0
+            },
+            "health": {
+                "flat": 400,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 10,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 25
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -13
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 12
+            }
+        },
+        "materials": {
+            "Scale": 4,
+            "Lapis Lazuli": 3,
+            "Flintstone": 13
+        }
+    },
+    {
+        "name": "Asphodel`s",
+        "level": 102,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 60,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 36,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 35
+            },
+            "charisma": {
+                "flat": 31,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 0,
+                "percent": 19
+            },
+            "critical_healing_value": {
+                "flat": 36,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Almandin": 6,
+            "Hydra Scale": 10,
+            "Soul Essence": 5
+        }
+    },
+    {
+        "name": "Aulus`",
+        "level": 120,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 13,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 781,
+                "percent": 0
+            },
+            "health": {
+                "flat": 466,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 18,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 11,
+                "percent": 27
+            },
+            "critical_healing_value": {
+                "flat": 50,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 50,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Aurelius",
+        "level": 100,
+        "gold": 253812,
+        "stats": {
+            "agility": {
+                "flat": 15,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 145,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 15,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 3,
+            "Emerald": 56
+        }
+    },
+    {
+        "name": "Auroras",
+        "level": 119,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 557,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 8
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 15
+            },
+            "critical_healing_value": {
+                "flat": 43,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 37,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Avalonius",
+        "level": 99,
+        "gold": 375538,
+        "stats": {
+            "damage": {
+                "flat": 8,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 700,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 35,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 20,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 20,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 40,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 24,
+            "Amethyst": 10,
+            "Emerald": 4
+        }
+    },
+    {
+        "name": "Bacias",
+        "level": 30,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 7,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 175,
+                "percent": 0
+            },
+            "health": {
+                "flat": 60,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 6,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 12,
+            "Hemp": 2,
+            "Linen Strip": 4
+        }
+    },
+    {
+        "name": "Barbekuus",
+        "level": 65,
+        "gold": 160756,
+        "stats": {
+            "strength": {
+                "flat": 4,
+                "percent": 24
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 18
+            },
+            "charisma": {
+                "flat": 4,
+                "percent": 20
+            },
+            "intelligence": {
+                "flat": 0,
+                "percent": -3
+            }
+        },
+        "materials": {
+            "Bull's Horn": 13,
+            "Garnet": 6,
+            "Tincture of Stamina": 10
+        }
+    },
+    {
+        "name": "Beasthammers",
+        "level": 32,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 6,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 6,
+                "percent": 13
+            }
+        },
+        "materials": {
+            "Fang": 19
+        }
+    },
+    {
+        "name": "Belisarius",
+        "level": 96,
+        "gold": 210083,
+        "stats": {
+            "damage": {
+                "flat": 15,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 600,
+                "percent": 0
+            },
+            "health": {
+                "flat": 600,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 30,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": -35,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 15,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Amethyst": 13,
+            "Emerald": 4,
+            "Crystal": 30
+        }
+    },
+    {
+        "name": "Bereccas",
+        "level": 37,
+        "gold": 97471,
+        "stats": {
+            "strength": {
+                "flat": -1,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 2,
+                "percent": 16
+            },
+            "healing": {
+                "flat": 18,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 7,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Flintstone": 1,
+            "Adrenaline": 22
+        }
+    },
+    {
+        "name": "Berrys",
+        "level": 31,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 200,
+                "percent": 0
+            },
+            "health": {
+                "flat": 375,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 14,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Bilgs",
+        "level": 28,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 240,
+                "percent": 0
+            },
+            "health": {
+                "flat": 90,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 6,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 2,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Caesius`",
+        "level": 117,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 12,
+                "percent": 0
+            },
+            "strength": {
+                "flat": -22,
+                "percent": 23
+            },
+            "constitution": {
+                "flat": 47,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 44,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 43,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 26,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Caldus`",
+        "level": 110,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 17,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 651,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 36,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 40,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 41,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Amethyst": 24,
+            "Emerald": 23,
+            "Obsidian": 11
+        }
+    },
+    {
+        "name": "CalÃ³diens",
+        "level": 16,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 100,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 3,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Camillus`",
+        "level": 116,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 491,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 31,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 20,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 10,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 30
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Chabdyns",
+        "level": 32,
+        "gold": 93566,
+        "stats": {
+            "damage": {
+                "flat": 3,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 16
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -2
+            }
+        },
+        "materials": {
+            "Fang": 18,
+            "Silk Thread": 1
+        }
+    },
+    {
+        "name": "Chalinis",
+        "level": 28,
+        "gold": 83744,
+        "stats": {
+            "armor": {
+                "flat": 100,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 12,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 1,
+            "Linen Strip": 9,
+            "Silk Thread": 7
+        }
+    },
+    {
+        "name": "Chealoths",
+        "level": 24,
+        "gold": 54520,
+        "stats": {
+            "health": {
+                "flat": 300,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 8,
+                "percent": 14
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 6
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Cheggovs",
+        "level": 62,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 0,
+                "percent": 21
+            },
+            "dexterity": {
+                "flat": 3,
+                "percent": 24
+            },
+            "constitution": {
+                "flat": -3,
+                "percent": -19
+            },
+            "charisma": {
+                "flat": 4,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 11,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 1,
+            "Garnet": 3,
+            "Potion of Perception": 30
+        }
+    },
+    {
+        "name": "Chucks",
+        "level": 74,
+        "gold": 222301,
+        "stats": {
+            "armor": {
+                "flat": 194,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -22
+            }
+        },
+        "materials": {
+            "Bull's Horn": 21,
+            "Storm Rune": 23
+        }
+    },
+    {
+        "name": "Ciallans",
+        "level": 31,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 4,
+                "percent": 0
+            },
+            "health": {
+                "flat": 75,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 4,
+                "percent": 24
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Cisiens",
+        "level": 31,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 300,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 8,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 8,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 8,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Wool": 2,
+            "Hemp": 2,
+            "Linen Strip": 13
+        }
+    },
+    {
+        "name": "Constantius",
+        "level": 97,
+        "gold": 365250,
+        "stats": {
+            "damage": {
+                "flat": 12,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 400,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 15,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 20,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 20,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 15,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 20,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 15,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 4,
+            "Amethyst": 27,
+            "Emerald": 6
+        }
+    },
+    {
+        "name": "Dairus",
+        "level": 87,
+        "gold": 315262,
+        "stats": {
+            "armor": {
+                "flat": 650,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 10,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 25,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 30,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 25,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 34,
+            "Amethyst": 1,
+            "Emerald": 3
+        }
+    },
+    {
+        "name": "Decimus",
+        "level": 83,
+        "gold": 246637,
+        "stats": {
+            "damage": {
+                "flat": 9,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 15,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Tincture of Stamina": 10,
+            "Potion of Perception": 7,
+            "Sulphur": 32
+        }
+    },
+    {
+        "name": "Demonkillers",
+        "level": 32,
+        "gold": 93566,
+        "stats": {
+            "strength": {
+                "flat": 0,
+                "percent": 15
+            },
+            "constitution": {
+                "flat": 16,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 6,
+            "Hemp": 8
+        }
+    },
+    {
+        "name": "Denovs *",
+        "level": 21,
+        "gold": 0,
+        "stats": {
+            "dexterity": {
+                "flat": 2,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 6
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Dexterus",
+        "level": 86,
+        "gold": 297466,
+        "stats": {
+            "damage": {
+                "flat": 5,
+                "percent": 0
+            },
+            "health": {
+                "flat": 200,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 20,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 20,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 20,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 20,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 20,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 20,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 5,
+            "Amethyst": 21,
+            "Emerald": 14
+        }
+    },
+    {
+        "name": "Doitrems",
+        "level": 25,
+        "gold": 71178,
+        "stats": {
+            "armor": {
+                "flat": 50,
+                "percent": 0
+            },
+            "health": {
+                "flat": 25,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 8,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 6
+            }
+        },
+        "materials": {
+            "Wool": 5,
+            "Hemp": 2,
+            "Linen Strip": 5,
+            "Jute Patch": 4
+        }
+    },
+    {
+        "name": "Doomeniks *",
+        "level": 68,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": -5,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": -22
+            },
+            "constitution": {
+                "flat": -3,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -29
+            },
+            "intelligence": {
+                "flat": 4,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Dragonus`",
+        "level": 104,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 768,
+                "percent": 0
+            },
+            "health": {
+                "flat": 647,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 34,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 37,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 8,
+                "percent": 25
+            }
+        },
+        "materials": {
+            "Almandin": 8,
+            "Soul Essence": 8,
+            "Sphinx Feather": 8
+        }
+    },
+    {
+        "name": "Elrarangs",
+        "level": 31,
+        "gold": 0,
+        "stats": {
+            "dexterity": {
+                "flat": 0,
+                "percent": 24
+            }
+        },
+        "materials": {
+            "Wool": 19
+        }
+    },
+    {
+        "name": "Elvilmandels",
+        "level": 20,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 1,
+                "percent": 0
+            },
+            "health": {
+                "flat": 100,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Elywens",
+        "level": 26,
+        "gold": 41580,
+        "stats": {
+            "health": {
+                "flat": 180,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 5
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 5
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 5
+            }
+        },
+        "materials": {
+            "Wool": 4,
+            "Hemp": 8,
+            "Jute Patch": 4
+        }
+    },
+    {
+        "name": "Evotavs",
+        "level": 50,
+        "gold": 102247,
+        "stats": {
+            "armor": {
+                "flat": 400,
+                "percent": 0
+            },
+            "health": {
+                "flat": 350,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 30
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": -12
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -12
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 15
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Fernabasts",
+        "level": 63,
+        "gold": 162945,
+        "stats": {
+            "health": {
+                "flat": 74,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 3,
+                "percent": 22
+            },
+            "agility": {
+                "flat": -4,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 10,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 10,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 44,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 12,
+            "Garnet": 1,
+            "Storm Rune": 1
+        }
+    },
+    {
+        "name": "Fitschis",
+        "level": 41,
+        "gold": 120191,
+        "stats": {
+            "strength": {
+                "flat": -3,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -13
+            },
+            "intelligence": {
+                "flat": 2,
+                "percent": 19
+            },
+            "healing": {
+                "flat": 40,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 8,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Lapis Lazuli": 3,
+            "Flintstone": 1,
+            "Adrenaline": 20
+        }
+    },
+    {
+        "name": "Frabos",
+        "level": 23,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 2,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 6,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 12
+            }
+        },
+        "materials": {
+            "Fang": 7,
+            "Jute Patch": 2,
+            "Silk Thread": 5
+        }
+    },
+    {
+        "name": "Frickoys",
+        "level": 26,
+        "gold": 0,
+        "stats": {
+            "charisma": {
+                "flat": 0,
+                "percent": -9
+            },
+            "intelligence": {
+                "flat": 1,
+                "percent": 10
+            },
+            "critical_healing_value": {
+                "flat": 4,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Frientas",
+        "level": 32,
+        "gold": 82338,
+        "stats": {
+            "armor": {
+                "flat": 99,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 15
+            },
+            "block_value": {
+                "flat": 5,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 7,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 18,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 2,
+            "Linen Strip": 3,
+            "Jute Patch": 9
+        }
+    },
+    {
+        "name": "Fustriels",
+        "level": 48,
+        "gold": 151840,
+        "stats": {
+            "armor": {
+                "flat": 147,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 3,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 11,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 9,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 36,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Scale": 2,
+            "Lapis Lazuli": 13,
+            "Water Seal": 5
+        }
+    },
+    {
+        "name": "Gadriewens",
+        "level": 28,
+        "gold": 67639,
+        "stats": {
+            "armor": {
+                "flat": 140,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 25
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 10
+            }
+        },
+        "materials": {
+            "Linen Strip": 6,
+            "Jute Patch": 8,
+            "Silk Thread": 3
+        }
+    },
+    {
+        "name": "Gaias",
+        "level": 130,
+        "gold": 478315,
+        "stats": {
+            "damage": {
+                "flat": 20,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 827,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 10,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 15
+            },
+            "healing": {
+                "flat": 164,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hydra Scale": 8,
+            "Soul Essence": 55,
+            "Sphinx Feather": 1
+        }
+    },
+    {
+        "name": "Gaius",
+        "level": 90,
+        "gold": 275000,
+        "stats": {
+            "damage": {
+                "flat": 17,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 5,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 5,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 5,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 25,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 1,
+            "Amethyst": 22,
+            "Crystal": 31
+        }
+    },
+    {
+        "name": "Galarands",
+        "level": 33,
+        "gold": 93050,
+        "stats": {
+            "armor": {
+                "flat": 200,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 10,
+                "percent": 15
+            }
+        },
+        "materials": {
+            "Hemp": 5,
+            "Linen Strip": 10
+        }
+    },
+    {
+        "name": "Gidras",
+        "level": 46,
+        "gold": 103719,
+        "stats": {
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 3,
+                "percent": 21
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 20
+            },
+            "intelligence": {
+                "flat": 0,
+                "percent": -2
+            },
+            "critical_attack_value": {
+                "flat": 9,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Scale": 20,
+            "Water Seal": 5,
+            "Flintstone": 1
+        }
+    },
+    {
+        "name": "Giganticus",
+        "level": 92,
+        "gold": 198304,
+        "stats": {
+            "damage": {
+                "flat": 8,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 400,
+                "percent": 0
+            },
+            "health": {
+                "flat": 400,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 40,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 40,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 40,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Amethyst": 23,
+            "Emerald": 10,
+            "Obsidian": 11
+        }
+    },
+    {
+        "name": "Gonaks",
+        "level": 31,
+        "gold": 54147,
+        "stats": {
+            "damage": {
+                "flat": 6,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 160,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 6
+            }
+        },
+        "materials": {
+            "Fang": 10,
+            "Hemp": 1,
+            "Linen Strip": 4
+        }
+    },
+    {
+        "name": "Granks",
+        "level": 28,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 100,
+                "percent": 0
+            },
+            "health": {
+                "flat": 100,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 4
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 2
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Grasscrawlers",
+        "level": 30,
+        "gold": 59135,
+        "stats": {
+            "armor": {
+                "flat": 100,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 8,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 4,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Wool": 5,
+            "Linen Strip": 10,
+            "Jute Patch": 2
+        }
+    },
+    {
+        "name": "Gratias",
+        "level": 118,
+        "gold": 0,
+        "stats": {
+            "dexterity": {
+                "flat": 0,
+                "percent": 12
+            },
+            "healing": {
+                "flat": 164,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 61,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Almandin": 3,
+            "Soul Essence": 19,
+            "Sugilite": 47
+        }
+    },
+    {
+        "name": "Gratius`",
+        "level": 113,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 17,
+                "percent": 0
+            },
+            "health": {
+                "flat": 519,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 38,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": -19,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 21
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 30
+            },
+            "critical_attack_value": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Grills *",
+        "level": 53,
+        "gold": 0,
+        "stats": {
+            "dexterity": {
+                "flat": -2,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -21
+            },
+            "constitution": {
+                "flat": -2,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -21
+            },
+            "intelligence": {
+                "flat": 3,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 9,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Heudois",
+        "level": 35,
+        "gold": 0,
+        "stats": {
+            "dexterity": {
+                "flat": 0,
+                "percent": 15
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 13
+            },
+            "intelligence": {
+                "flat": -1,
+                "percent": -1
+            },
+            "critical_attack_value": {
+                "flat": 7,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Heuhois",
+        "level": 49,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": -2,
+                "percent": 0
+            },
+            "strength": {
+                "flat": -3,
+                "percent": -17
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -14
+            },
+            "intelligence": {
+                "flat": 3,
+                "percent": 21
+            },
+            "critical_healing_value": {
+                "flat": 8,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Flintstone": 10,
+            "Adrenaline": 19
+        }
+    },
+    {
+        "name": "Ibiwans",
+        "level": 29,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 6,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 75,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 10,
+                "percent": 4
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Ichorus",
+        "level": 80,
+        "gold": 234799,
+        "stats": {
+            "damage": {
+                "flat": 15,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 40
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 12
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 20
+            },
+            "constitution": {
+                "flat": -20,
+                "percent": -15
+            }
+        },
+        "materials": {
+            "Garnet": 5,
+            "Tincture of Stamina": 5,
+            "Potion of Perception": 2
+        }
+    },
+    {
+        "name": "Ismaels",
+        "level": 30,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": -1,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": -1,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -11
+            },
+            "intelligence": {
+                "flat": 1,
+                "percent": 13
+            },
+            "healing": {
+                "flat": 28,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 6,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 2,
+            "Wool": 1,
+            "Hemp": 13
+        }
+    },
+    {
+        "name": "Isundels",
+        "level": 30,
+        "gold": 83485,
+        "stats": {
+            "armor": {
+                "flat": 140,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 12
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 12
+            }
+        },
+        "materials": {
+            "Fang": 4,
+            "Hemp": 4,
+            "Linen Strip": 10
+        }
+    },
+    {
+        "name": "Jennifers",
+        "level": 71,
+        "gold": 190452,
+        "stats": {
+            "health": {
+                "flat": 94,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 3,
+                "percent": 25
+            },
+            "intelligence": {
+                "flat": -4,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Garnet": 13,
+            "Sulphur": 29
+        }
+    },
+    {
+        "name": "Joves",
+        "level": 111,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 20,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 24
+            },
+            "charisma": {
+                "flat": -40,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 183,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 40,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 27,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hydra Scale": 19,
+            "Soul Essence": 4,
+            "Sphinx Feather": 2
+        }
+    },
+    {
+        "name": "Kedyssis",
+        "level": 30,
+        "gold": 90442,
+        "stats": {
+            "health": {
+                "flat": 60,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 8,
+                "percent": 14
+            }
+        },
+        "materials": {
+            "Fang": 12,
+            "Hemp": 2
+        }
+    },
+    {
+        "name": "Kerrannas",
+        "level": 33,
+        "gold": 100805,
+        "stats": {
+            "strength": {
+                "flat": 0,
+                "percent": 22
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 22
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 22
+            }
+        },
+        "materials": {
+            "Fang": 4,
+            "Wool": 5,
+            "Jute Patch": 6
+        }
+    },
+    {
+        "name": "Korks",
+        "level": 59,
+        "gold": 149738,
+        "stats": {
+            "armor": {
+                "flat": 113,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": -4,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 10,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 42,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 11,
+            "Garnet": 1,
+            "Storm Rune": 3,
+            "Tincture of Stamina": 20
+        }
+    },
+    {
+        "name": "Kosmonas",
+        "level": 17,
+        "gold": 48227,
+        "stats": {
+            "health": {
+                "flat": 26,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": -6
+            }
+        },
+        "materials": {
+            "Hemp": 3,
+            "Silk Thread": 7
+        }
+    },
+    {
+        "name": "Leandronimus",
+        "level": 69,
+        "gold": 251025,
+        "stats": {
+            "strength": {
+                "flat": 3,
+                "percent": 29
+            },
+            "agility": {
+                "flat": 3,
+                "percent": 21
+            },
+            "charisma": {
+                "flat": 3,
+                "percent": 28
+            }
+        },
+        "materials": {
+            "Bull's Horn": 13,
+            "Tincture of Stamina": 10,
+            "Sulphur": 8
+        }
+    },
+    {
+        "name": "Lepidus",
+        "level": 94,
+        "gold": 364580,
+        "stats": {
+            "damage": {
+                "flat": 12,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 300,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 30,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 30,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 30,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 30,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 30,
+            "Amethyst": 15,
+            "Emerald": 3
+        }
+    },
+    {
+        "name": "Lethe`s",
+        "level": 101,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 19,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 11
+            },
+            "constitution": {
+                "flat": 17,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": -38,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 33,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Almandin": 2,
+            "Hydra Scale": 18,
+            "Sphinx Feather": 33
+        }
+    },
+    {
+        "name": "Liloels",
+        "level": 56,
+        "gold": 132707,
+        "stats": {
+            "constitution": {
+                "flat": -2,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": -4,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 3,
+                "percent": 21
+            },
+            "healing": {
+                "flat": 48,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 2,
+            "Garnet": 31
+        }
+    },
+    {
+        "name": "Lothays",
+        "level": 26,
+        "gold": 62370,
+        "stats": {
+            "damage": {
+                "flat": 4,
+                "percent": 0
+            },
+            "health": {
+                "flat": 120,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 11,
+            "Hemp": 1
+        }
+    },
+    {
+        "name": "Lucius",
+        "level": 84,
+        "gold": 200500,
+        "stats": {
+            "damage": {
+                "flat": 5,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 550,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 12,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 15,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 25,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 55,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 15,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 3,
+            "Garnet": 1,
+            "Storm Rune": 4
+        }
+    },
+    {
+        "name": "Lulus",
+        "level": 39,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 2,
+                "percent": 13
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 15
+            },
+            "constitution": {
+                "flat": -2,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 14
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Lurtscharas",
+        "level": 31,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 1,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 1,
+                "percent": 14
+            },
+            "constitution": {
+                "flat": -2,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 11
+            },
+            "critical_attack_value": {
+                "flat": 5,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 1,
+            "Wool": 15,
+            "Hemp": 1
+        }
+    },
+    {
+        "name": "Magnus`",
+        "level": 111,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 23,
+                "percent": 21
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": -35
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 14
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -19
+            },
+            "charisma": {
+                "flat": 24,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 181,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Mandalus",
+        "level": 90,
+        "gold": 220000,
+        "stats": {
+            "agility": {
+                "flat": 8,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 35,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 110,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 25,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 1,
+            "Emerald": 52
+        }
+    },
+    {
+        "name": "Manius",
+        "level": 85,
+        "gold": 203708,
+        "stats": {
+            "charisma": {
+                "flat": 25,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 25,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 25,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Emerald": 4,
+            "Crystal": 42,
+            "Gold Ore": 4
+        }
+    },
+    {
+        "name": "Marcellus",
+        "level": 95,
+        "gold": 281087,
+        "stats": {
+            "damage": {
+                "flat": 18,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 20,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 20,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 10,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Amethyst": 36,
+            "Emerald": 3,
+            "Crystal": 17
+        }
+    },
+    {
+        "name": "Marcus",
+        "level": 81,
+        "gold": 0,
+        "stats": {
+            "intelligence": {
+                "flat": 20,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 85,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Garnet": 48
+        }
+    },
+    {
+        "name": "Mateus",
+        "level": 85,
+        "gold": 280099,
+        "stats": {
+            "damage": {
+                "flat": 16,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 35,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": -10,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Amethyst": 48,
+            "Emerald": 2
+        }
+    },
+    {
+        "name": "Medonis",
+        "level": 45,
+        "gold": 0,
+        "stats": {
+            "agility": {
+                "flat": 0,
+                "percent": -20
+            },
+            "intelligence": {
+                "flat": 2,
+                "percent": 16
+            },
+            "healing": {
+                "flat": 56,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 7,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Lapis Lazuli": 5,
+            "Adrenaline": 22
+        }
+    },
+    {
+        "name": "Melanchaetas",
+        "level": 36,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 76,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 8,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 26,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Scale": 2,
+            "Lapis Lazuli": 13,
+            "Water Seal": 6,
+            "Flintstone": 1
+        }
+    },
+    {
+        "name": "Melaneos",
+        "level": 50,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 3,
+                "percent": 18
+            },
+            "dexterity": {
+                "flat": 3,
+                "percent": -19
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 19
+            },
+            "intelligence": {
+                "flat": -3,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 8,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Scale": 21,
+            "Water Seal": 5,
+            "Flintstone": 3
+        }
+    },
+    {
+        "name": "Mercurialis`",
+        "level": 109,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 10,
+                "percent": 0
+            },
+            "health": {
+                "flat": 700,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 25,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 43,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Mermereus",
+        "level": 23,
+        "gold": 65165,
+        "stats": {
+            "strength": {
+                "flat": 1,
+                "percent": 11
+            },
+            "dexterity": {
+                "flat": 1,
+                "percent": 7
+            },
+            "charisma": {
+                "flat": 1,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": -1,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 3,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 2,
+            "Wool": 11,
+            "Hemp": 1
+        }
+    },
+    {
+        "name": "Mimas",
+        "level": 19,
+        "gold": 51536,
+        "stats": {
+            "strength": {
+                "flat": 1,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 1,
+                "percent": 7
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -7
+            },
+            "charisma": {
+                "flat": 1,
+                "percent": 8
+            }
+        },
+        "materials": {
+            "Fang": 1,
+            "Hemp": 2,
+            "Jute Patch": 4
+        }
+    },
+    {
+        "name": "Minucius`",
+        "level": 109,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 14,
+                "percent": 0
+            },
+            "health": {
+                "flat": 404,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 19,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 24,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 18
+            },
+            "constitution": {
+                "flat": -33,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 30
+            },
+            "threat": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Monychustas *",
+        "level": 64,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": -3,
+                "percent": 0
+            },
+            "strength": {
+                "flat": -4,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": -3,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -23
+            },
+            "charisma": {
+                "flat": -3,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 68,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Mooncruchers",
+        "level": 30,
+        "gold": 51536,
+        "stats": {
+            "armor": {
+                "flat": 220,
+                "percent": 0
+            },
+            "health": {
+                "flat": 60,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 4,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 4,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Wool": 1,
+            "Hemp": 1,
+            "Linen Strip": 11
+        }
+    },
+    {
+        "name": "Mycandrilles`",
+        "level": 104,
+        "gold": 0,
+        "stats": {
+            "health": {
+                "flat": 468,
+                "percent": 0
+            },
+            "strength": {
+                "flat": -18,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 21
+            },
+            "constitution": {
+                "flat": 50,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 0,
+                "percent": 30
+            },
+            "critical_attack_value": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Nariths",
+        "level": 21,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 1,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Opiehnzas",
+        "level": 70,
+        "gold": 226290,
+        "stats": {
+            "damage": {
+                "flat": 5,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 700,
+                "percent": 0
+            },
+            "health": {
+                "flat": 800,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 35
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": -10
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -10
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 25
+            }
+        },
+        "materials": {
+            "Garnet": 8,
+            "Storm Rune": 18,
+            "Tincture of Stamina": 2,
+            "Potion of Perception": 2
+        }
+    },
+    {
+        "name": "Oranius`",
+        "level": 108,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 790,
+                "percent": 0
+            },
+            "health": {
+                "flat": 455,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": -35
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 24
+            },
+            "agility": {
+                "flat": 36,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 21,
+                "percent": 19
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Orlelds",
+        "level": 35,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 3,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 5
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Peragos",
+        "level": 32,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 350,
+                "percent": 0
+            },
+            "health": {
+                "flat": 180,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 8,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Phalangens",
+        "level": 40,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 108,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Pilatus`",
+        "level": 115,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 13,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 617,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 57,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 33,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Poirins",
+        "level": 23,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 280,
+                "percent": 0
+            },
+            "health": {
+                "flat": 60,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 4
+            },
+            "agility": {
+                "flat": 5,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Pontius",
+        "level": 99,
+        "gold": 312949,
+        "stats": {
+            "damage": {
+                "flat": 14,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 500,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 10,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 20,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 15,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": -25,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 15,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 15,
+            "Amethyst": 13,
+            "Crystal": 22
+        }
+    },
+    {
+        "name": "Porcius`",
+        "level": 120,
+        "gold": 346471,
+        "stats": {
+            "damage": {
+                "flat": 5,
+                "percent": 0
+            },
+            "strength": {
+                "flat": -21,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 10,
+                "percent": 25
+            },
+            "agility": {
+                "flat": 36,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 28
+            },
+            "intelligence": {
+                "flat": 46,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Primulus`",
+        "level": 107,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 664,
+                "percent": 0
+            },
+            "health": {
+                "flat": 494,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 10
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 35
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 32
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 30
+            },
+            "intelligence": {
+                "flat": 17,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": -26,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Purmanns",
+        "level": 60,
+        "gold": 161057,
+        "stats": {
+            "strength": {
+                "flat": 0,
+                "percent": -18
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -19
+            },
+            "charisma": {
+                "flat": -3,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 3,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 64,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 11,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 1,
+            "Garnet": 25,
+            "Sulphur": 2
+        }
+    },
+    {
+        "name": "Quintas",
+        "level": 150,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 12,
+                "percent": 0
+            },
+            "health": {
+                "flat": 677,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": -17,
+                "percent": 26
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 30
+            },
+            "block_value": {
+                "flat": 42,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 52,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hydra Scale": 2,
+            "Soul Essence": 45,
+            "Sphinx Feather": 6
+        }
+    },
+    {
+        "name": "Quintus",
+        "level": 93,
+        "gold": 316214,
+        "stats": {
+            "damage": {
+                "flat": 13,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 550,
+                "percent": 0
+            },
+            "health": {
+                "flat": 300,
+                "percent": 0
+            },
+            "strength": {
+                "flat": -20,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 30,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": -50,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 30,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 20,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 16,
+            "Amethyst": 8,
+            "Emerald": 2
+        }
+    },
+    {
+        "name": "Rakrests",
+        "level": 33,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 190,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 10,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 5
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 5
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Rayols",
+        "level": 27,
+        "gold": 61892,
+        "stats": {
+            "damage": {
+                "flat": 7,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 120,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 6,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 5
+            }
+        },
+        "materials": {
+            "Fang": 12,
+            "Wool": 1,
+            "Linen Strip": 3
+        }
+    },
+    {
+        "name": "Redos",
+        "level": 27,
+        "gold": 49514,
+        "stats": {
+            "armor": {
+                "flat": 100,
+                "percent": 0
+            },
+            "health": {
+                "flat": 200,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 4,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 4,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Reinkes",
+        "level": 18,
+        "gold": 0,
+        "stats": {
+            "agility": {
+                "flat": 0,
+                "percent": -8
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -6
+            },
+            "intelligence": {
+                "flat": 1,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 20,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 3,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 1,
+            "Hemp": 9,
+            "Jute Patch": 2
+        }
+    },
+    {
+        "name": "Ronaldas",
+        "level": 44,
+        "gold": 114581,
+        "stats": {
+            "health": {
+                "flat": 49,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -16
+            },
+            "block_value": {
+                "flat": 9,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 7,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 30,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Scale": 1,
+            "Lapis Lazuli": 18,
+            "Water Seal": 7
+        }
+    },
+    {
+        "name": "Rynightes",
+        "level": 28,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 60,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 12,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 8,
+                "percent": 4
+            }
+        },
+        "materials": {
+            "Hemp": 6,
+            "Linen Strip": 5,
+            "Silk Thread": 7
+        }
+    },
+    {
+        "name": "Scribonius`",
+        "level": 120,
+        "gold": 0,
+        "stats": {
+            "dexterity": {
+                "flat": 18,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Sebastianus`",
+        "level": 103,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 16,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 571,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 33,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 21,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 20,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 34,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 164,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Sentarions",
+        "level": 78,
+        "gold": 283771,
+        "stats": {
+            "armor": {
+                "flat": 208,
+                "percent": 0
+            },
+            "health": {
+                "flat": 117,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 12,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 13,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 52,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 14,
+            "Garnet": 1,
+            "Storm Rune": 7
+        }
+    },
+    {
+        "name": "Sergius`",
+        "level": 110,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 605,
+                "percent": 0
+            },
+            "health": {
+                "flat": 500,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": -28
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": -19
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": -27
+            },
+            "healing": {
+                "flat": 181,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Servius",
+        "level": 86,
+        "gold": 297466,
+        "stats": {
+            "damage": {
+                "flat": 8,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 12,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 25,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 12,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 8,
+            "Amethyst": 31,
+            "Emerald": 4
+        }
+    },
+    {
+        "name": "Sextus",
+        "level": 89,
+        "gold": 257341,
+        "stats": {
+            "damage": {
+                "flat": 12,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 300,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 15,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 8,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 35,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 10,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 34,
+            "Amethyst": 12,
+            "Emerald": 1
+        }
+    },
+    {
+        "name": "Shivas",
+        "level": 76,
+        "gold": 175457,
+        "stats": {
+            "charisma": {
+                "flat": -3,
+                "percent": -24
+            },
+            "intelligence": {
+                "flat": 0,
+                "percent": 35
+            },
+            "healing": {
+                "flat": 72,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 10,
+            "Garnet": 35
+        }
+    },
+    {
+        "name": "Silvanus",
+        "level": 91,
+        "gold": 293092,
+        "stats": {
+            "intelligence": {
+                "flat": 45,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 120,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Emerald": 54
+        }
+    },
+    {
+        "name": "Skiterus",
+        "level": 27,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 1,
+                "percent": 11
+            },
+            "dexterity": {
+                "flat": -1,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 11
+            },
+            "charisma": {
+                "flat": 1,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": -1,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 5,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 2,
+            "Wool": 11,
+            "Hemp": 1
+        }
+    },
+    {
+        "name": "Solitanis",
+        "level": 22,
+        "gold": 59737,
+        "stats": {
+            "constitution": {
+                "flat": -1,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": -1,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 1,
+                "percent": 8
+            },
+            "healing": {
+                "flat": 20,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 3,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hemp": 13,
+            "Silk Thread": 1
+        }
+    },
+    {
+        "name": "Sphingens",
+        "level": 58,
+        "gold": 131074,
+        "stats": {
+            "strength": {
+                "flat": 3,
+                "percent": 26
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 26
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 24
+            }
+        },
+        "materials": {
+            "Bull's Horn": 10,
+            "Potion of Perception": 9,
+            "Sulphur": 7
+        }
+    },
+    {
+        "name": "Spurius",
+        "level": 88,
+        "gold": 293471,
+        "stats": {
+            "intelligence": {
+                "flat": 25,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 130,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Emerald": 52
+        }
+    },
+    {
+        "name": "Stoybaers",
+        "level": 72,
+        "gold": 255249,
+        "stats": {
+            "strength": {
+                "flat": -3,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": -5,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -30
+            },
+            "constitution": {
+                "flat": -5,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": 3,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 76,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Garnet": 29,
+            "Tincture of Stamina": 10,
+            "Potion of Perception": 1,
+            "Sulphur": 1
+        }
+    },
+    {
+        "name": "Sugos",
+        "level": 22,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 3,
+                "percent": 0
+            },
+            "health": {
+                "flat": 120,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 6,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 4
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Tanias",
+        "level": 25,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 250,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 1
+            },
+            "agility": {
+                "flat": -2,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Wool": 1,
+            "Linen Strip": 14,
+            "Jute Patch": 1
+        }
+    },
+    {
+        "name": "Tantus",
+        "level": 81,
+        "gold": 238724,
+        "stats": {
+            "damage": {
+                "flat": 10,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 250,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 10,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 20,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 18,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 75,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 11,
+            "Storm Rune": 4,
+            "Tincture of Stamina": 21
+        }
+    },
+    {
+        "name": "Tellus",
+        "level": 93,
+        "gold": 229974,
+        "stats": {
+            "damage": {
+                "flat": 12,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 30,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 20,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 20,
+                "percent": 0
+            },
+            "hardening_value": {
+                "flat": 20,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 20,
+            "Amethyst": 12,
+            "Crystal": 19
+        }
+    },
+    {
+        "name": "Thorstens",
+        "level": 73,
+        "gold": 259932,
+        "stats": {
+            "strength": {
+                "flat": 3,
+                "percent": 24
+            },
+            "dexterity": {
+                "flat": -5,
+                "percent": 27
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 28
+            },
+            "critical_attack_value": {
+                "flat": 15,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 6,
+            "Potion of Perception": 33,
+            "Sulphur": 4
+        }
+    },
+    {
+        "name": "Tiberius`",
+        "level": 105,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 22,
+                "percent": 0
+            },
+            "health": {
+                "flat": 250,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 49,
+                "percent": 17
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 35
+            },
+            "agility": {
+                "flat": 10,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 42,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Tinothiels",
+        "level": 16,
+        "gold": 30990,
+        "stats": {
+            "armor": {
+                "flat": 60,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 4,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hemp": 3,
+            "Linen Strip": 7
+        }
+    },
+    {
+        "name": "Titanius",
+        "level": 98,
+        "gold": 216056,
+        "stats": {
+            "damage": {
+                "flat": 18,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": -25,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 30,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 20,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": -30,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 23,
+            "Amethyst": 14,
+            "Emerald": 2
+        }
+    },
+    {
+        "name": "Titus",
+        "level": 88,
+        "gold": 213433,
+        "stats": {
+            "armor": {
+                "flat": 500,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 35,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 35,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 30,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 60,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Emerald": 3,
+            "Crystal": 29,
+            "Obsidian": 8
+        }
+    },
+    {
+        "name": "Trafans",
+        "level": 60,
+        "gold": 177163,
+        "stats": {
+            "damage": {
+                "flat": 9,
+                "percent": 0
+            },
+            "armor": {
+                "flat": -200,
+                "percent": 0
+            },
+            "health": {
+                "flat": 500,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 13
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 25
+            }
+        },
+        "materials": {
+            "Garnet": 4,
+            "Storm Rune": 6,
+            "Tincture of Stamina": 6
+        }
+    },
+    {
+        "name": "TÃ¡liths",
+        "level": 45,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 7,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 400,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 20
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 20
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "TÃ»nÃªsÃ©s",
+        "level": 33,
+        "gold": 0,
+        "stats": {
+            "charisma": {
+                "flat": 0,
+                "percent": -14
+            },
+            "intelligence": {
+                "flat": 0,
+                "percent": 12
+            },
+            "healing": {
+                "flat": 40,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 4,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Umbros",
+        "level": 67,
+        "gold": 167229,
+        "stats": {
+            "armor": {
+                "flat": 199,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Storm Rune": 40
+        }
+    },
+    {
+        "name": "Umfetas",
+        "level": 42,
+        "gold": 108275,
+        "stats": {
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": -2,
+                "percent": 14
+            },
+            "constitution": {
+                "flat": -2,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 3,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": -2,
+                "percent": -2
+            }
+        },
+        "materials": {
+            "Scale": 12,
+            "Water Seal": 2,
+            "Flintstone": 1
+        }
+    },
+    {
+        "name": "Umilawens",
+        "level": 27,
+        "gold": 0,
+        "stats": {
+            "strength": {
+                "flat": 2,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 5,
+            "Wool": 5,
+            "Silk Thread": 5
+        }
+    },
+    {
+        "name": "Uridos",
+        "level": 42,
+        "gold": 118587,
+        "stats": {
+            "damage": {
+                "flat": 7,
+                "percent": 0
+            },
+            "health": {
+                "flat": 300,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 15,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": -13
+            },
+            "agility": {
+                "flat": 18,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 28
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Ursus`",
+        "level": 107,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 9,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 900,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 36,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": -25,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 18,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Uróthiens",
+        "level": 25,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 6,
+                "percent": 0
+            },
+            "health": {
+                "flat": 24,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 6,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 4
+            }
+        },
+        "materials": {
+            "Fang": 13,
+            "Wool": 1,
+            "Hemp": 1
+        }
+    },
+    {
+        "name": "Valentinus`",
+        "level": 107,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 900,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 39,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": -50,
+                "percent": 11
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 30
+            },
+            "intelligence": {
+                "flat": 47,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Valerius",
+        "level": 100,
+        "gold": 348992,
+        "stats": {
+            "damage": {
+                "flat": 19,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 25,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 25,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Dragon Scale": 6,
+            "Amethyst": 47,
+            "Crystal": 6
+        }
+    },
+    {
+        "name": "Vergilius",
+        "level": 95,
+        "gold": 221911,
+        "stats": {
+            "intelligence": {
+                "flat": -30,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 155,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 35,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Emerald": 56
+        }
+    },
+    {
+        "name": "Vuthiels",
+        "level": 22,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 2,
+                "percent": 0
+            },
+            "health": {
+                "flat": 30,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 3,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Fang": 10,
+            "Hemp": 1,
+            "Silk Thread": 2
+        }
+    },
+    {
+        "name": "Watzmanns",
+        "level": 24,
+        "gold": 0,
+        "stats": {
+            "health": {
+                "flat": 30,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 1,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -9
+            },
+            "block_value": {
+                "flat": 5,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 12,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Xenphlames",
+        "level": 55,
+        "gold": 187347,
+        "stats": {
+            "armor": {
+                "flat": 151,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 19
+            }
+        },
+        "materials": {
+            "Storm Rune": 21,
+            "Sulphur": 12
+        }
+    },
+    {
+        "name": "Xus",
+        "level": 28,
+        "gold": 51535,
+        "stats": {
+            "health": {
+                "flat": 32,
+                "percent": 0
+            },
+            "agility": {
+                "flat": -1,
+                "percent": 0
+            },
+            "block_value": {
+                "flat": 5,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 14,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hemp": 1,
+            "Jute Patch": 12,
+            "Silk Thread": 4
+        }
+    },
+    {
+        "name": "Yas *",
+        "level": 51,
+        "gold": 0,
+        "stats": {
+            "armor": {
+                "flat": 158,
+                "percent": 0
+            }
+        },
+        "materials": {}
+    },
+    {
+        "name": "Zeindras",
+        "level": 32,
+        "gold": 0,
+        "stats": {
+            "damage": {
+                "flat": 3,
+                "percent": 0
+            },
+            "armor": {
+                "flat": 160,
+                "percent": 0
+            },
+            "dexterity": {
+                "flat": 2,
+                "percent": 6
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 8
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 24
+            }
+        },
+        "materials": {
+            "Fang": 6,
+            "Wool": 2,
+            "Linen Strip": 5
+        }
+    },
+    {
+        "name": "Zickezackes",
+        "level": 21,
+        "gold": 42719,
+        "stats": {
+            "health": {
+                "flat": 21,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": -10
+            },
+            "block_value": {
+                "flat": 3,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 8,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hemp": 1,
+            "Jute Patch": 10,
+            "Silk Thread": 3
+        }
+    },
+    {
+        "name": "Zimbris",
+        "level": 77,
+        "gold": 156211,
+        "stats": {
+            "strength": {
+                "flat": 0,
+                "percent": 33
+            },
+            "dexterity": {
+                "flat": 0,
+                "percent": 27
+            },
+            "charisma": {
+                "flat": 5,
+                "percent": 28
+            },
+            "critical_attack_value": {
+                "flat": 16,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Bull's Horn": 7,
+            "Potion of Perception": 34,
+            "Sulphur": 4
+        }
+    },
+    {
+        "name": "Zombers",
+        "level": 54,
+        "gold": 119680,
+        "stats": {
+            "strength": {
+                "flat": 4,
+                "percent": 18
+            },
+            "dexterity": {
+                "flat": 3,
+                "percent": 22
+            },
+            "charisma": {
+                "flat": 2,
+                "percent": 21
+            },
+            "critical_attack_value": {
+                "flat": 10,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Scale": 23,
+            "Water Seal": 5,
+            "Flintstone": 3
+        }
+    }
 ]
