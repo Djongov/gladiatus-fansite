@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=XbMyVZxPb2A
 
 ### Forging Parameters
 
-**Chance of success** - depends on your character level versus the item level you are forging. If you are forging an item which is lower or within your character's [item level range](/game-guide#Item-visibility "item level range"), you will be having optimal success chances of around 50-55%. The game has a maximum of 55% success chance. If you want to go higher, you can benefit from [Forging Tools](/forging/forging-tools "Forging Tools") or different Micro Events or Costumes.
+**Chance of success** - depends on your character level versus the item level you are forging. If you are forging an item which is lower or within your character's [item level range](/game-guide#wearing-item-levels-and-visibility "item level range"), you will be having optimal success chances of around 50-55%. The game has a maximum of 55% success chance. If you want to go higher, you can benefit from [Forging Tools](/forging/forging-tools "Forging Tools") or different Micro Events or Costumes.
 
 **Soul bound** - It always stays on 0%. Not currently known if this ever goes above 0%
 

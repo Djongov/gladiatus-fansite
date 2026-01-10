@@ -10,7 +10,7 @@ Formulas here are gathered from own research, forums and special thanks to the G
 
 The ones that are tested and are confirmed working with the latest version of the game will be marked with **(Confirmed)** in the end. If you see **(Confirmed)** on the entire category, it means all the formulas under that category are verified working. If you don't see it on the category head, individual formulas will be marked confirmed
 
-Everything you see here is also explained in greater detail in the Game Guide page, especially in the [Character Stats](/game-guide#Character_stats "Character Stats") topic.
+Everything you see here is also explained in greater detail in the Game Guide page, especially in the [Character Stats](/game-guide#character-stats "Character Stats") topic.
 
 ---
 
@@ -139,4 +139,4 @@ Minimum levels you can see: 0.75 \* Player Level (\<-round down) Maximum levels 
 
 **Character can wear items** =
 
-Max level you can wear is Player Level +16. More about it [here](/game-guide#Item-visibility)
+Max level you can wear is Player Level +16. More about it [here](/game-guide#wearing-item-levels-and-visibility)

@@ -25,7 +25,7 @@ Every country has a number of different servers (Provinces) with different speed
 
 Once you click Sign Up your journey begins right away
 
-\*If you want to know what a Speed Server is - Go to [Speed Server](#Speed_Server "Speed Server") section of this page
+\*If you want to know what a Speed Server is - Go to [Speed Server](/game-guide#speed-server "Speed Server") section of this page
 
 You are greeted with this message
 
@@ -322,7 +322,7 @@ Secondary drops even work when you lose the battle!
 
 ### Scrolls and Recipies
 
-Forging recipes are learned through scrolls. Scrolls can drop from mobs in expeditions and dungeons or through Smelting. There are different color variations of the scrolls but they seem really random and not important or tied in any way to the actual recipe. You can see all type of scrolls and how they look here - [Scrolls](/items#Scrolls "Scrolls").
+Forging recipes are learned through scrolls. Scrolls can drop from mobs in expeditions and dungeons or through Smelting. There are different color variations of the scrolls but they seem really random and not important or tied in any way to the actual recipe. You can see all type of scrolls and how they look here - [Scrolls](/game-guide#scrolls-and-recipies "Scrolls").
 
 Here is an example how Lucius Scroll drops from Dragon, the boss in [Koman Mountain](/expeditions/germania-expeditions/koman-mountain "Koman Mountain").
 
@@ -345,7 +345,7 @@ Here are some facts about Scrolls:
 7. Also how much ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") a Scroll is worth is random between a range. For example, Lucius Scroll can sometimes be 250.625 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") but for someone else it can drop and sell for 222.216 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold"). It's random amount in a fixed range.
 8. Every prefix/suffix adds levels to the item when applied. This is the Scroll item level -10. Example: of Fatuity suffix Scroll is 46 item level. This means that the suffix will add 36 item levels to the item to which is applied. More info on the [Items](/items "Items") page.
 
-**Wearing Item levels and visibility**
+## Wearing Item levels and visibility
 
 Gladiatus is very specific in terms of how and when you can wear your items. The game in general tries and will let you see and drop items with item levels that you can wear. However, it is reasonable to have a limit to what you can wear. This limit is +16 levels above your character level. This means that if you are level 94, you can only wear items up to level 110 (94+16=110). Item that is more than 16 levels above your character will have its item level in Red, just like in the example below:
 
@@ -362,7 +362,7 @@ So what happens when you try to equip such an item?
  
 So it turns out that the game actually allows you to wear any item out there it will just try to restrict you into obtaining a higher item level in the first place. So how is the game doing that:
 
-- In the Auction House, you can only see items that are +14 levels above your character. That's even lower than what you can "legally" equip. With "Seal of Praetor" [Seal Pact](#Seal_Pacts "Seal Pact") you can increase this by 2, eventually seeing up to +16 levels above your character, matching the general rule of your character wearing +16
+- In the Auction House, you can only see items that are +14 levels above your character. That's even lower than what you can "legally" equip. With "Seal of Praetor" [Seal Pact](/game-guide/premium/pacts#seal-pacts "Seal Pact") you can increase this by 2, eventually seeing up to +16 levels above your character, matching the general rule of your character wearing +16
 - In Market you can only see items that are +9 levels above your character. With Seal of Praetor that goes up to +11 so you can't get a higher item level from the Market and from other players
 - In Guild Market and Guild Warehouse, same rules applies as in Market - +9/+11, so essentially a guild mate cannot transfer you a higher item level just to boost you
 - Expedition enemy will never drop an item that is more than +16 item levels above your character. Even if this particular expedition enemy can drop a higher item level, it will not drop you such a high item level until you level up and cover the +16 rule. This is a very interesting expedition property.
@@ -478,7 +478,7 @@ The formulas for the required experience to level up is
 
 **From level 80** - Unknown
 
-If you want to level up quick, you could use a mix of [Blessing pacts](#Blessing "Blessing pacts") and utilize your expeditions to the max, meaning that you should not fight enemies that you lose against. Also after level 100, it is really important which UW (Underworld) costume you use. The best one for leveling is Dis Pater Normal costume. You should also play on events, they are almost always involving an extra expedition which you can fight and in and gain experience. You could also play with Cervisia and other 1 day Centurio items and use them only when below 12 expedition and dungeon points so they can effectively refresh extra points. Also, good advice is not to stay on full points for a long period of time as these are wasted points.
+If you want to level up quick, you could use a mix of [Blessing pacts](/game-guide/premium/pacts#blessing-pacts "Blessing pacts") and utilize your expeditions to the max, meaning that you should not fight enemies that you lose against. Also after level 100, it is really important which UW (Underworld) costume you use. The best one for leveling is Dis Pater Normal costume. You should also play on events, they are almost always involving an extra expedition which you can fight and in and gain experience. You could also play with Cervisia and other 1 day Centurio items and use them only when below 12 expedition and dungeon points so they can effectively refresh extra points. Also, good advice is not to stay on full points for a long period of time as these are wasted points.
 
 When you start the game not all features are available right away. Some of them unlock as you level up
 
@@ -502,7 +502,7 @@ A character in Gladiatus has a lot of stats. Here are some of the non-combat cha
 
 ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif "Experience") **Experience** - Participating in a fight, whether it is in Expedition, Dungeon or Arena fights grants experience. You need a certain amount of experience to level up. You can get 1-2 experience even if you lose a fight.
 
-![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif "Level") **Level -** You level up when you reach the experience points required for the next level. Read more about it in the [Leveling](#Leveling "Leveling") section.
+![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif "Level") **Level -** You level up when you reach the experience points required for the next level. Read more about it in the [Leveling](/game-guide#leveling "Leveling") section.
 
 **![Fame](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/icon_fame.gif "Fame") Fame** - Fame is just like Honour, which is shown in player rankings. Fame is generated in Dungeons and Circus Turma wins only and comes in a lot lower numbers than Honour
 
@@ -576,7 +576,7 @@ Example: Character Level = 115. 115\*5 = 575
 
 **Health points**
 
-Another really important stat is health points. We already mentioned that Health points are closely related to Constitution stat and your character level. When you receive damage, your health drops with the amount of damage you have received. In Gladiatus you can heal yourself by eating food. More you can read more about it on the [Food](/items#Food "Food") page. There are other ways to heal yourself, like using the Guild Medic, regenerate health over time just by waiting or using a 100% healing potion.
+Another really important stat is health points. We already mentioned that Health points are closely related to Constitution stat and your character level. When you receive damage, your health drops with the amount of damage you have received. In Gladiatus you can heal yourself by eating food. More you can read more about it on the [Food](/items/food "Food") page. There are other ways to heal yourself, like using the Guild Medic, regenerate health over time just by waiting or using a 100% healing potion.
 
 ### Combat Statistics
 
