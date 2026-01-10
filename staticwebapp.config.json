@@ -80,8 +80,6 @@
 
     { "route": "/reconstruction-of-rome", "redirect": "/reconstruction-of-rome", "statusCode": 301, "queryParameters": { "id": "87" } },
     { "route": "/horreum", "redirect": "/horreum/gladiatus-horreum", "statusCode": 301, "queryParameters": { "id": "89" } },
-    { "route": "/prefixes", "redirect": "/prefixes/item-prefixes", "statusCode": 301, "queryParameters": { "id": "74" } },
-    { "route": "/suffixes", "redirect": "/suffixes/item-suffixes", "statusCode": 301, "queryParameters": { "id": "75" } },
 
     { "route": "/game-updates", "redirect": "/", "statusCode": 301, "queryParameters": { "id": "33" } },
     { "route": "/formulas", "redirect": "/game-guide/formulas", "statusCode": 301, "queryParameters": { "id": "49" } },
