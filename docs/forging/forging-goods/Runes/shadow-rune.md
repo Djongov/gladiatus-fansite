@@ -17,7 +17,7 @@ Drops mostly in the Underworld. From Alecto and Megaera more commonly.
 
 ## Smelts in Large Quantities From
 
-[of Despair](/suffixes/item-suffixes#of_Despair "of Despair")
+[of Despair](/items/suffix/of-despair "of despair")
 
 ---
 

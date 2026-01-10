@@ -9,24 +9,24 @@ Monster Parts are materials harvested from defeated creatures throughout Gladiat
 
 ## Common Monster Parts
 
-- [Fur](fur) - Common material from various beasts
-- [Bone Splinter](bone-splinter) - Common material from undead creatures
-- [Fang](fang) - Common material used in low-mid level prefixes
-- [Dragon Scale](dragon-scale) - Common material for high level prefixes
+- [Fur](/forging/forging-goods/monster-parts/fur) - Common material from various beasts
+- [Bone Splinter](/forging/forging-goods/monster-parts/bone-splinter) - Common material from undead creatures
+- [Fang](/forging/forging-goods/monster-parts/fang) - Common material used in low-mid level prefixes
+- [Dragon Scale](/forging/forging-goods/monster-parts/dragon-scale) - Common material for high level prefixes
 
 ---
 
 ## Medium Rarity Monster Parts
 
-- [Scale](scale) - Medium rarity from reptilian creatures
-- [Bull's Horn](bulls-horn) - Medium/Rare material for mid-high level prefixes
+- [Scale](/forging/forging-goods/monster-parts/scale) - Medium rarity from reptilian creatures
+- [Bull's Horn](/forging/forging-goods/monster-parts/bulls-horn) - Medium/Rare material for mid-high level prefixes
 
 ---
 
 ## Rare Monster Parts
 
-- [Claw](claw) - Rare material (no known prefix/suffix use yet)
-- [Poison Gland](poison-gland) - Rare and valuable material for important suffixes
+- [Claw](/forging/forging-goods/monster-parts/claw) - Rare material (no known prefix/suffix use yet)
+- [Poison Gland](/forging/forging-goods/monster-parts/poison-gland) - Rare and valuable material for important suffixes
 
 ---
 
@@ -34,7 +34,7 @@ Monster Parts are materials harvested from defeated creatures throughout Gladiat
 
 These rare materials drop primarily in the Underworld:
 
-- [Cerberus' Pelt](cerberus-pelt) - Very rare material from Cerberus
-- [Hydra Scale](hydra-scale) - Rare material from Hydra
-- [Sphinx Feather](sphinx-feather) - Very rare material from Sphinx
-- [Typhon Leather](typhon-leather) - Very rare material from Typhon
+- [Cerberus' Pelt](/forging/forging-goods/monster-parts/cerberus-pelt) - Very rare material from Cerberus
+- [Hydra Scale](/forging/forging-goods/monster-parts/hydra-scale) - Rare material from Hydra
+- [Sphinx Feather](/forging/forging-goods/monster-parts/sphinx-feather) - Very rare material from Sphinx
+- [Typhon Leather](/forging/forging-goods/monster-parts/typhon-leather) - Very rare material from Typhon

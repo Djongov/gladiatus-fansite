@@ -94,9 +94,9 @@ Different countries sell different vendors. They are themed for the specifics of
 
 The other way to get your Mercenary is the Auction house or guild mates through the Guild Market or the general Market
 
-Link to [Mercenary ](Mercenary "Mercenary ")page, describing all of the Mercenary types
+Link to Mercenary page, describing all of the Mercenary types
 
-There are many types of [Mercenary](Mercenary "Mercenary") in the game now but there are tactics that are established and well known to be working for years. For example, **Samnits** are the most popular damage dealer and **Grandmaster** or **Elite Spear** are the best tanks or on high levels - healers. I will use Mercs short from Mercenaries a lot. Mercs do not drop from mobs so the only way for you to obtain one is to buy them from the Mercenaries vendor, the Auction House (AH) or the Market. The Mercenaries vendor sells generally lower level of mercs, leaving AH as the more credible source. However, the Mercenary vendor can sometimes spawn **Purple** or even **Orange** mercenary. That rarely happens in AH. And this is an advice for all levels - make sure to regularly scan the AH and keep your mercs at the appropriate level to your character. You cannot progress if your mercs are outdated.
+There are many types of Mercenary in the game now but there are tactics that are established and well known to be working for years. For example, **Samnits** are the most popular damage dealer and **Grandmaster** or **Elite Spear** are the best tanks or on high levels - healers. I will use Mercs short from Mercenaries a lot. Mercs do not drop from mobs so the only way for you to obtain one is to buy them from the Mercenaries vendor, the Auction House (AH) or the Market. The Mercenaries vendor sells generally lower level of mercs, leaving AH as the more credible source. However, the Mercenary vendor can sometimes spawn **Purple** or even **Orange** mercenary. That rarely happens in AH. And this is an advice for all levels - make sure to regularly scan the AH and keep your mercs at the appropriate level to your character. You cannot progress if your mercs are outdated.
 
 ---
 

@@ -20,7 +20,7 @@ A rune used in low-mid level suffixes with +Armour.
 
 ## Smelts in Large Quantities From
 
-[of Accuracy](/suffixes/item-suffixes#of_Accuracy "of Accuracy"), [of Heaven](/suffixes/item-suffixes#of_Heaven "of Heaven"), [of Sickness](/suffixes/item-suffixes#of_Sickness "of Sickness")
+[of Accuracy](/items/suffix/of-accuracy "of accuracy"), [of Heaven](/items/suffix/of-heaven "of heaven"), [of Sickness](/items/suffix/of-sickness "of sickness")
 
 ---
 

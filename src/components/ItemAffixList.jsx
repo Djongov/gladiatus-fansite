@@ -1,11 +1,19 @@
 import React, { useState, useMemo } from 'react';
+import Link from '@docusaurus/Link';
 
 // Helper: format gold numbers with dots
 function formatGold(value) {
   return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
-export default function ItemAffixList({ items }) {
+// Helper: slugify item name
+function slugify(value) {
+  return typeof value === 'string'
+    ? value.toLowerCase().replace(/\s+/g, '-')
+    : '';
+}
+
+export default function ItemAffixList({ items, type = 'prefix' }) {
   const [search, setSearch] = useState('');
   const [statFilter, setStatFilter] = useState(''); // e.g., "Armor >= 600"
   const [statFilterValue, setStatFilterValue] = useState(''); // number
@@ -23,6 +31,9 @@ export default function ItemAffixList({ items }) {
   // Filtered items
   const filteredItems = useMemo(() => {
     return items.filter(item => {
+      // Skip items with asterisks in the name
+      if (item.name && item.name.includes('*')) return false;
+
       // Name search
       if (search && !item.name.toLowerCase().includes(search.toLowerCase())) return false;
 
@@ -146,7 +157,15 @@ export default function ItemAffixList({ items }) {
                 marginBottom: '6px',
               }}
             >
-              {item.name}
+              <Link
+                to={`/items/${type}/${slugify(item.name)}`}
+                style={{
+                  color: '#00ff00',
+                  textDecoration: 'none',
+                }}
+              >
+                {item.name}
+              </Link>
             </div>
 
             {/* Stats */}

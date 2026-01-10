@@ -19,7 +19,7 @@ A rare rune used in some mid-level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Fustriels](/prefixes/item-prefixes#Fustriels "Fustriels"), [Melaneos](/prefixes/item-prefixes#Melaneos "Melaneos")
+[Fustriels](/items/prefix/fustriels "fustriels"), [Melaneos](/items/prefix/melaneos "melaneos")
 
 ---
 

@@ -19,7 +19,7 @@ A common rune used in low level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Haste](/suffixes/item-suffixes#of_Haste "of Haste"), [of Nostalgia](/suffixes/item-suffixes#of_Nostalgia "of Nostalgia"), [of Rapidity](/suffixes/item-suffixes#of_Rapidity "of Rapidity"), [of Pain](/suffixes/item-suffixes#of_Pain "of Pain"), [of Hate](/suffixes/item-suffixes#of_Hate "of Hate")
+[of Haste](/items/suffix/of-haste "of haste"), [of Nostalgia](/items/suffix/of-nostalgia "of nostalgia"), [of Rapidity](/items/suffix/of-rapidity "of rapidity"), [of Pain](/items/suffix/of-pain "of pain"), [of Hate](/items/suffix/of-hate "of hate")
 
 ---
 

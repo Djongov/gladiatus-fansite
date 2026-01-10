@@ -20,7 +20,7 @@ Used in mid-level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Melaneos](/prefixes/item-prefixes#Melaneos "Melaneos"), [Umfetas](/prefixes/item-prefixes#Umfetas "Umfetas"), [Gidras](/prefixes/item-prefixes#Gidras "Gidras")
+[Melaneos](/items/prefix/melaneos "melaneos"), [Umfetas](/items/prefix/umfetas "umfetas"), [Gidras](/items/prefix/gidras "gidras")
 
 ---
 

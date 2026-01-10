@@ -19,7 +19,7 @@ A material commonly used in low level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Mystery](/suffixes/item-suffixes#of_Mystery "of Mystery"), [of Power](/suffixes/item-suffixes#of_Power "of Power"), [of Poison](/suffixes/item-suffixes#of_Poison "of Poison"), [of Separation](/suffixes/item-suffixes#of_Separation "of Separation"), [of Purposefulness](/suffixes/item-suffixes#of_Purposefulness "of Purposefulness")
+[of Mystery](/items/suffix/of-mystery "of mystery"), [of Power](/items/suffix/of-power "of power"), [of Poison](/items/suffix/of-poison "of poison"), [of Purposefulness](/items/suffix/of-purposefulness "of purposefulness")
 
 ---
 

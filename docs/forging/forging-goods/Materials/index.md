@@ -11,20 +11,20 @@ Wood, Copper, Iron, and Leather are considered generic building blocks of every 
 
 ## Basic Building Blocks
 
-- [Wood](wood) - Very rare building block (5% drop from any mob)
-- [Copper](copper) - Rare building block (5% drop from any mob)
-- [Leather](leather) - Medium rarity building block (5% drop from any mob)
-- [Iron](iron) - Rare building block (5% drop from any mob)
+- [Wood](/forging/forging-goods/materials/wood) - Very rare building block (5% drop from any mob)
+- [Copper](/forging/forging-goods/materials/copper) - Rare building block (5% drop from any mob)
+- [Leather](/forging/forging-goods/materials/leather) - Medium rarity building block (5% drop from any mob)
+- [Iron](/forging/forging-goods/materials/iron) - Rare building block (5% drop from any mob)
 
 ---
 
 ## Textile Materials
 
-- [Wool](wool) - Common material for low level prefixes (16-31 level)
-- [Cotton Wool](cotton-wool) - Common material for low level suffixes (10-16 level)
-- [Hemp](hemp) - Common material for low level prefixes
-- [Gauze Strip](gauze-strip) - Common material for low level suffixes
-- [Linen Strip](linen-strip) - Common material for low-mid level prefixes
-- [Jute Patch](jute-patch) - Medium rarity material for low-mid level prefixes
-- [Velvet](velvet) - Medium rarity material for mid-level suffixes
-- [Silk Thread](silk-thread) - Medium rarity material for mid-level prefixes
+- [Wool](/forging/forging-goods/materials/wool) - Common material for low level prefixes (16-31 level)
+- [Cotton Wool](/forging/forging-goods/materials/cotton-wool) - Common material for low level suffixes (10-16 level)
+- [Hemp](/forging/forging-goods/materials/hemp) - Common material for low level prefixes
+- [Gauze Strip](/forging/forging-goods/materials/gauze-strip) - Common material for low level suffixes
+- [Linen Strip](/forging/forging-goods/materials/linen-strip) - Common material for low-mid level prefixes
+- [Jute Patch](/forging/forging-goods/materials/jute-patch) - Medium rarity material for low-mid level prefixes
+- [Velvet](/forging/forging-goods/materials/velvet) - Medium rarity material for mid-level suffixes
+- [Silk Thread](/forging/forging-goods/materials/silk-thread) - Medium rarity material for mid-level prefixes

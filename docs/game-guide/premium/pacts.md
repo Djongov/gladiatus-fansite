@@ -209,7 +209,7 @@ Secret knowledge pacts are really oriented around items and quests. There are 5 
 
 ![Secret Knowledge of the Ancients stats](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Pacts/Secret_Knowledge/Secret_Knowlege_of_the_Ancients_stats.png "Secret Knowledge of the Ancients stats")
 
-This halves the quest cooldown from the default 30 minutes to 15 minutes. Interesting that with Wrath Mountain Scale Armour costume full set it becomes 6 minutes. Go read more on [Costumes](/costumes/gladiatus-costumes). Also reduces the default price to reduce cooldown on quests button from 3 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") or 3 ![Holy Hourglass](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Holy_Hourglass_small.png "Holy Hourglass") to just 1.
+This halves the quest cooldown from the default 30 minutes to 15 minutes. Interesting that with Wrath Mountain Scale Armour costume full set it becomes 6 minutes. Go read more on [Costumes](/costumes). Also reduces the default price to reduce cooldown on quests button from 3 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") or 3 ![Holy Hourglass](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Premium/Holy_Hourglass_small.png "Holy Hourglass") to just 1.
 
 **Required level:** 1
 

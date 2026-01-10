@@ -19,7 +19,7 @@ A gemstone used in low level suffixes with healing.
 
 ## Smelts in Large Quantities From
 
-[of Emasculation](/suffixes/item-suffixes#of_Emasculation "of Emasculation"), [of Ordinance](/suffixes/item-suffixes#of_Ordinance "of Ordinance"), [of the Blessed](/suffixes/item-suffixes#of_the_Blessed "of the Blessed")
+[of Emasculation](/items/suffix/of-emasculation "of emasculation"), [of Ordinance](/items/suffix/of-ordinance "of ordinance"), [of the Blessed](/items/suffix/of-the-blessed "of the blessed")
 
 ---
 

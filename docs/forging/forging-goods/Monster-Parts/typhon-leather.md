@@ -17,7 +17,7 @@ Low chance to drop from every mob and higher chance to drop from Typhon in Under
 
 ## Smelts in Large Quantities From
 
-[Dragonus'](/prefixes/item-prefixes#Dragonus "Dragonus'"), [Oranius](/prefixes/item-prefixes#Oranius "Oranius")
+*(No common smelting sources)*
 
 ---
 

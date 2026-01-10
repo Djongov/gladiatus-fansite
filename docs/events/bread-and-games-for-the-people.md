@@ -5,18 +5,17 @@ redirects:
   - /bread-and-games-for-the-people
 ---
 
-Bread and Games For the People
-==============================
+# Bread and Games For the People
 
 ![Bread and Games For the People](https://gladiatusfansite.blob.core.windows.net/images/Events/Bread_and_Games_For_the_People/bread_and_games_banner.jpg "Bread and Games For the People")
 
 ![Brea and Games For the People](https://gladiatusfansite.blob.core.windows.net/images/Events/Bread_and_Games_For_the_People/bread_and_games_description.jpg "Brea and Games For the People")
 
-Dates:
+## Dates
 
-29.01.2018-04.02.2018
+- 29.01.2018 - 04.02.2018
 
-**Description**
+## Description
 
 ![Announcement](https://gladiatusfansite.blob.core.windows.net/images/Events/announcement_gladiatus_emperor.png "Announcement")
 

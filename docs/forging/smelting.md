@@ -38,14 +38,14 @@ Simply drag the item you want to smelt and start smelting.
 
 - **Material Types:** What type of materials you will get from the item you want to smelt is entirely dependent on what the Prefix + Base Item + Suffix cost in materials to make. Therefore, the materials required to forge an item will also be produced when smelting the same item. However, smelting will not guarantee the same amount of materials needed to forge the item.
 
-- **Targeted Smelting:** You can specifically target items with the desired Prefix and sometimes even Suffix to get the exact materials you need. The [Items](/items-general/items "Items") page can be very useful in that case.
+- **Targeted Smelting:** You can specifically target items with the desired Prefix and sometimes even Suffix to get the exact materials you need. The [Items](/items "Items") page can be very useful in that case.
   - **Example:** If you need Amethysts or Crystals, target Gaius or Antonius weapons and smelt them. You can even buy **Green** or **Blue** quality from the Auction House if you need Amethysts for repairs.
 
 - **Material Quantity:** The number of materials you get depends on the composition of the item. If you are smelting Lucius, you will get ![Tincture of Stamina](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Tincture_of_Stamina.png "Tincture of Stamina") in bigger quantities because it is the most fundamental part of crafting a Lucius prefix (30× ![Tincture of Stamina](https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Tincture_of_Stamina.png "Tincture of Stamina")).
 
 - **Quality Impact:** Lesser qualities like **Green** or **Blue** will give less total materials from a smelt than superior qualities like **Purple**, **Orange**, or **Red**.
 
-- **Farming for Repairs:** If you are farming for repair materials and you don't care about quality, search the Auction House for a [prefix](/prefixes/item-prefixes "prefixes") which you know will smelt into the material you are looking for. Try to choose item slots like gloves, helmets, and boots, which have shorter smelting times.
+- **Farming for Repairs:** If you are farming for repair materials and you don't care about quality, search the Auction House for a [prefix](/items/prefixes "prefixes") which you know will smelt into the material you are looking for. Try to choose item slots like gloves, helmets, and boots, which have shorter smelting times.
 
 - **Material Distribution:** The number of materials you get from the smelt seems to be directly linked to the number of materials needed to forge the particular prefix or suffix. If the suffix being melted has Amethysts as the most required material to forge, you will likely get the highest number of Amethysts from the smelt.
 

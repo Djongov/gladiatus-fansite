@@ -17,7 +17,7 @@ Low chance to drop from every mob and higher chance to drop from Hydra in Underw
 
 ## Smelts in Large Quantities From
 
-[Pilatus](/prefixes/item-prefixes#Pilatus "Pilatus"), [Aspagius](/prefixes/item-prefixes#Aspagius "Aspagius"), [Ambrosius'](/prefixes/item-prefixes#Ambrosius "Ambrosius'")
+*(No common smelting sources)*
 
 ---
 

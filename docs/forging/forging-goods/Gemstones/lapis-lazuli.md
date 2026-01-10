@@ -20,7 +20,7 @@ A material rarely used in mid-level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Fustriels](/prefixes/item-prefixes#Fustriels "Fustriels")
+[Fustriels](/items/prefix/fustriels "fustriels")
 
 ---
 

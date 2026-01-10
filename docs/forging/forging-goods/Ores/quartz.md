@@ -20,7 +20,7 @@ A somewhat rare ore that is part of several high level suffixes, primarily known
 
 ## Smelts in Large Quantities From
 
-[of Strength](/suffixes/item-suffixes#of_Strength "of Strength"), [of Fire](/suffixes/item-suffixes#of_Fire "of Fire")
+[of Strength](/items/suffix/of-strength "of strength"), [of Fire](/items/suffix/of-fire "of fire")
 
 ---
 

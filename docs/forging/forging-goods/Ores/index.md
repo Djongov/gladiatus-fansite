@@ -9,24 +9,24 @@ Ores are essential mineral materials used in crafting. They range from common or
 
 ## Common Ores
 
-- [Crystal](crystal) - Common ore for high level prefixes (limited before level 90)
-- [Bronze](bronze) - Common ore for high level suffixes
-- [Sulphur](sulphur) - Common ore for mid-high level prefixes
+- [Crystal](/forging/forging-goods/ores/crystal) - Common ore for high level prefixes (limited before level 90)
+- [Bronze](/forging/forging-goods/ores/bronze) - Common ore for high level suffixes
+- [Sulphur](/forging/forging-goods/ores/sulphur) - Common ore for mid-high level prefixes
 
 ---
 
 ## Medium Rarity Ores
 
-- [Quartz](quartz) - Rare/Medium ore for high level suffixes (especially "of Fire")
-- [Platinum](platinum) - Medium rarity ore for defensive mid-level suffixes
+- [Quartz](/forging/forging-goods/ores/quartz) - Rare/Medium ore for high level suffixes (especially "of Fire")
+- [Platinum](/forging/forging-goods/ores/platinum) - Medium rarity ore for defensive mid-level suffixes
 
 ---
 
 ## Rare Ores
 
-- [Obsidian](obsidian) - Rare ore for mid-high level prefixes
-- [Silver](silver) - Rare but precious ore for mid-high level suffixes
-- [Gold Ore](gold-ore) - Rare ore for mid-high level prefixes (small quantities)
+- [Obsidian](/forging/forging-goods/ores/obsidian) - Rare ore for mid-high level prefixes
+- [Silver](/forging/forging-goods/ores/silver) - Rare but precious ore for mid-high level suffixes
+- [Gold Ore](/forging/forging-goods/ores/gold-ore) - Rare ore for mid-high level prefixes (small quantities)
 
 ---
 
@@ -34,6 +34,6 @@ Ores are essential mineral materials used in crafting. They range from common or
 
 These extremely rare ores are connected to the Underworld:
 
-- [Almandin](almandin) - Very rare Underworld ore
-- [Cuprit](cuprit) - Very rare Underworld ore for high level suffixes
-- [Hellstone](hellstone) - Very rare Underworld ore for high level suffixes
+- [Almandin](/forging/forging-goods/ores/almandin) - Very rare Underworld ore
+- [Cuprit](/forging/forging-goods/ores/cuprit) - Very rare Underworld ore for high level suffixes
+- [Hellstone](/forging/forging-goods/ores/hellstone) - Very rare Underworld ore for high level suffixes

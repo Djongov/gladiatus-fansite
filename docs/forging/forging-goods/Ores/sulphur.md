@@ -20,7 +20,7 @@ A common ore that is used in many important mid-high level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Ichorus](/prefixes/item-prefixes#Ichorus "Ichorus"), [Decimus](/prefixes/item-prefixes#Decimus "Decimus"), [Jennifers](/prefixes/item-prefixes#Jennifers "Jennifers"), [Trafans](/prefixes/item-prefixes#Trafans "Trafans")
+[Ichorus](/items/prefix/ichorus "ichorus"), [Decimus](/items/prefix/decimus "decimus"), [Jennifers](/items/prefix/jennifers "jennifers"), [Trafans](/items/prefix/trafans "trafans")
 
 ---
 

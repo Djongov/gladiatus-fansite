@@ -5,7 +5,7 @@ slug: /costumes/everywear-costumes
 
 ## Everywear Costumes
 
-Costumes are essential part of the game. They boost certain non-combat aspects of the game. They can drop from expeditions, dungeons, Daily bonuses or [Divine Chest of Faith](/game-guide#Treasury "Divine Chest of Faith") rolls. **Every "background" piece of every costume can only be found** from a [Divine Chest of Faith](/game-guide#Treasury "Divine Chest of Faith") roll.
+Costumes are essential part of the game. They boost certain non-combat aspects of the game. They can drop from expeditions, dungeons, Daily bonuses or [Divine Chest of Faith](/game-guide/pantheon/treasury "Divine Chest of Faith") rolls. **Every "background" piece of every costume can only be found** from a [Divine Chest of Faith](/game-guide/pantheon/treasury "Divine Chest of Faith") roll.
 
 Costumes are of several parts where you receive bonuses on 1, 3 and 5 or even 7th part. This is a complete list of all costumes and their bonuses:
 

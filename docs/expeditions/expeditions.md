@@ -43,7 +43,7 @@ Home is where the heart is.
 
 Expeditions from level 1-75
 
-[![Italy expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Italy_Overview.png "Italy expeditions")](italy-expeditions "Italy expeditions")
+[![Italy expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Italy_Overview.png "Italy expeditions")](/expeditions/italy-expeditions "Italy expeditions")
 
 **[Africa](/expeditions/africa-expeditions "Africa expeditions")**
 
@@ -53,7 +53,7 @@ Be one of the first gladiators and proclaim the glory of Rome.
 
 Expeditions from level 20-95
 
-[![Africa expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Africa_Overview.png "Africa expeditions")](africa-expeditions "Africa expeditions")
+[![Africa expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Africa_Overview.png "Africa expeditions")](/expeditions/africa-expeditions "Africa expeditions")
 
 **[Germania](/expeditions/germania-expeditions "Germania Expeditions")**
 
@@ -63,7 +63,7 @@ Prove yourself against the mighty Germanic tribes.
 
 Expeditions from level 40 - 120
 
-[![Germania expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Germania_Overview.png "Germania expeditions")](germania-expeditions "Germania expeditions")
+[![Germania expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Germania_Overview.png "Germania expeditions")](/expeditions/germania-expeditions "Germania expeditions")
 
 **[Britannia](/expeditions/britannia-expeditions "Britannia expeditions")**
 
@@ -73,7 +73,7 @@ Subdue the British barbarians and prepare the land for the arrival of the Roman 
 
 Expeditions from level 120 - 200
 
-[![Britannia expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Britannia_Overview.png "Britannia expeditions")](britannia-expeditions "Britannia Expeditions")
+[![Britannia expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Britannia_Overview.png "Britannia expeditions")](/expeditions/britannia-expeditions "Britannia expeditions")
 
 ## Expeditions Sorted by Entry level
 

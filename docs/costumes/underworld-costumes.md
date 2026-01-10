@@ -30,7 +30,7 @@ Cons:
 
 \- Even with such a great costume you will still miss some of the ordinary costume bonuses like Neptun's Might or the Wrath's Mountain Scaled Armor. No strategy around that. 2 out of 5 days you will be wearing this and the rest of the days - normal costumes. Except for events. [Event Costumes](/events "Event Costumes") are also quite good and will make you wonder which to wear even more. Perhaps a combination of all during a festival event.
 
-Example of the Gold dropped by Dragon, the boss in [Koman Mountain](/expeditions/germania-expeditions#KomanMountain "Koman Mountain") (Level 108):
+Example of the Gold dropped by Dragon, the boss in [Koman Mountain](/expeditions/germania-expeditions/koman-mountain "Koman Mountain") (Level 108):
 
 ![Dis Pater Normal costume Gold](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Dis_Pater_costume_Gold.png "Dis Pater Normal costume Gold")
 

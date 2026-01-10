@@ -19,7 +19,7 @@ An important rune that is part of a lot of good mid-high level prefixes. It's no
 
 ## Smelts in Large Quantities From
 
-[Umbros](/prefixes/item-prefixes#Umbros "Umbros"), [Chucks](/prefixes/item-prefixes#Chucks "Chucks"), [Xenphlames](/prefixes/item-prefixes#Xenphlames "Xenphlames"), [Appius](/prefixes/item-prefixes#Appius "Appius")
+[Umbros](/items/prefix/umbros "umbros"), [Chucks](/items/prefix/chucks "chucks"), [Xenphlames](/items/prefix/xenphlames "xenphlames"), [Appius](/items/prefix/appius "appius")
 
 ---
 

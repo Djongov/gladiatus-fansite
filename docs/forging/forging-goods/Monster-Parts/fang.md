@@ -20,7 +20,7 @@ Used a lot in low-mid level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Beasthammers](/prefixes/item-prefixes#Beasthammers "Beasthammers"), [Chabdyns](/prefixes/item-prefixes#Chabdyns "Chabdyns"), [Lothays](/prefixes/item-prefixes#Lothays "Lothays"), [Kedyssis](/prefixes/item-prefixes#Kedyssis "Kedyssis"), [Gonaks](/prefixes/item-prefixes#Gonaks "Gonaks"), [Uróthiens](/prefixes/item-prefixes#Urothiens "Uróthiens"), [Rayols](/prefixes/item-prefixes#Rayols "Rayols"), [Vuthiels](/prefixes/item-prefixes#Vuthiels "Vuthiels")
+[Beasthammers](/items/prefix/beasthammers "beasthammers"), [Chabdyns](/items/prefix/chabdyns "chabdyns"), [Lothays](/items/prefix/lothays "lothays"), [Kedyssis](/items/prefix/kedyssis "kedyssis"), [Gonaks](/items/prefix/gonaks "gonaks"), [Rayols](/items/prefix/rayols "rayols"), [Vuthiels](/items/prefix/vuthiels "vuthiels")
 
 ---
 

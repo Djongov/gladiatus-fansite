@@ -20,7 +20,7 @@ Used primarily in low-mid level suffixes with healing.
 
 ## Smelts in Large Quantities From
 
-[of Considerateness](/suffixes/item-suffixes#of_Considerateness "of Considerateness"), [of Alleluia](/suffixes/item-suffixes#of_Alleluia "of Alleluia"), [of Recovery](/suffixes/item-suffixes#of_Recovery "of Recovery"), [of Orion](/suffixes/item-suffixes#of_Orion "of Orion"), [of Regeneration](/suffixes/item-suffixes#of_Regeneration "of Regeneration"), [of Attention](/suffixes/item-suffixes#of_Attention "of Attention"), [of Fatuity](/suffixes/item-suffixes#of_Fatuity "of Fatuity"), [of Ingenuity](/suffixes/item-suffixes#of_Ingenuity "of Ingenuity"), [of Rigor Mortis](/suffixes/item-suffixes#of_Rigor_Mortis "of Rigor Mortis")
+[of Considerateness](/items/suffix/of-considerateness "of considerateness"), [of Alleluia](/items/suffix/of-alleluia "of alleluia"), [of Recovery](/items/suffix/of-recovery "of recovery"), [of Orion](/items/suffix/of-orion "of orion"), [of Regeneration](/items/suffix/of-regeneration "of regeneration"), [of Fatuity](/items/suffix/of-fatuity "of fatuity"), [of Ingenuity](/items/suffix/of-ingenuity "of ingenuity"), [of Rigor Mortis](/items/suffix/of-rigor-mortis "of rigor mortis")
 
 ---
 

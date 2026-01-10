@@ -20,7 +20,7 @@ A rune used in mid-high level suffixes with healing.
 
 ## Smelts in Large Quantities From
 
-[of Love](/suffixes/item-suffixes#of_Love "of Love"), [of Insanity](/suffixes/item-suffixes#of_Insanity "of Insanity"), [of Solitude](/suffixes/item-suffixes#of_Solitude "of Solitude")
+[of Love](/items/suffix/of-love "of love"), [of Insanity](/items/suffix/of-insanity "of insanity"), [of Solitude](/items/suffix/of-solitude "of solitude")
 
 ---
 

@@ -57,8 +57,8 @@ From the daily login bonuses. Here is [evidence](https://gladiatusfansite.blob.c
 ### Event Bonuses
 
 - Some Micro [Events](/events) are buffing the entire server and raising the Ruby drop % from expeditions
-- [Ra's Light Robe](/events/event-costumes) event costume increases Ruby drop from expeditions by 8%
-- Event items - [Special Food](/items#Special-Food) or [Event Items](/items#Event) can award Rubies or Centurio
+- [Ra's Light Robe](/costumes/event-costumes) event costume increases Ruby drop from expeditions by 8%
+- Event items - [Special Food](/items/food#special-food) or [Event Items](/items/event-items) can award Rubies or Centurio
 
 ---
 

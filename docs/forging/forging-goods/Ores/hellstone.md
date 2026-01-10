@@ -17,7 +17,7 @@ Low chance to drop from any mob. Could have higher chance in the Underworld.
 
 ## Smelts in Large Quantities From
 
-[of Disease](/suffixes/item-suffixes#of_Disease "of Disease")
+*(No common smelting sources)*
 
 ---
 

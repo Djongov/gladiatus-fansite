@@ -12,6 +12,13 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ## Latest website news
 
+### 10.01.2026
+
+Today's migration progress:
+
+- Fixed most broken links which was a huge job
+- Now Prefixes and Suffixes have dynamically created routes without having hundreds of markdown files
+
 ### 09.01.2026
 
 Today's migration progress (huge effort):
@@ -92,7 +99,7 @@ I decided to start migrating the website from the old Joomla implementation to M
 
 ### 12.08.2019
 
-- We finally have the name and stats of the Last boss in the game - Antenocitius from [Mona Isle](/expeditions/britannia-expeditions#Mona_Isle "Mona Isle"). Check them out. Huge thanks to [WladimiraPutina](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=player&p=15764&sh=d41d8cd98f00b204e9800998ecf8427e "WladimiraPutina from DE201") from [DE201](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=highscore&sh=d41d8cd98f00b204e9800998ecf8427e "Ranklist of DE201"). Here is a [screenshot](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Antenocitius_kill.jpeg "Mona Isle Boss kill - Antenocitius") of his kill. He said it took him a lot of effort to do it on Level 200
+- We finally have the name and stats of the Last boss in the game - Antenocitius from [Mona Isle](/expeditions/britannia-expeditions/mona-isle "Mona Isle"). Check them out. Huge thanks to [WladimiraPutina](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=player&p=15764&sh=d41d8cd98f00b204e9800998ecf8427e "WladimiraPutina from DE201"). Here is a [screenshot](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Antenocitius_kill.jpeg "Mona Isle Boss kill - Antenocitius") of his kill. He said it took him a lot of effort to do it on Level 200
 - Made some optimizations on the server side for more resilience and security
 
 ### 06.08.2019

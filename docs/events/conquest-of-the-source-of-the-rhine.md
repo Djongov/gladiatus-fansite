@@ -5,8 +5,7 @@ redirects:
   - /conquest-of-the-source-of-the-rhine
 ---
 
-Conquest of the Source of the Rhine
-===================================
+# Conquest of the Source of the Rhine
 
 ![Conquest of the Source of the Rhine](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/conquest_banner.jpg "Conquest of the Source of the Rhine")
 
@@ -14,11 +13,11 @@ Conquest of the Source of the Rhine
 
 ![Conquest of the Source of the Rhine](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/Rhine_announce.jpg "Conquest of the Source of the Rhine")
 
-Dates:
+## Dates
 
-16.07.2018-22.07.2018
+- 16.07.2018 - 22.07.2018
 
-**Description**
+## Description
 
 *The Rhine marks the border of the Roman kingdom and the rest of Germania*  
  *as well as being the lifeline that allows for trade in the Roman provinces.*  
@@ -29,11 +28,7 @@ Dates:
  *There is only one choice:*  
  *To your weapons, fight off the Batavians!*
 
-Event Info
-----------
-
-**How does the event work?**
-
+## Event Info
 - As soon as the event has started a new expedition area will appear in your menu when you're in Italy.
 - Clicking on it shows you the first wave of opponents to beat.
 - In contrast to normal expeditions the enemies at the event have a counter, which shows you how often the enemy was beaten by all gladiators on the server.
@@ -55,11 +50,10 @@ Event Info
 - There is a highscore for each enemy, with a reward for best player of each wave of enemies, and one overall highscore.
 - The highscore is sorted by points, if you win a fight you receive 1 point, if you lose you receive none.
 - **Attention: ALL rewards are only given if the event was finished successfully!**
- 
-Rewards
--------
 
- Ranking is the usual that we've seen from other events. 1 kill = 1 point. There is small a price for 5,10,15,20,25,30,35,40,45 and 50 points reached
+## Rewards
+
+Ranking is the usual that we've seen from other events. 1 kill = 1 point. There is small a price for 5,10,15,20,25,30,35,40,45 and 50 points reached
 
  
 
@@ -105,12 +99,7 @@ Here is an example of a Grindstone - [click](https://gladiatusfansite.blob.core.
 
 **Total**  ![Most points in the entire event](https://gladiatusfansite.blob.core.windows.net/images/Events/reward_gold.png "Most points in the entire event") - Most points in the entire event - Title: **Champion of Germania**
 
- 
-
- 
-
-Expedition
-----------
+## Expedition
 
 You have 16 Event expedition ![Event expedition Points](https://gladiatusfansite.blob.core.windows.net/images/expedition_points2.png "Event expedition points") points every day with the usual 15 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") to refill them once they are depleted
 
@@ -136,44 +125,29 @@ Wave 3 - 30% of the amount needed for Wave 1
 
 Boss - HP is based on server population
 
- 
-
-Peasant Soldier
+## Peasant Soldier
 
 ![Peasant Soldier](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/1_39.jpg "Peasant Soldier")
 
 ![Peasant Soldier stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/Peasant_Soldier_stats.png "Peasant Soldier stats")
 
- 
-
- Javelin Thrower
+## Javelin Thrower
 
 ![ Javelin Thrower](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/1_40.jpg " Javelin Thrower")
 
 ![ Javelin Thrower stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/Javelin_Thrower_stats.png " Javelin Thrower stats")
 
- 
-
-Warrior
+## Warrior
 
 ![Warrior](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/1_41.jpg "Warrior")
 
 ![Warrior stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/Warrior_stats.png "Warrior stats")
 
- 
-
-Tribe Lord Sigurd
-
- 
+## Tribe Lord Sigurd
 
 ![Boss](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/1_42.jpg)![Tribe Lord Sigurd stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/Tribe_Lord_Sigurd_stats.png "Tribe Lord Sigurd stats")
 
- 
-
- 
-
-Tips & Tricks
------------------
+## Tips & Tricks
 
 - Event starts at 0:00 German time (GMT+1) and this is when the event points (![Event expedition Points](https://gladiatusfansite.blob.core.windows.net/images/expedition_points2.png "Event expedition points")) replenish. Have it in mind. This is regardless of what is your language and server you are playing on
 - Dis Pater's Normal costume **does not** boost event expedition points

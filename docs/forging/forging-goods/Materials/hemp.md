@@ -19,7 +19,7 @@ A material used in low level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Reinkes](/prefixes/item-prefixes#Reinkes "Reinkes"), [Elywens](/prefixes/item-prefixes#Elywens "Elywens"), [Solitanis](/prefixes/item-prefixes#Solitanis "Solitanis")
+[Reinkes](/items/prefix/reinkes "reinkes"), [Elywens](/items/prefix/elywens "elywens"), [Solitanis](/items/prefix/solitanis "solitanis")
 
 ---
 

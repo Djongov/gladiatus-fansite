@@ -20,7 +20,7 @@ Important material used in high level prefixes such as Lucius. Also used to repa
 
 ## Smelts in Large Quantities From
 
-[Lucius](/prefixes/item-prefixes#Lucius "Lucius"), [Fernabasts](/prefixes/item-prefixes#Fernabasts "Fernabasts"), [Tantus](/prefixes/item-prefixes#Tantus "Tantus"), [Sentarions](/prefixes/item-prefixes#Sentarions "Sentarions")
+[Lucius](/items/prefix/lucius "lucius"), [Fernabasts](/items/prefix/fernabasts "fernabasts"), [Tantus](/items/prefix/tantus "tantus"), [Sentarions](/items/prefix/sentarions "sentarions")
 
 ---
 

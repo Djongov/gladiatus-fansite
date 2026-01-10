@@ -20,7 +20,7 @@ A rune that is used in few mid-level prefixes mostly known for being main materi
 
 ## Smelts in Large Quantities From
 
-[Orleds](/prefixes/item-prefixes#Orleds "Orleds"), [Ashitills](/prefixes/item-prefixes#Ashitills "Ashitills"), [Táliths](/prefixes/item-prefixes#Taliths "Táliths"), [Adendathiels](/prefixes/item-prefixes#Adendathiels "Adendathiels")
+[Ashitills](/items/prefix/ashitills "ashitills"), [Adendathiels](/items/prefix/adendathiels "adendathiels")
 
 ---
 

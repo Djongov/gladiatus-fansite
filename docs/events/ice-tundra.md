@@ -5,14 +5,13 @@ redirects:
   - /ice-tundra
 ---
 
-Ice Tundra
-==========
+# Ice Tundra
 
 ![Ice Tundra](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Ice_Tundra_Banner.jpg "Ice Tundra")
 
-Dates:
+## Dates
 
-08.12.2017-21.12.2017
+- 08.12.2017-21.12.2017
 
 It's cold. The snow is swallowing up every sound. The brave gladiators have icy breath.  
 The Ice Tundra isn't a place for weaklings - it's filled with creatures on the prowl, whose only fear is that they might starve.  
@@ -20,8 +19,7 @@ Are you strong enough for this icy hell? Then start your journey now and help tr
 
 Event is an expedition with chance of finding event costume
 
-Event Costume
--------------
+## Event Costume
 
 **Saturn's Winter Garment**
 
@@ -51,35 +49,25 @@ Event is part of the Saturnalia period
 - If you activating a buff from the Snowball rolls the same buff you already have - don't worry your Snowball isn't wasted, it will add another hour to your existing buff if you already have it
 - Snowballs only drop in the Tundra
 - Snowball buffs only stack in time -> the power of the buff won't increase
- 
- 
 
-Lemming
+## Lemming
 
 ![Lemming](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Lemming.jpg)
 
 ![Lemming stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Lemming_stats.png)
 
- 
-
-Snow Fox
+## Snow Fox
 
 ![Snow Fox](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Snow_Fox.jpg)
 
 ![Snow Fox stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Snow_Fox_stats.png "Snow Fox stats")
 
- 
-
-Arctic Wolf
+## Arctic Wolf
 
 ![Arctic Wolf](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Arctic_Wolf.jpg)
 
 ![Arctic Wolf stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Arctic_Wolf_stats.png "Arctic Wolf stats")
 
- 
-
-Polar Bear
-
- 
+## Polar Bear
 
 ![Polar Bear](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Polar_Bear.jpg)![Polar Bear stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Polar_Bear_stats.png "Polar Bear stats")

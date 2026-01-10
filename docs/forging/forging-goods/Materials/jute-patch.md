@@ -19,7 +19,7 @@ Used in low-mid level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Zickezackes](/prefixes/item-prefixes#Zickezackes "Zickezackes"), [Gadriewens](/prefixes/item-prefixes#Gadriewens "Gadriewens"), [Kerrannas](/prefixes/item-prefixes#Kerrannas "Kerrannas"), [Frientas](/prefixes/item-prefixes#Frientas "Frientas")
+[Zickezackes](/items/prefix/zickezackes "zickezackes"), [Gadriewens](/items/prefix/gadriewens "gadriewens"), [Kerrannas](/items/prefix/kerrannas "kerrannas"), [Frientas](/items/prefix/frientas "frientas")
 
 ---
 

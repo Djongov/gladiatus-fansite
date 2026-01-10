@@ -32,21 +32,21 @@ The Gods system is quite a big one and plays a significant role in Gladiatus. Th
 
 ![Mars godly rank 1](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Mars_godly_rank_1.png "Mars godly rank 1")
 
-This will increase with level. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+This will increase with level. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
 ### Godly Bonus Rank 2
 
 ![Mars godly rank 2](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Mars_godly_rank_2.png "Mars godly rank 2")
 
-Provides a holy oil that increases your agility for 3 days. However, if you are at max agility it will not work, so it's not very useful. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Provides a holy oil that increases your agility for 3 days. However, if you are at max agility it will not work, so it's not very useful. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
-Check more info on Holy Oils [here](/items#Misc "Holy Oils").
+Check more info on Holy Oils [here](/items/misc "Holy Oils").
 
 ### Godly Bonus Rank 3
 
 ![Mars godly rank 3](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Mars_godly_rank_3.png "Mars godly rank 3")
 
-Prevents all critical hits in your battles in all fights in arenas, dungeons, turma, and expeditions. This is useful when you are facing an enemy that has a lot more critical strike than you and you regularly lose because of critical hits on you. It is useful in special occasions. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Prevents all critical hits in your battles in all fights in arenas, dungeons, turma, and expeditions. This is useful when you are facing an enemy that has a lot more critical strike than you and you regularly lose because of critical hits on you. It is useful in special occasions. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
 ---
 
@@ -56,15 +56,15 @@ Prevents all critical hits in your battles in all fights in arenas, dungeons, tu
 
 ![Mercury godly rank 1](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Mercury_godly_rank_1.png "Mercury godly rank 1")
 
-Increases with level. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Increases with level. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
 ### Godly Bonus Rank 2
 
 ![Mercury godly rank 2](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Mercury_godly_rank_2.png "Mercury godly rank 2")
 
-Provides a holy oil that increases your intelligence for 3 days. However, if you are at max intelligence it will not work, so it's not very useful. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Provides a holy oil that increases your intelligence for 3 days. However, if you are at max intelligence it will not work, so it's not very useful. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
-Check more info on Holy Oils [here](/items#Misc "Holy Oils").
+Check more info on Holy Oils [here](/items/misc "Holy Oils").
 
 ### Godly Bonus Rank 3
 
@@ -80,15 +80,15 @@ Reduces the healing powers of your enemies. Mostly usable in Circus Turma or Dun
 
 ![Diana bonus rank 1](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Diana_godly_rank_1.png "Diana bonus rank 1")
 
-Increases with level. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Increases with level. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
 ### Godly Bonus Rank 2
 
 ![Diana bonus rank 2](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Diana_godly_rank_2.png "Diana bonus rank 2")
 
-Provides a holy oil that increases your dexterity for 3 days. However, if you are at max dexterity it will not work, so it's not very useful. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Provides a holy oil that increases your dexterity for 3 days. However, if you are at max dexterity it will not work, so it's not very useful. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
-Check more info on Holy Oils [here](/items#Misc "Holy Oils").
+Check more info on Holy Oils [here](/items/misc "Holy Oils").
 
 ### Godly Bonus Rank 3
 
@@ -104,15 +104,15 @@ Really powerful bonus. If you are struggling on a dungeon boss or a strong oppon
 
 ![Apollo bonus rank 1](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Apollo_godly_rank_1.png "Apollo bonus rank 1")
 
-Increases with level. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Increases with level. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
 ### Godly Bonus Rank 2
 
 ![Apollo bonus rank 2](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Apollo_godly_rank_2.png "Apollo bonus rank 2")
 
-This is the most powerful of all gods blessings and is the only oil that will always work, regardless of stats. The damage it provides increases with level and lasts for 3 days. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown and increase the length of the oil.
+This is the most powerful of all gods blessings and is the only oil that will always work, regardless of stats. The damage it provides increases with level and lasts for 3 days. Certain [costumes](/costumes "costumes") can lower the cooldown and increase the length of the oil.
 
-Check more info on Holy Oils [here](/items#Misc "Holy Oils").
+Check more info on Holy Oils [here](/items/misc "Holy Oils").
 
 ### Godly Bonus Rank 3
 
@@ -128,15 +128,15 @@ It is unconfirmed if this can increase the block percentage above 50%.
 
 ![Minerva godly rank 1](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Minerva_godly_rank_1.png "Minerva godly rank 1")
 
-Increases with level. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Increases with level. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
 ### Godly Bonus Rank 2
 
 ![Minerva godly rank 2](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Minerva_godly_rank_2.png "Minerva godly rank 2")
 
-Provides a holy oil that increases your charisma for 3 days. However, if you are at max charisma it will not work, so it's not very useful. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Provides a holy oil that increases your charisma for 3 days. However, if you are at max charisma it will not work, so it's not very useful. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
-Check more info on Holy Oils [here](/items#Misc "Holy Oils").
+Check more info on Holy Oils [here](/items/misc "Holy Oils").
 
 ### Godly Bonus Rank 3
 
@@ -152,7 +152,7 @@ Prevents all double hits in all battles in dungeons, arenas, turma, and expediti
 
 ![Vulcan godly rank 1](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Gods/Vulcan_godly_rank_1.png "Vulcan godly rank 1")
 
-Increases with level. Certain [costumes](/costumes/gladiatus-costumes "costumes") can lower the cooldown.
+Increases with level. Certain [costumes](/costumes "costumes") can lower the cooldown.
 
 ### Godly Bonus Rank 2
 
@@ -160,7 +160,7 @@ Increases with level. Certain [costumes](/costumes/gladiatus-costumes "costumes"
 
 Very useful oil, however the amount of Armor it provides is very little (~240 on level 114 character). It lasts for 3 days which is good.
 
-Check more info on Holy Oils [here](/items#Misc "Holy Oils").
+Check more info on Holy Oils [here](/items/misc "Holy Oils").
 
 ### Godly Bonus Rank 3
 

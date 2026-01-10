@@ -20,7 +20,7 @@ A material mainly used in low level suffixes in the range of 10-16 level.
 
 ## Smelts in Large Quantities From
 
-[of Triumph](/suffixes/item-suffixes#of_Triumph "of Triumph"), [of Hesitation](/suffixes/item-suffixes#of_Hesitation "of Hesitation"), [of Confusion](/suffixes/item-suffixes#of_Confusion "of Confusion"), [of Hindrance](/suffixes/item-suffixes#of_Hindrance "of Hindrance"), [of Reversion](/suffixes/item-suffixes#of_Reversion "of Reversion")
+[of Triumph](/items/suffix/of-triumph "of triumph"), [of Hesitation](/items/suffix/of-hesitation "of hesitation"), [of Confusion](/items/suffix/of-confusion "of confusion"), [of Hindrance](/items/suffix/of-hindrance "of hindrance"), [of Reversion](/items/suffix/of-reversion "of reversion")
 
 ---
 

@@ -20,7 +20,7 @@ Used in some mid-high level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Promise](/suffixes/item-suffixes#of_Promise "of Promise"), [of Earth](/suffixes/item-suffixes#of_Earth "of Earth")
+[of Promise](/items/suffix/of-promise "of promise"), [of Earth](/items/suffix/of-earth "of earth")
 
 ---
 

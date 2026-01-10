@@ -20,7 +20,7 @@ An important material used in variety of mid-high level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Valerius](/prefixes/item-prefixes#Valerius "Valerius"), [Mateus](/prefixes/item-prefixes#Mateus "Mateus"), [Marcellus](/prefixes/item-prefixes#Marcellus "Marcellus"), [Constantius](/prefixes/item-prefixes#Constantius "Constantius"), [Servius](/prefixes/item-prefixes#Servius "Servius"), [Dexterus](/prefixes/item-prefixes#Dexterus "Dexterus"), [Giganticus](/prefixes/item-prefixes#Giganticus "Giganticus")
+[Valerius](/items/prefix/valerius "valerius"), [Mateus](/items/prefix/mateus "mateus"), [Marcellus](/items/prefix/marcellus "marcellus"), [Constantius](/items/prefix/constantius "constantius"), [Servius](/items/prefix/servius "servius"), [Dexterus](/items/prefix/dexterus "dexterus"), [Giganticus](/items/prefix/giganticus "giganticus")
 
 ---
 

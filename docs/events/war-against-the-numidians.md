@@ -5,8 +5,7 @@ redirects:
   - /war-against-the-numidians
 ---
 
-War Against The Numidians
-=========================
+# War Against The Numidians
 
 **Assuri Oasis**
 
@@ -16,13 +15,12 @@ War Against The Numidians
 
 ![War Against The Numidians](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/milizionar.jpg "War Against The Numidians")
 
-Dates:
+## Dates
 
-15.01.2018-21.01.2018
+- 15.01.2018 - 21.01.2018
+- 26.02.2018 - 04.03.2018
 
-26.02.2018-04.03.2018
-
-**Description**
+## Description
 
  ***Ave Gladiators!****The oases are the lifeblood of the desert, the lifeblood for hunters, merchants, and the legions. Now these lifebloods are falling from our hands and we are losing our dominance over these oases. The communication lines have been disrupted, trade is at a standstill and the legions are beginning to thirst. To your weapons, warriors of Rome! Our supremacy in Africa is under threat, as is the supremacy of our emperor on our beautiful empire. King Juba the First and his people, the Numidians, have risen up and are threatening the security of the empire."*
 
@@ -34,8 +32,7 @@ The Numidians, led by their King Jubo the first, are threatening our supremacy i
 
 **The event is an additional expedition with ranking system.**
 
-Event Info
-----------
+## Event Info
 
 **How does the event work?**
 
@@ -58,11 +55,10 @@ Event Info
 - There is a highscore for each enemy, with a reward for best player of each wave of enemies, and one overall highscore.
 - The highscore is sorted by points, if you win a fight you receive 1 point, if you lose you receive none.
 - **Attention: ALL rewards are only given if the event was finished successfully!**
- 
-Rewards
--------
 
- Ranking is the usual that we've seen from other events. 1 kill = 1 point. There is small a price for 5,10,15,20,25,30,35,40,45 and 50 points reached
+## Rewards
+
+Ranking is the usual that we've seen from other events. 1 kill = 1 point. There is small a price for 5,10,15,20,25,30,35,40,45 and 50 points reached
 
  
 
@@ -112,10 +108,7 @@ Here is an example of a Grindstone - [click](https://gladiatusfansite.blob.core.
 
 ![Champion of Africa](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/1st_rank_prize.png "Champion of Africa")
 
- 
-
-Expedition
-----------
+## Expedition
 
 You have 16 Event expedition ![Event expedition Points](https://gladiatusfansite.blob.core.windows.net/images/expedition_points2.png "Event expedition points") points every day with the usual 15 ![Rubies](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Rubies") to refill them once they are depleted
 
@@ -153,36 +146,23 @@ Militiaman
 
 ![Militiaman stats](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/Militiaman_stats.png "Militiaman stats")
 
- 
-
-Desert Rider
+## Desert Rider
 
 ![Desert Rider](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/Desert_Rider.jpg "Desert Rider")
 
 ![Desert Rider stats](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/Desert_Rider_stats.png "Desert Rider stats")
 
- 
-
-Desert Warrior
+## Desert Warrior
 
 ![Desert Warrior](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/Desert_Warrior.jpg "Desert Warrior")
 
 ![Desert Warrior stats](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/Desert_Warrior_stats.png "Desert Warrior stats")
 
- 
-
-King Juba I
-
- 
+## King Juba I
 
 ![King_Jubo_the_first](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/King_Jubo_the_first.jpg)![King Jubo I stats](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/King_Juba_stats.png "King Jubo I stats")
 
- 
-
- 
-
-Tips & Tricks
------------------
+## Tips & Tricks
 
 - Dis Pater's Normal costume **does not** boost event expedition points
 - Level up **does not** regenerate event expeditions points

@@ -22,7 +22,7 @@ Used a lot in low-mid level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Brutality](/suffixes/item-suffixes#of_Brutality "of Brutality"), [of Vigour](/suffixes/item-suffixes#of_Vigour "of Vigour"), [of Success](/suffixes/item-suffixes#of_Success "of Success"), [of Satisfaction](/suffixes/item-suffixes#of_Satisfaction "of Satisfaction"), [of Attrition](/suffixes/item-suffixes#of_Attrition "of Attrition"), [of Repentance](/suffixes/item-suffixes#of_Repentance "of Repentance")
+[of Brutality](/items/suffix/of-brutality "of brutality"), [of Vigour](/items/suffix/of-vigour "of vigour"), [of Success](/items/suffix/of-success "of success"), [of Satisfaction](/items/suffix/of-satisfaction "of satisfaction"), [of Attrition](/items/suffix/of-attrition "of attrition")
 
 ---
 

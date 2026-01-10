@@ -19,7 +19,7 @@ Used in mid-level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Light](/suffixes/item-suffixes#of_Light "of Light"), [of the Sun](/suffixes/item-suffixes#of_the_Sun "of the Sun"), [of Harmony](/suffixes/item-suffixes#of_Harmony "of Harmony"), [of Merit](/suffixes/item-suffixes#of_Merit "of Merit"), [of Income](/suffixes/item-suffixes#of_Income "of Income"), [of the Amazons](/suffixes/item-suffixes#of_the_Amazons "of the Amazons")
+[of Light](/items/suffix/of-light "of light"), [of the Sun](/items/suffix/of-the-sun "of the sun"), [of Harmony](/items/suffix/of-harmony "of harmony"), [of Merit](/items/suffix/of-merit "of merit"), [of the Amazons](/items/suffix/of-the-amazons "of the amazons")
 
 ---
 

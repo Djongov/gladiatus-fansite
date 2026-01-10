@@ -17,7 +17,7 @@ Low chance to drop from every mob and higher chance to drop from Sphinx in Under
 
 ## Smelts in Large Quantities From
 
-[Lethe's](/prefixes/item-prefixes#Lethes "Lethe's"), [Mercurialis](/prefixes/item-prefixes#Mercurialis "Mercurialis"), [Aulus](/prefixes/item-prefixes#Aulus "Aulus")
+*(No common smelting sources)*
 
 ---
 

@@ -25,7 +25,7 @@ Boss item level drop: **71-84 `✓` Verified
 
 Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions/barbarian-village "Barbarian Village")
 
-Advanced Dungeon: **Yes,** [Zagrashs Fort](/zagrashs-fort "Zagrashs Fort") (Level 78)
+Advanced Dungeon: **Yes,** [Zagrashs Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrashs Fort") (Level 78)
 
 Previous Dungeon: [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave") (Level 60)
 

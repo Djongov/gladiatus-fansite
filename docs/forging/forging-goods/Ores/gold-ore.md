@@ -20,7 +20,7 @@ A rare ore found in mid-high level prefixes but in small quantities.
 
 ## Smelts in Large Quantities From
 
-[Titus](/prefixes/item-prefixes#Titus "Titus"), [Avalonius](/prefixes/item-prefixes#Avalonius "Avalonius"), [Amulius](/prefixes/item-prefixes#Amulius "Amulius")
+[Titus](/items/prefix/titus "titus"), [Avalonius](/items/prefix/avalonius "avalonius"), [Amulius](/items/prefix/amulius "amulius")
 
 ---
 

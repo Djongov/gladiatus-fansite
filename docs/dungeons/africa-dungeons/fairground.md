@@ -9,7 +9,7 @@ redirects:
 Fairground
 ==========
 
-Fairground is the first of the high level dungeons in Africa. It is available at level 80 but don't be fooled. The leader of the mighty Umpokta is a formidable boss. You need to be highly geared to face him. A good preparation for him is if you are able to beat Zagrash in [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort"). If you beat Zagrash most of the times, you might be able to land some kills on Papa Sasama. Generally, he is an extremely hard boss and you will be waiting for 86 to skip this dungeon and move to the next one. Read the [Zagrash guide](News?id=65 "Zagrash guide") and how to gear up to beat him. Same tactic applies for Papa Sasama but with even higher levels and stats.
+Fairground is the first of the high level dungeons in Africa. It is available at level 80 but don't be fooled. The leader of the mighty Umpokta is a formidable boss. You need to be highly geared to face him. A good preparation for him is if you are able to beat Zagrash in [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort"). If you beat Zagrash most of the times, you might be able to land some kills on Papa Sasama. Generally, he is an extremely hard boss and you will be waiting for 86 to skip this dungeon and move to the next one. Read the [Zagrash guide](/dungeons/italy-dungeons/zagrashs-fort "Zagrash guide") and how to gear up to beat him. Same tactic applies for Papa Sasama but with even higher levels and stats.
 
 Entry level: **80**
 
@@ -27,7 +27,7 @@ Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions/umpokta-tribe
 
 Advanced Dungeon: **Yes,** [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey") (Level 92)
 
-Previous Dungeon: [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort") (Level 78)
+Previous Dungeon: [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort") (Level 78)
 
 Next Dungeon: [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
 

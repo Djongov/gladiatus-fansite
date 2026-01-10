@@ -17,7 +17,7 @@ Low drop chance from all monsters. Could be found more often in Underworld.
 
 ## Smelts in Large Quantities From
 
-[Accas](/prefixes/item-prefixes#Accas "Accas"), [Gaias](/prefixes/item-prefixes#Gaias "Gaias")
+[Accas](/items/prefix/accas "accas"), [Gaias](/items/prefix/gaias "gaias")
 
 ---
 

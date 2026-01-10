@@ -32,61 +32,61 @@ You can wear your event costumes during this period. This event gets turned on u
 
 Expedition that drops Ra's Light Robe costume
 
-[![On the Nile bank](https://gladiatusfansite.blob.core.windows.net/images/Events/On_the_Nile_bank/Event_Description_Picture.jpg "On the Nile bank")](on-the-nile-bank "On the Nile bank")
+[![On the Nile bank](https://gladiatusfansite.blob.core.windows.net/images/Events/On_the_Nile_bank/Event_Description_Picture.jpg "On the Nile bank")](/events/on-the-nile-bank "On the Nile bank")
 
 ### Revenge of the Dead
 
 Wave-based expedition with ranking system
 
-[![Revenge of the Dead](https://gladiatusfansite.blob.core.windows.net/images/Events/Revenge_of_the_Dead/Event_Description_Picture.jpg "Revenge of the Dead")](revenge-of-the-dead "Revenge of the Dead")
+[![Revenge of the Dead](https://gladiatusfansite.blob.core.windows.net/images/Events/Revenge_of_the_Dead/Event_Description_Picture.jpg "Revenge of the Dead")](/events/revenge-of-the-dead "Revenge of the Dead")
 
 ### Desert Nightmare
 
 Expedition that drops Mercurius' Leather Armour costume
 
-[![Desert Nightmare](https://gladiatusfansite.blob.core.windows.net/images/Events/Desert_Nightmare/Desert_Nightmare_banner.jpg "Desert Nightmare")](desert-nightmare "Desert Nightmare")
+[![Desert Nightmare](https://gladiatusfansite.blob.core.windows.net/images/Events/Desert_Nightmare/Desert_Nightmare_banner.jpg "Desert Nightmare")](/events/desert-nightmare "Desert Nightmare")
 
 ### Battle at Hadrian's Wall
 
 Wave-based expedition with ranking system
 
-[![Battle at Handrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Battle_at_Hadrians_Wall_banner.jpg "Battle at Handrian's Wall")](battle-at-hadrian-s-wall "Battle at Handrian's Wall")
+[![Battle at Handrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Battle_at_Hadrians_Wall_banner.jpg "Battle at Handrian's Wall")](/events/battle-at-hadrian-s-wall "Battle at Handrian's Wall")
 
 ### Ice Tundra
 
 Expedition that drops Saturn's Winter Garment costume
 
-[![Ice Tundra](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Ice_Tundra_Banner.jpg "Ice Tundra")](ice-tundra "Ice Tundra")
+[![Ice Tundra](https://gladiatusfansite.blob.core.windows.net/images/Events/Ice_Tundra/Ice_Tundra_Banner.jpg "Ice Tundra")](/events/ice-tundra "Ice Tundra")
 
 ### War Against The Numidians
 
 Wave-based expedition with ranking system
 
-[![War against the Numidians](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/War_against_the_Numidians_banner.jpg "War against the Numidians")](war-against-the-numidians "War against the Numidians")
+[![War against the Numidians](https://gladiatusfansite.blob.core.windows.net/images/Events/War_Against_The_Numidians/War_against_the_Numidians_banner.jpg "War against the Numidians")](/events/war-against-the-numidians "War against the Numidians")
 
 ### Bread and Games For the People
 
 An event where special food drops from expeditions and dungeons
 
-[![Bread and Games for The People](https://gladiatusfansite.blob.core.windows.net/images/Events/Bread_and_Games_For_the_People/bread_and_games_banner.jpg "Bread and Games for The People")](bread-and-games-for-the-people "Bread and Games For the People")
+[![Bread and Games for The People](https://gladiatusfansite.blob.core.windows.net/images/Events/Bread_and_Games_For_the_People/bread_and_games_banner.jpg "Bread and Games for The People")](/events/bread-and-games-for-the-people "Bread and Games For the People")
 
 ### Wild Farm
 
 Expedition that drops Bubona's Bull Armour costume
 
-[![Wild Farm](https://gladiatusfansite.blob.core.windows.net/images/Events/Wild_Farm/Wild_Farm_banner.jpg "Wild Farm")](wild-farm "Wild Farm")
+[![Wild Farm](https://gladiatusfansite.blob.core.windows.net/images/Events/Wild_Farm/Wild_Farm_banner.jpg "Wild Farm")](/events/wild-farm "Wild Farm")
 
 ### Conquest of the Source of the Rhine
 
 Wave-based expedition with ranking system
 
-[![Conquest of the Source of the Rhine](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/conquest_banner.jpg "Conquest of the Source of the Rhine")](conquest-of-the-source-of-the-rhine "Conquest of the Source of the Rhine")
+[![Conquest of the Source of the Rhine](https://gladiatusfansite.blob.core.windows.net/images/Events/Conquest_of_the_Source_of_the_Rhine/conquest_banner.jpg "Conquest of the Source of the Rhine")](/events/conquest-of-the-source-of-the-rhine "Conquest of the Source of the Rhine")
 
 ### Reconstruction of Rome
 
 Event with ranking system for donating Wood, Stone and Cloth. Event is turned on after a server merge
 
-[![Reconstruction of Rome](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/Reconstruction_of_Rome_banner.jpg "Reconstruction of Rome")](reconstruction-of-rome "Reconstruction of Rome")
+[![Reconstruction of Rome](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/Reconstruction_of_Rome_banner.jpg "Reconstruction of Rome")](/events/reconstruction-of-rome "Reconstruction of Rome")
 
 ### Event Costumes
 

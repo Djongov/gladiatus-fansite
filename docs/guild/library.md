@@ -8,11 +8,11 @@ slug: /guild/library
 
 Knowledge is power and the feather is stronger than the sword has often been asserted in imperial circles. That is why our knowledge of useful recipes is stored in the library. With every expansion level 2 more recipes can be handed in to Ongarius, the library administrator.
 
-![](https://s76-en.gladiatus.gameforge.com/cdn/img/regal.jpg)
+![Regal](https://s76-en.gladiatus.gameforge.com/cdn/img/regal.jpg)
 
 Library is where you use and activate the Recipes you find on your adventures. First you deposit the recipe into the library.
 
-Here is what the different recipes do - [Recipes](/items#Recipes "Recipes")
+Here is what the different recipes do - [Recipes](/game-guide#scrolls-and-recipies "Recipes")
 
 Activating the recipe will place a buff on all guild members for 4 hours. Activating comes with a cost in ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold"). The higher the level of the recipe, the more stats it buffs. Beware of the prices too. High level recipes 80+ are extremely expensive to activate it might not be worth it.
 

@@ -20,7 +20,7 @@ A common ore that is used in a number of important high level prefixes but is ve
 
 ## Smelts in Large Quantities From
 
-[Manius](/prefixes/item-prefixes#Manius "Manius"), [Gaius](/prefixes/item-prefixes#Gaius "Gaius"), [Belisarius](/prefixes/item-prefixes#Belisarius "Belisarius"), [Antonius](/prefixes/item-prefixes#Antonius "Antonius"), [Titus](/prefixes/item-prefixes#Titus "Titus"), [Quintus](/prefixes/item-prefixes#Quintus "Quintus"), [Pontius](/prefixes/item-prefixes#Pontius "Pontius")
+[Manius](/items/prefix/manius "manius"), [Gaius](/items/prefix/gaius "gaius"), [Belisarius](/items/prefix/belisarius "belisarius"), [Antonius](/items/prefix/antonius "antonius"), [Titus](/items/prefix/titus "titus"), [Quintus](/items/prefix/quintus "quintus"), [Pontius](/items/prefix/pontius "pontius")
 
 ---
 

@@ -20,7 +20,7 @@ A common gemstone used in high level prefixes with healing.
 
 ## Smelts in Large Quantities From
 
-[Aurelius](/prefixes/item-prefixes#Aurelius "Aurelius"), [Mandalus](/prefixes/item-prefixes#Mandalus "Mandalus"), [Silvanus](/prefixes/item-prefixes#Silvanus "Silvanus"), [Spurius](/prefixes/item-prefixes#Spurius "Spurius"), [Vergilius](/prefixes/item-prefixes#Vergilius "Vergilius")
+[Aurelius](/items/prefix/aurelius "aurelius"), [Mandalus](/items/prefix/mandalus "mandalus"), [Silvanus](/items/prefix/silvanus "silvanus"), [Spurius](/items/prefix/spurius "spurius"), [Vergilius](/items/prefix/vergilius "vergilius")
 
 ---
 

@@ -166,8 +166,6 @@ sidebar_class_name: hidden
 
 - Played a little bit with the prefix tables too (0.5 hours)
 
-- Finalized the Dungeon spreadsheet. Couldn't fit it into the dungeon page body as i wanted to instead, uploaded to spreadsheets folder and gave link (0.5 hours)
-
 ### 18.05.2018
 
 - Worked on the Guild page the whole day and it's almost done!!! (8 hours)
@@ -789,8 +787,6 @@ This makes my Germania Dungeons all ready and I will be waiting for level 112 to
 - Created the The Cave of Dark intrigue dungeon page
 
 - Created the the Hidden Grave dungeon page
-
-- Linked up all my research Excel spreadsheets to the site so they are accessible from anyone on this link - click [here](spreadsheets "Spreadsheets").
 
 ### 19.06.2016
 

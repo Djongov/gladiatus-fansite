@@ -20,7 +20,7 @@ A rare material for some mid-high level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of the Plague](/suffixes/item-suffixes#of_the_Plague "of the Plague")
+[of the Plague](/items/suffix/of-the-plague "of the plague")
 
 ---
 

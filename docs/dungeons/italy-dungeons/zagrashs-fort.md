@@ -6,9 +6,6 @@ redirect_from:
   - /zagrash-fort
 ---
 
-Zagrash`s Fort
-==============
-
 Zagrash`s Fort is the last and the highest level Italy dungeon in Gladiatus. Long ago it was the highest level dungeon in the game and the boss here was the end boss of the game. This boss is so hard that coming out of farming Fenrirson in Gioll Passage you probably even not going to halve the health of Zagrash. My suggestion is that you kill everything and when you reach the boss, cancel the dungeon and start over. If you are competitive and want to beat him, look at the guide on how to gear up and prepare for Zagrash - [guide](#)
 
 Entry level: **78**

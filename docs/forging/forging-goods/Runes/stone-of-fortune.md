@@ -19,7 +19,7 @@ A rare rune that is used for low-mid level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Silence](/suffixes/item-suffixes#of_Silence "of Silence"), [of Fragmentation](/suffixes/item-suffixes#of_Fragmentation "of Fragmentation")
+[of Silence](/items/suffix/of-silence "of silence"), [of Fragmentation](/items/suffix/of-fragmentation "of fragmentation")
 
 ---
 

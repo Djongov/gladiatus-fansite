@@ -24,7 +24,7 @@ Olympus (**Red**) - Until 2015 the **Red** item quality only existed in the game
 
 **Workbench (repairing & conditioning)**
 
-Item stats can be upgraded through repairing and conditioning. More about it you can read on the [repair & conditioning page](repair "repair & conditioning page"). Conditioning increases the stats of an item with the exact amount as it is the next quality color. A **Blue** item for example, conditioned will have the stats as if the item was **Purple**
+Item stats can be upgraded through repairing and conditioning. More about it you can read on the [repair & conditioning page](/forging/conditioning-workbench "repair & conditioning page"). Conditioning increases the stats of an item with the exact amount as it is the next quality color. A **Blue** item for example, conditioned will have the stats as if the item was **Purple**
 
 **Green** + conditioning = **Blue** value = 115%   
 **Blue** + conditioning = **Purple** value = 130%   

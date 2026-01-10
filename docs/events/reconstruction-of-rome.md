@@ -5,22 +5,25 @@ redirects:
   - /reconstruction-of-rome
 ---
 
-Reconstruction of Rome
-======================
+# Reconstruction of Rome
 
 ![Reconstruction of Rome](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/Reconstruction_of_Rome_banner.jpg "Reconstruction of Rome")
 
 Event takes place when a group of servers merge and the event kicks in right after the merge
 
-Last one:
+## Dates
 
-05.04-13.04 2018
+- 05.04.2018 - 13.04.2018 (Last occurrence)
 
 ![Reconstruction of Rome](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/Reconstruction_of_Rome.png "Reconstruction of Rome")
+
+## Description
 
 **Help with the reconstruction!**
 
 United anything is possible! Find Wood, Stone or Silk and you get bonus as a group, if you are faster than the rest
+
+## Event Info
 
 This event is a server-wide donation event with a ranking system. During the event the mobs around the world will start dropping 3 of the building block materials that will help us reconstruct Rome. Players will have 7 days to gather the required number of resources
 
@@ -46,9 +49,11 @@ below that is your donation progress which shows how many of each material you h
 
 ![Wood donation progress](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/resources-wood.png "Wood donation progress")![Stone donation progress](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/resources-stone.png "Stone donation progress")![Cloth donation progress](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/resources-cloth.png "Cloth donation progress")![Total amount of donated material](https://gladiatusfansite.blob.core.windows.net/images/Events/Reconstruction_of_Rome/resources-bundle.png "Total amount of donated material")
 
-Being a server-wide event you compete on how much you donate with other players on the server
+## Rewards
 
-Ranking
+Being a server-wide event you compete on how much you donate with other players on the server.
+
+### Ranking
 
 You can see how other servers in your group who are also trying to rebuild are doing
 

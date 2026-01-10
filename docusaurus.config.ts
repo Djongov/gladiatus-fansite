@@ -1,6 +1,9 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import prefixes from './static/data/items/prefixes.json';
+import suffixes from './static/data/items/suffixes.json';
+
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -25,12 +28,12 @@ const config: Config = {
   organizationName: 'Djongov', // Usually your GitHub org/user name.
   projectName: 'gladiatus-fansite', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   markdown: {
     mermaid: false,
     hooks: {
-      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownLinks: 'throw',
     },
   },
 
@@ -64,6 +67,47 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  plugins: [
+    function itemPagesPlugin() {
+      return {
+        name: 'item-pages-plugin',
+        async contentLoaded({ actions }) {
+          const { addRoute } = actions;
+
+          const prefixes = require('./static/data/items/prefixes.json');
+          const suffixes = require('./static/data/items/suffixes.json');
+
+          const slugify = (value?: string) =>
+            typeof value === 'string'
+              ? value.toLowerCase().replace(/\s+/g, '-')
+              : '';
+
+          for (const item of prefixes) {
+            if (!item.name || item.name.includes('*')) continue;
+            const slug = slugify(item.name);
+            addRoute({
+              path: `/items/prefix/${slug}`,
+              component: '@site/src/templates/itemPage.tsx',
+              exact: true,
+              // Don't pass context or modules - instead we'll pass data via props
+            });
+          }
+
+          for (const item of suffixes) {
+            if (!item.name || item.name.includes('*')) continue;
+            const slug = slugify(item.name);
+            addRoute({
+              path: `/items/suffix/${slug}`,
+              component: '@site/src/templates/itemPage.tsx',
+              exact: true,
+              // Don't pass context or modules - instead we'll pass data via props
+            });
+          }
+        },
+      };
+    },
   ],
 
   themeConfig: {

@@ -20,7 +20,7 @@ A somewhat rare ore that is used in defensive mid-level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Prevention](/suffixes/item-suffixes#of_Prevention "of Prevention"), [of the Flesh Wound](/suffixes/item-suffixes#of_the_Flesh_Wound "of the Flesh Wound"), [of Parade](/suffixes/item-suffixes#of_Parade "of Parade"), [of Total Defence](/suffixes/item-suffixes#of_Total_Defence "of Total Defence"), [of Blocking](/suffixes/item-suffixes#of_Blocking "of Blocking")
+[of Prevention](/items/suffix/of-prevention "of prevention"), [of the Flesh Wound](/items/suffix/of-the-flesh-wound "of the flesh wound"), [of Total Defence](/items/suffix/of-total-defence "of total defence"), [of Blocking](/items/suffix/of-blocking "of blocking")
 
 ---
 

@@ -20,7 +20,7 @@ Used in a lot of mid-high level prefixes in fairly low quantities so could be ha
 
 ## Smelts in Large Quantities From
 
-[Chucks](/prefixes/item-prefixes#Chucks "Chucks"), [Barbekuus](/prefixes/item-prefixes#Barbekuus "Barbekuus"), [Leandronimus](/prefixes/item-prefixes#Leandronimus "Leandronimus")
+[Chucks](/items/prefix/chucks "chucks"), [Barbekuus](/items/prefix/barbekuus "barbekuus"), [Leandronimus](/items/prefix/leandronimus "leandronimus")
 
 ---
 

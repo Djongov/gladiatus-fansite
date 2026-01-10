@@ -1,23 +1,9 @@
 ---
-title: Scrolls
-slug: /items/scrolls
+title: Event Items
+slug: /items/event-items
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
-
-## Scrolls
----------------------------
-
-Scrolls are the recipes of item prefixes and suffixes and can be learned so you can forge items with them. There are a number of different scroll colors and variations but they are not tight or connected to the prefixes/suffixes they represent and are completely random. For more info on what the actual scrolls can be, go to Item Prefixes and Item Suffixes pages. These below are just the variations of scrolls you can find out there.
-
-Scrolls can drop from Smelting (read more about it on the page) or from drops around the world. Certain Micro Events can boost the drop % chance for short period of time.
-
-If you want to go to Scrolls for more explanation click [here](scrolls-recipes "Scrolls").
-
-If you want to go to Prefixes and Suffixes, use the top menu.
-
-    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Bejav2_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Bejav_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Blue_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Blue_White_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Dark_Red_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Green_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Orange_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Pink_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Purple_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Red_Orange_Scroll.png "Scroll")    ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Violet_Scroll.png "Scroll")   ![Scroll](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Scrolls/Yellow_Scroll.png "Scroll")   <a id="Event"></a>Event Items
------------------------------
+## Event Items
 
 Event items are special types of items that are only available during an event in the game
 
@@ -27,7 +13,7 @@ Event items are special types of items that are only available during an event i
 
 ![Mini-pumpkin description](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Mini-pumpkin_stats.png "Mini-pumpkin description")
 
-Associated with the [Desert Nightmare](/events/desert-nightmare "Desert Nightmare") event. Drag it onto your character picture to activate one of the [Mercurius' Leather Armour](/events/event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
+Associated with the [Desert Nightmare](/events/desert-nightmare "Desert Nightmare") event. Drag it onto your character picture to activate one of the [Mercurius' Leather Armour](/costumes/event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
 
     **Snowball**
 
@@ -35,7 +21,7 @@ Associated with the [Desert Nightmare](/events/desert-nightmare "Desert Nightmar
 
 insert description
 
-Associated with the [Ice Tundra](/events/ice-tundra "Ice Tundra") event. Drag it onto your character picture to activate one of the [Saturn's Winter Garment](/events/event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
+Associated with the [Ice Tundra](/events/ice-tundra "Ice Tundra") event. Drag it onto your character picture to activate one of the [Saturn's Winter Garment](/costumes/event-costumes "Mercurius' Leather Armour") costume properties (if you have collected any)
 
     **Sun Rune**
 
@@ -43,7 +29,7 @@ Associated with the [Ice Tundra](/events/ice-tundra "Ice Tundra") event. Drag it
 
 ![Sun Rune description](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Sun_Rune_stats.png "Sun Rune description")
 
-Associated with the [On the Nile bank](/events/on-the-nile-bank "On the Nile bank") event. Drag it onto your character picture to activate one of the [Ra's Light Robe's](/events/event-costumes "Ra's Light Robe's") costume properties (if you have collected any)
+Associated with the [On the Nile bank](/events/on-the-nile-bank "On the Nile bank") event. Drag it onto your character picture to activate one of the [Ra's Light Robe's](/costumes/event-costumes "Ra's Light Robe's") costume properties (if you have collected any)
 
     **Easter event items**
 
@@ -53,7 +39,7 @@ Associated with the [On the Nile bank](/events/on-the-nile-bank "On the Nile ban
 
 ![Golden Bunny description](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny_stats.png "Golden Bunny description")
 
-Associated with the [Wild Farm](/events/wild-farm "Wild Farm") event. Drag it onto your character picture to activate one of the [Bubona's Bull Armour](/events/event-costumes "Bubona's Bull Armour") costume properties (if you have collected any)
+Associated with the [Wild Farm](/events/wild-farm "Wild Farm") event. Drag it onto your character picture to activate one of the [Bubona's Bull Armour](/costumes/event-costumes "Bubona's Bull Armour") costume properties (if you have collected any)
 
     **Easter eggs**
 

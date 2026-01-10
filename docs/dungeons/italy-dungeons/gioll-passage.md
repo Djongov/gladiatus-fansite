@@ -26,7 +26,7 @@ Advanced Dungeon: **This is the Advanced Dungeon of** [The Cave of Dark intrigue
 
 Previous Dungeon: [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner") (Level 70)
 
-Next Dungeon: [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort") (Level 78)
+Next Dungeon: [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort") (Level 78)
 
 **Description**
 

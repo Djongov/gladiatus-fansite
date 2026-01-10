@@ -19,7 +19,7 @@ Used in mid-level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Kosmonas](/prefixes/item-prefixes#Kosmonas "Kosmonas"), [Mimas](prefixes#Mimas "Mimas"), [Frabos](/prefixes/item-prefixes#Frabos "Frabos"), [Zeindras](/prefixes/item-prefixes#Zeindras "Zeindras"), [Umilawens](/prefixes/item-prefixes#Umilawens "Umilawens")
+[Kosmonas](/items/prefix/kosmonas "kosmonas"), [Mimas](/items/prefix/mimas "Mimas"), [Frabos](/items/prefix/frabos "frabos"), [Zeindras](/items/prefix/zeindras "zeindras"), [Umilawens](/items/prefix/umilawens "umilawens")
 
 ---
 

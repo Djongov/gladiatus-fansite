@@ -22,7 +22,7 @@ A common material used in various low level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Honour](/suffixes/item-suffixes#of_Honour "of Honour"), [of Brightness](/suffixes/item-suffixes#of_Brightness "of Brightness"), [of Capriciousness](/suffixes/item-suffixes#of_Capriciousness "of Capriciousness"), [of Melting](/suffixes/item-suffixes#of_Melting "of Melting"), [of Magnitude](/suffixes/item-suffixes#of_Magnitude "of Magnitude"), [of Fairness](/suffixes/item-suffixes#of_Fairness "of Fairness"), [of Chakra](/suffixes/item-suffixes#of_Chakra "of Chakra")
+[of Honour](/items/suffix/of-honour "of honour"), [of Brightness](/items/suffix/of-brightness "of brightness"), [of Capriciousness](/items/suffix/of-capriciousness "of capriciousness"), [of Melting](/items/suffix/of-melting "of melting"), [of Magnitude](/items/suffix/of-magnitude "of magnitude"), [of Fairness](/items/suffix/of-fairness "of fairness"), [of Chakra](/items/suffix/of-chakra "of chakra")
 
 ---
 

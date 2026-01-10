@@ -20,7 +20,7 @@ Used in mid level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Malice](/suffixes/item-suffixes#of_Malice "of Malice"), [of Antiquity](/suffixes/item-suffixes#of_Antiquity "of Antiquity")
+[of Malice](/items/suffix/of-malice "of malice"), [of Antiquity](/items/suffix/of-antiquity "of antiquity")
 
 ---
 

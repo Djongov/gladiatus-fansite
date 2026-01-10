@@ -20,7 +20,7 @@ A rare ore that is used in some mid-high level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Constantius](/prefixes/item-prefixes#Constantius "Constantius"), [Dairus](/prefixes/item-prefixes#Dairus "Dairus"), [Giganticus](/prefixes/item-prefixes#Giganticus "Giganticus")
+[Constantius](/items/prefix/constantius "constantius"), [Dairus](/items/prefix/dairus "dairus"), [Giganticus](/items/prefix/giganticus "giganticus")
 
 ---
 

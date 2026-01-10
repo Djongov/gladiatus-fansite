@@ -19,7 +19,7 @@ Used in low-mid level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Asendacs](/prefixes/item-prefixes#Asendacs "Asendacs"), [Cisiens](/prefixes/item-prefixes#Cisiens "Cisiens"), [Grasscrawlers](/prefixes/item-prefixes#Grasscrawlers "Grasscrawlers"), [Tanias](/prefixes/item-prefixes#Tanias "Tanias"), [Tinothiels](/prefixes/item-prefixes#Tinothiels "Tinothiels")
+[Asendacs](/items/prefix/asendacs "asendacs"), [Cisiens](/items/prefix/cisiens "cisiens"), [Grasscrawlers](/items/prefix/grasscrawlers "grasscrawlers"), [Tanias](/items/prefix/tanias "tanias"), [Tinothiels](/items/prefix/tinothiels "tinothiels")
 
 ---
 

@@ -20,7 +20,7 @@ A common gemstone used in mid-high level prefixes with healing.
 
 ## Smelts in Large Quantities From
 
-[Marcus](/prefixes/item-prefixes#Marcus "Marcus"), [Shivas](/prefixes/item-prefixes#Shivas "Shivas"), [Liloels](/prefixes/item-prefixes#Liloels "Liloels"), [Stoybaers](/prefixes/item-prefixes#Stoybaers "Stoybaers")
+[Marcus](/items/prefix/marcus "marcus"), [Shivas](/items/prefix/shivas "shivas"), [Liloels](/items/prefix/liloels "liloels"), [Stoybaers](/items/prefix/stoybaers "stoybaers")
 
 ---
 

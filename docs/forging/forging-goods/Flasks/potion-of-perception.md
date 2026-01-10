@@ -20,7 +20,7 @@ An important material used in various mid-high level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Zimbris](/prefixes/item-prefixes#Zimbris "Zimbris"), [Thorstens](/prefixes/item-prefixes#Thorstens "Thorstens"), [Cheggovs](/prefixes/item-prefixes#Cheggovs "Cheggovs")
+[Zimbris](/items/prefix/zimbris "zimbris"), [Thorstens](/items/prefix/thorstens "thorstens"), [Cheggovs](/items/prefix/cheggovs "cheggovs")
 
 ---
 

@@ -20,7 +20,7 @@ A rare material used in few mid-level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Medonis](/prefixes/item-prefixes#Medonis "Medonis"), [Fitschis](/prefixes/item-prefixes#Fitschis "Fitschis"), [Heuhois](/prefixes/item-prefixes#Heuhois "Heuhois")
+[Medonis](/items/prefix/medonis "medonis"), [Fitschis](/items/prefix/fitschis "fitschis"), [Heuhois](/items/prefix/heuhois "heuhois")
 
 ---
 

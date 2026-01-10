@@ -20,7 +20,7 @@ A common ore used in some high level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Retribution](/suffixes/item-suffixes#of_Retribution "of Retribution"), [of the Dragon](/suffixes/item-suffixes#of_the_Dragon "of the Dragon"), [of Hope](/suffixes/item-suffixes#of_Hope "of Hope"), [of the Curse](/suffixes/item-suffixes#of_the_Curse "of the Curse")
+[of Retribution](/items/suffix/of-retribution "of retribution"), [of the Dragon](/items/suffix/of-the-dragon "of the dragon"), [of Hope](/items/suffix/of-hope "of hope"), [of the Curse](/items/suffix/of-the-curse "of the curse")
 
 ---
 

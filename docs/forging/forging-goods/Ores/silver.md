@@ -20,7 +20,7 @@ A rare ore that is precious as it's hard to find but part in small quantities in
 
 ## Smelts in Large Quantities From
 
-[of Perdition](/suffixes/item-suffixes#of_Perdition "of Perdition"), [of Evasion](/suffixes/item-suffixes#of_Evasion "of Evasion"), [of the Parade](/suffixes/item-suffixes#of_the_Parade "of the Parade"), [of Suffering](/suffixes/item-suffixes#of_Suffering "of Suffering"), [of Delicacy](/suffixes/item-suffixes#of_Delicacy "of Delicacy")
+[of Perdition](/items/suffix/of-perdition "of perdition"), [of Evasion](/items/suffix/of-evasion "of evasion"), [of the Parade](/items/suffix/of-the-parade "of the parade"), [of Suffering](/items/suffix/of-suffering "of suffering"), [of Delicacy](/items/suffix/of-delicacy "of delicacy")
 
 ---
 

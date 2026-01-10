@@ -17,7 +17,7 @@ Low chance to drop from every mob and higher chance to drop in Underworld.
 
 ## Smelts in Large Quantities From
 
-[of the Chasm](/suffixes/item-suffixes#of_the_Chasm "of the Chasm"), [of the Spirit](/suffixes/item-suffixes#of_the_Spirit "of the Spirit")
+[of the Chasm](/items/suffix/of-the-chasm "of the chasm"), [of the Spirit](/items/suffix/of-the-spirit "of the spirit")
 
 ---
 

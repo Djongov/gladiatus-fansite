@@ -20,7 +20,7 @@ A common material in mid-level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Concentration](/suffixes/item-suffixes#of_Concentration "of Concentration"), [of Life](/suffixes/item-suffixes#of_Life "of Life"), [of Baptism](/suffixes/item-suffixes#of_Baptism "of Baptism"), [of Cleverness](/suffixes/item-suffixes#of_Cleverness "of Cleverness"), [of Peace](/suffixes/item-suffixes#of_Peace "of Peace")
+[of Concentration](/items/suffix/of-concentration "of concentration"), [of Life](/items/suffix/of-life "of life"), [of Baptism](/items/suffix/of-baptism "of baptism"), [of Cleverness](/items/suffix/of-cleverness "of cleverness"), [of Peace](/items/suffix/of-peace "of peace")
 
 ---
 

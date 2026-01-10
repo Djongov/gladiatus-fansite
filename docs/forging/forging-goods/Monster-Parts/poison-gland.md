@@ -20,7 +20,7 @@ Used in very important suffixes. Hard to get and really valuable and rare materi
 
 ## Smelts in Large Quantities From
 
-[of Elimination](/suffixes/item-suffixes#of_Elimination "of Elimination"), [of Aggression](/suffixes/item-suffixes#of_Aggression "of Aggression"), [of Death](/suffixes/item-suffixes#of_Death "of Death"), [of the Critical Strike](/suffixes/item-suffixes#of_the_Critical_Strike "of the Critical Strike"), [of Mars](/suffixes/item-suffixes#of_Mars "of Mars")
+[of Elimination](/items/suffix/of-elimination "of elimination"), [of Aggression](/items/suffix/of-aggression "of aggression"), [of Death](/items/suffix/of-death "of death"), [of the Critical Strike](/items/suffix/of-the-critical-strike "of the critical strike"), [of Mars](/items/suffix/of-mars "of mars")
 
 ---
 

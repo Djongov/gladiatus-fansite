@@ -20,7 +20,7 @@ Used in low level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Martial Arts](/suffixes/item-suffixes#of_Martial_Arts "of Martial Arts"), [of Collapse](/suffixes/item-suffixes#of_Collapse "of Collapse"), [of Demolition](/suffixes/item-suffixes#of_Demolition "of Demolition"), [of Meat](/suffixes/item-suffixes#of_Meat "of Meat"), [of Distraction](/suffixes/item-suffixes#of_Distraction "of Distraction"), [of Decapitation](/suffixes/item-suffixes#of_Decapitation "of Decapitation")
+[of Martial Arts](/items/suffix/of-martial-arts "of martial arts"), [of Demolition](/items/suffix/of-demolition "of demolition"), [of Meat](/items/suffix/of-meat "of meat"), [of Distraction](/items/suffix/of-distraction "of distraction"), [of Decapitation](/items/suffix/of-decapitation "of decapitation")
 
 ---
 

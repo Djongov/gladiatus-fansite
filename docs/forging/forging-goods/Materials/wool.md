@@ -19,7 +19,7 @@ Usually required to craft low level prefixes in the range 16-31 level.
 
 ## Smelts in Large Quantities From
 
-[Elrarangs](/prefixes/item-prefixes#Elrarangs "Elrarangs"), [Doitrems](/prefixes/item-prefixes#Doitrems "Doitrems"), [Kerrannas](/prefixes/item-prefixes#Kerrannas "Kerrannas"), [Skiterus](/prefixes/item-prefixes#Skiterus "Skiterus"), [Lurtscharas](/prefixes/item-prefixes#Lurtscharas "Lurtscharas")
+[Elrarangs](/items/prefix/elrarangs "elrarangs"), [Doitrems](/items/prefix/doitrems "doitrems"), [Kerrannas](/items/prefix/kerrannas "kerrannas"), [Skiterus](/items/prefix/skiterus "skiterus"), [Lurtscharas](/items/prefix/lurtscharas "lurtscharas")
 
 ---
 

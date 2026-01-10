@@ -19,7 +19,7 @@ Primarily used in mid-level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Pressure](/suffixes/item-suffixes#of_Pressure "of Pressure"), [of Freedom](/suffixes/item-suffixes#of_Freedom "of Freedom"), [of Heaven](/suffixes/item-suffixes#of_Heaven "of Heaven")
+[of Pressure](/items/suffix/of-pressure "of pressure"), [of Freedom](/items/suffix/of-freedom "of freedom"), [of Heaven](/items/suffix/of-heaven "of heaven")
 
 ---
 

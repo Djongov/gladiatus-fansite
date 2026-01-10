@@ -20,7 +20,7 @@ Used in low-mid level suffixes.
 
 ## Smelts in Large Quantities From
 
-[of Ignorance](/suffixes/item-suffixes#of_Ignorance "of Ignorance"), [of Homunculus](/suffixes/item-suffixes#of_Homunculus "of Homunculus"), [of Self-Discipline](/suffixes/item-suffixes#of_Self-Discipline "of Self-Discipline"), [of Protection](/suffixes/item-suffixes#of_Protection "of Protection"), [of the Moment](/suffixes/item-suffixes#of_the_Moment "of the Moment"), [of Retreat](/suffixes/item-suffixes#of_Retreat "of Retreat"), [of Security](/suffixes/item-suffixes#of_Security "of Security"), [of the Cursed](/suffixes/item-suffixes#of_the_Cursed "of the Cursed")
+[of Ignorance](/items/suffix/of-ignorance "of ignorance"), [of Homunculus](/items/suffix/of-homunculus "of homunculus"), [of Self-Discipline](/items/suffix/of-self-discipline "of self-discipline"), [of Protection](/items/suffix/of-protection "of protection"), [of the Moment](/items/suffix/of-the-moment "of the moment"), [of Retreat](/items/suffix/of-retreat "of retreat"), [of Security](/items/suffix/of-security "of security"), [of the Cursed](/items/suffix/of-the-cursed "of the cursed")
 
 ---
 

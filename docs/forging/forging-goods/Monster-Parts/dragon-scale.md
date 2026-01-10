@@ -19,7 +19,7 @@ Used in high level prefixes.
 
 ## Smelts in Large Quantities From
 
-[Dairus](/prefixes/item-prefixes#Dairus "Dairus"), [Amulius](/prefixes/item-prefixes#Amulius "Amulius"), [Avalonius](/prefixes/item-prefixes#Avalonius "Avalonius"), [Lepidus](/prefixes/item-prefixes#Lepidus "Lepidus"), [Sextus](/prefixes/item-prefixes#Sextus "Sextus"), [Titanius](/prefixes/item-prefixes#Titanius "Titanius")
+[Dairus](/items/prefix/dairus "dairus"), [Amulius](/items/prefix/amulius "amulius"), [Avalonius](/items/prefix/avalonius "avalonius"), [Lepidus](/items/prefix/lepidus "lepidus"), [Sextus](/items/prefix/sextus "sextus"), [Titanius](/items/prefix/titanius "titanius")
 
 ---
 

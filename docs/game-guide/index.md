@@ -14,7 +14,7 @@ This Gladiatus Game/Beginner's guide 2018 will be targeting the newer audience b
 
 The first thing you need to do to start playing Gladiatus is to create a character on a server. Gladiatus has dedicated servers in 30 different countries:
 
-[lobby.gladiatus.gameforge.com](lobby.gladiatus.gameforge.com)
+[lobby.gladiatus.gameforge.com](https://lobby.gladiatus.gameforge.com)
 Once you choose your country this is where you can register for an account:
 
 ![Register an account](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/register.png "Register an account")
@@ -125,7 +125,7 @@ But how do you befriend someone? It's not from the Familia tab. It's from the ch
 
 The Pantheon is a fundamental system in Gladiatus consisting of 4 submenus: Quests, Missions, Gods, and Treasury. These systems allow you to earn rewards, gain god favors, and access premium items.
 
-**[Read the complete Pantheon Guide →](pantheon)**
+**[Read the complete Pantheon Guide →](/game-guide/pantheon)**
 
 ---
 
@@ -239,7 +239,7 @@ And the rewards where you can spend your earned ![Recruiting points](https://gla
 
 The Premium system includes Rubies (premium currency), Centurion subscription, and Pacts. These features provide powerful bonuses and convenience options for players who want to enhance their gameplay experience.
 
-**[Read the complete Premium Guide →](premium)**
+**[Read the complete Premium Guide →](/game-guide/premium)**
 
 ---
 
@@ -272,9 +272,9 @@ This is how you can equip an item:
 
 ![Equip an item](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Equping_item.gif "Equip an item")
 
-Now a little bit about Items in general. More and extensive info on the [Items](items-general "Items") page but we will cover basics here. Items can occupy from 1 to 6 slots in your inventory so you need to manage it correctly and efficiently to hold as much item as possible.
+Now a little bit about Items in general. More and extensive info on the [Items](/items "Items") page but we will cover basics here. Items can occupy from 1 to 6 slots in your inventory so you need to manage it correctly and efficiently to hold as much item as possible.
 
-An item is formed by a base item + Prefix word + Suffix word. The item level of an item is also formed from the level of the base item + the level of the Prefix + the level of the Suffix. More about [Prefixes](Prefixes "Prefixes") and [Suffixes](Suffixes "Suffixes").
+An item is formed by a base item + Prefix word + Suffix word. The item level of an item is also formed from the level of the base item + the level of the Prefix + the level of the Suffix. More about [Prefixes](/items/prefixes "Prefixes") and [Suffixes](/items/suffixes "Suffixes").
 
 ### Item Drops
 
@@ -300,7 +300,7 @@ How rare is each quality?
 
 **Orange** very rarely in the mid levels 30-40+ and considerably but more often but still very rarely after 102 level
 
-**Red** is so rare that you wouldn't expect one to drop for months or sometimes a year. Best way to obtain such an item is [Forging](/forging/forging-general "Forging")
+**Red** is so rare that you wouldn't expect one to drop for months or sometimes a year. Best way to obtain such an item is [Forging](/forging/general "Forging")
 
 **Primary and Secondary drops**
 
@@ -319,6 +319,31 @@ Secondary drops even work when you lose the battle!
 ![Soul bound](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/soulbound_1.png "Soul bound")
 
 ![Soul bound](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/soulbound_warning.png "Soul bound")
+
+### Scrolls and Recipies
+
+Forging recipes are learned through scrolls. Scrolls can drop from mobs in expeditions and dungeons or through Smelting. There are different color variations of the scrolls but they seem really random and not important or tied in any way to the actual recipe. You can see all type of scrolls and how they look here - [Scrolls](/items#Scrolls "Scrolls").
+
+Here is an example how Lucius Scroll drops from Dragon, the boss in [Koman Mountain](/expeditions/germania-expeditions/koman-mountain "Koman Mountain").
+
+![Lucius scroll drop](https://gladiatusfansite.blob.core.windows.net/images/Forging/Lucius_scroll_drop.png "Lucius scroll drop")
+
+Here is an example how a scroll with a prefix or suffix can drop from [Smelting](/forging/smelting "Smelting") too. However the drop chance is low - about 5%.
+
+![Scroll from Smelting](https://gladiatusfansite.blob.core.windows.net/images/Forging/Smelting/smelt_scroll.png "Scroll from Smelting")
+
+Scrolls however, on their own, are nothing special. They are just recipes of Prefixes/Suffixes that you can learn by dragging them onto your character profile picture. Once learned they will be available in the Forge and you can start making items with that Prefix/Suffix. If you want to know more about what Prefixes and Suffixes or Items in general are out there go to the [Items](/items "Items") page.
+
+Here are some facts about Scrolls:
+
+1. Scrolls drop from mobs around the world
+2. Scrolls can be produced by Smelting an item. At low (~5%) chance every smelt can produce a scroll with the prefix or suffix of the smelted item
+3. Scrolls are not soul bound and can be sold in the Market
+4. Scrolls have item levels. A lot of things are dependent on the item level. For example a scroll of 94 item level cannot drop for you before your character is 94 level
+5. One Prefix/Suffix can be learned only once. If a Scroll drops for a second time and you already have this prefix or suffix, you won't be able to learn the scroll again
+6. Scrolls sell for a lot of ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") in the vendors. If you don't immediately need need it or if you already have it, you can sell it for gold in the vendor or use it for gold saving from attacks maneuver (sell it, train a skill point, when you gather the money to buy the scroll, simply buy it so you don't hold a lot of gold with you)
+7. Also how much ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") a Scroll is worth is random between a range. For example, Lucius Scroll can sometimes be 250.625 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") but for someone else it can drop and sell for 222.216 ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold"). It's random amount in a fixed range.
+8. Every prefix/suffix adds levels to the item when applied. This is the Scroll item level -10. Example: of Fatuity suffix Scroll is 46 item level. This means that the suffix will add 36 item levels to the item to which is applied. More info on the [Items](/items "Items") page.
 
 **Wearing Item levels and visibility**
 
@@ -720,7 +745,7 @@ Your current honour isn`t enough for you? You want to be praised in other countr
  
 To be able to enter the underworld you will first have to prove yourself in this world. (If you are below Level 100) - Come back to me once you have reached level 100.
 
-- **Changing your character name** (you will need a token, look at [Treasury](#Treasury "Treasury"))
+- **Changing your character name** (you will need a token, look at [Treasury](/game-guide/pantheon/treasury "Treasury"))
  
 Hihi. You want to make history with a more powerful name?
 
@@ -730,7 +755,7 @@ Your documents are changed against a small charge. Thereby you loose some of you
 **Bribe arena manager** (Costs: 1 ![](https://s30-en.gladiatus.gameforge.com/game/9194/img/premium/token_small/13.png))   
 Your documents are being faked.
 
-- **Changing your character gender** (you will need a token, look at [Treasury](#Treasury "Treasury"))
+- **Changing your character gender** (you will need a token, look at [Treasury](/game-guide/pantheon/treasury "Treasury"))
  
 You`re unhappy and don`t feel comfortable in your own skin? How about transforming your soul into another body?
 
@@ -766,7 +791,7 @@ This is how a completely learned opponent will look like
 
 However, this info is not very specific and will not give you exact details of the stats of the opponent. You can see this on the [Expeditions](/expeditions "Expeditions") page where I have a lot more info on expeditions in general.
 
-Have in mind that [Event](#Events "Event") expeditions and [Underworld](#Underworld "Underworld") are also types of expeditions and the same rules apply there. More info on their respective sections and pages.
+Have in mind that [Event](/events "Event") expeditions and [Underworld](/underworld "Underworld") are also types of expeditions and the same rules apply there. More info on their respective sections and pages.
 
 There is a chance to learn each of these bonuses on each attack you make against this opponent. The % chance to learn them depends on your Character's Intelligence stat. The more you have it the higher the chance to learn a bonus. If you don't want to wait you can immediately learn the bonus but it will cost you ![Ruby](https://gladiatusfansite.blob.core.windows.net/images/icon_rubies.gif "Ruby"). How much depends on what's your % chance to learn it from fighting. The higher the chance, the lower the price. This can be done by clicking on the bonus itself. If you only hover the bonus it will show you the bonus description and what is the % chance to learn it
 
@@ -818,7 +843,7 @@ So once you level up to 10, you will notice that there is a second character you
 
 ![Dungeon characters view](https://gladiatusfansite.blob.core.windows.net/images/Startup_guide/Dungeons/Dungeon_chars_view.png "Dungeon characters view")
 
-We said that going into a Dungeon or a Circus Turma fight, the group will be of 5 characters. This is your dungeon character + 4 Mercenary that you can equip. Everything you need to know about the Mercenary types you can read on the [Mercenary](Mercenary "Mercenary") page. Mercenary can be purchased from the Mercenary vendor or the Auction House. They don't drop from expeditions or dungeons.
+We said that going into a Dungeon or a Circus Turma fight, the group will be of 5 characters. This is your dungeon character + 4 Mercenary that you can equip. Everything you need to know about the Mercenary types you can read on the [Mercenary](/game-guide/mercenary "Mercenary") page. Mercenary can be purchased from the Mercenary vendor or the Auction House. They don't drop from expeditions or dungeons.
 
 This is where you can drag your Mercenary to activate them
 

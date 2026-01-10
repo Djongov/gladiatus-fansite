@@ -17,7 +17,7 @@ Low chance to drop from every mob and higher chance to drop in Underworld.
 
 ## Smelts in Large Quantities From
 
-[Angelus](/prefixes/item-prefixes#Angelus "Angelus"), [Magnus](/prefixes/item-prefixes#Magnus "Magnus"), [Gratias](/prefixes/item-prefixes#Gratias "Gratias")
+[Gratias](/items/prefix/gratias "gratias")
 
 ---
 

@@ -27,7 +27,7 @@ Parent Expedition: [Death Hill](/expeditions/germania-expeditions/death-hill "De
 
 Advanced Dungeon: **No**
 
-Previous Dungeon: [Zagrash's Fort](/zagrashs-fort "Zagrash's Fort") (Level 78, Italy)
+Previous Dungeon: [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort") (Level 78, Italy)
 
 Same Level Dungeon: [Fairground](/dungeons/africa-dungeons/fairground "Fairground") (Level 80, Africa)
 

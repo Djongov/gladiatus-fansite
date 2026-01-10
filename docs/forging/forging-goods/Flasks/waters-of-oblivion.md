@@ -17,7 +17,7 @@ Low drop chance from all monsters. Could be found more often in Underworld.
 
 ## Smelts in Large Quantities From
 
-[of Hellfire](/suffixes/item-suffixes#of_Hellfire "of Hellfire"), [of the Inferno](/suffixes/item-suffixes#of_the_Inferno "of the Inferno"), [of the Druid](/suffixes/item-suffixes#of_the_Druid "of the Druid"), [of Disease](/suffixes/item-suffixes#of_Disease "of Disease")
+[of Hellfire](/items/suffix/of-hellfire "of hellfire"), [of the Inferno](/items/suffix/of-the-inferno "of the inferno"), [of the Druid](/items/suffix/of-the-druid "of the druid")
 
 ---
 
