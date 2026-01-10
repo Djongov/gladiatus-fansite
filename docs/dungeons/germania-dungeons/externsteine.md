@@ -2,12 +2,15 @@
 title: Externsteine
 slug: /dungeons/germania-dungeons/externsteine
 sidebar_position: 5
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons, Externsteine]
+tags:
+  - dungeons
+  - germania dungeons
+description: Externsteine is the most important dungeon in the game. It is fast and the treasures are priceless. It is a Dungeon where an Orange item has a better chance to drop. Not only from the boss but from the normal enemies as well. It is also probably the longest dungeon to run in the game because it spans 10 levels until the next dungeon and these are levels from 102-112 which would take a while (could be up to a year) to level up so in the meantime you are stuck in here but it's going to be the ride of your life. Very special ability of Wrath of the Mountain - the boss, 100% chance to avoid critical hits. So, essentially you can't crit the boss so you have to defeat him through sheer high Damage and Double hits.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Externsteine/Externsteine.png
 redirects:
   - /externsteine
 ---
-
-Externsteine
-============
 
 Externsteine is the most important dungeon in the game. It is fast and the treasures are priceless. It is a Dungeon where an **Orange** item has a better chance to drop. Not only from the boss but from the normal enemies as well. It is also probably the longest dungeon to run in the game because it spans 10 levels until the next dungeon and these are levels from 102-112 which would take a while (could be up to a year) to level up so in the meantime you are stuck in here but it's going to be the ride of your life. Very special ability of Wrath of the Mountain - the boss, 100% chance to avoid critical hits. So, essentially you can't crit the boss so you have to defeat him through sheer high Damage and Double hits.
 
@@ -19,9 +22,9 @@ Level on which you can complete: ****102. You have enough time to gear up and pr
 
 Enemy and boss levels: **111-113**  
   
-Minions item level drop: **107-117 `✓` Verified  
+Minions item level drop: **107-117** `✓` Verified  
   
-Boss item level drop: **109-123 `✓` Verified
+Boss item level drop: **109-123** `✓` Verified
 
 Parent Expedition: [The green forest](/expeditions/germania-expeditions/the-green-forest "The green forest")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-las
 
 Next Dungeon: [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge") (Level 112)
 
-**Description**
+## Description
 
 A mystical place that is filled with magic energy. An old rock formation, that is older than the Roman Empire itself. The Germanic tribes have gathered here to sacrifice a virgin, so that the leader of this place can summon all his power against the Roman Empire. You`ve arrived just in time, but the harbingers of destruction can already be felt
 

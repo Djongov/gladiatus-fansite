@@ -1,6 +1,11 @@
 ---
 title: Useful Links
 sidebar_label: Useful Links
+keywords: [Gladiatus]
+tags:
+  - News
+description: Welcome to Gladiatus best fansite - Expeditions, Dungeons, Underworld, Guides
+image: https://gladiatusfansite.blob.core.windows.net/images/Gladiatus_hero_of_Rome.jpg
 slug: /useful-links
 ---
 

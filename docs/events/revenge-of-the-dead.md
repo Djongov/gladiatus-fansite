@@ -21,7 +21,7 @@ Dates:
 
 20.08.2018-26.08.2018
 
-**Description**
+## Description
 
 *It all began when they postponed the Lemuria celebrations. This party is held in honour of the spirits that were wronged and suffered violent or early deaths. Now the spirits have left their graves and are getting revenge for the fact that no one is honouring their death and the injustice that was done to them. Now the streets of Rome are filled with terror. An aura of silence has fallen upon the city that is only interrupted by blood-curdling screams and the distressed sounds of combat.*
 

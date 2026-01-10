@@ -2,12 +2,15 @@
 title: Late Revenge
 slug: /dungeons/germania-dungeons/late-revenge
 sidebar_position: 6
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons, Late Revenge]
+tags:
+  - dungeons
+  - germania dungeons
+description: Late Revenge is a dungeon in the last Gladiatus expedition - Dragon Remains. It is the long waited new dungeon after Externsteine. The 10 Levels in Externsteine to reach this dungeon are more than a year worth of regular play. It is also the longest in the game which is not pleasant especially after Externsteine's 6 dungeon points to complete. However, the item level drop is significantly higher. Even to the extent that on Levels 112-115 you might not be able to wear the highest level items the boss can drop.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Late_Revenge/Late_Revenge.png
 redirects:
   - /late-revenge
 ---
-
-Late Revenge
-============
 
 Late Revenge is a dungeon in the last Gladiatus expedition - Dragon Remains. It is the long waited new dungeon after Externsteine. The 10 Levels in Externsteine to reach this dungeon are more than a year worth of regular play. It is also the longest in the game which is not pleasant especially after Externsteine's 6 dungeon points to complete. However, the item level drop is significantly higher. Even to the extent that on Levels 112-115 you might not be able to wear the highest level items the boss can drop.
 
@@ -19,9 +22,9 @@ Level on which you can complete: **112. Boss is hard but you just have too much 
 
 Enemy and boss levels: **121-123**  
   
-Minions item level drop: **117-127 `✓` Verified  
+Minions item level drop: **117-127** `✓` Verified  
   
-Boss item level drop: **120-133 `✓` Verified
+Boss item level drop: **120-133** `✓` Verified
 
 Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions/dragon-remains "Dragon Remains")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Externsteine](/dungeons/germania-dungeons/externsteine "Exter
 
 Next Dungeon: [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega") (120)
 
-**Description**
+## Description
 
 Remains of long dead dragon lying all over this valley. Only the center is an exception, where it is the place for rituals. Long before you see the place you can feel the energy and power. But evil can also be felt, the evil that usurp this power.
 

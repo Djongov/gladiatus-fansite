@@ -1,6 +1,12 @@
 ---
 title: Underworld Hard Difficulty
 slug: /underworld/underworld-hard
+keywords: [underworld, underworld hard, hard, Dis Pater]
+tags:
+  - underworld
+  - underworld hard
+description: Underworld was the long waited new content where people can fight. Underworld is something like expeditions but with different rules. You need to enter the Underworld from the Hermit and you must finish it by defeating the last boss without dying or at least without quitting.
+image: https://gladiatusfansite.blob.core.windows.net/images/Underworld/Dis_Pater_announcement.jpg
 redirects:
   - /underworld-hard
 ---

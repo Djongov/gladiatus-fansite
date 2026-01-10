@@ -1,9 +1,15 @@
 ---
 title: Hidden Grave
 slug: /dungeons/italy-dungeons/hidden-grave
+sidebar_position: 5
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, Hidden Grave]
+tags:
+  - dungeons
+  - italy dungeons
+description: The long waited return to Italy. You feel stronger but are you ready for this dark dungeon? It's one of the most interesting dungeons in the game and one with a formidable boss. However, there is one thing you should know - the dungeon can be very long depending on the Skeleton Wall. Boss drops very good items and the item level drop here should feel like a fresh breath after you've stayed and fought for 10 levels in the Viking Camp. Beware, boss is hard!
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Hidden_Grave/Hidden_Grave.png
 redirects:
   - /hidden-grave
-sidebar_position: 5
 ---
 
 The long waited return to Italy. You feel stronger but are you ready for this dark dungeon? It's one of the most interesting dungeons in the game and one with a formidable boss. However, there is one thing you should know - the dungeon can be very long depending on the Skeleton Wall. Boss drops very good items and the item level drop here should feel like a fresh breath after you've stayed and fought for 10 levels in the Viking Camp. Beware, boss is hard!
@@ -28,7 +34,7 @@ Previous Dungeon: [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking 
 
 Next Dungeon: [In enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In enemy hands") (Level 65)
 
-**Description**
+## Description
 
 The temple's old pomposity helps us to surmise how mighty the constructors of it must have been. The ascent is threateningly calm. From the inside you can hear knocks and aggressive muttering and swearing. Tomb raiders try their luck. Except for the two of them, the hall is empty. Besides the trenched hole a dirty fountain and a beautiful mural painting are the only eye catchers.
 
@@ -36,17 +42,17 @@ The temple's old pomposity helps us to surmise how mighty the constructors of it
 
 ## Quests
 
-**A tomb raider and his henchman are searching for the key to the secret entry into the mysterious inner temple. Defeat both of them and get the key artefact.**
+1. Defeat the tomb raider**
 
-**Defeat the tomb raider**
+2. Defeat his henchman
 
-1. Defeat his henchman
+3. Beat the watchdogs
 
-2. Beat the watchdogs
+4. Analyse the collapsed trap
 
-3. Analyse the collapsed trap
+5. Fight your way through the skeleton warrior
 
-4. Fight your way through the skeleton warrior
+**A tomb raider and his henchman are searching for the key to the secret entry into the mysterious inner temple. Defeat both of them and get the key artefact.
 
 ---
 

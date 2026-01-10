@@ -1,27 +1,30 @@
 ---
 title: The Dragon Stronghold
 slug: /dungeons/italy-dungeons/the-dragon-stronghold
+sidebar_position: 3
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, The Dragon Stronghold]
+tags:
+  - dungeons
+  - italy dungeons
+description: The Dragon Stronghold is the third dungeon in the game. Don't be fooled by the level 10 entry. This dungeon is hard. If you are doing a slower paced game and you don't level too fast, you will be able to fight in here on level 14-15 only if you have 4 mercenaries, all fully equipped with current item level gear. The drops are not much better than the On the Run but still better. The boss is not that much stronger than the rest of the dungeon so assuming you are able to fight through to the boss then you should be able to defeat him as well.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Dragon_Stronghold/The_Dragon_Stronghold.png
 redirects:
   - /the-dragon-stronghold
-sidebar_position: 3
 ---
-
-The Dragon Stronghold
-=====================
 
 The Dragon Stronghold is the third dungeon in the game. Don't be fooled by the level 10 entry. This dungeon is hard. If you are doing a slower paced game and you don't level too fast, you will be able to fight in here on level 14-15 only if you have 4 mercenaries, all fully equipped with current item level gear. The drops are not much better than the On the Run but still better. The boss is not that much stronger than the rest of the dungeon so assuming you are able to fight through to the boss then you should be able to defeat him as well.
 
 Entry level: **10**
 
-Dungeon points to complete: ****7****
+Dungeon points to complete: **7**
 
 Level on which you can complete: ****Doable on 15. Boss is not hard. If you are really well geared it could be done on 14****
 
 Enemy and boss levels: **19-21**
 
-Minions item level drop: **16-23 `✓` Verified
+Minions item level drop: **16-23** `✓` Verified
 
-Boss item level drop: **18-25 `✓` Verified
+Boss item level drop: **18-25** `✓` Verified
 
 Parent Expedition: [Misty Mountains](/expeditions/italy-expeditions/misty-mountains "Misty Mountains")
 
@@ -31,9 +34,9 @@ Previous Dungeon: [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run")
 
 Next Dungeon: [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue") (Level 15)
 
-**Description**
+## Description
 
-There`s always something special about entering the lair of a dragon. At least that`s what a courageous hero`s widow would say! Fame, glory and the dragon`s hoard await the brave. Jewels, gold, magical weapons and golden eggs from happy hens! The cave is covered in spider webs, filled with monsters, overgrown with poisonous plants, full of deadly traps and dripping with blood... fair play to those who don`t wish to enter, but then they will certainly win less fame in their lives!
+There\`s always something special about entering the lair of a dragon. At least that\`s what a courageous hero\`s widow would say! Fame, glory and the dragon\`s hoard await the brave. Jewels, gold, magical weapons and golden eggs from happy hens! The cave is covered in spider webs, filled with monsters, overgrown with poisonous plants, full of deadly traps and dripping with blood... fair play to those who don`t wish to enter, but then they will certainly win less fame in their lives!
 
 ![The Dragon Stronghold](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Dragon_Stronghold/The_Dragon_Stronghold.png "The Dragon Stronghold")
 
@@ -114,5 +117,3 @@ The boss is a Dragon guarding a treasure!
 ![Oribas!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Dragon_Stronghold/Oribas.jpg)
 
 ![Oribas Stats!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Dragon_Stronghold/Oribas_stats.png)
-
-Drops Item level: **18-25**

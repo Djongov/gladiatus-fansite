@@ -2,12 +2,15 @@
 title: Chamber of Pyro
 slug: /dungeons/africa-dungeons/chamber-of-pyro
 sidebar_position: 3
+keywords: [dungeons, Gladiatus Dungeons, Chamber of Pyro]
+tags:
+  - dungeons
+  - africa dungeons
+description: Chamber of Pyro is the third dungeon in Africa. Very interesting dungeon and very long. It is based on luck so you could spend all your dungeon point easily before reaching the boss.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Chamber_of_Pyro/Chamber_of_Pyro.png
 redirects:
   - /chamber-of-pyro
 ---
-
-Chamber of Pyro
-===============
 
 Chamber of Pyro is the third dungeon in Africa. Very interesting dungeon and very long. It is based on luck so you could spend all your dungeon point easily before reaching the boss.
 
@@ -19,9 +22,9 @@ Level on which you can complete: **Minions are easy. Pyro is a bit harder but yo
 
 Enemy and boss levels: **39-41**  
   
-Minions item level drop: **38-43 `✓` Verified  
+Minions item level drop: **38-43** `✓` Verified  
   
-Boss item level drop: **38-49 `✓` Verified
+Boss item level drop: **38-49** `✓` Verified
 
 Parent Expedition: [Blood Cave](/expeditions/africa-expeditions/blood-cave "Blood Cave")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Abducted](/dungeons/africa-dungeons/abducted "Abducted") (Lev
 
 Next Dungeon: [Poisoned Country](/dungeons/africa-dungeons/poisoned-country "Poisoned Country") (Level 35)
 
-**Description**
+## Description
 
 There is a rotten smell coming from the entrance of the cave. You won`t have an easy time here. Whoever enters this cave has to be prepared to encounter deadly animals and decay. Cobwebs and nasty beetles are reducing all the joy of investigation to a minimum.
 

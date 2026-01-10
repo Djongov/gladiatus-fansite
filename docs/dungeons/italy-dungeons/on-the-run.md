@@ -1,27 +1,30 @@
 ---
 title: On the Run
 slug: /dungeons/italy-dungeons/on-the-run
+sidebar_position: 2
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, On the Run]
+tags:
+  - dungeons
+  - italy dungeons
+description: On the Run is the second dungeon in the game. Unfortunately, depending on how well you managed to equip your mercenaries from level 10 onwards, you might be able to handle the dungeon just fine or have problems getting through. It is recommended that by that time you have purchased and filled all mercenaries slots or at least have 3 but fully equipped ones, you should be able to start farming this dungeon. It is doable on level 11-12 but you have to invest in some equipment and mercenaries. It is a long dungeon but it's absolutely mandatory to fight here if you can as the drops are better than Gustavos. The average length is 12 dungeon points so despite the length of the dungeon it is very adequate in terms of item level drops.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/On_the_Run/On_the_Run.png
 redirects:
   - /on-the-run
-sidebar_position: 2
 ---
 
-On the Run
-==========
-
-**On the Run** is the second dungeon in the game. Unfortunately, depending on how well you managed to equip your mercenaries from level 10 onwards, you might be able to handle the dungeon just fine or have problems getting through. It is recommended that by that time you have purchased and filled all mercenaries slots or at least have 3 but fully equipped ones, you should be able to start farming this dungeon. It is doable on level 11-12 but you have to invest in some equipment and mercenaries. It is a long dungeon but it's absolutely mandatory to fight here if you can as the drops are better than Gustavos. The average length is 12 dungeon points so despite the length of the dungeon it is very adequate in terms of item level drops.
+On the Run is the second dungeon in the game. Unfortunately, depending on how well you managed to equip your mercenaries from level 10 onwards, you might be able to handle the dungeon just fine or have problems getting through. It is recommended that by that time you have purchased and filled all mercenaries slots or at least have 3 but fully equipped ones, you should be able to start farming this dungeon. It is doable on level 11-12 but you have to invest in some equipment and mercenaries. It is a long dungeon but it's absolutely mandatory to fight here if you can as the drops are better than Gustavos. The average length is 12 dungeon points so despite the length of the dungeon it is very adequate in terms of item level drops.
 
 Entry level: **10**
 
-Dungeon points to complete: **~**12 (varies)****
+Dungeon points to complete: **~12 (varies)**
 
 Level on which you can complete: ****Depends on how many gear/mercenaries you manage to buy and how quick. If you equip yourself some mercenaries and weapons from the Auction house you could do this on ~11 level even.****
 
 Enemy and boss levels: **14-16**
 
-Minions item level drop: **13-16 `✓` Verified
+Minions item level drop: **13-16** `✓` Verified
 
-Boss item level drop: **15-18 `✓` Verified
+Boss item level drop: **15-18** `✓` Verified
 
 Parent Expedition: **[Pirate Harbour](/expeditions/italy-expeditions/pirate-harbour "Pirate Harbour")**
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Gustavos Country House](/dungeons/italy-dungeons/gustavos-cou
 
 Next Dungeon: [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold") (Level 10)
 
-**Description**
+## Description
 
 The old harbour is a hideout and meeting point for all sorts of rabble and shady creatures. And amongst the dirt and fish stench filled alleyways, Gnaeus Aurelius Flavio is attempting to flee from his just punishment with some of his followers. The senator, the emperors` former confidante, is being charged with treason and fraternizing with the enemy.  
   
@@ -116,5 +119,3 @@ You can now strike the boss. Who is he?
 ![Gnaeus Aurelius Flavio!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/On_the_Run/Gnaeus_Aurelius_Flavio.jpg)
 
 ![Gnaeus Aurelius Flavio Stats!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/On_the_Run/Gnaeus_Aurelius_Flavio_stats.png)
-
-**Item level drop: 15-18**

@@ -1,6 +1,11 @@
 ---
 title: Homepage
 slug: /
+keywords: [Gladiatus]
+tags:
+  - News
+description: Welcome to Gladiatus best fansite - Expeditions, Dungeons, Underworld, Guides
+image: https://gladiatusfansite.blob.core.windows.net/images/Gladiatus_hero_of_Rome.jpg
 sidebar_class_name: hidden
 ---
 
@@ -18,6 +23,7 @@ Today's migration progress:
 
 - Fixed most broken links which was a huge job
 - Now Prefixes and Suffixes have dynamically created routes without having hundreds of markdown files
+- Published the site live
 
 ### 09.01.2026
 

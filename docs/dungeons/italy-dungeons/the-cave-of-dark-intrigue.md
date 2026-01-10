@@ -1,13 +1,16 @@
 ---
 title: The Cave of Dark intrigue
 slug: /dungeons/italy-dungeons/the-cave-of-dark-intrigue
+sidebar_position: 4
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, The Cave of Dark intrigue]
+tags:
+  - dungeons
+  - italy dungeons
+description: The Cave of Dark Intrigue is the fourth dungeon in the game and same as the Dragon Stronghold its entry level is a trap. The enemy levels are 24-26 on level 15 Entry. Quite tricky. However, if you are VERY well equipped on level 15 to 18 you should be able to fight off enemies until the boss. The boss however is another story. It's much stronger than the rest of the dungeon so you could find yourself easily in the position where you fight through the dungeon just fine and when you try hitting the boss you barely down him to half health. If you are in this situation you would probably be skipping this dungeon until you are able to kill the boss or cancel and re-start the dungeon when you reach the boss. That way you can at least fight the mobs in the dungeon for items. Gear up your mercenary with the latest gear and keep them as high level as possible and you can try to down him as early as possible
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Cave_of_Dark_intrigue/The_Cave_of_Dark_intrigue.png
 redirects:
   - /the-cave-of-dark-intrigue
-sidebar_position: 4
 ---
-
-The Cave of Dark intrigue
-=========================
 
 The Cave of Dark Intrigue is the fourth dungeon in the game and same as the Dragon Stronghold its entry level is a trap. The enemy levels are 24-26 on level 15 Entry. Quite tricky. However, if you are VERY well equipped on level 15 to 18 you should be able to fight off enemies until the boss. The boss however is another story. It's much stronger than the rest of the dungeon so you could find yourself easily in the position where you fight through the dungeon just fine and when you try hitting the boss you barely down him to half health. If you are in this situation you would probably be skipping this dungeon until you are able to kill the boss or cancel and re-start the dungeon when you reach the boss. That way you can at least fight the mobs in the dungeon for items. Gear up your mercenary with the latest gear and keep them as high level as possible and you can try to down him as early as possible
 
@@ -19,9 +22,9 @@ Level on which you can complete: **Hard dungeon. Medium minions, extremely hard 
 
 Enemy and boss levels: **24-26**
 
-Minions item level drop: **22-28 `✓` Verified
+Minions item level drop: **22-28** `✓` Verified
 
-Boss item level drop: **25-31 `✓` Verified
+Boss item level drop: **25-31** `✓` Verified
 
 Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions/wolf-cave "Wolf Cave")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-st
 
 Next Dungeon: [Temple of Perdition](/dungeons/africa-dungeons/temple-of-perdition "Temple of Perdition") (Level 20, Africa)
 
-**Description**
+## Description
 
 The sweet odour of decay streams through the cave's entrance and one can hear bones splintering. The wolf pack has assembled and is rejoicing in the gifts of nature. There is no safe way past the wolf pack, and whoever wishes to enter the cave system must first pit himself against the hungry wolves.
 
@@ -114,5 +117,3 @@ You attack...
 ![Hell Dog!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Cave_of_Dark_intrigue/Hell_Dog.jpg)
 
 ![Hell Dog Stats!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Cave_of_Dark_intrigue/Hell_Dog_stats.png)
-
-Item Level drop: **23-33**

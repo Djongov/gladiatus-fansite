@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Forest Fortress
 
-**Description**
+## Description
 
 Insert
 

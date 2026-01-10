@@ -2,12 +2,16 @@
 title: Alpha & Omega
 slug: /dungeons/germania-dungeons/alpha-omega
 sidebar_position: 7
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons, Alpha & Omega]
+tags:
+  - dungeons
+  - germania dungeons
+description: Alpha & Omega is the last dungeon in the game. It is only for the highest level gladiators. It is also the longest - 20 dungeon points.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Alpha_and_Omega/Alpha_Omega_overview.png
 redirects:
   - /alpha-omega
 ---
 
-Alpha & Omega
-=================
 
 Alpha & Omega is the last dungeon in the game. It is only for the highest level gladiators. It is also the longest - 20 dungeon points.
 
@@ -19,7 +23,7 @@ Enemy and boss levels: **129-131**
   
 Minions item level drop: **127-132**  
   
-Boss item level drop: **128-141 `✓` Verified
+Boss item level drop: **128-141** `✓` Verified
 
 Parent Expedition: [Dragon Remains](/expeditions/germania-expeditions/dragon-remains "Dragon Remains")
 
@@ -29,7 +33,7 @@ Previous Dungeon: [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late 
 
 Next Dungeon: **None, this is the last and the highest level dungeon in the game**
 
-**Description**  
+## Description  
   
 Remains of long dead dragons lay all about this vale. Only the centre is excepted, as a ritual site has been constructed. Long before you see the site, you can feel its energy and power. But the evil can also be felt, the evil that seized possession of this power.
 

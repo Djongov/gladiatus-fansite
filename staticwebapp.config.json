@@ -2,14 +2,21 @@
   "routes": [
     { "route": "/home", "redirect": "/", "statusCode": 301, "queryParameters": { "id": "1" } },
     { "route": "/expeditions", "redirect": "/expeditions", "statusCode": 301, "queryParameters": { "id": "2" } },
+    { "route": "/expeditions.html", "redirect": "/expeditions", "statusCode": 301, "queryParameters": { "id": "2" } },
+    { "route": "/9-expeditions", "redirect": "/expeditions", "statusCode": 301, "queryParameters": { "id": "2" } },
     { "route": "/italy-expeditions", "redirect": "/expeditions/italy-expeditions", "statusCode": 301, "queryParameters": { "id": "5" } },
     { "route": "/germania-expeditions", "redirect": "/expeditions/germania-expeditions", "statusCode": 301, "queryParameters": { "id": "3" } },
     { "route": "/africa-expeditions", "redirect": "/expeditions/africa-expeditions", "statusCode": 301, "queryParameters": { "id": "15" } },
+    { "route": "/britannia-expeditions", "redirect": "/expeditions/britannia-expeditions", "statusCode": 301, "queryParameters": { "id": "4" } },
+    { "route": "/italy-dungeons/11-dungeons/63-britannia-dungeons", "redirect": "/dungeons/britannia-dungeons", "statusCode": 301, "queryParameters": { "id": "20" } },
+    { "route": "/news/8-news/65-zagrash-s-fort-on-level-78-guide", "redirect": "/dungeons/italy-dungeons/zagrashs-fort", "statusCode": 301, "queryParameters": { "id": "39" } },
 
-    { "route": "/dungeons", "redirect": "/dungeons", "statusCode": 301, "queryParameters": { "id": "6" } },
+    { "route": "/dungeons.html", "redirect": "/dungeons", "statusCode": 301, "queryParameters": { "id": "6" } },
+    { "route": "/dungeons/11-dungeons", "redirect": "/dungeons", "statusCode": 301, "queryParameters": { "id": "6" } },
     { "route": "/italy-dungeons", "redirect": "/dungeons/italy-dungeons", "statusCode": 301, "queryParameters": { "id": "7" } },
     { "route": "/africa-dungeons", "redirect": "/dungeons/africa-dungeons", "statusCode": 301, "queryParameters": { "id": "23" } },
     { "route": "/germania-dungeons", "redirect": "/dungeons/germania-dungeons", "statusCode": 301, "queryParameters": { "id": "17" } },
+    { "route": "/germania-dungeons/11-dungeons", "redirect": "/dungeons/germania-dungeons", "statusCode": 301, "queryParameters": { "id": "20" } },
 
     { "route": "/back-to-expeditions-overview", "redirect": "/expeditions", "statusCode": 301, "queryParameters": { "id": "2" } },
     { "route": "/back-to-dungeons-overview", "redirect": "/dungeons", "statusCode": 301, "queryParameters": { "id": "6" } },
@@ -77,7 +84,6 @@
     { "route": "/underworld-hard", "redirect": "/underworld/underworld-hard", "statusCode": 301, "queryParameters": { "id": "37" } },
     { "route": "/conquest-of-the-source-of-the-rhine", "redirect": "/events/conquest-of-the-source-of-the-rhine", "statusCode": 301, "queryParameters": { "id": "80" } },
     { "route": "/wild-farm", "redirect": "/events/wild-farm", "statusCode": 301, "queryParameters": { "id": "86" } },
-
     { "route": "/reconstruction-of-rome", "redirect": "/reconstruction-of-rome", "statusCode": 301, "queryParameters": { "id": "87" } },
     { "route": "/horreum", "redirect": "/horreum/gladiatus-horreum", "statusCode": 301, "queryParameters": { "id": "89" } },
 

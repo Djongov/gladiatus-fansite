@@ -1,9 +1,15 @@
 ---
 title: Gustavos Country House
 slug: /dungeons/italy-dungeons/gustavos-country-house
+sidebar_position: 1
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, Gustavos Country House]
+tags:
+  - dungeons
+  - italy dungeons
+description: Gustavos Country House is the first dungeon in the game. Therefore it's quite easy. Also, it is populated with a lot of enemies but you only need to fight 3 to get to the boss!
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Gustavos_Country_House/Gustavos_Country_House.png
 redirects:
   - /gustavos-country-house
-sidebar_position: 1
 ---
 
 Gustavos Country House is the first dungeon in the game. Therefore it's quite easy. Also, it is populated with a lot of enemies but you only need to fight 3 to get to the boss!
@@ -83,5 +89,3 @@ Fight the Wild Pigs. They can be 2, 3 or 4
 ![King Gustavo!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Gustavos_Country_House/King_Gustavo.jpg)
 
 ![King Gustavo Stats!](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Gustavos_Country_House/King_Gustavo_stats.jpg)
-
-**Drops Item level: 10-12**

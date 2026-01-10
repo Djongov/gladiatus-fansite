@@ -2,12 +2,15 @@
 title: In the Heart of Decay
 slug: /dungeons/africa-dungeons/in-the-heart-of-decay
 sidebar_position: 7
+keywords: [dungeons, Gladiatus Dungeons, In the Heart of Decay]
+tags:
+  - dungeons
+  - africa dungeons
+description: In the Heart of Decay is an important dungeon because it will gear you up for the serious dungeons that await you on the higher levels. Gaius, Lucius and Antonius item level 100+ start to drop so you could expect to change your weapon and some parts of your armor here. Next dungeon is pretty hard so you will need to stay here for as long as it's necessary.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/In_the_Heart_of_Decay/In_the_Heart_of_Decay.png
 redirects:
   - /in-the-heart-of-decay
 ---
-
-In the Heart of Decay
-=====================
 
 In the Heart of Decay is an important dungeon because it will gear you up for the serious dungeons that await you on the higher levels. Gaius, Lucius and Antonius item level 100+ start to drop so you could expect to change your weapon and some parts of your armor here. Next dungeon is pretty hard so you will need to stay here for as long as it's necessary.
 
@@ -23,9 +26,9 @@ Level on which you can complete: **90. Very interesting boss. Apart from the ama
 
 Enemy and boss levels: **99-101**  
   
-Minions item level drop: **97-103 `✓` Verified  
+Minions item level drop: **97-103** `✓` Verified  
   
-Boss item level drop: **99-111 `✓` Verified  
+Boss item level drop: **99-111** `✓` Verified  
   
 Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions/lost-harbour "Lost Harbour")
 
@@ -35,7 +38,7 @@ Previous Dungeon: [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-bloo
 
 Next Dungeon: [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey") (Level 92)  
   
-**Description**  
+## Description  
   
 The scent of decay and corruption seems almost physically palpable at this place. Something evil has dug its way into the innards of this once flourishing harbour town and has swallowed up all the life within it.  
   
@@ -46,9 +49,11 @@ This disaster keeps spreading and bit by bit and it`s taking over the fruitful r
 ## Quests
 
 **Destroy the Source of all Evil**
+
 1. Destroy the Mokele lying in wait in the house ruins
 
 **Fight your way towards the centre of the harbour town**
+
 2. Defeat the undead fishermen
 3. Destroy the infected harbour master
 

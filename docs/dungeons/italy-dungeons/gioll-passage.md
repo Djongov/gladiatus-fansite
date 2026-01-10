@@ -1,12 +1,18 @@
 ---
 title: Gioll Passage
 slug: /dungeons/italy-dungeons/gioll-passage
+sidebar_position: 9
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, Gioll Passage]
+tags:
+  - dungeons
+  - italy dungeons
+description: Gioll Passage is the Advanced Dungeon of The Cave of Dark intrigue in the Wolf Cave expedition. It's one of the intermediate Italy dungeons in the mid-high levels and is probably going to serve you only a few levels. It has a strong boss with a strong drop. Real challenge fro the best of Gladiators. It's only 6 dungeon points in length so you can properly farm this dungeon. Boss drops are very good.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Gioll_Passage/Gioll_Passage.png
 redirects:
   - /gioll-passage
-sidebar_position: 9
 ---
 
-Gioll Passage is the Advanced Dungeon of [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue") in the Wolf Cave expedition. It's one of the intermediate Italy dungeons in the mid-high levels and is probably going to serve you only a few levels. It has a strong boss with a strong drop. Real challenge fro the best of Gladiators. It's only 6 dungeon points in length so you can properly farm this dungeon. Boss drops are very good.
+It's one of the intermediate Italy dungeons in the mid-high levels and is probably going to serve you only a few levels. It has a strong boss with a strong drop. Real challenge fro the best of Gladiators. It's only 6 dungeon points in length so you can properly farm this dungeon. Boss drops are very good.
 
 Entry level: **73**
 
@@ -16,9 +22,9 @@ Level on which you can complete: **Boss is hard this time. If you are top geared
 
 Enemy and boss levels: **82-84**  
   
-Minions item level drop: **80-86 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**  
+Minions item level drop: **80-86** `✓` Verified
   
-Boss item level drop: **83-92 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
+Boss item level drop: **83-92** `✓` Verified
 
 Parent Expedition: [Wolf Cave](/expeditions/italy-expeditions/wolf-cave "Wolf Cave")
 
@@ -28,7 +34,7 @@ Previous Dungeon: [The True Owner](/dungeons/italy-dungeons/the-true-owner "The 
 
 Next Dungeon: [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort") (Level 78)
 
-**Description**
+## Description
 
 The sweet odour of decay streams through the cave's entrance and one can hear bones splintering. The wolf pack has assembled and is rejoicing in the gifts of nature. There is no safe way past the wolf pack, and whoever wishes to enter the cave system must first pit himself against the hungry wolves.
 

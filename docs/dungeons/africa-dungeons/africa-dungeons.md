@@ -1,8 +1,12 @@
 ---
 title: Africa Dungeons
 slug: /dungeons/africa-dungeons
-redirects:
-  - /africa-dungeons
+keywords: [dungeons, Gladiatus Dungeons, Africa Dungeons]
+tags:
+  - dungeons
+  - africa dungeons
+description: Africa dungeons start at level 20 and are essential to the game. You will find incredible monsters and bosses here.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/wallpaper3_800x600.jpg
 ---
 
 Africa dungeons start at level 20 and are essential to the game. You will find incredible monsters and bosses here.

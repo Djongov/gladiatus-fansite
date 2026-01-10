@@ -1,13 +1,16 @@
 ---
 title: In enemy hands
 slug: /dungeons/italy-dungeons/in-enemy-hands
+sidebar_position: 6
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, In enemy hands]
+tags:
+  - dungeons
+  - italy dungeons
+description: In enemy hands is the second dungeon on your big return to Italy. It is good buffer dungeon because you will most probably only run it for 3 levels until you go to The last resort in Pirate Harbour Advanced.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/In_enemy_hands/In_enemy_hands.png
 redirects:
   - /in-enemy-hands
-sidebar_position: 6
 ---
-
-In enemy hands
-==============
 
 In enemy hands is the second dungeon on your big return to Italy. It is good buffer dungeon because you will most probably only run it for 3 levels until you go to The last resort in Pirate Harbour Advanced
 
@@ -19,9 +22,9 @@ Level on which you can complete: **Boss can be challenging but should not pose a
 
 Enemy and boss levels: **72-74**  
   
-Minions item level drop: **70-76 `✓` Verified  
+Minions item level drop: **70-76** `✓` Verified
   
-Boss item level drop: **71-84 `✓` Verified
+Boss item level drop: **71-84** `✓` Verified
 
 Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions/barbarian-village "Barbarian Village")
 
@@ -31,11 +34,9 @@ Previous Dungeon: [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden G
 
 Next Dungeon: [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort") (Level 68)
 
-**Description**
+## Description
 
 Who would have thought that barbarians were capable of building such a well-fortified fort? The towers are manned with archers and guards patrol the main gate. This is certainly the influence of the beaming Roman legion. Through the main gate one can recognise obscure magical activities.
-
- 
 
 ![In enemy hands](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/In_enemy_hands/In_enemy_hands.png "In enemy hands")
 
@@ -140,7 +141,7 @@ All the towers are neutralised so it's time for you to enter the court yard and 
 
 **Special abilities:**
 
-**Round 1, 8, 15, 22, 29, or every 7 rounds: Trakovar`s whip smacks through the air and blue sparks fly as it hits \{Random NPC\}`s hand. He is crippled for 3 rounds.**
+**Round 1, 8, 15, 22, 29, or every 7 rounds: Trakovar\`s whip smacks through the air and blue sparks fly as it hits \{Random NPC\}`s hand. He is crippled for 3 rounds.**
 
 or if it misses
 

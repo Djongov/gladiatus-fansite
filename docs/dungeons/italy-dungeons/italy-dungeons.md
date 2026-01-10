@@ -1,6 +1,12 @@
 ---
 title: Italy Dungeons
 slug: /dungeons/italy-dungeons
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons]
+tags:
+  - dungeons
+  - italy dungeons
+description: The first dungeons in the game are in Italy. As soon as you are level 10. The last dungeon is on level 78.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/wallpaper3_800x600.jpg
 redirects:
   - /italy-dungeons
 ---
@@ -56,8 +62,6 @@ Oribas (Level 19-21)
 Hell Dog (Level 24-26)
 
 ---
-
-
 
 ## Hidden Grave
 

@@ -2,12 +2,15 @@
 title: Mysterious Laboratory
 slug: /dungeons/germania-dungeons/mysterious-laboratory
 sidebar_position: 4
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons, Mysterious Laboratory]
+tags:
+  - dungeons
+  - germania dungeons
+description: Mysterious Laboratory is actually an optional dungeon. You could still be in Italy fighting Zagrash or you can be in Africa fighting the Umpokta Tribe. The weird fact about this dungeon is that it doesn't have a suitable expedition to match it so you would only come here for the dungeon and fight a low level expedition. This doesn't make sense so this is one of the very weird dungeons in the game. However, boss is easier than Papa Sasama & Zagrash and the dungeon is actually quicker. If you are an only-dungeon player you might want to try this dungeon out.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Mysterious_Laboratory/Mysterious_Laboratory.png
 redirects:
   - /mysterious-laboratory
 ---
-
-Mysterious Laboratory
-=====================
 
 Mysterious Laboratory is actually an optional dungeon. You could still be in Italy fighting Zagrash or you can be in Africa fighting the Umpokta Tribe. The weird fact about this dungeon is that it doesn't have a suitable expedition to match it so you would only come here for the dungeon and fight a low level expedition. This doesn't make sense so this is one of the very weird dungeons in the game. However, boss is easier than Papa Sasama & Zagrash and the dungeon is actually quicker. If you are an only-dungeon player you might want to try this dungeon out.
 
@@ -19,9 +22,9 @@ Level on which you can complete: **80-82 probably. Boss is hard. Here is a setup
 
 Enemy and boss levels: **89-91**  
   
-Minions item level drop: **87-93 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**  
+Minions item level drop: **87-93** `✓` Verified
   
-Boss item level drop: **88-101 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
+Boss item level drop: **88-101** `✓` Verified
 
 Parent Expedition: [Death Hill](/expeditions/germania-expeditions/death-hill "Death Hill")
 
@@ -33,7 +36,7 @@ Same Level Dungeon: [Fairground](/dungeons/africa-dungeons/fairground "Fairgroun
 
 Next Dungeon: [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86, Africa)
 
-**Description**
+## Description
 
 The smell of medicinal equipment flows through the entry port. A meat cleaver pounds on an animal cadaver. Multiple henchmen wash the portioned body parts and lay them on a small transport cart. Only the toughest survive this grotesque sight without nightmares that plague them for the rest of their lives.
 

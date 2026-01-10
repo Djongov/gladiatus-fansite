@@ -1,6 +1,12 @@
 ---
 title: Germania Dungeons
 slug: /dungeons/germania-dungeons
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons]
+tags:
+  - dungeons
+  - germania dungeons
+description: Germania contains the least number of dungeons but they are all really important. Here are the "end-game" dungeons for the highest level gladiators.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/wallpaper3_800x600.jpg
 redirects:
   - /germania-dungeons
 ---

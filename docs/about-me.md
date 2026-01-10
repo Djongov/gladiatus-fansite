@@ -1,6 +1,9 @@
 ---
 title: About Me
 slug: /about-me
+keywords: [Gladiatus]
+description: Welcome to Gladiatus best fansite - Expeditions, Dungeons, Underworld, Guides
+image: https://gladiatusfansite.blob.core.windows.net/images/Gladiatus_hero_of_Rome.jpg
 sidebar_class_name: hidden
 ---
 

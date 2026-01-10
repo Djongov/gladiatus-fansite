@@ -1,15 +1,18 @@
 ---
 title: The Last Resort
 slug: /dungeons/italy-dungeons/the-last-resort
+sidebar_position: 7
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, The Last Resort]
+tags:
+  - dungeons
+  - italy dungeons
+description: The Last Resort is the advanced dungeon of Pirate Harbour and On the Run dungeon. Its entry level is an unusual but surely welcomed one. Dungeon is extremely long. This is also the first "Advanced" version of a dungeon in the game.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Last_Resort/The_Last_Resort.png
 redirects:
   - /the-last-resort
-sidebar_position: 7
 ---
 
-The Last Resort
-===============
-
-The Last Resort is the advanced dungeon of Pirate Harbour and [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run") dungeon. Its entry level is an unusual but surely welcomed one. Dungeon is extremely long. This is also the first "Advanced" version of a dungeon in the game.
+It's entry level is an unusual but surely welcomed one. Dungeon is extremely long. This is also the first "Advanced" version of a dungeon in the game.
 
 Entry level: **68**
 
@@ -19,9 +22,9 @@ Level on which you can complete: **68 shouldn't be a problem. Boss doesn't seem 
 
 Enemy and boss levels: **77-79**  
   
-Minions item level drop: **75-81 `✓` Verified  
+Minions item level drop: **75-81** `✓` Verified
   
-Boss item level drop: **76-89 `✓` Verified
+Boss item level drop: **76-89** `✓` Verified
 
 Parent Expedition: [Pirate Harbour](/expeditions/italy-expeditions/pirate-harbour "Italy - Pirate Harbour - Advanced")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [In enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In e
 
 Next Dungeon: [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner") (Level 70)
 
-**Description**
+## Description
 
 The old harbour is a hideout and meeting point for all sorts of rabble and shady creatures. And amongst the dirt and fish stench filled alleyways, Gnaeus Aurelius Flavio is attempting to flee from his just punishment with some of his followers. The senator, the emperors` former confidante, is being charged with treason and fraternizing with the enemy.  
   

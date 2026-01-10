@@ -2,26 +2,29 @@
 title: With all its might
 slug: /dungeons/germania-dungeons/with-all-its-might
 sidebar_position: 2
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons, With all its might]
+tags:
+  - dungeons
+  - germania dungeons
+description: With all its might is the second expedition that you will face in Germania. Could be a quick one and hopefully an easy one for you. The Advanced expedition is probably the most important expedition in the game.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/With_all_its_might/With_all_its_might.png
 redirects:
   - /with-all-its-might
 ---
-
-With all its might
-==================
 
 With all its might is the second expedition that you will face in Germania. Could be a quick one and hopefully an easy one for you. The Advanced expedition is probably the most important expedition in the game.
 
 Entry level: **45**
 
-Dungeon points to complete: **9-**11****
+Dungeon points to complete: **9-11**
 
 Level on which you can complete: **45. Boss is a little harder than average, especially compared to previous boss from Dark Catacombs. Here is a setup of a 45 level kill but not winning every time. Click [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/With_all_its_might/Oak_Lord_kill_45_level.png "Oak Lord kill on level 45"). You will need your damage dealers to be ~200 dmg to succeed and ~50-51 Level Mercenaries.**
 
 Enemy and boss levels: **54-56**  
   
-Minions item level drop: **52-58 `✓` Verified  
+Minions item level drop: **52-58** `✓` Verified
   
-Boss item level drop: **52-64 `✓` Verified
+Boss item level drop: **52-64** `✓` Verified
 
 Parent Expedition: [The green forest](/expeditions/germania-expeditions/the-green-forest "The green forest")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs "D
 
 Next Dungeon: [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking Camp") (Level 50)
 
-**Description**
+## Description
 
 A mystical place that is filled with magic energy. An old rock formation, that is older than the Roman Empire itself. The Germanic tribes have gathered here to sacrifice a virgin, so that the leader of this place can summon all his power against the Roman Empire. You`ve arrived just in time, but the harbingers of destruction can already be felt
 

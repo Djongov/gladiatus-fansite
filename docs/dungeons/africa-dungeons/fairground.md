@@ -1,13 +1,17 @@
 ---
 title: Fairground
 slug: /dungeons/africa-dungeons/fairground
+keywords: [dungeons, Gladiatus Dungeons, Fairground]
+tags:
+  - dungeons
+  - africa dungeons
+description: Fairground is the first of the high level dungeons in Africa. It is available at level 80 but don't be fooled. The leader of the mighty Umpokta is a formidable boss. You need to be highly geared to face him. A good preparation for him is if you are able to beat Zagrash in Zagrash's Fort. If you beat Zagrash most of the times, you might be able to land some kills on Papa Sasama. Generally, he is an extremely hard boss and you will be waiting for 86 to skip this dungeon and move to the next one. Read the Zagrash guide and how to gear up to beat him. Same tactic applies for Papa Sasama but with even higher levels and stats.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Fairground/Fairground.png
 sidebar_position: 5
+
 redirects:
   - /fairground
 ---
-
-Fairground
-==========
 
 Fairground is the first of the high level dungeons in Africa. It is available at level 80 but don't be fooled. The leader of the mighty Umpokta is a formidable boss. You need to be highly geared to face him. A good preparation for him is if you are able to beat Zagrash in [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort"). If you beat Zagrash most of the times, you might be able to land some kills on Papa Sasama. Generally, he is an extremely hard boss and you will be waiting for 86 to skip this dungeon and move to the next one. Read the [Zagrash guide](/dungeons/italy-dungeons/zagrashs-fort "Zagrash guide") and how to gear up to beat him. Same tactic applies for Papa Sasama but with even higher levels and stats.
 
@@ -19,9 +23,9 @@ Level on which you can complete: **83-86. If you are beating Zagrash most of the
 
 Enemy and boss levels: **89-91**  
   
-Minions item level drop: **87-93 `✓` Verified  
+Minions item level drop: **87-93** `✓` Verified  
   
-Boss item level drop: **88-100 `✓` Verified
+Boss item level drop: **88-100** `✓` Verified
 
 Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions/umpokta-tribe "Umpokta Tribe")
 
@@ -31,7 +35,7 @@ Previous Dungeon: [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagra
 
 Next Dungeon: [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky") (Level 86)
 
-**Description**
+## Description
 
 A phalanx of tribal fighters is blocking the inquisitor`s path to the village square. A feast is being prepared. It is difficult to identify, what is going to be served today. A shaman is evoking a fire and throwing some mysterious powder into it. The smell of cinnamon is getting carried into all directions by the wind. Suddenly, the whole tribe starts to sing a song and starts rhythmically jumping up and down. This is your chance to take down the guards without being seen.
 

@@ -2,12 +2,15 @@
 title: Poisoned Country
 slug: /dungeons/africa-dungeons/poisoned-country
 sidebar_position: 4
+keywords: [dungeons, Gladiatus Dungeons, Poisoned Country]
+tags:
+  - dungeons
+  - africa dungeons
+description: This is the Lost Harbour dungeon. Long one with something like two bosses. Last dungeon before you depart for Germania. Also this is where you can start to find Purple drops from the boss more often and in higher chances.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Poisoned_Country/Poisoned_Country.png
 redirects:
   - /poisoned-country
 ---
-
-Poisoned Country
-================
 
 This is the Lost Harbour dungeon. Long one with something like two bosses. Last dungeon before you depart for Germania. Also this is where you can start to find **Purple** drops from the boss more often and in higher chances.
 
@@ -19,9 +22,9 @@ Level on which you can complete: **35. In order to defeat the boss on level 35, 
 
 Enemy and boss levels: **44-46**  
   
-Minions item level drop: **42-48 `✓` Verified  
+Minions item level drop: **42-48** `✓` Verified  
   
-Boss item level drop: **45-55 `✓` Verified
+Boss item level drop: **45-55** `✓` Verified
 
 Parent Expedition: [Lost Harbour](/expeditions/africa-expeditions/lost-harbour "Lost Harbour")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Chamber of Pyro](/dungeons/africa-dungeons/chamber-of-pyro "C
 
 Next Dungeon: [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs "Dark Catacombs") (Level 40, [Germania](/dungeons/germania-dungeons "Germania dungeons"))
 
-**Description**
+## Description
 
 The scent of decay and corruption seems almost physically palpable at this place. Something evil has dug its way into the innards of this once flourishing harbour town and has swallowed up all the life within it.  
   

@@ -2,12 +2,15 @@
 title: Viking Camp
 slug: /dungeons/germania-dungeons/viking-camp
 sidebar_position: 3
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons, Viking Camp]
+tags:
+  - dungeons
+  - germania dungeons
+description: Viking Camp is the third Germanian expedition and it is a long and expensive one. Also, it is 10 levels long as there isn't any dungeon to move to when you hit 55 level so you stay here until 60!
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Viking_Camp/Viking_Camp.png
 redirects:
   - /viking-camp
 ---
-
-Viking Camp
-===========
 
 Viking Camp is the third Germanian expedition and it is a long and expensive one. Also, it is 10 levels long as there isn't any dungeon to move to when you hit 55 level so you stay here until 60!
 
@@ -19,9 +22,9 @@ Level on which you can complete: **50, boss isn't hard but can drop some good Ta
 
 Enemy and boss levels: **59-61**  
   
-Minions item level drop: **56-63 `✓` Verified  
+Minions item level drop: **56-63** `✓` Verified  
   
-Boss item level drop: **58-70 `✓` Verified
+Boss item level drop: **58-70** `✓` Verified
 
 Advanced Dungeon: **No**
 
@@ -31,7 +34,7 @@ Previous Dungeon: [With all its might](/dungeons/germania-dungeons/with-all-its-
 
 Next Dungeon: [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave") (Level 60)
 
-**Description**
+## Description
 
 One can already detect the traces of destruction from afar. The village has been devastated and sits lonely on the coast. No fishermen are alive; no joyous children's voices can be heard; everything is dead. Suddenly multiple voices join together to form a song and the knocking together of beer mugs can be heard. From a safe distance one can see Vikings celebrating something..
 

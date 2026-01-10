@@ -10,12 +10,8 @@ tags:
   - italy
   - zagrash
   - guide
-date: 2017-11-28
 sidebar_position: 11
 ---
-
-*Created: Tuesday, 28 November 2017*
-*Written by Skarsburning*
 
 As I have described in my [dungeon arc](/dungeons#dungeon-arc) every player hits a roadblock on level 78. So far you have been comfortably farming Fenrirson in [Gioll’s Passage](/dungeons/italy-dungeons/zagrash-fort-level-78) but at level 78 you find out that there is a new dungeon in Italy called [Zagrash’s Fort](/dungeons/italy-dungeons/zagrash-fort-level-78). By that time the Fenrirson items will not satisfy you anymore so even better to try something new. A while ago Zagrash was the last boss in the game so they made him pretty hard. At level 80, just 2 levels after Zagrash’s Fort there is another dungeon in Africa - [Fairground](/dungeons/italy-dungeons/zagrash-fort-level-78). However, he is even harder than Zagrash so you might want to stay in Italy for longer. The reality is that dungeons are hard and if you are a first timer you will probably be fighting lower dungeons than your level.
 

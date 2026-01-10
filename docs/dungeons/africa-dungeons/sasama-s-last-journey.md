@@ -2,12 +2,15 @@
 title: Sasama`s last journey
 slug: /dungeons/africa-dungeons/sasama-s-last-journey
 sidebar_position: 8
+keywords: [dungeons, Gladiatus Dungeons, Sasama`s last journey]
+tags:
+  - dungeons
+  - africa dungeons
+description: Sasama`s last journey is the highest level dungeon in Africa and it will get you ready to depart to Germania for good. The story behind the dungeon is that in the previous lower level dungeon you have defeated the tribal lord Papa Sasama but something is happening in the village even after his death. You come back to investigate. Just 2 levels after In the Heart of Decay, you need to be very prepared to come here. Item level drops are slightly higher so you might want to fight through the dungeon and reset the dungeon before the boss and start over until you gear up to face him. You will stay here for a long time as the next dungeon is far away. The last minions are also very tough. You could be farming the boss easily and still sometimes loose against Voodoo Warrior or Spear Guard. Here is an example of a very good setup that still lost to Spear Guard. It's just that Spear Guard can critical hit very bad and killing your tank in 2 rounds and that's how you loose.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Sasamas_Last_Journey/Sasamas_Last_Journey.png
 redirects:
   - /sasama-s-last-journey
 ---
-
-Sasama`s last journey
-=====================
 
 Sasama`s last journey is the highest level dungeon in Africa and it will get you ready to depart to Germania for good. The story behind the dungeon is that in the previous lower level dungeon you have defeated the tribal lord Papa Sasama but something is happening in the village even after his death. You come back to investigate. Just 2 levels after In the Heart of Decay, you need to be very prepared to come here. Item level drops are slightly higher so you might want to fight through the dungeon and reset the dungeon before the boss and start over until you gear up to face him. You will stay here for a long time as the next dungeon is far away. The last minions are also very tough. You could be farming the boss easily and still sometimes loose against Voodoo Warrior or Spear Guard. Here is an example of a very good setup that still lost to Spear Guard. It's just that Spear Guard can critical hit very bad and killing your tank in 2 rounds and that's how you loose. Here is an example - click [here](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Sasamas_Last_Journey/Spear_Guard_hard_hits.png "Spear Guard hard hits").
 
@@ -19,9 +22,9 @@ Level on which you can complete: **92. Boss is harder than corruption but very m
   
 Enemy and boss levels: **101-103**  
   
-Minions item level drop: **97-107 `✓` Verified  
+Minions item level drop: **97-107** `✓` Verified  
   
-Boss item level drop: **100-113 `✓` Verified
+Boss item level drop: **100-113** `✓` Verified
 
 Parent Expedition: [Umpokta Tribe](/expeditions/africa-expeditions/umpokta-tribe "Umpokta Tribe")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart
 
 Next Dungeon: [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine") (Level 102, [Germania](/dungeons/germania-dungeons "Germania dungeons"))  
   
-**Description**  
+## Description  
   
 A phalanx of tribal fighters is blocking the inquisitor`s path to the village square. A feast is being prepared. It is difficult to identify, what is going to be served today. A shaman is evoking a fire and throwing some mysterious powder into it. The smell of cinnamon is getting carried into all directions by the wind. Suddenly, the whole tribe starts to sing a song and starts rhythmically jumping up and down. This is your chance to take down the guards without being seen.
 

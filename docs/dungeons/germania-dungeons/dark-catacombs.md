@@ -2,12 +2,15 @@
 title: Dark Catacombs
 slug: /dungeons/germania-dungeons/dark-catacombs
 sidebar_position: 1
+keywords: [dungeons, Gladiatus Dungeons, Germania Dungeons, Dark Catacombs]
+tags:
+  - dungeons
+  - germania dungeons
+description: Dark Catacombs is the first dungeon in Germania on your first visit to Germania. A long dungeon but the boss rewards good items.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Dark_Catacombs/Dark_Catacombs_Overview.png
 redirects:
   - /dark-catacombs
 ---
-
-Dark Catacombs
-==============
 
 Dark Catacombs is the first dungeon in Germania on your first visit to Germania. A long dungeon but the boss rewards good items
 
@@ -19,9 +22,9 @@ Level on which you can complete: **40. If you want to beat the boss on level 40,
 
 Enemy and boss levels: **49-51**  
   
-Minions item level drop: **47-53** ![Confirmed](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Confirmed")  
+Minions item level drop: **47-53** `✓` Verified
   
-Boss item level drop: **50-61 `✓` Verified
+Boss item level drop: **50-61** `✓` Verified
 
 Advanced Dungeon: **No**
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Poisoned Country](/dungeons/africa-dungeons/poisoned-country 
 
 Next Dungeon: [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might") (Level 45)
 
-**Description**
+## Description
 
 A short cry and then everything is calm again except for the gruelling cracking sounds of insects. The aura of the dead is like a slap in the face with a bull whip for all the visitors of this place. Hate, Wrath, Sorrow, Luck, Euphoria, Despair, Lethargy - it all wraps itself around your heart like a bell and constricts it. The first steps into the temple are the hardest and after that the menacing ban of extreme tension clutches at every intruder.
 

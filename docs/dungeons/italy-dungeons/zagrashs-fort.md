@@ -2,11 +2,19 @@
 title: Zagrash`s Fort
 slug: /dungeons/italy-dungeons/zagrashs-fort
 sidebar_position: 10
+keywords: [dungeons, Gladiatus Dungeons, Italy Dungeons, Zagrash`s Fort]
+tags:
+  - dungeons
+  - italy dungeons
+description: Zagrash`s Fort is the last and the highest level Italy dungeon in Gladiatus. Long ago it was the highest level dungeon in the game and the boss here was the end boss of the game. This boss is so hard that coming out of farming Fenrirson in Gioll Passage you probably even not going to halve the health of Zagrash. My suggestion is that you kill everything and when you reach the boss, cancel the dungeon and start over. If you are competitive and want to beat him, look at the guide on how to gear up and prepare for Zagrash - guide
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Zagrashs_Fort/Zagrashs_Fort.png
 redirect_from:
   - /zagrash-fort
+  - /zagrashs-fort
+  - /zagrash-s-fort
 ---
 
-Zagrash`s Fort is the last and the highest level Italy dungeon in Gladiatus. Long ago it was the highest level dungeon in the game and the boss here was the end boss of the game. This boss is so hard that coming out of farming Fenrirson in Gioll Passage you probably even not going to halve the health of Zagrash. My suggestion is that you kill everything and when you reach the boss, cancel the dungeon and start over. If you are competitive and want to beat him, look at the guide on how to gear up and prepare for Zagrash - [guide](#)
+Zagrash`s Fort is the last and the highest level Italy dungeon in Gladiatus. Long ago it was the highest level dungeon in the game and the boss here was the end boss of the game. This boss is so hard that coming out of farming Fenrirson in Gioll Passage you probably even not going to halve the health of Zagrash. My suggestion is that you kill everything and when you reach the boss, cancel the dungeon and start over. If you are competitive and want to beat him, look at the guide on how to gear up and prepare for Zagrash - [guide](/dungeons/italy-dungeons/zagrash-fort-level-78)
 
 Entry level: **78**
 
@@ -22,9 +30,9 @@ Level on which you can complete: **Realistically 80-85. Extremely hard boss, ver
 
 Enemy and boss levels: **87-89**  
   
-Minions item level drop: **85-91 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**  
+Minions item level drop: **85-91** `✓` Verified
   
-Boss item level drop: **86-99 ![Verified](https://gladiatusfansite.blob.core.windows.net/images/checkmark.png "Verified")**
+Boss item level drop: **86-99** `✓` Verified
 
 Parent Expedition: [Barbarian Village](/expeditions/italy-expeditions/barbarian-village "Barbarian Village")
 
@@ -34,7 +42,7 @@ Previous Dungeon: [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll 
 
 Next Dungeon: [Fairground](/dungeons/africa-dungeons/fairground "Fairground") (Level 80, [Africa](/dungeons/africa-dungeons "Africa dungeons")) or [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory "Mysterious Laboratory") (Level 80, [Germania](/dungeons/germania-dungeons "Germania dungeons"))
 
-**Description**
+## Description
 
 Who would have thought that barbarians were capable of building such a well-fortified fort? The towers are manned with archers and guards patrol the main gate. This is certainly the influence of the beaming Roman legion. Through the main gate one can recognise obscure magical activities.
 
@@ -42,9 +50,9 @@ Who would have thought that barbarians were capable of building such a well-fort
 
 ## Quests
 
-1. Eliminate the gate guards
-
 **There is a threatening danger that a rain of arrows is going to come down from the watchtowers. Sneak to the watchtowers and secure your way through the courtyard.**
+
+1. Eliminate the gate guards
 
 2. Capture the key for the towers from the patrol
 

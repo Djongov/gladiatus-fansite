@@ -2,12 +2,15 @@
 title: Temple of Perdition
 slug: /dungeons/africa-dungeons/temple-of-perdition
 sidebar_position: 1
+keywords: [dungeons, Gladiatus Dungeons, Temple of Perdition]
+tags:
+  - dungeons
+  - africa dungeons
+description: Temple of Perdition is the first African dungeon. Entry level is 20 but you have to be really well prepared before coming over here. Extremely well geared you might be able to get through to the boss but killing him would require a lot more. I would suggest coming here in your 25th Level and really well geared or on level 20 but to farm until the boss and then reset. Minions are still good source of experience and items. Try searching for Rayols or Uróthiens items in the Auction House, they are really high in damage.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Temple_of_Perdition/Temple_of_Perdition.png
 redirects:
   - /temple-of-perdition
 ---
-
-Temple of Perdition
-===================
 
 Temple of Perdition is the first African dungeon. Entry level is 20 but you have to be really well prepared before coming over here. Extremely well geared you might be able to get through to the boss but killing him would require a lot more. I would suggest coming here in your 25th Level and really well geared or on level 20 but to farm until the boss and then reset. Minions are still good source of experience and items. Try searching for Rayols or Uróthiens items in the Auction House, they are really high in damage.
 
@@ -19,9 +22,9 @@ Level on which you can complete: **Extremely hard boss. Minions are hard but sti
 
 Enemy and boss levels: **29-31**
 
-Minions item level drop: **26-33 `✓` Verified  
+Minions item level drop: **26-33** `✓` Verified  
   
-Boss item level drop: **29-39 `✓` Verified
+Boss item level drop: **29-39** `✓` Verified
 
 Parent Expedition: [Voodoo Temple](/expeditions/africa-expeditions/voodoo-temple "Voodoo Temple")
 
@@ -31,11 +34,9 @@ Previous Dungeon: [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-
 
 Next Dungeon: [Abducted](/dungeons/africa-dungeons/abducted "Abducted") (Level 25)
 
-**Description**
+## Description
 
 Impressive what the primitive Umpokta have done here. Sophisticated defence fortification and traps await every uninvited visitor to this place of pagan voodoo. For every courageous and overestimating adventurer this will be the time of their life or their death.
-
- 
 
 ![Temple of Perdition](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Temple_of_Perdition/Temple_of_Perdition.png "Temple of Perdition")
 

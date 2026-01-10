@@ -3,8 +3,11 @@ title: Gladiatus Dungeons
 sidebar_label: Dungeons
 sidebar_position: 2
 slug: /dungeons
-redirects:
-  - /dungeons
+keywords: [dungeons, Gladiatus Dungeons]
+tags:
+  - dungeons
+description: Dungeons in Gladiatus are adventures against mighty enemies. You and your group of 5 will defeat legendary bosses throughout the game and find epic gear. All you need to know about the basics of the dungeons you can read it on the Game guide page and the dungeons themselves with all the details will be here. Just read on.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/wallpaper3_800x600.jpg
 ---
 
 ![Gladiatus Dungeons](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/wallpaper3_800x600.jpg "Gladiatus Dungeons")

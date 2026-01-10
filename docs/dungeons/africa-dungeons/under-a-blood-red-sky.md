@@ -2,12 +2,15 @@
 title: Under a Blood-red Sky
 slug: /dungeons/africa-dungeons/under-a-blood-red-sky
 sidebar_position: 6
+keywords: [dungeons, Gladiatus Dungeons, Under a Blood-red Sky]
+tags:
+  - dungeons
+  - africa dungeons
+description: Under a Blood-red Sky is the Advanced dungeon of Abducted. The boss' drop is well over the 100 item level so be prepared for some sweet loot. Also, this dungeon is a huge relief after the struggles with Fairground.
+image: https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Under_a_Blood-Red_Sky/Under_a_Blood-Red_Sky.png
 redirects:
   - /under-a-blood-red-sky
 ---
-
-Under a Blood-red Sky
-=====================
 
 Under a Blood-red Sky is the Advanced dungeon of Abducted. The boss' drop is well over the 100 item level so be prepared for some sweet loot. Also, this dungeon is a huge relief after the struggles with Fairground.
 
@@ -19,9 +22,9 @@ Level on which you can complete: **86. Boss is easier than Papa Sasama and is no
   
 Enemy and boss levels: **95-97**  
   
-Minions item level drop: **93-99 `✓` Verified  
+Minions item level drop: **93-99** `✓` Verified  
   
-Boss item level drop: **96-107 `✓` Verified
+Boss item level drop: **96-107** `✓` Verified
 
 Parent Expedition: [Bridge](/expeditions/africa-expeditions/bridge "Bridge")
 
@@ -31,7 +34,7 @@ Previous Dungeon: [Fairground](/dungeons/africa-dungeons "Fairground") (Level 80
 
 Next Dungeon: [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay") (Level 90)  
   
-**Description**  
+## Description  
 Screams pierce the cold African night air. Another Roman family has been dragged out of their house and into the desert. Usually help comes far too late and there are barely any traces left of the unlucky victims. However, this time torchlight has shrouded the riverbank in a sinister light that allows us a glimpse of the ghostly abductors.
 
 ![Under a Blood-red Sky](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Under_a_Blood-Red_Sky/Under_a_Blood-Red_Sky.png "Under a Blood-red Sky")

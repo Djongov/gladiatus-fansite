@@ -2,6 +2,7 @@
 title: Gladiatus Gallery
 sidebar_label: Gallery
 slug: /gallery
+sidebar_class_name: hidden
 ---
 
 This is my Gallery with various screenshots of Gladiatus moments. I have sorted them into:
