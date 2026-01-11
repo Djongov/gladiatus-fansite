@@ -38,10 +38,15 @@ export default function TrainingCalculator() {
   const costStat = (from, to, coeff, reduc, costumeDiscount) => {
     from = Number.parseInt(from) || 0;
     to = Number.parseInt(to) || 0;
-    let count = 0;
-    for (let i = from; i < to; i++) count += Math.pow(i - 4, coeff) * (1 - reduc);
-    if (costumeDiscount > 0) count *= (1 - costumeDiscount / 100);
-    return Math.floor(count);
+    let baseCount = 0;
+    for (let i = from; i < to; i++) baseCount += Math.pow(i - 4, coeff);
+    
+    // Apply training grounds discount
+    let discountedCount = baseCount * (1 - reduc);
+    // Apply costume discount
+    if (costumeDiscount > 0) discountedCount *= (1 - costumeDiscount / 100);
+    
+    return { base: Math.floor(baseCount), discounted: Math.floor(discountedCount) };
   };
 
   const calculateStats = () => {
@@ -50,32 +55,33 @@ export default function TrainingCalculator() {
     const further = stats.furtherDiscount / 100;
 
     const strengthCost = costStat(stats.strengthFrom, stats.strengthTo, 2.6, reduc, costumeDiscount);
-  const dexterityCost = costStat(stats.dexterityFrom, stats.dexterityTo, 2.5, reduc, costumeDiscount);
-  const agilityCost = costStat(stats.agilityFrom, stats.agilityTo, 2.3, reduc, costumeDiscount);
-  const constitutionCost = costStat(stats.constitutionFrom, stats.constitutionTo, 2.3, reduc, costumeDiscount);
-  const charismaCost = costStat(stats.charismaFrom, stats.charismaTo, 2.5, reduc, costumeDiscount);
-  const intelligenceCost = costStat(stats.intelligenceFrom, stats.intelligenceTo, 2.4, reduc, costumeDiscount);
+    const dexterityCost = costStat(stats.dexterityFrom, stats.dexterityTo, 2.5, reduc, costumeDiscount);
+    const agilityCost = costStat(stats.agilityFrom, stats.agilityTo, 2.3, reduc, costumeDiscount);
+    const constitutionCost = costStat(stats.constitutionFrom, stats.constitutionTo, 2.3, reduc, costumeDiscount);
+    const charismaCost = costStat(stats.charismaFrom, stats.charismaTo, 2.5, reduc, costumeDiscount);
+    const intelligenceCost = costStat(stats.intelligenceFrom, stats.intelligenceTo, 2.4, reduc, costumeDiscount);
 
-  let total = strengthCost + dexterityCost + agilityCost + constitutionCost + charismaCost + intelligenceCost;
+    // Calculate totals
+    let totalBase = strengthCost.base + dexterityCost.base + agilityCost.base + constitutionCost.base + charismaCost.base + intelligenceCost.base;
+    let totalBeforeFurtherDiscount = strengthCost.discounted + dexterityCost.discounted + agilityCost.discounted + constitutionCost.discounted + charismaCost.discounted + intelligenceCost.discounted;
 
-  let discount = Math.floor(total * reduc / (1 - reduc));
-  if (costumeDiscount > 0) discount += Math.floor(total * (1 - reduc) * 100 / (100 - costumeDiscount) * costumeDiscount / 100);
+    // Apply further discount on the already discounted total
+    let furtherDiscountAmount = Math.floor(totalBeforeFurtherDiscount * further);
+    let finalTotal = totalBeforeFurtherDiscount - furtherDiscountAmount;
 
-  // Apply further discount
-  discount += Math.floor(total * further);
+    // Total discount is the difference between base and final
+    let totalDiscount = totalBase - finalTotal;
 
-  let discountedTotal = total - discount;
-
-  setResults({
-    strength: display(strengthCost, total),
-    dexterity: display(dexterityCost, total),
-    agility: display(agilityCost, total),
-    constitution: display(constitutionCost, total),
-    charisma: display(charismaCost, total),
-    intelligence: display(intelligenceCost, total),
-    total: formatNumber(discountedTotal),
-    discount: formatNumber(discount)
-  });
+    setResults({
+      strength: display(strengthCost.discounted, totalBeforeFurtherDiscount),
+      dexterity: display(dexterityCost.discounted, totalBeforeFurtherDiscount),
+      agility: display(agilityCost.discounted, totalBeforeFurtherDiscount),
+      constitution: display(constitutionCost.discounted, totalBeforeFurtherDiscount),
+      charisma: display(charismaCost.discounted, totalBeforeFurtherDiscount),
+      intelligence: display(intelligenceCost.discounted, totalBeforeFurtherDiscount),
+      total: formatNumber(finalTotal),
+      discount: formatNumber(totalDiscount)
+    });
   };
 
   const handleChange = (e) => {
