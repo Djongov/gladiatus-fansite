@@ -10,7 +10,7 @@ export default function TrainingCalculator() {
     charismaFrom: 5, charismaTo: '',
     intelligenceFrom: 5, intelligenceTo: '',
     trainingGroundLevel: 0,
-    neptune: false,
+    costumeDiscount: 0,
     furtherDiscount: 0,
   };
 
@@ -35,31 +35,31 @@ export default function TrainingCalculator() {
 
   const display = (part, total) => `${formatNumber(part)} (${Math.floor(part * 100 / total)}%)`;
 
-  const costStat = (from, to, coeff, reduc, neptune) => {
+  const costStat = (from, to, coeff, reduc, costumeDiscount) => {
     from = Number.parseInt(from) || 0;
     to = Number.parseInt(to) || 0;
     let count = 0;
     for (let i = from; i < to; i++) count += Math.pow(i - 4, coeff) * (1 - reduc);
-    if (neptune) count *= 0.97;
+    if (costumeDiscount > 0) count *= (1 - costumeDiscount / 100);
     return Math.floor(count);
   };
 
   const calculateStats = () => {
     const reduc = 2 * stats.trainingGroundLevel / 100;
-    const neptune = stats.neptune;
+    const costumeDiscount = stats.costumeDiscount;
     const further = stats.furtherDiscount / 100;
 
-    const strengthCost = costStat(stats.strengthFrom, stats.strengthTo, 2.6, reduc, neptune);
-  const dexterityCost = costStat(stats.dexterityFrom, stats.dexterityTo, 2.5, reduc, neptune);
-  const agilityCost = costStat(stats.agilityFrom, stats.agilityTo, 2.3, reduc, neptune);
-  const constitutionCost = costStat(stats.constitutionFrom, stats.constitutionTo, 2.3, reduc, neptune);
-  const charismaCost = costStat(stats.charismaFrom, stats.charismaTo, 2.5, reduc, neptune);
-  const intelligenceCost = costStat(stats.intelligenceFrom, stats.intelligenceTo, 2.4, reduc, neptune);
+    const strengthCost = costStat(stats.strengthFrom, stats.strengthTo, 2.6, reduc, costumeDiscount);
+  const dexterityCost = costStat(stats.dexterityFrom, stats.dexterityTo, 2.5, reduc, costumeDiscount);
+  const agilityCost = costStat(stats.agilityFrom, stats.agilityTo, 2.3, reduc, costumeDiscount);
+  const constitutionCost = costStat(stats.constitutionFrom, stats.constitutionTo, 2.3, reduc, costumeDiscount);
+  const charismaCost = costStat(stats.charismaFrom, stats.charismaTo, 2.5, reduc, costumeDiscount);
+  const intelligenceCost = costStat(stats.intelligenceFrom, stats.intelligenceTo, 2.4, reduc, costumeDiscount);
 
   let total = strengthCost + dexterityCost + agilityCost + constitutionCost + charismaCost + intelligenceCost;
 
   let discount = Math.floor(total * reduc / (1 - reduc));
-  if (neptune) discount += Math.floor(total * (1 - reduc) * 100 / 97 * 0.03);
+  if (costumeDiscount > 0) discount += Math.floor(total * (1 - reduc) * 100 / (100 - costumeDiscount) * costumeDiscount / 100);
 
   // Apply further discount
   discount += Math.floor(total * further);
@@ -82,7 +82,7 @@ export default function TrainingCalculator() {
     const { id, value, type, checked } = e.target;
     setStats(prev => ({
       ...prev,
-      [id]: type === 'checkbox' ? checked : type === 'number' ? parseInt(value) : value
+      [id]: type === 'checkbox' ? checked : (type === 'number' || id === 'trainingGroundLevel' || id === 'furtherDiscount' || id === 'costumeDiscount') ? parseInt(value) : value
     }));
   };
 
@@ -118,7 +118,7 @@ export default function TrainingCalculator() {
             <td>Level of Training Grounds</td>
             <td>
               <select id="trainingGroundLevel" value={stats.trainingGroundLevel} onChange={handleChange}>
-                {Array.from({length:16}, (_, i) => <option key={i} value={i}>{i}</option>)}
+                {Array.from({length:21}, (_, i) => <option key={i} value={i}>{i}</option>)}
               </select>
             </td>
             <td>Discount:</td>
@@ -128,15 +128,19 @@ export default function TrainingCalculator() {
             <td>Further Discount %</td>
             <td>
               <select id="furtherDiscount" value={stats.furtherDiscount} onChange={handleChange}>
-                {Array.from({ length: 41 }, (_, i) => <option key={i} value={i}>{i}%</option>)}
+                {Array.from({ length: 21 }, (_, i) => <option key={i} value={i}>{i}%</option>)}
               </select>
             </td>
             <td colSpan={2}>Applied on total cost</td>
           </tr>
           <tr>
-            <td>Neptune's Fluid Might</td>
+            <td>Costume Discount</td>
             <td>
-              <input type="checkbox" id="neptune" checked={stats.neptune} onChange={handleChange} />
+              <select id="costumeDiscount" value={stats.costumeDiscount} onChange={handleChange}>
+                <option value={0}>None</option>
+                <option value={3}>Neptune's Fluid Might (3%)</option>
+                <option value={20}>Bubona's Bull Armour (20%)</option>
+              </select>
             </td>
             <td>Total Cost:</td>
             <td>
