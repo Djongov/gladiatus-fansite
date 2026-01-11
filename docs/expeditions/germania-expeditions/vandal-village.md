@@ -2,6 +2,12 @@
 title: Vandal Village
 slug: /expeditions/germania-expeditions/vandal-village
 sidebar_position: 5
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Vandal Village]
+tags:
+  - expeditions
+  - germania expeditions
+description: The fifth expedition in Germania is Vandal Village. It is a high level expedition which means that you will visit it on your next return to Germania. The fertile flora and fauna of the area attracts many tribes. That is why it is only a question of time before the Vandals will arrive as well. They are dreadful companions yet they brew heavenly beer and like to tell stories of their battles. While intoxicated they are very unpredictable and have a penchant for attacking strangers. Pray for a good moment should you have to stay with them for awhile.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Vandal_Village/Death_Knight.jpg
 ---
 
 The fifth expedition in Germania is Vandal Village. It is a high level expedition which means that you will visit it on your next return to Germania.

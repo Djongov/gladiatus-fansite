@@ -2,6 +2,12 @@
 title: Barbarian Village
 slug: /expeditions/italy-expeditions/barbarian-village
 sidebar_position: 6
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions, Barbarian Village]
+tags:
+  - expeditions
+  - italy expeditions
+description: Barbarian Village is an expedition that is second you will see since your return to Italy. Fairly strong enemies and really important dungeons. In the far east there is a barbarian village where barbarians live who have not yet acknowledged the greatness of the Roman Empire. Because they mug travellers and merchants every now and then, you are likely to find many treasures. As long as the Imperial Legion doesn`t take any steps against the barbarians, going there is still a daring adventure.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Barbarian_Village/Barbarian_Chief.jpg
 ---
 
 Barbarian Village is an expedition that is second you will see since your return to Italy. Fairly strong enemies and really important dungeons.

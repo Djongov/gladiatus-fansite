@@ -2,6 +2,12 @@
 title: Wolf Cave
 slug: /expeditions/italy-expeditions/wolf-cave
 sidebar_position: 4
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions, Wolf Cave]
+tags:
+  - expeditions
+  - italy expeditions
+description: Wolf Cave is the fourth expedition in the game and it allows you to enter at level 15. In the hills south of the barbarian village there is a cave system that is called wolf cave by the townsfolk. As the name suggests, a large pack of wolves pack live there which often attack the surrounding farms during harsh winters. Some say this wolf pack is led by a large white wolf, but that may merely be the idle chitchat of simple farmers.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Wolf_Cave/Werewolf.jpg
 ---
 
 Wolf Cave is the fourth expedition in the game and it allows you to enter at level 15.

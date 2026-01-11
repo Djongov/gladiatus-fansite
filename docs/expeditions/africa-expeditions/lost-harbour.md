@@ -2,6 +2,12 @@
 title: "Lost Harbour"
 slug: "/expeditions/africa-expeditions/lost-harbour"
 sidebar_position: 4
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Lost Harbour]
+tags:
+  - expeditions
+  - africa expeditions
+description: Lost Harbour is the fourth expedition in Africa. It's the last expedition in Africa before going to Germania for the first time so enjoy is as you won't be coming back in a long time. It has interesting dungeons and expedition enemies. Once a thriving Viking outpost, it has in the meantime become a shadow of its former self. A textbook example of the empire and its allies. The strange power of voodoo forced the blonde giants to their knees. It apparently still holds findings from the houses and ships of the Vikings, that aren`t of any interest to the Umpokta.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Lost_Harbour/Mokele_Mbembe.jpg
 ---
 
 Lost Harbour is the fourth expedition in Africa. It's the last expedition in Africa before going to Germania for the first time so enjoy is as you won't be coming back in a long time. It has interesting dungeons and expedition enemies.

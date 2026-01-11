@@ -2,6 +2,12 @@
 title: "Umpokta Tribe"
 slug: "/expeditions/africa-expeditions/umpokta-tribe"
 sidebar_position: 5
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Umpokta Tribe]
+tags:
+  - expeditions
+  - africa expeditions
+description: Umpokta Tribe is the fifth expedition in Africa. Really important one and is the first expedition that you will encounter for your big return to Africa after being in Germania and Italy. It has really crucial dungeons. It houses the Africa's high command. As far as the Empire is concerned, it is the high-point of civilisation amongst the savages of the savannah and deserts. Primitive house construction and religious superstition are very prevalent in everyday Umpokta life. With their masks and threatening songs they frighten the tenderly strung amongst our citizens.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Umpokta_Tribe/Seth_High_Priest.jpg
 ---
 
 Umpokta Tribe is the fifth expedition in Africa. Really important one and is the first expedition that you will encounter for your big return to Africa after being in Germania and Italy. It has really crucial dungeons. It houses the Africa's high command.

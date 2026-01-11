@@ -2,6 +2,12 @@
 title: Misty Mountains
 slug: /expeditions/italy-expeditions/misty-mountains
 sidebar_position: 3
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions, Misty Mountains]
+tags:
+  - expeditions
+  - italy expeditions
+description: Misty Mountains is the third expedition in the game and it opens up at level 10 but not really doable at level 10, just like its dungeon. The highest pinnacles of the Misty Mountains are hidden from the eyes of wanderers, because of the thick clouds surrounding them. Well, it`s not as if many people go around there anyway. It is a dangerous area, not only because of the dangers from the mountains themselves, but also because it is said that there are monsters in the caves in the southern slopes - the sort longing for human meat...
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Misty_Mountains/Medusa.jpg
 ---
 
 Misty Mountains is the third expedition in the game and it opens up at level 10 but not really doable at level 10, just like its dungeon.

@@ -2,6 +2,12 @@
 title: Grimwood
 slug: /expeditions/italy-expeditions/grimwood
 sidebar_position: 1
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions, Grimwood]
+tags:
+  - expeditions
+  - italy expeditions
+description: Grimwood is the first expedition in the game. Do not get fooled by it. It has some fearsome animals. Rat is really weak but Lynx is far stronger and it doesn't scale exponentially. Same with Wolf and Bear. Do not expect to start farming Wolf and Bear anytime soon. If you believe what the old people say around here, there once lived a very popular king in this wood. The wood`s original name has been long forgotten and is now only known by the name Grimwood. Rumour has it, that this king made a pact with the dark side so that he could continue to reign forever. However, Grimwood is an extremely sinister place, full of wild animals and impenetrable brushwood. Countless numbers of hunters and lumberjacks went too deep into the woods, never to be seen again. If you believe the gossip, the old king took them into his lair so that they could serve him for all eternity...
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Grimwood/Bear.jpg
 ---
 
 Grimwood is the first expedition in the game. Do not get fooled by it. It has some fearsome animals. Rat is really weak but Lynx is far stronger and it doesn't scale exponentially. Same with Wolf and Bear. Do not expect to start farming Wolf and Bear anytime soon.

@@ -1,11 +1,17 @@
 ---
 title: Germania Expeditions
 slug: /expeditions/germania-expeditions
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions]
+tags:
+  - expeditions
+  - germania expeditions
+description: Germania expeditions are ranging from level 40 to one of the highest expeditions in the game. The German territory is for advanced level players and is home to some of the highest level expeditions in the game.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Germania_Overview.png
 redirects:
   - /germania-expeditions
 ---
 
-Germania expeditions are ranging from level 40 to the highest expeditions in the game. The German territory is for advanced level players and is home to the highest level expeditions in the game.
+Germania expeditions are ranging from level 40 to one of the highest expeditions in the game. The German territory is for advanced level players and is home to some of the highest level expeditions in the game.
 
 ![Germania Expeditions](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Germania_Overview.png "Germania Expeditions")
 

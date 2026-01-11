@@ -1,6 +1,12 @@
 ---
 title: Britannia Expeditions
 slug: /expeditions/britannia-expeditions
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions]
+tags:
+  - expeditions
+  - britannia expeditions
+description: Britannia expeditions are the newest addition to the game targeting the high level characters at level 120+. For long they haven't had a real challenge in game and this new country has exactly this purpose. The country came with the 3.0.3 on 17/08/17 at 15:00 worldwide. Currently the downside is that there aren't any new dungeons so essentially the people running Britannia do not go into any dungeons.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Britannia_Overview.png
 redirects:
   - /britannia-expeditions
 ---

@@ -2,6 +2,12 @@
 title: "Bridge"
 slug: "/expeditions/africa-expeditions/bridge"
 sidebar_position: 2
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Bridge]
+tags:
+  - expeditions
+  - africa expeditions
+description: Bridge is the second expedition in Africa and while it takes a lot to adapt once you arrive in Africa, this expedition seems to be a bit more reasonable. Fierce and aggressive tribe. In the face of the climate and the local geology, wooden bridge constructions are not practical. For this reason the Empire built this unique piece of Roman engineering here in Africa. The Umpokta consider it a passage, which connects the world of life and the world of the dead. Numerous misunderstandings arise, due to this. Gladiators that guard the bridge are seen as guardians, who watch over the access to the afterlife.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Bridge/Bone_Shaman.jpg
 ---
 
 Bridge is the second expedition in Africa and while it takes a lot to adapt once you arrive in Africa, this expedition seems to be a bit more reasonable. Fierce and aggressive tribe.
@@ -14,7 +20,7 @@ In the face of the climate and the local geology, wooden bridge constructions ar
 
 **Enemy levels:** 35-43  
 
-**Real level to engage: 32-33** 
+**Real level to engage:** 32-33
 
 **Dungeon:** Yes, [**Abducted**](/dungeons/africa-dungeons "Abducted") - Entry level 25
 

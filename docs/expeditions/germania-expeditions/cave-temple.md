@@ -2,6 +2,12 @@
 title: Cave Temple
 slug: /expeditions/germania-expeditions/cave-temple
 sidebar_position: 1
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Cave Temple]
+tags:
+  - expeditions
+  - germania expeditions
+description: The first expedition once you arrive in Germania is the Cave Temple. We are born from ashes and ashes we will become. Doesn\`t it then make sense for us to devote a temple to the element that determines the cycle of life? If only there wasn`t that niggling fear. That it will eats its way into the souls of those who are supposed to be looking after the temple. And now the imposing, multi-story building stands stands deserted. Rumour has it that the fear living within the ruin of the building, has taken on a life of its own. It has supposedly got so strong that the dead buried there have risen from their graves. None of the priests that have tried to investigate this phenomenon have returned from temple. Perhaps you will have more luck or or ability?
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Cave_Temple/Soulless.jpg
 ---
 
 The first expedition once you arrive in Germania is the Cave Temple.

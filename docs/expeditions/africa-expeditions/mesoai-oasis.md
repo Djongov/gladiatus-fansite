@@ -2,6 +2,12 @@
 title: "Mesoai Oasis"
 slug: "/expeditions/africa-expeditions/mesoai-oasis"
 sidebar_position: 7
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Lost Harbour]
+tags:
+  - expeditions
+  - africa expeditions
+description: Mesoai Oasis is the seventh expedition in Africa. Fruitfully it lies in the desert and fearful are its dangers. As one of the few oases here in this region it is a place of refuge for many animals looking to quench their thirst. The shady trees offer shelter from the sun and offer predators the possibility of getting some food.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Mesoai_Oasis/Demon_Elephant.jpg
 ---
 
 Mesoai Oasis is the seventh expedition in Africa.

@@ -2,6 +2,12 @@
 title: Koman Mountain
 slug: /expeditions/germania-expeditions/koman-mountain
 sidebar_position: 8
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Koman Mountain]
+tags:
+  - expeditions
+  - germania expeditions
+description: The most amazing expedition in the game. Marvelous creatures. Majestically it stands there, the sacred Koman Mountain. Many mountaineers wish for nothing more than to climb this mountain. Unfortunately a lot of blood-thirsty animals living here have been responsible for converting the brave mountaineers into dead mountaineers. But of course something like that could never happen to a mighty Gladiator.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Koman_Mountain/Dragon.jpg
 ---
 
 The most amazing expedition in the game. Marvelous creatures.

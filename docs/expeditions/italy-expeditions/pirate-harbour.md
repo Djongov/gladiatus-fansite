@@ -2,6 +2,12 @@
 title: Pirate Harbour
 slug: /expeditions/italy-expeditions/pirate-harbour
 sidebar_position: 2
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions, Pirate Harbour]
+tags:
+  - expeditions
+  - italy expeditions
+description: Pirate Harbour is the second expedition in the game and it's only 5 levels away. However 5 levels might be too quick. On the coast in the south-east there is a pirate harbour. There are a lot of shady characters and goods that would be forbidden elsewhere there. Uninvited guests aren\`t welcome. Still, many adventurers and nosy people try their luck. Mostly they end up as food for the sharks. But if you bear up against all these pirates, you`ll get exotic treasures.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Pirate_Harbour/Captain.jpg
 ---
 
 Pirate Harbour is the second expedition in the game and it's only 5 levels away. However 5 levels might be too quick.

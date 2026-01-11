@@ -2,6 +2,12 @@
 title: Ancient Temple
 slug: /expeditions/italy-expeditions/ancient-temple
 sidebar_position: 5
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions, Ancient Temple]
+tags:
+  - expeditions
+  - italy expeditions
+description: Ancient Temple is the long waited return of our glorious gladiator to Italy. After a long absence you are finally home and it's time for the high level beasts to pay their dues. It is long forgotten for which God this temple was erected for. Nonetheless, the old, simple ruin still has an aura of mysticism and power. This distant place of worship towers majestically above the lowlands - the wind blows eerily through the old ruins and many animals are nested there. Still - or maybe even because of all this - treasure hunters come here time and again. There is still the rumour that the true treasure of the temple has never been found...
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Ancient_Temple/Minotaur_Chief.jpg
 ---
 
 Ancient Temple is the long waited return of our glorious gladiator to Italy. After a long absence you are finally home and it's time for the high level beasts to pay their dues.

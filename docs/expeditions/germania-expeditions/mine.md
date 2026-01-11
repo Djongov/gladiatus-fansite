@@ -2,6 +2,12 @@
 title: Mine
 slug: /expeditions/germania-expeditions/mine
 sidebar_position: 6
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Mine]
+tags:
+  - expeditions
+  - germania expeditions
+description: The sixth expedition in Germania is the most pleasant one. Weak opponents, good treasures. The pride of this region is its pure ore, which is stored in the mine. But for a while now a wolf pack has been living inside the mine. Nobody knows why they are there!..The workers have already themselves for the new dangerous work situation. Every loss is painful, but the region cannot live without ore. Everyone who will help them will be celebrated like a Caesar!
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Mine/Tatzelwurm.jpg
 ---
 
 The sixth expedition in Germania is the most pleasant one. Weak opponents, good treasures.

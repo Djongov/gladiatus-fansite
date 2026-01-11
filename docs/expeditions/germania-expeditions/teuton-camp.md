@@ -2,6 +2,12 @@
 title: Teuton Camp
 slug: /expeditions/germania-expeditions/teuton-camp
 sidebar_position: 7
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Teuton Camp]
+tags:
+  - expeditions
+  - germania expeditions
+description: The seventh expedition in Germania and quite a hard one. The Romans fear the aggressive and wild Teutons who live in this camp. They kill anyone and everyone who approaches. Apparently they even skin animals and humans! Beyond that they use the skin and fur to dress themselves. A respected citizen of Rome can hardly even imagine such a thing. The forest looks kindly upon the barbarians, even if it stinks like mead and decay around them. Only the bravest, or should we say those undaunted by death, go anywhere near to those savages.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Teuton_Camp/Seidr.jpg
 ---
 
 The seventh expedition in Germania and quite a hard one.

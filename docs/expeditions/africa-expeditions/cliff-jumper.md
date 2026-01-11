@@ -2,6 +2,12 @@
 title: "Cliff Jumper"
 slug: "/expeditions/africa-expeditions/cliff-jumper"
 sidebar_position: 8
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Cliff Jumper]
+tags:
+  - expeditions
+  - africa expeditions
+description: Cliff Jumper is the eighth expedition in Africa. In the religious life of the Umpokta a surreal ritual has become tradition. On every third new moon the villages` priests meet and choose someone especially gifted. This person is accompanied by a procession to Cliffjumper Mountain. On arrival the chosen ones throw themselves jubilantly off the cliff to their deaths, it is said that it is a gift to the spirits. Aside from the spirits the numerous wild animals that have settled in this area also get some satisfaction from it.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Cliff_Jumper/High_Shaman.jpg
 ---
 
 Cliff Jumper is the eighth expedition in Africa.

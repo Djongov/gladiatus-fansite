@@ -2,9 +2,15 @@
 title: "Cambria"
 slug: "/expeditions/britannia-expeditions/cambria"
 sidebar_position: 8
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, Cambria]
+tags:
+  - expeditions
+  - britannia expeditions
+description: Cambria is a high level expedition (starting level 190) in Britannia.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Ordovicer.jpg
 ---
 
-# Cambria
+Cambria is a high level expedition (starting level 190) in Britannia.
 
 ## Description
 
@@ -29,7 +35,7 @@ Insert
 | Attribute | Enemy 1 | Enemy 2 | Enemy 3 | Boss |
 |-----------|---------|---------|---------|------|
 | **Name** | <div className="player_name_bg"><div className="playername">Enemy 1</div></div> | <div className="player_name_bg"><div className="playername">Enemy 2</div></div> | <div className="player_name_bg"><div className="playername">Enemy 3</div></div> | <div className="player_name_bg"><div className="playername">Ordovicer</div></div> |
-| **Image** | ![Enemy 1](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Opponent_1.jpg) | ![Enemy 2](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Opponent_2.jpg) | ![Enemy 3](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Ordovicer](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Opponent_boss.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
+| **Image** | ![Enemy 1](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Opponent_1.jpg) | ![Enemy 2](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Opponent_2.jpg) | ![Enemy 3](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Opponent_3.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Ordovicer](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Cambria/Ordovicer.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
 | ![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif) **Level** | 0 | 0 | 0 | 0 |
 | ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif) **Gold** | 0 | 0 | 0 | 0 |
 | ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif) **Experience** | 0 | 0 | 0 | 0 |

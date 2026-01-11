@@ -2,6 +2,12 @@
 title: "Bank of the Thames"
 slug: "/expeditions/britannia-expeditions/bank-of-the-thames"
 sidebar_position: 1
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, Bank of the Thames]
+tags:
+  - expeditions
+  - britannia expeditions
+description: After long 6-8 levels in the last expedition of Germania, you move to a new land. Galerius Senecianus Diary DCXCIX a.u.c. We've finally found a suitable landing point! The journey through the night was difficult and I have not experienced such an uncomfortable climate in all my travels in the empire. Whilst sailing we have already been greeted with spears flung from the coastline. The local tribes, as it appears, will not be giving up without any resistance. Hopefully our large war barges will provide us with some covering fire as we land...
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Bank_of_the_Thames/Cassi.jpg
 ---
 
 After long 6-8 levels in the last expedition of Germania, you move to a new land.

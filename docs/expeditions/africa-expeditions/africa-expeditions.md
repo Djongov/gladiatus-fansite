@@ -1,6 +1,12 @@
 ---
 title: Africa Expeditions
 slug: /expeditions/africa-expeditions
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions]
+tags:
+  - expeditions
+  - africa expeditions
+description: Africa Expeditions are the first travel to another country you do in Gladiatus. There a new and exciting expeditions are revealed.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Africa_Overview.png
 redirects:
   - /africa-expeditions
 ---

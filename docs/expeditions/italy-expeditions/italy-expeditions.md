@@ -1,6 +1,12 @@
 ---
 title: Italy Expeditions
 slug: /expeditions/italy-expeditions
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions]
+tags:
+  - expeditions
+  - italy expeditions
+description: Italy expeditions are the first one you encounter in the game. They include mostly low level expeditions and a couple of higher level ones. The stats on all enemies are without any bonuses.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Italy_Overview.pngsite.blob.core.windows.net/images/Expeditions/Germania/Vandal_Village/Death_Knight.jpg
 redirects:
   - /italy-expeditions
 ---

@@ -2,6 +2,12 @@
 title: "Blood Cave"
 slug: "/expeditions/africa-expeditions/blood-cave"
 sidebar_position: 3
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Blood Cave]
+tags:
+  - expeditions
+  - africa expeditions
+description: Blood Cave is the third expedition in Africa. There`s a rumour amongst the superstitious natives that magical rituals are held here. The historiography of the empire writes of no such events taking place there. The fact is though, that the cave`s cooling shadows attracts deadly animals.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Blood_Cave/Fire_Demon.jpg
 ---
 
 Blood Cave is the third expedition in Africa.

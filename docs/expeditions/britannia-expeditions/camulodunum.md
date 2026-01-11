@@ -2,9 +2,15 @@
 title: "Camulodunum"
 slug: "/expeditions/britannia-expeditions/camulodunum"
 sidebar_position: 7
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, Camulodunum]
+tags:
+  - expeditions
+  - britannia expeditions
+description: Camulodunum is a high level expedition (starting level 180) in Britannia.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Camulodunum/Opponent_boss.jpg
 ---
 
-# Camulodunum
+Camulodunum is a high level expedition (starting level 180) in Britannia.
 
 ## Description
 

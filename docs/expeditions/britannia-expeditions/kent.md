@@ -2,9 +2,15 @@
 title: "Kent"
 slug: "/expeditions/britannia-expeditions/kent"
 sidebar_position: 5
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, Kent]
+tags:
+  - expeditions
+  - britannia expeditions
+description: Kent Fortress is a high level expedition (starting level 160) in Britannia.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Kent/Opponent_boss.jpg
 ---
 
-# Kent
+Kent Fortress is a high level expedition (starting level 160) in Britannia.
 
 ## Description
 

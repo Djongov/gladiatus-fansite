@@ -2,6 +2,12 @@
 title: Cursed Village
 slug: /expeditions/germania-expeditions/cursed-village
 sidebar_position: 3
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Cursed Village]
+tags:
+  - expeditions
+  - germania expeditions
+description: The third expedition in Germania. Things are getting serious now. The fertile flora and fauna of the area attracts many tribes. That is why it is only a question of time before the Vandals will arrive as well. They are dreadful companions yet they brew heavenly beer and like to tell stories of their battles. While intoxicated they are very unpredictable and have a penchant for attacking strangers. Pray for a good moment should you have to stay with them for awhile.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Cursed_Village/Abomination.jpg
 ---
 
 The third expedition in Germania. Things are getting serious now.

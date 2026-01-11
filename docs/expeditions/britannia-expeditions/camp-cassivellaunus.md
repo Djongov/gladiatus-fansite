@@ -1,10 +1,16 @@
 ---
 title: "Camp Cassivellaunus"
 slug: "/expeditions/britannia-expeditions/camp-cassivellaunus"
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, Camp Cassivellaunus]
+tags:
+  - expeditions
+  - britannia expeditions
+description: Cambria is a high level expedition (starting level 150) in Britannia.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Camp_Cassivellaunus/Opponent_boss.jpg
 sidebar_position: 4
 ---
 
-# Camp Cassivellaunus
+Cambria is a high level expedition (starting level 150) in Britannia.
 
 ## Description
 

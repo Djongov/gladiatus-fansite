@@ -2,6 +2,12 @@
 title: "Caravan"
 slug: "/expeditions/africa-expeditions/caravan"
 sidebar_position: 6
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Caravan]
+tags:
+  - expeditions
+  - africa expeditions
+description: Caravan is the sixth expedition in Africa and is very fruitful and boosting expedition. Enemies are not impossibly hard and they are more than generous. A small shadow over the relationship between the Umpokta tribe and the Empire is this hijacked caravan. There are still plenty of goods in the desert belonging to our citizens. The negotiations are being drawn out because of communication problems.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Caravan/Slave_Merchant.jpg
 ---
 
 Caravan is the sixth expedition in Africa and is very fruitful and boosting expedition. Enemies are not impossibly hard and they are more than generous.

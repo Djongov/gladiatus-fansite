@@ -2,9 +2,15 @@
 title: "Mona Isle"
 slug: "/expeditions/britannia-expeditions/mona-isle"
 sidebar_position: 9
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, Mona Isle]
+tags:
+  - expeditions
+  - britannia expeditions
+description: Mona Isle Fortress is a high level expedition (starting level 200) in Britannia. It is the highest level expedition in Gladiatus.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Opponent_boss.jpg
 ---
 
-# Mona Isle
+Mona Isle Fortress is a high level expedition (starting level 200) in Britannia. It is the highest level expedition in Gladiatus.
 
 ## Description
 

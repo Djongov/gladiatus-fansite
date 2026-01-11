@@ -2,6 +2,12 @@
 title: Dragon Remains
 slug: /expeditions/germania-expeditions/dragon-remains
 sidebar_position: 9
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Dragon Remains]
+tags:
+  - expeditions
+  - germania expeditions
+description: The last expedition in Germania. Anyone can feel his skin crawl when they reach this place. Magic passes through the scattered dragon bones. But this amount of free magic can not go unnoticed and the creatures who hunger for this force are drawn to this place. They claim that space and have set watchmen to guard it. But with great power comes great madness and famine that now threatens to engulf everything.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Dragon_Remains/Dracolich.jpg
 ---
 
 The last expedition in Germania.

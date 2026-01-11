@@ -2,6 +2,12 @@
 title: Death Hill
 slug: /expeditions/germania-expeditions/death-hill
 sidebar_position: 4
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, Death Hill]
+tags:
+  - expeditions
+  - germania expeditions
+description: The fourth expedition in Germania is Death Hill. Relatively easy expedition. The loss of the cave temple poses a considerable problem to the dwellers Where to put the dead? Death Hill had for a long time been a perfect answer. Until the dead started rising and feeding off the carrion. Naturally this attracted allot of wild animals. Still many adventurers don`t let this story deter them from looting the riches found in the graves.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Death_Hill/Necromancer_Prince.jpg
 ---
 
 The fourth expedition in Germania is Death Hill. Relatively easy expedition.

@@ -2,9 +2,15 @@
 title: "The Ford"
 slug: "/expeditions/britannia-expeditions/the-ford"
 sidebar_position: 6
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, The Ford]
+tags:
+  - expeditions
+  - britannia expeditions
+description: The Ford Fortress is a high level expedition (starting level 170) in Britannia.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Ford/Opponent_boss.jpg
 ---
 
-# The Ford
+The Ford Fortress is a high level expedition (starting level 170) in Britannia.
 
 ## Description
 

@@ -2,9 +2,15 @@
 title: "The Moor"
 slug: "/expeditions/britannia-expeditions/the-moor"
 sidebar_position: 3
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, The Moor]
+tags:
+  - expeditions
+  - britannia expeditions
+description: The Moor is a high level expedition (starting level 140) in Britannia.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/The_Moor/Nodens.jpg
 ---
 
-# The Moor
+The Moor is a high level expedition (starting level 140) in Britannia.
 
 ## Description
 

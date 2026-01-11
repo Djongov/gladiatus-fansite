@@ -2,6 +2,12 @@
 title: "Voodoo Temple"
 slug: "/expeditions/africa-expeditions/voodoo-temple"
 sidebar_position: 1
+keywords: [Expeditions, Gladiatus Expeditions, Africa Expeditions, Voodoo Temple]
+tags:
+  - expeditions
+  - africa expeditions
+description: Voodoo Temple is the first expedition in Africa. It is the generous gift made by the Empire for the Umpokta. After the foundation walls and the building material were delivered, the Umpokta banished all Roman architects and finished constructing the building themselves. Religious reasons were pushed forward. Certainly the temple probably holds many secrets and treasures, which are protected by force of arms.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Africa/Voodoo_Temple/Seth_Priest.jpg
 ---
 
 Voodoo Temple is the first expedition in Africa.

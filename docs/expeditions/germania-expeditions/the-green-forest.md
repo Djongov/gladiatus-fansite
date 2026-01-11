@@ -2,6 +2,12 @@
 title: The green forest
 slug: /expeditions/germania-expeditions/the-green-forest
 sidebar_position: 2
+keywords: [Expeditions, Gladiatus Expeditions, Germania Expeditions, The green forest]
+tags:
+  - expeditions
+  - germania expeditions
+description: The second expedition in Germania is the Green Forest. Whoever likes green and aromatic things will find that the green forest is the perfect place for them. The odour of Taraxacum officinale, Viola riviniana or Oxalis acetosella bewitch the senses and give all the horrors, that emanate from the forest, some comfort. Wolves and bears suddenly start walking up-right and killing wanderers. The same goes for the usually friendly wolf pack. Whoever ventures into the forest at night can usually find magic ingredients, but the risk of dying is just a bit too much for the average citizen. But who ever even listens to the opinion of an average citizen?
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Germania/Green_Forest/Werebear.jpg
 ---
 
 The second expedition in Germania is the Green Forest.

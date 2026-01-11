@@ -2,6 +2,12 @@
 title: Bandit Camp
 slug: /expeditions/italy-expeditions/bandit-camp
 sidebar_position: 7
+keywords: [Expeditions, Gladiatus Expeditions, Italy Expeditions, Bandit Camp]
+tags:
+  - expeditions
+  - italy expeditions
+description: Bandit Camp is comprised of deserters, criminals and smugglers from the city. Last expedition in Italy. Once you are done here, you won't return home anymore. Near the city, hidden in the southern foothills of the Misty Mountains, there is a bandit camp. Bandits, smugglers, thieves and other outlaws bustle around there. Although the imperial legion sent troops there countless times, the camp was reconstructed every time.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Italy/Bandit_Camp/Bandit_Chief.jpg
 ---
 
 Bandit Camp is comprised of deserters, criminals and smugglers from the city. Last expedition in Italy. Once you are done here, you won't return home anymore.

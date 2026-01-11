@@ -2,9 +2,15 @@
 title: "Forest Fortress"
 slug: "/expeditions/britannia-expeditions/forest-fortress"
 sidebar_position: 2
+keywords: [Expeditions, Gladiatus Expeditions, Britannia Expeditions, Forest Fortress]
+tags:
+  - expeditions
+  - britannia expeditions
+description: Forest Fortress is a high level expedition (starting level 130) in Britannia.
+image: https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Forest_Fortress/Kalirius.jpg
 ---
 
-# Forest Fortress
+Forest Fortress is a high level expedition (starting level 130) in Britannia.
 
 ## Description
 
