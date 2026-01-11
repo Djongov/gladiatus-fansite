@@ -15,17 +15,11 @@ export default function TrainingCalculator() {
   };
 
   const [stats, setStats] = useState(initialStats);
-  const [results, setResults] = useState({
-    strength: '', dexterity: '', agility: '', constitution: '',
-    charisma: '', intelligence: '', total: '', discount: ''
-  });
+  const [results, setResults] = useState(null);
 
   const resetStats = () => {
     setStats(initialStats);
-    setResults({
-      strength: '', dexterity: '', agility: '', constitution: '',
-      charisma: '', intelligence: '', total: '', discount: ''
-    });
+    setResults(null);
   };
 
   const formatNumber = (num) => {
@@ -33,56 +27,61 @@ export default function TrainingCalculator() {
     return num.toString().replaceAll(/\B(?=(\d{3})+(?!\d))/g, '.');
   };
 
-  const display = (part, total) => `${formatNumber(part)} (${Math.floor(part * 100 / total)}%)`;
-
-  const costStat = (from, to, coeff, reduc, costumeDiscount) => {
+  const costStat = (from, to, coeff, trainingGroundDiscount, costumeDiscount, additionalDiscount) => {
     from = Number.parseInt(from) || 0;
     to = Number.parseInt(to) || 0;
     let baseCount = 0;
     for (let i = from; i < to; i++) baseCount += Math.pow(i - 4, coeff);
     
-    // Apply training grounds discount
-    let discountedCount = baseCount * (1 - reduc);
-    // Apply costume discount
-    if (costumeDiscount > 0) discountedCount *= (1 - costumeDiscount / 100);
+    // Add all discounts together (compound)
+    const totalDiscount = trainingGroundDiscount + (costumeDiscount / 100) + additionalDiscount;
     
-    return { base: Math.floor(baseCount), discounted: Math.floor(discountedCount) };
+    // Apply the total discount once to the base cost
+    const finalCost = baseCount * (1 - totalDiscount);
+    
+    return { 
+      base: Math.floor(baseCount), 
+      final: Math.floor(finalCost),
+      totalDiscountPercent: totalDiscount * 100
+    };
   };
 
   const calculateStats = () => {
-    const reduc = 2 * stats.trainingGroundLevel / 100;
+    const trainingGroundDiscount = 2 * stats.trainingGroundLevel / 100;
     const costumeDiscount = stats.costumeDiscount;
-    const further = stats.furtherDiscount / 100;
+    const additionalDiscount = stats.furtherDiscount / 100;
 
-    const strengthCost = costStat(stats.strengthFrom, stats.strengthTo, 2.6, reduc, costumeDiscount);
-    const dexterityCost = costStat(stats.dexterityFrom, stats.dexterityTo, 2.5, reduc, costumeDiscount);
-    const agilityCost = costStat(stats.agilityFrom, stats.agilityTo, 2.3, reduc, costumeDiscount);
-    const constitutionCost = costStat(stats.constitutionFrom, stats.constitutionTo, 2.3, reduc, costumeDiscount);
-    const charismaCost = costStat(stats.charismaFrom, stats.charismaTo, 2.5, reduc, costumeDiscount);
-    const intelligenceCost = costStat(stats.intelligenceFrom, stats.intelligenceTo, 2.4, reduc, costumeDiscount);
+    const strengthCost = costStat(stats.strengthFrom, stats.strengthTo, 2.6, trainingGroundDiscount, costumeDiscount, additionalDiscount);
+    const dexterityCost = costStat(stats.dexterityFrom, stats.dexterityTo, 2.5, trainingGroundDiscount, costumeDiscount, additionalDiscount);
+    const agilityCost = costStat(stats.agilityFrom, stats.agilityTo, 2.3, trainingGroundDiscount, costumeDiscount, additionalDiscount);
+    const constitutionCost = costStat(stats.constitutionFrom, stats.constitutionTo, 2.3, trainingGroundDiscount, costumeDiscount, additionalDiscount);
+    const charismaCost = costStat(stats.charismaFrom, stats.charismaTo, 2.5, trainingGroundDiscount, costumeDiscount, additionalDiscount);
+    const intelligenceCost = costStat(stats.intelligenceFrom, stats.intelligenceTo, 2.4, trainingGroundDiscount, costumeDiscount, additionalDiscount);
 
     // Calculate totals
-    let totalBase = strengthCost.base + dexterityCost.base + agilityCost.base + constitutionCost.base + charismaCost.base + intelligenceCost.base;
-    let totalBeforeFurtherDiscount = strengthCost.discounted + dexterityCost.discounted + agilityCost.discounted + constitutionCost.discounted + charismaCost.discounted + intelligenceCost.discounted;
-
-    // Apply further discount on the already discounted total
-    let furtherDiscountAmount = Math.floor(totalBeforeFurtherDiscount * further);
-    let finalTotal = totalBeforeFurtherDiscount - furtherDiscountAmount;
-
-    // Total discount is the difference between base and final
-    let totalDiscount = totalBase - finalTotal;
+    const totalBase = strengthCost.base + dexterityCost.base + agilityCost.base + constitutionCost.base + charismaCost.base + intelligenceCost.base;
+    const finalTotal = strengthCost.final + dexterityCost.final + agilityCost.final + constitutionCost.final + charismaCost.final + intelligenceCost.final;
+    const totalSaved = totalBase - finalTotal;
 
     setResults({
-      strength: display(strengthCost.discounted, totalBeforeFurtherDiscount),
-      dexterity: display(dexterityCost.discounted, totalBeforeFurtherDiscount),
-      agility: display(agilityCost.discounted, totalBeforeFurtherDiscount),
-      constitution: display(constitutionCost.discounted, totalBeforeFurtherDiscount),
-      charisma: display(charismaCost.discounted, totalBeforeFurtherDiscount),
-      intelligence: display(intelligenceCost.discounted, totalBeforeFurtherDiscount),
-      total: formatNumber(finalTotal),
-      discount: formatNumber(totalDiscount)
+      stats: {
+        strength: strengthCost,
+        dexterity: dexterityCost,
+        agility: agilityCost,
+        constitution: constitutionCost,
+        charisma: charismaCost,
+        intelligence: intelligenceCost
+      },
+      totals: {
+        base: totalBase,
+        final: finalTotal
+      },
+      savings: {
+        total: totalSaved
+      }
     });
   };
+
 
   const handleChange = (e) => {
     const { id, value, type, checked } = e.target;
@@ -92,80 +91,235 @@ export default function TrainingCalculator() {
     }));
   };
 
+  const GoldIcon = () => (
+    <img 
+      src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif" 
+      alt="Gold" 
+      style={{ width: '16px', verticalAlign: 'middle', marginLeft: '4px' }} 
+    />
+  );
 
   return (
-    <div style={{ overflowX: 'auto', textAlign: 'center' }}>
-      <table>
+    <div style={{ overflowX: 'auto' }}>
+      {/* Discount Configuration Section */}
+      <div style={{ 
+        backgroundColor: '#D5C19A', 
+        padding: '15px', 
+        borderRadius: '8px', 
+        marginBottom: '20px',
+        border: '1px solid #ddd'
+      }}>
+        <h3 style={{ marginTop: 0, marginBottom: '15px' }}>Discount Configuration</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '15px' }}>
+          <div>
+            <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>
+              Training Grounds Level
+            </label>
+            <select 
+              id="trainingGroundLevel" 
+              value={stats.trainingGroundLevel} 
+              onChange={handleChange}
+              style={{ width: '100%', padding: '5px' }}
+            >
+              {Array.from({length:21}, (_, i) => (
+                <option key={i} value={i}>
+                  Level {i} ({i * 2}% discount)
+                </option>
+              ))}
+            </select>
+            <small style={{ color: '#424242' }}>From guild</small>
+          </div>
+          
+          <div>
+            <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>
+              Costume Bonus
+            </label>
+            <select 
+              id="costumeDiscount" 
+              value={stats.costumeDiscount} 
+              onChange={handleChange}
+              style={{ width: '100%', padding: '5px' }}
+            >
+              <option value={0}>None (0%)</option>
+              <option value={3}>Neptune's Fluid Might (3%)</option>
+              <option value={20}>Bubona's Bull Armour (20%)</option>
+            </select>
+            <small style={{ color: '#424242' }}>From wearing a costume</small>
+          </div>
+          
+          <div>
+            <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>
+              Additional Discount
+            </label>
+            <select 
+              id="furtherDiscount" 
+              value={stats.furtherDiscount} 
+              onChange={handleChange}
+              style={{ width: '100%', padding: '5px' }}
+            >
+              {Array.from({ length: 26 }, (_, i) => (
+                <option key={i} value={i}>{i}%</option>
+              ))}
+            </select>
+            <small style={{ color: '#424242' }}>From Microevent or Food (bunny or pumpkin)</small>
+          </div>
+        </div>
+      </div>
+
+      {/* Stats Input Table */}
+      <table style={{ width: '100%', marginBottom: '20px' }}>
         <thead>
           <tr>
-            <th>Stats</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Cost</th>
+            <th>Stat</th>
+            <th>From Level</th>
+            <th>To Level</th>
+            <th>Base Cost</th>
+            <th>Discounted Cost</th>
+            <th>Saved</th>
           </tr>
         </thead>
         <tbody>
-          {['strength','dexterity','agility','constitution','charisma','intelligence'].map((stat, idx) => (
-            <tr key={stat}>
-              <td>{stat.charAt(0).toUpperCase() + stat.slice(1)}</td>
-              <td><input type="text" id={`${stat}From`} value={stats[`${stat}From`]} onChange={handleChange} /></td>
-              <td><input type="text" id={`${stat}To`} value={stats[`${stat}To`]} onChange={handleChange} /></td>
-              <td>
-                <img 
-                    src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif" 
-                    alt="Gold" 
-                    style={{ width: '16px', verticalAlign: 'middle', marginRight: '4px' }} 
-                />
-                {results[stat]}
-              </td>
-            </tr>
-          ))}
-          <tr>
-            <td>Level of Training Grounds</td>
-            <td>
-              <select id="trainingGroundLevel" value={stats.trainingGroundLevel} onChange={handleChange}>
-                {Array.from({length:21}, (_, i) => <option key={i} value={i}>{i}</option>)}
-              </select>
-            </td>
-            <td>Discount:</td>
-            <td>{results.discount}</td>
-          </tr>
-          <tr>
-            <td>Further Discount %</td>
-            <td>
-              <select id="furtherDiscount" value={stats.furtherDiscount} onChange={handleChange}>
-                {Array.from({ length: 21 }, (_, i) => <option key={i} value={i}>{i}%</option>)}
-              </select>
-            </td>
-            <td colSpan={2}>Applied on total cost</td>
-          </tr>
-          <tr>
-            <td>Costume Discount</td>
-            <td>
-              <select id="costumeDiscount" value={stats.costumeDiscount} onChange={handleChange}>
-                <option value={0}>None</option>
-                <option value={3}>Neptune's Fluid Might (3%)</option>
-                <option value={20}>Bubona's Bull Armour (20%)</option>
-              </select>
-            </td>
-            <td>Total Cost:</td>
-            <td>
-                <img 
-                    src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif" 
-                    alt="Gold" 
-                    style={{ width: '16px', verticalAlign: 'middle', marginRight: '4px' }} 
-                />
-                {results.total}
-            </td>
-          </tr>
-          <tr>
-            <td colSpan="4">
-              <button onClick={calculateStats}>Calculate</button>{' '}
-              <button onClick={resetStats}>Reset</button>
-            </td>
-          </tr>
+          {['strength','dexterity','agility','constitution','charisma','intelligence'].map((stat) => {
+            const statName = stat.charAt(0).toUpperCase() + stat.slice(1);
+            const statData = results?.stats[stat];
+            const hasCost = statData && statData.base > 0;
+            
+            return (
+              <tr key={stat}>
+                <td style={{ fontWeight: 'bold' }}>{statName}</td>
+                <td>
+                  <input 
+                    type="text" 
+                    id={`${stat}From`} 
+                    value={stats[`${stat}From`]} 
+                    onChange={handleChange}
+                    style={{ width: '80px', padding: '5px' }}
+                  />
+                </td>
+                <td>
+                  <input 
+                    type="text" 
+                    id={`${stat}To`} 
+                    value={stats[`${stat}To`]} 
+                    onChange={handleChange}
+                    style={{ width: '80px', padding: '5px' }}
+                  />
+                </td>
+                <td>
+                  {hasCost && (
+                    <>
+                      {formatNumber(statData.base)}
+                      <GoldIcon />
+                    </>
+                  )}
+                </td>
+                <td style={{ fontWeight: 'bold', color: hasCost ? '#2e7d32' : 'inherit' }}>
+                  {hasCost && (
+                    <>
+                      {formatNumber(statData.final)}
+                      <GoldIcon />
+                    </>
+                  )}
+                </td>
+                <td style={{ color: '#d32f2f' }}>
+                  {hasCost && statData.base !== statData.final && (
+                    <>
+                      {formatNumber(statData.base - statData.final)}
+                      <GoldIcon />
+                    </>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
+
+      {/* Action Buttons */}
+      <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+        <button 
+          onClick={calculateStats}
+          style={{ 
+            padding: '10px 30px', 
+            fontSize: '16px',
+            marginRight: '10px',
+            cursor: 'pointer'
+          }}
+        >
+          Calculate
+        </button>
+        <button 
+          onClick={resetStats}
+          style={{ 
+            padding: '10px 30px', 
+            fontSize: '16px',
+            cursor: 'pointer'
+          }}
+        >
+          Reset
+        </button>
+      </div>
+
+      {/* Results Summary */}
+      {results && (
+        <div style={{ 
+          padding: '20px', 
+          borderRadius: '8px',
+          border: '1px solid #ddd',
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '20px'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ fontSize: '14px', color: '#424242', marginBottom: '5px' }}>
+              Base Cost (No Discounts)
+            </div>
+            <div style={{ fontSize: '32px', fontWeight: 'bold' }}>
+              {formatNumber(results.totals.base)}
+              <GoldIcon />
+            </div>
+          </div>
+          
+          <div style={{ fontSize: '40px', color: '#424242' }}>→</div>
+          
+          {results.savings.total > 0 && (
+            <>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '14px', color: '#d32f2f', marginBottom: '5px', fontWeight: 'bold' }}>
+                  Saved
+                </div>
+                <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#d32f2f' }}>
+                  {formatNumber(results.savings.total)}
+                  <GoldIcon />
+                </div>
+                <div style={{ fontSize: '14px', color: '#424242', marginTop: '5px' }}>
+                  ({Math.round((results.savings.total / results.totals.base) * 100)}% off)
+                </div>
+              </div>
+              
+              <div style={{ fontSize: '40px', color: '#424242' }}>=</div>
+            </>
+          )}
+          
+          <div style={{ 
+            textAlign: 'center',
+            backgroundColor: '#f9f9f9',
+            padding: '20px',
+            borderRadius: '8px',
+            border: '2px solid #333'
+          }}>
+            <div style={{ fontSize: '16px', marginBottom: '10px', fontWeight: 'bold' }}>
+              Final Cost (With All Discounts)
+            </div>
+            <div style={{ fontSize: '42px', fontWeight: 'bold' }}>
+              {formatNumber(results.totals.final)}
+              <GoldIcon />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

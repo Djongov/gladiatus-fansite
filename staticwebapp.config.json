@@ -93,6 +93,9 @@
 
     { "route": "/index.php/about-me/", "redirect": "/about-me", "statusCode": 301, "queryParameters": { "id": "52" } },
 
-    { "route": "/materials", "redirect": "/forging/forging-goods", "statusCode": 301, "queryParameters": { "id": "66" } }
+    { "route": "/materials", "redirect": "/forging/forging-goods", "statusCode": 301, "queryParameters": { "id": "66" } },
+    { "route": "/16-tools/62-building-and-training-calculator", "redirect": "/calculators", "statusCode": 301, "queryParameters": { "id": "62" } },
+    { "route": "/calculator.html", "redirect": "/calculators", "statusCode": 301, "queryParameters": { "id": "62" } },
+    { "route": "/calculator", "redirect": "/calculators", "statusCode": 301, "queryParameters": { "id": "62" } }
   ]
 }

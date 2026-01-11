@@ -132,9 +132,14 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          to: '/calculator',
+          to: '/calculators',
           position: 'left',
           label: 'Calculators',
+        },
+        {
+          to: '/contributing',
+          position: 'left',
+          label: 'Contribute',
         },
         {
           to: '/about-me',
