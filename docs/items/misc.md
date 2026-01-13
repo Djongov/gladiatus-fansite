@@ -3,7 +3,7 @@ title: Miscellaneous Items
 slug: /items/misc
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## Misc
 ---------------------

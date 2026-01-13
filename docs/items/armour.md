@@ -3,7 +3,7 @@ title: Armour
 slug: /items/armour
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## **Armour**
 -----------------------------

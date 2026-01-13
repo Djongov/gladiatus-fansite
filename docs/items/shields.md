@@ -3,7 +3,7 @@ title: Shields
 slug: /items/shields
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## **Shields**
 -------------------------------

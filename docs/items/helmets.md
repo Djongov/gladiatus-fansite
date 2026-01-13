@@ -3,7 +3,7 @@ title: Helmets
 slug: /items/helmets
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## **Helmets**
 -------------------------------

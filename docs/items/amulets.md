@@ -3,7 +3,7 @@ title: Amulets
 slug: /items/amulets
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## Amulets
 ---------------------------

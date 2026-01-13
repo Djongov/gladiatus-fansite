@@ -1,19 +1,38 @@
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
+import Item, { calculateItemStats } from '@site/src/components/Item';
 
-<ItemTooltip
-  name="Antonius Long sword of Assassination"
-  rarity="red"
-  image="https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Long_sword.png"
-  damage="354 – 424"
-  level={116}
-  stats={[
-    "Dexterity +58",
-    "Dexterity +4%",
-    "Agility +70",
-    "Agility +8%",
-    "Charisma +50",
-    "Critical attack value +50"
-  ]}
-  enchantValue="33"
-  gold="34,873"
-/>
+## All Broad Axe Variants
+
+<div>
+  <Item baseItem="Broad Axe" rarity="green" />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="green" conditioned={true} />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="blue" />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="blue" conditioned={true} />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="purple" />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="purple" conditioned={true} />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="orange" />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="orange" conditioned={true} />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="red" />
+  {' '}
+  <Item baseItem="Broad Axe" rarity="red" conditioned={true} />
+</div>
+
+## With Prefix and Suffix
+
+<div>
+  <Item baseItem="Trident" prefix="Antonius" suffix="of Assassination" rarity="orange" conditioned={true} />
+  {' '}
+  <Item baseItem="Club" prefix="Strong" suffix="of Power" rarity="orange" />
+  {' '}
+  <Item baseItem="Long sword" prefix="Swift" rarity="purple" />
+</div>
+
+

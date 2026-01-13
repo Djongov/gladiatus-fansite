@@ -3,7 +3,7 @@ title: Item Drop
 slug: /items/item-drop
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## **Item Drop**
 ------------------------------
