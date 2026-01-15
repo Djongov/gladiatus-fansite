@@ -137,6 +137,11 @@ const config: Config = {
           label: 'Calculators',
         },
         {
+          href: 'https://gladiatus-api.gamerz-bg.com/',
+          position: 'left',
+          label: 'Global Ranking',
+        },
+        {
           to: '/contributing',
           position: 'left',
           label: 'Contribute',

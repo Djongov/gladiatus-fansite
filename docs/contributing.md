@@ -20,7 +20,7 @@ This guide will walk you through everything you need to know to contribute succe
 
 **Never contributed to an open-source project before?** No problem! We welcome first-time contributors.
 
-**Already familiar with GitHub?** Jump to [Contribution Workflow](#contribution-workflow).
+**Already familiar with GitHub?** Jump to `Contribution Workflow`
 
 **Want to make a quick fix?** You can edit most pages directly on GitHub without setting up anything locally. Look for the "Edit this page" link at the bottom of any page.
 
@@ -103,7 +103,7 @@ git checkout -b docs/improve-contributing-guide
 
 #### Step 4: Make Your Changes
 
-Edit the files you want to change. See [Project Structure](#project-structure) to understand where things are.
+Edit the files you want to change. See `Project Structure` to understand where things are.
 
 #### Step 5: Test Your Changes (Optional but Recommended)
 
