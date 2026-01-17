@@ -98,5 +98,6 @@
     { "route": "/calculator.html", "redirect": "/calculators", "statusCode": 301, "queryParameters": { "id": "62" } },
     { "route": "/calculator", "redirect": "/calculators", "statusCode": 301, "queryParameters": { "id": "62" } },
     { "route": "/events/13-events/crc32", "redirect": "/events/reconstruction-of-rome", "statusCode": 301, "queryParameters": { "id": "62" } }
+    { "route": "/expeditions/9-expeditions/64-britannia-expeditions", "redirect": "/expeditions/britannia-expeditions/bank-of-the-thames", "statusCode": 301, "queryParameters": { "id": "4" } }
   ]
 }
