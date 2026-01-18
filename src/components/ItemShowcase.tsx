@@ -81,7 +81,7 @@ export default function ItemShowcase({
           <h3 style={{ marginBottom: '15px', fontSize: '18px' }}>{item.name}</h3>
           
           {showMaterials && Object.keys(item.materials).length > 0 && (
-            <div style={{ fontSize: '13px', marginBottom: '10px', color: '#c2a66a' }}>
+            <div style={{ fontSize: '13px', marginBottom: '10px', color: '#121212' }}>
               <strong>Materials:</strong> {Object.entries(item.materials).map(([material, quantity]) => 
                 `${quantity}× ${material}`
               ).join(', ')}
