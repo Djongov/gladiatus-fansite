@@ -17,6 +17,16 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ## Latest website news
 
+### 19.01.2026
+
+- I made great progress into the items and the tooltips. Figured out the formula for damage, armor, durability and conditioning between rarities
+- This will allow for great automation on displaying them on the page in beautiful way
+- In the past week, I've been working on a new tool - Gladiatus Global Ranking at [Gladiatus API](https://gladiatus-api.gamerz-bg.com "Global Ranking"). It's realeased now and it's super fun to browse. Go and check it.
+
+### 11.01.2026
+
+- Experiments with Items and tooltips
+
 ### 10.01.2026
 
 Today's migration progress:
