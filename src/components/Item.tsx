@@ -11,7 +11,7 @@ export interface BaseItem {
   level: number | null;
   damageMin?: number;
   damageMax?: number;
-  armor?: number | null;
+  armour?: number | null;
   durability: number | null;
   conditioning: number | null;
   gold: number | null;
@@ -36,7 +36,7 @@ export interface CalculatedItemStats {
   level: number;
   rarity: ItemRarity;
   damage?: { min: number; max: number };
-  armor?: number;
+  armour?: number;
   durability?: number;
   conditioning: { current: number; max: number };
   gold?: number;
@@ -161,11 +161,11 @@ export function calculateItemStats(
     };
   }
 
-  // Calculate armor (uses same multipliers as damage)
-  let armor: number | undefined;
-  if (baseItem.armor !== null && baseItem.armor !== undefined) {
+  // Calculate armour (uses same multipliers as damage)
+  let armour: number | undefined;
+  if (baseItem.armour !== null && baseItem.armour !== undefined) {
     const multiplier = getDamageMultiplier();
-    armor = Math.round(baseItem.armor * multiplier);
+    armour = Math.round(baseItem.armour * multiplier);
   }
 
   // Combine stats from prefix and suffix
@@ -217,7 +217,7 @@ export function calculateItemStats(
   
   // Sort stats by predefined order
   const sortedStats = Object.entries(statsMap)
-    .filter(([stat]) => stat !== 'damage' && stat !== 'armor') // Exclude damage/armor as they're shown separately
+    .filter(([stat]) => stat !== 'damage' && stat !== 'armour') // Exclude damage/armour as they're shown separately
     .sort(([a], [b]) => {
       const indexA = statOrder.indexOf(a);
       const indexB = statOrder.indexOf(b);
@@ -258,7 +258,7 @@ export function calculateItemStats(
     level: finalLevel,
     rarity,
     damage,
-    armor,
+    armour,
     durability: applyBonus(baseItem.durability) || undefined,
     conditioning: {
       current: conditioned && baseItem.conditioning ? applyBonus(baseItem.conditioning)! : 0,
@@ -332,7 +332,7 @@ export default function Item({
             <div>Damage: {calculatedStats.damage.min} - {calculatedStats.damage.max}</div>
           )}
           
-          {calculatedStats.armor && <div>Armor: {calculatedStats.armor}</div>}
+          {calculatedStats.armour && <div>Armour: {calculatedStats.armour}</div>}
 
           {/* Display stats from prefix/suffix */}
           {calculatedStats.stats.length > 0 && calculatedStats.stats.map((stat, index) => (

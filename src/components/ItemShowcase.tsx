@@ -78,7 +78,7 @@ export default function ItemShowcase({
     <div style={{ marginTop: '20px' }}>
       {itemsToDisplay.map((item) => (
         <div key={item.name} style={{ marginBottom: '30px' }}>
-          <h3 style={{ marginBottom: '15px', fontSize: '18px' }}>{item.name}</h3>
+          <h2 style={{ marginBottom: '15px', fontSize: '22px' }}>{item.name}</h2>
           
           {showMaterials && Object.keys(item.materials).length > 0 && (
             <div style={{ fontSize: '13px', marginBottom: '10px', color: '#121212' }}>

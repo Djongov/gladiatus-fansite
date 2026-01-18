@@ -1,6 +1,7 @@
 ---
 title: Shoes
 slug: /items/shoes
+sidebar_position: 8
 ---
 
 import CustomItemTooltip from '@site/src/components/CustomItemTooltip';

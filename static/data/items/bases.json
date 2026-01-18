@@ -312,7 +312,7 @@
   {
     "name": "Planks",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -325,7 +325,7 @@
   {
     "name": "Wooden shield",
     "level": 3,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -339,7 +339,7 @@
   {
     "name": "Round shield",
     "level": 7,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -353,7 +353,7 @@
   {
     "name": "Viking Shield",
     "level": 11,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -367,7 +367,7 @@
   {
     "name": "Net",
     "level": 15,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -380,7 +380,7 @@
   {
     "name": "Dragonshield",
     "level": 19,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -394,7 +394,7 @@
   {
     "name": "Egyptian Shield",
     "level": 23,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -408,7 +408,7 @@
   {
     "name": "Silvershield",
     "level": 27,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -423,7 +423,7 @@
   {
     "name": "Towershield",
     "level": 31,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -438,7 +438,7 @@
   {
     "name": "Fireshield",
     "level": 35,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -453,7 +453,7 @@
   {
     "name": "Firetowershield",
     "level": 39,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -468,7 +468,7 @@
   {
     "name": "Titanium Shield",
     "level": 43,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -481,7 +481,7 @@
   {
     "name": "Rags",
     "level": 1,
-    "armor": 10,
+    "armour": 10,
     "durability": 1072,
     "conditioning": 269,
     "gold": 11,
@@ -489,12 +489,12 @@
     "materials": {
       "Leather": 2
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Leather armour",
     "level": 1,
-    "armor": 15,
+    "armour": 15,
     "durability": 1314,
     "conditioning": 329,
     "gold": 11,
@@ -503,12 +503,12 @@
       "Copper": 1,
       "Leather": 2
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Double leather",
     "level": 2,
-    "armor": 20,
+    "armour": 20,
     "durability": 2839,
     "conditioning": 710,
     "gold": 32,
@@ -517,12 +517,12 @@
       "Copper": 1,
       "Leather": 2
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Copper shoulders",
     "level": 3,
-    "armor": 30,
+    "armour": 30,
     "durability": 4829,
     "conditioning": 1208,
     "gold": 60,
@@ -532,12 +532,12 @@
       "Leather": 1,
       "Iron": 2
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Half plate",
     "level": 4,
-    "armor": 40,
+    "armour": 40,
     "durability": 7436,
     "conditioning": 1859,
     "gold": 95,
@@ -545,12 +545,12 @@
     "materials": {
       "Iron": 5
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Crocodile Plate Armour",
     "level": 4,
-    "armor": 40,
+    "armour": 40,
     "durability": 7436,
     "conditioning": 1859,
     "gold": 93,
@@ -559,12 +559,12 @@
       "Leather": 3,
       "Iron": 2
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Copper plate",
     "level": 5,
-    "armor": 50,
+    "armour": 50,
     "durability": 9294,
     "conditioning": 2324,
     "gold": 136,
@@ -573,12 +573,12 @@
       "Copper": 5,
       "Iron": 2
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Chainmail armour",
     "level": 6,
-    "armor": 60,
+    "armour": 60,
     "durability": 11153,
     "conditioning": 2789,
     "gold": 182,
@@ -587,12 +587,12 @@
       "Copper": 3,
       "Iron": 5
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Iron plate",
     "level": 7,
-    "armor": 70,
+    "armour": 70,
     "durability": 13012,
     "conditioning": 3254,
     "gold": 235,
@@ -601,12 +601,12 @@
       "Copper": 3,
       "Iron": 6
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Full plate",
     "level": 8,
-    "armor": 80,
+    "armour": 80,
     "durability": 14872,
     "conditioning": 3718,
     "gold": 293,
@@ -616,12 +616,12 @@
       "Leather": 2,
       "Iron": 7
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Iron shoulders",
     "level": 9,
-    "armor": 90,
+    "armour": 90,
     "durability": 16731,
     "conditioning": 4183,
     "gold": null,
@@ -631,12 +631,12 @@
       "Leather": 2,
       "Iron": 7
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Hard leather armour",
     "level": 10,
-    "armor": 100,
+    "armour": 100,
     "durability": 18589,
     "conditioning": 4648,
     "gold": 426,
@@ -644,12 +644,12 @@
     "materials": {
       "Leather": 12
     },
-    "type": "armor"
+    "type": "armour"
   },
   {
     "name": "Leather cap",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -662,7 +662,7 @@
   {
     "name": "Iron cap",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -675,7 +675,7 @@
   {
     "name": "Myrmillo",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -689,7 +689,7 @@
   {
     "name": "Thracian",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -703,7 +703,7 @@
   {
     "name": "Gladiator helmet",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -717,7 +717,7 @@
   {
     "name": "Skull helmet",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -731,7 +731,7 @@
   {
     "name": "Copper helmet",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -745,7 +745,7 @@
   {
     "name": "Viking helmet",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -759,7 +759,7 @@
   {
     "name": "Centurio",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -773,7 +773,7 @@
   {
     "name": "Spike helmet",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -787,7 +787,7 @@
   {
     "name": "Spectacled Helmet",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -800,7 +800,7 @@
   {
     "name": "Centurio full helmet",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -814,7 +814,7 @@
   {
     "name": "Brass centurio",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -829,7 +829,7 @@
   {
     "name": "Leather gloves",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -842,7 +842,7 @@
   {
     "name": "Copper bracers",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -856,7 +856,7 @@
   {
     "name": "Copper gloves",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -870,7 +870,7 @@
   {
     "name": "Leather battle gloves",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -883,7 +883,7 @@
   {
     "name": "Leather bracers",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -897,7 +897,7 @@
   {
     "name": "Iron gauntlets",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -911,7 +911,7 @@
   {
     "name": "Studded gloves",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -926,7 +926,7 @@
   {
     "name": "Plate bracers",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -940,7 +940,7 @@
   {
     "name": "Plate gauntlets",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -954,7 +954,7 @@
   {
     "name": "Sandals",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -968,7 +968,7 @@
   {
     "name": "Leather sandals",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -981,7 +981,7 @@
   {
     "name": "Leather boots",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -994,7 +994,7 @@
   {
     "name": "Leather battle boots",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -1008,7 +1008,7 @@
   {
     "name": "Copper bandages",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -1022,7 +1022,7 @@
   {
     "name": "Hunting boots",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -1036,7 +1036,7 @@
   {
     "name": "Hard leather bandages",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -1049,7 +1049,7 @@
   {
     "name": "Silver battle boots",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -1064,7 +1064,7 @@
   {
     "name": "Studded boots",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -1079,7 +1079,7 @@
   {
     "name": "Plate boots",
     "level": null,
-    "armor": null,
+    "armour": null,
     "durability": null,
     "conditioning": null,
     "gold": null,
@@ -1093,7 +1093,7 @@
   {
     "name": "Blue ring",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1106,7 +1106,7 @@
   {
     "name": "Malachite ring",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1119,7 +1119,7 @@
   {
     "name": "Golden ring",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1132,7 +1132,7 @@
   {
     "name": "Silver ring",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1145,7 +1145,7 @@
   {
     "name": "Dragon ring",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1158,7 +1158,7 @@
   {
     "name": "Ruby ring",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1171,7 +1171,7 @@
   {
     "name": "Scarab",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1184,7 +1184,7 @@
   {
     "name": "Triskele",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": null,
     "gold": 20,
@@ -1197,7 +1197,7 @@
   {
     "name": "Gold symbol",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1210,7 +1210,7 @@
   {
     "name": "Silver wreath",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1223,7 +1223,7 @@
   {
     "name": "Carnelian pendant",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1236,7 +1236,7 @@
   {
     "name": "Silver relict",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1249,7 +1249,7 @@
   {
     "name": "Sugilith pendant",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1262,7 +1262,7 @@
   {
     "name": "Malachite pendant",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1275,7 +1275,7 @@
   {
     "name": "Star talisman",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1288,7 +1288,7 @@
   {
     "name": "Ruby pendant",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1301,7 +1301,7 @@
   {
     "name": "Ra`s Eye",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,
@@ -1314,7 +1314,7 @@
   {
     "name": "Fibula",
     "level": 1,
-    "armor": null,
+    "armour": null,
     "durability": 240,
     "conditioning": 60,
     "gold": 28,

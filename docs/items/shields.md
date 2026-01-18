@@ -1,6 +1,7 @@
 ---
 title: Shields
 slug: /items/shields
+sidebar_position: 4
 ---
 
 import CustomItemTooltip from '@site/src/components/CustomItemTooltip';

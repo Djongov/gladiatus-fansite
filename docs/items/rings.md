@@ -1,6 +1,7 @@
 ---
 title: Rings
 slug: /items/rings
+sidebar_position: 9
 ---
 
 import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
