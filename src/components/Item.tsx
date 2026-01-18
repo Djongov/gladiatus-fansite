@@ -91,8 +91,8 @@ export function calculateItemStats(
     return Math.round(value * totalMultiplier);
   };
 
-  // Calculate final level (base + prefix + suffix + 1 for rounding)
-  const finalLevel = (baseItem.level || 0) + (prefix?.level || 0) + (suffix?.level || 0) + 1;
+  // Calculate final level (base + prefix + suffix)
+  const finalLevel = (baseItem.level || 0) + (prefix?.level || 0) + (suffix?.level || 0);
 
   // Get damage multiplier based on rarity and conditioning
   const getDamageMultiplier = (): number => {
@@ -161,10 +161,11 @@ export function calculateItemStats(
     };
   }
 
-  // Calculate armor (base items only for now)
+  // Calculate armor (uses same multipliers as damage)
   let armor: number | undefined;
   if (baseItem.armor !== null && baseItem.armor !== undefined) {
-    armor = applyBonus(baseItem.armor) || undefined;
+    const multiplier = getDamageMultiplier();
+    armor = Math.round(baseItem.armor * multiplier);
   }
 
   // Combine stats from prefix and suffix
@@ -247,8 +248,10 @@ export function calculateItemStats(
     }
   });
 
-  // Calculate total gold value
-  const totalGold = (applyBonus(baseItem.gold) || 0) + (prefix?.gold || 0) + (suffix?.gold || 0);
+  // Calculate total gold value (uses same multipliers as damage)
+  const goldMultiplier = getDamageMultiplier();
+  const baseGold = baseItem.gold ? Math.round(baseItem.gold * goldMultiplier) : 0;
+  const totalGold = baseGold + (prefix?.gold || 0) + (suffix?.gold || 0);
 
   return {
     name: fullName,
