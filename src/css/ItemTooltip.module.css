@@ -29,8 +29,8 @@
 }
 
 .title {
-  font-weight: bold;
-  margin-bottom: 4px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 /* Rarity colors (Gladiatus-like) */
@@ -46,5 +46,46 @@
 }
 
 .enchant {
-    color: green
+    color: #00aa00;
+}
+
+.conditioned {
+    color: #ffff00;
+}
+
+.type {
+    color: #9b9b9b;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.materials {
+    margin-top: 4px;
+    color: #c2a66a;
+    font-size: 12px;
+}
+
+.materialItem {
+    margin-left: 8px;
+    font-size: 11px;
+}
+
+.statsSection {
+    margin-top: 4px;
+    border-top: 1px solid #3a3a3a;
+    padding-top: 4px;
+}
+
+.statLine {
+    color: #1eff00;
+    font-size: 12px;
+}
+
+.multiplierInfo {
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid #3a3a3a;
+    color: #c2a66a;
+    font-size: 11px;
+    font-style: italic;
 }

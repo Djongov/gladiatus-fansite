@@ -3,7 +3,7 @@ title: Upgrades
 slug: /items/upgrades
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## Upgrades
 -----------------------------

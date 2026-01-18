@@ -1,1249 +1,1327 @@
-{
-  "weapons": [
-    {
-      "name": "Club",
-      "level": 1,
-      "damageMin": 1,
-      "damageMax": 3,
-      "durability": 1072,
-      "conditioning": 269,
-      "gold": 14,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Club.png",
-      "materials": {
-        "Wood": 2
-      }
-    },
-    {
-      "name": "Short sword",
-      "level": 1,
-      "damageMin": 2,
-      "damageMax": 2,
-      "durability": 1314,
-      "conditioning": 329,
-      "gold": 14,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Short_sword.png",
-      "materials": {
-        "Leather": 1,
-        "Iron": 1
-      }
-    },
-    {
-      "name": "Short dagger",
-      "level": 1,
-      "damageMin": 1,
-      "damageMax": 4,
-      "durability": 1419,
-      "conditioning": 355,
-      "gold": 15,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Short_dagger.png",
-      "materials": {
-        "Leather": 1,
-        "Iron": 1
-      }
-    },
-    {
-      "name": "Battle sickle",
-      "level": 2,
-      "damageMin": 1,
-      "damageMax": 4,
-      "durability": 3072,
-      "conditioning": 76942,
-      "gold": 42,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Battle_sickle.png",
-      "materials": {
-        "Wood": 1,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Broad sword",
-      "level": 3,
-      "damageMin": 2,
-      "damageMax": 4,
-      "durability": 3809,
-      "conditioning": 953,
-      "gold": 79,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Broad_sword.png",
-      "materials": {
-        "Leather": 1,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Sharp dagger",
-      "level": 2,
-      "damageMin": 2,
-      "damageMax": 3,
-      "durability": 2958,
-      "conditioning": 740,
-      "gold": 42,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Sharp_dagger.png",
-      "materials": {
-        "Leather": 1,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Gut gaze",
-      "level": 3,
-      "damageMin": 3,
-      "damageMax": 3,
-      "durability": 4437,
-      "conditioning": 1110,
-      "gold": 80,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Gut_graze.png",
-      "materials": {
-        "Leather": 2,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Trident",
-      "level": 4,
-      "damageMin": 2,
-      "damageMax": 5,
-      "durability": 5917,
-      "conditioning": 1480,
-      "gold": 126,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Trident.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 1,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Long sword",
-      "level": 4,
-      "damageMin": 3,
-      "damageMax": 4,
-      "durability": 5917,
-      "conditioning": 1480,
-      "gold": 128,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Long_sword.png",
-      "materials": {
-        "Copper": 1,
-        "Leather": 1,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Axe",
-      "level": 4,
-      "damageMin": 1,
-      "damageMax": 6,
-      "durability": 5917,
-      "conditioning": 1480,
-      "gold": 130,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Axe.png",
-      "materials": {
-        "Wood": 3,
-        "Leather": 1,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Trident lance",
-      "level": 5,
-      "damageMin": 2,
-      "damageMax": 6,
-      "durability": 7396,
-      "conditioning": 1850,
-      "gold": 185,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Trident_lance.png",
-      "materials": {
-        "Wood": 1,
-        "Copper": 2,
-        "Leather": 1,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Seax",
-      "level": 5,
-      "damageMin": 3,
-      "damageMax": 5,
-      "durability": 7396,
-      "conditioning": 1850,
-      "gold": 185,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Seax.png",
-      "materials": {
-        "Wood": 3,
-        "Iron": 4
-      }
-    },
-    {
-      "name": "Broad Axe",
-      "level": 6,
-      "damageMin": 2,
-      "damageMax": 7,
-      "durability": 8876,
-      "conditioning": 2219,
-      "gold": 247,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Broad_axe.png",
-      "materials": {
-        "Wood": 3,
-        "Leather": 1,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Hammer",
-      "level": 6,
-      "damageMin": 3,
-      "damageMax": 6,
-      "durability": 8876,
-      "conditioning": 2219,
-      "gold": 251,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Hammer.png",
-      "materials": {
-        "Wood": 4,
-        "Leather": 1,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Angel of death",
-      "level": 7,
-      "damageMin": 2,
-      "damageMax": 8,
-      "durability": 10356,
-      "conditioning": 2589,
-      "gold": 321,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Angel_of_death.png",
-      "materials": {
-        "Wood": 2,
-        "Copper": 2,
-        "Leather": 1,
-        "Iron": 4
-      }
-    },
-    {
-      "name": "Battle staff",
-      "level": 7,
-      "damageMin": 2,
-      "damageMax": 9,
-      "durability": 10356,
-      "conditioning": 2589,
-      "gold": 331,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Battle_staff.png",
-      "materials": {
-        "Wood": 5,
-        "Iron": 4
-      }
-    },
-    {
-      "name": "Schiavone",
-      "level": 8,
-      "damageMin": 4,
-      "damageMax": 7,
-      "durability": 11835,
-      "conditioning": 2959,
-      "gold": 399,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Schiavone.png",
-      "materials": {
-        "Copper": 3,
-        "Iron": 7
-      }
-    },
-    {
-      "name": "Khopesh",
-      "level": 8,
-      "damageMin": 4,
-      "damageMax": 8,
-      "durability": 11835,
-      "conditioning": 2959,
-      "gold": 411,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Khopesh.png",
-      "materials": {
-        "Copper": 5,
-        "Iron": 5
-      }
-    },
-    {
-      "name": "Gladius",
-      "level": 9,
-      "damageMin": 3,
-      "damageMax": 9,
-      "durability": 13314,
-      "conditioning": 3329,
-      "gold": 483,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Gladius.png",
-      "materials": {
-        "Copper": 3,
-        "Leather": 1,
-        "Iron": 7
-      }
-    },
-    {
-      "name": "Spear",
-      "level": 9,
-      "damageMin": 4,
-      "damageMax": 10,
-      "durability": 13314,
-      "conditioning": 3329,
-      "gold": 498,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Spear.png",
-      "materials": {
-        "Wood": 7,
-        "Leather": 1,
-        "Iron": 3
-      }
-    }
-  ],
-  "shields": [
-    {
-      "name": "Planks",
-      "level": 1,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Planks.png",
-      "materials": {
-        "Wood": 2
-      }
-    },
-    {
-      "name": "Wooden shield",
-      "level": 3,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Wooden_shield.png",
-      "materials": {
-        "Wood": 2,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Round shield",
-      "level": 7,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Round_shield.png",
-      "materials": {
-        "Wood": 2,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Viking Shield",
-      "level": 11,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Viking_shield.png",
-      "materials": {
-        "Wood": 2,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Net",
-      "level": 15,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Net.png",
-      "materials": {
-        "Leather": 5
-      }
-    },
-    {
-      "name": "Dragonshield",
-      "level": 19,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Dragonshield.png",
-      "materials": {
-        "Copper": 3,
-        "Iron": 4
-      }
-    },
-    {
-      "name": "Egyptian Shield",
-      "level": 23,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Egyptian_Shield.png",
-      "materials": {
-        "Wood": 4,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Silvershield",
-      "level": 27,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Silvershield.png",
-      "materials": {
-        "Copper": 3,
-        "Iron": 4,
-        "Silver": 1
-      }
-    },
-    {
-      "name": "Towershield",
-      "level": 31,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Towershield.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 2,
-        "Iron": 5
-      }
-    },
-    {
-      "name": "Fireshield",
-      "level": 35,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Fireshield.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 2,
-        "Iron": 6
-      }
-    },
-    {
-      "name": "Firetowershield",
-      "level": 39,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Firetowershield.png",
-      "materials": {
-        "Copper": 3,
-        "Leather": 3,
-        "Iron": 6
-      }
-    },
-    {
-      "name": "Titanium Shield",
-      "level": 43,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Titanium_Shield.png",
-      "materials": {
-        "Iron": 12
-      }
-    }
-  ],
-  "armor": [
-    {
-      "name": "Rags",
-      "level": 1,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Rags.png",
-      "materials": {
-        "Leather": 2
-      }
-    },
-    {
-      "name": "Leather armour",
-      "level": 3,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Leather_armour.png",
-      "materials": {
-        "Copper": 1,
-        "Leather": 2
-      }
-    },
-    {
-      "name": "Double leather",
-      "level": 5,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Double_leather.png",
-      "materials": {
-        "Copper": 1,
-        "Leather": 2
-      }
-    },
-    {
-      "name": "Copper shoulders",
-      "level": 7,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Copper_shoulders.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 1,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Half plate",
-      "level": 9,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Half_plate.png",
-      "materials": {
-        "Iron": 5
-      }
-    },
-    {
-      "name": "Crocodile Plate Armour",
-      "level": 11,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Crocodile_Plate_Armour.png",
-      "materials": {
-        "Leather": 3,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Copper plate",
-      "level": 13,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Copper_plate.png",
-      "materials": {
-        "Copper": 5,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Chainmail armour",
-      "level": 15,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Chainmail_armour.png",
-      "materials": {
-        "Copper": 3,
-        "Iron": 5
-      }
-    },
-    {
-      "name": "Iron plate",
-      "level": 17,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Iron_plate.png",
-      "materials": {
-        "Copper": 3,
-        "Iron": 6
-      }
-    },
-    {
-      "name": "Full plate",
-      "level": 19,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Full_plate.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 2,
-        "Iron": 7
-      }
-    },
-    {
-      "name": "Iron shoulders",
-      "level": 21,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Iron_shoulders.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 2,
-        "Iron": 7
-      }
-    },
-    {
-      "name": "Hard leather armour",
-      "level": 23,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Hard_leather_armour.png",
-      "materials": {
-        "Leather": 9
-      }
-    }
-  ],
-  "helmets": [
-    {
-      "name": "Leather cap",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Leather_cap.png",
-      "materials": {
-        "Leather": 2
-      }
-    },
-    {
-      "name": "Iron cap",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Iron_cap.png",
-      "materials": {
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Myrmillo",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Myrmillo.png",
-      "materials": {
-        "Copper": 1,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Thracian",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Thracian.png",
-      "materials": {
-        "Copper": 1,
-        "Iron": 2
-      }
-    },
-    {
-      "name": "Gladiator helmet",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Gladiator_helmet.png",
-      "materials": {
-        "Copper": 1,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Skull helmet",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Skull_helmet.png",
-      "materials": {
-        "Copper": 3,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Copper helmet",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Copper_helmet.png",
-      "materials": {
-        "Copper": 5,
-        "Leather": 1
-      }
-    },
-    {
-      "name": "Viking helmet",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Viking_helmet.png",
-      "materials": {
-        "Leather": 3,
-        "Iron": 4
-      }
-    },
-    {
-      "name": "Centurio",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Centurio.png",
-      "materials": {
-        "Copper": 6,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Spike helmet",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Spike_helmet.png",
-      "materials": {
-        "Copper": 7,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Spectacled Helmet",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Spectacled_Helmet.png",
-      "materials": {
-        "Iron": 9
-      }
-    },
-    {
-      "name": "Centurio full helmet",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Centurio_full_helmet.png",
-      "materials": {
-        "Copper": 7,
-        "Iron": 5
-      }
-    },
-    {
-      "name": "Brass centurio",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Brass_centurio.png",
-      "materials": {
-        "Copper": 7,
-        "Leather": 1,
-        "Iron": 4
-      }
-    }
-  ],
-  "gloves": [
-    {
-      "name": "Leather gloves",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Leather_gloves.png",
-      "materials": {
-        "Leather": 2
-      }
-    },
-    {
-      "name": "Copper bracers",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Copper_bracers.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 1
-      }
-    },
-    {
-      "name": "Copper gloves",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Copper_gloves.png",
-      "materials": {
-        "Copper": 2,
-        "Leather": 2
-      }
-    },
-    {
-      "name": "Leather battle gloves",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Leather_battle_gloves.png",
-      "materials": {
-        "Leather": 5
-      }
-    },
-    {
-      "name": "Leather bracers",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Leather_bracers.png",
-      "materials": {
-        "Copper": 3,
-        "Leather": 4
-      }
-    },
-    {
-      "name": "Iron gauntlets",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Iron_gauntlets.png",
-      "materials": {
-        "Leather": 5,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Studded gloves",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Studded_gloves.png",
-      "materials": {
-        "Copper": 1,
-        "Leather": 5,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Plate bracers",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Plate_bracers.png",
-      "materials": {
-        "Leather": 6,
-        "Iron": 4
-      }
-    },
-    {
-      "name": "Plate gauntlets",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Plate_gauntlets.png",
-      "materials": {
-        "Leather": 7,
-        "Iron": 5
-      }
-    }
-  ],
-  "shoes": [
-    {
-      "name": "Sandals",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Sandals.png",
-      "materials": {
-        "Wood": 1,
-        "Leather": 1
-      }
-    },
-    {
-      "name": "Leather sandals",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Leather_sandals.png",
-      "materials": {
-        "Leather": 3
-      }
-    },
-    {
-      "name": "Leather boots",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Leather_boots.png",
-      "materials": {
-        "Leather": 4
-      }
-    },
-    {
-      "name": "Leather battle boots",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Leather_battle_boots.png",
-      "materials": {
-        "Copper": 1,
-        "Leather": 4
-      }
-    },
-    {
-      "name": "Copper bandages",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Copper_bandages.png",
-      "materials": {
-        "Copper": 3,
-        "Leather": 3
-      }
-    },
-    {
-      "name": "Hunting boots",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Hunting_boots.png",
-      "materials": {
-        "Copper": 3,
-        "Leather": 4
-      }
-    },
-    {
-      "name": "Hard leather bandages",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Hard_leather_bandages.png",
-      "materials": {
-        "Leather": 9
-      }
-    },
-    {
-      "name": "Silver battle boots",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Silver_battle_boots.png",
-      "materials": {
-        "Wood": 2,
-        "Leather": 5,
-        "Iron": 3
-      }
-    },
-    {
-      "name": "Studded boots",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Studded_boots.png",
-      "materials": {
-        "Copper": 5,
-        "Leather": 6,
-        "Iron": 1
-      }
-    },
-    {
-      "name": "Plate boots",
-      "level": null,
-      "armor": null,
-      "durability": null,
-      "conditioning": null,
-      "gold": null,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Plate_boots.png",
-      "materials": {
-        "Leather": 7,
-        "Iron": 6
-      }
-    }
-  ],
-  "rings": [
-    {
-      "name": "Blue ring",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Blue_ring.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Malachite ring",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Malachite_ring.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Golden ring",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Golden_ring.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Silver ring",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Silver_ring.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Dragon ring",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Dragon_ring.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Ruby ring",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Ruby_ring.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Scarab",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Scarab.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Triskele",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 20,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Triskele.png",
-      "materials": {
-        "Copper": 2
-      }
-    }
-  ],
-  "amulets": [
-    {
-      "name": "Gold symbol",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Gold_symbol.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Silver wreath",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Silver_wreath.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Carnelian pendant",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Carnelian_pendant.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Silver relict",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Silver_relict.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Sugilith pendant",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Sugilith_pendant.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Malachite pendant",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Malachite_pendant.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Star talisman",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Star_talisman.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Ruby pendant",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Ruby_pendant.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Ra's Eye",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Ras_Eye.png",
-      "materials": {
-        "Copper": 2
-      }
-    },
-    {
-      "name": "Fibula",
-      "level": 1,
-      "armor": null,
-      "durability": 240,
-      "conditioning": null,
-      "gold": 28,
-      "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Fibula.png",
-      "materials": {
-        "Copper": 2
-      }
-    }
-  ]
-}
+[
+  {
+    "name": "Club",
+    "level": 1,
+    "damageMin": 1,
+    "damageMax": 3,
+    "durability": 1072,
+    "conditioning": 269,
+    "gold": 14,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Club.png",
+    "materials": {
+      "Wood": 2
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Short sword",
+    "level": 1,
+    "damageMin": 2,
+    "damageMax": 2,
+    "durability": 1314,
+    "conditioning": 329,
+    "gold": 14,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Short_sword.png",
+    "materials": {
+      "Leather": 1,
+      "Iron": 1
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Short dagger",
+    "level": 1,
+    "damageMin": 1,
+    "damageMax": 4,
+    "durability": 1419,
+    "conditioning": 355,
+    "gold": 15,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Short_dagger.png",
+    "materials": {
+      "Leather": 1,
+      "Iron": 1
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Battle sickle",
+    "level": 2,
+    "damageMin": 1,
+    "damageMax": 4,
+    "durability": 3072,
+    "conditioning": 76942,
+    "gold": 42,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Battle_sickle.png",
+    "materials": {
+      "Wood": 1,
+      "Iron": 2
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Broad sword",
+    "level": 3,
+    "damageMin": 2,
+    "damageMax": 4,
+    "durability": 3809,
+    "conditioning": 953,
+    "gold": 79,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Broad_sword.png",
+    "materials": {
+      "Leather": 1,
+      "Iron": 3
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Sharp dagger",
+    "level": 2,
+    "damageMin": 2,
+    "damageMax": 3,
+    "durability": 2958,
+    "conditioning": 740,
+    "gold": 42,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Sharp_dagger.png",
+    "materials": {
+      "Leather": 1,
+      "Iron": 2
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Gut graze",
+    "level": 3,
+    "damageMin": 3,
+    "damageMax": 3,
+    "durability": 4437,
+    "conditioning": 1110,
+    "gold": 80,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Gut_graze.png",
+    "materials": {
+      "Leather": 2,
+      "Iron": 2
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Trident",
+    "level": 4,
+    "damageMin": 2,
+    "damageMax": 5,
+    "durability": 5917,
+    "conditioning": 1480,
+    "gold": 126,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Trident.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 1,
+      "Iron": 3
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Long sword",
+    "level": 4,
+    "damageMin": 3,
+    "damageMax": 4,
+    "durability": 5917,
+    "conditioning": 1480,
+    "gold": 128,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Long_sword.png",
+    "materials": {
+      "Copper": 1,
+      "Leather": 1,
+      "Iron": 3
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Axe",
+    "level": 4,
+    "damageMin": 1,
+    "damageMax": 6,
+    "durability": 5917,
+    "conditioning": 1480,
+    "gold": 130,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Axe.png",
+    "materials": {
+      "Wood": 3,
+      "Leather": 1,
+      "Iron": 2
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Trident lance",
+    "level": 5,
+    "damageMin": 2,
+    "damageMax": 6,
+    "durability": 7396,
+    "conditioning": 1850,
+    "gold": 185,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Trident_lance.png",
+    "materials": {
+      "Wood": 1,
+      "Copper": 2,
+      "Leather": 1,
+      "Iron": 3
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Seax",
+    "level": 5,
+    "damageMin": 3,
+    "damageMax": 5,
+    "durability": 7396,
+    "conditioning": 1850,
+    "gold": 185,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Seax.png",
+    "materials": {
+      "Wood": 3,
+      "Iron": 4
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Broad Axe",
+    "level": 6,
+    "damageMin": 2,
+    "damageMax": 7,
+    "durability": 8876,
+    "conditioning": 2219,
+    "gold": 247,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Broad_axe.png",
+    "materials": {
+      "Wood": 3,
+      "Leather": 1,
+      "Iron": 3
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Hammer",
+    "level": 6,
+    "damageMin": 3,
+    "damageMax": 6,
+    "durability": 8876,
+    "conditioning": 2219,
+    "gold": 251,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Hammer.png",
+    "materials": {
+      "Wood": 4,
+      "Leather": 1,
+      "Iron": 3
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Angel of death",
+    "level": 7,
+    "damageMin": 2,
+    "damageMax": 8,
+    "durability": 10356,
+    "conditioning": 2589,
+    "gold": 321,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Angel_of_death.png",
+    "materials": {
+      "Wood": 2,
+      "Copper": 2,
+      "Leather": 1,
+      "Iron": 4
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Battle staff",
+    "level": 7,
+    "damageMin": 2,
+    "damageMax": 9,
+    "durability": 10356,
+    "conditioning": 2589,
+    "gold": 331,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Battle_staff.png",
+    "materials": {
+      "Wood": 5,
+      "Iron": 4
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Schiavone",
+    "level": 8,
+    "damageMin": 4,
+    "damageMax": 7,
+    "durability": 11835,
+    "conditioning": 2959,
+    "gold": 399,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Schiavone.png",
+    "materials": {
+      "Copper": 3,
+      "Iron": 7
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Khopesh",
+    "level": 8,
+    "damageMin": 4,
+    "damageMax": 8,
+    "durability": 11835,
+    "conditioning": 2959,
+    "gold": 411,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Khopesh.png",
+    "materials": {
+      "Copper": 5,
+      "Iron": 5
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Gladius",
+    "level": 9,
+    "damageMin": 3,
+    "damageMax": 9,
+    "durability": 13314,
+    "conditioning": 3329,
+    "gold": 483,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Gladius.png",
+    "materials": {
+      "Copper": 3,
+      "Leather": 1,
+      "Iron": 7
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Spear",
+    "level": 9,
+    "damageMin": 4,
+    "damageMax": 10,
+    "durability": 13314,
+    "conditioning": 3329,
+    "gold": 498,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Weapons/Spear.png",
+    "materials": {
+      "Wood": 7,
+      "Leather": 1,
+      "Iron": 3
+    },
+    "type": "weapons"
+  },
+  {
+    "name": "Planks",
+    "level": 1,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Planks.png",
+    "materials": {
+      "Wood": 2
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Wooden shield",
+    "level": 3,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Wooden_shield.png",
+    "materials": {
+      "Wood": 2,
+      "Iron": 2
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Round shield",
+    "level": 7,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Round_shield.png",
+    "materials": {
+      "Wood": 2,
+      "Iron": 2
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Viking Shield",
+    "level": 11,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Viking_shield.png",
+    "materials": {
+      "Wood": 2,
+      "Iron": 2
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Net",
+    "level": 15,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Net.png",
+    "materials": {
+      "Leather": 5
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Dragonshield",
+    "level": 19,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Dragonshield.png",
+    "materials": {
+      "Copper": 3,
+      "Iron": 4
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Egyptian Shield",
+    "level": 23,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Egyptian_Shield.png",
+    "materials": {
+      "Wood": 4,
+      "Iron": 2
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Silvershield",
+    "level": 27,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Silvershield.png",
+    "materials": {
+      "Copper": 3,
+      "Iron": 4,
+      "Silver": 1
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Towershield",
+    "level": 31,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Towershield.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 2,
+      "Iron": 5
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Fireshield",
+    "level": 35,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Fireshield.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 2,
+      "Iron": 6
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Firetowershield",
+    "level": 39,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Firetowershield.png",
+    "materials": {
+      "Copper": 3,
+      "Leather": 3,
+      "Iron": 6
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Titanium Shield",
+    "level": 43,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shields/Titanium_Shield.png",
+    "materials": {
+      "Iron": 12
+    },
+    "type": "shields"
+  },
+  {
+    "name": "Rags",
+    "level": 1,
+    "armour": 10,
+    "durability": 1072,
+    "conditioning": 269,
+    "gold": 11,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Rags.png",
+    "materials": {
+      "Leather": 2
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Leather armour",
+    "level": 1,
+    "armour": 15,
+    "durability": 1314,
+    "conditioning": 329,
+    "gold": 11,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Leather_armour.png",
+    "materials": {
+      "Copper": 1,
+      "Leather": 2
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Double leather",
+    "level": 2,
+    "armour": 20,
+    "durability": 2839,
+    "conditioning": 710,
+    "gold": 32,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Double_leather.png",
+    "materials": {
+      "Copper": 1,
+      "Leather": 2
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Copper shoulders",
+    "level": 3,
+    "armour": 30,
+    "durability": 4829,
+    "conditioning": 1208,
+    "gold": 60,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Copper_shoulders.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 1,
+      "Iron": 2
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Half plate",
+    "level": 4,
+    "armour": 40,
+    "durability": 7436,
+    "conditioning": 1859,
+    "gold": 95,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Half_plate.png",
+    "materials": {
+      "Iron": 5
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Crocodile Plate Armour",
+    "level": 4,
+    "armour": 40,
+    "durability": 7436,
+    "conditioning": 1859,
+    "gold": 93,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Crocodile_Plate_Armour.png",
+    "materials": {
+      "Leather": 3,
+      "Iron": 2
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Copper plate",
+    "level": 5,
+    "armour": 50,
+    "durability": 9294,
+    "conditioning": 2324,
+    "gold": 136,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Copper_plate.png",
+    "materials": {
+      "Copper": 5,
+      "Iron": 2
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Chainmail armour",
+    "level": 6,
+    "armour": 60,
+    "durability": 11153,
+    "conditioning": 2789,
+    "gold": 182,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Chainmail_armour.png",
+    "materials": {
+      "Copper": 3,
+      "Iron": 5
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Iron plate",
+    "level": 7,
+    "armour": 70,
+    "durability": 13012,
+    "conditioning": 3254,
+    "gold": 235,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Iron_plate.png",
+    "materials": {
+      "Copper": 3,
+      "Iron": 6
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Full plate",
+    "level": 8,
+    "armour": 80,
+    "durability": 14872,
+    "conditioning": 3718,
+    "gold": 293,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Full_plate.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 2,
+      "Iron": 7
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Iron shoulders",
+    "level": 9,
+    "armour": 90,
+    "durability": 16731,
+    "conditioning": 4183,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Iron_shoulders.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 2,
+      "Iron": 7
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Hard leather armour",
+    "level": 10,
+    "armour": 100,
+    "durability": 18589,
+    "conditioning": 4648,
+    "gold": 426,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Armour/Hard_leather_armour.png",
+    "materials": {
+      "Leather": 12
+    },
+    "type": "armour"
+  },
+  {
+    "name": "Leather cap",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Leather_cap.png",
+    "materials": {
+      "Leather": 2
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Iron cap",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Iron_cap.png",
+    "materials": {
+      "Iron": 2
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Myrmillo",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Myrmillo.png",
+    "materials": {
+      "Copper": 1,
+      "Iron": 2
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Thracian",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Thracian.png",
+    "materials": {
+      "Copper": 1,
+      "Iron": 2
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Gladiator helmet",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Gladiator_helmet.png",
+    "materials": {
+      "Copper": 1,
+      "Iron": 3
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Skull helmet",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Skull_helmet.png",
+    "materials": {
+      "Copper": 3,
+      "Iron": 3
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Copper helmet",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Copper_helmet.png",
+    "materials": {
+      "Copper": 5,
+      "Leather": 1
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Viking helmet",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Viking_helmet.png",
+    "materials": {
+      "Leather": 3,
+      "Iron": 4
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Centurio",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Centurio.png",
+    "materials": {
+      "Copper": 6,
+      "Iron": 3
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Spike helmet",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Spike_helmet.png",
+    "materials": {
+      "Copper": 7,
+      "Iron": 3
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Spectacled Helmet",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Spectacled_Helmet.png",
+    "materials": {
+      "Iron": 9
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Centurio full helmet",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Centurio_full_helmet.png",
+    "materials": {
+      "Copper": 7,
+      "Iron": 5
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Brass centurio",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Helmets/Brass_centurio.png",
+    "materials": {
+      "Copper": 7,
+      "Leather": 1,
+      "Iron": 4
+    },
+    "type": "helmets"
+  },
+  {
+    "name": "Leather gloves",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Leather_gloves.png",
+    "materials": {
+      "Leather": 2
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Copper bracers",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Copper_bracers.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 1
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Copper gloves",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Copper_gloves.png",
+    "materials": {
+      "Copper": 2,
+      "Leather": 2
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Leather battle gloves",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Leather_battle_gloves.png",
+    "materials": {
+      "Leather": 5
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Leather bracers",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Leather_bracers.png",
+    "materials": {
+      "Copper": 3,
+      "Leather": 4
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Iron gauntlets",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Iron_gauntlets.png",
+    "materials": {
+      "Leather": 5,
+      "Iron": 3
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Studded gloves",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Studded_gloves.png",
+    "materials": {
+      "Copper": 1,
+      "Leather": 5,
+      "Iron": 3
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Plate bracers",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Plate_bracers.png",
+    "materials": {
+      "Leather": 6,
+      "Iron": 4
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Plate gauntlets",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Gloves/Plate_gauntlets.png",
+    "materials": {
+      "Leather": 7,
+      "Iron": 5
+    },
+    "type": "gloves"
+  },
+  {
+    "name": "Sandals",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Sandals.png",
+    "materials": {
+      "Wood": 1,
+      "Leather": 1
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Leather sandals",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Leather_sandals.png",
+    "materials": {
+      "Leather": 3
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Leather boots",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Leather_boots.png",
+    "materials": {
+      "Leather": 4
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Leather battle boots",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Leather_battle_boots.png",
+    "materials": {
+      "Copper": 1,
+      "Leather": 4
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Copper bandages",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Copper_bandages.png",
+    "materials": {
+      "Copper": 3,
+      "Leather": 3
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Hunting boots",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Hunting_boots.png",
+    "materials": {
+      "Copper": 3,
+      "Leather": 4
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Hard leather bandages",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Hard_leather_bandages.png",
+    "materials": {
+      "Leather": 9
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Silver battle boots",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Silver_battle_boots.png",
+    "materials": {
+      "Wood": 2,
+      "Leather": 5,
+      "Iron": 3
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Studded boots",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Studded_boots.png",
+    "materials": {
+      "Copper": 5,
+      "Leather": 6,
+      "Iron": 1
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Plate boots",
+    "level": null,
+    "armour": null,
+    "durability": null,
+    "conditioning": null,
+    "gold": null,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Shoes/Plate_boots.png",
+    "materials": {
+      "Leather": 7,
+      "Iron": 6
+    },
+    "type": "shoes"
+  },
+  {
+    "name": "Blue ring",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Blue_ring.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Malachite ring",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Malachite_ring.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Golden ring",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Golden_ring.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Silver ring",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Silver_ring.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Dragon ring",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Dragon_ring.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Ruby ring",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Ruby_ring.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Scarab",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Scarab.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Triskele",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": null,
+    "gold": 20,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Rings/Triskele.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "rings"
+  },
+  {
+    "name": "Gold symbol",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Gold_symbol.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Silver wreath",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Silver_wreath.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Carnelian pendant",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Carnelian_pendant.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Silver relict",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Silver_relict.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Sugilith pendant",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Sugilith_pendant.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Malachite pendant",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Malachite_pendant.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Star talisman",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Star_talisman.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Ruby pendant",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Ruby_pendant.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Ra`s Eye",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Ras_Eye.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  },
+  {
+    "name": "Fibula",
+    "level": 1,
+    "armour": null,
+    "durability": 240,
+    "conditioning": 60,
+    "gold": 28,
+    "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Fibula.png",
+    "materials": {
+      "Copper": 2
+    },
+    "type": "amulets"
+  }
+]

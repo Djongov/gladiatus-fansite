@@ -3,7 +3,7 @@ title: Reinforcements
 slug: /items/reinforcements
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## Reinforcements
 -----------------------------------------

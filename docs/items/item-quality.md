@@ -3,7 +3,7 @@ title: Item Quality
 slug: /items/item-quality
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## **Item Quality**
 ------------------------------------

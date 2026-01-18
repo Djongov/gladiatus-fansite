@@ -1,9 +1,10 @@
 ---
 title: Shoes
 slug: /items/shoes
+sidebar_position: 8
 ---
 
-import ItemTooltip from '@site/src/components/ItemTooltip';
+import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 
 ## Shoes
 -----------------------

@@ -12,7 +12,7 @@ type Props = {
   gold?: string;
 };
 
-export default function ItemTooltip({
+export default function CustomItemTooltip({
   name,
   rarity,
   image,
