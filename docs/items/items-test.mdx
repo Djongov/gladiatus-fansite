@@ -1,28 +1,66 @@
 import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 import Item, { calculateItemStats } from '@site/src/components/Item';
+import basesData from '@site/static/data/items/bases.json';
 
-## All Broad Axe Variants
+export const TEST_ITEM = "Gut graze"; // Change this to test different weapons
+
+## Weapon Damage Calculations
+
+export const WeaponStats = () => {
+  const baseItem = basesData.find(item => item.name === TEST_ITEM);
+  
+  const green = calculateItemStats(baseItem, 'green', false);
+  const greenPlus = calculateItemStats(baseItem, 'green', true);
+  const blue = calculateItemStats(baseItem, 'blue', false);
+  const bluePlus = calculateItemStats(baseItem, 'blue', true);
+  const purple = calculateItemStats(baseItem, 'purple', false);
+  const purplePlus = calculateItemStats(baseItem, 'purple', true);
+  const orange = calculateItemStats(baseItem, 'orange', false);
+  const orangePlus = calculateItemStats(baseItem, 'orange', true);
+  const red = calculateItemStats(baseItem, 'red', false);
+  const redPlus = calculateItemStats(baseItem, 'red', true);
+  
+  return (
+    <div>
+      <div><strong>{TEST_ITEM}</strong></div>
+      <div>Green: Dur {green.durability} / Cond {green.conditioning.max}</div>
+      <div>Green+: Dur {greenPlus.durability} / Cond {greenPlus.conditioning.max}</div>
+      <div>Blue: Dur {blue.durability} / Cond {blue.conditioning.max}</div>
+      <div>Blue+: Dur {bluePlus.durability} / Cond {bluePlus.conditioning.max}</div>
+      <div>Purple: Dur {purple.durability} / Cond {purple.conditioning.max}</div>
+      <div>Purple+: Dur {purplePlus.durability} / Cond {purplePlus.conditioning.max}</div>
+      <div>Orange: Dur {orange.durability} / Cond {orange.conditioning.max}</div>
+      <div>Orange+: Dur {orangePlus.durability} / Cond {orangePlus.conditioning.max}</div>
+      <div>Red: Dur {red.durability} / Cond {red.conditioning.max}</div>
+      <div>Red+: Dur {redPlus.durability} / Cond {redPlus.conditioning.max}</div>
+    </div>
+  );
+};
+
+<WeaponStats />
+
+## All Item Variants
 
 <div>
-  <Item baseItem="Broad Axe" rarity="green" />
+  <Item baseItem={TEST_ITEM} rarity="green" />
   {' '}
-  <Item baseItem="Broad Axe" rarity="green" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="green" conditioned={true} />
   {' '}
-  <Item baseItem="Broad Axe" rarity="blue" />
+  <Item baseItem={TEST_ITEM} rarity="blue" />
   {' '}
-  <Item baseItem="Broad Axe" rarity="blue" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="blue" conditioned={true} />
   {' '}
-  <Item baseItem="Broad Axe" rarity="purple" />
+  <Item baseItem={TEST_ITEM} rarity="purple" />
   {' '}
-  <Item baseItem="Broad Axe" rarity="purple" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="purple" conditioned={true} />
   {' '}
-  <Item baseItem="Broad Axe" rarity="orange" />
+  <Item baseItem={TEST_ITEM} rarity="orange" />
   {' '}
-  <Item baseItem="Broad Axe" rarity="orange" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="orange" conditioned={true} />
   {' '}
-  <Item baseItem="Broad Axe" rarity="red" />
+  <Item baseItem={TEST_ITEM} rarity="red" />
   {' '}
-  <Item baseItem="Broad Axe" rarity="red" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="red" conditioned={true} />
 </div>
 
 ## With Prefix and Suffix
@@ -33,6 +71,20 @@ import Item, { calculateItemStats } from '@site/src/components/Item';
   <Item baseItem="Club" prefix="Strong" suffix="of Power" rarity="orange" />
   {' '}
   <Item baseItem="Long sword" prefix="Swift" rarity="purple" />
+</div>
+
+## test
+
+<div>
+
+<Item 
+  baseItem={"Gut graze"}
+  prefix={"Antonius"}
+  suffix={"of Mars"}
+  rarity="red"
+  conditioned={true}
+  enchantValue={37}
+/>
 </div>
 
 

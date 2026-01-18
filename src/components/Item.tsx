@@ -94,141 +94,77 @@ export function calculateItemStats(
   // Calculate final level (base + prefix + suffix + 1 for rounding)
   const finalLevel = (baseItem.level || 0) + (prefix?.level || 0) + (suffix?.level || 0) + 1;
 
-  // Damage uses flat additions from rarity, then scales dramatically with level when affixes present
-  const getDamageBonus = (): { minBonus: number; maxBonus: number } => {
-    // Calculate effective tier (rarity + conditioning)
-    const tierMap: Record<ItemRarity, number> = {
-      common: 0,
-      green: 0,
-      blue: 1,
-      purple: 2,
-      orange: 3,
-      red: 4,
-    };
+  // Get damage multiplier based on rarity and conditioning
+  const getDamageMultiplier = (): number => {
+    // Conditioning bumps item to next tier: green+ = blue, blue+ = purple, etc.
+    // Based on Gameforge formula (actual percentages from game):
+    // Green (Ceres) = 100% base
+    // Blue (Neptune) = 115%
+    // Purple (Mars) = 130%
+    // Orange (Jupiter) = 150%
+    // Red (Vulcan) = 175%
+    // Red+ = 200% (2× green)
     
-    let effectiveTier = tierMap[rarity];
-    if (conditioned) effectiveTier += 1;
-    
-    // Calculate base damage range
-    const damageRange = baseItem.damageMax !== undefined && baseItem.damageMin !== undefined
-      ? baseItem.damageMax - baseItem.damageMin
-      : 0;
-    
-    // Base bonuses for small ranges (1-2)
-    let minBonus = 0;
-    let maxBonus = 0;
-    
-    switch (effectiveTier) {
-      case 0: // common/green
-        minBonus = 0; maxBonus = 0;
-        break;
-      case 1: // blue
-        minBonus = 0; maxBonus = 1;
-        break;
-      case 2: // purple
-        minBonus = 0; maxBonus = 1;
-        break;
-      case 3: // orange
-        minBonus = 1; maxBonus = 2;
-        break;
-      case 4: // red
-        minBonus = 2; maxBonus = 3;
-        break;
-      case 5: // red+conditioned
-        minBonus = 3; maxBonus = 4;
-        break;
-    }
-    
-    // Scale bonuses based on damage range
-    if (damageRange >= 3) {
-      if (effectiveTier === 2) {
-        maxBonus = damageRange >= 5 ? 2 : 1;
-      }
-      if (effectiveTier === 3) {
-        maxBonus = 2 + Math.floor(damageRange / 2);
-      }
-      if (effectiveTier === 4) {
-        if (damageRange <= 2) {
-          maxBonus = 3;
-        } else if (damageRange === 3) {
-          maxBonus = 3;
-        } else if (damageRange === 5) {
-          maxBonus = 5;
-        } else if (damageRange >= 7) {
-          maxBonus = 6;
-        }
-        minBonus = damageRange >= 5 ? 1 : 2;
-      }
-      if (effectiveTier === 5) {
-        if (damageRange === 3) {
-          maxBonus = 5;
-          minBonus = 2;
-        } else if (damageRange === 5) {
-          maxBonus = 7;
-          minBonus = 2;
-        } else if (damageRange >= 7) {
-          maxBonus = 9;
-          minBonus = 2;
-        }
+    // Determine effective rarity with conditioning
+    let effectiveRarity = rarity;
+    if (conditioned) {
+      switch (rarity) {
+        case 'green':
+          effectiveRarity = 'blue';
+          break;
+        case 'blue':
+          effectiveRarity = 'purple';
+          break;
+        case 'purple':
+          effectiveRarity = 'orange';
+          break;
+        case 'orange':
+          effectiveRarity = 'red';
+          break;
+        // red+ needs special handling below
       }
     }
     
-    return { minBonus, maxBonus };
+    switch (effectiveRarity) {
+      case 'common':
+      case 'green':
+        return 1.0; // 100%
+      case 'blue':
+        return 1.15; // 115%
+      case 'purple':
+        return 1.30; // 130%
+      case 'orange':
+        return 1.50; // 150%
+      case 'red':
+        if (conditioned && rarity === 'red') {
+          // Red+ = 200%
+          return 2.0;
+        }
+        return 1.75; // 175%
+      default:
+        return 1.0;
+    }
   };
 
   // Build full item name
   const fullName = [prefix?.name, baseItem.name, suffix?.name].filter(Boolean).join(' ');
 
-  // Calculate damage (if weapon)
+  // Calculate damage (if weapon) - base items with rarity scaling
   let damage: { min: number; max: number } | undefined;
   if (baseItem.damageMin !== undefined && baseItem.damageMax !== undefined) {
-    const damageBonus = getDamageBonus();
+    const multiplier = getDamageMultiplier();
     
-    // Get flat damage bonuses from prefix/suffix
-    const prefixDamage = prefix?.stats?.damage?.flat || 0;
-    const suffixDamage = suffix?.stats?.damage?.flat || 0;
-    
-    let baseDamageMin = baseItem.damageMin + damageBonus.minBonus;
-    let baseDamageMax = baseItem.damageMax + damageBonus.maxBonus;
-    
-    // If affixes are present, apply level scaling
-    // From live data: base 4-12 at level 4 -> 352-428 at level 117 (with +20 flat from affixes)
-    // So scaled damage is: 332-408, ratios are 332/4 = 83x and 408/12 = 34x
-    // This is roughly (level^2 / baseLevel) for min, (level * 3) for max
-    if (prefix || suffix) {
-      const baseLevel = baseItem.level || 1;
-      const levelRatio = finalLevel / baseLevel; // 117/4 = 29.25
-      
-      // Min damage scales more aggressively: approximately levelRatio^1.5
-      // Max damage scales moderately: approximately levelRatio^1.1
-      const minScaleFactor = Math.pow(levelRatio, 1.5);
-      const maxScaleFactor = Math.pow(levelRatio, 1.1);
-      
-      baseDamageMin = Math.round(baseDamageMin * minScaleFactor);
-      baseDamageMax = Math.round(baseDamageMax * maxScaleFactor);
-    }
-    
+    // Gameforge uses floor (round down) for damage calculations
     damage = {
-      min: baseDamageMin + prefixDamage + suffixDamage,
-      max: baseDamageMax + prefixDamage + suffixDamage,
+      min: Math.floor(baseItem.damageMin * multiplier),
+      max: Math.floor(baseItem.damageMax * multiplier),
     };
   }
 
-  // Calculate armor (uses multiplier for base, flat bonus from prefix/suffix)
+  // Calculate armor (base items only for now)
   let armor: number | undefined;
   if (baseItem.armor !== null && baseItem.armor !== undefined) {
-    const prefixArmor = prefix?.stats?.armor?.flat || 0;
-    const suffixArmor = suffix?.stats?.armor?.flat || 0;
-    let baseArmor = applyBonus(baseItem.armor)!;
-    
-    // Apply level scaling if affixes present
-    if (prefix || suffix) {
-      const baseLevel = baseItem.level || 1;
-      const levelScaleFactor = finalLevel / baseLevel;
-      baseArmor = Math.round(baseArmor * levelScaleFactor);
-    }
-    
-    armor = baseArmor + prefixArmor + suffixArmor;
+    armor = applyBonus(baseItem.armor) || undefined;
   }
 
   // Combine stats from prefix and suffix
@@ -270,24 +206,46 @@ export function calculateItemStats(
     });
   }
 
-  // Convert to array format - create separate entries for flat and percent
+  // Convert to array format - flat and percent for same stat appear consecutively
   const stats: Array<{ name: string; flat: number; percent: number }> = [];
   
-  Object.entries(statsMap)
+  // Define stat order as in-game: Strength, Dexterity, Agility, Charisma, Intelligence, then others
+  const statOrder = ['strength', 'dexterity', 'agility', 'charisma', 'intelligence', 'constitution', 
+                     'critical_hit', 'double_hit', 'avoid_critical_hit', 'avoid_double_hit', 
+                     'block_chance', 'healing'];
+  
+  // Sort stats by predefined order
+  const sortedStats = Object.entries(statsMap)
     .filter(([stat]) => stat !== 'damage' && stat !== 'armor') // Exclude damage/armor as they're shown separately
-    .forEach(([name, value]) => {
-      const formattedName = name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-      
-      // Add flat stat line if non-zero
-      if (value.flat !== 0) {
-        stats.push({ name: formattedName, flat: value.flat, percent: 0 });
-      }
-      
-      // Add percent stat line if non-zero
-      if (value.percent !== 0) {
-        stats.push({ name: formattedName, flat: 0, percent: value.percent });
-      }
+    .sort(([a], [b]) => {
+      const indexA = statOrder.indexOf(a);
+      const indexB = statOrder.indexOf(b);
+      // If both are in order list, compare positions
+      if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+      // If only A is in list, it comes first
+      if (indexA !== -1) return -1;
+      // If only B is in list, it comes first
+      if (indexB !== -1) return 1;
+      // Neither in list, maintain original order
+      return 0;
     });
+  
+  sortedStats.forEach(([name, value]) => {
+    const formattedName = name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    
+    // Add both flat and percent for this stat, keeping them together
+    if (value.flat !== 0 && value.percent !== 0) {
+      // Both exist - add them together
+      stats.push({ name: formattedName, flat: value.flat, percent: 0 });
+      stats.push({ name: formattedName, flat: 0, percent: value.percent });
+    } else if (value.flat !== 0) {
+      // Only flat
+      stats.push({ name: formattedName, flat: value.flat, percent: 0 });
+    } else if (value.percent !== 0) {
+      // Only percent
+      stats.push({ name: formattedName, flat: 0, percent: value.percent });
+    }
+  });
 
   // Calculate total gold value
   const totalGold = (applyBonus(baseItem.gold) || 0) + (prefix?.gold || 0) + (suffix?.gold || 0);
@@ -367,48 +325,23 @@ export default function Item({
             {calculatedStats.name}
           </div>
 
-          {resolvedBaseItem.type && <div className={styles.type}>Type: {resolvedBaseItem.type}</div>}
-
           {calculatedStats.damage && (
             <div>Damage: {calculatedStats.damage.min} - {calculatedStats.damage.max}</div>
           )}
           
           {calculatedStats.armor && <div>Armor: {calculatedStats.armor}</div>}
 
-          {calculatedStats.durability && (
-            <div>Durability: {calculatedStats.durability}</div>
-          )}
-
-          {calculatedStats.conditioning.max > 0 && (
-            <div>
-              Conditioning: {calculatedStats.conditioning.current} / {calculatedStats.conditioning.max}
-            </div>
-          )}
-
           {/* Display stats from prefix/suffix */}
-          {calculatedStats.stats.length > 0 && (
-            <div className={styles.statsSection}>
-              {calculatedStats.stats.map((stat, index) => (
-                <div key={`${stat.name}-${index}`} className={styles.statLine}>
-                  {stat.name}
-                  {stat.flat !== 0 && ` +${stat.flat}`}
-                  {stat.percent !== 0 && ` +${stat.percent}%`}
-                </div>
-              ))}
+          {calculatedStats.stats.length > 0 && calculatedStats.stats.map((stat, index) => (
+            <div key={`${stat.name}-${index}`}>
+              {stat.name}
+              {stat.flat !== 0 && ` +${stat.flat}`}
+              {stat.percent !== 0 && ` +${stat.percent}%`}
             </div>
-          )}
+          ))}
 
           {enchantValue && (
             <div className={styles.enchant}>+{enchantValue} Damage</div>
-          )}
-
-          {materialsText.length > 0 && (
-            <div className={styles.materials}>
-              <div>Materials:</div>
-              {materialsText.map((mat, i) => (
-                <div key={i} className={styles.materialItem}>• {mat}</div>
-              ))}
-            </div>
           )}
 
           <div className={styles.level}>Level {calculatedStats.level}</div>
@@ -423,12 +356,17 @@ export default function Item({
             </div>
           )}
 
-          {/* Show multiplier info for debugging/transparency */}
-          {effectiveRarity !== 'common' || conditioned ? (
-            <div className={styles.multiplierInfo}>
-              Bonus: ×{calculatedStats.bonusMultiplier.toFixed(2)}
+          {calculatedStats.durability && (
+            <div className={styles.statLine}>
+              Durability {calculatedStats.durability}/{calculatedStats.durability}
             </div>
-          ) : null}
+          )}
+
+          {calculatedStats.conditioning.max > 0 && (
+            <div className={calculatedStats.conditioning.current > 0 ? styles.conditioned : styles.level}>
+              Conditioning {calculatedStats.conditioning.current}/{calculatedStats.conditioning.max}
+            </div>
+          )}
         </span>
       )}
     </span>

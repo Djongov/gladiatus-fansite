@@ -89,7 +89,7 @@
     "type": "weapons"
   },
   {
-    "name": "Gut gaze",
+    "name": "Gut graze",
     "level": 3,
     "damageMin": 3,
     "damageMax": 3,
@@ -1199,7 +1199,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Gold_symbol.png",
     "materials": {
@@ -1212,7 +1212,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Silver_wreath.png",
     "materials": {
@@ -1225,7 +1225,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Carnelian_pendant.png",
     "materials": {
@@ -1238,7 +1238,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Silver_relict.png",
     "materials": {
@@ -1251,7 +1251,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Sugilith_pendant.png",
     "materials": {
@@ -1264,7 +1264,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Malachite_pendant.png",
     "materials": {
@@ -1277,7 +1277,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Star_talisman.png",
     "materials": {
@@ -1290,7 +1290,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Ruby_pendant.png",
     "materials": {
@@ -1299,11 +1299,11 @@
     "type": "amulets"
   },
   {
-    "name": "Ra's Eye",
+    "name": "Ra`s Eye",
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Ras_Eye.png",
     "materials": {
@@ -1316,7 +1316,7 @@
     "level": 1,
     "armor": null,
     "durability": 240,
-    "conditioning": null,
+    "conditioning": 60,
     "gold": 28,
     "image": "https://gladiatusfansite.blob.core.windows.net/images/Items/img/Amulets/Fibula.png",
     "materials": {
