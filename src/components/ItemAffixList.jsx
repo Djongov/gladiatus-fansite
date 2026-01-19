@@ -107,7 +107,7 @@ export default function ItemAffixList({ items, type = 'prefix' }) {
       </div>
 
       {/* Paragraph showing number of filtered items */}
-      <p style={{ marginBottom: '12px', fontStyle: 'italic', color: '#ccc' }}>
+      <p style={{ marginBottom: '12px', fontStyle: 'italic', color: '#000000' }}>
         Showing {filteredItems.length} item{filteredItems.length !== 1 ? 's' : ''}
       </p>
 

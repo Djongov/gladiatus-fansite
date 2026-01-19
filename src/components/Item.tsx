@@ -37,6 +37,8 @@ export interface CalculatedItemStats {
   rarity: ItemRarity;
   damage?: { min: number; max: number };
   armour?: number;
+  prefixArmor: number;
+  prefixHealth: number;
   durability?: number;
   conditioning: { current: number; max: number };
   gold?: number;
@@ -149,15 +151,27 @@ export function calculateItemStats(
   // Build full item name
   const fullName = [prefix?.name, baseItem.name, suffix?.name].filter(Boolean).join(' ');
 
-  // Calculate damage (if weapon) - base items with rarity scaling
+  // Calculate damage (if weapon) - using Gladiatus formulas
   let damage: { min: number; max: number } | undefined;
   if (baseItem.damageMin !== undefined && baseItem.damageMax !== undefined) {
+    // Get flat damage bonus from prefix/suffix (DMG_SCROLL in formulas)
+    const flatDamageBonus = (prefix?.stats?.damage?.flat || 0) + (suffix?.stats?.damage?.flat || 0);
+    
+    // Calculate damage using Gladiatus formulas
+    // Min damage formula: ((2*level - baseMin + 2 * FLOOR((level-1)/5)) - 1) + 4*DMG_SCROLL
+    // Max damage formula: (baseMax + 2*FLOOR(level/2) + 4*FLOOR((level-1)/2)) + 4*DMG_SCROLL
+    // These formulas appear to calculate base green damage, then we apply rarity multiplier
+    
+    const baseMinDamage = ((2 * finalLevel - baseItem.damageMin + 2 * Math.floor((finalLevel - 1) / 5)) - 1) + 4 * flatDamageBonus;
+    const baseMaxDamage = (baseItem.damageMax + 2 * Math.floor(finalLevel / 2) + 4 * Math.floor((finalLevel - 1) / 2)) + 4 * flatDamageBonus;
+    
+    // Apply rarity multiplier
     const multiplier = getDamageMultiplier();
     
     // Gameforge uses floor (round down) for damage calculations
     damage = {
-      min: Math.floor(baseItem.damageMin * multiplier),
-      max: Math.floor(baseItem.damageMax * multiplier),
+      min: Math.floor(baseMinDamage * multiplier),
+      max: Math.floor(baseMaxDamage * multiplier),
     };
   }
 
@@ -207,6 +221,10 @@ export function calculateItemStats(
     });
   }
 
+  // Extract armor and health for separate display (shown before regular stats)
+  const prefixArmor = statsMap['armor']?.flat || 0;
+  const prefixHealth = statsMap['health']?.flat || 0;
+  
   // Convert to array format - flat and percent for same stat appear consecutively
   const stats: Array<{ name: string; flat: number; percent: number }> = [];
   
@@ -217,7 +235,7 @@ export function calculateItemStats(
   
   // Sort stats by predefined order
   const sortedStats = Object.entries(statsMap)
-    .filter(([stat]) => stat !== 'damage' && stat !== 'armour') // Exclude damage/armour as they're shown separately
+    .filter(([stat]) => stat !== 'damage' && stat !== 'armor' && stat !== 'health') // Exclude damage/armor/health as they're shown separately
     .sort(([a], [b]) => {
       const indexA = statOrder.indexOf(a);
       const indexB = statOrder.indexOf(b);
@@ -259,6 +277,8 @@ export function calculateItemStats(
     rarity,
     damage,
     armour,
+    prefixArmor,
+    prefixHealth,
     durability: applyBonus(baseItem.durability) || undefined,
     conditioning: {
       current: conditioned && baseItem.conditioning ? applyBonus(baseItem.conditioning)! : 0,
@@ -329,17 +349,25 @@ export default function Item({
           </div>
 
           {calculatedStats.damage && (
-            <div>Damage: {calculatedStats.damage.min} - {calculatedStats.damage.max}</div>
+            <div>Damage {calculatedStats.damage.min} - {calculatedStats.damage.max}</div>
           )}
           
           {calculatedStats.armour && <div>Armour: {calculatedStats.armour}</div>}
+          
+          {calculatedStats.prefixArmor !== 0 && (
+            <div>Armor {calculatedStats.prefixArmor > 0 ? '+' : ''}{calculatedStats.prefixArmor}</div>
+          )}
+          
+          {calculatedStats.prefixHealth !== 0 && (
+            <div>Health {calculatedStats.prefixHealth > 0 ? '+' : ''}{calculatedStats.prefixHealth}</div>
+          )}
 
           {/* Display stats from prefix/suffix */}
           {calculatedStats.stats.length > 0 && calculatedStats.stats.map((stat, index) => (
             <div key={`${stat.name}-${index}`}>
               {stat.name}
-              {stat.flat !== 0 && ` +${stat.flat}`}
-              {stat.percent !== 0 && ` +${stat.percent}%`}
+              {stat.flat !== 0 && ` ${stat.flat > 0 ? '+' : ''}${stat.flat}`}
+              {stat.percent !== 0 && ` ${stat.percent > 0 ? '+' : ''}${stat.percent}%`}
             </div>
           ))}
 

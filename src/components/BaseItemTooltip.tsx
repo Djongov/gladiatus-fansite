@@ -3,11 +3,11 @@ import styles from '@site/src/css/ItemTooltip.module.css';
 
 export interface BaseItem {
   name: string;
-  type: 'weapons' | 'shields' | 'armor' | 'helmets' | 'gloves' | 'shoes' | 'rings' | 'amulets';
+  type: 'weapons' | 'shields' | 'armour' | 'helmets' | 'gloves' | 'shoes' | 'rings' | 'amulets';
   level: number | null;
   damageMin?: number;
   damageMax?: number;
-  armor?: number | null;
+  armour?: number | null;
   durability: number | null;
   conditioning: number | null;
   gold: number | null;
@@ -65,8 +65,8 @@ export default function BaseItemTooltip({
     ? `${applyBonus(item.damageMin)} - ${applyBonus(item.damageMax)}`
     : null;
 
-  // Format armor value
-  const armorText = item.armor ? `Armor: ${applyBonus(item.armor)}` : null;
+  // Format armour value
+  const armourText = item.armour ? `armour: ${applyBonus(item.armour)}` : null;
 
   // Format durability
   const durabilityValue = applyBonus(item.durability);
@@ -101,7 +101,7 @@ export default function BaseItemTooltip({
 
         {damageText && <div>Damage: {damageText}</div>}
         
-        {armorText && <div>{armorText}</div>}
+        {armourText && <div>{armourText}</div>}
 
         {durabilityText && <div>{durabilityText}</div>}
 

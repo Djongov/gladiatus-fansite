@@ -3609,7 +3609,14 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {
+            "Almandin": 24,
+            "Hydra Scale": 13,
+            "Soul Essence": 2,
+            "Sphinx Feather": 1,
+            "Sugilite": 14,
+            "Typhon Leather": 6
+        }
     },
     {
         "name": "Sentarions",

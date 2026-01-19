@@ -4,7 +4,7 @@ import basesData from '@site/static/data/items/bases.json';
 
 interface ItemShowcaseProps {
   baseItem?: string; // Individual item name
-  baseItemType?: 'weapons' | 'shields' | 'armor' | 'helmets' | 'gloves' | 'shoes' | 'rings' | 'amulets'; // Item type to show all
+  baseItemType?: 'weapons' | 'shields' | 'armour' | 'helmets' | 'gloves' | 'shoes' | 'rings' | 'amulets'; // Item type to show all
   showAllRarities?: boolean; // If true, shows all rarities. If false, just shows the base item
   showConditioned?: boolean; // If true, shows conditioned variants
   showMaterials?: boolean; // If true, shows materials needed to craft

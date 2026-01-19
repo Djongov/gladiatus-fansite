@@ -1,38 +1,44 @@
 import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 import Item, { calculateItemStats } from '@site/src/components/Item';
 import basesData from '@site/static/data/items/bases.json';
+import prefixesData from '@site/static/data/items/prefixes.json';
+import suffixesData from '@site/static/data/items/suffixes.json';
 
-export const TEST_ITEM = "Gut graze"; // Change this to test different weapons
+export const TEST_ITEM = "Spear"; // Change this to test different weapons
+export const TEST_PREFIX = "Quintas"; // Change this to test different prefixes
+export const TEST_SUFFIX = "of the Chasm"; // Change this to test different suffixes
 
 ## Weapon Damage Calculations
 
 export const WeaponStats = () => {
   const baseItem = basesData.find(item => item.name === TEST_ITEM);
+  const prefix = prefixesData.find(p => p.name === TEST_PREFIX);
+  const suffix = suffixesData.find(s => s.name === TEST_SUFFIX);
   
-  const green = calculateItemStats(baseItem, 'green', false);
-  const greenPlus = calculateItemStats(baseItem, 'green', true);
-  const blue = calculateItemStats(baseItem, 'blue', false);
-  const bluePlus = calculateItemStats(baseItem, 'blue', true);
-  const purple = calculateItemStats(baseItem, 'purple', false);
-  const purplePlus = calculateItemStats(baseItem, 'purple', true);
-  const orange = calculateItemStats(baseItem, 'orange', false);
-  const orangePlus = calculateItemStats(baseItem, 'orange', true);
-  const red = calculateItemStats(baseItem, 'red', false);
-  const redPlus = calculateItemStats(baseItem, 'red', true);
+  const green = calculateItemStats(baseItem, 'green', false, prefix, suffix);
+  const greenPlus = calculateItemStats(baseItem, 'green', true, prefix, suffix);
+  const blue = calculateItemStats(baseItem, 'blue', false, prefix, suffix);
+  const bluePlus = calculateItemStats(baseItem, 'blue', true, prefix, suffix);
+  const purple = calculateItemStats(baseItem, 'purple', false, prefix, suffix);
+  const purplePlus = calculateItemStats(baseItem, 'purple', true, prefix, suffix);
+  const orange = calculateItemStats(baseItem, 'orange', false, prefix, suffix);
+  const orangePlus = calculateItemStats(baseItem, 'orange', true, prefix, suffix);
+  const red = calculateItemStats(baseItem, 'red', false, prefix, suffix);
+  const redPlus = calculateItemStats(baseItem, 'red', true, prefix, suffix);
   
   return (
     <div>
-      <div><strong>{TEST_ITEM}</strong></div>
-      <div>Green: Dur {green.durability} / Cond {green.conditioning.max}</div>
-      <div>Green+: Dur {greenPlus.durability} / Cond {greenPlus.conditioning.max}</div>
-      <div>Blue: Dur {blue.durability} / Cond {blue.conditioning.max}</div>
-      <div>Blue+: Dur {bluePlus.durability} / Cond {bluePlus.conditioning.max}</div>
-      <div>Purple: Dur {purple.durability} / Cond {purple.conditioning.max}</div>
-      <div>Purple+: Dur {purplePlus.durability} / Cond {purplePlus.conditioning.max}</div>
-      <div>Orange: Dur {orange.durability} / Cond {orange.conditioning.max}</div>
-      <div>Orange+: Dur {orangePlus.durability} / Cond {orangePlus.conditioning.max}</div>
-      <div>Red: Dur {red.durability} / Cond {red.conditioning.max}</div>
-      <div>Red+: Dur {redPlus.durability} / Cond {redPlus.conditioning.max}</div>
+      <div><strong>{TEST_PREFIX} {TEST_ITEM} {TEST_SUFFIX}</strong></div>
+      <div>Green: Damage:  {green.damage?.min} - {green.damage?.max}</div>
+      <div>Green+: Damage:  {greenPlus.damage?.min} - {greenPlus.damage?.max}</div>
+      <div>Blue: Damage:  {blue.damage?.min} - {blue.damage?.max}</div>
+      <div>Blue+: Damage:  {bluePlus.damage?.min} - {bluePlus.damage?.max}</div>
+      <div>Purple: Damage:  {purple.damage?.min} - {purple.damage?.max}</div>
+      <div>Purple+: Damage:  {purplePlus.damage?.min} - {purplePlus.damage?.max}</div>
+      <div>Orange: Damage:  {orange.damage?.min} - {orange.damage?.max}</div>
+      <div>Orange+: Damage:  {orangePlus.damage?.min} - {orangePlus.damage?.max}</div>
+      <div>Red: Damage:  {red.damage?.min} - {red.damage?.max}</div>
+      <div>Red+: Damage:  {redPlus.damage?.min} - {redPlus.damage?.max}</div>
     </div>
   );
 };
@@ -42,48 +48,49 @@ export const WeaponStats = () => {
 ## All Item Variants
 
 <div>
-  <Item baseItem={TEST_ITEM} rarity="green" />
+  <Item baseItem={TEST_ITEM} rarity="green" prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="green" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="green" conditioned={true} prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="blue" />
+  <Item baseItem={TEST_ITEM} rarity="blue" prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="blue" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="blue" conditioned={true} prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="purple" />
+  <Item baseItem={TEST_ITEM} rarity="purple" prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="purple" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="purple" conditioned={true} prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="orange" />
+  <Item baseItem={TEST_ITEM} rarity="orange" prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="orange" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="orange" conditioned={true} prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="red" />
+  <Item baseItem={TEST_ITEM} rarity="red" prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
   {' '}
-  <Item baseItem={TEST_ITEM} rarity="red" conditioned={true} />
+  <Item baseItem={TEST_ITEM} rarity="red" conditioned={true} prefix={TEST_PREFIX} suffix={TEST_SUFFIX} />
 </div>
-
-## With Prefix and Suffix
-
-<div>
-  <Item baseItem="Trident" prefix="Antonius" suffix="of Assassination" rarity="orange" conditioned={true} />
-  {' '}
-  <Item baseItem="Club" prefix="Strong" suffix="of Power" rarity="orange" />
-  {' '}
-  <Item baseItem="Long sword" prefix="Swift" rarity="purple" />
-</div>
-
 ## test
-
 <div>
 
 <Item 
-  baseItem={"Gut graze"}
-  prefix={"Antonius"}
-  suffix={"of Mars"}
+  baseItem={"Spear"}
+  prefix={"Quintas"}
+  suffix={"of the Chasm"}
   rarity="red"
   conditioned={true}
   enchantValue={37}
+/>
+<Item 
+  baseItem={"Spear"}
+  prefix={"Trafans"}
+  rarity="red"
+  conditioned={true}
+  enchantValue={37}
+/>
+<Item 
+  baseItem={"Broad sword"}
+  prefix={"Quintas"}
+  rarity="red"
+  conditioned={true}
 />
 </div>
 
