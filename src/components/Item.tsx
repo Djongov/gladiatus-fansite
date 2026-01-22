@@ -11,6 +11,9 @@ export interface BaseItem {
   level: number | null;
   damageMin?: number;
   damageMax?: number;
+  damageScrollMultiplier?: number; // Weapon-specific multiplier for flat damage bonuses (e.g., 4 for short dagger)
+  damageMinConstant?: number; // Weapon-specific constant for min damage formula (e.g., 8 for short dagger)
+  damageMaxConstant?: number; // Weapon-specific constant for max damage formula (e.g., 20 for short dagger)
   armour?: number | null;
   durability: number | null;
   conditioning: number | null;
@@ -151,24 +154,41 @@ export function calculateItemStats(
   // Build full item name
   const fullName = [prefix?.name, baseItem.name, suffix?.name].filter(Boolean).join(' ');
 
-  // Calculate damage (if weapon) - using Gladiatus formulas
+  // Calculate damage (if weapon) - using weapon-specific formulas or base damage
   let damage: { min: number; max: number } | undefined;
   if (baseItem.damageMin !== undefined && baseItem.damageMax !== undefined) {
-    // Get flat damage bonus from prefix/suffix (DMG_SCROLL in formulas)
+    // Get flat damage bonus from prefix/suffix
     const flatDamageBonus = (prefix?.stats?.damage?.flat || 0) + (suffix?.stats?.damage?.flat || 0);
     
-    // Calculate damage using Gladiatus formulas
-    // Min damage formula: ((2*level - baseMin + 2 * FLOOR((level-1)/5)) - 1) + 4*DMG_SCROLL
-    // Max damage formula: (baseMax + 2*FLOOR(level/2) + 4*FLOOR((level-1)/2)) + 4*DMG_SCROLL
-    // These formulas appear to calculate base green damage, then we apply rarity multiplier
+    let baseMinDamage: number;
+    let baseMaxDamage: number;
     
-    const baseMinDamage = ((2 * finalLevel - baseItem.damageMin + 2 * Math.floor((finalLevel - 1) / 5)) - 1) + 4 * flatDamageBonus;
-    const baseMaxDamage = (baseItem.damageMax + 2 * Math.floor(finalLevel / 2) + 4 * Math.floor((finalLevel - 1) / 2)) + 4 * flatDamageBonus;
+    // Check if weapon has specific formula constants defined AND has prefix/suffix that adds levels
+    const hasLevelBonus = (prefix?.level || 0) + (suffix?.level || 0) > 0;
+    
+    if (hasLevelBonus && baseItem.damageMinConstant !== undefined && baseItem.damageMaxConstant !== undefined) {
+      // Use weapon-specific formulas when there are level bonuses from prefix/suffix
+      // Short Dagger formulas:
+      // Min: (8 + (2*level - 1 + 2*FLOOR((level-1)/5)) - 1) + 4*DMG_SCROLL
+      // Max: (2*FLOOR(level/2) + 4*FLOOR((level-1)/2) + 20) + 4*DMG_SCROLL
+      
+      const scrollMultiplier = baseItem.damageScrollMultiplier ?? 4;
+      const minConstant = baseItem.damageMinConstant;
+      const maxConstant = baseItem.damageMaxConstant;
+      
+      baseMinDamage = (minConstant + (2 * finalLevel - 1 + 2 * Math.floor((finalLevel - 1) / 5)) - 1) + scrollMultiplier * flatDamageBonus;
+      baseMaxDamage = (2 * Math.floor(finalLevel / 2) + 4 * Math.floor((finalLevel - 1) / 2) + maxConstant) + scrollMultiplier * flatDamageBonus;
+    } else {
+      // Fallback: use simple base damage from JSON for base weapons without level bonuses
+      baseMinDamage = baseItem.damageMin + flatDamageBonus;
+      baseMaxDamage = baseItem.damageMax + flatDamageBonus;
+    }
     
     // Apply rarity multiplier
     const multiplier = getDamageMultiplier();
     
     // Gameforge uses floor (round down) for damage calculations
+    // Both min and max damage scale with rarity multiplier
     damage = {
       min: Math.floor(baseMinDamage * multiplier),
       max: Math.floor(baseMaxDamage * multiplier),
