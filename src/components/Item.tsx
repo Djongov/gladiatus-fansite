@@ -309,8 +309,11 @@ export function calculateItemStats(
   // Sort stats by predefined order
   const sortedStats = Object.entries(statsMap)
     .filter(([stat]) => {
-      // Exclude armor, health, and damage (shown separately)
-      if (stat === 'armor' || stat === 'health' || stat === 'damage') return false;
+      // Always exclude health and damage (shown separately)
+      if (stat === 'health' || stat === 'damage') return false;
+      // Only exclude armor if the item has base armor (armor pieces)
+      // For weapons/jewelry, armor from prefix/suffix should be shown in stats
+      if (stat === 'armor' && baseItem.armour !== null && baseItem.armour !== undefined) return false;
       return true;
     })
     .sort(([a], [b]) => {

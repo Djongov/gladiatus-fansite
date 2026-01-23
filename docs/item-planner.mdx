@@ -207,6 +207,41 @@ export const ItemPlanner = () => {
         />
       </div>
       
+      {(prefix || suffix) && (
+        <div style={{ marginBottom: '30px' }}>
+          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+            {prefix && (
+              <div>
+                <strong>Prefix: {prefix.name} (Level {prefix.level})</strong>
+                <div style={{ marginTop: '5px', fontSize: '14px' }}>
+                  {Object.entries(prefix.stats).map(([stat, value]) => (
+                    <div key={stat}>
+                      {stat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                      {value.flat !== 0 && ` ${value.flat > 0 ? '+' : ''}${value.flat}`}
+                      {value.percent !== 0 && ` ${value.percent > 0 ? '+' : ''}${value.percent}%`}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {suffix && (
+              <div>
+                <strong>Suffix: {suffix.name} (Level {suffix.level})</strong>
+                <div style={{ marginTop: '5px', fontSize: '14px' }}>
+                  {Object.entries(suffix.stats).map(([stat, value]) => (
+                    <div key={stat}>
+                      {stat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                      {value.flat !== 0 && ` ${value.flat > 0 ? '+' : ''}${value.flat}`}
+                      {value.percent !== 0 && ` ${value.percent > 0 ? '+' : ''}${value.percent}%`}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+      
       {baseItem && (
         <div>
           <h3>Item Preview</h3>
