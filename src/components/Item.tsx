@@ -42,6 +42,7 @@ export interface CalculatedItemStats {
   armour?: number;
   prefixArmor: number;
   prefixHealth: number;
+  prefixDamage: number;
   durability?: number;
   conditioning: { current: number; max: number };
   gold?: number;
@@ -195,11 +196,39 @@ export function calculateItemStats(
     };
   }
 
-  // Calculate armour (uses same multipliers as damage)
+  // Calculate armour (if armor/helmet/gloves/shoes)
   let armour: number | undefined;
   if (baseItem.armour !== null && baseItem.armour !== undefined) {
-    const multiplier = getDamageMultiplier();
-    armour = Math.round(baseItem.armour * multiplier);
+    // Check if we have prefix/suffix that adds levels
+    const hasPrefixOrSuffix = prefix || suffix;
+    
+    if (hasPrefixOrSuffix) {
+      // Use Gladiatus formula for armor with prefix/suffix
+      // levelMultiplier = prefixLevel + suffixLevel + 1 (armor base level NOT included)
+      const levelMultiplier = (prefix?.level || 0) + (suffix?.level || 0) + 1;
+      const rarityMultiplier = getDamageMultiplier();
+      const prefixLevel = prefix?.level || 0;
+      const suffixLevel = suffix?.level || 0;
+      
+      // Armor formula: baseArmor + (10 + prefixLevel/20 + suffixLevel/20) * (levelMultiplier - 1)
+      // The multiplier scales with both prefix and suffix levels
+      const armorMultiplier = 10 + (prefixLevel / 20) + (suffixLevel / 20);
+      const calculatedArmor = baseItem.armour + armorMultiplier * (levelMultiplier - 1);
+      
+      // Floor the calculated armor first
+      const flooredCalculated = Math.floor(calculatedArmor);
+      
+      // Add flat armor from prefix/suffix AFTER flooring
+      const rawFlatArmor = ((prefix?.stats?.armor?.flat || 0) + (suffix?.stats?.armor?.flat || 0));
+      const totalBaseArmor = flooredCalculated + rawFlatArmor;
+      
+      // Then multiply by rarity and floor again
+      armour = Math.floor(totalBaseArmor * rarityMultiplier);
+    } else {
+      // No prefix/suffix: use base armor from JSON and apply rarity multiplier
+      const multiplier = getDamageMultiplier();
+      armour = Math.floor(baseItem.armour * multiplier);
+    }
   }
 
   // Combine stats from prefix and suffix
@@ -241,9 +270,10 @@ export function calculateItemStats(
     });
   }
 
-  // Extract armor and health for separate display (shown before regular stats)
+  // Extract armor, health, and damage for separate display (shown before regular stats)
   const prefixArmor = statsMap['armor']?.flat || 0;
   const prefixHealth = statsMap['health']?.flat || 0;
+  const prefixDamage = statsMap['damage']?.flat || 0;
   
   // Define slot-specific stat restrictions (percentage stats only)
   const restrictedPercentStats: Record<string, string[]> = {
@@ -271,14 +301,18 @@ export function calculateItemStats(
   // Convert to array format - flat and percent for same stat appear consecutively
   const stats: Array<{ name: string; flat: number; percent: number }> = [];
   
-  // Define stat order as in-game: Strength, Dexterity, Agility, Constitution, Charisma, Intelligence, then others
-  const statOrder = ['strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
+  // Define stat order as in-game: Damage first, then Strength, Dexterity, Agility, Constitution, Charisma, Intelligence, then others
+  const statOrder = ['damage', 'strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
                      'critical_hit', 'double_hit', 'avoid_critical_hit', 'avoid_double_hit', 
                      'block_chance', 'healing'];
   
   // Sort stats by predefined order
   const sortedStats = Object.entries(statsMap)
-    .filter(([stat]) => stat !== 'damage' && stat !== 'armor' && stat !== 'health') // Exclude damage/armor/health as they're shown separately
+    .filter(([stat]) => {
+      // Exclude armor, health, and damage (shown separately)
+      if (stat === 'armor' || stat === 'health' || stat === 'damage') return false;
+      return true;
+    })
     .sort(([a], [b]) => {
       const indexA = statOrder.indexOf(a);
       const indexB = statOrder.indexOf(b);
@@ -321,8 +355,7 @@ export function calculateItemStats(
     damage,
     armour,
     prefixArmor,
-    prefixHealth,
-    durability: applyBonus(baseItem.durability) || undefined,
+    prefixHealth,    prefixDamage,    durability: applyBonus(baseItem.durability) || undefined,
     conditioning: {
       current: conditioned && baseItem.conditioning ? applyBonus(baseItem.conditioning)! : 0,
       max: applyBonus(baseItem.conditioning) || 0,
@@ -395,11 +428,11 @@ export default function Item({
             <div>Damage {calculatedStats.damage.min} - {calculatedStats.damage.max}</div>
           )}
           
-          {calculatedStats.armour && <div>Armour: {calculatedStats.armour}</div>}
-          
-          {calculatedStats.prefixArmor !== 0 && (
-            <div>Armor {calculatedStats.prefixArmor > 0 ? '+' : ''}{calculatedStats.prefixArmor}</div>
+          {calculatedStats.prefixDamage !== 0 && (
+            <div>Damage {calculatedStats.prefixDamage > 0 ? '+' : ''}{calculatedStats.prefixDamage}</div>
           )}
+          
+          {calculatedStats.armour && <div>Armour {calculatedStats.armour > 0 ? '+' : ''}{calculatedStats.armour}</div>}
           
           {calculatedStats.prefixHealth !== 0 && (
             <div>Health {calculatedStats.prefixHealth > 0 ? '+' : ''}{calculatedStats.prefixHealth}</div>

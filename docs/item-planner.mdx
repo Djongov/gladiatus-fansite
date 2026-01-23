@@ -81,7 +81,7 @@ export const SearchableSelect = ({ options, value, onChange, placeholder, label 
               right: 0,
               maxHeight: '300px',
               overflowY: 'auto',
-              backgroundColor: 'var(--ifm-background-color)',
+              backgroundColor: '#ffffff',
               border: '1px solid var(--ifm-color-emphasis-300)',
               borderRadius: '4px',
               zIndex: 2,
@@ -90,18 +90,29 @@ export const SearchableSelect = ({ options, value, onChange, placeholder, label 
           >
             {filteredOptions.map(opt => (
               <div
-                key={opt.value}
+                key={opt.value + opt.label}
                 onClick={() => {
-                  onChange(opt.value);
-                  setSearch('');
-                  setIsOpen(false);
+                  if (!opt.isHeader) {
+                    onChange(opt.value);
+                    setSearch('');
+                    setIsOpen(false);
+                  }
                 }}
                 style={{
                   padding: '8px 12px',
-                  cursor: 'pointer',
-                  backgroundColor: 'transparent'
+                  cursor: opt.isHeader ? 'default' : 'pointer',
+                  backgroundColor: 'transparent',
+                  fontWeight: opt.isHeader ? 'bold' : 'normal',
+                  fontSize: opt.isHeader ? '14px' : '13px',
+                  color: opt.isHeader ? 'var(--ifm-color-primary)' : 'inherit',
+                  borderBottom: opt.isHeader ? '1px solid var(--ifm-color-emphasis-300)' : 'none',
+                  marginTop: opt.isHeader ? '4px' : '0'
                 }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--ifm-color-emphasis-200)'}
+                onMouseEnter={(e) => {
+                  if (!opt.isHeader) {
+                    e.target.style.backgroundColor = 'var(--ifm-color-emphasis-200)';
+                  }
+                }}
                 onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
               >
                 {opt.label}
@@ -133,10 +144,22 @@ export const ItemPlanner = () => {
     ...prefixesData.map(p => ({ value: p.name, label: `${p.name} (${p.level})` }))
   ];
   
-  const baseOptions = basesData.map(item => ({ 
-    value: item.name, 
-    label: `${item.name} (${item.level})` 
-  }));
+  // Group base items by type
+  const groupedBases = basesData.reduce((acc, item) => {
+    if (!acc[item.type]) {
+      acc[item.type] = [];
+    }
+    acc[item.type].push(item);
+    return acc;
+  }, {});
+  
+  const baseOptions = Object.entries(groupedBases).flatMap(([type, items]) => [
+    { value: '', label: type.charAt(0).toUpperCase() + type.slice(1), isHeader: true },
+    ...items.map(item => ({ 
+      value: item.name, 
+      label: `${item.name} (${item.level})` 
+    }))
+  ]);
   
   const suffixOptions = [
     { value: '', label: 'None' },
