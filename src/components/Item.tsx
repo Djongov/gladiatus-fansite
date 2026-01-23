@@ -245,6 +245,29 @@ export function calculateItemStats(
   const prefixArmor = statsMap['armor']?.flat || 0;
   const prefixHealth = statsMap['health']?.flat || 0;
   
+  // Define slot-specific stat restrictions (percentage stats only)
+  const restrictedPercentStats: Record<string, string[]> = {
+    shields: ['charisma'],
+    armour: ['agility'],
+    shoes: ['dexterity'],
+    rings: ['strength'],
+    amulets: ['strength']
+  };
+  
+  const restrictedStats = restrictedPercentStats[baseItem.type] || [];
+  
+  // Filter out restricted percentage stats for this item type
+  Object.keys(statsMap).forEach(stat => {
+    if (restrictedStats.includes(stat) && statsMap[stat].percent !== 0) {
+      // Remove the percentage part of restricted stats
+      statsMap[stat].percent = 0;
+      // If both flat and percent are now 0, we can remove the stat entirely
+      if (statsMap[stat].flat === 0) {
+        delete statsMap[stat];
+      }
+    }
+  });
+  
   // Convert to array format - flat and percent for same stat appear consecutively
   const stats: Array<{ name: string; flat: number; percent: number }> = [];
   

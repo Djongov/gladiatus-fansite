@@ -137,6 +137,11 @@ const config: Config = {
           label: 'Calculators',
         },
         {
+          to: '/item-planner',
+          position: 'left',
+          label: 'Item Planner',
+        },
+        {
           href: 'https://gladiatus-api.gamerz-bg.com/',
           position: 'left',
           label: 'Global Ranking',

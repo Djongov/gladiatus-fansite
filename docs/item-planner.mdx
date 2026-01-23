@@ -1,0 +1,226 @@
+---
+sidebar_class_name: hidden
+---
+
+import React, { useState } from 'react';
+import Item, { calculateItemStats } from '@site/src/components/Item';
+import basesData from '@site/static/data/items/bases.json';
+import prefixesData from '@site/static/data/items/prefixes.json';
+import suffixesData from '@site/static/data/items/suffixes.json';
+
+# Item Planner
+
+`Beta`
+
+Plan your perfect item by selecting a base item, prefix, and suffix to see all rarity variations.
+
+export const SearchableSelect = ({ options, value, onChange, placeholder, label }) => {
+  const [search, setSearch] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const filteredOptions = options.filter(opt => 
+    opt.label.toLowerCase().includes(search.toLowerCase())
+  );
+  
+  const selectedOption = options.find(opt => opt.value === value);
+  
+  return (
+    <div style={{ position: 'relative' }}>
+      <label>{label}</label>
+      <div>
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          onFocus={() => setIsOpen(true)}
+          placeholder={selectedOption ? selectedOption.label : placeholder}
+          style={{ 
+            padding: '5px', 
+            minWidth: '200px',
+            width: '100%'
+          }}
+        />
+        {value && (
+          <button
+            onClick={() => {
+              onChange('');
+              setSearch('');
+            }}
+            style={{
+              position: 'absolute',
+              right: '5px',
+              top: '28px',
+              border: 'none',
+              background: 'transparent',
+              cursor: 'pointer',
+              fontSize: '16px'
+            }}
+          >
+            ×
+          </button>
+        )}
+      </div>
+      {isOpen && (
+        <>
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: 1
+            }}
+            onClick={() => setIsOpen(false)}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              top: '100%',
+              left: 0,
+              right: 0,
+              maxHeight: '300px',
+              overflowY: 'auto',
+              backgroundColor: 'var(--ifm-background-color)',
+              border: '1px solid var(--ifm-color-emphasis-300)',
+              borderRadius: '4px',
+              zIndex: 2,
+              boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+            }}
+          >
+            {filteredOptions.map(opt => (
+              <div
+                key={opt.value}
+                onClick={() => {
+                  onChange(opt.value);
+                  setSearch('');
+                  setIsOpen(false);
+                }}
+                style={{
+                  padding: '8px 12px',
+                  cursor: 'pointer',
+                  backgroundColor: 'transparent'
+                }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--ifm-color-emphasis-200)'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
+              >
+                {opt.label}
+              </div>
+            ))}
+            {filteredOptions.length === 0 && (
+              <div style={{ padding: '8px 12px', color: 'var(--ifm-color-emphasis-600)' }}>
+                No results found
+              </div>
+            )}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
+
+export const ItemPlanner = () => {
+  const [selectedBase, setSelectedBase] = useState('');
+  const [selectedPrefix, setSelectedPrefix] = useState('');
+  const [selectedSuffix, setSelectedSuffix] = useState('');
+  
+  const baseItem = basesData.find(item => item.name === selectedBase);
+  const prefix = prefixesData.find(p => p.name === selectedPrefix);
+  const suffix = suffixesData.find(s => s.name === selectedSuffix);
+  
+  const prefixOptions = [
+    { value: '', label: 'None' },
+    ...prefixesData.map(p => ({ value: p.name, label: `${p.name} (${p.level})` }))
+  ];
+  
+  const baseOptions = basesData.map(item => ({ 
+    value: item.name, 
+    label: `${item.name} (${item.level})` 
+  }));
+  
+  const suffixOptions = [
+    { value: '', label: 'None' },
+    ...suffixesData.map(s => ({ value: s.name, label: `${s.name} (${s.level})` }))
+  ];
+  
+  const rarities = [
+    { rarity: 'green', conditioned: false, label: 'Green', color: '#00ff00' },
+    { rarity: 'green', conditioned: true, label: 'Green+', color: '#00ff00' },
+    { rarity: 'blue', conditioned: false, label: 'Blue', color: '#0080ff' },
+    { rarity: 'blue', conditioned: true, label: 'Blue+', color: '#0080ff' },
+    { rarity: 'purple', conditioned: false, label: 'Purple', color: '#a335ee' },
+    { rarity: 'purple', conditioned: true, label: 'Purple+', color: '#a335ee' },
+    { rarity: 'orange', conditioned: false, label: 'Orange', color: '#ff8000' },
+    { rarity: 'orange', conditioned: true, label: 'Orange+', color: '#ff8000' },
+    { rarity: 'red', conditioned: false, label: 'Red', color: '#ff0000' },
+    { rarity: 'red', conditioned: true, label: 'Red+', color: '#ff0000' },
+  ];
+  
+  return (
+    <div>
+      <div style={{ marginBottom: '20px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+        <SearchableSelect
+          options={prefixOptions}
+          value={selectedPrefix}
+          onChange={setSelectedPrefix}
+          placeholder="Search prefix..."
+          label="Prefix:"
+        />
+        
+        <SearchableSelect
+          options={baseOptions}
+          value={selectedBase}
+          onChange={setSelectedBase}
+          placeholder="Search base item..."
+          label="Base Item:"
+        />
+        
+        <SearchableSelect
+          options={suffixOptions}
+          value={selectedSuffix}
+          onChange={setSelectedSuffix}
+          placeholder="Search suffix..."
+          label="Suffix:"
+        />
+      </div>
+      
+      {baseItem && (
+        <div>
+          <h3>Item Preview</h3>
+          <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+            {rarities.map(({ rarity, conditioned, label, color }) => {
+              const stats = calculateItemStats(baseItem, rarity, conditioned, prefix, suffix);
+              return (
+                <div key={label} style={{ 
+                  marginBottom: '40px',
+                  padding: '10px',
+                  border: '1px solid var(--ifm-color-emphasis-200)',
+                  borderRadius: '4px',
+                  minWidth: '200px'
+                }}>
+                  <strong style={{ color, fontSize: '16px' }}>{label}</strong><br />
+                  <br />
+                  <Item 
+                    baseItem={baseItem}
+                    prefix={prefix}
+                    suffix={suffix}
+                    rarity={rarity}
+                    conditioned={conditioned}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+      
+      {!baseItem && (
+        <p style={{ color: '#666', fontStyle: 'italic' }}>
+          Select a base item to start planning
+        </p>
+      )}
+    </div>
+  );
+};
+
+<ItemPlanner />
