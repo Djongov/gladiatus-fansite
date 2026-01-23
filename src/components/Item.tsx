@@ -154,44 +154,44 @@ export function calculateItemStats(
   // Build full item name
   const fullName = [prefix?.name, baseItem.name, suffix?.name].filter(Boolean).join(' ');
 
-  // Calculate damage (if weapon) - using weapon-specific formulas or base damage
+  // Calculate damage (if weapon) - using Gladiatus damage formulas
   let damage: { min: number; max: number } | undefined;
   if (baseItem.damageMin !== undefined && baseItem.damageMax !== undefined) {
-    // Get flat damage bonus from prefix/suffix
-    const flatDamageBonus = (prefix?.stats?.damage?.flat || 0) + (suffix?.stats?.damage?.flat || 0);
+    // Get flat damage from prefix ONLY (suffix flat damage is ignored in formulas)
+    const damageFromScroll = prefix?.stats?.damage?.flat || 0;
     
-    let baseMinDamage: number;
-    let baseMaxDamage: number;
+    // Check if we have prefix/suffix that adds levels
+    const hasPrefixOrSuffix = prefix || suffix;
     
-    // Check if weapon has specific formula constants defined AND has prefix/suffix that adds levels
-    const hasLevelBonus = (prefix?.level || 0) + (suffix?.level || 0) > 0;
+    let finalMinDamage: number;
+    let finalMaxDamage: number;
     
-    if (hasLevelBonus && baseItem.damageMinConstant !== undefined && baseItem.damageMaxConstant !== undefined) {
-      // Use weapon-specific formulas when there are level bonuses from prefix/suffix
-      // Short Dagger formulas:
-      // Min: (8 + (2*level - 1 + 2*FLOOR((level-1)/5)) - 1) + 4*DMG_SCROLL
-      // Max: (2*FLOOR(level/2) + 4*FLOOR((level-1)/2) + 20) + 4*DMG_SCROLL
+    if (hasPrefixOrSuffix) {
+      // Use Gladiatus formula for weapons with prefix/suffix
+      // levelMultiplier = prefixLevel + suffixLevel + 1 (weapon base level NOT included)
+      const levelMultiplier = (prefix?.level || 0) + (suffix?.level || 0) + 1;
+      const rarityMultiplier = getDamageMultiplier();
       
-      const scrollMultiplier = baseItem.damageScrollMultiplier ?? 4;
-      const minConstant = baseItem.damageMinConstant;
-      const maxConstant = baseItem.damageMaxConstant;
+      // Min damage formula: ROUNDUP((baseMin + (levelMultiplier - 1 + FLOOR((levelMultiplier-1)/5)) - 1) + 2*damageFromScroll) + 1
+      // Then multiply by rarity
+      const levelScaling = levelMultiplier - 1 + Math.floor((levelMultiplier - 1) / 5);
+      const baseMinDamage = Math.ceil((baseItem.damageMin + (levelScaling - 1)) + 2 * damageFromScroll) + 1;
+      finalMinDamage = Math.floor(baseMinDamage * rarityMultiplier);
       
-      baseMinDamage = (minConstant + (2 * finalLevel - 1 + 2 * Math.floor((finalLevel - 1) / 5)) - 1) + scrollMultiplier * flatDamageBonus;
-      baseMaxDamage = (2 * Math.floor(finalLevel / 2) + 4 * Math.floor((finalLevel - 1) / 2) + maxConstant) + scrollMultiplier * flatDamageBonus;
+      // Max damage formula: (rarityMultiplier*FLOOR(levelMultiplier/2) + 2*FLOOR((levelMultiplier-1)/2) + baseMax) + 2*damageFromScroll
+      // Then multiply entire result by rarity
+      const baseMaxCalc = (Math.floor(levelMultiplier / 2) + 2 * Math.floor((levelMultiplier - 1) / 2) + baseItem.damageMax) + 2 * damageFromScroll;
+      finalMaxDamage = Math.floor(baseMaxCalc * rarityMultiplier);
     } else {
-      // Fallback: use simple base damage from JSON for base weapons without level bonuses
-      baseMinDamage = baseItem.damageMin + flatDamageBonus;
-      baseMaxDamage = baseItem.damageMax + flatDamageBonus;
+      // No prefix/suffix: use base damage from JSON and apply rarity multiplier
+      const multiplier = getDamageMultiplier();
+      finalMinDamage = Math.floor(baseItem.damageMin * multiplier);
+      finalMaxDamage = Math.floor(baseItem.damageMax * multiplier);
     }
     
-    // Apply rarity multiplier
-    const multiplier = getDamageMultiplier();
-    
-    // Gameforge uses floor (round down) for damage calculations
-    // Both min and max damage scale with rarity multiplier
     damage = {
-      min: Math.floor(baseMinDamage * multiplier),
-      max: Math.floor(baseMaxDamage * multiplier),
+      min: finalMinDamage,
+      max: finalMaxDamage,
     };
   }
 
@@ -248,8 +248,8 @@ export function calculateItemStats(
   // Convert to array format - flat and percent for same stat appear consecutively
   const stats: Array<{ name: string; flat: number; percent: number }> = [];
   
-  // Define stat order as in-game: Strength, Dexterity, Agility, Charisma, Intelligence, then others
-  const statOrder = ['strength', 'dexterity', 'agility', 'charisma', 'intelligence', 'constitution', 
+  // Define stat order as in-game: Strength, Dexterity, Agility, Constitution, Charisma, Intelligence, then others
+  const statOrder = ['strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
                      'critical_hit', 'double_hit', 'avoid_critical_hit', 'avoid_double_hit', 
                      'block_chance', 'healing'];
   
