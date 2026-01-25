@@ -213,11 +213,18 @@ export function calculateItemStats(
       // Different formulas based on item type
       if (baseItem.type === 'gloves') {
         // Gloves formula: baseArmor + (3 + (prefixLevel + suffixLevel) * 3/200) * (prefixLevel + suffixLevel)
-        // Equivalent to: baseArmor + (3 + totalLevel/(200/3)) * totalLevel
         const totalLevel = prefixLevel + suffixLevel;
         calculatedArmor = baseItem.armour + (3 + totalLevel * 3 / 200) * totalLevel;
+      } else if (baseItem.type === 'shoes') {
+        // Shoes formula: baseArmor + (6 + (prefixLevel + suffixLevel) * 3/100) * (prefixLevel + suffixLevel)
+        const totalLevel = prefixLevel + suffixLevel;
+        calculatedArmor = baseItem.armour + (6 + totalLevel * 3 / 100) * totalLevel;
+      } else if (baseItem.type === 'helmets') {
+        // Helmets formula: baseArmor + (5 + (prefixLevel + suffixLevel)/40) * (prefixLevel + suffixLevel)
+        const totalLevel = prefixLevel + suffixLevel;
+        calculatedArmor = baseItem.armour + (5 + totalLevel / 40) * totalLevel;
       } else {
-        // Chest/Helmet/Shoes formula: baseArmor + (10 + prefixLevel/20 + suffixLevel/20) * (levelMultiplier - 1)
+        // Chest/Helmet formula: baseArmor + (10 + prefixLevel/20 + suffixLevel/20) * (levelMultiplier - 1)
         const levelMultiplier = prefixLevel + suffixLevel + 1;
         const armorMultiplier = 10 + (prefixLevel / 20) + (suffixLevel / 20);
         calculatedArmor = baseItem.armour + armorMultiplier * (levelMultiplier - 1);
@@ -235,8 +242,13 @@ export function calculateItemStats(
         totalBaseArmor = flooredCalculated + rawFlatArmor;
         // Then multiply the entire total by rarity
         armour = Math.floor(totalBaseArmor * rarityMultiplier);
+      } else if (baseItem.type === 'shoes') {
+        // For shoes, flat armor is added directly (not scaled)
+        totalBaseArmor = flooredCalculated + rawFlatArmor;
+        // Then multiply the entire total by rarity
+        armour = Math.floor(totalBaseArmor * rarityMultiplier);
       } else {
-        // For chest/helmet/shoes, flat armor is not scaled by rarity initially
+        // For chest/helmet, flat armor is not scaled by rarity initially
         totalBaseArmor = flooredCalculated + rawFlatArmor;
         // Then multiply the entire thing by rarity and floor again
         armour = Math.floor(totalBaseArmor * rarityMultiplier);
@@ -273,7 +285,8 @@ export function calculateItemStats(
 
   // Apply rarity scaling to prefix/suffix stats
   // Stats scale with rarity using the same multiplier as damage/armor
-  // Use Math.trunc() to round towards zero (handles both positive and negative correctly)
+  // Flat stats: Math.trunc() to round towards zero (handles both positive and negative)
+  // Percentage stats: Round away from zero (Math.sign(x) * Math.round(Math.abs(x)))
   if (prefix || suffix) {
     const statMultiplier = getDamageMultiplier();
     
@@ -282,7 +295,9 @@ export function calculateItemStats(
         statsMap[stat].flat = Math.trunc(statsMap[stat].flat * statMultiplier);
       }
       if (statsMap[stat].percent !== 0) {
-        statsMap[stat].percent = Math.trunc(statsMap[stat].percent * statMultiplier);
+        const scaledValue = statsMap[stat].percent * statMultiplier;
+        // Round away from zero: for -6.5 → -7, for 6.5 → 7
+        statsMap[stat].percent = Math.sign(scaledValue) * Math.round(Math.abs(scaledValue));
       }
     });
   }
