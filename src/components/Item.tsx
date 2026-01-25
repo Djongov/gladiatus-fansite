@@ -204,26 +204,43 @@ export function calculateItemStats(
     
     if (hasPrefixOrSuffix) {
       // Use Gladiatus formula for armor with prefix/suffix
-      // levelMultiplier = prefixLevel + suffixLevel + 1 (armor base level NOT included)
-      const levelMultiplier = (prefix?.level || 0) + (suffix?.level || 0) + 1;
       const rarityMultiplier = getDamageMultiplier();
       const prefixLevel = prefix?.level || 0;
       const suffixLevel = suffix?.level || 0;
       
-      // Armor formula: baseArmor + (10 + prefixLevel/20 + suffixLevel/20) * (levelMultiplier - 1)
-      // The multiplier scales with both prefix and suffix levels
-      const armorMultiplier = 10 + (prefixLevel / 20) + (suffixLevel / 20);
-      const calculatedArmor = baseItem.armour + armorMultiplier * (levelMultiplier - 1);
+      let calculatedArmor: number;
+      
+      // Different formulas based on item type
+      if (baseItem.type === 'gloves') {
+        // Gloves formula: baseArmor + (3 + (prefixLevel + suffixLevel) * 3/200) * (prefixLevel + suffixLevel)
+        // Equivalent to: baseArmor + (3 + totalLevel/(200/3)) * totalLevel
+        const totalLevel = prefixLevel + suffixLevel;
+        calculatedArmor = baseItem.armour + (3 + totalLevel * 3 / 200) * totalLevel;
+      } else {
+        // Chest/Helmet/Shoes formula: baseArmor + (10 + prefixLevel/20 + suffixLevel/20) * (levelMultiplier - 1)
+        const levelMultiplier = prefixLevel + suffixLevel + 1;
+        const armorMultiplier = 10 + (prefixLevel / 20) + (suffixLevel / 20);
+        calculatedArmor = baseItem.armour + armorMultiplier * (levelMultiplier - 1);
+      }
       
       // Floor the calculated armor first
       const flooredCalculated = Math.floor(calculatedArmor);
       
       // Add flat armor from prefix/suffix AFTER flooring
       const rawFlatArmor = ((prefix?.stats?.armor?.flat || 0) + (suffix?.stats?.armor?.flat || 0));
-      const totalBaseArmor = flooredCalculated + rawFlatArmor;
+      let totalBaseArmor: number;
       
-      // Then multiply by rarity and floor again
-      armour = Math.floor(totalBaseArmor * rarityMultiplier);
+      if (baseItem.type === 'gloves') {
+        // For gloves, flat armor is added directly (not scaled)
+        totalBaseArmor = flooredCalculated + rawFlatArmor;
+        // Then multiply the entire total by rarity
+        armour = Math.floor(totalBaseArmor * rarityMultiplier);
+      } else {
+        // For chest/helmet/shoes, flat armor is not scaled by rarity initially
+        totalBaseArmor = flooredCalculated + rawFlatArmor;
+        // Then multiply the entire thing by rarity and floor again
+        armour = Math.floor(totalBaseArmor * rarityMultiplier);
+      }
     } else {
       // No prefix/suffix: use base armor from JSON and apply rarity multiplier
       const multiplier = getDamageMultiplier();
@@ -255,17 +272,17 @@ export function calculateItemStats(
   }
 
   // Apply rarity scaling to prefix/suffix stats
-  // Stats scale with rarity: green=1.0x, orange=1.5x, red+=2.0x
-  // Formula: max(1.0, totalMultiplier / 2)
+  // Stats scale with rarity using the same multiplier as damage/armor
+  // Use Math.trunc() to round towards zero (handles both positive and negative correctly)
   if (prefix || suffix) {
-    const statMultiplier = Math.max(1.0, totalMultiplier / 2);
+    const statMultiplier = getDamageMultiplier();
     
     Object.keys(statsMap).forEach(stat => {
       if (statsMap[stat].flat !== 0) {
-        statsMap[stat].flat = Math.round(statsMap[stat].flat * statMultiplier);
+        statsMap[stat].flat = Math.trunc(statsMap[stat].flat * statMultiplier);
       }
       if (statsMap[stat].percent !== 0) {
-        statsMap[stat].percent = Math.round(statsMap[stat].percent * statMultiplier);
+        statsMap[stat].percent = Math.trunc(statsMap[stat].percent * statMultiplier);
       }
     });
   }
