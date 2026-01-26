@@ -2,11 +2,12 @@
 sidebar_class_name: hidden
 ---
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Item, { calculateItemStats } from '@site/src/components/Item';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 # Item Planner
 
@@ -134,6 +135,81 @@ export const ItemPlanner = () => {
   const [selectedBase, setSelectedBase] = useState('');
   const [selectedPrefix, setSelectedPrefix] = useState('');
   const [selectedSuffix, setSelectedSuffix] = useState('');
+  const [copySuccess, setCopySuccess] = useState(false);
+  
+  // Load base, prefix, and suffix from URL params on mount
+  useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM) return;
+    
+    const params = new URLSearchParams(window.location.search);
+    const baseParam = params.get('base');
+    const prefixParam = params.get('prefix');
+    const suffixParam = params.get('suffix');
+    
+    if (baseParam) {
+      const baseExists = basesData.some(item => item.name === baseParam);
+      if (baseExists) {
+        setSelectedBase(baseParam);
+      }
+    }
+    
+    if (prefixParam) {
+      const prefixExists = prefixesData.some(p => p.name === prefixParam);
+      if (prefixExists) {
+        setSelectedPrefix(prefixParam);
+      }
+    }
+    
+    if (suffixParam) {
+      const suffixExists = suffixesData.some(s => s.name === suffixParam);
+      if (suffixExists) {
+        setSelectedSuffix(suffixParam);
+      }
+    }
+  }, []);
+  
+  // Update URL params when selections change
+  useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM) return;
+    
+    const params = new URLSearchParams(window.location.search);
+    
+    if (selectedBase) {
+      params.set('base', selectedBase);
+    } else {
+      params.delete('base');
+    }
+    
+    if (selectedPrefix) {
+      params.set('prefix', selectedPrefix);
+    } else {
+      params.delete('prefix');
+    }
+    
+    if (selectedSuffix) {
+      params.set('suffix', selectedSuffix);
+    } else {
+      params.delete('suffix');
+    }
+    
+    const newUrl = params.toString() 
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+    
+    window.history.replaceState({}, '', newUrl);
+  }, [selectedBase, selectedPrefix, selectedSuffix]);
+  
+  // Copy current URL to clipboard
+  const copyLinkToClipboard = () => {
+    if (!ExecutionEnvironment.canUseDOM) return;
+    
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    }).catch(err => {
+      console.error('Failed to copy link:', err);
+    });
+  };
   
   const baseItem = basesData.find(item => item.name === selectedBase);
   const prefix = prefixesData.find(p => p.name === selectedPrefix);
@@ -181,30 +257,53 @@ export const ItemPlanner = () => {
   
   return (
     <div>
-      <div style={{ marginBottom: '20px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-        <SearchableSelect
-          options={prefixOptions}
-          value={selectedPrefix}
-          onChange={setSelectedPrefix}
-          placeholder="Search prefix..."
-          label="Prefix:"
-        />
-        
-        <SearchableSelect
-          options={baseOptions}
-          value={selectedBase}
-          onChange={setSelectedBase}
-          placeholder="Search base item..."
-          label="Base Item:"
-        />
-        
-        <SearchableSelect
-          options={suffixOptions}
-          value={selectedSuffix}
-          onChange={setSelectedSuffix}
-          placeholder="Search suffix..."
-          label="Suffix:"
-        />
+      <div style={{ marginBottom: '20px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+          <h3 style={{ margin: 0 }}>Item Configuration</h3>
+          {(selectedBase || selectedPrefix || selectedSuffix) && (
+            <button
+              onClick={copyLinkToClipboard}
+              style={{
+                padding: '8px 16px',
+                backgroundColor: copySuccess ? '#28a745' : 'var(--ifm-color-primary)',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '14px',
+                fontWeight: 'bold',
+                transition: 'background-color 0.2s'
+              }}
+            >
+              {copySuccess ? '✓ Copied!' : '🔗 Copy Link'}
+            </button>
+          )}
+        </div>
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          <SearchableSelect
+            options={prefixOptions}
+            value={selectedPrefix}
+            onChange={setSelectedPrefix}
+            placeholder="Search prefix..."
+            label="Prefix:"
+          />
+          
+          <SearchableSelect
+            options={baseOptions}
+            value={selectedBase}
+            onChange={setSelectedBase}
+            placeholder="Search base item..."
+            label="Base Item:"
+          />
+          
+          <SearchableSelect
+            options={suffixOptions}
+            value={selectedSuffix}
+            onChange={setSelectedSuffix}
+            placeholder="Search suffix..."
+            label="Suffix:"
+          />
+        </div>
       </div>
       
       {(prefix || suffix) && (

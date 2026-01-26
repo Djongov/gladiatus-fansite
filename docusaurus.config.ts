@@ -142,6 +142,11 @@ const config: Config = {
           label: 'Item Planner',
         },
         {
+          to: '/character-planner',
+          position: 'left',
+          label: 'Character Planner',
+        },
+        {
           href: 'https://gladiatus-api.gamerz-bg.com/',
           position: 'left',
           label: 'Global Ranking',

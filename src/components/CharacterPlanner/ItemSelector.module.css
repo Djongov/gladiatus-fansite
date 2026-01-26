@@ -1,0 +1,273 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border: 3px solid #8b7355;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #8b7355;
+}
+
+.header h3 {
+  margin: 0;
+  color: #c9a876;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #8b7355;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.closeButton:hover {
+  color: #c9a876;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h4 {
+  margin: 0 0 15px 0;
+  color: #d4af37;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(139, 115, 85, 0.5);
+  padding-bottom: 8px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.searchInput,
+.levelFilter,
+.select {
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #8b7355;
+  border-radius: 4px;
+  color: #c9a876;
+  font-size: 14px;
+}
+
+.searchInput {
+  flex: 1;
+}
+
+.searchInput::placeholder {
+  color: rgba(201, 168, 118, 0.5);
+}
+
+.itemList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.itemCard:hover {
+  background: rgba(0, 0, 0, 0.5);
+  border-color: #8b7355;
+}
+
+.itemCard.selected {
+  background: rgba(139, 115, 85, 0.3);
+  border-color: #c9a876;
+}
+
+.itemImage {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemName {
+  color: #c9a876;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.itemLevel {
+  color: #a89068;
+  font-size: 12px;
+}
+
+.customization {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.customField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.customField label {
+  color: #c9a876;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.customField input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.preview {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview h5 {
+  margin: 0 0 10px 0;
+  color: #d4af37;
+  font-size: 16px;
+}
+
+.previewItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+  border-top: 2px solid #8b7355;
+}
+
+.cancelButton,
+.equipButton {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid;
+}
+
+.cancelButton {
+  background: transparent;
+  border-color: #8b7355;
+  color: #8b7355;
+}
+
+.cancelButton:hover {
+  background: rgba(139, 115, 85, 0.2);
+  border-color: #c9a876;
+  color: #c9a876;
+}
+
+.equipButton {
+  background: linear-gradient(135deg, #d4af37 0%, #c9a876 100%);
+  border-color: #d4af37;
+  color: #1a1410;
+}
+
+.equipButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #e6c84a 0%, #d4af37 100%);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.4);
+}
+
+.equipButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal {
+    max-width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .itemList {
+    grid-template-columns: 1fr;
+    max-height: 200px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .header h3 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,48 @@
+.characterDoll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.dollContainer {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border: 3px solid #8b7355;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.dollImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.slotsOverlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  pointer-events: none;
+}
+
+.slotsOverlay > * {
+  pointer-events: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dollContainer {
+    padding: 10px;
+  }
+  
+  .characterDoll {
+    padding: 10px;
+  }
+}

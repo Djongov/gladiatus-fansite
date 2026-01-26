@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Item, { ItemRarity, BaseItem } from './Item';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 interface ItemShowcaseProps {
   baseItem?: string; // Individual item name
@@ -167,6 +168,57 @@ export default function ItemShowcase({
 }: ItemShowcaseProps) {
   const [selectedPrefix, setSelectedPrefix] = useState('');
   const [selectedSuffix, setSelectedSuffix] = useState('');
+  const [copySuccess, setCopySuccess] = useState(false);
+  
+  // Load prefix/suffix from URL params on mount
+  useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM || !allowPrefixSuffixSelection) return;
+    
+    const params = new URLSearchParams(window.location.search);
+    const prefixParam = params.get('prefix');
+    const suffixParam = params.get('suffix');
+    
+    if (prefixParam) {
+      // Verify the prefix exists in our data
+      const prefixExists = prefixesData.some(p => p.name === prefixParam);
+      if (prefixExists) {
+        setSelectedPrefix(prefixParam);
+      }
+    }
+    
+    if (suffixParam) {
+      // Verify the suffix exists in our data
+      const suffixExists = suffixesData.some(s => s.name === suffixParam);
+      if (suffixExists) {
+        setSelectedSuffix(suffixParam);
+      }
+    }
+  }, [allowPrefixSuffixSelection]);
+  
+  // Update URL params when prefix/suffix changes
+  useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM || !allowPrefixSuffixSelection) return;
+    
+    const params = new URLSearchParams(window.location.search);
+    
+    if (selectedPrefix) {
+      params.set('prefix', selectedPrefix);
+    } else {
+      params.delete('prefix');
+    }
+    
+    if (selectedSuffix) {
+      params.set('suffix', selectedSuffix);
+    } else {
+      params.delete('suffix');
+    }
+    
+    const newUrl = params.toString() 
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+    
+    window.history.replaceState({}, '', newUrl);
+  }, [selectedPrefix, selectedSuffix, allowPrefixSuffixSelection]);
   
   const allRarities: ItemRarity[] = ['common', 'green', 'blue', 'purple', 'orange', 'red'];
   // Skip common rarity when prefix or suffix is selected (common items can't have affixes)
@@ -199,6 +251,18 @@ export default function ItemShowcase({
   
   const prefix = prefixesData.find(p => p.name === selectedPrefix);
   const suffix = suffixesData.find(s => s.name === selectedSuffix);
+  
+  // Copy current URL to clipboard
+  const copyLinkToClipboard = () => {
+    if (!ExecutionEnvironment.canUseDOM) return;
+    
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    }).catch(err => {
+      console.error('Failed to copy link:', err);
+    });
+  };
 
   if (!showAllRarities) {
     // Just show the base items
@@ -236,7 +300,27 @@ export default function ItemShowcase({
           borderRadius: '8px',
           backgroundColor: 'var(--ifm-background-surface-color)'
         }}>
-          <h3 style={{ marginTop: 0, marginBottom: '15px' }}>Apply Prefix/Suffix to All Items</h3>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 0, marginBottom: '15px' }}>
+            <h3 style={{ margin: 0 }}>Apply Prefix/Suffix to All Items</h3>
+            {(selectedPrefix || selectedSuffix) && (
+              <button
+                onClick={copyLinkToClipboard}
+                style={{
+                  padding: '8px 16px',
+                  backgroundColor: copySuccess ? '#28a745' : 'var(--ifm-color-primary)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  fontWeight: 'bold',
+                  transition: 'background-color 0.2s'
+                }}
+              >
+                {copySuccess ? '✓ Copied!' : '🔗 Copy Link'}
+              </button>
+            )}
+          </div>
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
             <div style={{ flex: '1', minWidth: '200px' }}>
               <SearchableSelect
