@@ -158,8 +158,8 @@ export function calculateItemStats(
   // Calculate damage (if weapon) - using Gladiatus damage formulas
   let damage: { min: number; max: number } | undefined;
   if (baseItem.damageMin !== undefined && baseItem.damageMax !== undefined) {
-    // Get flat damage from prefix ONLY (suffix flat damage is ignored in formulas)
-    const damageFromScroll = prefix?.stats?.damage?.flat || 0;
+    // Get flat damage from BOTH prefix AND suffix
+    const damageFromScroll = (prefix?.stats?.damage?.flat || 0) + (suffix?.stats?.damage?.flat || 0);
     
     // Check if we have prefix/suffix that adds levels
     const hasPrefixOrSuffix = prefix || suffix;
@@ -333,8 +333,8 @@ export function calculateItemStats(
   // Convert to array format - flat and percent for same stat appear consecutively
   const stats: Array<{ name: string; flat: number; percent: number }> = [];
   
-  // Define stat order as in-game: Damage first, then Strength, Dexterity, Agility, Constitution, Charisma, Intelligence, then others
-  const statOrder = ['damage', 'strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
+  // Define stat order as in-game: Damage first, then Armor (for weapons), then Strength, Dexterity, Agility, Constitution, Charisma, Intelligence, then others
+  const statOrder = ['damage', 'armor', 'strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
                      'critical_hit', 'double_hit', 'avoid_critical_hit', 'avoid_double_hit', 
                      'block_chance', 'healing'];
   
@@ -469,12 +469,21 @@ export default function Item({
           
           {calculatedStats.armour && <div>Armour {calculatedStats.armour > 0 ? '+' : ''}{calculatedStats.armour}</div>}
           
+          {/* Display armor from prefix/suffix first */}
+          {calculatedStats.stats.filter(stat => stat.name === 'Armor').map((stat, index) => (
+            <div key={`${stat.name}-${index}`}>
+              {stat.name}
+              {stat.flat !== 0 && ` ${stat.flat > 0 ? '+' : ''}${stat.flat}`}
+              {stat.percent !== 0 && ` ${stat.percent > 0 ? '+' : ''}${stat.percent}%`}
+            </div>
+          ))}
+          
           {calculatedStats.prefixHealth !== 0 && (
             <div>Health {calculatedStats.prefixHealth > 0 ? '+' : ''}{calculatedStats.prefixHealth}</div>
           )}
-
-          {/* Display stats from prefix/suffix */}
-          {calculatedStats.stats.length > 0 && calculatedStats.stats.map((stat, index) => (
+          
+          {/* Display other stats from prefix/suffix */}
+          {calculatedStats.stats.filter(stat => stat.name !== 'Armor').map((stat, index) => (
             <div key={`${stat.name}-${index}`}>
               {stat.name}
               {stat.flat !== 0 && ` ${stat.flat > 0 ? '+' : ''}${stat.flat}`}
