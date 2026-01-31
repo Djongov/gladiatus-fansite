@@ -463,10 +463,6 @@ export default function Item({
             <div>Damage {calculatedStats.damage.min} - {calculatedStats.damage.max}</div>
           )}
           
-          {calculatedStats.prefixDamage !== 0 && (
-            <div>Damage {calculatedStats.prefixDamage > 0 ? '+' : ''}{calculatedStats.prefixDamage}</div>
-          )}
-          
           {calculatedStats.armour && <div>Armour {calculatedStats.armour > 0 ? '+' : ''}{calculatedStats.armour}</div>}
           
           {/* Display armor from prefix/suffix first */}
