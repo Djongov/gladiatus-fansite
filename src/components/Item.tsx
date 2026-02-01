@@ -462,6 +462,9 @@ export default function Item({
           {calculatedStats.damage && (
             <div>Damage {calculatedStats.damage.min} - {calculatedStats.damage.max}</div>
           )}
+          {resolvedBaseItem.type !== 'weapons' && calculatedStats.prefixDamage !== 0 && (
+            <div>Damage {calculatedStats.prefixDamage > 0 ? '+' : ''}{calculatedStats.prefixDamage}</div>
+          )}
           
           {calculatedStats.armour && <div>Armour {calculatedStats.armour > 0 ? '+' : ''}{calculatedStats.armour}</div>}
           
