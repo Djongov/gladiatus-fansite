@@ -1,19 +1,19 @@
 .statsDisplay {
-  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
-  border: 2px solid #8b7355;
+  background: linear-gradient(135deg, #f5efd8 0%, #E7DDBA 100%);
+  border: 2px solid #c4ac70;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   min-width: 300px;
 }
 
 .title {
   margin: 0 0 20px 0;
   font-size: 24px;
-  color: #c9a876;
+  color: #8b6914;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #8b7355;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #c4ac70;
   padding-bottom: 10px;
 }
 
@@ -32,10 +32,10 @@
 .sectionTitle {
   margin: 0 0 10px 0;
   font-size: 18px;
-  color: #d4af37;
+  color: #8b6914;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 1px solid rgba(139, 115, 85, 0.5);
+  border-bottom: 2px solid #c4ac70;
   padding-bottom: 5px;
 }
 
@@ -44,32 +44,31 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 12px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 4px;
   transition: background 0.2s;
 }
 
 .statRow:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .statName {
-  color: #c9a876;
-  font-weight: 500;
+  color: #5a4a2f;
+  font-weight: 600;
   font-size: 14px;
 }
 
 .statValue {
-  color: #fff;
+  color: #8b6914;
   font-weight: bold;
   font-size: 16px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .emptyState {
   text-align: center;
   padding: 40px 20px;
-  color: #8b7355;
+  color: #7a6a4f;
 }
 
 .emptyState p {

@@ -12,15 +12,15 @@
 .title {
   margin: 0;
   font-size: 42px;
-  color: #d4af37;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  color: #8b6914;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
   font-weight: bold;
 }
 
 .subtitle {
   margin: 10px 0 0 0;
   font-size: 16px;
-  color: inherit;
+  color: #5a4a2f;
   opacity: 0.9;
 }
 
@@ -35,10 +35,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: rgba(0, 0, 0, 0.3);
-  border: 2px solid #8b7355;
+  background: linear-gradient(135deg, #f5efd8 0%, #E7DDBA 100%);
+  border: 2px solid #c4ac70;
   border-radius: 8px;
   margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .info {
@@ -55,18 +56,18 @@
 }
 
 .levelSelector label {
-  color: inherit;
-  font-weight: 500;
+  color: #5a4a2f;
+  font-weight: 600;
   font-size: 14px;
 }
 
 .levelInput {
   width: 70px;
   padding: 6px 10px;
-  background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #8b7355;
+  background: #ffffff;
+  border: 2px solid #c4ac70;
   border-radius: 4px;
-  color: inherit;
+  color: #5a4a2f;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -74,8 +75,8 @@
 
 .levelInput:focus {
   outline: none;
-  border-color: #d4af37;
-  box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+  border-color: #8b6914;
+  box-shadow: 0 0 6px rgba(139, 105, 20, 0.3);
 }
 
 .levelInfo {
@@ -83,24 +84,24 @@
   flex-direction: column;
   gap: 4px;
   padding: 8px 12px;
-  background: rgba(139, 115, 85, 0.15);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 4px;
-  border-left: 3px solid #d4af37;
+  border-left: 3px solid #8b6914;
 }
 
 .levelInfoItem {
-  color: inherit;
+  color: #5a4a2f;
   font-size: 13px;
   line-height: 1.4;
 }
 
 .levelInfoItem strong {
-  color: #d4af37;
+  color: #8b6914;
   font-weight: bold;
 }
 
 .equippedCount {
-  color: inherit;
+  color: #5a4a2f;
   font-weight: bold;
   font-size: 16px;
 }
@@ -119,29 +120,32 @@
   cursor: pointer;
   transition: all 0.2s;
   border: 2px solid;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .clearButton {
-  background: transparent;
-  border-color: #d32f2f;
-  color: #d32f2f;
+  background: linear-gradient(135deg, #f5efd8 0%, #E7DDBA 100%);
+  border-color: #c4ac70;
+  color: #8b4513;
 }
 
 .clearButton:hover:not(:disabled) {
-  background: rgba(211, 47, 47, 0.2);
-  border-color: #ff5252;
-  color: #ff5252;
+  background: linear-gradient(135deg, #ffffff 0%, #f5efd8 100%);
+  border-color: #8b6914;
+  color: #d32f2f;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .shareButton {
-  background: linear-gradient(135deg, #bdaf9b 0%, #aaaa87 100%);
-  border-color: #2196f3;
+  background: linear-gradient(135deg, #c4ac70 0%, #a89558 100%);
+  border-color: #8b6914;
   color: #ffffff;
 }
 
 .shareButton:hover:not(:disabled) {
-  background: linear-gradient(135deg, #E7DDBA 0%, #c4ac70 100%);
-  box-shadow: 0 4px 16px rgba(33, 150, 243, 0.4);
+  background: linear-gradient(135deg, #d4c080 0%, #c4ac70 100%);
+  border-color: #5a4a2f;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
 .clearButton:disabled,
@@ -151,45 +155,63 @@
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
   align-items: start;
+}
+
+.characterIdentity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dollSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .statsSection {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+}
+
+.statsSection > * {
+  flex: 1 1 300px;
   min-width: 300px;
+  max-width: 500px;
 }
 
 .tips {
-  border: 2px solid #8b7355;
+  border: 2px solid #c4ac70;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #f5efd8 0%, #E7DDBA 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .tips h4 {
   margin: 0 0 15px 0;
-  color: #d4af37;
+  color: #8b6914;
   font-size: 18px;
-  border-bottom: 1px solid rgba(139, 115, 85, 0.5);
+  border-bottom: 2px solid #c4ac70;
   padding-bottom: 8px;
 }
 
 .tips ul {
   margin: 0;
   padding-left: 20px;
-  color: inherit;
+  color: #5a4a2f;
 }
 
 .tips li {
@@ -202,11 +224,12 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+  background: linear-gradient(135deg, #c4ac70 0%, #a89558 100%);
   color: #ffffff;
   padding: 15px 25px;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  border: 2px solid #8b6914;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   font-weight: bold;
   font-size: 16px;
   z-index: 2000;
@@ -225,15 +248,15 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-  .content {
+@media (max-width: 1024px) {
+  .topSection {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-
-  .statsSection {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+  
+  .statsSection > * {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
@@ -259,6 +282,14 @@
   .clearButton,
   .shareButton {
     flex: 1;
+  }
+  
+  .statsSection {
+    flex-direction: column;
+  }
+  
+  .statsSection > * {
+    min-width: 100%;
   }
 
   .notification {

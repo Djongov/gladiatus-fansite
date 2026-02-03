@@ -113,11 +113,11 @@ export default function CharacterPlanner() {
               id="character-level"
               type="number"
               min="1"
-              max="150"
+              max="1000"
               value={characterLevel}
               onChange={(e) => {
                 const value = Number.parseInt(e.target.value, 10);
-                if (value >= 1 && value <= 150) {
+                if (value >= 1 && value <= 1000) {
                   setCharacterLevel(value);
                 }
               }}
@@ -162,33 +162,36 @@ export default function CharacterPlanner() {
       </div>
 
       <div className={styles.content}>
-        {/* Character Doll */}
-        <div className={styles.dollSection}>
-          <PlayerName 
-            identity={characterIdentity} 
-            characterLevel={characterLevel}
-            onGenderChange={setCharacterGender}
-          />
+        {/* Top Section: Character Identity and Doll */}
+        <div className={styles.topSection}>
+          <div className={styles.characterIdentity}>
+            <PlayerName 
+              identity={characterIdentity} 
+              characterLevel={characterLevel}
+              onGenderChange={setCharacterGender}
+            />
+          </div>
           
-          <CharacterDoll
-            equippedItems={equippedItems}
-            onSlotClick={handleSlotClick}
-            onSlotRemove={handleSlotRemove}
-            characterLevel={characterLevel}
-            characterBaseStats={baseStats}
-          />
-          
-          {/* Base Stats Editor */}
+          <div className={styles.dollSection}>
+            <CharacterDoll
+              equippedItems={equippedItems}
+              onSlotClick={handleSlotClick}
+              onSlotRemove={handleSlotRemove}
+              characterLevel={characterLevel}
+              characterBaseStats={baseStats}
+            />
+          </div>
+        </div>
+
+        {/* Bottom Section: All Stats */}
+        <div className={styles.statsSection}>
           <BaseStatsEditor
             baseStats={baseStats}
             setBaseStats={setBaseStats}
             characterStats={characterStats}
             characterLevel={characterLevel}
           />
-        </div>
-
-        {/* Stats Display */}
-        <div className={styles.statsSection}>
+          
           <StatsDisplay stats={characterStats} />
           
           {/* Tips */}

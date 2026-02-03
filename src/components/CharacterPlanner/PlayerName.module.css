@@ -9,6 +9,7 @@
   margin-top: 12px;
   width: 168px;
   height: 194px;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: auto 194px;
   animation: costumeSpriteAnimation 1.5s steps(11) infinite;
@@ -18,6 +19,7 @@
   margin-top: 12px;
   width: 168px;
   height: 194px;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -32,22 +34,26 @@
   display: flex;
   gap: 16px;
   margin-top: 12px;
-  padding: 8px;
-  background: rgba(139, 115, 85, 0.2);
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #f5efd8 0%, #E7DDBA 100%);
+  border: 2px solid #c4ac70;
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .genderLabel {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #c9a876;
+  color: #5a4a2f;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .genderLabel input[type="radio"] {
   cursor: pointer;
+  accent-color: #8b6914;
 }
 
 .faceImage {
