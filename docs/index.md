@@ -17,6 +17,10 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ## Latest website news
 
+### 04.02.2026
+
+- I've been making huge progresses towards the itemization and character planner. Too much to put here. Progress has been great!
+
 ### 19.01.2026
 
 - I made great progress into the items and the tooltips. Figured out the formula for damage, armor, durability and conditioning between rarities

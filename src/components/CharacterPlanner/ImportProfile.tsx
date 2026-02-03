@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ImportProfile.module.css';
 import type { BaseItem, PrefixSuffix, ItemRarity } from '../Item';
-import type { ItemSlotType, BaseStats, EquippedItem } from './useCharacterState';
+import type { ItemSlotType, BaseStats, EquippedItem, CharacterIdentity } from './useCharacterState';
 
 // Import data files
 import basesData from '@site/static/data/items/bases.json';
@@ -9,13 +9,15 @@ import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
 
 interface ImportProfileProps {
-  onImport: (level: number, baseStats: BaseStats, items: Map<ItemSlotType, EquippedItem>) => void;
+  onImport: (level: number, baseStats: BaseStats, items: Map<ItemSlotType, EquippedItem>, identity: CharacterIdentity) => void;
 }
 
 interface ApiResponse {
   result: string;
   data: {
     name: string;
+    title?: string;
+    costume?: string;
     level: number;
     strength_base: number;
     dexterity_base: number;
@@ -222,8 +224,16 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
         itemsMap.set(slot, equippedItem);
       }
 
+      // Create character identity
+      const identity: CharacterIdentity = {
+        name: data.data.name,
+        title: data.data.title || undefined,
+        costume: data.data.costume || undefined,
+        gender: 'male', // Default for imported characters since we don't get gender from API
+      };
+
       // Call the import callback
-      onImport(data.data.level, baseStats, itemsMap);
+      onImport(data.data.level, baseStats, itemsMap, identity);
       
       setSuccess(true);
       setError(null);

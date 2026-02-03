@@ -1,6 +1,6 @@
 .characterPlanner {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1410 0%, #2c2416 100%);
+  background: linear-gradient(135deg, #E7DDBA 0%, #c4ac70 100%);
   padding: 20px;
 }
 
@@ -20,7 +20,7 @@
 .subtitle {
   margin: 10px 0 0 0;
   font-size: 16px;
-  color: #c9a876;
+  color: inherit;
   opacity: 0.9;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .levelSelector label {
-  color: #c9a876;
+  color: inherit;
   font-weight: 500;
   font-size: 14px;
 }
@@ -66,7 +66,7 @@
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #8b7355;
   border-radius: 4px;
-  color: #c9a876;
+  color: inherit;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -89,7 +89,7 @@
 }
 
 .levelInfoItem {
-  color: #c9a876;
+  color: inherit;
   font-size: 13px;
   line-height: 1.4;
 }
@@ -100,7 +100,7 @@
 }
 
 .equippedCount {
-  color: #c9a876;
+  color: inherit;
   font-weight: bold;
   font-size: 16px;
 }
@@ -134,13 +134,13 @@
 }
 
 .shareButton {
-  background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+  background: linear-gradient(135deg, #bdaf9b 0%, #aaaa87 100%);
   border-color: #2196f3;
   color: #ffffff;
 }
 
 .shareButton:hover:not(:disabled) {
-  background: linear-gradient(135deg, #42a5f5 0%, #2196f3 100%);
+  background: linear-gradient(135deg, #E7DDBA 0%, #c4ac70 100%);
   box-shadow: 0 4px 16px rgba(33, 150, 243, 0.4);
 }
 
@@ -172,7 +172,6 @@
 }
 
 .tips {
-  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
   border: 2px solid #8b7355;
   border-radius: 8px;
   padding: 20px;
@@ -190,7 +189,7 @@
 .tips ul {
   margin: 0;
   padding-left: 20px;
-  color: #c9a876;
+  color: inherit;
 }
 
 .tips li {

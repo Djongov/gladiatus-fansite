@@ -1,0 +1,59 @@
+.playerNameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.costumeAnimation {
+  margin-top: 12px;
+  width: 168px;
+  height: 194px;
+  background-repeat: no-repeat;
+  background-size: auto 194px;
+  animation: costumeSpriteAnimation 1.5s steps(11) infinite;
+}
+
+.costumeStatic {
+  margin-top: 12px;
+  width: 168px;
+  height: 194px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@keyframes costumeSpriteAnimation {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -1848px 0px; }
+}
+
+.genderSelector {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  padding: 8px;
+  background: rgba(139, 115, 85, 0.2);
+  border-radius: 4px;
+}
+
+.genderLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #c9a876;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.genderLabel input[type="radio"] {
+  cursor: pointer;
+}
+
+.faceImage {
+  margin-top: 12px;
+  width: 168px;
+  height: 194px;
+  border: 2px solid #8b7355;
+  border-radius: 4px;
+}

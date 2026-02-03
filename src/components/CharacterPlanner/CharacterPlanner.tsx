@@ -5,6 +5,7 @@ import StatsDisplay from './StatsDisplay';
 import ItemSelector from './ItemSelector';
 import BaseStatsEditor from './BaseStatsEditor';
 import ImportProfile from './ImportProfile';
+import PlayerName from './PlayerName';
 import { useCharacterState, ItemSlotType } from './useCharacterState';
 
 /**
@@ -17,8 +18,10 @@ export default function CharacterPlanner() {
     equippedItems,
     characterLevel,
     baseStats,
+    characterIdentity,
     setCharacterLevel,
     setBaseStats,
+    setCharacterGender,
     setItem,
     removeItem,
     clearAll,
@@ -161,6 +164,12 @@ export default function CharacterPlanner() {
       <div className={styles.content}>
         {/* Character Doll */}
         <div className={styles.dollSection}>
+          <PlayerName 
+            identity={characterIdentity} 
+            characterLevel={characterLevel}
+            onGenderChange={setCharacterGender}
+          />
+          
           <CharacterDoll
             equippedItems={equippedItems}
             onSlotClick={handleSlotClick}

@@ -36,6 +36,13 @@ export interface BaseStats {
   intelligence: number;
 }
 
+export interface CharacterIdentity {
+  name: string;
+  title?: string;
+  costume?: string;
+  gender: 'male' | 'female';
+}
+
 export interface CharacterStats {
   totalArmor: number;
   totalDamageMin: number;
@@ -57,13 +64,16 @@ export interface CharacterState {
   equippedItems: Map<ItemSlotType, EquippedItem>;
   characterLevel: number;
   baseStats: BaseStats;
+  characterIdentity: CharacterIdentity;
   setCharacterLevel: (level: number) => void;
   setBaseStats: (stats: Partial<BaseStats>) => void;
+  setCharacterGender: (gender: 'male' | 'female') => void;
   setItem: (slot: ItemSlotType, item: EquippedItem | null) => void;
   removeItem: (slot: ItemSlotType) => void;
   clearAll: () => void;
   characterStats: CharacterStats;
   loadFromUrl: () => void;
+  importProfile: (level: number, stats: BaseStats, items: Map<ItemSlotType, EquippedItem>, identity: CharacterIdentity) => void;
 }
 
 /**
@@ -83,6 +93,26 @@ function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
   return 0;
 }
 
+// Roman names for random character generation
+const ROMAN_FIRST_NAMES = [
+  'Marcus', 'Gaius', 'Lucius', 'Gnaeus', 'Quintus', 'Titus', 'Aulus', 
+  'Publius', 'Spurius', 'Manius', 'Servius', 'Appius', 'Decimus',
+  'Tiberius', 'Sextus', 'Numerius', 'Caeso', 'Vibius', 'Volesus',
+];
+
+const ROMAN_LAST_NAMES = [
+  'Antonius', 'Julius', 'Claudius', 'Cornelius', 'Fabius', 'Valerius',
+  'Aemilius', 'Manlius', 'Junius', 'Aurelius', 'Calpurnius', 'Cassius',
+  'Horatius', 'Octavius', 'Pompeius', 'Sergius', 'Livius', 'Tullius',
+  'Sabinus', 'Flavius', 'Maximus', 'Martialis', 'Severus', 'Brutus',
+];
+
+function generateRandomRomanName(): string {
+  const firstName = ROMAN_FIRST_NAMES[Math.floor(Math.random() * ROMAN_FIRST_NAMES.length)];
+  const lastName = ROMAN_LAST_NAMES[Math.floor(Math.random() * ROMAN_LAST_NAMES.length)];
+  return `${firstName}${lastName}`;
+}
+
 /**
  * Custom hook to manage character planner state
  * Handles equipped items, stat calculations, and URL sharing
@@ -90,6 +120,11 @@ function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
 export function useCharacterState(): CharacterState {
   const [equippedItems, setEquippedItems] = useState<Map<ItemSlotType, EquippedItem>>(new Map());
   const [characterLevel, setCharacterLevel] = useState<number>(1);
+  const [characterIdentity, setCharacterIdentity] = useState<CharacterIdentity>(() => ({
+    name: generateRandomRomanName(),
+    title: undefined,
+    gender: 'male',
+  }));
   const [baseStats, setBaseStatsState] = useState<BaseStats>({
     strength: 5,
     dexterity: 5,
@@ -239,12 +274,20 @@ export function useCharacterState(): CharacterState {
   };
 
   /**
-   * Import profile data (bulk import for level, stats, and items)
+   * Update character gender
    */
-  const importProfile = (level: number, stats: BaseStats, items: Map<ItemSlotType, EquippedItem>) => {
+  const setCharacterGender = (gender: 'male' | 'female') => {
+    setCharacterIdentity(prev => ({ ...prev, gender }));
+  };
+
+  /**
+   * Import profile data (bulk import for level, stats, items, and identity)
+   */
+  const importProfile = (level: number, stats: BaseStats, items: Map<ItemSlotType, EquippedItem>, identity: CharacterIdentity) => {
     setCharacterLevel(level);
     setBaseStatsState(stats);
     setEquippedItems(items);
+    setCharacterIdentity(identity);
   };
 
   /**
@@ -388,8 +431,10 @@ export function useCharacterState(): CharacterState {
     equippedItems,
     characterLevel,
     baseStats,
+    characterIdentity,
     setCharacterLevel,
     setBaseStats,
+    setCharacterGender,
     setItem,
     removeItem,
     clearAll,
