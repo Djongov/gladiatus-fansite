@@ -1,10 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import styles from './ItemSelector.module.css';
-import { ItemSlotType, EquippedItem } from './useCharacterState';
+import { ItemSlotType, EquippedItem, Upgrade, AppliedUpgrade } from './useCharacterState';
 import Item, { BaseItem, PrefixSuffix, ItemRarity } from '../Item';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
+import upgradesData from '@site/static/data/items/upgrades.json';
 
 interface ItemSelectorProps {
   readonly slotType: ItemSlotType;
@@ -37,6 +38,8 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
   const [selectedSuffix, setSelectedSuffix] = useState<PrefixSuffix | null>(currentItem?.suffix || null);
   const [selectedRarity, setSelectedRarity] = useState<ItemRarity>(currentItem?.rarity || 'green');
   const [conditioned, setConditioned] = useState(currentItem?.conditioned || false);
+  const [enchantValue, setEnchantValue] = useState<number>(currentItem?.enchantValue || 0);
+  const [selectedUpgrades, setSelectedUpgrades] = useState<AppliedUpgrade[]>(currentItem?.upgrades || []);
   const [searchTerm, setSearchTerm] = useState('');
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
   const [prefixSearch, setPrefixSearch] = useState('');
@@ -87,6 +90,14 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
     );
   }, [availableSuffixes, suffixSearch]);
 
+  // Get available upgrades for the selected item type
+  const availableUpgrades = useMemo(() => {
+    if (!selectedBase) return [];
+    return (upgradesData as Upgrade[]).filter(upgrade => 
+      upgrade.applicableTo.includes(selectedBase.type)
+    );
+  }, [selectedBase]);
+
   const handleEquip = () => {
     if (!selectedBase) return;
 
@@ -96,6 +107,8 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
       suffix: selectedSuffix || undefined,
       rarity: selectedRarity,
       conditioned,
+      enchantValue: enchantValue > 0 ? enchantValue : undefined,
+      upgrades: selectedUpgrades.length > 0 ? selectedUpgrades : undefined,
     };
 
     onSelect(equippedItem);
@@ -287,7 +300,7 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                     <option value="blue">Blue (Neptune)</option>
                     <option value="purple">Purple (Mars)</option>
                     <option value="orange">Orange (Jupiter)</option>
-                    <option value="red">Red (Vulcan)</option>
+                    <option value="red">Red (Olympus)</option>
                   </select>
                 </div>
 
@@ -303,6 +316,75 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                     {' '}Conditioned (+)
                   </label>
                 </div>
+
+                {/* Enchant Value */}
+                <div className={styles.customField}>
+                  <label htmlFor="enchant-input">
+                    Enchant {selectedBase.type === 'weapons' ? '(Grindstone +Damage)' : '(Protective gear +Armor)'}:
+                  </label>
+                  <input
+                    id="enchant-input"
+                    type="number"
+                    min="0"
+                    max="999"
+                    value={enchantValue}
+                    onChange={(e) => setEnchantValue(Number(e.target.value))}
+                    className={styles.numberInput}
+                    placeholder="0"
+                  />
+                </div>
+
+                {/* Upgrades (Powders, etc.) */}
+                {availableUpgrades.length > 0 && (
+                  <div className={styles.customField}>
+                    <label>Upgrades (Powders):</label>
+                    <div className={styles.upgradesList}>
+                      {availableUpgrades.map((upgrade) => {
+                        const existingUpgrade = selectedUpgrades.find(u => u.upgrade.name === upgrade.name);
+                        const isSelected = !!existingUpgrade;
+                        
+                        return (
+                          <div key={upgrade.name} className={styles.upgradeRow}>
+                            <label className={styles.upgradeLabel}>
+                              <input
+                                type="checkbox"
+                                checked={isSelected}
+                                onChange={(e) => {
+                                  if (e.target.checked) {
+                                    setSelectedUpgrades([...selectedUpgrades, { upgrade, level: 1 }]);
+                                  } else {
+                                    setSelectedUpgrades(selectedUpgrades.filter(u => u.upgrade.name !== upgrade.name));
+                                  }
+                                }}
+                              />
+                              {' '}{upgrade.name}
+                            </label>
+                            {isSelected && (
+                              <input
+                                type="number"
+                                min="1"
+                                max="150"
+                                value={existingUpgrade.level}
+                                onChange={(e) => {
+                                  const newLevel = Number(e.target.value);
+                                  setSelectedUpgrades(
+                                    selectedUpgrades.map(u => 
+                                      u.upgrade.name === upgrade.name 
+                                        ? { ...u, level: newLevel } 
+                                        : u
+                                    )
+                                  );
+                                }}
+                                className={styles.upgradeLevel}
+                                placeholder="Level"
+                              />
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Preview */}
@@ -315,6 +397,7 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                     suffix={selectedSuffix || undefined}
                     rarity={selectedRarity}
                     conditioned={conditioned}
+                    enchantValue={enchantValue > 0 ? enchantValue : undefined}
                   />
                 </div>
               </div>

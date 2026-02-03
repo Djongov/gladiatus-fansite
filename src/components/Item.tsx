@@ -3,6 +3,7 @@ import styles from '@site/src/css/ItemTooltip.module.css';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
+import type { Upgrade, AppliedUpgrade } from './CharacterPlanner/useCharacterState';
 
 // Base item type from bases.json
 export interface BaseItem {
@@ -57,6 +58,7 @@ interface ItemProps {
   rarity?: ItemRarity; // Optional override, auto-detected if not provided
   conditioned?: boolean;
   enchantValue?: number;
+  upgrades?: AppliedUpgrade[]; // Powders and other upgrades
   hideTooltip?: boolean; // For character planner - just show icon
   // Character context for planner-specific rendering
   characterLevel?: number; // If provided, show red level when item is not usable
@@ -118,7 +120,7 @@ export function calculateItemStats(
     // Blue (Neptune) = 115%
     // Purple (Mars) = 130%
     // Orange (Jupiter) = 150%
-    // Red (Vulcan) = 175%
+    // Red (Olympus) = 175%
     // Red+ = 200% (2× green)
     
     // Determine effective rarity with conditioning
@@ -421,6 +423,7 @@ export default function Item({
   rarity,
   conditioned = false,
   enchantValue,
+  upgrades,
   hideTooltip = false,
   characterLevel,
   characterBaseStats,
@@ -446,6 +449,16 @@ export default function Item({
 
   // Auto-detect rarity if not provided
   const effectiveRarity: ItemRarity = rarity || (resolvedPrefix || resolvedSuffix ? 'green' : 'common');
+
+  // Helper function to calculate upgrade bonus
+  const calculateUpgradeBonus = (upgrade: Upgrade, level: number): number => {
+    if (upgrade.type === 'powder') {
+      return Math.floor(level / 7); // Powders: level / 7, round down
+    } else if (upgrade.stat === 'damage' || upgrade.stat === 'armor') {
+      return Math.ceil(level / 5); // Grindstone/Protective gear: level / 5, round up
+    }
+    return 0;
+  };
 
   // Calculate all stats
   const calculatedStats = calculateItemStats(
@@ -474,7 +487,7 @@ export default function Item({
     if (!statKey) return null;
     
     const baseStat = characterBaseStats[statKey];
-    return Math.floor(baseStat * (percentBonus / 100));
+    return Math.round(baseStat * (percentBonus / 100));
   };
 
   // Check if item is not usable by character level
@@ -533,7 +546,9 @@ export default function Item({
           })}
 
           {enchantValue && (
-            <div className={styles.enchant}>+{enchantValue} Damage</div>
+            <div className={styles.enchant}>
+              +{enchantValue} {resolvedBaseItem.type === 'weapons' ? 'Damage' : 'Armor'}
+            </div>
           )}
 
           <div className={`${styles.level} ${isItemUnusable ? styles.unusableLevel : ''}`}>

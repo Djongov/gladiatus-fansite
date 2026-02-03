@@ -84,7 +84,8 @@
 
 .searchInput,
 .levelFilter,
-.select {
+.select,
+.numberInput {
   padding: 8px 12px;
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid #8b7355;
@@ -97,7 +98,12 @@
   flex: 1;
 }
 
-.searchInput::placeholder {
+.numberInput {
+  width: 100px;
+}
+
+.searchInput::placeholder,
+.numberInput::placeholder {
   color: rgba(201, 168, 118, 0.5);
 }
 
@@ -348,4 +354,45 @@
   .header h3 {
     font-size: 18px;
   }
+}
+
+/* Upgrades section */
+.upgradesList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.upgradeRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upgradeLabel {
+  flex: 1;
+  cursor: pointer;
+  color: #c9a876;
+  font-size: 14px;
+}
+
+.upgradeLabel input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.upgradeLevel {
+  width: 80px;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #8b7355;
+  border-radius: 4px;
+  color: #c9a876;
+  font-size: 13px;
 }

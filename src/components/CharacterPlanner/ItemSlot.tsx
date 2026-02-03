@@ -55,6 +55,8 @@ export default function ItemSlot({
               suffix={item.suffix}
               rarity={item.rarity}
               conditioned={item.conditioned}
+              enchantValue={item.enchantValue}
+              upgrades={item.upgrades}
               characterLevel={characterLevel}
               characterBaseStats={characterBaseStats}
             />

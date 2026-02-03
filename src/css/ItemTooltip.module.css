@@ -35,9 +35,9 @@
 
 /* Rarity colors (Gladiatus-like) */
 .common { color: #ffffff; }
-.green { color: #1eff00; }
-.blue { color: #0070dd; }
-.purple { color: #a335ee; }
+.green { color: lime; }
+.blue { color: #5159F7; }
+.purple { color: #E303E0; }
 .orange { color: #ff8000; }
 .red { color: #ff0000; }
 

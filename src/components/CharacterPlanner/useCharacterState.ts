@@ -3,12 +3,28 @@ import { BaseItem, PrefixSuffix, ItemRarity, calculateItemStats } from '../Item'
 
 export type ItemSlotType = 'helmet' | 'amulet' | 'chest' | 'gloves' | 'mainHand' | 'offHand' | 'shoes' | 'ring1' | 'ring2';
 
+export interface Upgrade {
+  name: string;
+  type: 'powder' | 'enchant';
+  stat: 'strength' | 'dexterity' | 'agility' | 'constitution' | 'charisma' | 'intelligence' | 'damage' | 'armor';
+  applicableTo: string[];
+  permanent: boolean;
+  description: string;
+}
+
+export interface AppliedUpgrade {
+  upgrade: Upgrade;
+  level: number; // Item level of the upgrade (determines stat bonus)
+}
+
 export interface EquippedItem {
   baseItem: BaseItem;
   prefix?: PrefixSuffix;
   suffix?: PrefixSuffix;
   rarity: ItemRarity;
   conditioned: boolean;
+  enchantValue?: number; // Legacy: Grindstone (+Damage) for weapons, Protective gear (+Armor) for armor
+  upgrades?: AppliedUpgrade[]; // New system: powders and other upgrades
 }
 
 export interface BaseStats {
@@ -48,6 +64,23 @@ export interface CharacterState {
   clearAll: () => void;
   characterStats: CharacterStats;
   loadFromUrl: () => void;
+}
+
+/**
+ * Calculate stat bonus from an upgrade based on its level
+ * - Powders: level / 7 (round down)
+ * - Grindstone (damage): level / 5 (round up)
+ * - Protective gear (armor): level / 5 (round up)
+ */
+function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
+  if (upgrade.type === 'powder') {
+    // Powders: level / 7, round down
+    return Math.floor(level / 7);
+  } else if (upgrade.stat === 'damage' || upgrade.stat === 'armor') {
+    // Grindstone and Protective gear: level / 5, round up
+    return Math.ceil(level / 5);
+  }
+  return 0;
 }
 
 /**
@@ -214,6 +247,8 @@ export function useCharacterState(): CharacterState {
     let totalDamageMax = 0;
     let totalHealth = 0;
     let bonusDamageFromItems = 0; // +Damage from non-weapon items
+    let enchantDamageBonus = 0; // +Damage from grindstones
+    let enchantArmorBonus = 0; // +Armor from protective gear
     const combinedStats = new Map<string, { flat: number; percent: number }>();
 
     // Process each equipped item
@@ -231,14 +266,46 @@ export function useCharacterState(): CharacterState {
         totalArmor += itemStats.armour;
       }
 
+      // Add enchant bonus based on item type (legacy system)
+      if (equippedItem.enchantValue) {
+        if (slot === 'mainHand') {
+          // Grindstone for weapons
+          enchantDamageBonus += equippedItem.enchantValue;
+        } else {
+          // Protective gear for armor pieces (including shields)
+          enchantArmorBonus += equippedItem.enchantValue;
+        }
+      }
+
+      // Process upgrades (new system: powders, etc.)
+      if (equippedItem.upgrades && equippedItem.upgrades.length > 0) {
+        equippedItem.upgrades.forEach(appliedUpgrade => {
+          const bonus = calculateUpgradeBonus(appliedUpgrade.upgrade, appliedUpgrade.level);
+          
+          if (appliedUpgrade.upgrade.stat === 'damage') {
+            enchantDamageBonus += bonus;
+          } else if (appliedUpgrade.upgrade.stat === 'armor') {
+            enchantArmorBonus += bonus;
+          } else {
+            // Powder stats (strength, dexterity, etc.)
+            const statName = appliedUpgrade.upgrade.stat.charAt(0).toUpperCase() + appliedUpgrade.upgrade.stat.slice(1);
+            const existing = combinedStats.get(statName) || { flat: 0, percent: 0 };
+            combinedStats.set(statName, {
+              flat: existing.flat + bonus,
+              percent: existing.percent,
+            });
+          }
+        });
+      }
+
       // Add damage (only from weapons in mainHand/offHand)
       if ((slot === 'mainHand' || slot === 'offHand') && itemStats.damage) {
         totalDamageMin += itemStats.damage.min;
         totalDamageMax += itemStats.damage.max;
       }
 
-      // Add +Damage from non-weapon items
-      if (slot !== 'mainHand' && slot !== 'offHand' && itemStats.prefixDamage !== 0) {
+      // Add +Damage from non-weapon items (including shields, but not mainHand weapons)
+      if (slot !== 'mainHand' && itemStats.prefixDamage !== 0) {
         bonusDamageFromItems += itemStats.prefixDamage;
       }
 
@@ -255,16 +322,25 @@ export function useCharacterState(): CharacterState {
       });
     });
 
-    // Calculate final strength value (base + flat bonuses + percentage bonuses)
+    // Add enchant bonuses to totals
+    totalArmor += enchantArmorBonus;
+
+    // Calculate final strength value (base + flat bonuses + percentage bonuses), capped at max
     const strengthStat = combinedStats.get('Strength') || { flat: 0, percent: 0 };
-    const finalStrength = Math.floor((baseStats.strength + strengthStat.flat) * (1 + strengthStat.percent / 100));
+    const percentBonus = Math.round(baseStats.strength * (strengthStat.percent / 100));
+    const uncappedStrength = baseStats.strength + strengthStat.flat + percentBonus;
+    const maxStrength = baseStats.strength + Math.floor(baseStats.strength / 2) + characterLevel;
+    const finalStrength = Math.min(uncappedStrength, maxStrength);
     
     // Add 10% of Strength as damage
     const strengthDamage = Math.floor(finalStrength * 0.1);
     
-    // Calculate final constitution value (base + flat bonuses + percentage bonuses)
+    // Calculate final constitution value (base + flat bonuses + percentage bonuses), capped at max
     const constitutionStat = combinedStats.get('Constitution') || { flat: 0, percent: 0 };
-    const finalConstitution = Math.floor((baseStats.constitution + constitutionStat.flat) * (1 + constitutionStat.percent / 100));
+    const constitutionPercentBonus = Math.round(baseStats.constitution * (constitutionStat.percent / 100));
+    const uncappedConstitution = baseStats.constitution + constitutionStat.flat + constitutionPercentBonus;
+    const maxConstitution = baseStats.constitution + Math.floor(baseStats.constitution / 2) + characterLevel;
+    const finalConstitution = Math.min(uncappedConstitution, maxConstitution);
     
     // Calculate health components
     const healthFromLevel = characterLevel * 25;
@@ -279,9 +355,9 @@ export function useCharacterState(): CharacterState {
     const weaponDamageMin = totalDamageMin;
     const weaponDamageMax = totalDamageMax;
     
-    // Add bonus damage from items and strength to total damage
-    totalDamageMin += bonusDamageFromItems + strengthDamage;
-    totalDamageMax += bonusDamageFromItems + strengthDamage;
+    // Add bonus damage from items, enchants, and strength to total damage
+    totalDamageMin += bonusDamageFromItems + enchantDamageBonus + strengthDamage;
+    totalDamageMax += bonusDamageFromItems + enchantDamageBonus + strengthDamage;
 
     return {
       totalArmor,
@@ -291,7 +367,7 @@ export function useCharacterState(): CharacterState {
       stats: combinedStats,
       damageFromWeapons: { min: weaponDamageMin, max: weaponDamageMax },
       damageFromStrength: strengthDamage,
-      damageFromItems: bonusDamageFromItems,
+      damageFromItems: bonusDamageFromItems + enchantDamageBonus,
       healthFromLevel,
       healthFromConstitution,
       healthFromItems,

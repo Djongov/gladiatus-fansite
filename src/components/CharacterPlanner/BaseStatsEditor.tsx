@@ -23,11 +23,15 @@ export default function BaseStatsEditor({ baseStats, setBaseStats, characterStat
     if (!equipBonus) return baseStat;
     
     // Apply percentage to base stat only, then add flat bonus
-    const percentBonus = Math.floor(baseStat * (equipBonus.percent / 100));
-    const finalStat = baseStat + equipBonus.flat + percentBonus;
-    return finalStat;
+    const percentBonus = Math.round(baseStat * (equipBonus.percent / 100));
+    const uncappedStat = baseStat + equipBonus.flat + percentBonus;
+    
+    // Cap at maximum stat value
+    const maxStat = calculateMaxStat(baseStat);
+    return Math.min(uncappedStat, maxStat);
   };
-// Calculate maximum stat: Basic + (Basic/2) + Character Level
+
+  // Calculate maximum stat: Basic + (Basic/2) + Character Level
   const calculateMaxStat = (baseStat: number): number => {
     return baseStat + Math.floor(baseStat / 2) + characterLevel;
   };
@@ -55,11 +59,14 @@ export default function BaseStatsEditor({ baseStats, setBaseStats, characterStat
           // Calculate the actual value from percentage (applied to base stat only)
           let percentValue = 0;
           if (equipBonus && equipBonus.percent !== 0) {
-            percentValue = Math.floor(baseStats[key] * (equipBonus.percent / 100));
+            percentValue = Math.round(baseStats[key] * (equipBonus.percent / 100));
           }
           
           // Calculate total bonus from items
           const totalFromItems = (equipBonus?.flat || 0) + percentValue;
+          
+          // Calculate progress percentage
+          const progressPercent = Math.min((finalValue / maxValue) * 100, 100);
           
           return (
             <div key={key} className={styles.statRow}>
@@ -77,8 +84,17 @@ export default function BaseStatsEditor({ baseStats, setBaseStats, characterStat
                   <span className={styles.finalValue}>→ {finalValue}</span>
                 )}
               </div>
+              
+              {/* Progress bar */}
+              <div className={styles.progressBarContainer}>
+                <div 
+                  className={styles.progressBar} 
+                  style={{ width: `${progressPercent}%` }}
+                />
+              </div>
+              
               <div className={styles.statBreakdown}>
-                <div>Basic: {baseStats[key]} | Max: {maxValue}</div>
+                <div>Base: {baseStats[key]} | Max: {maxValue}</div>
                 {equipBonus && (equipBonus.flat !== 0 || equipBonus.percent !== 0) && (
                   <div>
                     From items: 

@@ -18,3 +18,5 @@ slug: /useful-links
 [Unofficial Gladiatus Reddit (by Williaf)](https://www.reddit.com/r/Gladiatus/ "Unofficial Gladiatus Reddit (by Williaf)")
 
 [Official Gladiatus Discord](https://discord.gg/uacMu7 "Official Gladiatus Discord")
+
+[Gladiatus Toolbox](https://gladiatus-toolbox.net/ "Gladiatus Toolbox")
