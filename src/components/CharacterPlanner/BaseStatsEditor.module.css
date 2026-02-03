@@ -136,3 +136,61 @@
   font-weight: bold;
   font-size: 16px;
 }
+
+/* Dark Theme */
+[data-theme='dark'] .container {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border-color: #8b7355;
+}
+
+[data-theme='dark'] .title {
+  color: #d4af37;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] .statRow {
+  border-bottom-color: rgba(139, 115, 85, 0.5);
+}
+
+[data-theme='dark'] .progressBarContainer {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .statBreakdown {
+  color: #a89968;
+}
+
+[data-theme='dark'] .statLabel {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .statInput {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #8b7355;
+  color: #c9a876;
+}
+
+[data-theme='dark'] .statInput:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+[data-theme='dark'] .finalValue {
+  color: #7fbf7f;
+}
+
+[data-theme='dark'] .derivedStats {
+  border-top-color: #8b7355;
+}
+
+[data-theme='dark'] .damageBreakdown {
+  color: #a89968;
+}
+
+[data-theme='dark'] .derivedLabel {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .derivedValue {
+  color: #d4af37;
+}

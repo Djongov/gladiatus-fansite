@@ -99,3 +99,53 @@
   color: #7a6a4f;
   font-style: italic;
 }
+
+/* Dark Theme */
+[data-theme='dark'] .importContainer {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border-color: #8b7355;
+}
+
+[data-theme='dark'] .title {
+  color: #d4af37;
+}
+
+[data-theme='dark'] .input {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #8b7355;
+  color: #c9a876;
+}
+
+[data-theme='dark'] .input::placeholder {
+  color: rgba(201, 168, 118, 0.5);
+}
+
+[data-theme='dark'] .input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+[data-theme='dark'] .button {
+  background: linear-gradient(135deg, #8b7355 0%, #6e5a44 100%);
+  border-color: #d4af37;
+}
+
+[data-theme='dark'] .button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #9a845f 0%, #8b7355 100%);
+}
+
+[data-theme='dark'] .error {
+  background-color: rgba(211, 47, 47, 0.2);
+  border-color: #ff6b6b;
+  color: #ff8a8a;
+}
+
+[data-theme='dark'] .success {
+  background-color: rgba(76, 175, 80, 0.2);
+  border-color: #66bb6a;
+  color: #81c784;
+}
+
+[data-theme='dark'] .note {
+  color: #a89968;
+}

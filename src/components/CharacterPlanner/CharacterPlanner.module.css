@@ -299,3 +299,95 @@
     text-align: center;
   }
 }
+
+/* Dark Theme */
+[data-theme='dark'] .characterPlanner {
+  background: linear-gradient(135deg, #1a1410 0%, #2c2416 100%);
+}
+
+[data-theme='dark'] .title {
+  color: #d4af37;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+[data-theme='dark'] .subtitle {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .toolbar {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border-color: #8b7355;
+}
+
+[data-theme='dark'] .levelSelector label {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .levelInput {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #8b7355;
+  color: #c9a876;
+}
+
+[data-theme='dark'] .levelInput:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+[data-theme='dark'] .levelInfo {
+  background: rgba(0, 0, 0, 0.3);
+  border-left-color: #d4af37;
+}
+
+[data-theme='dark'] .levelInfoItem {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .levelInfoItem strong {
+  color: #d4af37;
+}
+
+[data-theme='dark'] .equippedCount {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .clearButton {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border-color: #8b7355;
+  color: #d4af37;
+}
+
+[data-theme='dark'] .clearButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #3a3020 0%, #2c2416 100%);
+  border-color: #d4af37;
+  color: #ff6b6b;
+}
+
+[data-theme='dark'] .shareButton {
+  background: linear-gradient(135deg, #8b7355 0%, #6e5a44 100%);
+  border-color: #d4af37;
+}
+
+[data-theme='dark'] .shareButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #9a845f 0%, #8b7355 100%);
+  border-color: #c9a876;
+}
+
+[data-theme='dark'] .tips {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border-color: #8b7355;
+}
+
+[data-theme='dark'] .tips h4 {
+  color: #d4af37;
+  border-bottom-color: #8b7355;
+}
+
+[data-theme='dark'] .tips ul {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .notification {
+  background: linear-gradient(135deg, #8b7355 0%, #6e5a44 100%);
+  border-color: #d4af37;
+}

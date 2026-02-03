@@ -63,3 +63,21 @@
   border: 2px solid #8b7355;
   border-radius: 4px;
 }
+
+/* Dark Theme */
+[data-theme='dark'] .genderSelector {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border-color: #8b7355;
+}
+
+[data-theme='dark'] .genderLabel {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .genderLabel input[type="radio"] {
+  accent-color: #d4af37;
+}
+
+[data-theme='dark'] .faceImage {
+  border-color: #8b7355;
+}
