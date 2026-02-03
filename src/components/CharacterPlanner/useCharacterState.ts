@@ -239,6 +239,15 @@ export function useCharacterState(): CharacterState {
   };
 
   /**
+   * Import profile data (bulk import for level, stats, and items)
+   */
+  const importProfile = (level: number, stats: BaseStats, items: Map<ItemSlotType, EquippedItem>) => {
+    setCharacterLevel(level);
+    setBaseStatsState(stats);
+    setEquippedItems(items);
+  };
+
+  /**
    * Calculate total character stats from all equipped items
    */
   const characterStats = useMemo((): CharacterStats => {
@@ -386,5 +395,6 @@ export function useCharacterState(): CharacterState {
     clearAll,
     characterStats,
     loadFromUrl,
+    importProfile,
   };
 }

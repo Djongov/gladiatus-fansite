@@ -1,0 +1,98 @@
+.importContainer {
+  background-color: rgba(139, 115, 85, 0.1);
+  border: 2px solid #8b7355;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #c9a876;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid #8b7355;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #c9a876;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: rgba(201, 168, 118, 0.5);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #c9a876;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: 8px 20px;
+  background: linear-gradient(to bottom, #b89968, #8b7355);
+  color: #2c2416;
+  border: 2px solid #8b7355;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background: linear-gradient(to bottom, #c9a876, #9a845f);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  background-color: rgba(220, 53, 69, 0.2);
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #ff6b7a;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.success {
+  background-color: rgba(40, 167, 69, 0.2);
+  border: 1px solid #28a745;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #4cff6b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.note {
+  font-size: 12px;
+  color: rgba(201, 168, 118, 0.7);
+  font-style: italic;
+}

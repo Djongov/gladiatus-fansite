@@ -24,6 +24,12 @@
   opacity: 0.9;
 }
 
+.importSection {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;

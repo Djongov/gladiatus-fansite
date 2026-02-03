@@ -4,6 +4,7 @@ import CharacterDoll from './CharacterDoll';
 import StatsDisplay from './StatsDisplay';
 import ItemSelector from './ItemSelector';
 import BaseStatsEditor from './BaseStatsEditor';
+import ImportProfile from './ImportProfile';
 import { useCharacterState, ItemSlotType } from './useCharacterState';
 
 /**
@@ -22,6 +23,7 @@ export default function CharacterPlanner() {
     removeItem,
     clearAll,
     characterStats,
+    importProfile,
   } = useCharacterState();
 
   const [selectedSlot, setSelectedSlot] = useState<ItemSlotType | null>(null);
@@ -93,6 +95,11 @@ export default function CharacterPlanner() {
         <p className={styles.subtitle}>
           Click equipment slots to add items.
         </p>
+      </div>
+
+      {/* Import Profile */}
+      <div className={styles.importSection}>
+        <ImportProfile onImport={importProfile} />
       </div>
 
       <div className={styles.toolbar}>
