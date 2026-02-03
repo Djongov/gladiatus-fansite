@@ -3968,7 +3968,7 @@
     {
         "name": "Tanias",
         "level": 25,
-        "gold": 0,
+        "gold": 39876,
         "stats": {
             "armor": {
                 "flat": 250,
@@ -4501,7 +4501,7 @@
     {
         "name": "Vergilius",
         "level": 95,
-        "gold": 221911,
+        "gold": 325469,
         "stats": {
             "intelligence": {
                 "flat": -30,

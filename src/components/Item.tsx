@@ -58,6 +58,16 @@ interface ItemProps {
   conditioned?: boolean;
   enchantValue?: number;
   hideTooltip?: boolean; // For character planner - just show icon
+  // Character context for planner-specific rendering
+  characterLevel?: number; // If provided, show red level when item is not usable
+  characterBaseStats?: { // If provided, show actual stat values after percentages
+    strength: number;
+    dexterity: number;
+    agility: number;
+    constitution: number;
+    charisma: number;
+    intelligence: number;
+  };
 }
 
 /**
@@ -412,6 +422,8 @@ export default function Item({
   conditioned = false,
   enchantValue,
   hideTooltip = false,
+  characterLevel,
+  characterBaseStats,
 }: ItemProps) {
   // Resolve base item if it's a string
   const resolvedBaseItem: BaseItem | null = typeof baseItem === 'string'
@@ -443,6 +455,31 @@ export default function Item({
     resolvedPrefix,
     resolvedSuffix
   );
+
+  // Helper function to calculate actual stat value from character base stats
+  const calculateActualStatValue = (statName: string, percentBonus: number): number | null => {
+    if (!characterBaseStats || percentBonus === 0) return null;
+    
+    const statMap: Record<string, keyof typeof characterBaseStats> = {
+      'strength': 'strength',
+      'dexterity': 'dexterity',
+      'agility': 'agility',
+      'constitution': 'constitution',
+      'charisma': 'charisma',
+      'intelligence': 'intelligence',
+    };
+    
+    // Convert stat name to lowercase for case-insensitive matching
+    const statKey = statMap[statName.toLowerCase()];
+    if (!statKey) return null;
+    
+    const baseStat = characterBaseStats[statKey];
+    return Math.floor(baseStat * (percentBonus / 100));
+  };
+
+  // Check if item is not usable by character level
+  // Characters can use items up to their level + 16
+  const isItemUnusable = characterLevel !== undefined && calculatedStats.level > (characterLevel + 16);
 
   // Format materials
   const materialsText = Object.entries(resolvedBaseItem.materials).map(
@@ -482,19 +519,26 @@ export default function Item({
           )}
           
           {/* Display other stats from prefix/suffix */}
-          {calculatedStats.stats.filter(stat => stat.name !== 'Armor').map((stat, index) => (
-            <div key={`${stat.name}-${index}`}>
-              {stat.name}
-              {stat.flat !== 0 && ` ${stat.flat > 0 ? '+' : ''}${stat.flat}`}
-              {stat.percent !== 0 && ` ${stat.percent > 0 ? '+' : ''}${stat.percent}%`}
-            </div>
-          ))}
+          {calculatedStats.stats.filter(stat => stat.name !== 'Armor').map((stat, index) => {
+            const actualValue = calculateActualStatValue(stat.name, stat.percent);
+            
+            return (
+              <div key={`${stat.name}-${index}`}>
+                {stat.name}
+                {stat.flat !== 0 && ` ${stat.flat > 0 ? '+' : ''}${stat.flat}`}
+                {stat.percent !== 0 && ` ${stat.percent > 0 ? '+' : ''}${stat.percent}%`}
+                {actualValue !== null && ` (${actualValue > 0 ? '+' : ''}${actualValue})`}
+              </div>
+            );
+          })}
 
           {enchantValue && (
             <div className={styles.enchant}>+{enchantValue} Damage</div>
           )}
 
-          <div className={styles.level}>Level {calculatedStats.level}</div>
+          <div className={`${styles.level} ${isItemUnusable ? styles.unusableLevel : ''}`}>
+            Level {calculatedStats.level}
+          </div>
           
           {calculatedStats.gold && (
             <div className={styles.gold}>

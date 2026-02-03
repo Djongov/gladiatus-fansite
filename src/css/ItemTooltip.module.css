@@ -45,6 +45,10 @@
     color: #9b9b9b;
 }
 
+.unusableLevel {
+    color: #ff0000 !important;
+}
+
 .enchant {
     color: #00aa00;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ItemSlot.module.css';
-import { EquippedItem } from './useCharacterState';
+import { EquippedItem, BaseStats } from './useCharacterState';
 import Item from '../Item';
 
 export interface ItemSlotProps {
@@ -10,13 +10,24 @@ export interface ItemSlotProps {
   readonly onRemove?: () => void;
   readonly position: { top: number; left: number };
   readonly size?: 'small' | 'normal' | 'tall';
+  readonly characterLevel?: number;
+  readonly characterBaseStats?: BaseStats;
 }
 
 /**
  * Represents a single equipment slot on the character doll
  * Shows equipped item or an empty slot
  */
-export default function ItemSlot({ slotName, item, onClick, onRemove, position, size = 'normal' }: ItemSlotProps) {
+export default function ItemSlot({ 
+  slotName, 
+  item, 
+  onClick, 
+  onRemove, 
+  position, 
+  size = 'normal',
+  characterLevel,
+  characterBaseStats 
+}: ItemSlotProps) {
   let sizeClass = '';
   if (size === 'small') {
     sizeClass = styles.smallSlot;
@@ -44,6 +55,8 @@ export default function ItemSlot({ slotName, item, onClick, onRemove, position, 
               suffix={item.suffix}
               rarity={item.rarity}
               conditioned={item.conditioned}
+              characterLevel={characterLevel}
+              characterBaseStats={characterBaseStats}
             />
           </div>
         ) : (

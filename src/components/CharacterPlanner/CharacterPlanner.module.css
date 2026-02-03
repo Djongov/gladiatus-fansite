@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .levelSelector {
@@ -69,6 +70,27 @@
   outline: none;
   border-color: #d4af37;
   box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+.levelInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 12px;
+  background: rgba(139, 115, 85, 0.15);
+  border-radius: 4px;
+  border-left: 3px solid #d4af37;
+}
+
+.levelInfoItem {
+  color: #c9a876;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.levelInfoItem strong {
+  color: #d4af37;
+  font-weight: bold;
 }
 
 .equippedCount {
@@ -131,7 +153,9 @@
 
 .dollSection {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .statsSection {

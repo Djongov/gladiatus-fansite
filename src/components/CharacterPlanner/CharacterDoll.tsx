@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from './CharacterDoll.module.css';
 import ItemSlot from './ItemSlot';
-import { ItemSlotType, EquippedItem } from './useCharacterState';
+import { ItemSlotType, EquippedItem, BaseStats } from './useCharacterState';
 
 interface CharacterDollProps {
   readonly equippedItems: Map<ItemSlotType, EquippedItem>;
   readonly onSlotClick: (slot: ItemSlotType) => void;
   readonly onSlotRemove: (slot: ItemSlotType) => void;
+  readonly characterLevel?: number;
+  readonly characterBaseStats?: BaseStats;
 }
 
 /**
@@ -41,7 +43,13 @@ const SLOT_LABELS: Record<ItemSlotType, string> = {
  * Character doll component showing all equipment slots
  * Uses the gladiatus character doll as background with overlaid item slots
  */
-export default function CharacterDoll({ equippedItems, onSlotClick, onSlotRemove }: CharacterDollProps) {
+export default function CharacterDoll({ 
+  equippedItems, 
+  onSlotClick, 
+  onSlotRemove,
+  characterLevel,
+  characterBaseStats 
+}: CharacterDollProps) {
   return (
     <div className={styles.characterDoll}>
       <div className={styles.dollContainer}>
@@ -72,6 +80,8 @@ export default function CharacterDoll({ equippedItems, onSlotClick, onSlotRemove
                 onRemove={() => onSlotRemove(slot)}
                 position={SLOT_POSITIONS[slot]}
                 size={size}
+                characterLevel={characterLevel}
+                characterBaseStats={characterBaseStats}
               />
             );
           })}

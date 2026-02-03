@@ -3,6 +3,7 @@ import styles from './CharacterPlanner.module.css';
 import CharacterDoll from './CharacterDoll';
 import StatsDisplay from './StatsDisplay';
 import ItemSelector from './ItemSelector';
+import BaseStatsEditor from './BaseStatsEditor';
 import { useCharacterState, ItemSlotType } from './useCharacterState';
 
 /**
@@ -14,12 +15,13 @@ export default function CharacterPlanner() {
   const {
     equippedItems,
     characterLevel,
+    baseStats,
     setCharacterLevel,
+    setBaseStats,
     setItem,
     removeItem,
     clearAll,
     characterStats,
-    shareUrl,
   } = useCharacterState();
 
   const [selectedSlot, setSelectedSlot] = useState<ItemSlotType | null>(null);
@@ -41,19 +43,48 @@ export default function CharacterPlanner() {
 
   const handleShare = async () => {
     try {
-      if (navigator.clipboard && shareUrl) {
-        await navigator.clipboard.writeText(shareUrl);
+      // Generate URL with current state to ensure it's up-to-date
+      const itemsObj: Record<string, any> = {};
+      equippedItems.forEach((item, slot) => {
+        itemsObj[slot] = item;
+      });
+
+      const json = JSON.stringify(itemsObj);
+      const encoded = btoa(json);
+
+      const url = new URL(globalThis.window.location.href);
+      url.searchParams.set('build', encoded);
+      url.searchParams.set('level', characterLevel.toString());
+      const shareableUrl = url.toString();
+
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(shareableUrl);
         setShowShareDialog(true);
         setTimeout(() => setShowShareDialog(false), 3000);
       }
     } catch (error) {
       console.error('Failed to copy URL:', error);
       // Fallback: show the URL in a prompt
-      prompt('Copy this URL to share your build:', shareUrl);
+      const itemsObj: Record<string, any> = {};
+      equippedItems.forEach((item, slot) => {
+        itemsObj[slot] = item;
+      });
+      const json = JSON.stringify(itemsObj);
+      const encoded = btoa(json);
+      const url = new URL(globalThis.window.location.href);
+      url.searchParams.set('build', encoded);
+      url.searchParams.set('level', characterLevel.toString());
+      prompt('Copy this URL to share your build:', url.toString());
     }
   };
 
   const equippedCount = equippedItems.size;
+
+  // Calculate item level ranges based on character level
+  const maxUsableItemLevel = characterLevel + 16;
+  const maxMarketItemLevel = characterLevel + 9;
+  const minAuctionItemLevel = characterLevel - 22;
+  const maxAuctionItemLevel = characterLevel + 14;
 
   return (
     <div className={styles.characterPlanner}>
@@ -82,6 +113,17 @@ export default function CharacterPlanner() {
               }}
               className={styles.levelInput}
             />
+          </div>
+          <div className={styles.levelInfo}>
+            <div className={styles.levelInfoItem}>
+              Can use items up to <strong>{maxUsableItemLevel}</strong> level.
+            </div>
+            <div className={styles.levelInfoItem}>
+              Can see items on the market up to <strong>{maxMarketItemLevel}</strong> level.
+            </div>
+            <div className={styles.levelInfoItem}>
+              Can see items on the auction from <strong>{minAuctionItemLevel}</strong> to <strong>{maxAuctionItemLevel}</strong> level.
+            </div>
           </div>
           <span className={styles.equippedCount}>
             {equippedCount} / 9 items equipped
@@ -116,6 +158,16 @@ export default function CharacterPlanner() {
             equippedItems={equippedItems}
             onSlotClick={handleSlotClick}
             onSlotRemove={handleSlotRemove}
+            characterLevel={characterLevel}
+            characterBaseStats={baseStats}
+          />
+          
+          {/* Base Stats Editor */}
+          <BaseStatsEditor
+            baseStats={baseStats}
+            setBaseStats={setBaseStats}
+            characterStats={characterStats}
+            characterLevel={characterLevel}
           />
         </div>
 
@@ -127,7 +179,7 @@ export default function CharacterPlanner() {
           <div className={styles.tips}>
             <h4>Tips:</h4>
             <ul>
-              <li>Click on any equipment slot to add an item</li>
+              <li>Click on any equipment slot to add or edit items</li>
               <li>Hover over items to see detailed stats</li>
               <li>Use the Share button to get a URL for your build</li>
               <li>Red ✕ button on equipped items removes them</li>
@@ -141,6 +193,7 @@ export default function CharacterPlanner() {
         <ItemSelector
           slotType={selectedSlot}
           characterLevel={characterLevel}
+          currentItem={equippedItems.get(selectedSlot) || null}
           onSelect={handleItemSelect}
           onClose={() => setSelectedSlot(null)}
         />
