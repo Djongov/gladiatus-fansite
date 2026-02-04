@@ -21,7 +21,7 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 - Make Expeditions come from data files and not just plain text
 - Character planner to show materials breakdown by item and total for the whole build
 - Character planner to show substats like critical strike and etc
-- Make forging good real items with tooltips
+- Character planner partial costumes do not render well
 
 ## Latest website news
 
@@ -29,6 +29,8 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 - Gameforge announced a surprise event coming with discount on guild buildings. Never seen before. So adapted the Guild Buildings calculator
 - Fixed char planner issue where protective gear and poweders were not offered to respective slots or taken into account
+- Big update on forging goods
+- Char planner now live
 
 ### 03.02.2026
 

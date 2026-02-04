@@ -32,7 +32,8 @@
         "materials": {
             "Hydra Scale": 1,
             "Soul Essence": 73,
-            "Sphinx Feather": 1
+            "Sphinx Feather": 1,
+            "Sugilite": 8
         },
         "id": 186
     },
@@ -56,7 +57,7 @@
         },
         "materials": {
             "Water Seal": 1,
-            "Flintstone": 16
+            "Flintstone": 20
         },
         "id": 46
     },
@@ -82,7 +83,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sugilite": 58,
+            "Almandin": 12
+        },
         "id": 183
     },
     {
@@ -122,7 +126,9 @@
         "materials": {
             "Almandin": 2,
             "Hydra Scale": 25,
-            "Soul Essence": 8
+            "Soul Essence": 8,
+            "Sphinx Feather": 1,
+            "Sugilite": 26
         },
         "id": 162
     },
@@ -144,7 +150,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 16,
+            "Hemp": 2
+        },
         "id": 2
     },
     {
@@ -187,7 +196,8 @@
         "materials": {
             "Dragon Scale": 34,
             "Amethyst": 18,
-            "Crystal": 2
+            "Crystal": 2,
+            "Gold Ore": 8
         },
         "id": 160
     },
@@ -220,7 +230,8 @@
         "materials": {
             "Bull's Horn": 6,
             "Garnet": 20,
-            "Tincture of Stamina": 9
+            "Tincture of Stamina": 9,
+            "Sulphur": 12
         },
         "id": 109
     },
@@ -250,7 +261,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sugilite": 47,
+            "Almandin": 10,
+            "Hydra Scale": 6,
+            "Soul Essence": 3,
+            "Typhon Leather": 1
+        },
         "id": 173
     },
     {
@@ -282,7 +299,8 @@
         "materials": {
             "Dragon Scale": 4,
             "Amethyst": 18,
-            "Crystal": 30
+            "Crystal": 30,
+            "Gold Ore": 3
         },
         "id": 142
     },
@@ -315,7 +333,9 @@
         "materials": {
             "Bull's Horn": 2,
             "Storm Rune": 17,
-            "Tincture of Stamina": 7
+            "Tincture of Stamina": 7,
+            "Potion of Perception": 9,
+            "Sulphur": 13
         },
         "id": 116
     },
@@ -353,7 +373,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hydra Scale": 41,
+            "Soul Essence": 18,
+            "Sugilite": 4,
+            "Sphinx Feather": 3
+        },
         "id": 175
     },
     {
@@ -382,7 +407,13 @@
                 "percent": 6
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 9,
+            "Wool": 2,
+            "Hemp": 2,
+            "Jute Patch": 4,
+            "Silk Thread": 2
+        },
         "id": 40
     },
     {
@@ -443,7 +474,8 @@
         "materials": {
             "Scale": 4,
             "Lapis Lazuli": 3,
-            "Flintstone": 13
+            "Flintstone": 13,
+            "Adrenaline": 4
         },
         "id": 50
     },
@@ -480,7 +512,8 @@
         "materials": {
             "Almandin": 6,
             "Hydra Scale": 10,
-            "Soul Essence": 5
+            "Soul Essence": 5,
+            "Sugilite": 39
         },
         "id": 156
     },
@@ -518,7 +551,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sphinx Feather": 35,
+            "Sugilite": 18,
+            "Hydra Scale": 10,
+            "Typhon Leather": 8
+        },
         "id": 182
     },
     {
@@ -571,7 +609,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sphinx Feather": 37,
+            "Sugilite": 22,
+            "Typhon Leather": 9,
+            "Soul Essence": 1,
+            "Hydra Scale": 1
+        },
         "id": 180
     },
     {
@@ -607,7 +651,9 @@
         "materials": {
             "Dragon Scale": 24,
             "Amethyst": 10,
-            "Emerald": 4
+            "Emerald": 4,
+            "Obsidian": 13,
+            "Gold Ore": 7
         },
         "id": 151
     },
@@ -640,7 +686,8 @@
         "materials": {
             "Fang": 12,
             "Hemp": 2,
-            "Linen Strip": 4
+            "Linen Strip": 4,
+            "Silk Thread": 1
         },
         "id": 45
     },
@@ -669,7 +716,8 @@
         "materials": {
             "Bull's Horn": 13,
             "Garnet": 6,
-            "Tincture of Stamina": 10
+            "Tincture of Stamina": 10,
+            "Sulphur": 9
         },
         "id": 98
     },
@@ -725,7 +773,8 @@
         "materials": {
             "Amethyst": 13,
             "Emerald": 4,
-            "Crystal": 30
+            "Crystal": 30,
+            "Obsidian": 8
         },
         "id": 148
     },
@@ -775,7 +824,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Linen Strip": 10,
+            "Hemp": 5,
+            "Jute Patch": 4
+        },
         "id": 9
     },
     {
@@ -804,7 +857,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Wool": 2,
+            "Hemp": 2,
+            "Linen Strip": 12,
+            "Jute Patch": 1
+        },
         "id": 27
     },
     {
@@ -837,7 +895,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sugilite": 44,
+            "Hydra Scale": 24,
+            "Typhon Leather": 1
+        },
         "id": 178
     },
     {
@@ -869,7 +931,8 @@
         "materials": {
             "Amethyst": 24,
             "Emerald": 23,
-            "Obsidian": 11
+            "Obsidian": 11,
+            "Gold Ore": 7
         },
         "id": 170
     },
@@ -892,7 +955,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {
+            "Linen Strip": 8,
+            "Wool": 1,
+            "Jute Patch": 1
+        }
     },
     {
         "name": "Camillus`",
@@ -920,7 +987,13 @@
                 "percent": 30
             }
         },
-        "materials": {},
+        "materials": {
+            "Typhon Leather": 31,
+            "Hydra Scale": 13,
+            "Soul Essence": 12,
+            "Almandin": 8,
+            "Sphinx Feather": 4
+        },
         "id": 177
     },
     {
@@ -990,7 +1063,10 @@
                 "percent": 6
             }
         },
-        "materials": {},
+        "materials": {
+            "Hemp": 11,
+            "Silk Thread": 3
+        },
         "id": 18
     },
     {
@@ -1022,7 +1098,8 @@
         "materials": {
             "Bull's Horn": 1,
             "Garnet": 3,
-            "Potion of Perception": 30
+            "Potion of Perception": 30,
+            "Sulphur": 3
         },
         "id": 95
     },
@@ -1064,7 +1141,10 @@
                 "percent": 24
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 18,
+            "Hemp": 1
+        },
         "id": 42
     },
     {
@@ -1092,7 +1172,8 @@
         "materials": {
             "Wool": 2,
             "Hemp": 2,
-            "Linen Strip": 13
+            "Linen Strip": 13,
+            "Jute Patch": 2
         },
         "id": 44
     },
@@ -1137,7 +1218,10 @@
         "materials": {
             "Dragon Scale": 4,
             "Amethyst": 27,
-            "Emerald": 6
+            "Emerald": 6,
+            "Crystal": 4,
+            "Obsidian": 12,
+            "Gold Ore": 4
         },
         "id": 149
     },
@@ -1170,7 +1254,8 @@
         "materials": {
             "Dragon Scale": 34,
             "Amethyst": 1,
-            "Emerald": 3
+            "Emerald": 3,
+            "Obsidian": 12
         },
         "id": 112
     },
@@ -1218,8 +1303,8 @@
             }
         },
         "materials": {
-            "Fang": 6,
-            "Hemp": 8
+            "Fang": 8,
+            "Hemp": 11
         },
         "id": 30
     },
@@ -1281,7 +1366,9 @@
         "materials": {
             "Dragon Scale": 5,
             "Amethyst": 21,
-            "Emerald": 14
+            "Emerald": 14,
+            "Crystal": 6,
+            "Gold Ore": 6
         },
         "id": 138
     },
@@ -1373,7 +1460,9 @@
         "materials": {
             "Almandin": 8,
             "Soul Essence": 8,
-            "Sphinx Feather": 8
+            "Sphinx Feather": 8,
+            "Sugilite": 6,
+            "Typhon Leather": 30
         },
         "id": 158
     },
@@ -1410,7 +1499,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 8,
+            "Hemp": 4
+        },
         "id": 5
     },
     {
@@ -1472,7 +1564,12 @@
                 "percent": 15
             }
         },
-        "materials": {},
+        "materials": {
+            "Adrenaline": 10,
+            "Flintstone": 9,
+            "Lapis Lazuli": 6,
+            "Scale": 5
+        },
         "id": 52
     },
     {
@@ -1508,7 +1605,9 @@
         "materials": {
             "Bull's Horn": 12,
             "Garnet": 1,
-            "Storm Rune": 1
+            "Storm Rune": 1,
+            "Tincture of Stamina": 21,
+            "Sulphur": 4
         },
         "id": 96
     },
@@ -1588,7 +1687,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hemp": 11,
+            "Silk Thread": 5
+        },
         "id": 67
     },
     {
@@ -1620,7 +1722,8 @@
         "materials": {
             "Fang": 2,
             "Linen Strip": 3,
-            "Jute Patch": 9
+            "Jute Patch": 9,
+            "Silk Thread": 5
         },
         "id": 72
     },
@@ -1651,9 +1754,10 @@
             }
         },
         "materials": {
-            "Scale": 2,
-            "Lapis Lazuli": 13,
-            "Water Seal": 5
+            "Scale": 3,
+            "Lapis Lazuli": 17,
+            "Water Seal": 7,
+            "Flintstone": 1
         },
         "id": 84
     },
@@ -1711,7 +1815,9 @@
         "materials": {
             "Hydra Scale": 8,
             "Soul Essence": 55,
-            "Sphinx Feather": 1
+            "Sphinx Feather": 1,
+            "Sugilite": 8,
+            "Typhon Leather": 5
         },
         "id": 185
     },
@@ -1763,8 +1869,8 @@
             }
         },
         "materials": {
-            "Hemp": 5,
-            "Linen Strip": 10
+            "Hemp": 7,
+            "Linen Strip": 13
         },
         "id": 8
     },
@@ -1797,7 +1903,8 @@
         "materials": {
             "Scale": 20,
             "Water Seal": 5,
-            "Flintstone": 1
+            "Flintstone": 1,
+            "Adrenaline": 2
         },
         "id": 83
     },
@@ -1834,7 +1941,8 @@
         "materials": {
             "Amethyst": 23,
             "Emerald": 10,
-            "Obsidian": 11
+            "Obsidian": 11,
+            "Gold Ore": 10
         },
         "id": 141
     },
@@ -1861,9 +1969,9 @@
             }
         },
         "materials": {
-            "Fang": 10,
+            "Fang": 13,
             "Hemp": 1,
-            "Linen Strip": 4
+            "Linen Strip": 5
         },
         "id": 25
     },
@@ -1889,7 +1997,12 @@
                 "percent": 2
             }
         },
-        "materials": {},
+        "materials": {
+            "Linen Strip": 10,
+            "Hemp": 4,
+            "Silk Thread": 2,
+            "Fang": 2
+        },
         "id": 26
     },
     {
@@ -1976,7 +2089,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Almandin": 37,
+            "Hydra Scale": 22,
+            "Soul Essence": 3,
+            "Sugilite": 2,
+            "Sphinx Feather": 2
+        },
         "id": 174
     },
     {
@@ -2034,7 +2153,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Scale": 16,
+            "Water Seal": 3,
+            "Adrenaline": 2
+        },
         "id": 74
     },
     {
@@ -2087,7 +2210,11 @@
                 "percent": 4
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 12,
+            "Linen Strip": 2,
+            "Hemp": 2
+        },
         "id": 15
     },
     {
@@ -2119,7 +2246,8 @@
         "materials": {
             "Garnet": 5,
             "Tincture of Stamina": 5,
-            "Potion of Perception": 2
+            "Potion of Perception": 2,
+            "Sulphur": 35
         },
         "id": 55
     },
@@ -2156,7 +2284,8 @@
         "materials": {
             "Fang": 2,
             "Wool": 1,
-            "Hemp": 13
+            "Hemp": 13,
+            "Silk Thread": 2
         },
         "id": 70
     },
@@ -2242,7 +2371,9 @@
         "materials": {
             "Hydra Scale": 19,
             "Soul Essence": 4,
-            "Sphinx Feather": 2
+            "Sphinx Feather": 2,
+            "Sugilite": 40,
+            "Typhon Leather": 1
         },
         "id": 172
     },
@@ -2261,8 +2392,8 @@
             }
         },
         "materials": {
-            "Fang": 12,
-            "Hemp": 2
+            "Fang": 15,
+            "Hemp": 3
         },
         "id": 43
     },
@@ -2285,9 +2416,9 @@
             }
         },
         "materials": {
-            "Fang": 4,
-            "Wool": 5,
-            "Jute Patch": 6
+            "Fang": 5,
+            "Wool": 7,
+            "Jute Patch": 8
         },
         "id": 49
     },
@@ -2360,9 +2491,9 @@
             }
         },
         "materials": {
-            "Bull's Horn": 13,
-            "Tincture of Stamina": 10,
-            "Sulphur": 8
+            "Bull's Horn": 17,
+            "Tincture of Stamina": 13,
+            "Sulphur": 11
         },
         "id": 101
     },
@@ -2399,7 +2530,9 @@
         "materials": {
             "Dragon Scale": 30,
             "Amethyst": 15,
-            "Emerald": 3
+            "Emerald": 3,
+            "Obsidian": 5,
+            "Gold Ore": 3
         },
         "id": 145
     },
@@ -2436,7 +2569,8 @@
         "materials": {
             "Almandin": 2,
             "Hydra Scale": 18,
-            "Sphinx Feather": 33
+            "Sphinx Feather": 33,
+            "Sugilite": 5
         },
         "id": 155
     },
@@ -2483,8 +2617,8 @@
             }
         },
         "materials": {
-            "Fang": 11,
-            "Hemp": 1
+            "Fang": 14,
+            "Hemp": 2
         },
         "id": 16
     },
@@ -2529,7 +2663,10 @@
         "materials": {
             "Bull's Horn": 3,
             "Garnet": 1,
-            "Storm Rune": 4
+            "Storm Rune": 4,
+            "Tincture of Stamina": 27,
+            "Potion of Perception": 12,
+            "Sulphur": 2
         },
         "id": 122
     },
@@ -2559,7 +2696,13 @@
                 "percent": 14
             }
         },
-        "materials": {},
+        "materials": {
+            "Water Seal": 9,
+            "Lapis Lazuli": 8,
+            "Flintstone": 5,
+            "Scale": 1,
+            "Adrenaline": 1
+        },
         "id": 77
     },
     {
@@ -2591,7 +2734,8 @@
         "materials": {
             "Fang": 1,
             "Wool": 15,
-            "Hemp": 1
+            "Hemp": 1,
+            "Silk Thread": 4
         },
         "id": 71
     },
@@ -2625,7 +2769,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sugilite": 44,
+            "Hydra Scale": 8,
+            "Almandin": 6,
+            "Soul Essence": 4,
+            "Sphinx Feather": 2
+        },
         "id": 171
     },
     {
@@ -2844,7 +2994,8 @@
         "materials": {
             "Scale": 21,
             "Water Seal": 5,
-            "Flintstone": 3
+            "Flintstone": 3,
+            "Adrenaline": 1
         },
         "id": 86
     },
@@ -2870,7 +3021,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sphinx Feather": 47,
+            "Hydra Scale": 14,
+            "Sugilite": 3
+        },
         "id": 168
     },
     {
@@ -2902,7 +3057,8 @@
         "materials": {
             "Fang": 2,
             "Wool": 11,
-            "Hemp": 1
+            "Hemp": 1,
+            "Silk Thread": 1
         },
         "id": 65
     },
@@ -2931,7 +3087,8 @@
         "materials": {
             "Fang": 1,
             "Hemp": 2,
-            "Jute Patch": 4
+            "Jute Patch": 4,
+            "Silk Thread": 5
         },
         "id": 62
     },
@@ -2973,7 +3130,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hydra Scale": 32,
+            "Soul Essence": 15,
+            "Sugilite": 9,
+            "Almandin": 5,
+            "Sphinx Feather": 3
+        },
         "id": 167
     },
     {
@@ -3032,9 +3195,10 @@
             }
         },
         "materials": {
-            "Wool": 1,
-            "Hemp": 1,
-            "Linen Strip": 11
+            "Wool": 2,
+            "Hemp": 2,
+            "Linen Strip": 14,
+            "Jute Patch": 1
         },
         "id": 29
     },
@@ -3072,7 +3236,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Almandin": 45,
+            "Sugilite": 12,
+            "Sphinx Feather": 2,
+            "Hydra Scale": 2
+        },
         "id": 159
     },
     {
@@ -3093,7 +3262,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 9,
+            "Wool": 2,
+            "Hemp": 2
+        },
         "id": 31
     },
     {
@@ -3134,7 +3307,8 @@
             "Garnet": 8,
             "Storm Rune": 18,
             "Tincture of Stamina": 2,
-            "Potion of Perception": 2
+            "Potion of Perception": 2,
+            "Sulphur": 12
         },
         "id": 54
     },
@@ -3168,7 +3342,14 @@
                 "percent": 19
             }
         },
-        "materials": {},
+        "materials": {
+            "Typhon Leather": 28,
+            "Soul Essence": 9,
+            "Sphinx Feather": 8,
+            "Hydra Scale": 8,
+            "Almandin": 5,
+            "Sugilite": 4
+        },
         "id": 166
     },
     {
@@ -3185,7 +3366,9 @@
                 "percent": 5
             }
         },
-        "materials": {},
+        "materials": {
+            "Flintstone": 21
+        },
         "id": 1
     },
     {
@@ -3210,7 +3393,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Linen Strip": 14,
+            "Hemp": 4,
+            "Silk Thread": 1
+        },
         "id": 21
     },
     {
@@ -3223,7 +3410,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Scale": 24
+        },
         "id": 78
     },
     {
@@ -3248,7 +3437,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hydra Scale": 41,
+            "Typhon Leather": 21,
+            "Sphinx Feather": 6
+        },
         "id": 176
     },
     {
@@ -3273,7 +3466,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Linen Strip": 11,
+            "Jute Patch": 1,
+            "Hemp": 1,
+            "Fang": 1
+        },
         "id": 39
     },
     {
@@ -3313,7 +3511,9 @@
         "materials": {
             "Dragon Scale": 15,
             "Amethyst": 13,
-            "Crystal": 22
+            "Crystal": 22,
+            "Obsidian": 7,
+            "Gold Ore": 1
         },
         "id": 152
     },
@@ -3347,7 +3547,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sugilite": 24,
+            "Hydra Scale": 24,
+            "Sphinx Feather": 11,
+            "Almandin": 11
+        },
         "id": 184
     },
     {
@@ -3388,7 +3593,14 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Almandin": 37,
+            "Typhon Leather": 13,
+            "Sugilite": 5,
+            "Sphinx Feather": 4,
+            "Soul Essence": 4,
+            "Hydra Scale": 1
+        },
         "id": 164
     },
     {
@@ -3423,8 +3635,8 @@
         },
         "materials": {
             "Bull's Horn": 1,
-            "Garnet": 25,
-            "Sulphur": 2
+            "Garnet": 32,
+            "Sulphur": 3
         },
         "id": 94
     },
@@ -3461,7 +3673,8 @@
         "materials": {
             "Hydra Scale": 2,
             "Soul Essence": 45,
-            "Sphinx Feather": 6
+            "Sphinx Feather": 6,
+            "Sugilite": 35
         },
         "id": 187
     },
@@ -3506,7 +3719,9 @@
         "materials": {
             "Dragon Scale": 16,
             "Amethyst": 8,
-            "Emerald": 2
+            "Emerald": 2,
+            "Crystal": 25,
+            "Obsidian": 4
         },
         "id": 144
     },
@@ -3532,7 +3747,12 @@
                 "percent": 5
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 4,
+            "Wool": 2,
+            "Linen Strip": 12,
+            "Jute Patch": 2
+        },
         "id": 14
     },
     {
@@ -3586,7 +3806,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Wool": 2,
+            "Hemp": 5,
+            "Linen Strip": 8,
+            "Jute Patch": 2
+        },
         "id": 24
     },
     {
@@ -3655,7 +3880,9 @@
         "materials": {
             "Scale": 1,
             "Lapis Lazuli": 18,
-            "Water Seal": 7
+            "Water Seal": 7,
+            "Flintstone": 1,
+            "Adrenaline": 1
         },
         "id": 81
     },
@@ -3694,7 +3921,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Almandin": 70
+        },
         "id": 181
     },
     {
@@ -3774,7 +4003,8 @@
         "materials": {
             "Bull's Horn": 14,
             "Garnet": 1,
-            "Storm Rune": 7
+            "Storm Rune": 7,
+            "Tincture of Stamina": 24
         },
         "id": 108
     },
@@ -3812,7 +4042,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Almandin": 31,
+            "Sugilite": 24,
+            "Typhon Leather": 8,
+            "Hydra Scale": 2
+        },
         "id": 169
     },
     {
@@ -3844,7 +4079,8 @@
         "materials": {
             "Dragon Scale": 8,
             "Amethyst": 31,
-            "Emerald": 4
+            "Emerald": 4,
+            "Crystal": 8
         },
         "id": 130
     },
@@ -3881,7 +4117,9 @@
         "materials": {
             "Dragon Scale": 34,
             "Amethyst": 12,
-            "Emerald": 1
+            "Emerald": 1,
+            "Obsidian": 4,
+            "Gold Ore": 1
         },
         "id": 131
     },
@@ -3961,7 +4199,9 @@
         "materials": {
             "Fang": 2,
             "Wool": 11,
-            "Hemp": 1
+            "Hemp": 1,
+            "Jute Patch": 3,
+            "Silk Thread": 1
         },
         "id": 68
     },
@@ -4016,9 +4256,9 @@
             }
         },
         "materials": {
-            "Bull's Horn": 10,
-            "Potion of Perception": 9,
-            "Sulphur": 7
+            "Bull's Horn": 13,
+            "Potion of Perception": 12,
+            "Sulphur": 9
         },
         "id": 92
     },
@@ -4101,7 +4341,11 @@
                 "percent": 4
             }
         },
-        "materials": {},
+        "materials": {
+            "Fang": 9,
+            "Wool": 2,
+            "Hemp": 2
+        },
         "id": 22
     },
     {
@@ -4162,7 +4406,8 @@
         "materials": {
             "Bull's Horn": 11,
             "Storm Rune": 4,
-            "Tincture of Stamina": 21
+            "Tincture of Stamina": 21,
+            "Sulphur": 12
         },
         "id": 114
     },
@@ -4195,7 +4440,9 @@
         "materials": {
             "Dragon Scale": 20,
             "Amethyst": 12,
-            "Crystal": 19
+            "Crystal": 19,
+            "Obsidian": 1,
+            "Gold Ore": 3
         },
         "id": 143
     },
@@ -4258,7 +4505,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hydra Scale": 42,
+            "Soul Essence": 8,
+            "Almandin": 8,
+            "Sugilite": 2,
+            "Sphinx Feather": 1
+        },
         "id": 161
     },
     {
@@ -4314,7 +4567,9 @@
         "materials": {
             "Dragon Scale": 23,
             "Amethyst": 14,
-            "Emerald": 2
+            "Emerald": 2,
+            "Crystal": 17,
+            "Gold Ore": 2
         },
         "id": 150
     },
@@ -4347,7 +4602,8 @@
         "materials": {
             "Emerald": 3,
             "Crystal": 29,
-            "Obsidian": 8
+            "Obsidian": 8,
+            "Gold Ore": 12
         },
         "id": 134
     },
@@ -4380,7 +4636,8 @@
         "materials": {
             "Garnet": 4,
             "Storm Rune": 6,
-            "Tincture of Stamina": 6
+            "Tincture of Stamina": 6,
+            "Sulphur": 19
         },
         "id": 53
     },
@@ -4407,7 +4664,10 @@
                 "percent": 20
             }
         },
-        "materials": {}
+        "materials": {
+            "Flintstone": 22,
+            "Scale": 5
+        }
     },
     {
         "id": 73,
@@ -4432,7 +4692,10 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {
+            "Hemp": 16,
+            "Silk Thread": 4
+        }
     },
     {
         "name": "Umbros",
@@ -4478,7 +4741,8 @@
         "materials": {
             "Scale": 12,
             "Water Seal": 2,
-            "Flintstone": 1
+            "Flintstone": 1,
+            "Adrenaline": 9
         },
         "id": 80
     },
@@ -4537,7 +4801,12 @@
                 "percent": 28
             }
         },
-        "materials": {},
+        "materials": {
+            "Flintstone": 15,
+            "Adrenaline": 5,
+            "Lapis Lazuli": 3,
+            "Scale": 2
+        },
         "id": 51
     },
     {
@@ -4570,7 +4839,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Almandin": 33,
+            "Typhon Leather": 13,
+            "Hydra Scale": 12,
+            "Sugilite": 2,
+            "Soul Essence": 2
+        },
         "id": 163
     },
     {
@@ -4628,7 +4903,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Typhon Leather": 28,
+            "Sugilite": 21,
+            "Hydra Scale": 8,
+            "Soul Essence": 6
+        },
         "id": 165
     },
     {
@@ -4730,7 +5010,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Jute Patch": 10,
+            "Silk Thread": 3,
+            "Hemp": 1,
+            "Fang": 1
+        },
         "id": 66
     },
     {
@@ -4824,7 +5109,9 @@
         "materials": {
             "Fang": 6,
             "Wool": 2,
-            "Linen Strip": 5
+            "Linen Strip": 5,
+            "Jute Patch": 2,
+            "Silk Thread": 6
         },
         "id": 47
     },

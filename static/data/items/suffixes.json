@@ -108,7 +108,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 14,
+            "Cuprit": 10,
+            "Hellstone": 8
+        },
         "id": 258
     },
     {
@@ -158,7 +162,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 15,
+            "Shadow Rune": 20
+        },
         "id": 284
     },
     {
@@ -202,7 +209,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 32,
+            "Hellstone": 2
+        },
         "id": 269
     },
     {
@@ -231,7 +241,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 22,
+            "Cerberus' Pelt": 7,
+            "Cuprit": 2,
+            "Hellstone": 3
+        },
         "id": 283
     },
     {
@@ -374,7 +389,9 @@
         "materials": {
             "Fur": 2,
             "Bone Splinter": 2,
-            "Gauze Strip": 2
+            "Gauze Strip": 2,
+            "Sapphire": 2,
+            "Earth Mark": 2
         },
         "id": 38
     },
@@ -487,7 +504,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Velvet": 6,
+            "Talisman of Power": 1,
+            "Tincture of Enlightenment": 1,
+            "Platinum": 16
+        },
         "id": 206
     },
     {
@@ -506,7 +528,7 @@
         },
         "materials": {
             "Sapphire": 4,
-            "Earth Totem": 4
+            "Earth Mark": 4
         },
         "id": 40
     },
@@ -533,6 +555,7 @@
             }
         },
         "materials": {
+            "Cerberus' Pelt": 9,
             "Hellstone": 20,
             "Jasper": 6
         },
@@ -572,7 +595,9 @@
                 "percent": 10
             }
         },
-        "materials": {},
+        "materials": {
+            "Fur": 6
+        },
         "id": 16
     },
     {
@@ -625,7 +650,10 @@
                 "percent": -2
             }
         },
-        "materials": {},
+        "materials": {
+            "Talisman of Power": 11,
+            "Tincture of Enlightenment": 8
+        },
         "id": 179
     },
     {
@@ -658,7 +686,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hellstone": 33
+        },
         "id": 261
     },
     {
@@ -741,7 +771,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 28,
+            "Hellstone": 2
+        },
         "id": 241
     },
     {
@@ -837,7 +870,9 @@
         },
         "materials": {
             "Bone Splinter": 3,
-            "Cotton Wool": 5
+            "Cotton Wool": 5,
+            "Gauze Strip": 1,
+            "Sapphire": 1
         },
         "id": 86
     },
@@ -937,7 +972,10 @@
                 "percent": 20
             }
         },
-        "materials": {},
+        "materials": {
+            "Amber": 1,
+            "Aquamarine": 11
+        },
         "id": 66
     },
     {
@@ -998,7 +1036,9 @@
         },
         "materials": {
             "Poison Gland": 15,
-            "Velvet": 4
+            "Velvet": 4,
+            "Talisman of Power": 1,
+            "Tincture of Enlightenment": 2
         },
         "id": 196
     },
@@ -1044,7 +1084,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 26,
+            "Jasper": 5,
+            "Shadow Rune": 4
+        },
         "id": 287
     },
     {
@@ -1072,7 +1116,8 @@
         "materials": {
             "Amber": 3,
             "Stone of Fortune": 4,
-            "Scorpion Poison": 1
+            "Scorpion Poison": 1,
+            "Silver": 5
         },
         "id": 96
     },
@@ -1123,7 +1168,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 6,
+            "Cuprit": 9,
+            "Hellstone": 8,
+            "Jasper": 10
+        },
         "id": 266
     },
     {
@@ -1174,7 +1224,8 @@
         },
         "materials": {
             "Hellstone": 8,
-            "Jasper": 10
+            "Jasper": 10,
+            "Shadow Rune": 13
         },
         "id": 246
     },
@@ -1216,7 +1267,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 30,
+            "Hellstone": 4
+        },
         "id": 277
     },
     {
@@ -1260,7 +1314,7 @@
         },
         "materials": {
             "Amber": 1,
-            "Aquamarine": 8
+            "Aquamarine": 11
         },
         "id": 44
     },
@@ -1343,7 +1397,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 16,
+            "Cerberus' Pelt": 1,
+            "Hellstone": 1,
+            "Jasper": 3,
+            "Shadow Rune": 12
+        },
         "id": 248
     },
     {
@@ -1382,7 +1442,10 @@
         },
         "materials": {
             "Totem of Healing": 1,
-            "Essence of Reaction": 13
+            "Essence of Reaction": 13,
+            "Phial of Charisma": 2,
+            "Bronze": 4,
+            "Quartz": 6
         },
         "id": 239
     },
@@ -1421,7 +1484,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 31,
+            "Shadow Rune": 3
+        },
         "id": 273
     },
     {
@@ -1442,7 +1508,11 @@
                 "percent": 5
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 4,
+            "Hellstone": 22,
+            "Jasper": 5
+        },
         "id": 247
     },
     {
@@ -1475,7 +1545,13 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Diamond": 3,
+            "Totem of Healing": 1,
+            "Essence of Reaction": 17,
+            "Phial of Charisma": 4,
+            "Bronze": 4
+        },
         "id": 215
     },
     {
@@ -1502,7 +1578,9 @@
         },
         "materials": {
             "Diamond": 9,
-            "Essence of Reaction": 5
+            "Essence of Reaction": 5,
+            "Bronze": 6,
+            "Quartz": 6
         },
         "id": 210
     },
@@ -1613,7 +1691,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 4,
+            "Cuprit": 11,
+            "Hellstone": 19
+        },
         "id": 270
     },
     {
@@ -1743,8 +1825,9 @@
             }
         },
         "materials": {
-            "Jasper": 8,
-            "Waters of Oblivion": 27
+            "Waters of Oblivion": 27,
+            "Cuprit": 6,
+            "Jasper": 8
         },
         "id": 291
     },
@@ -1791,8 +1874,8 @@
         },
         "materials": {
             "Amber": 3,
-            "Antidote": 7,
-            "Bone Splinter": 1
+            "Aquamarine": 1,
+            "Antidote": 7
         },
         "id": 78
     },
@@ -1844,7 +1927,9 @@
         },
         "materials": {
             "Essence of Reaction": 1,
-            "Phial of Charisma": 1
+            "Phial of Charisma": 1,
+            "Bronze": 3,
+            "Quartz": 19
         },
         "id": 234
     },
@@ -1873,7 +1958,8 @@
         "materials": {
             "Amber": 1,
             "Aquamarine": 2,
-            "Stone of Fortune": 11
+            "Stone of Fortune": 11,
+            "Scorpion Poison": 1
         },
         "id": 157
     },
@@ -1897,7 +1983,8 @@
         },
         "materials": {
             "Velvet": 13,
-            "Talisman of Power": 9
+            "Talisman of Power": 9,
+            "Platinum": 1
         },
         "id": 205
     },
@@ -1956,7 +2043,13 @@
                 "percent": -15
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 2,
+            "Cerberus' Pelt": 8,
+            "Cuprit": 4,
+            "Hellstone": 15,
+            "Shadow Rune": 2
+        },
         "id": 243
     },
     {
@@ -2066,8 +2159,7 @@
             }
         },
         "materials": {
-            "Gauze Strip": 2,
-            "Earth Mark": 10
+            "Scorpion Poison": 15
         },
         "id": 1
     },
@@ -2158,7 +2250,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 21,
+            "Cerberus' Pelt": 5,
+            "Hellstone": 3,
+            "Jasper": 2
+        },
         "id": 242
     },
     {
@@ -2363,7 +2460,8 @@
         },
         "materials": {
             "Totem of Healing": 4,
-            "Phial of Charisma": 4
+            "Phial of Charisma": 4,
+            "Bronze": 18
         },
         "id": 221
     },
@@ -2434,7 +2532,9 @@
         },
         "materials": {
             "Amber": 4,
-            "Aquamarine": 3
+            "Aquamarine": 3,
+            "Stone of Fortune": 2,
+            "Silver": 3
         },
         "id": 74
     },
@@ -2493,7 +2593,8 @@
         "materials": {
             "Amber": 3,
             "Stone of Fortune": 1,
-            "Antidote": 7
+            "Antidote": 7,
+            "Silver": 1
         },
         "id": 80
     },
@@ -2511,7 +2612,10 @@
                 "percent": 11
             }
         },
-        "materials": {},
+        "materials": {
+            "Bone Splinter": 3,
+            "Cotton Wool": 6
+        },
         "id": 128
     },
     {
@@ -2528,7 +2632,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Tincture of Enlightenment": 23
+        },
         "id": 207
     },
     {
@@ -2622,7 +2728,8 @@
         "materials": {
             "Fur": 1,
             "Bone Splinter": 6,
-            "Gauze Strip": 1
+            "Gauze Strip": 1,
+            "Sapphire": 1
         },
         "id": 84
     },
@@ -2672,7 +2779,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 22,
+            "Hellstone": 1,
+            "Jasper": 4,
+            "Shadow Rune": 6
+        },
         "id": 254
     },
     {
@@ -2718,7 +2830,8 @@
         },
         "materials": {
             "Waters of Oblivion": 10,
-            "Hellstone": 14
+            "Hellstone": 14,
+            "Jasper": 10
         },
         "id": 274
     },
@@ -2744,7 +2857,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Fur": 1,
+            "Bone Splinter": 4,
+            "Cotton Wool": 3,
+            "Sapphire": 1
+        },
         "id": 81
     },
     {
@@ -2787,7 +2905,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Sapphire": 6
+        },
         "id": 111
     },
     {
@@ -2846,7 +2966,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Gauze Strip": 3,
+            "Sapphire": 3,
+            "Earth Mark": 4
+        },
         "id": 29
     },
     {
@@ -2863,7 +2987,10 @@
                 "percent": 10
             }
         },
-        "materials": {},
+        "materials": {
+            "Fur": 5,
+            "Gauze Strip": 4
+        },
         "id": 26
     },
     {
@@ -2905,7 +3032,10 @@
                 "percent": 5
             }
         },
-        "materials": {},
+        "materials": {
+            "Fur": 7,
+            "Bone Splinter": 2
+        },
         "id": 67
     },
     {
@@ -3037,7 +3167,8 @@
         "materials": {
             "Amber": 2,
             "Aquamarine": 1,
-            "Stone of Fortune": 2
+            "Stone of Fortune": 2,
+            "Scorpion Poison": 7
         },
         "id": 148
     },
@@ -3096,7 +3227,8 @@
         "materials": {
             "Fur": 7,
             "Bone Splinter": 1,
-            "Gauze Strip": 1
+            "Gauze Strip": 1,
+            "Earth Mark": 1
         },
         "id": 127
     },
@@ -3122,7 +3254,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 3,
+            "Cuprit": 27,
+            "Hellstone": 3
+        },
         "id": 256
     },
     {
@@ -3188,7 +3324,11 @@
                 "percent": -35
             }
         },
-        "materials": {},
+        "materials": {
+            "Cerberus' Pelt": 13,
+            "Hellstone": 4,
+            "Jasper": 13
+        },
         "id": 245
     },
     {
@@ -3403,7 +3543,8 @@
         },
         "materials": {
             "Stone of Fortune": 3,
-            "Scorpion Poison": 7
+            "Scorpion Poison": 7,
+            "Antidote": 5
         },
         "id": 85
     },
@@ -3481,7 +3622,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hellstone": 5,
+            "Jasper": 4,
+            "Shadow Rune": 26
+        },
         "id": 268
     },
     {
@@ -3642,7 +3787,14 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Diamond": 3,
+            "Totem of Healing": 1,
+            "Essence of Reaction": 22,
+            "Phial of Charisma": 1,
+            "Bronze": 2,
+            "Quartz": 1
+        },
         "id": 220
     },
     {
@@ -3731,7 +3883,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 2,
+            "Hellstone": 5,
+            "Shadow Rune": 23
+        },
         "id": 244
     },
     {
@@ -3810,7 +3966,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Talisman of Power": 1,
+            "Tincture of Enlightenment": 19
+        },
         "id": 192
     },
     {
@@ -3849,7 +4008,7 @@
             }
         },
         "materials": {
-            "Sapphire": 11
+            "Sapphire": 12
         },
         "id": 141
     },
@@ -3883,7 +4042,7 @@
             }
         },
         "materials": {
-            "Amber": 10
+            "Amber": 16
         },
         "id": 165
     },
@@ -4032,7 +4191,8 @@
         "materials": {
             "Amber": 3,
             "Aquamarine": 1,
-            "Scorpion Poison": 6
+            "Scorpion Poison": 6,
+            "Antidote": 5
         },
         "id": 99
     },
@@ -4058,7 +4218,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Diamond": 11,
+            "Totem of Healing": 2,
+            "Phial of Charisma": 5,
+            "Bronze": 11
+        },
         "id": 229
     },
     {
@@ -4192,7 +4357,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 32
+        },
         "id": 249
     },
     {
@@ -4387,7 +4554,10 @@
                 "percent": 2
             }
         },
-        "materials": {},
+        "materials": {
+            "Fur": 1,
+            "Bone Splinter": 5
+        },
         "id": 18
     },
     {
@@ -4404,7 +4574,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Cuprit": 16,
+            "Shadow Rune": 17
+        },
         "id": 265
     },
     {
@@ -4425,7 +4598,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Totem of Healing": 1,
+            "Bronze": 3,
+            "Quartz": 23
+        },
         "id": 230
     },
     {
@@ -4511,7 +4688,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 33
+        },
         "id": 263
     },
     {
@@ -4562,7 +4741,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Cuprit": 34
+        },
         "id": 275
     },
     {
@@ -4603,7 +4784,10 @@
                 "percent": -15
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 5,
+            "Hellstone": 29
+        },
         "id": 282
     },
     {
@@ -4628,7 +4812,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 8,
+            "Hellstone": 11,
+            "Jasper": 13
+        },
         "id": 259
     },
     {
@@ -4738,7 +4926,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Poison Gland": 16,
+            "Velvet": 5,
+            "Talisman of Power": 1,
+            "Tincture of Enlightenment": 2
+        },
         "id": 208
     },
     {
@@ -4769,7 +4962,9 @@
         },
         "materials": {
             "Diamond": 9,
-            "Totem of Healing": 3
+            "Totem of Healing": 3,
+            "Phial of Charisma": 4,
+            "Bronze": 11
         },
         "id": 223
     },
@@ -4841,7 +5036,12 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 20,
+            "Cuprit": 1,
+            "Hellstone": 11,
+            "Jasper": 2
+        },
         "id": 278
     },
     {
@@ -4869,7 +5069,8 @@
         "materials": {
             "Essence of Reaction": 4,
             "Phial of Charisma": 1,
-            "Bronze": 20
+            "Bronze": 20,
+            "Quartz": 4
         },
         "id": 237
     },
@@ -4891,7 +5092,11 @@
                 "percent": 21
             }
         },
-        "materials": {},
+        "materials": {
+            "Cuprit": 3,
+            "Jasper": 20,
+            "Shadow Rune": 11
+        },
         "id": 276
     },
     {
@@ -4918,7 +5123,9 @@
         },
         "materials": {
             "Waters of Oblivion": 38,
-            "Cerberus Pelt": 2
+            "Cerberus' Pelt": 2,
+            "Jasper": 1,
+            "Shadow Rune": 4
         },
         "id": 292
     },
@@ -4947,7 +5154,8 @@
         "materials": {
             "Diamond": 18,
             "Totem of Healing": 4,
-            "Essence of Reaction": 2
+            "Essence of Reaction": 2,
+            "Phial of Charisma": 7
         },
         "id": 240
     },
@@ -4971,7 +5179,8 @@
         },
         "materials": {
             "Talisman of Power": 1,
-            "Tincture of Enlightenment": 1
+            "Tincture of Enlightenment": 1,
+            "Platinum": 19
         },
         "id": 199
     },
@@ -4993,7 +5202,11 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 29,
+            "Cuprit": 4,
+            "Jasper": 2
+        },
         "id": 289
     },
     {
@@ -5030,7 +5243,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 13,
+            "Hellstone": 20
+        },
         "id": 262
     },
     {
@@ -5061,7 +5277,7 @@
         },
         "materials": {
             "Waters of Oblivion": 19,
-            "Cerberus Pelt": 5,
+            "Cerberus' Pelt": 5,
             "Hellstone": 10
         },
         "id": 279
@@ -5151,7 +5367,8 @@
         "materials": {
             "Amber": 1,
             "Aquamarine": 4,
-            "Scorpion Poison": 1
+            "Scorpion Poison": 1,
+            "Silver": 8
         },
         "id": 149
     },
@@ -5173,7 +5390,10 @@
                 "percent": -5
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 15,
+            "Hellstone": 17
+        },
         "id": 252
     },
     {
@@ -5200,7 +5420,8 @@
         },
         "materials": {
             "Totem of Healing": 6,
-            "Essence of Reaction": 2
+            "Essence of Reaction": 2,
+            "Phial of Charisma": 27
         },
         "id": 285
     },
@@ -5247,9 +5468,10 @@
             }
         },
         "materials": {
-            "Velvet": 8,
+            "Velvet": 6,
             "Protection Rune": 1,
-            "Talisman of Power": 2
+            "Talisman of Power": 2,
+            "Platinum": 14
         },
         "id": 200
     },
@@ -5296,7 +5518,11 @@
                 "percent": 24
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 7,
+            "Cerberus' Pelt": 15,
+            "Hellstone": 11
+        },
         "id": 255
     },
     {
@@ -5321,7 +5547,11 @@
                 "percent": -40
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 16,
+            "Hellstone": 10,
+            "Jasper": 7
+        },
         "id": 271
     },
     {
@@ -5338,7 +5568,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Hellstone": 26,
+            "Jasper": 7
+        },
         "id": 257
     },
     {
@@ -5363,7 +5596,11 @@
                 "percent": 17
             }
         },
-        "materials": {},
+        "materials": {
+            "Cerberus' Pelt": 15,
+            "Hellstone": 16,
+            "Shadow Rune": 4
+        },
         "id": 288
     },
     {
@@ -5430,7 +5667,8 @@
         },
         "materials": {
             "Aquamarine": 5,
-            "Stone of Fortune": 4
+            "Stone of Fortune": 4,
+            "Silver": 5
         },
         "id": 55
     },
@@ -5490,7 +5728,9 @@
             }
         },
         "materials": {
-            "Antidote": 16
+            "Amber": 2,
+            "Aquamarine": 4,
+            "Scorpion Poison": 7
         },
         "id": 75
     },
@@ -5594,7 +5834,11 @@
                 "percent": 15
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 8,
+            "Hellstone": 13,
+            "Jasper": 13
+        },
         "id": 280
     },
     {
@@ -5615,7 +5859,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Cerberus' Pelt": 13,
+            "Jasper": 22
+        },
         "id": 286
     },
     {
@@ -5647,7 +5894,9 @@
         "materials": {
             "Velvet": 7,
             "Protection Rune": 1,
-            "Talisman of Power": 1
+            "Talisman of Power": 1,
+            "Tincture of Enlightenment": 2,
+            "Platinum": 14
         },
         "id": 203
     },
@@ -5665,7 +5914,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Waters of Oblivion": 25,
+            "Cerberus' Pelt": 8
+        },
         "id": 264
     },
     {
@@ -5678,7 +5930,9 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Cotton Wool": 8
+        },
         "id": 122
     },
     {
@@ -5705,7 +5959,9 @@
         },
         "materials": {
             "Totem of Healing": 7,
-            "Essence of Reaction": 6
+            "Essence of Reaction": 6,
+            "Bronze": 7,
+            "Quartz": 7
         },
         "id": 218
     },
@@ -5748,7 +6004,10 @@
                 "percent": 0
             }
         },
-        "materials": {},
+        "materials": {
+            "Totem of Healing": 27,
+            "Essence of Reaction": 1
+        },
         "id": 222
     },
     {
@@ -5761,7 +6020,9 @@
                 "percent": 10
             }
         },
-        "materials": {},
+        "materials": {
+            "Bone Splinter": 9
+        },
         "id": 4
     },
     {
@@ -5893,6 +6154,7 @@
             }
         },
         "materials": {
+            "Cerberus' Pelt": 6,
             "Jasper": 1,
             "Shadow Rune": 27
         },

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styles from './ForgingGoodInfo.module.css';
 import forgingGoodsData from '@site/static/data/items/forging-goods.json';
+import prefixesData from '@site/static/data/items/prefixes.json';
+import suffixesData from '@site/static/data/items/suffixes.json';
 
 interface Drop {
   percentage: number;
@@ -21,8 +23,19 @@ interface ForgingGoodData {
   description?: string;
   scarcity?: string;
   drops?: Drop[];
-  prefixes?: PrefixSuffix[];
-  suffixes?: PrefixSuffix[];
+  id?: number;
+}
+
+interface PrefixData {
+  name: string;
+  id: number;
+  materials: { [key: string]: number };
+}
+
+interface SuffixData {
+  name: string;
+  id: number;
+  materials: { [key: string]: number };
 }
 
 interface ForgingGoodInfoProps {
@@ -50,6 +63,38 @@ const ForgingGoodInfo: React.FC<ForgingGoodInfoProps> = ({
     return <div className={styles.error}>Material "{name}" not found in database</div>;
   }
 
+  // Dynamically compute prefixes that use this material
+  const prefixes = useMemo(() => {
+    const result: PrefixSuffix[] = [];
+    (prefixesData as PrefixData[]).forEach((prefix) => {
+      if (prefix.materials && prefix.materials[name]) {
+        result.push({
+          name: prefix.name,
+          id: prefix.id,
+          quantity: prefix.materials[name],
+        });
+      }
+    });
+    // Sort by quantity descending
+    return result.sort((a, b) => b.quantity - a.quantity);
+  }, [name]);
+
+  // Dynamically compute suffixes that use this material
+  const suffixes = useMemo(() => {
+    const result: PrefixSuffix[] = [];
+    (suffixesData as SuffixData[]).forEach((suffix) => {
+      if (suffix.materials && suffix.materials[name]) {
+        result.push({
+          name: suffix.name,
+          id: suffix.id,
+          quantity: suffix.materials[name],
+        });
+      }
+    });
+    // Sort by quantity descending
+    return result.sort((a, b) => b.quantity - a.quantity);
+  }, [name]);
+
   return (
     <div className={styles.container}>
       {displayDescription && material.description && (
@@ -73,14 +118,14 @@ const ForgingGoodInfo: React.FC<ForgingGoodInfoProps> = ({
         </div>
       )}
 
-      {displayPrefixes && material.prefixes && material.prefixes.length > 0 && (
+      {displayPrefixes && prefixes.length > 0 && (
         <div className={styles.section}>
-          <h2>Smelts From (Prefixes)</h2>
+          <h2>Prefixes with material</h2>
           <div className={styles.affixGrid}>
-            {material.prefixes.map((prefix, index) => (
+            {prefixes.map((prefix, index) => (
               <a
                 key={index}
-                href={`/items/prefix/${prefix.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                href={`/items/prefix/${encodeURIComponent(prefix.name.toLowerCase())}`}
                 className={styles.affixLink}
                 title={`${prefix.name} (${prefix.quantity} materials)`}
               >
@@ -92,14 +137,14 @@ const ForgingGoodInfo: React.FC<ForgingGoodInfoProps> = ({
         </div>
       )}
 
-      {displaySuffixes && material.suffixes && material.suffixes.length > 0 && (
+      {displaySuffixes && suffixes.length > 0 && (
         <div className={styles.section}>
-          <h2>Smelts From (Suffixes)</h2>
+          <h2>Suffixes with material</h2>
           <div className={styles.affixGrid}>
-            {material.suffixes.map((suffix, index) => (
+            {suffixes.map((suffix, index) => (
               <a
                 key={index}
-                href={`/items/suffix/${suffix.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                href={`/items/suffix/${encodeURIComponent(suffix.name.toLowerCase())}`}
                 className={styles.affixLink}
                 title={`${suffix.name} (${suffix.quantity} materials)`}
               >
