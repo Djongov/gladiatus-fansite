@@ -33,7 +33,8 @@
             "Hydra Scale": 1,
             "Soul Essence": 73,
             "Sphinx Feather": 1
-        }
+        },
+        "id": 186
     },
     {
         "name": "Adendathiels",
@@ -56,7 +57,8 @@
         "materials": {
             "Water Seal": 1,
             "Flintstone": 16
-        }
+        },
+        "id": 46
     },
     {
         "name": "Africanus`",
@@ -80,7 +82,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 183
     },
     {
         "name": "Ambrosius`",
@@ -120,7 +123,8 @@
             "Almandin": 2,
             "Hydra Scale": 25,
             "Soul Essence": 8
-        }
+        },
+        "id": 162
     },
     {
         "name": "Amelias",
@@ -140,7 +144,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 2
     },
     {
         "name": "Amoviels",
@@ -154,7 +159,8 @@
         },
         "materials": {
             "Fang": 10
-        }
+        },
+        "id": 35
     },
     {
         "name": "Amulius",
@@ -182,7 +188,8 @@
             "Dragon Scale": 34,
             "Amethyst": 18,
             "Crystal": 2
-        }
+        },
+        "id": 160
     },
     {
         "name": "Anchorons",
@@ -214,7 +221,8 @@
             "Bull's Horn": 6,
             "Garnet": 20,
             "Tincture of Stamina": 9
-        }
+        },
+        "id": 109
     },
     {
         "name": "Angelus`",
@@ -242,7 +250,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 173
     },
     {
         "name": "Antonius",
@@ -274,7 +283,8 @@
             "Dragon Scale": 4,
             "Amethyst": 18,
             "Crystal": 30
-        }
+        },
+        "id": 142
     },
     {
         "name": "Appius",
@@ -306,7 +316,8 @@
             "Bull's Horn": 2,
             "Storm Rune": 17,
             "Tincture of Stamina": 7
-        }
+        },
+        "id": 116
     },
     {
         "name": "Arpagius`",
@@ -342,7 +353,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 175
     },
     {
         "name": "Asayseths",
@@ -370,7 +382,8 @@
                 "percent": 6
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 40
     },
     {
         "name": "Asendacs",
@@ -394,7 +407,8 @@
             "Wool": 1,
             "Hemp": 2,
             "Linen Strip": 14
-        }
+        },
+        "id": 17
     },
     {
         "name": "Ashitills",
@@ -430,7 +444,8 @@
             "Scale": 4,
             "Lapis Lazuli": 3,
             "Flintstone": 13
-        }
+        },
+        "id": 50
     },
     {
         "name": "Asphodel`s",
@@ -466,7 +481,8 @@
             "Almandin": 6,
             "Hydra Scale": 10,
             "Soul Essence": 5
-        }
+        },
+        "id": 156
     },
     {
         "name": "Aulus`",
@@ -502,7 +518,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 182
     },
     {
         "name": "Aurelius",
@@ -525,7 +542,8 @@
         "materials": {
             "Dragon Scale": 3,
             "Emerald": 56
-        }
+        },
+        "id": 154
     },
     {
         "name": "Auroras",
@@ -553,7 +571,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 180
     },
     {
         "name": "Avalonius",
@@ -589,7 +608,8 @@
             "Dragon Scale": 24,
             "Amethyst": 10,
             "Emerald": 4
-        }
+        },
+        "id": 151
     },
     {
         "name": "Bacias",
@@ -621,7 +641,8 @@
             "Fang": 12,
             "Hemp": 2,
             "Linen Strip": 4
-        }
+        },
+        "id": 45
     },
     {
         "name": "Barbekuus",
@@ -649,7 +670,8 @@
             "Bull's Horn": 13,
             "Garnet": 6,
             "Tincture of Stamina": 10
-        }
+        },
+        "id": 98
     },
     {
         "name": "Beasthammers",
@@ -667,7 +689,8 @@
         },
         "materials": {
             "Fang": 19
-        }
+        },
+        "id": 28
     },
     {
         "name": "Belisarius",
@@ -703,7 +726,8 @@
             "Amethyst": 13,
             "Emerald": 4,
             "Crystal": 30
-        }
+        },
+        "id": 148
     },
     {
         "name": "Bereccas",
@@ -730,7 +754,8 @@
         "materials": {
             "Flintstone": 1,
             "Adrenaline": 22
-        }
+        },
+        "id": 76
     },
     {
         "name": "Berrys",
@@ -750,7 +775,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 9
     },
     {
         "name": "Bilgs",
@@ -778,7 +804,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 27
     },
     {
         "name": "Caesius`",
@@ -810,7 +837,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 178
     },
     {
         "name": "Caldus`",
@@ -842,10 +870,12 @@
             "Amethyst": 24,
             "Emerald": 23,
             "Obsidian": 11
-        }
+        },
+        "id": 170
     },
     {
-        "name": "CalÃ³diens",
+        "id": 36,
+        "name": "Calódiens",
         "level": 16,
         "gold": 0,
         "stats": {
@@ -890,7 +920,8 @@
                 "percent": 30
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 177
     },
     {
         "name": "Chabdyns",
@@ -913,7 +944,8 @@
         "materials": {
             "Fang": 18,
             "Silk Thread": 1
-        }
+        },
+        "id": 13
     },
     {
         "name": "Chalinis",
@@ -937,7 +969,8 @@
             "Fang": 1,
             "Linen Strip": 9,
             "Silk Thread": 7
-        }
+        },
+        "id": 41
     },
     {
         "name": "Chealoths",
@@ -957,7 +990,8 @@
                 "percent": 6
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 18
     },
     {
         "name": "Cheggovs",
@@ -989,7 +1023,8 @@
             "Bull's Horn": 1,
             "Garnet": 3,
             "Potion of Perception": 30
-        }
+        },
+        "id": 95
     },
     {
         "name": "Chucks",
@@ -1008,7 +1043,8 @@
         "materials": {
             "Bull's Horn": 21,
             "Storm Rune": 23
-        }
+        },
+        "id": 105
     },
     {
         "name": "Ciallans",
@@ -1028,7 +1064,8 @@
                 "percent": 24
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 42
     },
     {
         "name": "Cisiens",
@@ -1056,7 +1093,8 @@
             "Wool": 2,
             "Hemp": 2,
             "Linen Strip": 13
-        }
+        },
+        "id": 44
     },
     {
         "name": "Constantius",
@@ -1100,7 +1138,8 @@
             "Dragon Scale": 4,
             "Amethyst": 27,
             "Emerald": 6
-        }
+        },
+        "id": 149
     },
     {
         "name": "Dairus",
@@ -1132,7 +1171,8 @@
             "Dragon Scale": 34,
             "Amethyst": 1,
             "Emerald": 3
-        }
+        },
+        "id": 112
     },
     {
         "name": "Decimus",
@@ -1160,7 +1200,8 @@
             "Tincture of Stamina": 10,
             "Potion of Perception": 7,
             "Sulphur": 32
-        }
+        },
+        "id": 120
     },
     {
         "name": "Demonkillers",
@@ -1179,10 +1220,11 @@
         "materials": {
             "Fang": 6,
             "Hemp": 8
-        }
+        },
+        "id": 30
     },
     {
-        "name": "Denovs *",
+        "name": "Denovs",
         "level": 21,
         "gold": 0,
         "stats": {
@@ -1195,7 +1237,8 @@
                 "percent": 6
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 12
     },
     {
         "name": "Dexterus",
@@ -1239,7 +1282,8 @@
             "Dragon Scale": 5,
             "Amethyst": 21,
             "Emerald": 14
-        }
+        },
+        "id": 138
     },
     {
         "name": "Doitrems",
@@ -1268,10 +1312,11 @@
             "Hemp": 2,
             "Linen Strip": 5,
             "Jute Patch": 4
-        }
+        },
+        "id": 4
     },
     {
-        "name": "Doomeniks *",
+        "name": "Doomeniks",
         "level": 68,
         "gold": 0,
         "stats": {
@@ -1296,7 +1341,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 100
     },
     {
         "name": "Dragonus`",
@@ -1328,7 +1374,8 @@
             "Almandin": 8,
             "Soul Essence": 8,
             "Sphinx Feather": 8
-        }
+        },
+        "id": 158
     },
     {
         "name": "Elrarangs",
@@ -1342,7 +1389,8 @@
         },
         "materials": {
             "Wool": 19
-        }
+        },
+        "id": 19
     },
     {
         "name": "Elvilmandels",
@@ -1362,7 +1410,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 5
     },
     {
         "name": "Elywens",
@@ -1390,7 +1439,8 @@
             "Wool": 4,
             "Hemp": 8,
             "Jute Patch": 4
-        }
+        },
+        "id": 37
     },
     {
         "name": "Evotavs",
@@ -1422,7 +1472,8 @@
                 "percent": 15
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 52
     },
     {
         "name": "Fernabasts",
@@ -1458,7 +1509,8 @@
             "Bull's Horn": 12,
             "Garnet": 1,
             "Storm Rune": 1
-        }
+        },
+        "id": 96
     },
     {
         "name": "Fitschis",
@@ -1490,7 +1542,8 @@
             "Lapis Lazuli": 3,
             "Flintstone": 1,
             "Adrenaline": 20
-        }
+        },
+        "id": 79
     },
     {
         "name": "Frabos",
@@ -1514,7 +1567,8 @@
             "Fang": 7,
             "Jute Patch": 2,
             "Silk Thread": 5
-        }
+        },
+        "id": 23
     },
     {
         "name": "Frickoys",
@@ -1534,7 +1588,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 67
     },
     {
         "name": "Frientas",
@@ -1566,7 +1621,8 @@
             "Fang": 2,
             "Linen Strip": 3,
             "Jute Patch": 9
-        }
+        },
+        "id": 72
     },
     {
         "name": "Fustriels",
@@ -1598,7 +1654,8 @@
             "Scale": 2,
             "Lapis Lazuli": 13,
             "Water Seal": 5
-        }
+        },
+        "id": 84
     },
     {
         "name": "Gadriewens",
@@ -1622,7 +1679,8 @@
             "Linen Strip": 6,
             "Jute Patch": 8,
             "Silk Thread": 3
-        }
+        },
+        "id": 20
     },
     {
         "name": "Gaias",
@@ -1654,7 +1712,8 @@
             "Hydra Scale": 8,
             "Soul Essence": 55,
             "Sphinx Feather": 1
-        }
+        },
+        "id": 185
     },
     {
         "name": "Gaius",
@@ -1686,7 +1745,8 @@
             "Dragon Scale": 1,
             "Amethyst": 22,
             "Crystal": 31
-        }
+        },
+        "id": 118
     },
     {
         "name": "Galarands",
@@ -1705,7 +1765,8 @@
         "materials": {
             "Hemp": 5,
             "Linen Strip": 10
-        }
+        },
+        "id": 8
     },
     {
         "name": "Gidras",
@@ -1737,7 +1798,8 @@
             "Scale": 20,
             "Water Seal": 5,
             "Flintstone": 1
-        }
+        },
+        "id": 83
     },
     {
         "name": "Giganticus",
@@ -1773,7 +1835,8 @@
             "Amethyst": 23,
             "Emerald": 10,
             "Obsidian": 11
-        }
+        },
+        "id": 141
     },
     {
         "name": "Gonaks",
@@ -1801,7 +1864,8 @@
             "Fang": 10,
             "Hemp": 1,
             "Linen Strip": 4
-        }
+        },
+        "id": 25
     },
     {
         "name": "Granks",
@@ -1825,7 +1889,8 @@
                 "percent": 2
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 26
     },
     {
         "name": "Grasscrawlers",
@@ -1849,7 +1914,8 @@
             "Wool": 5,
             "Linen Strip": 10,
             "Jute Patch": 2
-        }
+        },
+        "id": 3
     },
     {
         "name": "Gratias",
@@ -1873,7 +1939,8 @@
             "Almandin": 3,
             "Soul Essence": 19,
             "Sugilite": 47
-        }
+        },
+        "id": 179
     },
     {
         "name": "Gratius`",
@@ -1909,10 +1976,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 174
     },
     {
-        "name": "Grills *",
+        "name": "Grills",
         "level": 53,
         "gold": 0,
         "stats": {
@@ -1941,7 +2009,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 88
     },
     {
         "name": "Heudois",
@@ -1965,7 +2034,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 74
     },
     {
         "name": "Heuhois",
@@ -1996,7 +2066,8 @@
         "materials": {
             "Flintstone": 10,
             "Adrenaline": 19
-        }
+        },
+        "id": 85
     },
     {
         "name": "Ibiwans",
@@ -2016,7 +2087,8 @@
                 "percent": 4
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 15
     },
     {
         "name": "Ichorus",
@@ -2048,7 +2120,8 @@
             "Garnet": 5,
             "Tincture of Stamina": 5,
             "Potion of Perception": 2
-        }
+        },
+        "id": 55
     },
     {
         "name": "Ismaels",
@@ -2084,7 +2157,8 @@
             "Fang": 2,
             "Wool": 1,
             "Hemp": 13
-        }
+        },
+        "id": 70
     },
     {
         "name": "Isundels",
@@ -2108,7 +2182,8 @@
             "Fang": 4,
             "Hemp": 4,
             "Linen Strip": 10
-        }
+        },
+        "id": 6
     },
     {
         "name": "Jennifers",
@@ -2131,7 +2206,8 @@
         "materials": {
             "Garnet": 13,
             "Sulphur": 29
-        }
+        },
+        "id": 102
     },
     {
         "name": "Joves",
@@ -2167,7 +2243,8 @@
             "Hydra Scale": 19,
             "Soul Essence": 4,
             "Sphinx Feather": 2
-        }
+        },
+        "id": 172
     },
     {
         "name": "Kedyssis",
@@ -2186,7 +2263,8 @@
         "materials": {
             "Fang": 12,
             "Hemp": 2
-        }
+        },
+        "id": 43
     },
     {
         "name": "Kerrannas",
@@ -2210,7 +2288,8 @@
             "Fang": 4,
             "Wool": 5,
             "Jute Patch": 6
-        }
+        },
+        "id": 49
     },
     {
         "name": "Korks",
@@ -2239,7 +2318,8 @@
             "Garnet": 1,
             "Storm Rune": 3,
             "Tincture of Stamina": 20
-        }
+        },
+        "id": 93
     },
     {
         "name": "Kosmonas",
@@ -2258,7 +2338,8 @@
         "materials": {
             "Hemp": 3,
             "Silk Thread": 7
-        }
+        },
+        "id": 60
     },
     {
         "name": "Leandronimus",
@@ -2282,7 +2363,8 @@
             "Bull's Horn": 13,
             "Tincture of Stamina": 10,
             "Sulphur": 8
-        }
+        },
+        "id": 101
     },
     {
         "name": "Lepidus",
@@ -2318,7 +2400,8 @@
             "Dragon Scale": 30,
             "Amethyst": 15,
             "Emerald": 3
-        }
+        },
+        "id": 145
     },
     {
         "name": "Lethe`s",
@@ -2354,7 +2437,8 @@
             "Almandin": 2,
             "Hydra Scale": 18,
             "Sphinx Feather": 33
-        }
+        },
+        "id": 155
     },
     {
         "name": "Liloels",
@@ -2381,7 +2465,8 @@
         "materials": {
             "Bull's Horn": 2,
             "Garnet": 31
-        }
+        },
+        "id": 91
     },
     {
         "name": "Lothays",
@@ -2400,7 +2485,8 @@
         "materials": {
             "Fang": 11,
             "Hemp": 1
-        }
+        },
+        "id": 16
     },
     {
         "name": "Lucius",
@@ -2444,7 +2530,8 @@
             "Bull's Horn": 3,
             "Garnet": 1,
             "Storm Rune": 4
-        }
+        },
+        "id": 122
     },
     {
         "name": "Lulus",
@@ -2472,7 +2559,8 @@
                 "percent": 14
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 77
     },
     {
         "name": "Lurtscharas",
@@ -2504,7 +2592,8 @@
             "Fang": 1,
             "Wool": 15,
             "Hemp": 1
-        }
+        },
+        "id": 71
     },
     {
         "name": "Magnus`",
@@ -2536,7 +2625,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 171
     },
     {
         "name": "Mandalus",
@@ -2563,7 +2653,8 @@
         "materials": {
             "Dragon Scale": 1,
             "Emerald": 52
-        }
+        },
+        "id": 139
     },
     {
         "name": "Manius",
@@ -2587,7 +2678,8 @@
             "Emerald": 4,
             "Crystal": 42,
             "Gold Ore": 4
-        }
+        },
+        "id": 124
     },
     {
         "name": "Marcellus",
@@ -2615,7 +2707,8 @@
             "Amethyst": 36,
             "Emerald": 3,
             "Crystal": 17
-        }
+        },
+        "id": 146
     },
     {
         "name": "Marcus",
@@ -2637,7 +2730,8 @@
         },
         "materials": {
             "Garnet": 48
-        }
+        },
+        "id": 115
     },
     {
         "name": "Mateus",
@@ -2660,7 +2754,8 @@
         "materials": {
             "Amethyst": 48,
             "Emerald": 2
-        }
+        },
+        "id": 135
     },
     {
         "name": "Medonis",
@@ -2687,7 +2782,8 @@
         "materials": {
             "Lapis Lazuli": 5,
             "Adrenaline": 22
-        }
+        },
+        "id": 82
     },
     {
         "name": "Melanchaetas",
@@ -2716,7 +2812,8 @@
             "Lapis Lazuli": 13,
             "Water Seal": 6,
             "Flintstone": 1
-        }
+        },
+        "id": 75
     },
     {
         "name": "Melaneos",
@@ -2748,7 +2845,8 @@
             "Scale": 21,
             "Water Seal": 5,
             "Flintstone": 3
-        }
+        },
+        "id": 86
     },
     {
         "name": "Mercurialis`",
@@ -2772,7 +2870,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 168
     },
     {
         "name": "Mermereus",
@@ -2804,7 +2903,8 @@
             "Fang": 2,
             "Wool": 11,
             "Hemp": 1
-        }
+        },
+        "id": 65
     },
     {
         "name": "Mimas",
@@ -2832,7 +2932,8 @@
             "Fang": 1,
             "Hemp": 2,
             "Jute Patch": 4
-        }
+        },
+        "id": 62
     },
     {
         "name": "Minucius`",
@@ -2872,10 +2973,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 167
     },
     {
-        "name": "Monychustas *",
+        "name": "Monychustas",
         "level": 64,
         "gold": 0,
         "stats": {
@@ -2904,7 +3006,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 97
     },
     {
         "name": "Mooncruchers",
@@ -2932,7 +3035,8 @@
             "Wool": 1,
             "Hemp": 1,
             "Linen Strip": 11
-        }
+        },
+        "id": 29
     },
     {
         "name": "Mycandrilles`",
@@ -2968,7 +3072,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 159
     },
     {
         "name": "Nariths",
@@ -2988,7 +3093,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 31
     },
     {
         "name": "Opiehnzas",
@@ -3029,7 +3135,8 @@
             "Storm Rune": 18,
             "Tincture of Stamina": 2,
             "Potion of Perception": 2
-        }
+        },
+        "id": 54
     },
     {
         "name": "Oranius`",
@@ -3061,7 +3168,8 @@
                 "percent": 19
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 166
     },
     {
         "name": "Orlelds",
@@ -3077,7 +3185,8 @@
                 "percent": 5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 1
     },
     {
         "name": "Peragos",
@@ -3101,7 +3210,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 21
     },
     {
         "name": "Phalangens",
@@ -3113,7 +3223,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 78
     },
     {
         "name": "Pilatus`",
@@ -3137,7 +3248,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 176
     },
     {
         "name": "Poirins",
@@ -3161,7 +3273,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 39
     },
     {
         "name": "Pontius",
@@ -3201,7 +3314,8 @@
             "Dragon Scale": 15,
             "Amethyst": 13,
             "Crystal": 22
-        }
+        },
+        "id": 152
     },
     {
         "name": "Porcius`",
@@ -3233,7 +3347,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 184
     },
     {
         "name": "Primulus`",
@@ -3273,7 +3388,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 164
     },
     {
         "name": "Purmanns",
@@ -3309,7 +3425,8 @@
             "Bull's Horn": 1,
             "Garnet": 25,
             "Sulphur": 2
-        }
+        },
+        "id": 94
     },
     {
         "name": "Quintas",
@@ -3345,7 +3462,8 @@
             "Hydra Scale": 2,
             "Soul Essence": 45,
             "Sphinx Feather": 6
-        }
+        },
+        "id": 187
     },
     {
         "name": "Quintus",
@@ -3389,7 +3507,8 @@
             "Dragon Scale": 16,
             "Amethyst": 8,
             "Emerald": 2
-        }
+        },
+        "id": 144
     },
     {
         "name": "Rakrests",
@@ -3413,7 +3532,8 @@
                 "percent": 5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 14
     },
     {
         "name": "Rayols",
@@ -3441,7 +3561,8 @@
             "Fang": 12,
             "Wool": 1,
             "Linen Strip": 3
-        }
+        },
+        "id": 10
     },
     {
         "name": "Redos",
@@ -3465,7 +3586,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 24
     },
     {
         "name": "Reinkes",
@@ -3497,7 +3619,8 @@
             "Fang": 1,
             "Hemp": 9,
             "Jute Patch": 2
-        }
+        },
+        "id": 61
     },
     {
         "name": "Ronaldas",
@@ -3533,7 +3656,8 @@
             "Scale": 1,
             "Lapis Lazuli": 18,
             "Water Seal": 7
-        }
+        },
+        "id": 81
     },
     {
         "name": "Rynightes",
@@ -3557,7 +3681,8 @@
             "Hemp": 6,
             "Linen Strip": 5,
             "Silk Thread": 7
-        }
+        },
+        "id": 11
     },
     {
         "name": "Scribonius`",
@@ -3569,7 +3694,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 181
     },
     {
         "name": "Sebastianus`",
@@ -3616,7 +3742,8 @@
             "Sphinx Feather": 1,
             "Sugilite": 14,
             "Typhon Leather": 6
-        }
+        },
+        "id": 157
     },
     {
         "name": "Sentarions",
@@ -3648,7 +3775,8 @@
             "Bull's Horn": 14,
             "Garnet": 1,
             "Storm Rune": 7
-        }
+        },
+        "id": 108
     },
     {
         "name": "Sergius`",
@@ -3684,7 +3812,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 169
     },
     {
         "name": "Servius",
@@ -3716,7 +3845,8 @@
             "Dragon Scale": 8,
             "Amethyst": 31,
             "Emerald": 4
-        }
+        },
+        "id": 130
     },
     {
         "name": "Sextus",
@@ -3752,7 +3882,8 @@
             "Dragon Scale": 34,
             "Amethyst": 12,
             "Emerald": 1
-        }
+        },
+        "id": 131
     },
     {
         "name": "Shivas",
@@ -3775,7 +3906,8 @@
         "materials": {
             "Bull's Horn": 10,
             "Garnet": 35
-        }
+        },
+        "id": 106
     },
     {
         "name": "Silvanus",
@@ -3793,7 +3925,8 @@
         },
         "materials": {
             "Emerald": 54
-        }
+        },
+        "id": 140
     },
     {
         "name": "Skiterus",
@@ -3829,7 +3962,8 @@
             "Fang": 2,
             "Wool": 11,
             "Hemp": 1
-        }
+        },
+        "id": 68
     },
     {
         "name": "Solitanis",
@@ -3860,7 +3994,8 @@
         "materials": {
             "Hemp": 13,
             "Silk Thread": 1
-        }
+        },
+        "id": 64
     },
     {
         "name": "Sphingens",
@@ -3884,7 +4019,8 @@
             "Bull's Horn": 10,
             "Potion of Perception": 9,
             "Sulphur": 7
-        }
+        },
+        "id": 92
     },
     {
         "name": "Spurius",
@@ -3902,7 +4038,8 @@
         },
         "materials": {
             "Emerald": 52
-        }
+        },
+        "id": 132
     },
     {
         "name": "Stoybaers",
@@ -3939,7 +4076,8 @@
             "Tincture of Stamina": 10,
             "Potion of Perception": 1,
             "Sulphur": 1
-        }
+        },
+        "id": 103
     },
     {
         "name": "Sugos",
@@ -3963,7 +4101,8 @@
                 "percent": 4
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 22
     },
     {
         "name": "Tanias",
@@ -3987,7 +4126,8 @@
             "Wool": 1,
             "Linen Strip": 14,
             "Jute Patch": 1
-        }
+        },
+        "id": 34
     },
     {
         "name": "Tantus",
@@ -4023,7 +4163,8 @@
             "Bull's Horn": 11,
             "Storm Rune": 4,
             "Tincture of Stamina": 21
-        }
+        },
+        "id": 114
     },
     {
         "name": "Tellus",
@@ -4055,7 +4196,8 @@
             "Dragon Scale": 20,
             "Amethyst": 12,
             "Crystal": 19
-        }
+        },
+        "id": 143
     },
     {
         "name": "Thorstens",
@@ -4083,7 +4225,8 @@
             "Bull's Horn": 6,
             "Potion of Perception": 33,
             "Sulphur": 4
-        }
+        },
+        "id": 104
     },
     {
         "name": "Tiberius`",
@@ -4115,7 +4258,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 161
     },
     {
         "name": "Tinothiels",
@@ -4134,7 +4278,8 @@
         "materials": {
             "Hemp": 3,
             "Linen Strip": 7
-        }
+        },
+        "id": 32
     },
     {
         "name": "Titanius",
@@ -4170,7 +4315,8 @@
             "Dragon Scale": 23,
             "Amethyst": 14,
             "Emerald": 2
-        }
+        },
+        "id": 150
     },
     {
         "name": "Titus",
@@ -4202,7 +4348,8 @@
             "Emerald": 3,
             "Crystal": 29,
             "Obsidian": 8
-        }
+        },
+        "id": 134
     },
     {
         "name": "Trafans",
@@ -4234,10 +4381,12 @@
             "Garnet": 4,
             "Storm Rune": 6,
             "Tincture of Stamina": 6
-        }
+        },
+        "id": 53
     },
     {
-        "name": "Tàliths",
+        "id": 7,
+        "name": "Táliths",
         "level": 45,
         "gold": 0,
         "stats": {
@@ -4261,7 +4410,8 @@
         "materials": {}
     },
     {
-        "name": "TÃ»nÃªsÃ©s",
+        "id": 73,
+        "name": "Tûnêsés",
         "level": 33,
         "gold": 0,
         "stats": {
@@ -4296,7 +4446,8 @@
         },
         "materials": {
             "Storm Rune": 40
-        }
+        },
+        "id": 99
     },
     {
         "name": "Umfetas",
@@ -4328,7 +4479,8 @@
             "Scale": 12,
             "Water Seal": 2,
             "Flintstone": 1
-        }
+        },
+        "id": 80
     },
     {
         "name": "Umilawens",
@@ -4352,7 +4504,8 @@
             "Fang": 5,
             "Wool": 5,
             "Silk Thread": 5
-        }
+        },
+        "id": 48
     },
     {
         "name": "Uridos",
@@ -4384,7 +4537,8 @@
                 "percent": 28
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 51
     },
     {
         "name": "Ursus`",
@@ -4416,7 +4570,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 163
     },
     {
         "name": "Uróthiens",
@@ -4444,7 +4599,8 @@
             "Fang": 13,
             "Wool": 1,
             "Hemp": 1
-        }
+        },
+        "id": 38
     },
     {
         "name": "Valentinus`",
@@ -4472,7 +4628,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 165
     },
     {
         "name": "Valerius",
@@ -4496,7 +4653,8 @@
             "Dragon Scale": 6,
             "Amethyst": 47,
             "Crystal": 6
-        }
+        },
+        "id": 153
     },
     {
         "name": "Vergilius",
@@ -4518,7 +4676,8 @@
         },
         "materials": {
             "Emerald": 56
-        }
+        },
+        "id": 147
     },
     {
         "name": "Vuthiels",
@@ -4542,7 +4701,8 @@
             "Fang": 10,
             "Hemp": 1,
             "Silk Thread": 2
-        }
+        },
+        "id": 33
     },
     {
         "name": "Watzmanns",
@@ -4570,7 +4730,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 66
     },
     {
         "name": "Xenphlames",
@@ -4589,7 +4750,8 @@
         "materials": {
             "Storm Rune": 21,
             "Sulphur": 12
-        }
+        },
+        "id": 90
     },
     {
         "name": "Xus",
@@ -4617,10 +4779,11 @@
             "Hemp": 1,
             "Jute Patch": 12,
             "Silk Thread": 4
-        }
+        },
+        "id": 69
     },
     {
-        "name": "Yas *",
+        "name": "Yas",
         "level": 51,
         "gold": 0,
         "stats": {
@@ -4629,7 +4792,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 87
     },
     {
         "name": "Zeindras",
@@ -4661,7 +4825,8 @@
             "Fang": 6,
             "Wool": 2,
             "Linen Strip": 5
-        }
+        },
+        "id": 47
     },
     {
         "name": "Zickezackes",
@@ -4689,7 +4854,8 @@
             "Hemp": 1,
             "Jute Patch": 10,
             "Silk Thread": 3
-        }
+        },
+        "id": 63
     },
     {
         "name": "Zimbris",
@@ -4717,7 +4883,8 @@
             "Bull's Horn": 7,
             "Potion of Perception": 34,
             "Sulphur": 4
-        }
+        },
+        "id": 107
     },
     {
         "name": "Zombers",
@@ -4745,6 +4912,7 @@
             "Scale": 23,
             "Water Seal": 5,
             "Flintstone": 3
-        }
+        },
+        "id": 89
     }
 ]

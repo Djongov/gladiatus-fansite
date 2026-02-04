@@ -36,6 +36,8 @@ interface ApiItem {
   slot: string;
   item_type: string;
   conditioned: boolean;
+  prefix_id?: number;
+  suffix_id?: number;
   prefix_name?: string;
   suffix_name?: string;
   enchant?: {
@@ -116,15 +118,15 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
     return found as BaseItem || null;
   };
 
-  const findPrefix = (prefixName: string): PrefixSuffix | null => {
-    return (prefixesData as PrefixSuffix[]).find(
-      p => p.name.toLowerCase() === prefixName.toLowerCase()
+  const findPrefix = (prefixId: number): PrefixSuffix | null => {
+    return (prefixesData as any[]).find(
+      p => p.id === prefixId
     ) || null;
   };
 
-  const findSuffix = (suffixName: string): PrefixSuffix | null => {
-    return (suffixesData as PrefixSuffix[]).find(
-      s => s.name.toLowerCase() === suffixName.toLowerCase()
+  const findSuffix = (suffixId: number): PrefixSuffix | null => {
+    return (suffixesData as any[]).find(
+      s => s.id === suffixId
     ) || null;
   };
 
@@ -199,8 +201,8 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
           continue;
         }
 
-        const prefix = apiItem.prefix_name ? findPrefix(apiItem.prefix_name) : undefined;
-        const suffix = apiItem.suffix_name ? findSuffix(apiItem.suffix_name) : undefined;
+        const prefix = apiItem.prefix_id ? findPrefix(apiItem.prefix_id) : undefined;
+        const suffix = apiItem.suffix_id ? findSuffix(apiItem.suffix_id) : undefined;
         const rarity = mapRarity(apiItem.rarity);
 
         // Use conditioned value directly from API

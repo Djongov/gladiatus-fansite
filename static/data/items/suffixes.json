@@ -1,5 +1,77 @@
 [
     {
+        "id": 100,
+        "name": "+1",
+        "level": 1,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 101,
+        "name": "+2",
+        "level": 2,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 102,
+        "name": "+3",
+        "level": 3,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 103,
+        "name": "+4",
+        "level": 4,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 104,
+        "name": "+5",
+        "level": 5,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 105,
+        "name": "+6",
+        "level": 6,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 106,
+        "name": "+7",
+        "level": 7,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 107,
+        "name": "+8",
+        "level": 8,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
+        "id": 108,
+        "name": "+9",
+        "level": 9,
+        "gold": 0,
+        "stats": {},
+        "materials": {}
+    },
+    {
         "name": "of Accuracy",
         "level": 34,
         "gold": 100328,
@@ -11,7 +83,8 @@
         },
         "materials": {
             "Protection Rune": 20
-        }
+        },
+        "id": 191
     },
     {
         "name": "of Acheron",
@@ -35,7 +108,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 258
     },
     {
         "name": "of Aggression",
@@ -63,7 +137,8 @@
             "Poison Gland": 18,
             "Talisman of Power": 1,
             "Tincture of Enlightenment": 2
-        }
+        },
+        "id": 190
     },
     {
         "name": "of Agony",
@@ -83,7 +158,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 284
     },
     {
         "name": "of Alleluia",
@@ -105,7 +181,8 @@
         },
         "materials": {
             "Tincture of Enlightenment": 20
-        }
+        },
+        "id": 186
     },
     {
         "name": "of Angst",
@@ -125,7 +202,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 269
     },
     {
         "name": "of Anguish",
@@ -153,7 +231,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 283
     },
     {
         "name": "of Antiquity",
@@ -177,7 +256,8 @@
             "Velvet": 2,
             "Talisman of Power": 13,
             "Platinum": 3
-        }
+        },
+        "id": 178
     },
     {
         "name": "of Apprenticeship",
@@ -200,10 +280,11 @@
         "materials": {
             "Scorpion Poison": 11,
             "Stone of Fortune": 1
-        }
+        },
+        "id": 63
     },
     {
-        "name": "of Arrogance *",
+        "name": "of Arrogance",
         "level": 18,
         "gold": 0,
         "stats": {
@@ -216,7 +297,8 @@
                 "percent": -5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 64
     },
     {
         "name": "of Assassination",
@@ -240,7 +322,8 @@
             "Stone of Fortune": 1,
             "Scorpion Poison": 9,
             "Silver": 1
-        }
+        },
+        "id": 34
     },
     {
         "name": "of Attrition",
@@ -259,7 +342,8 @@
         "materials": {
             "Fur": 2,
             "Bone Splinter": 9
-        }
+        },
+        "id": 137
     },
     {
         "name": "of Balance",
@@ -291,7 +375,8 @@
             "Fur": 2,
             "Bone Splinter": 2,
             "Gauze Strip": 2
-        }
+        },
+        "id": 38
     },
     {
         "name": "of Baptism",
@@ -313,7 +398,8 @@
         },
         "materials": {
             "Amber": 17
-        }
+        },
+        "id": 171
     },
     {
         "name": "of Battle",
@@ -327,7 +413,8 @@
         },
         "materials": {
             "Scorpion Poison": 12
-        }
+        },
+        "id": 33
     },
     {
         "name": "of Belief",
@@ -351,7 +438,8 @@
             "Fur": 6,
             "Cotton Wool": 4,
             "Sapphire": 1
-        }
+        },
+        "id": 97
     },
     {
         "name": "of Benevolence",
@@ -374,7 +462,8 @@
         "materials": {
             "Tincture of Enlightenment": 21,
             "Velvet": 1
-        }
+        },
+        "id": 201
     },
     {
         "name": "of Blocking",
@@ -398,7 +487,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 206
     },
     {
         "name": "of Blood",
@@ -417,7 +507,8 @@
         "materials": {
             "Sapphire": 4,
             "Earth Totem": 4
-        }
+        },
+        "id": 40
     },
     {
         "name": "of Bondage",
@@ -444,7 +535,8 @@
         "materials": {
             "Hellstone": 20,
             "Jasper": 6
-        }
+        },
+        "id": 272
     },
     {
         "name": "of Boost",
@@ -467,7 +559,8 @@
         "materials": {
             "Antidote": 4,
             "Scorpion Poison": 9
-        }
+        },
+        "id": 90
     },
     {
         "name": "of Brightness",
@@ -479,7 +572,8 @@
                 "percent": 10
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 16
     },
     {
         "name": "of Brutality",
@@ -497,10 +591,11 @@
         },
         "materials": {
             "Bone Splinter": 12
-        }
+        },
+        "id": 31
     },
     {
-        "name": "of Caesar *",
+        "name": "of Caesar",
         "level": 35,
         "gold": 0,
         "stats": {
@@ -513,7 +608,8 @@
                 "percent": -3
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 194
     },
     {
         "name": "of Calling",
@@ -529,7 +625,8 @@
                 "percent": -2
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 179
     },
     {
         "name": "of Capriciousness",
@@ -548,7 +645,8 @@
         "materials": {
             "Fur": 6,
             "Bone Splinter": 3
-        }
+        },
+        "id": 124
     },
     {
         "name": "of Cerberus",
@@ -560,7 +658,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 261
     },
     {
         "name": "of Ceremony",
@@ -578,7 +677,8 @@
         },
         "materials": {
             "Sapphire": 11
-        }
+        },
+        "id": 138
     },
     {
         "name": "of Chakra",
@@ -597,7 +697,8 @@
         "materials": {
             "Fur": 8,
             "Bone Splinter": 4
-        }
+        },
+        "id": 142
     },
     {
         "name": "of Cleverness",
@@ -615,7 +716,8 @@
         },
         "materials": {
             "Amber": 12
-        }
+        },
+        "id": 144
     },
     {
         "name": "of Cold",
@@ -639,10 +741,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 241
     },
     {
-        "name": "of Concealment *",
+        "name": "of Concealment",
         "level": 14,
         "gold": 0,
         "stats": {
@@ -659,7 +762,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 125
     },
     {
         "name": "of Concentration",
@@ -681,7 +785,8 @@
         },
         "materials": {
             "Amber": 16
-        }
+        },
+        "id": 168
     },
     {
         "name": "of Conflict",
@@ -705,7 +810,8 @@
             "Bone Splinter": 6,
             "Gauze Strip": 3,
             "Earth Mark": 1
-        }
+        },
+        "id": 20
     },
     {
         "name": "of Confusion",
@@ -732,7 +838,8 @@
         "materials": {
             "Bone Splinter": 3,
             "Cotton Wool": 5
-        }
+        },
+        "id": 86
     },
     {
         "name": "of Consecration",
@@ -754,7 +861,8 @@
         },
         "materials": {
             "Sapphire": 9
-        }
+        },
+        "id": 123
     },
     {
         "name": "of Considerateness",
@@ -772,7 +880,8 @@
         },
         "materials": {
             "Tincture of Enlightenment": 21
-        }
+        },
+        "id": 195
     },
     {
         "name": "of Corniness",
@@ -786,7 +895,8 @@
         },
         "materials": {
             "Antidote": 14
-        }
+        },
+        "id": 158
     },
     {
         "name": "of Corrosion",
@@ -810,7 +920,8 @@
             "Amber": 1,
             "Scorpion Poison": 1,
             "Silver": 12
-        }
+        },
+        "id": 160
     },
     {
         "name": "of Courage",
@@ -826,10 +937,11 @@
                 "percent": 20
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 66
     },
     {
-        "name": "of Crime *",
+        "name": "of Crime",
         "level": 27,
         "gold": 0,
         "stats": {
@@ -842,10 +954,11 @@
                 "percent": 25
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 166
     },
     {
-        "name": "of Darkness *",
+        "name": "of Darkness",
         "level": 23,
         "gold": 0,
         "stats": {
@@ -858,7 +971,8 @@
                 "percent": -5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 45
     },
     {
         "name": "of Death",
@@ -885,7 +999,8 @@
         "materials": {
             "Poison Gland": 15,
             "Velvet": 4
-        }
+        },
+        "id": 196
     },
     {
         "name": "of Decapitation",
@@ -908,7 +1023,8 @@
         "materials": {
             "Fur": 2,
             "Gauze Strip": 6
-        }
+        },
+        "id": 121
     },
     {
         "name": "of Decay",
@@ -928,7 +1044,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 287
     },
     {
         "name": "of Delicacy",
@@ -956,7 +1073,8 @@
             "Amber": 3,
             "Stone of Fortune": 4,
             "Scorpion Poison": 1
-        }
+        },
+        "id": 96
     },
     {
         "name": "of Demolition",
@@ -980,7 +1098,8 @@
             "Fur": 2,
             "Gauze Strip": 7,
             "Sapphire": 1
-        }
+        },
+        "id": 133
     },
     {
         "name": "of Demons",
@@ -1004,7 +1123,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 266
     },
     {
         "name": "of Denomination",
@@ -1027,7 +1147,8 @@
         "materials": {
             "Talisman of Power": 3,
             "Tincture of Enlightenment": 15
-        }
+        },
+        "id": 177
     },
     {
         "name": "of Despair",
@@ -1054,7 +1175,8 @@
         "materials": {
             "Hellstone": 8,
             "Jasper": 10
-        }
+        },
+        "id": 246
     },
     {
         "name": "of Desperation",
@@ -1073,7 +1195,8 @@
         "materials": {
             "Fur": 4,
             "Sapphire": 6
-        }
+        },
+        "id": 30
     },
     {
         "name": "of Destruction",
@@ -1093,10 +1216,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 277
     },
     {
-        "name": "of Difficulty *",
+        "name": "of Difficulty",
         "level": 15,
         "gold": 0,
         "stats": {
@@ -1117,7 +1241,8 @@
                 "percent": -1
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 19
     },
     {
         "name": "of Diligence",
@@ -1136,7 +1261,8 @@
         "materials": {
             "Amber": 1,
             "Aquamarine": 8
-        }
+        },
+        "id": 44
     },
     {
         "name": "of Distraction",
@@ -1155,7 +1281,8 @@
         "materials": {
             "Gauze Strip": 6,
             "Earth Mark": 5
-        }
+        },
+        "id": 37
     },
     {
         "name": "of Division",
@@ -1179,7 +1306,8 @@
             "Amber": 2,
             "Scorpion Poison": 10,
             "Silver": 2
-        }
+        },
+        "id": 151
     },
     {
         "name": "of Dolour",
@@ -1215,7 +1343,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 248
     },
     {
         "name": "of Dominance",
@@ -1254,10 +1383,11 @@
         "materials": {
             "Totem of Healing": 1,
             "Essence of Reaction": 13
-        }
+        },
+        "id": 239
     },
     {
-        "name": "of Downfall *",
+        "name": "of Downfall",
         "level": 11,
         "gold": 0,
         "stats": {
@@ -1266,7 +1396,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 113
     },
     {
         "name": "of Dread",
@@ -1290,7 +1421,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 273
     },
     {
         "name": "of Dusk",
@@ -1310,7 +1442,8 @@
                 "percent": 5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 247
     },
     {
         "name": "of Earth",
@@ -1342,7 +1475,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 215
     },
     {
         "name": "of Ease",
@@ -1369,7 +1503,8 @@
         "materials": {
             "Diamond": 9,
             "Essence of Reaction": 5
-        }
+        },
+        "id": 210
     },
     {
         "name": "of Elimination",
@@ -1397,7 +1532,8 @@
             "Poison Gland": 17,
             "Velvet": 1,
             "Talisman of Power": 2
-        }
+        },
+        "id": 187
     },
     {
         "name": "of Emasculation",
@@ -1411,7 +1547,8 @@
         },
         "materials": {
             "Sapphire": 10
-        }
+        },
+        "id": 129
     },
     {
         "name": "of Endurance",
@@ -1435,7 +1572,8 @@
             "Amber": 7,
             "Scorpion Poison": 1,
             "Antidote": 4
-        }
+        },
+        "id": 32
     },
     {
         "name": "of Eradication",
@@ -1454,7 +1592,8 @@
         "materials": {
             "Gauze Strip": 5,
             "Earth Mark": 2
-        }
+        },
+        "id": 115
     },
     {
         "name": "of Escape",
@@ -1474,7 +1613,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 270
     },
     {
         "name": "of Evasion",
@@ -1498,10 +1638,11 @@
             "Amber": 1,
             "Aquamarine": 3,
             "Silver": 10
-        }
+        },
+        "id": 146
     },
     {
-        "name": "of Execution *",
+        "name": "of Execution",
         "level": 37,
         "gold": 0,
         "stats": {
@@ -1518,7 +1659,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 202
     },
     {
         "name": "of Expansion",
@@ -1542,10 +1684,11 @@
             "Amber": 6,
             "Scorpion Poison": 9,
             "Silver": 1
-        }
+        },
+        "id": 175
     },
     {
-        "name": "of Failure *",
+        "name": "of Failure",
         "level": 15,
         "gold": 0,
         "stats": {
@@ -1558,7 +1701,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 60
     },
     {
         "name": "of Fairness",
@@ -1577,7 +1721,8 @@
         "materials": {
             "Fur": 8,
             "Sapphire": 2
-        }
+        },
+        "id": 71
     },
     {
         "name": "of Faith",
@@ -1600,7 +1745,8 @@
         "materials": {
             "Jasper": 8,
             "Waters of Oblivion": 27
-        }
+        },
+        "id": 291
     },
     {
         "name": "of Fatuity",
@@ -1618,7 +1764,8 @@
         },
         "materials": {
             "Tincture of Enlightenment": 21
-        }
+        },
+        "id": 198
     },
     {
         "name": "of Favour",
@@ -1646,7 +1793,8 @@
             "Amber": 3,
             "Antidote": 7,
             "Bone Splinter": 1
-        }
+        },
+        "id": 78
     },
     {
         "name": "of Fear",
@@ -1665,7 +1813,8 @@
         "materials": {
             "Sapphire": 3,
             "Earth Mark": 3
-        }
+        },
+        "id": 2
     },
     {
         "name": "of Fire",
@@ -1696,7 +1845,8 @@
         "materials": {
             "Essence of Reaction": 1,
             "Phial of Charisma": 1
-        }
+        },
+        "id": 234
     },
     {
         "name": "of Fragmentation",
@@ -1724,7 +1874,8 @@
             "Amber": 1,
             "Aquamarine": 2,
             "Stone of Fortune": 11
-        }
+        },
+        "id": 157
     },
     {
         "name": "of Freedom",
@@ -1747,7 +1898,8 @@
         "materials": {
             "Velvet": 13,
             "Talisman of Power": 9
-        }
+        },
+        "id": 205
     },
     {
         "name": "of Generosity",
@@ -1771,7 +1923,8 @@
             "Fur": 4,
             "Bone Splinter": 4,
             "Sapphire": 2
-        }
+        },
+        "id": 72
     },
     {
         "name": "of Gloom",
@@ -1803,7 +1956,8 @@
                 "percent": -15
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 243
     },
     {
         "name": "of Glory",
@@ -1821,7 +1975,8 @@
         },
         "materials": {
             "Bone Splinter": 6
-        }
+        },
+        "id": 11
     },
     {
         "name": "of Grace",
@@ -1840,10 +1995,11 @@
         "materials": {
             "Fur": 4,
             "Gauze Strip": 2
-        }
+        },
+        "id": 6
     },
     {
-        "name": "of Greed *",
+        "name": "of Greed",
         "level": 15,
         "gold": 0,
         "stats": {
@@ -1852,7 +2008,8 @@
                 "percent": -5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 14
     },
     {
         "name": "of Harmony",
@@ -1871,7 +2028,8 @@
         "materials": {
             "Amber": 4,
             "Aquamarine": 8
-        }
+        },
+        "id": 70
     },
     {
         "name": "of Haste",
@@ -1890,7 +2048,8 @@
         "materials": {
             "Gauze Strip": 2,
             "Earth Mark": 10
-        }
+        },
+        "id": 42
     },
     {
         "name": "of Hate",
@@ -1909,7 +2068,8 @@
         "materials": {
             "Gauze Strip": 2,
             "Earth Mark": 10
-        }
+        },
+        "id": 1
     },
     {
         "name": "of Haughtiness",
@@ -1932,10 +2092,11 @@
         "materials": {
             "Bone Splinter": 6,
             "Fur": 5
-        }
+        },
+        "id": 59
     },
     {
-        "name": "of Healing *",
+        "name": "of Healing",
         "level": 38,
         "gold": 0,
         "stats": {
@@ -1948,7 +2109,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 204
     },
     {
         "name": "of Health",
@@ -1971,7 +2133,8 @@
         "materials": {
             "Amber": 9,
             "Antidote": 3
-        }
+        },
+        "id": 15
     },
     {
         "name": "of Heat",
@@ -1995,7 +2158,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 242
     },
     {
         "name": "of Heaven",
@@ -2023,7 +2187,8 @@
             "Velvet": 7,
             "Protection Rune": 12,
             "Tincture of Enlightenment": 2
-        }
+        },
+        "id": 77
     },
     {
         "name": "of Hell",
@@ -2051,7 +2216,8 @@
             "Diamond": 8,
             "Totem of Healing": 2,
             "Bronze": 14
-        }
+        },
+        "id": 76
     },
     {
         "name": "of Hellfire",
@@ -2065,7 +2231,8 @@
         },
         "materials": {
             "Waters of Oblivion": 38
-        }
+        },
+        "id": 290
     },
     {
         "name": "of Hesitation",
@@ -2089,7 +2256,8 @@
             "Fur": 2,
             "Cotton Wool": 5,
             "Earth Mark": 2
-        }
+        },
+        "id": 79
     },
     {
         "name": "of Hindrance",
@@ -2113,7 +2281,8 @@
             "Cotton Wool": 4,
             "Gauze Strip": 3,
             "Earth Mark": 3
-        }
+        },
+        "id": 88
     },
     {
         "name": "of Holiness",
@@ -2131,7 +2300,8 @@
         },
         "materials": {
             "Sapphire": 8
-        }
+        },
+        "id": 120
     },
     {
         "name": "of Homunculus",
@@ -2150,7 +2320,8 @@
         "materials": {
             "Scorpion Poison": 1,
             "Antidote": 16
-        }
+        },
+        "id": 173
     },
     {
         "name": "of Honour",
@@ -2169,7 +2340,8 @@
         "materials": {
             "Fur": 9,
             "Sapphire": 1
-        }
+        },
+        "id": 35
     },
     {
         "name": "of Hope",
@@ -2192,7 +2364,8 @@
         "materials": {
             "Totem of Healing": 4,
             "Phial of Charisma": 4
-        }
+        },
+        "id": 221
     },
     {
         "name": "of Hypocrisy",
@@ -2215,7 +2388,8 @@
         "materials": {
             "Talisman of Power": 6,
             "Tincture of Enlightenment": 13
-        }
+        },
+        "id": 183
     },
     {
         "name": "of Ignorance",
@@ -2233,7 +2407,8 @@
         },
         "materials": {
             "Antidote": 15
-        }
+        },
+        "id": 161
     },
     {
         "name": "of Illusion",
@@ -2260,10 +2435,11 @@
         "materials": {
             "Amber": 4,
             "Aquamarine": 3
-        }
+        },
+        "id": 74
     },
     {
-        "name": "of Inadequacy *",
+        "name": "of Inadequacy",
         "level": 19,
         "gold": 0,
         "stats": {
@@ -2272,10 +2448,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 140
     },
     {
-        "name": "of Incompetence *",
+        "name": "of Incompetence",
         "level": 15,
         "gold": 0,
         "stats": {
@@ -2284,7 +2461,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 68
     },
     {
         "name": "of Independence",
@@ -2316,7 +2494,8 @@
             "Amber": 3,
             "Stone of Fortune": 1,
             "Antidote": 7
-        }
+        },
+        "id": 80
     },
     {
         "name": "of Inevitability",
@@ -2332,7 +2511,8 @@
                 "percent": 11
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 128
     },
     {
         "name": "of Ingenuity",
@@ -2348,7 +2528,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 207
     },
     {
         "name": "of Inquisitiveness",
@@ -2366,7 +2547,8 @@
         },
         "materials": {
             "Sapphire": 7
-        }
+        },
+        "id": 114
     },
     {
         "name": "of Insanity",
@@ -2393,7 +2575,8 @@
         "materials": {
             "Totem of Healing": 23,
             "Essence of Reaction": 1
-        }
+        },
+        "id": 236
     },
     {
         "name": "of Inspiration",
@@ -2411,7 +2594,8 @@
         },
         "materials": {
             "Amber": 14
-        }
+        },
+        "id": 153
     },
     {
         "name": "of Insult",
@@ -2439,7 +2623,8 @@
             "Fur": 1,
             "Bone Splinter": 6,
             "Gauze Strip": 1
-        }
+        },
+        "id": 84
     },
     {
         "name": "of Invisibility",
@@ -2458,7 +2643,8 @@
         "materials": {
             "Cotton Wool": 1,
             "Sapphire": 7
-        }
+        },
+        "id": 119
     },
     {
         "name": "of Judgement",
@@ -2486,7 +2672,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 254
     },
     {
         "name": "of Knowledge",
@@ -2504,7 +2691,8 @@
         },
         "materials": {
             "Amber": 17
-        }
+        },
+        "id": 174
     },
     {
         "name": "of Languor",
@@ -2531,7 +2719,8 @@
         "materials": {
             "Waters of Oblivion": 10,
             "Hellstone": 14
-        }
+        },
+        "id": 274
     },
     {
         "name": "of Learning",
@@ -2555,7 +2744,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 81
     },
     {
         "name": "of Life",
@@ -2569,7 +2759,8 @@
         },
         "materials": {
             "Amber": 15
-        }
+        },
+        "id": 23
     },
     {
         "name": "of Light",
@@ -2583,7 +2774,8 @@
         },
         "materials": {
             "Aquamarine": 13
-        }
+        },
+        "id": 24
     },
     {
         "name": "of Liturgy",
@@ -2595,7 +2787,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 111
     },
     {
         "name": "of Looseness",
@@ -2609,7 +2802,8 @@
         },
         "materials": {
             "Bone Splinter": 6
-        }
+        },
+        "id": 110
     },
     {
         "name": "of Love",
@@ -2631,7 +2825,8 @@
         },
         "materials": {
             "Totem of Healing": 30
-        }
+        },
+        "id": 224
     },
     {
         "name": "of Madness",
@@ -2651,7 +2846,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 29
     },
     {
         "name": "of Magic",
@@ -2667,7 +2863,8 @@
                 "percent": 10
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 26
     },
     {
         "name": "of Magnificence",
@@ -2691,7 +2888,8 @@
             "Amber": 2,
             "Aquamarine": 4,
             "Antidote": 6
-        }
+        },
+        "id": 82
     },
     {
         "name": "of Magnitude",
@@ -2707,7 +2905,8 @@
                 "percent": 5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 67
     },
     {
         "name": "of Malediction",
@@ -2726,7 +2925,8 @@
         "materials": {
             "Fur": 4,
             "Sapphire": 5
-        }
+        },
+        "id": 39
     },
     {
         "name": "of Malice",
@@ -2744,7 +2944,8 @@
         },
         "materials": {
             "Talisman of Power": 20
-        }
+        },
+        "id": 98
     },
     {
         "name": "of Marriage",
@@ -2763,7 +2964,8 @@
         "materials": {
             "Amber": 9,
             "Scorpion Poison": 7
-        }
+        },
+        "id": 164
     },
     {
         "name": "of Mars",
@@ -2782,7 +2984,8 @@
         "materials": {
             "Poison Gland": 12,
             "Talisman of Power": 7
-        }
+        },
+        "id": 181
     },
     {
         "name": "of Martial Arts",
@@ -2806,7 +3009,8 @@
             "Fur": 2,
             "Bone Splinter": 1,
             "Gauze Strip": 8
-        }
+        },
+        "id": 130
     },
     {
         "name": "of Masculinity",
@@ -2834,7 +3038,8 @@
             "Amber": 2,
             "Aquamarine": 1,
             "Stone of Fortune": 2
-        }
+        },
+        "id": 148
     },
     {
         "name": "of Meat",
@@ -2863,7 +3068,8 @@
             "Bone Splinter": 1,
             "Gauze Strip": 8,
             "Sapphire": 1
-        }
+        },
+        "id": 136
     },
     {
         "name": "of Melting",
@@ -2891,7 +3097,8 @@
             "Fur": 7,
             "Bone Splinter": 1,
             "Gauze Strip": 1
-        }
+        },
+        "id": 127
     },
     {
         "name": "of Mercury",
@@ -2915,7 +3122,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 256
     },
     {
         "name": "of Mercy",
@@ -2934,7 +3142,8 @@
         "materials": {
             "Talisman of Power": 9,
             "Tincture of Enlightenment": 9
-        }
+        },
+        "id": 176
     },
     {
         "name": "of Merit",
@@ -2958,7 +3167,8 @@
             "Amber": 4,
             "Aquamarine": 9,
             "Scorpion Poison": 1
-        }
+        },
+        "id": 154
     },
     {
         "name": "of Misery",
@@ -2978,7 +3188,8 @@
                 "percent": -35
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 245
     },
     {
         "name": "of Mourning",
@@ -2996,7 +3207,8 @@
         },
         "materials": {
             "Sapphire": 9
-        }
+        },
+        "id": 69
     },
     {
         "name": "of Mystery",
@@ -3014,7 +3226,8 @@
         },
         "materials": {
             "Scorpion Poison": 13
-        }
+        },
+        "id": 83
     },
     {
         "name": "of Night",
@@ -3033,7 +3246,8 @@
         "materials": {
             "Hellstone": 5,
             "Shadow Rune": 27
-        }
+        },
+        "id": 250
     },
     {
         "name": "of Normality",
@@ -3047,7 +3261,8 @@
         },
         "materials": {
             "Sapphire": 7
-        }
+        },
+        "id": 43
     },
     {
         "name": "of Nostalgia",
@@ -3066,10 +3281,11 @@
         "materials": {
             "Bone Splinter": 5,
             "Earth Mark": 7
-        }
+        },
+        "id": 139
     },
     {
-        "name": "of Obsession *",
+        "name": "of Obsession",
         "level": 20,
         "gold": 0,
         "stats": {
@@ -3082,7 +3298,8 @@
                 "percent": -5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 27
     },
     {
         "name": "of Ordinance",
@@ -3100,7 +3317,8 @@
         },
         "materials": {
             "Sapphire": 10
-        }
+        },
+        "id": 132
     },
     {
         "name": "of Orion",
@@ -3114,7 +3332,8 @@
         },
         "materials": {
             "Tincture of Enlightenment": 19
-        }
+        },
+        "id": 185
     },
     {
         "name": "of Pain",
@@ -3137,7 +3356,8 @@
         "materials": {
             "Bone Splinter": 4,
             "Earth Mark": 6
-        }
+        },
+        "id": 3
     },
     {
         "name": "of Pandemic",
@@ -3160,7 +3380,8 @@
         "materials": {
             "Amber": 10,
             "Silver": 3
-        }
+        },
+        "id": 150
     },
     {
         "name": "of Passion",
@@ -3183,7 +3404,8 @@
         "materials": {
             "Stone of Fortune": 3,
             "Scorpion Poison": 7
-        }
+        },
+        "id": 85
     },
     {
         "name": "of Peace",
@@ -3197,7 +3419,8 @@
         },
         "materials": {
             "Amber": 12
-        }
+        },
+        "id": 8
     },
     {
         "name": "of Perdition",
@@ -3216,10 +3439,11 @@
         "materials": {
             "Scorpion Poison": 4,
             "Silver": 8
-        }
+        },
+        "id": 145
     },
     {
-        "name": "of Perfection *",
+        "name": "of Perfection",
         "level": 30,
         "gold": 0,
         "stats": {
@@ -3232,7 +3456,8 @@
                 "percent": 10
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 10
     },
     {
         "name": "of Peril",
@@ -3256,7 +3481,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 268
     },
     {
         "name": "of Poison",
@@ -3284,7 +3510,8 @@
             "Amber": 1,
             "Stone of Fortune": 1,
             "Scorpion Poison": 10
-        }
+        },
+        "id": 87
     },
     {
         "name": "of Power",
@@ -3303,7 +3530,8 @@
         "materials": {
             "Scorpion Poison": 11,
             "Antidote": 1
-        }
+        },
+        "id": 9
     },
     {
         "name": "of Pressure",
@@ -3327,7 +3555,8 @@
             "Velvet": 11,
             "Talisman of Power": 9,
             "Platinum": 1
-        }
+        },
+        "id": 193
     },
     {
         "name": "of Prevention",
@@ -3351,7 +3580,8 @@
             "Velvet": 4,
             "Talisman of Power": 2,
             "Platinum": 13
-        }
+        },
+        "id": 182
     },
     {
         "name": "of Pride",
@@ -3375,7 +3605,8 @@
             "Fur": 4,
             "Bone Splinter": 2,
             "Sapphire": 2
-        }
+        },
+        "id": 13
     },
     {
         "name": "of Promise",
@@ -3411,7 +3642,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 220
     },
     {
         "name": "of Protection",
@@ -3430,7 +3662,8 @@
         "materials": {
             "Amber": 1,
             "Antidote": 14
-        }
+        },
+        "id": 36
     },
     {
         "name": "of Purity",
@@ -3453,7 +3686,8 @@
         "materials": {
             "Amber": 11,
             "Aquamarine": 4
-        }
+        },
+        "id": 159
     },
     {
         "name": "of Purposefulness",
@@ -3472,7 +3706,8 @@
         "materials": {
             "Amber": 5,
             "Scorpion Poison": 12
-        }
+        },
+        "id": 170
     },
     {
         "name": "of Qualm",
@@ -3496,7 +3731,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 244
     },
     {
         "name": "of Rapidity",
@@ -3510,7 +3746,8 @@
         },
         "materials": {
             "Earth Mark": 7
-        }
+        },
+        "id": 17
     },
     {
         "name": "of Readiness",
@@ -3529,7 +3766,8 @@
         "materials": {
             "Earth Mark": 4,
             "Sapphire": 2
-        }
+        },
+        "id": 21
     },
     {
         "name": "of Recovery",
@@ -3547,7 +3785,8 @@
         },
         "materials": {
             "Tincture of Enlightenment": 20
-        }
+        },
+        "id": 189
     },
     {
         "name": "of Regeneration",
@@ -3571,10 +3810,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 192
     },
     {
-        "name": "of Regret *",
+        "name": "of Regret",
         "level": 10,
         "gold": 0,
         "stats": {
@@ -3587,7 +3827,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 112
     },
     {
         "name": "of Religiousness",
@@ -3609,7 +3850,8 @@
         },
         "materials": {
             "Sapphire": 11
-        }
+        },
+        "id": 141
     },
     {
         "name": "of Reprisal",
@@ -3623,7 +3865,8 @@
         },
         "materials": {
             "Bone Splinter": 7
-        }
+        },
+        "id": 118
     },
     {
         "name": "of Restitution",
@@ -3641,7 +3884,8 @@
         },
         "materials": {
             "Amber": 10
-        }
+        },
+        "id": 165
     },
     {
         "name": "of Retreat",
@@ -3660,7 +3904,8 @@
         "materials": {
             "Antidote": 11,
             "Silver": 1
-        }
+        },
+        "id": 92
     },
     {
         "name": "of Retribution",
@@ -3683,7 +3928,8 @@
         "materials": {
             "Bronze": 22,
             "Quartz": 2
-        }
+        },
+        "id": 232
     },
     {
         "name": "of Return",
@@ -3701,7 +3947,8 @@
         },
         "materials": {
             "Amber": 12
-        }
+        },
+        "id": 91
     },
     {
         "name": "of Revenge",
@@ -3715,7 +3962,8 @@
         },
         "materials": {
             "Scorpion Poison": 12
-        }
+        },
+        "id": 12
     },
     {
         "name": "of Reversion",
@@ -3733,7 +3981,8 @@
         },
         "materials": {
             "Cotton Wool": 10
-        }
+        },
+        "id": 131
     },
     {
         "name": "of Rigor Mortis",
@@ -3751,7 +4000,8 @@
         },
         "materials": {
             "Tincture of Enlightenment": 19
-        }
+        },
+        "id": 180
     },
     {
         "name": "of Riot",
@@ -3783,7 +4033,8 @@
             "Amber": 3,
             "Aquamarine": 1,
             "Scorpion Poison": 6
-        }
+        },
+        "id": 99
     },
     {
         "name": "of Rivalry",
@@ -3807,7 +4058,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 229
     },
     {
         "name": "of Sacrament",
@@ -3834,7 +4086,8 @@
         "materials": {
             "Amber": 11,
             "Scorpion Poison": 2
-        }
+        },
+        "id": 147
     },
     {
         "name": "of Sacrifice",
@@ -3848,7 +4101,8 @@
         },
         "materials": {
             "Antidote": 16
-        }
+        },
+        "id": 167
     },
     {
         "name": "of Satisfaction",
@@ -3867,7 +4121,8 @@
         "materials": {
             "Bone Splinter": 8,
             "Sapphire": 1
-        }
+        },
+        "id": 93
     },
     {
         "name": "of Security",
@@ -3886,7 +4141,8 @@
         "materials": {
             "Amber": 2,
             "Antidote": 11
-        }
+        },
+        "id": 94
     },
     {
         "name": "of Self-Assurance",
@@ -3900,7 +4156,8 @@
         },
         "materials": {
             "Bone Splinter": 10
-        }
+        },
+        "id": 134
     },
     {
         "name": "of Self-Discipline",
@@ -3918,7 +4175,8 @@
         },
         "materials": {
             "Antidote": 14
-        }
+        },
+        "id": 155
     },
     {
         "name": "of Shrieks",
@@ -3934,7 +4192,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 249
     },
     {
         "name": "of Sickness",
@@ -3953,7 +4212,8 @@
         "materials": {
             "Protection Rune": 12,
             "Talisman of Power": 9
-        }
+        },
+        "id": 197
     },
     {
         "name": "of Silence",
@@ -3967,7 +4227,8 @@
         },
         "materials": {
             "Stone of Fortune": 12
-        }
+        },
+        "id": 89
     },
     {
         "name": "of Skill",
@@ -3986,10 +4247,11 @@
         "materials": {
             "Gauze Strip": 3,
             "Earth Mark": 3
-        }
+        },
+        "id": 5
     },
     {
-        "name": "of Slaughtering *",
+        "name": "of Slaughtering",
         "level": 25,
         "gold": 0,
         "stats": {
@@ -4002,7 +4264,8 @@
                 "percent": -5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 22
     },
     {
         "name": "of Solitude",
@@ -4025,7 +4288,8 @@
         "materials": {
             "Diamond": 9,
             "Totem of Healing": 24
-        }
+        },
+        "id": 253
     },
     {
         "name": "of Spiritual Superiority",
@@ -4043,7 +4307,8 @@
         },
         "materials": {
             "Amber": 15
-        }
+        },
+        "id": 162
     },
     {
         "name": "of Spirituality",
@@ -4065,7 +4330,8 @@
         },
         "materials": {
             "Sapphire": 9
-        }
+        },
+        "id": 126
     },
     {
         "name": "of Spreader",
@@ -4089,7 +4355,8 @@
             "Aquamarine": 10,
             "Scorpion Poison": 6,
             "Silver": 2
-        }
+        },
+        "id": 169
     },
     {
         "name": "of Stamina",
@@ -4103,7 +4370,8 @@
         },
         "materials": {
             "Tincture of Enlightenment": 20
-        }
+        },
+        "id": 188
     },
     {
         "name": "of Stars",
@@ -4119,7 +4387,8 @@
                 "percent": 2
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 18
     },
     {
         "name": "of Stone",
@@ -4135,7 +4404,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 265
     },
     {
         "name": "of Strength",
@@ -4155,7 +4425,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 230
     },
     {
         "name": "of Success",
@@ -4173,7 +4444,8 @@
         },
         "materials": {
             "Bone Splinter": 9
-        }
+        },
+        "id": 61
     },
     {
         "name": "of Suffering",
@@ -4192,10 +4464,11 @@
         "materials": {
             "Aquamarine": 7,
             "Silver": 9
-        }
+        },
+        "id": 163
     },
     {
-        "name": "of Superiority *",
+        "name": "of Superiority",
         "level": 32,
         "gold": 0,
         "stats": {
@@ -4208,10 +4481,11 @@
                 "percent": 22
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 184
     },
     {
-        "name": "of Suspicion *",
+        "name": "of Suspicion",
         "level": 15,
         "gold": 0,
         "stats": {
@@ -4220,7 +4494,8 @@
                 "percent": -4
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 95
     },
     {
         "name": "of Tartarus",
@@ -4236,10 +4511,11 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 263
     },
     {
-        "name": "of Tears *",
+        "name": "of Tears",
         "level": 10,
         "gold": 0,
         "stats": {
@@ -4248,7 +4524,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 25
     },
     {
         "name": "of Terror",
@@ -4272,7 +4549,8 @@
             "Amber": 2,
             "Scorpion Poison": 4,
             "Antidote": 6
-        }
+        },
+        "id": 58
     },
     {
         "name": "of the Abyss",
@@ -4284,7 +4562,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 275
     },
     {
         "name": "of the Amazons",
@@ -4303,7 +4582,8 @@
         "materials": {
             "Aquamarine": 9,
             "Scorpion Poison": 9
-        }
+        },
+        "id": 172
     },
     {
         "name": "of the Apparition",
@@ -4323,7 +4603,8 @@
                 "percent": -15
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 282
     },
     {
         "name": "of the Behemoth",
@@ -4347,7 +4628,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 259
     },
     {
         "name": "of the Blessed",
@@ -4374,7 +4656,8 @@
         "materials": {
             "Bone Splinter": 1,
             "Sapphire": 9
-        }
+        },
+        "id": 135
     },
     {
         "name": "of the Chasm",
@@ -4397,7 +4680,8 @@
         "materials": {
             "Waters of Oblivion": 1,
             "Jasper": 46
-        }
+        },
+        "id": 293
     },
     {
         "name": "of the Clouds",
@@ -4416,10 +4700,11 @@
         "materials": {
             "Gauze Strip": 4,
             "Sapphire": 4
-        }
+        },
+        "id": 48
     },
     {
-        "name": "of the Creature *",
+        "name": "of the Creature",
         "level": 14,
         "gold": 0,
         "stats": {
@@ -4428,7 +4713,8 @@
                 "percent": 2
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 41
     },
     {
         "name": "of the Critical Strike",
@@ -4452,7 +4738,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 208
     },
     {
         "name": "of the Curse",
@@ -4483,7 +4770,8 @@
         "materials": {
             "Diamond": 9,
             "Totem of Healing": 3
-        }
+        },
+        "id": 223
     },
     {
         "name": "of the Cursed",
@@ -4507,10 +4795,11 @@
             "Amber": 1,
             "Aquamarine": 1,
             "Antidote": 12
-        }
+        },
+        "id": 56
     },
     {
-        "name": "of the Damned *",
+        "name": "of the Damned",
         "level": 35,
         "gold": 0,
         "stats": {
@@ -4523,7 +4812,8 @@
                 "percent": -2
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 54
     },
     {
         "name": "of the Deep",
@@ -4551,7 +4841,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 278
     },
     {
         "name": "of the Dragon",
@@ -4579,7 +4870,8 @@
             "Essence of Reaction": 4,
             "Phial of Charisma": 1,
             "Bronze": 20
-        }
+        },
+        "id": 237
     },
     {
         "name": "of the Dream",
@@ -4599,7 +4891,8 @@
                 "percent": 21
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 276
     },
     {
         "name": "of the Druid",
@@ -4626,7 +4919,8 @@
         "materials": {
             "Waters of Oblivion": 38,
             "Cerberus Pelt": 2
-        }
+        },
+        "id": 292
     },
     {
         "name": "of the Elysian Fields",
@@ -4654,7 +4948,8 @@
             "Diamond": 18,
             "Totem of Healing": 4,
             "Essence of Reaction": 2
-        }
+        },
+        "id": 240
     },
     {
         "name": "of the Flesh Wound",
@@ -4677,7 +4972,8 @@
         "materials": {
             "Talisman of Power": 1,
             "Tincture of Enlightenment": 1
-        }
+        },
+        "id": 199
     },
     {
         "name": "of the Gods",
@@ -4697,7 +4993,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 289
     },
     {
         "name": "of the Hills",
@@ -4716,7 +5013,8 @@
         "materials": {
             "Fur": 3,
             "Sapphire": 5
-        }
+        },
+        "id": 51
     },
     {
         "name": "of the Hydra",
@@ -4732,7 +5030,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 262
     },
     {
         "name": "of the Inferno",
@@ -4764,7 +5063,8 @@
             "Waters of Oblivion": 19,
             "Cerberus Pelt": 5,
             "Hellstone": 10
-        }
+        },
+        "id": 279
     },
     {
         "name": "of the Moment",
@@ -4778,7 +5078,8 @@
         },
         "materials": {
             "Antidote": 12
-        }
+        },
+        "id": 143
     },
     {
         "name": "of the Moon",
@@ -4802,7 +5103,8 @@
             "Bone Splinter": 5,
             "Sapphire": 3,
             "Earth Mark": 3
-        }
+        },
+        "id": 47
     },
     {
         "name": "of the Mountains",
@@ -4821,7 +5123,8 @@
         "materials": {
             "Bone Splinter": 5,
             "Sapphire": 5
-        }
+        },
+        "id": 52
     },
     {
         "name": "of the Parade",
@@ -4849,7 +5152,8 @@
             "Amber": 1,
             "Aquamarine": 4,
             "Scorpion Poison": 1
-        }
+        },
+        "id": 149
     },
     {
         "name": "of the Phantom",
@@ -4869,7 +5173,8 @@
                 "percent": -5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 252
     },
     {
         "name": "of the Plague",
@@ -4896,7 +5201,8 @@
         "materials": {
             "Totem of Healing": 6,
             "Essence of Reaction": 2
-        }
+        },
+        "id": 285
     },
     {
         "name": "of the Rain",
@@ -4915,7 +5221,8 @@
         "materials": {
             "Sapphire": 4,
             "Earth Mark": 4
-        }
+        },
+        "id": 49
     },
     {
         "name": "of the Safe Parade",
@@ -4943,7 +5250,8 @@
             "Velvet": 8,
             "Protection Rune": 1,
             "Talisman of Power": 2
-        }
+        },
+        "id": 200
     },
     {
         "name": "of the Sea",
@@ -4967,7 +5275,8 @@
             "Gauze Strip": 3,
             "Sapphire": 2,
             "Earth Mark": 2
-        }
+        },
+        "id": 53
     },
     {
         "name": "of the Shadows",
@@ -4987,7 +5296,8 @@
                 "percent": 24
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 255
     },
     {
         "name": "of the Snake",
@@ -5011,7 +5321,8 @@
                 "percent": -40
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 271
     },
     {
         "name": "of the Soul",
@@ -5027,7 +5338,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 257
     },
     {
         "name": "of the Sphinx",
@@ -5051,7 +5363,8 @@
                 "percent": 17
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 288
     },
     {
         "name": "of the Spirit",
@@ -5074,7 +5387,8 @@
         "materials": {
             "Cuprit": 5,
             "Jasper": 27
-        }
+        },
+        "id": 251
     },
     {
         "name": "of the Sun",
@@ -5093,7 +5407,8 @@
         "materials": {
             "Amber": 2,
             "Aquamarine": 11
-        }
+        },
+        "id": 46
     },
     {
         "name": "of the Undead",
@@ -5116,7 +5431,8 @@
         "materials": {
             "Aquamarine": 5,
             "Stone of Fortune": 4
-        }
+        },
+        "id": 55
     },
     {
         "name": "of the Unknown",
@@ -5139,10 +5455,11 @@
         "materials": {
             "Waters of Oblivion": 16,
             "Hellstone": 17
-        }
+        },
+        "id": 260
     },
     {
-        "name": "of the Vanquishers *",
+        "name": "of the Vanquishers",
         "level": 40,
         "gold": 0,
         "stats": {
@@ -5151,7 +5468,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 209
     },
     {
         "name": "of the Victim",
@@ -5173,7 +5491,8 @@
         },
         "materials": {
             "Antidote": 16
-        }
+        },
+        "id": 75
     },
     {
         "name": "of the Woods",
@@ -5197,10 +5516,11 @@
             "Bone Splinter": 6,
             "Gauze Strip": 2,
             "Earth Mark": 1
-        }
+        },
+        "id": 50
     },
     {
-        "name": "of Thorns *",
+        "name": "of Thorns",
         "level": 30,
         "gold": 0,
         "stats": {
@@ -5213,7 +5533,8 @@
                 "percent": -1
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 28
     },
     {
         "name": "of Tightrope Walk",
@@ -5232,7 +5553,8 @@
         "materials": {
             "Scorpion Poison": 5,
             "Antidote": 8
-        }
+        },
+        "id": 152
     },
     {
         "name": "of Torment",
@@ -5251,7 +5573,8 @@
         "materials": {
             "Waters of Oblivion": 9,
             "Hellstone": 25
-        }
+        },
+        "id": 281
     },
     {
         "name": "of Torsion",
@@ -5271,7 +5594,8 @@
                 "percent": 15
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 280
     },
     {
         "name": "of Torture",
@@ -5291,7 +5615,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 286
     },
     {
         "name": "of Total Defence",
@@ -5323,7 +5648,8 @@
             "Velvet": 7,
             "Protection Rune": 1,
             "Talisman of Power": 1
-        }
+        },
+        "id": 203
     },
     {
         "name": "of Transition",
@@ -5339,7 +5665,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 264
     },
     {
         "name": "of Triumph",
@@ -5351,7 +5678,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 122
     },
     {
         "name": "of Triviality",
@@ -5378,10 +5706,11 @@
         "materials": {
             "Totem of Healing": 7,
             "Essence of Reaction": 6
-        }
+        },
+        "id": 218
     },
     {
-        "name": "of Trouble *",
+        "name": "of Trouble",
         "level": 14,
         "gold": 0,
         "stats": {
@@ -5394,7 +5723,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 62
     },
     {
         "name": "of Truth",
@@ -5418,7 +5748,8 @@
                 "percent": 0
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 222
     },
     {
         "name": "of Vigour",
@@ -5430,7 +5761,8 @@
                 "percent": 10
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 4
     },
     {
         "name": "of Violence",
@@ -5449,7 +5781,8 @@
         "materials": {
             "Scorpion Poison": 6,
             "Antidote": 6
-        }
+        },
+        "id": 65
     },
     {
         "name": "of Virtuousness",
@@ -5467,10 +5800,11 @@
         },
         "materials": {
             "Amber": 14
-        }
+        },
+        "id": 156
     },
     {
-        "name": "of War *",
+        "name": "of War",
         "level": 30,
         "gold": 0,
         "stats": {
@@ -5479,7 +5813,8 @@
                 "percent": 5
             }
         },
-        "materials": {}
+        "materials": {},
+        "id": 7
     },
     {
         "name": "of Warning",
@@ -5503,14 +5838,16 @@
             "Bone Splinter": 6,
             "Cotton Wool": 2,
             "Gauze Strip": 2
-        }
+        },
+        "id": 73
     },
     {
-        "name": "of Weakness *",
+        "name": "of Weakness",
         "level": 10,
         "gold": 0,
         "stats": {},
-        "materials": {}
+        "materials": {},
+        "id": 57
     },
     {
         "name": "of Willpower",
@@ -5534,7 +5871,8 @@
             "Fur": 1,
             "Cotton Wool": 1,
             "Earth Mark": 5
-        }
+        },
+        "id": 116
     },
     {
         "name": "of Wings",
@@ -5557,7 +5895,8 @@
         "materials": {
             "Jasper": 1,
             "Shadow Rune": 27
-        }
+        },
+        "id": 267
     },
     {
         "name": "of Wounds",
@@ -5575,6 +5914,7 @@
         },
         "materials": {
             "Sapphire": 7
-        }
+        },
+        "id": 117
     }
 ]

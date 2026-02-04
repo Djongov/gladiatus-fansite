@@ -165,7 +165,9 @@ export function calculateItemStats(
   };
 
   // Build full item name
-  const fullName = [prefix?.name, baseItem.name, suffix?.name].filter(Boolean).join(' ');
+  // Level-only suffixes (IDs 100-108: "+1" through "+9") should not appear in name
+  const suffixName = suffix && (suffix as any).id >= 100 && (suffix as any).id <= 108 ? undefined : suffix?.name;
+  const fullName = [prefix?.name, baseItem.name, suffixName].filter(Boolean).join(' ');
 
   // Calculate damage (if weapon) - using Gladiatus damage formulas
   let damage: { min: number; max: number } | undefined;
