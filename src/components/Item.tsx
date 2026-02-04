@@ -9,7 +9,7 @@ import type { Upgrade, AppliedUpgrade } from './CharacterPlanner/useCharacterSta
 export interface BaseItem {
   id?: string;
   name: string;
-  type: 'weapons' | 'shields' | 'armor' | 'helmets' | 'gloves' | 'shoes' | 'rings' | 'amulets';
+  type: 'weapons' | 'shields' | 'armour' | 'helmets' | 'gloves' | 'shoes' | 'rings' | 'amulets';
   level: number | null;
   damageMin?: number;
   damageMax?: number;
@@ -249,7 +249,7 @@ export function calculateItemStats(
       const flooredCalculated = Math.floor(calculatedArmor);
       
       // Add flat armor from prefix/suffix AFTER flooring
-      const rawFlatArmor = ((prefix?.stats?.armor?.flat || 0) + (suffix?.stats?.armor?.flat || 0));
+      const rawFlatArmor = ((prefix?.stats?.armour?.flat || 0) + (suffix?.stats?.armour?.flat || 0));
       let totalBaseArmor: number;
       
       if (baseItem.type === 'gloves') {
@@ -318,7 +318,7 @@ export function calculateItemStats(
   }
 
   // Extract armor, health, and damage for separate display (shown before regular stats)
-  const prefixArmor = statsMap['armor']?.flat || 0;
+  const prefixArmor = statsMap['armour']?.flat || 0;
   const prefixHealth = statsMap['health']?.flat || 0;
   const prefixDamage = statsMap['damage']?.flat || 0;
   
@@ -349,7 +349,7 @@ export function calculateItemStats(
   const stats: Array<{ name: string; flat: number; percent: number }> = [];
   
   // Define stat order as in-game: Damage first, then Armor (for weapons), then Strength, Dexterity, Agility, Constitution, Charisma, Intelligence, then others
-  const statOrder = ['damage', 'armor', 'strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
+  const statOrder = ['damage', 'armour', 'strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
                      'critical_hit', 'double_hit', 'avoid_critical_hit', 'avoid_double_hit', 
                      'block_chance', 'healing'];
   
@@ -360,7 +360,7 @@ export function calculateItemStats(
       if (stat === 'health' || stat === 'damage') return false;
       // Only exclude armor if the item has base armor (armor pieces)
       // For weapons/jewelry, armor from prefix/suffix should be shown in stats
-      if (stat === 'armor' && baseItem.armour !== null && baseItem.armour !== undefined) return false;
+      if (stat === 'armour' && baseItem.armour !== null && baseItem.armour !== undefined) return false;
       return true;
     })
     .sort(([a], [b]) => {
@@ -457,7 +457,7 @@ export default function Item({
   const calculateUpgradeBonus = (upgrade: Upgrade, level: number): number => {
     if (upgrade.type === 'powder') {
       return level; // Powders: level is the direct bonus amount
-    } else if (upgrade.stat === 'damage' || upgrade.stat === 'armor') {
+    } else if (upgrade.stat === 'damage' || upgrade.stat === 'armour') {
       return Math.ceil(level / 5); // Grindstone/Protective gear: level / 5, round up
     }
     return 0;
@@ -522,7 +522,7 @@ export default function Item({
           {calculatedStats.armour && <div>Armour {calculatedStats.armour > 0 ? '+' : ''}{calculatedStats.armour}</div>}
           
           {/* Display armor from prefix/suffix first */}
-          {calculatedStats.stats.filter(stat => stat.name === 'Armor').map((stat, index) => (
+          {calculatedStats.stats.filter(stat => stat.name === 'Armour').map((stat, index) => (
             <div key={`${stat.name}-${index}`}>
               {stat.name}
               {stat.flat !== 0 && ` ${stat.flat > 0 ? '+' : ''}${stat.flat}`}
@@ -535,7 +535,7 @@ export default function Item({
           )}
           
           {/* Display other stats from prefix/suffix */}
-          {calculatedStats.stats.filter(stat => stat.name !== 'Armor').map((stat, index) => {
+          {calculatedStats.stats.filter(stat => stat.name !== 'Armour').map((stat, index) => {
             const actualValue = calculateActualStatValue(stat.name, stat.percent);
             
             return (
@@ -550,7 +550,7 @@ export default function Item({
 
           {enchantValue && (
             <div className={styles.enchant}>
-              +{enchantValue} {resolvedBaseItem.type === 'weapons' ? 'Damage' : 'Armor'}
+              +{enchantValue} {resolvedBaseItem.type === 'weapons' ? 'Damage' : 'Armour'}
             </div>
           )}
 

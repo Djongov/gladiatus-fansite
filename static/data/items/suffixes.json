@@ -76,7 +76,7 @@
         "level": 34,
         "gold": 100328,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 206,
                 "percent": 0
             }
@@ -210,7 +210,7 @@
         "level": 59,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 392,
                 "percent": 0
             },
@@ -421,7 +421,7 @@
         "level": 18,
         "gold": 30559,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -519,7 +519,7 @@
                 "flat": -8,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 348,
                 "percent": 0
             },
@@ -547,7 +547,7 @@
                 "flat": 1,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 40,
                 "percent": 0
             },
@@ -822,7 +822,7 @@
                 "flat": -1,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -888,7 +888,7 @@
         "level": 24,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 125,
                 "percent": 0
             }
@@ -1224,7 +1224,7 @@
         "level": 15,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 10,
                 "percent": 0
             },
@@ -1454,7 +1454,7 @@
                 "flat": 5,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 300,
                 "percent": 0
             },
@@ -1487,7 +1487,7 @@
                 "flat": 2,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 200,
                 "percent": 0
             },
@@ -1555,7 +1555,7 @@
         "level": 20,
         "gold": 38409,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 30,
                 "percent": 0
             },
@@ -1772,7 +1772,7 @@
         "level": 20,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -1935,7 +1935,7 @@
                 "flat": 7,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 368,
                 "percent": 0
             },
@@ -2117,7 +2117,7 @@
         "level": 20,
         "gold": 38409,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 10,
                 "percent": 0
             },
@@ -2141,7 +2141,7 @@
         "level": 52,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 300,
                 "percent": 0
             },
@@ -2166,7 +2166,7 @@
         "level": 35,
         "gold": 58110,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 300,
                 "percent": 0
             },
@@ -2199,7 +2199,7 @@
                 "flat": 5,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 200,
                 "percent": 0
             },
@@ -2239,7 +2239,7 @@
         "level": 15,
         "gold": 25782,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 35,
                 "percent": 0
             },
@@ -2264,7 +2264,7 @@
         "level": 15,
         "gold": 41250,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 20,
                 "percent": 0
             },
@@ -2308,7 +2308,7 @@
         "level": 29,
         "gold": 77025,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 164,
                 "percent": 0
             },
@@ -2396,7 +2396,7 @@
         "level": 25,
         "gold": 39860,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 125,
                 "percent": 0
             },
@@ -2469,7 +2469,7 @@
         "level": 20,
         "gold": 42928,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -2502,7 +2502,7 @@
         "level": 15,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 93,
                 "percent": 0
             },
@@ -2731,7 +2731,7 @@
                 "flat": 1,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 40,
                 "percent": 0
             },
@@ -2871,7 +2871,7 @@
         "level": 20,
         "gold": 54225,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 60,
                 "percent": 0
             },
@@ -3175,7 +3175,7 @@
         "level": 52,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 389,
                 "percent": 0
             },
@@ -3392,7 +3392,7 @@
                 "flat": 1,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 50,
                 "percent": 0
             },
@@ -3518,7 +3518,7 @@
         "level": 20,
         "gold": 56484,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 10,
                 "percent": 0
             },
@@ -3617,7 +3617,7 @@
                 "flat": 2,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 200,
                 "percent": 0
             },
@@ -3650,7 +3650,7 @@
         "level": 25,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 150,
                 "percent": 0
             },
@@ -3892,7 +3892,7 @@
         "level": 20,
         "gold": 49706,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 200,
                 "percent": 0
             },
@@ -3970,7 +3970,7 @@
         "level": 16,
         "gold": 43750,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 80,
                 "percent": 0
             },
@@ -4012,7 +4012,7 @@
                 "flat": 2,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -4045,7 +4045,7 @@
                 "flat": 3,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 200,
                 "percent": 0
             },
@@ -4094,7 +4094,7 @@
         "level": 27,
         "gold": 74271,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 124,
                 "percent": 0
             }
@@ -4129,7 +4129,7 @@
         "level": 21,
         "gold": 52212,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -4164,7 +4164,7 @@
         "level": 23,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 132,
                 "percent": 0
             },
@@ -4200,7 +4200,7 @@
         "level": 36,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 203,
                 "percent": 0
             },
@@ -4272,7 +4272,7 @@
         "level": 55,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 400,
                 "percent": 0
             },
@@ -4532,7 +4532,7 @@
         "level": 20,
         "gold": 45187,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -4750,7 +4750,7 @@
                 "flat": 4,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 250,
                 "percent": 0
             },
@@ -4778,7 +4778,7 @@
         "level": 23,
         "gold": 54739,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -4899,7 +4899,7 @@
         "level": 75,
         "gold": 193957,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 398,
                 "percent": 0
             },
@@ -4927,7 +4927,7 @@
         "level": 51,
         "gold": 98263,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 400,
                 "percent": 0
             },
@@ -5042,7 +5042,7 @@
                 "flat": 8,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 382,
                 "percent": 0
             },
@@ -5071,7 +5071,7 @@
         "level": 20,
         "gold": 56484,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 115,
                 "percent": 0
             }
@@ -5287,7 +5287,7 @@
                 "flat": 4,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 345,
                 "percent": 0
             },
@@ -5350,7 +5350,7 @@
                 "flat": 4,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 398,
                 "percent": 0
             },
@@ -5463,7 +5463,7 @@
         "level": 40,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 240,
                 "percent": 0
             }
@@ -5524,7 +5524,7 @@
         "level": 30,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 100,
                 "percent": 0
             },
@@ -5541,7 +5541,7 @@
         "level": 22,
         "gold": 39825,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 130,
                 "percent": 0
             },
@@ -5602,7 +5602,7 @@
         "level": 60,
         "gold": 177163,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 304,
                 "percent": 0
             },
@@ -5656,7 +5656,7 @@
         "level": 56,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 354,
                 "percent": 0
             },
@@ -5673,7 +5673,7 @@
         "level": 13,
         "gold": 0,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 66,
                 "percent": 0
             }
@@ -5769,7 +5769,7 @@
         "level": 20,
         "gold": 47447,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 40,
                 "percent": 0
             },
@@ -5825,7 +5825,7 @@
                 "flat": 1,
                 "percent": 0
             },
-            "armor": {
+            "armour": {
                 "flat": 25,
                 "percent": 0
             },
@@ -5854,7 +5854,7 @@
         "level": 12,
         "gold": 32634,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 57,
                 "percent": 0
             },
@@ -5879,7 +5879,7 @@
         "level": 57,
         "gold": 180979,
         "stats": {
-            "armor": {
+            "armour": {
                 "flat": 324,
                 "percent": 0
             },

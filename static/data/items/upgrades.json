@@ -11,7 +11,7 @@
     "name": "Yellow powder",
     "type": "powder",
     "stat": "dexterity",
-    "applicableTo": ["weapons", "shields", "armor", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
+    "applicableTo": ["weapons", "shields", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
     "permanent": true,
     "description": "Permanently increases Dexterity"
   },
@@ -19,7 +19,7 @@
     "name": "Green powder",
     "type": "powder",
     "stat": "agility",
-    "applicableTo": ["weapons", "shields", "armor", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
+    "applicableTo": ["weapons", "shields", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
     "permanent": true,
     "description": "Permanently increases Agility"
   },
@@ -27,7 +27,7 @@
     "name": "Orange powder",
     "type": "powder",
     "stat": "constitution",
-    "applicableTo": ["weapons", "shields", "armor", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
+    "applicableTo": ["weapons", "shields", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
     "permanent": true,
     "description": "Permanently increases Constitution"
   },
@@ -35,7 +35,7 @@
     "name": "Violet powder",
     "type": "powder",
     "stat": "charisma",
-    "applicableTo": ["weapons", "shields", "armor", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
+    "applicableTo": ["weapons", "shields", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
     "permanent": true,
     "description": "Permanently increases Charisma"
   },
@@ -43,7 +43,7 @@
     "name": "Red powder",
     "type": "powder",
     "stat": "intelligence",
-    "applicableTo": ["weapons", "shields", "armor", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
+    "applicableTo": ["weapons", "shields", "armour", "helmets", "gloves", "shoes", "amulets", "rings"],
     "permanent": true,
     "description": "Permanently increases Intelligence"
   },
@@ -58,9 +58,9 @@
   {
     "name": "Protective gear",
     "type": "enchant",
-    "stat": "armor",
-    "applicableTo": ["shields", "armor", "helmets", "gloves", "shoes"],
+    "stat": "armour",
+    "applicableTo": ["shields", "armour", "helmets", "gloves", "shoes"],
     "permanent": true,
-    "description": "Permanently increases armor"
+    "description": "Permanently increases armour"
   }
 ]

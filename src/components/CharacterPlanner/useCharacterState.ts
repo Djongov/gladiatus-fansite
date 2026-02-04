@@ -6,7 +6,7 @@ export type ItemSlotType = 'helmet' | 'amulet' | 'chest' | 'gloves' | 'mainHand'
 export interface Upgrade {
   name: string;
   type: 'powder' | 'enchant';
-  stat: 'strength' | 'dexterity' | 'agility' | 'constitution' | 'charisma' | 'intelligence' | 'damage' | 'armor';
+  stat: 'strength' | 'dexterity' | 'agility' | 'constitution' | 'charisma' | 'intelligence' | 'damage' | 'armour';
   applicableTo: string[];
   permanent: boolean;
   description: string;
@@ -80,13 +80,13 @@ export interface CharacterState {
  * Calculate stat bonus from an upgrade based on its level
  * - Powders: level is the direct bonus amount (user enters the stat value)
  * - Grindstone (damage): level / 5 (round up)
- * - Protective gear (armor): level / 5 (round up)
+ * - Protective gear (armour): level / 5 (round up)
  */
 function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
   if (upgrade.type === 'powder') {
     // Powders: level field contains the direct bonus amount
     return level;
-  } else if (upgrade.stat === 'damage' || upgrade.stat === 'armor') {
+  } else if (upgrade.stat === 'damage' || upgrade.stat === 'armour') {
     // Grindstone and Protective gear: level / 5, round up
     return Math.ceil(level / 5);
   }
@@ -336,7 +336,7 @@ export function useCharacterState(): CharacterState {
           
           if (appliedUpgrade.upgrade.stat === 'damage') {
             enchantDamageBonus += bonus;
-          } else if (appliedUpgrade.upgrade.stat === 'armor') {
+          } else if (appliedUpgrade.upgrade.stat === 'armour') {
             enchantArmorBonus += bonus;
           } else {
             // Powder stats (strength, dexterity, etc.)
