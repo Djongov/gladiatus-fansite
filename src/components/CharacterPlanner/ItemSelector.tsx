@@ -91,10 +91,11 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
   }, [availableSuffixes, suffixSearch]);
 
   // Get available upgrades for the selected item type
+  // Only show powders in upgrades list (enchants like Grindstone/Protective gear have their own field)
   const availableUpgrades = useMemo(() => {
     if (!selectedBase) return [];
     return (upgradesData as Upgrade[]).filter(upgrade => 
-      upgrade.applicableTo.includes(selectedBase.type)
+      upgrade.applicableTo.includes(selectedBase.type) && upgrade.type === 'powder'
     );
   }, [selectedBase]);
 
@@ -317,22 +318,26 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                   </label>
                 </div>
 
-                {/* Enchant Value */}
-                <div className={styles.customField}>
-                  <label htmlFor="enchant-input">
-                    Enchant {selectedBase.type === 'weapons' ? '(Grindstone +Damage)' : '(Protective gear +Armor)'}:
-                  </label>
-                  <input
-                    id="enchant-input"
-                    type="number"
-                    min="0"
-                    max="999"
-                    value={enchantValue}
-                    onChange={(e) => setEnchantValue(Number(e.target.value))}
-                    className={styles.numberInput}
-                    placeholder="0"
-                  />
-                </div>
+                {/* Enchant Value - only for weapons and armor pieces (not amulets/rings) */}
+                {selectedBase.type !== 'amulets' && selectedBase.type !== 'rings' && (
+                  <div className={styles.customField}>
+                    <label htmlFor="enchant-input">
+                      Enchant {selectedBase.type === 'weapons' ? '(Grindstone +Damage)' : '(Protective gear +Armor)'}:
+                    </label>
+                    <input
+                      id="enchant-input"
+                      type="number"
+                      min="0"
+                      max="999"
+                      value={enchantValue}
+                      onChange={(e) => setEnchantValue(Number(e.target.value))}
+                      className={styles.numberInput}
+                      placeholder="0"
+                      disabled={selectedUpgrades.length > 0}
+                      title={selectedUpgrades.length > 0 ? 'Cannot use enchant when powders are applied' : ''}
+                    />
+                  </div>
+                )}
 
                 {/* Upgrades (Powders, etc.) */}
                 {availableUpgrades.length > 0 && (
@@ -342,6 +347,8 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                       {availableUpgrades.map((upgrade) => {
                         const existingUpgrade = selectedUpgrades.find(u => u.upgrade.name === upgrade.name);
                         const isSelected = !!existingUpgrade;
+                        const isPowderDisabled = enchantValue > 0;
+                        const statName = upgrade.stat.charAt(0).toUpperCase() + upgrade.stat.slice(1);
                         
                         return (
                           <div key={upgrade.name} className={styles.upgradeRow}>
@@ -349,6 +356,7 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                               <input
                                 type="checkbox"
                                 checked={isSelected}
+                                disabled={isPowderDisabled}
                                 onChange={(e) => {
                                   if (e.target.checked) {
                                     setSelectedUpgrades([...selectedUpgrades, { upgrade, level: 1 }]);
@@ -356,14 +364,15 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                                     setSelectedUpgrades(selectedUpgrades.filter(u => u.upgrade.name !== upgrade.name));
                                   }
                                 }}
+                                title={isPowderDisabled ? 'Cannot use powders when enchant is applied' : ''}
                               />
-                              {' '}{upgrade.name}
+                              {' '}{upgrade.name} ({statName})
                             </label>
                             {isSelected && (
                               <input
                                 type="number"
                                 min="1"
-                                max="150"
+                                max="999"
                                 value={existingUpgrade.level}
                                 onChange={(e) => {
                                   const newLevel = Number(e.target.value);
@@ -376,7 +385,8 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                                   );
                                 }}
                                 className={styles.upgradeLevel}
-                                placeholder="Level"
+                                placeholder="Bonus"
+                                title="Enter the stat bonus amount (e.g., 12 for +12)"
                               />
                             )}
                           </div>

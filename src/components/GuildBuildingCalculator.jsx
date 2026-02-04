@@ -13,7 +13,8 @@ export default function GuildBuildingCalculator() {
     templumFrom: 0, templumTo: '',
     trainingGroundsFrom: 0, trainingGroundsTo: '',
     villaMediciFrom: 0, villaMediciTo: '',
-    discount: 0
+    discount: 0,
+    additionalDiscount: 0
   };
 
   const [buildings, setBuildings] = useState(initialBuildings);
@@ -50,7 +51,9 @@ export default function GuildBuildingCalculator() {
   };
 
   const calculateBuildings = () => {
-    const reduc = 0.03 * buildings.discount;
+    const centurionsReduc = 0.03 * buildings.discount;
+    const additionalReduc = 0.10 * buildings.additionalDiscount;
+    const reduc = centurionsReduc + additionalReduc - (centurionsReduc * additionalReduc);
 
     const forum = costBuilding(buildings.forumFrom, buildings.forumTo, 1.2, 6.5, reduc);
     const bathhouse = costBuilding(buildings.bathhouseFrom, buildings.bathhouseTo, 3.3, 4.5, reduc);
@@ -123,13 +126,34 @@ export default function GuildBuildingCalculator() {
             </tr>
           ))}
           <tr>
-            <td>Discount (%)</td>
+            <td>Centurions Discount (%)</td>
             <td colSpan="2">
               <select id="discount" value={buildings.discount} onChange={handleChange}>
                 {Array.from({ length: 11 }, (_, i) => <option key={i} value={i}>{i * 3}%</option>)}
               </select>
             </td>
-            <td>{results.discountCost}</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Additional Discount (%)</td>
+            <td colSpan="2">
+              <select id="additionalDiscount" value={buildings.additionalDiscount} onChange={handleChange}>
+                {Array.from({ length: 5 }, (_, i) => <option key={i} value={i}>{i * 10}%</option>)}
+              </select>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Total Discount Savings</td>
+            <td colSpan="2"></td>
+            <td>
+                <img 
+                    src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif" 
+                    alt="Gold" 
+                    style={{ width: '16px', verticalAlign: 'middle', marginRight: '4px' }} 
+                />
+                {results.discountCost}
+            </td>
           </tr>
           <tr>
             <td colSpan="2"></td>

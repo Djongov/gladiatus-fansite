@@ -78,14 +78,14 @@ export interface CharacterState {
 
 /**
  * Calculate stat bonus from an upgrade based on its level
- * - Powders: level / 7 (round down)
+ * - Powders: level is the direct bonus amount (user enters the stat value)
  * - Grindstone (damage): level / 5 (round up)
  * - Protective gear (armor): level / 5 (round up)
  */
 function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
   if (upgrade.type === 'powder') {
-    // Powders: level / 7, round down
-    return Math.floor(level / 7);
+    // Powders: level field contains the direct bonus amount
+    return level;
   } else if (upgrade.stat === 'damage' || upgrade.stat === 'armor') {
     // Grindstone and Protective gear: level / 5, round up
     return Math.ceil(level / 5);

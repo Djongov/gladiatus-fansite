@@ -19,6 +19,11 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ### 04.02.2026
 
+- Gameforge announced a surprise event coming with discount on guild buildings. Never seen before. So adapted the Guild Buildings calculator
+- Fixed char planner issue where protective gear and poweders were not offered to respective slots or taken into account
+
+### 03.02.2026
+
 - I've been making huge progresses towards the itemization and character planner. Too much to put here. Progress has been great!
 
 ### 19.01.2026

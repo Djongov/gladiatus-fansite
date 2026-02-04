@@ -453,7 +453,7 @@ export default function Item({
   // Helper function to calculate upgrade bonus
   const calculateUpgradeBonus = (upgrade: Upgrade, level: number): number => {
     if (upgrade.type === 'powder') {
-      return Math.floor(level / 7); // Powders: level / 7, round down
+      return level; // Powders: level is the direct bonus amount
     } else if (upgrade.stat === 'damage' || upgrade.stat === 'armor') {
       return Math.ceil(level / 5); // Grindstone/Protective gear: level / 5, round up
     }
@@ -550,6 +550,19 @@ export default function Item({
               +{enchantValue} {resolvedBaseItem.type === 'weapons' ? 'Damage' : 'Armor'}
             </div>
           )}
+
+          {/* Display upgrades (powders) */}
+          {upgrades && upgrades.length > 0 && upgrades.map((appliedUpgrade, index) => {
+            const bonus = calculateUpgradeBonus(appliedUpgrade.upgrade, appliedUpgrade.level);
+            const statName = appliedUpgrade.upgrade.stat.charAt(0).toUpperCase() + appliedUpgrade.upgrade.stat.slice(1);
+            const actualValue = calculateActualStatValue(statName, 0); // Powders are flat bonuses
+            
+            return (
+              <div key={`upgrade-${index}`} className={styles.enchant}>
+                {statName} +{bonus}
+              </div>
+            );
+          })}
 
           <div className={`${styles.level} ${isItemUnusable ? styles.unusableLevel : ''}`}>
             Level {calculatedStats.level}
