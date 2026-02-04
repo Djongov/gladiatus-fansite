@@ -4,6 +4,7 @@ sidebar_class_name: hidden
 
 import React, { useState, useEffect } from 'react';
 import Item, { calculateItemStats } from '@site/src/components/Item';
+import ForgingGood from '@site/src/components/ForgingGood';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
@@ -215,6 +216,24 @@ export const ItemPlanner = () => {
   const prefix = prefixesData.find(p => p.name === selectedPrefix);
   const suffix = suffixesData.find(s => s.name === selectedSuffix);
   
+  // Calculate combined materials cost
+  const combinedMaterials = {};
+  if (baseItem && baseItem.materials) {
+    Object.entries(baseItem.materials).forEach(([material, quantity]) => {
+      combinedMaterials[material] = (combinedMaterials[material] || 0) + quantity;
+    });
+  }
+  if (prefix && prefix.materials) {
+    Object.entries(prefix.materials).forEach(([material, quantity]) => {
+      combinedMaterials[material] = (combinedMaterials[material] || 0) + quantity;
+    });
+  }
+  if (suffix && suffix.materials) {
+    Object.entries(suffix.materials).forEach(([material, quantity]) => {
+      combinedMaterials[material] = (combinedMaterials[material] || 0) + quantity;
+    });
+  }
+  
   const prefixOptions = [
     { value: '', label: 'None' },
     ...prefixesData.map(p => ({ value: p.name, label: `${p.name} (${p.level})` }))
@@ -368,6 +387,42 @@ export const ItemPlanner = () => {
               );
             })}
           </div>
+          
+          {Object.keys(combinedMaterials).length > 0 && (
+            <div style={{ marginTop: '40px' }}>
+              <h3>Materials Cost (still formula how these are calculated is missing)</h3>
+              <div style={{ 
+                display: 'flex', 
+                gap: '15px', 
+                flexWrap: 'wrap',
+                alignItems: 'center'
+              }}>
+                {Object.entries(combinedMaterials)
+                  .sort(([, a], [, b]) => b - a)
+                  .map(([material, quantity]) => (
+                  <div key={material} style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '8px',
+                    padding: '8px 12px',
+                    border: '1px solid var(--ifm-color-emphasis-200)',
+                    borderRadius: '4px',
+                    backgroundColor: 'var(--ifm-color-emphasis-100)'
+                  }}>
+                    <span style={{ 
+                      fontWeight: 'bold', 
+                      fontSize: '16px',
+                      minWidth: '25px',
+                      textAlign: 'right'
+                    }}>
+                      {quantity}×
+                    </span>
+                    <ForgingGood name={material} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
       

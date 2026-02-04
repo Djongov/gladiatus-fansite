@@ -373,7 +373,7 @@ Defeating Dis Pater is no easy job but the reward is here. The moment you kill h
 
 ![Dis Pater Hard Costume stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Dis_Pater_hard_Costume_stats.png "Dis Pater Hard Costume stats")
 
-**+1 free Training point. Make sure to spend it on your most expensive stat (probably Charisma)**
+`+1 free Training point. Make sure to spend it on your most expensive stat (probably Dexterity)`
 
 Read more about the details of the costume in **[Dis Pater Hard Costume](/costumes/underworld-costumes#hard-costume "Dis Pater Hard Costume")**
 

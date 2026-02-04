@@ -22,39 +22,229 @@ sidebar_class_name: hidden
 
 ## Actions Log (these are moved to the front page since 12.11.2018)
 
+### 16.08.2021
+
+- I am regurarly taking care of the website and its updates and security
+
+### 05.06.2020
+
+- It has been a while - Logged in to update the website core
+- Updated the website's plugins too
+- I am in negotiation with a group of fans who want to volunteer to develop the site with new info
+
+### 02.12.2019
+
+- Added a few suffix and prefix images that were missing (sent from fans)
+- Updated the website's plugins
+
+### 22.10.2019
+
+- Implemented Microsoft Azure CDN to help speed up the website delivery
+- Changed hosting server to a faster one with m2 gen4 SSD storage and local database
+- Overall the performance of the website should be significantly increased
+
+### 19.09.2019
+
+- Added a Translate function to the website which will translate the website actively and is pretty cool! Let me know on my email if there is a language missing! My email on the [About me](/about-me "About me") page
+
+### 19.08.2019
+
+- Finally fixed the footer of the website. Not a big deal but good to have it.
+- Updated the Website logs with the changes
+- Added the Imperator on the front page above the news
+
+### 14.08.2019
+
+- Implemented a Cookie consent form to comply with GDPR
+- Added security headers server-side according to best practices
+
+### 12.08.2019
+
+- We finally have the name and stats of the Last boss in the game - Antenocitius from [Mona Isle](/expeditions/britannia-expeditions/mona-isle "Mona Isle"). Check them out. Huge thanks to [WladimiraPutina](https://s201-de.gladiatus.gameforge.com/game/index.php?mod=player&p=15764&sh=d41d8cd98f00b204e9800998ecf8427e "WladimiraPutina from DE201"). Here is a [screenshot](https://gladiatusfansite.blob.core.windows.net/images/Expeditions/Britannia/Mona_Isle/Antenocitius_kill.jpeg "Mona Isle Boss kill - Antenocitius") of his kill. He said it took him a lot of effort to do it on Level 200
+- Made some optimizations on the server side for more resilience and security
+
+### 06.08.2019
+
+- Changed the background color of the website to a little warmer color - #D5C19A
+
+### 05.08.2019
+
+- Updated a couple of prefixes and suffixes
+- Made some changes on the Events page
+
+### 31.07.2019
+
+- Added a Paypal Donate button to the front page. For anyone who would like to support the running of the website. Thank you in advance!
+- Added a number of prefixes and suffixes provided by fans. Sorry for the delay.
+
+### 27.04.2019
+
+- Due to the increased popularity and hits on the Training Calculator and some fan requests. I will be:
+  - Adding further discount available. Right now the only discount in the calculator is the Training Grounds. People wanted me to add further discount for events, costumes, bunnies etc. I have done this now
+  - Have some bugs still like: Neptune not calculating properly and the Discounted gold (only optic)
+
+### 26.03.2019
+
+- I am not having luck with my hosting of the website so far as i know had 3 days of downtime without even noticing. I am now implementing a monitoring that can alert me.
+
+### 14.3.2019
+
+- Really sorry guys for the expired SSL certificate causing errors for half a month! I now have an early warning in place for this kind of issues. Really silly of me. Apologies
+
+### 11.02.2019
+
+- Updated the website CMS to the latest version
+
+### 22.01.2019
+
+- Had some issues the other day with the hosting server losing its private IP which lead to several hours of downtime. Hope it won't happened again, i did some precautions
+
+### 31.12.2018
+
+- Added a massive amount of missing prefix and suffix images
+
+### 10.12.2018
+
+- Fan requested to have top constitution suffix category. Did it, turned out only 4 suffixes are notable for having any meaningful % of Constitution (for now)
+- Also fixed some mistakes on the Formulas page as well as Items
+
+### 02.12.2018
+
+- Migration is now complete. There was a few hours of downtime on the site due to simple dns mistake on my part. Apologies for that. All should be back to normal now.
+
+### 28.11.2018
+
+- Added a lot of missing prefixes and suffixes thanks to the Prefixes and Suffixes thread in the official forum. Not all have been added as some need translating and I just don't have the time do it so please people if you want to help, give me translated stats in the same format as you see them on the site
+- I am planning on migrating the website to a new hosting on Friday (30.11.2018) during the day
+
+### 18.11.2018
+
+- Changed the Expeditions and Dungeon menus on the main menu to reflect the real ones used in the game. Thanks to DarkThanos for the files
+
 ### 12.11.2018
 
+- I finally dinged level 120 and fought in the Alpha & Omega dungeon!!! I also immediately created the Dungeon page
+- Go check the [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega") dungeon page
 - Had a break from Gladiatus in general and from the fanpage. Only minor updates and keeping the site updated and healthy
-
 - 2 weeks ago i returned to Gladiatus to ding level 120 and to finish the Alpha & Omega page. Just did that (2 hours)
+
+### 09.11.2018
+
+- Updated site CMS to latest version
+
+### 03.11.2018
+
+- Small updates on a couple of pages
+
+### 22.10.2018
+
+- Updated the Desert Nightmare event page with better resolution images
+
+### 08.10.2018
+
+- Fixed mistakes in the Africanus prefix
+
+### 24.09.2018
+
+- Made little fixes to some suffixes materials as suggested by fans
+
+### 06.09.2018
+
+- Added a few more suffixes
+- Added a lot of info on the Britannia page
+
+### 29.08.2018
+
+- Updated even more mobs in Britannia expedition
+
+### 24.08.2018
+
+- Updated Brtiannia expedition page with more info on some mobs
+
+### 23.08.2018
+
+- Updated some more prefixes and suffixes
 
 ### 20.08.2018
 
 - Took Leona's spreadsheet and started comparing actively. I added and corrected another 20+ suffixes (4 hours)
-
 - Prefixes next
-
 - Ok i now have the suffixes list with 'unkown' from the big from restlez (2 hours)
 
 ### 19.08.2018
 
+- Added more than 30 new prefixes and suffixes to both pages
 - Added over 30 prefixes and suffixes. Pretty much the hard way.... Took me all day, looking at items in the Auction house and calculating stats and level :( (8 hours)
 
 ### 14.08.2018
 
+- Thanks to fans from DE201 we now have more than 20 ultra high level prefixes! All uploaded to the prefix page
 - Got a huge donation of high level underworld only prefixes from fans from the DE201 server and uploaded them all to the site. Had to translate :( (5 hours)
+
+### 13.08.2018
+
+- Added a few more examples of prefix/suffix
+- Improved the Underworld page
+
+### 11.08.2018
+
+- Added a few more prefixes and suffixes low levels
 
 ### 06.08.2018
 
 - Fixed few mistakes on existing prefixes and suffixes pointed out by fans (1 hour)
 
+### 05.08.2018
+
+- Added 2 new high level prefixes - Valentine and Tiberius'
+
 ### 02.08.2018
 
+- Prefixes page is now completely redesigned to match the superior style of the suffix page
 - Updated the In the Heart of Decay dungeon page with special abilities of Corruption and tips on how to defeat. Tonight will create and upload a setup screenshot (1 hour)
-
 - Finished redesigning the rest of the prefixes (4 hours)
-
 - Added 7 more prefixes that i saved from before. Turned out to be a chore (2 hours)
+
+### 31.07.2018
+
+- **Important!** The Materials page is ready. If you want to know what are the best prefixes/suffixes to smelt in order to get a specific material just check the materials page!!! Under each material there will be prefixes or suffixes from which the highest quantity of that material can smelt. Go to the Materials page from the main menu on the left!
+- Did some little tweaks on the suffix page and did some recommendation based on fans (3 hours)
+
+### 30.07.2018
+
+- All known to me suffixes are now up on the page and almost all of them have required materials for forge
+- Finished adding all materials required for the suffixes (2 hours)
+- Started reworking the Forging goods. They will be the new source for what suffixes and prefixes are best to smelt for a certain material (2 hours)
+- Finished the forging goods (materials) page. All materials are now in tables, with info and what is the best prefix/suffix to smelt for this material and link to every single material (10 hours)
+- Forging goods becomes the most important page on the website. It deserves to be on the main menu. Created it under Materials and /materials url
+
+### 27.07.2018
+
+- Improved the "On the Nile" event page
+- Re-extracted all 63 forging goods from the main item file and made them with transparent background (1 hour)
+- Improved some of the dungeon pages and did a kill setup on Sasama's last journey (1 hour)
+- Improved the On the Nile event page (1 hour)
+- Added 5 more suffixes and added 5 more forging goods (1 hour)
+- Continued redesigning the forging goods page with Materials, Monster parts and started Gemstones (4 hours)
+
+### 24.07.2018
+
+- Added 166 Suffixes on the Item Suffixes page. Almost done with their material requirements too. There is also a list of Unkown suffixes
+- Finished the suffixes with everything i got. 166 suffixes are all added to the website. Most of them even have the materials required for the suffixe. Created an unknown list and will post for general forums for help. So much work my eyes hurt and i see blurry :( hope it passes so i can continue tomorrow (10 hours)
+- I finally got a muse for starting the suffixes list. I spent the whole day doing them and got all the ones that i have in my store (100+) as well as did a top list (9 hours)
+- Worked some more on the suffixes at home and added a few more. 64 left for tomorrow (1 hour)
+- Did further improvements on the Conquering the source of the Rhine event page (1 hour)
+
+### 23.07.2018
+
+- Improved the main menu by splitting it into Main menu and Other menu to split the important ones and not so important ones
+- Improved the Foods section in the Items page. Gave some examples when it's not a good idea to combine foods
+- Conquering the source of the Rhine event page is fully completed and my most successful yet
+
+### 19.07.2018
+
+- Updated the Conquest for the Source of the Rhine event with more info as the event progresses
+- Worked on the Suffix page and added 80 suffixes. 64 for tomorrow to upload
 
 ### 01.08.2018
 
@@ -63,48 +253,6 @@ sidebar_class_name: hidden
 - Added links to all prefixes and suffixes in the new Materials page one by one with new tab option (4 hours)
 
 - Redesigning the prefix page. Did all of them up to Spurius (6 hours)
-
-### 31.07.2018
-
-- Did some little tweaks on the suffix page and did some recommendation based on fans (3 hours)
-
-### 30.07.2018
-
-- Finished the forging goods (materials) page. All materials are now in tables, with info and what is the best prefix/suffix to smelt for this material and link to every single material (10 hours)
-
-- Forging goods becomes the most important page on the website. It deserves to be on the main menu. Created it under Materials and /materials url
-
-### 27.07.2018
-
-- Added 5 more suffixes and added 5 more forging goods (1 hour)
-
-- Continued redesigning the forging goods page with Materials, Monster parts and started Gemstones (4 hours)
-
-### 25.07.2018
-
-- Finished adding all materials required for the suffixes (2 hours)
-
-- Started reworking the Forging goods. They will be the new source for what suffixes and prefixes are best to smelt for a certain material (2 hours)
-
-### 24.07.2018
-
-- Re-extracted all 63 forging goods from the main item file and made them with transparent background (1 hour)
-
-- Improved some of the dungeon pages and did a kill setup on Sasama's last journey (1 hour)
-
-- Improved the On the Nile event page (1 hour)
-
-### 23.07.2018
-
-- Finished the suffixes with everything i got. 166 suffixes are all added to the website. Most of them even have the materials required for the suffixe. Created an unknown list and will post for general forums for help. So much work my eyes hurt and i see blurry :( hope it passes so i can continue tomorrow (10 hours)
-
-### 19.07.2018
-
-- I finally got a muse for starting the suffixes list. I spent the whole day doing them and got all the ones that i have in my store (100+) as well as did a top list (9 hours)
-
-- Worked some more on the suffixes at home and added a few more. 64 left for tomorrow (1 hour)
-
-- Did further improvements on the Conquering the source of the Rhine event page (1 hour)
 
 ### 15.07.2018
 
@@ -454,7 +602,7 @@ sidebar_class_name: hidden
 
 - Significant improvements to the general Dungeons page (1 hour)
 
-### 08.01.2019
+### 08.01.2018
 
 - Finished the Mercenary page. Couple of screenshots of higher level stats on some mercs left but i will do it anyway
 
