@@ -1,0 +1,131 @@
+.container {
+  margin: 1.5rem 0;
+}
+
+.error {
+  color: #ff0000;
+  padding: 1rem;
+  background: #ffe0e0;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+  margin: 0;
+}
+
+.dropsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropsList li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--ifm-color-emphasis-100);
+  border-left: 3px solid #c2a66a;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.dropsList strong {
+  color: #1eff00;
+  font-weight: bold;
+}
+
+.mobName {
+  color: #ff8000;
+  font-weight: 600;
+}
+
+.location {
+  color: #5159f7;
+  font-style: italic;
+}
+
+.affixGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.affixLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.affixLink:hover {
+  background: var(--ifm-color-emphasis-200);
+  border-color: #c2a66a;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.affixName {
+  color: var(--ifm-font-color-base);
+  font-weight: 500;
+}
+
+.affixQuantity {
+  color: #1eff00;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  background: rgba(30, 255, 0, 0.1);
+  border-radius: 3px;
+}
+
+.scarcity {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+  margin: 0;
+}
+
+/* Dark theme support */
+[data-theme='dark'] .error {
+  background: #3d1a1a;
+  border-color: #ff4444;
+}
+
+[data-theme='dark'] .dropsList li {
+  background: #1a1410;
+  border-left-color: #d4af37;
+}
+
+[data-theme='dark'] .affixLink {
+  background: #1a1410;
+  border-color: #3a3a3a;
+}
+
+[data-theme='dark'] .affixLink:hover {
+  background: #2c2416;
+  border-color: #d4af37;
+}
+
+[data-theme='dark'] .affixQuantity {
+  background: rgba(30, 255, 0, 0.2);
+}

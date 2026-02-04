@@ -1,0 +1,25 @@
+---
+title: Wood
+slug: /forging/forging-goods/materials/wood
+---
+
+import ForgingGood from '@site/src/components/ForgingGood';
+import ForgingGoodInfo from '@site/src/components/ForgingGoodInfo';
+
+<div style={{ display: 'flex', gap: '10px', alignItems: 'center', marginBottom: '20px' }}>
+  <ForgingGood name="Wood" rarity="common" />
+  <ForgingGood name="Wood" rarity="green" />
+  <ForgingGood name="Wood" rarity="blue" />
+  <ForgingGood name="Wood" rarity="purple" />
+  <ForgingGood name="Wood" rarity="orange" />
+  <ForgingGood name="Wood" rarity="red" />
+</div>
+
+<ForgingGoodInfo 
+  name="Wood"
+  displayDescription={true}
+  displayDrops={true}
+  displayPrefixes={true}
+  displaySuffixes={true}
+  displayScarcity={true}
+/>

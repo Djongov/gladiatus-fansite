@@ -1,0 +1,25 @@
+---
+title: Diamond
+slug: /forging/forging-goods/gemstones/diamond
+---
+
+import ForgingGood from '@site/src/components/ForgingGood';
+import ForgingGoodInfo from '@site/src/components/ForgingGoodInfo';
+
+<div style={{ display: 'flex', gap: '10px', alignItems: 'center', marginBottom: '20px' }}>
+  <ForgingGood name="Diamond" rarity="common" />
+  <ForgingGood name="Diamond" rarity="green" />
+  <ForgingGood name="Diamond" rarity="blue" />
+  <ForgingGood name="Diamond" rarity="purple" />
+  <ForgingGood name="Diamond" rarity="orange" />
+  <ForgingGood name="Diamond" rarity="red" />
+</div>
+
+<ForgingGoodInfo 
+  name="Diamond"
+  displayDescription={true}
+  displayDrops={true}
+  displayPrefixes={true}
+  displaySuffixes={true}
+  displayScarcity={true}
+/>

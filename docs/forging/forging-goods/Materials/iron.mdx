@@ -1,0 +1,25 @@
+---
+title: Iron
+slug: /forging/forging-goods/materials/iron
+---
+
+import ForgingGood from '@site/src/components/ForgingGood';
+import ForgingGoodInfo from '@site/src/components/ForgingGoodInfo';
+
+<div style={{ display: 'flex', gap: '10px', alignItems: 'center', marginBottom: '20px' }}>
+  <ForgingGood name="Iron" rarity="common" />
+  <ForgingGood name="Iron" rarity="green" />
+  <ForgingGood name="Iron" rarity="blue" />
+  <ForgingGood name="Iron" rarity="purple" />
+  <ForgingGood name="Iron" rarity="orange" />
+  <ForgingGood name="Iron" rarity="red" />
+</div>
+
+<ForgingGoodInfo 
+  name="Iron"
+  displayDescription={true}
+  displayDrops={true}
+  displayPrefixes={true}
+  displaySuffixes={true}
+  displayScarcity={true}
+/>
