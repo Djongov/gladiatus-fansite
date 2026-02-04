@@ -12,7 +12,8 @@
     "materials": {
       "Wood": 2
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-1"
   },
   {
     "name": "Short sword",
@@ -27,7 +28,8 @@
       "Leather": 1,
       "Iron": 1
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-2"
   },
   {
     "name": "Short dagger",
@@ -42,7 +44,8 @@
       "Leather": 1,
       "Iron": 1
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-3"
   },
   {
     "name": "Battle sickle",
@@ -57,7 +60,8 @@
       "Wood": 1,
       "Iron": 2
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-4"
   },
   {
     "name": "Broad sword",
@@ -72,7 +76,8 @@
       "Leather": 1,
       "Iron": 3
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-5"
   },
   {
     "name": "Sharp dagger",
@@ -87,7 +92,8 @@
       "Leather": 1,
       "Iron": 2
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-13"
   },
   {
     "name": "Gut graze",
@@ -102,7 +108,8 @@
       "Leather": 2,
       "Iron": 2
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-6"
   },
   {
     "name": "Trident",
@@ -118,7 +125,8 @@
       "Leather": 1,
       "Iron": 3
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-7"
   },
   {
     "name": "Long sword",
@@ -134,7 +142,8 @@
       "Leather": 1,
       "Iron": 3
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-8"
   },
   {
     "name": "Axe",
@@ -150,7 +159,8 @@
       "Leather": 1,
       "Iron": 2
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-9"
   },
   {
     "name": "Trident lance",
@@ -167,7 +177,8 @@
       "Leather": 1,
       "Iron": 3
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-10"
   },
   {
     "name": "Seax",
@@ -182,7 +193,8 @@
       "Wood": 3,
       "Iron": 4
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-19"
   },
   {
     "name": "Broad Axe",
@@ -198,7 +210,8 @@
       "Leather": 1,
       "Iron": 3
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-11"
   },
   {
     "name": "Hammer",
@@ -214,7 +227,8 @@
       "Leather": 1,
       "Iron": 3
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-12"
   },
   {
     "name": "Angel of death",
@@ -231,7 +245,8 @@
       "Leather": 1,
       "Iron": 4
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-14"
   },
   {
     "name": "Battle staff",
@@ -246,7 +261,8 @@
       "Wood": 5,
       "Iron": 4
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-20"
   },
   {
     "name": "Schiavone",
@@ -261,7 +277,8 @@
       "Copper": 3,
       "Iron": 7
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-15"
   },
   {
     "name": "Khopesh",
@@ -276,7 +293,8 @@
       "Copper": 5,
       "Iron": 5
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-17"
   },
   {
     "name": "Gladius",
@@ -292,7 +310,8 @@
       "Leather": 1,
       "Iron": 7
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-16"
   },
   {
     "name": "Spear",
@@ -308,7 +327,8 @@
       "Leather": 1,
       "Iron": 3
     },
-    "type": "weapons"
+    "type": "weapons",
+    "id": "1-18"
   },
   {
     "name": "Planks",
@@ -321,7 +341,8 @@
     "materials": {
       "Wood": 2
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-1"
   },
   {
     "name": "Wooden shield",
@@ -335,7 +356,8 @@
       "Wood": 2,
       "Iron": 2
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-2"
   },
   {
     "name": "Round shield",
@@ -349,7 +371,8 @@
       "Wood": 2,
       "Iron": 2
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-3"
   },
   {
     "name": "Viking Shield",
@@ -363,7 +386,8 @@
       "Wood": 2,
       "Iron": 2
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-11"
   },
   {
     "name": "Net",
@@ -376,7 +400,8 @@
     "materials": {
       "Leather": 5
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-4"
   },
   {
     "name": "Dragonshield",
@@ -390,7 +415,8 @@
       "Copper": 3,
       "Iron": 4
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-5"
   },
   {
     "name": "Egyptian Shield",
@@ -404,7 +430,8 @@
       "Wood": 4,
       "Iron": 2
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-12"
   },
   {
     "name": "Silvershield",
@@ -419,7 +446,8 @@
       "Iron": 4,
       "Silver": 1
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-6"
   },
   {
     "name": "Towershield",
@@ -434,7 +462,8 @@
       "Leather": 2,
       "Iron": 5
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-7"
   },
   {
     "name": "Fireshield",
@@ -449,7 +478,8 @@
       "Leather": 2,
       "Iron": 6
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-8"
   },
   {
     "name": "Firetowershield",
@@ -464,7 +494,8 @@
       "Leather": 3,
       "Iron": 6
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-9"
   },
   {
     "name": "Titanium Shield",
@@ -477,7 +508,8 @@
     "materials": {
       "Iron": 12
     },
-    "type": "shields"
+    "type": "shields",
+    "id": "2-10"
   },
   {
     "name": "Rags",
@@ -490,7 +522,8 @@
     "materials": {
       "Leather": 2
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-1"
   },
   {
     "name": "Leather armour",
@@ -504,7 +537,8 @@
       "Copper": 1,
       "Leather": 2
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-2"
   },
   {
     "name": "Double leather",
@@ -518,7 +552,8 @@
       "Copper": 1,
       "Leather": 2
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-3"
   },
   {
     "name": "Copper shoulders",
@@ -533,7 +568,8 @@
       "Leather": 1,
       "Iron": 2
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-4"
   },
   {
     "name": "Half plate",
@@ -546,7 +582,8 @@
     "materials": {
       "Iron": 5
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-5"
   },
   {
     "name": "Crocodile Plate Armour",
@@ -560,7 +597,8 @@
       "Leather": 3,
       "Iron": 2
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-12"
   },
   {
     "name": "Copper plate",
@@ -574,7 +612,8 @@
       "Copper": 5,
       "Iron": 2
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-6"
   },
   {
     "name": "Chainmail armour",
@@ -588,7 +627,8 @@
       "Copper": 3,
       "Iron": 5
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-7"
   },
   {
     "name": "Iron plate",
@@ -602,7 +642,8 @@
       "Copper": 3,
       "Iron": 6
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-8"
   },
   {
     "name": "Full plate",
@@ -617,7 +658,8 @@
       "Leather": 2,
       "Iron": 7
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-9"
   },
   {
     "name": "Iron shoulders",
@@ -632,7 +674,8 @@
       "Leather": 2,
       "Iron": 7
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-10"
   },
   {
     "name": "Hard leather armour",
@@ -645,7 +688,8 @@
     "materials": {
       "Leather": 12
     },
-    "type": "armour"
+    "type": "armour",
+    "id": "3-11"
   },
   {
     "name": "Leather cap",
@@ -658,7 +702,8 @@
     "materials": {
       "Leather": 2
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-1"
   },
   {
     "name": "Iron cap",
@@ -671,7 +716,8 @@
     "materials": {
       "Iron": 2
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-2"
   },
   {
     "name": "Myrmillo",
@@ -685,7 +731,8 @@
       "Copper": 1,
       "Iron": 2
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-3"
   },
   {
     "name": "Thracian",
@@ -699,7 +746,8 @@
       "Copper": 1,
       "Iron": 2
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-4"
   },
   {
     "name": "Gladiator helmet",
@@ -713,7 +761,8 @@
       "Copper": 1,
       "Iron": 3
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-5"
   },
   {
     "name": "Skull helmet",
@@ -727,7 +776,8 @@
       "Copper": 3,
       "Iron": 3
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-6"
   },
   {
     "name": "Copper helmet",
@@ -741,7 +791,8 @@
       "Copper": 5,
       "Leather": 1
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-11"
   },
   {
     "name": "Viking helmet",
@@ -755,7 +806,8 @@
       "Leather": 3,
       "Iron": 4
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-7"
   },
   {
     "name": "Centurio",
@@ -769,7 +821,8 @@
       "Copper": 6,
       "Iron": 3
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-8"
   },
   {
     "name": "Spike helmet",
@@ -783,7 +836,8 @@
       "Copper": 7,
       "Iron": 3
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-12"
   },
   {
     "name": "Spectacled Helmet",
@@ -796,7 +850,8 @@
     "materials": {
       "Iron": 9
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-13"
   },
   {
     "name": "Centurio full helmet",
@@ -810,7 +865,8 @@
       "Copper": 7,
       "Iron": 5
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-9"
   },
   {
     "name": "Brass centurio",
@@ -825,7 +881,8 @@
       "Leather": 1,
       "Iron": 4
     },
-    "type": "helmets"
+    "type": "helmets",
+    "id": "4-10"
   },
   {
     "name": "Leather gloves",
@@ -838,7 +895,8 @@
     "materials": {
       "Leather": 2
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-1"
   },
   {
     "name": "Copper bracers",
@@ -852,7 +910,8 @@
       "Copper": 2,
       "Leather": 1
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-2"
   },
   {
     "name": "Copper gloves",
@@ -866,7 +925,8 @@
       "Copper": 2,
       "Leather": 2
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-3"
   },
   {
     "name": "Leather battle gloves",
@@ -879,7 +939,8 @@
     "materials": {
       "Leather": 5
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-4"
   },
   {
     "name": "Leather bracers",
@@ -893,7 +954,8 @@
       "Copper": 3,
       "Leather": 4
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-5"
   },
   {
     "name": "Iron gauntlets",
@@ -907,7 +969,8 @@
       "Leather": 5,
       "Iron": 3
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-6"
   },
   {
     "name": "Studded gloves",
@@ -922,7 +985,8 @@
       "Leather": 5,
       "Iron": 3
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-7"
   },
   {
     "name": "Plate bracers",
@@ -936,7 +1000,8 @@
       "Leather": 6,
       "Iron": 4
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-8"
   },
   {
     "name": "Plate gauntlets",
@@ -950,7 +1015,8 @@
       "Leather": 7,
       "Iron": 5
     },
-    "type": "gloves"
+    "type": "gloves",
+    "id": "5-9"
   },
   {
     "name": "Sandals",
@@ -964,7 +1030,8 @@
       "Wood": 1,
       "Leather": 1
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-1"
   },
   {
     "name": "Leather sandals",
@@ -977,7 +1044,8 @@
     "materials": {
       "Leather": 3
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-2"
   },
   {
     "name": "Leather boots",
@@ -990,7 +1058,8 @@
     "materials": {
       "Leather": 4
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-3"
   },
   {
     "name": "Leather battle boots",
@@ -1004,7 +1073,8 @@
       "Copper": 1,
       "Leather": 4
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-4"
   },
   {
     "name": "Copper bandages",
@@ -1018,7 +1088,8 @@
       "Copper": 3,
       "Leather": 3
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-5"
   },
   {
     "name": "Hunting boots",
@@ -1032,7 +1103,8 @@
       "Copper": 3,
       "Leather": 4
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-6"
   },
   {
     "name": "Hard leather bandages",
@@ -1045,7 +1117,8 @@
     "materials": {
       "Leather": 9
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-7"
   },
   {
     "name": "Silver battle boots",
@@ -1060,7 +1133,8 @@
       "Leather": 5,
       "Iron": 3
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-8"
   },
   {
     "name": "Studded boots",
@@ -1075,7 +1149,8 @@
       "Leather": 6,
       "Iron": 1
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-9"
   },
   {
     "name": "Plate boots",
@@ -1089,7 +1164,8 @@
       "Leather": 7,
       "Iron": 6
     },
-    "type": "shoes"
+    "type": "shoes",
+    "id": "8-10"
   },
   {
     "name": "Blue ring",
@@ -1102,7 +1178,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-1"
   },
   {
     "name": "Malachite ring",
@@ -1115,7 +1192,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-2"
   },
   {
     "name": "Golden ring",
@@ -1128,7 +1206,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-3"
   },
   {
     "name": "Silver ring",
@@ -1141,7 +1220,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-4"
   },
   {
     "name": "Dragon ring",
@@ -1154,7 +1234,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-5"
   },
   {
     "name": "Ruby ring",
@@ -1167,7 +1248,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-6"
   },
   {
     "name": "Scarab",
@@ -1180,7 +1262,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-7"
   },
   {
     "name": "Triskele",
@@ -1193,7 +1276,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "rings"
+    "type": "rings",
+    "id": "6-8"
   },
   {
     "name": "Gold symbol",
@@ -1206,7 +1290,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-1"
   },
   {
     "name": "Silver wreath",
@@ -1219,7 +1304,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-2"
   },
   {
     "name": "Carnelian pendant",
@@ -1232,7 +1318,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-3"
   },
   {
     "name": "Silver relict",
@@ -1245,7 +1332,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-4"
   },
   {
     "name": "Sugilith pendant",
@@ -1258,7 +1346,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-5"
   },
   {
     "name": "Malachite pendant",
@@ -1271,7 +1360,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-6"
   },
   {
     "name": "Star talisman",
@@ -1284,7 +1374,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-7"
   },
   {
     "name": "Ruby pendant",
@@ -1297,7 +1388,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-8"
   },
   {
     "name": "Ra`s Eye",
@@ -1310,7 +1402,8 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-9"
   },
   {
     "name": "Fibula",
@@ -1323,6 +1416,7 @@
     "materials": {
       "Copper": 2
     },
-    "type": "amulets"
+    "type": "amulets",
+    "id": "9-10"
   }
 ]

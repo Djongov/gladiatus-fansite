@@ -13,23 +13,37 @@ interface ImportProfileProps {
 }
 
 interface ApiResponse {
-  result: string;
-  data: {
-    name: string;
-    title?: string;
-    costume?: string;
-    level: number;
-    strength_base: number;
-    dexterity_base: number;
-    agility_base: number;
-    constitution_base: number;
-    charisma_base: number;
-    intelligence_base: number;
-    items: ApiItem[];
-  };
+  name: string;
+  title?: string;
+  costume?: string;
+  level: number;
+  max_life_points?: number;
+  strength_base: number;
+  strength_max?: number;
+  strength_from_items?: string;
+  dexterity_base: number;
+  dexterity_max?: number;
+  dexterity_from_items?: string;
+  agility_base: number;
+  agility_max?: number;
+  agility_from_items?: string;
+  constitution_base: number;
+  constitution_max?: number;
+  constitution_from_items?: string;
+  charisma_base: number;
+  charisma_max?: number;
+  charisma_from_items?: string;
+  intelligence_base: number;
+  intelligence_max?: number;
+  intelligence_from_items?: string;
+  armour?: number;
+  damage_min?: number;
+  damage_max?: number;
+  items: ApiItem[];
 }
 
 interface ApiItem {
+  base_item_id?: string;
   base_item_name: string;
   level: number;
   rarity: string;
@@ -85,9 +99,18 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
     return typeMap[apiItemType.toLowerCase()] || apiItemType;
   };
 
-  const findBaseItem = (baseItemName: string, itemType?: string): BaseItem | null => {
+  const findBaseItem = (baseItemId?: string, baseItemName?: string, itemType?: string): BaseItem | null => {
     // basesData is a flat array of all items
     const items = basesData as BaseItem[];
+    
+    // Try ID-based lookup first (locale-independent)
+    if (baseItemId) {
+      const foundById = items.find((item: any) => item.id === baseItemId);
+      if (foundById) return foundById as BaseItem;
+    }
+    
+    // Fallback to name-based lookup for backwards compatibility
+    if (!baseItemName) return null;
     
     // If we have item type, filter by it first for better matching
     const filteredItems = itemType 
@@ -153,16 +176,14 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
     setSuccess(false);
 
     try {
-      // Create form data
-      const formData = new URLSearchParams();
-      formData.append('profile_url', profileUrl.trim());
-
-      const response = await fetch('https://gladiatus-api.gamerz-bg.com/api/fetch-player', {
+      const response = await fetch('https://gladiatus-player-parser.gladiatus.workers.dev', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
         },
-        body: formData.toString(),
+        body: JSON.stringify({
+          profile_url: profileUrl.trim(),
+        }),
       });
 
       if (!response.ok) {
@@ -171,33 +192,29 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
 
       const data: ApiResponse = await response.json();
 
-      if (data.result !== 'success') {
-        throw new Error('API returned an error response');
-      }
-
       // Map base stats
       const baseStats: BaseStats = {
-        strength: data.data.strength_base,
-        dexterity: data.data.dexterity_base,
-        agility: data.data.agility_base,
-        constitution: data.data.constitution_base,
-        charisma: data.data.charisma_base,
-        intelligence: data.data.intelligence_base,
+        strength: data.strength_base,
+        dexterity: data.dexterity_base,
+        agility: data.agility_base,
+        constitution: data.constitution_base,
+        charisma: data.charisma_base,
+        intelligence: data.intelligence_base,
       };
 
       // Map items
       const itemsMap = new Map<ItemSlotType, EquippedItem>();
       
-      for (const apiItem of data.data.items) {
+      for (const apiItem of data.items) {
         const slot = mapSlotName(apiItem.slot);
         if (!slot) {
           console.warn(`Unknown slot type: ${apiItem.slot}`);
           continue;
         }
 
-        const baseItem = findBaseItem(apiItem.base_item_name, apiItem.item_type);
+        const baseItem = findBaseItem(apiItem.base_item_id, apiItem.base_item_name, apiItem.item_type);
         if (!baseItem) {
-          console.warn(`Base item not found: ${apiItem.base_item_name} (type: ${apiItem.item_type})`);
+          console.warn(`Base item not found: ${apiItem.base_item_id || apiItem.base_item_name} (type: ${apiItem.item_type})`);
           continue;
         }
 
@@ -228,14 +245,14 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
 
       // Create character identity
       const identity: CharacterIdentity = {
-        name: data.data.name,
-        title: data.data.title || undefined,
-        costume: data.data.costume || undefined,
+        name: data.name,
+        title: data.title || undefined,
+        costume: data.costume || undefined,
         gender: 'male', // Default for imported characters since we don't get gender from API
       };
 
       // Call the import callback
-      onImport(data.data.level, baseStats, itemsMap, identity);
+      onImport(data.level, baseStats, itemsMap, identity);
       
       setSuccess(true);
       setError(null);

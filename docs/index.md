@@ -15,6 +15,14 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
  ![News Announcements](https://gladiatusfansite.blob.core.windows.net/images/announcement_imperator.png "News Announcements")
 
+## To Do List
+
+- Item planner to show materials
+- Make Expeditions come from data files and not just plain text
+- Character planner to show materials breakdown by item and total for the whole build
+- Character planner to show substats like critical strike and etc
+- Make forging good real items with tooltips
+
 ## Latest website news
 
 ### 04.02.2026

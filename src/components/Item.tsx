@@ -7,6 +7,7 @@ import type { Upgrade, AppliedUpgrade } from './CharacterPlanner/useCharacterSta
 
 // Base item type from bases.json
 export interface BaseItem {
+  id?: string;
   name: string;
   type: 'weapons' | 'shields' | 'armor' | 'helmets' | 'gloves' | 'shoes' | 'rings' | 'amulets';
   level: number | null;
