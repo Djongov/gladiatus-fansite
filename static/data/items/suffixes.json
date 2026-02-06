@@ -28,7 +28,12 @@
         "name": "+4",
         "level": 4,
         "gold": 0,
-        "stats": {},
+        "stats": {
+            "intelligence": {
+                "flat": 2,
+                "percent": 0
+            }
+        },
         "materials": {}
     },
     {
