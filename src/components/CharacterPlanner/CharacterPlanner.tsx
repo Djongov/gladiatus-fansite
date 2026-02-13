@@ -31,6 +31,7 @@ export default function CharacterPlanner() {
 
   const [selectedSlot, setSelectedSlot] = useState<ItemSlotType | null>(null);
   const [showShareDialog, setShowShareDialog] = useState(false);
+  const [shareMessage, setShareMessage] = useState('');
 
   const handleSlotClick = (slot: ItemSlotType) => {
     setSelectedSlot(slot);
@@ -56,14 +57,18 @@ export default function CharacterPlanner() {
 
       const json = JSON.stringify(itemsObj);
       const encoded = btoa(json);
+      const statsJson = JSON.stringify(baseStats);
+      const statsEncoded = btoa(statsJson);
 
       const url = new URL(globalThis.window.location.href);
       url.searchParams.set('build', encoded);
       url.searchParams.set('level', characterLevel.toString());
+      url.searchParams.set('stats', statsEncoded);
       const shareableUrl = url.toString();
 
       if (navigator.clipboard) {
         await navigator.clipboard.writeText(shareableUrl);
+        setShareMessage('Build URL copied to clipboard!');
         setShowShareDialog(true);
         setTimeout(() => setShowShareDialog(false), 3000);
       }
@@ -76,10 +81,49 @@ export default function CharacterPlanner() {
       });
       const json = JSON.stringify(itemsObj);
       const encoded = btoa(json);
+      const statsJson = JSON.stringify(baseStats);
+      const statsEncoded = btoa(statsJson);
       const url = new URL(globalThis.window.location.href);
       url.searchParams.set('build', encoded);
       url.searchParams.set('level', characterLevel.toString());
+      url.searchParams.set('stats', statsEncoded);
       prompt('Copy this URL to share your build:', url.toString());
+    }
+  };
+
+  const handleShareString = async () => {
+    try {
+      const itemsObj: Record<string, any> = {};
+      equippedItems.forEach((item, slot) => {
+        itemsObj[slot] = item;
+      });
+
+      const json = JSON.stringify(itemsObj);
+      const encoded = btoa(json);
+      const statsJson = JSON.stringify(baseStats);
+      const statsEncoded = btoa(statsJson);
+
+      // Build query string without the base URL
+      const queryString = `build=${encoded}&level=${characterLevel}&stats=${statsEncoded}`;
+
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(queryString);
+        setShareMessage('Query string copied to clipboard!');
+        setShowShareDialog(true);
+        setTimeout(() => setShowShareDialog(false), 3000);
+      }
+    } catch (error) {
+      console.error('Failed to copy query string:', error);
+      const itemsObj: Record<string, any> = {};
+      equippedItems.forEach((item, slot) => {
+        itemsObj[slot] = item;
+      });
+      const json = JSON.stringify(itemsObj);
+      const encoded = btoa(json);
+      const statsJson = JSON.stringify(baseStats);
+      const statsEncoded = btoa(statsJson);
+      const queryString = `build=${encoded}&level=${characterLevel}&stats=${statsEncoded}`;
+      prompt('Copy this query string:', queryString);
     }
   };
 
@@ -158,6 +202,15 @@ export default function CharacterPlanner() {
           >
             📋 Share Build
           </button>
+          
+          <button 
+            className={styles.shareButton}
+            onClick={handleShareString}
+            disabled={equippedCount === 0}
+            title="Copy query string only (for CompactBuildDisplay)"
+          >
+            📋 Share String
+          </button>
         </div>
       </div>
 
@@ -221,7 +274,7 @@ export default function CharacterPlanner() {
       {/* Share Success Notification */}
       {showShareDialog && (
         <div className={styles.notification}>
-          ✓ Build URL copied to clipboard!
+          ✓ {shareMessage}
         </div>
       )}
     </div>

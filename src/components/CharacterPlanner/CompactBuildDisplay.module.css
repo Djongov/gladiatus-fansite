@@ -1,0 +1,204 @@
+.compactBuildDisplay {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--ifm-global-shadow-lw);
+  max-width: 700px;
+  margin: 1.5rem auto;
+}
+
+.header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-heading-color);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Character Doll Section */
+.dollSection {
+  flex-shrink: 0;
+}
+
+.characterDoll {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #E7DDBA 0%, #c4ac70 100%);
+  border: 3px solid #8b7355;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.dollImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.slotsOverlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  pointer-events: none;
+}
+
+.slotsOverlay > * {
+  pointer-events: auto;
+}
+
+/* Stats Section */
+.statsSection {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.statsContainer {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.statsColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.statsTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: var(--ifm-heading-color);
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 0.5rem;
+}
+
+.statsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.statGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.statLabel {
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.statValue {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.plannerLink {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.plannerLink:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.error {
+  padding: 1rem;
+  background-color: var(--ifm-color-danger-contrast-background);
+  border: 1px solid var(--ifm-color-danger);
+  border-radius: 6px;
+  color: var(--ifm-color-danger-darkest);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .compactBuildDisplay {
+    padding: 1rem;
+  }
+
+  .characterDoll {
+    padding: 10px;
+  }
+  
+  .slotsOverlay {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .statsContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .statsSection {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .characterDoll {
+    width: 180px;
+    height: 145px;
+  }
+
+  .statRow {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+}

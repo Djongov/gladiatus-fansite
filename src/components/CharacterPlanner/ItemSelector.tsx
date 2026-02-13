@@ -62,18 +62,14 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
     });
   }, [availableBaseItems, searchTerm, levelFilter]);
 
-  // Get available prefixes/suffixes - filter by character level
+  // Get available prefixes/suffixes
   const availablePrefixes = useMemo(() => {
-    return (prefixesData as PrefixSuffix[]).filter(
-      prefix => prefix.level <= characterLevel
-    );
-  }, [characterLevel]);
+    return (prefixesData as PrefixSuffix[]);
+  }, []);
 
   const availableSuffixes = useMemo(() => {
-    return (suffixesData as PrefixSuffix[]).filter(
-      suffix => suffix.level <= characterLevel
-    );
-  }, [characterLevel]);
+    return (suffixesData as PrefixSuffix[]);
+  }, []);
 
   // Filter prefixes/suffixes by search term
   const filteredPrefixes = useMemo(() => {
