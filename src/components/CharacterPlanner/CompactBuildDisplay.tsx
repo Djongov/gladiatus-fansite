@@ -382,12 +382,14 @@ export default function CompactBuildDisplay({
     const statsJson = JSON.stringify(buildData.baseStats);
     const statsEncoded = btoa(statsJson);
 
-    const url = new URL(globalThis.window.location.origin + '/character-planner');
-    url.searchParams.set('build', encoded);
-    url.searchParams.set('level', buildData.level.toString());
-    url.searchParams.set('stats', statsEncoded);
+    // Build query string manually to ensure proper encoding
+    const queryParams = new URLSearchParams();
+    queryParams.set('build', encoded);
+    queryParams.set('level', buildData.level.toString());
+    queryParams.set('stats', statsEncoded);
     
-    return url.toString();
+    // Use relative path from root for better compatibility with static site deployment
+    return `/character-planner?${queryParams.toString()}`;
   }, [buildData]);
 
   if (!buildData || !stats) {
