@@ -52,8 +52,8 @@ export default function GuildBuildingCalculator() {
 
   const calculateBuildings = () => {
     const centurionsReduc = 0.03 * buildings.discount;
-    const additionalReduc = 0.10 * buildings.additionalDiscount;
-    const reduc = centurionsReduc + additionalReduc - (centurionsReduc * additionalReduc);
+    const additionalReduc = 0.05 * buildings.additionalDiscount;
+    const reduc = centurionsReduc + additionalReduc;
 
     const forum = costBuilding(buildings.forumFrom, buildings.forumTo, 1.2, 6.5, reduc);
     const bathhouse = costBuilding(buildings.bathhouseFrom, buildings.bathhouseTo, 3.3, 4.5, reduc);
@@ -138,7 +138,7 @@ export default function GuildBuildingCalculator() {
             <td>Additional Discount (%)</td>
             <td colSpan="2">
               <select id="additionalDiscount" value={buildings.additionalDiscount} onChange={handleChange}>
-                {Array.from({ length: 5 }, (_, i) => <option key={i} value={i}>{i * 10}%</option>)}
+                {Array.from({ length: 9 }, (_, i) => <option key={i} value={i}>{i * 5}%</option>)}
               </select>
             </td>
             <td></td>
