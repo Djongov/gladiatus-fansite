@@ -20,7 +20,7 @@ Everything you see here is also explained in greater detail in the Game Guide pa
 
 **Health points from level** = Character Level \*25
 
-**Health points through constitution** = (Constitution\*2)-50
+**Health points through constitution** = (Constitution\*25)-50
 
 **Base Health points Regeneration (per Hour) =** Through Level + Through Constitution
 
@@ -95,19 +95,19 @@ Example: Character Level = 115. 115\*5 = 575
 
 **Your maximum cap for amassing hardening value is** = FLOOR.MATH(24.5\*4\*(Character Level-8)/52)+1
 
-**Chance to avoid critical hits** = (Resilience \* 52 / (Character Level-8 )) / 4
+**Chance to avoid critical hits** = (Resilience \* 52 / (Character Level-8 )) / 4 (Capped at 50%)
 
 **Total Blocking value** = (Strength/10) \[round down\] + Block value from items
 
 **Your maximum cap for amassing Blocking value is =** FLOOR.MATH(49.5\*6\*(Character Level-8)/52)+1
 
-**Chance to block a hit** = (Blocking value \* 52 / (Character Level-8 )) / 6
+**Chance to block a hit** = (Blocking value \* 52 / (Character Level-8 )) / 6 (Capped at 50%)
 
 **Total Critical attack value** = (Dexterity/10) \[round down\] + Critical attack value from items
 
 **Your maximum cap for amassing Critical hit value** = FLOOR.MATH(49.5\*5\*(Character Level-8)/52)+1
 
-**Chance for critical hit** = (Critical attack value \* 52 / (Character Level-8 )) / 5
+**Chance for critical hit** = (Critical attack value \* 52 / (Character Level-8 )) / 5 (Capped at 50%)
 
 **Total Critical healing value =** (Intelligence/5) \[round down\] + Critical healing value from items
 
@@ -124,6 +124,46 @@ Example: Character Level = 115. 115\*5 = 575
 ---
 
 ## Items
+
+### Item Stats (Confirmed)
+
+**Rarity Multipliers for Damage/Armor/Durability/Conditioning/Gold:**
+- Common/Green: 1.0
+- Blue: 1.15 (damage/armor/gold), 1.5 (durability/conditioning)
+- Purple: 1.30 (damage/armor/gold), 2.5 (durability/conditioning)
+- Orange: 1.50 (damage/armor/gold), 3.0 (durability/conditioning)
+- Red: 1.75 (damage/armor/gold), 3.5 (durability/conditioning)
+- Red+ (conditioned): 2.0 (damage/armor/gold), 4.0 (durability/conditioning)
+
+**Gold Value** = CEILING(Base Gold \* Rarity Multiplier) + Prefix Gold + Suffix Gold
+
+**Durability** = ROUND(Base Durability \* Rarity Multiplier) + Rarity Tier Bonus
+
+Rarity Tier Bonus:
+- Blue: +1
+- Purple: +2
+- Orange: +3
+- Red: +4
+- Red+: +5
+
+**Conditioning** = FLOOR(Base Conditioning \* Rarity Multiplier) - Conditioning Adjustment
+
+Conditioning Adjustment:
+- Common/Green: 0
+- Blue/Purple: -1
+- Orange/Red: -2
+- Red+: -2
+
+**Armor Calculation (varies by item type):**
+- Helmets: Uses divisor of 40 in formula
+- Gloves: Uses coefficient of 3/200
+- Shoes: Uses coefficient of 3/100
+- Chest: Standard formula
+- Shields: Standard formula
+
+Note: Armor also depends on item level and quality. The exact formula applies rarity multipliers to base armor values.
+
+### Item Visibility and Usage
 
 **Damage by grindstone** = Level of upgrade / 5 \[round up\]
 

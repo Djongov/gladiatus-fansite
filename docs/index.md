@@ -17,10 +17,11 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 Hey guys. We have a couple of open questions that need answering. Like formulas mostly. If you are someone who knows the answer to any of the below, please contact me on Discord - Skarsburning.
 
-1. What is the formula for materials needed when the item has both prefix and suffix
+1. What is the formula for materials needed in Forging when the item has both prefix and suffix. It is no longer the sum of materials from prefix + suffix + base.
 2. What is the formula for gold value/Durability/Conditioning of an item when it receives a suffix/prefix or both and with rarity levels (green, orange, red and etc)
 3. How do we know if an item is conditioned from the anonymous profile page of a player
-4. What happens when you wear broken items?
+4. What happens when you wear broken items
+5. What is the formula for experience needed for level after level 80
 
 ## Latest Gladiatus News
 
@@ -94,6 +95,10 @@ New servers arrive on Friday 06 February 2026. Reported list is:
 - Find what the formula is for gold, durability and conditiong is when prefix/suffix or both are applied to an item
 
 ## Latest website news
+
+### 18.02.2026
+
+- A lot of progress on the Character planner. It actually looks quite promising now. Tens of hours put into this in the last week.
 
 ### 04.02.2026
 
