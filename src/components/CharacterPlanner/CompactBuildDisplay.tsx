@@ -231,9 +231,9 @@ function calculateCharacterStats(
   const maxResilience = Math.max(0, Math.floor((24.5 * 4 * (characterLevel - 8) / 52) + 1));
   
   // Calculate Chance to avoid critical hits: (Resilience * 52 / (level-8)) / 4
-  // Cap at 25% maximum
+  // Cap at 50% maximum
   const critAvoidanceChance = characterLevel > 8 
-    ? Math.min((totalResilience * 52 / (characterLevel - 8)) / 4, 25)
+    ? Math.min((totalResilience * 52 / (characterLevel - 8)) / 4, 50)
     : 0;
 
   // Calculate final strength value (base + flat bonuses + percentage bonuses), capped at max
@@ -254,8 +254,9 @@ function calculateCharacterStats(
   const maxBlocking = Math.max(0, Math.floor((49.5 * 6 * (characterLevel - 8) / 52) + 1));
   
   // Calculate Chance to block a hit: (Blocking value * 52 / (level-8)) / 6
+  // Cap at 50% maximum
   const blockChance = characterLevel > 8
-    ? (totalBlocking * 52 / (characterLevel - 8)) / 6
+    ? Math.min((totalBlocking * 52 / (characterLevel - 8)) / 6, 50)
     : 0;
 
   // Calculate final dexterity value (base + flat bonuses + percentage bonuses), capped at max
@@ -276,8 +277,9 @@ function calculateCharacterStats(
   const maxCriticalAttack = Math.max(0, Math.floor((49.5 * 5 * (characterLevel - 8) / 52) + 1));
   
   // Calculate Chance for critical hit: (Critical attack value * 52 / (level-8)) / 5
+  // Cap at 50% maximum
   const criticalHitChance = characterLevel > 8
-    ? (totalCriticalAttack * 52 / (characterLevel - 8)) / 5
+    ? Math.min((totalCriticalAttack * 52 / (characterLevel - 8)) / 5, 50)
     : 0;
 
   // Calculate Chance to hit: Your Dexterity/(Your Dexterity + Enemy Agility) x 100

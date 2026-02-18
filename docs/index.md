@@ -90,7 +90,6 @@ New servers arrive on Friday 06 February 2026. Reported list is:
 
 - Find what the formula for materials is when prefix and suffix are mixed together
 - Make Expeditions come from data files and not just plain text
-- Character planner to show substats like critical strike and etc
 - Character planner partial costumes do not render well
 - Find what the formula is for gold, durability and conditiong is when prefix/suffix or both are applied to an item
 
