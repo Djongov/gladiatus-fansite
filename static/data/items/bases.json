@@ -751,8 +751,8 @@
   },
   {
     "name": "Gladiator helmet",
-    "level": 2,
-    "armour": 24,
+    "level": 3,
+    "armour": 15,
     "durability": 3219,
     "conditioning": 805,
     "gold": 24,
