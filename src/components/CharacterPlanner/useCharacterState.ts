@@ -1,6 +1,28 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { BaseItem, PrefixSuffix, ItemRarity, calculateItemStats } from '../Item';
 
+/**
+ * Unicode-safe base64 encoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Encode(str: string): string {
+  // Convert string to UTF-8 bytes, then to base64
+  return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => {
+    return String.fromCharCode(Number.parseInt(p1, 16));
+  }));
+}
+
+/**
+ * Unicode-safe base64 decoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Decode(str: string): string {
+  // Decode from base64 to UTF-8 bytes, then to string
+  return decodeURIComponent(Array.prototype.map.call(atob(str), (c: string) => {
+    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+}
+
 export type ItemSlotType = 'helmet' | 'amulet' | 'chest' | 'gloves' | 'mainHand' | 'offHand' | 'shoes' | 'ring1' | 'ring2';
 
 export interface Upgrade {
@@ -156,17 +178,29 @@ export function useCharacterState(): CharacterState {
 
       if (statsParam) {
         try {
-          const decoded = atob(statsParam);
+          const decoded = safeBase64Decode(statsParam);
           const stats = JSON.parse(decoded);
           setBaseStatsState(stats);
         } catch (e) {
           console.error('Failed to load stats from URL:', e);
         }
       }
+
+      // Load character identity (name, title, costume)
+      const identityParam = params.get('identity');
+      if (identityParam) {
+        try {
+          const decoded = safeBase64Decode(identityParam);
+          const identity = JSON.parse(decoded);
+          setCharacterIdentity(identity);
+        } catch (e) {
+          console.error('Failed to load character identity from URL:', e);
+        }
+      }
       
       if (buildData) {
         // Decode base64 and parse JSON
-        const decoded = atob(buildData);
+        const decoded = safeBase64Decode(buildData);
         const data = JSON.parse(decoded);
         
         const newItems = new Map<ItemSlotType, EquippedItem>();
@@ -213,7 +247,8 @@ export function useCharacterState(): CharacterState {
       // Add items if any
       if (equippedItems.size > 0) {
         const json = JSON.stringify(itemsObj);
-        const encoded = btoa(json);
+        console.log('Encoding items JSON, length:', json.length);
+        const encoded = safeBase64Encode(json);
         url.searchParams.set('build', encoded);
       } else {
         url.searchParams.delete('build');
@@ -224,14 +259,25 @@ export function useCharacterState(): CharacterState {
       
       // Add base stats
       const statsJson = JSON.stringify(baseStats);
-      const statsEncoded = btoa(statsJson);
+      console.log('Encoding stats JSON:', statsJson);
+      const statsEncoded = safeBase64Encode(statsJson);
       url.searchParams.set('stats', statsEncoded);
+      
+      // Add character identity (name, title, costume/image)
+      const identityJson = JSON.stringify(characterIdentity);
+      const identityEncoded = safeBase64Encode(identityJson);
+      url.searchParams.set('identity', identityEncoded);
       
       globalThis.window.history.replaceState({}, '', url.toString());
     } catch (error) {
       console.error('Failed to update URL:', error);
+      // Log more details about the error
+      if (error instanceof Error) {
+        console.error('Error message:', error.message);
+        console.error('Error stack:', error.stack);
+      }
     }
-  }, [equippedItems, characterLevel, baseStats]);
+  }, [equippedItems, characterLevel, baseStats, characterIdentity]);
 
   /**
    * Set or update an item in a specific slot

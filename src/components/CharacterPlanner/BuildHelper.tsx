@@ -2,6 +2,28 @@ import React from 'react';
 import CompactBuildDisplay from './CompactBuildDisplay';
 import { EquippedItem, ItemSlotType, BaseStats } from './useCharacterState';
 
+/**
+ * Unicode-safe base64 encoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Encode(str: string): string {
+  // Convert string to UTF-8 bytes, then to base64
+  return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => {
+    return String.fromCharCode(Number.parseInt(p1, 16));
+  }));
+}
+
+/**
+ * Unicode-safe base64 decoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Decode(str: string): string {
+  // Decode from base64 to UTF-8 bytes, then to string
+  return decodeURIComponent(Array.prototype.map.call(atob(str), (c: string) => {
+    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+}
+
 interface BuildHelperProps {
   /** Encoded build string from URL (simplest method) */
   readonly build?: string;
@@ -118,9 +140,9 @@ export function createBuildUrl(
   });
 
   const json = JSON.stringify(itemsObj);
-  const encoded = btoa(json);
+  const encoded = safeBase64Encode(json);
   const statsJson = JSON.stringify(baseStats);
-  const statsEncoded = btoa(statsJson);
+  const statsEncoded = safeBase64Encode(statsJson);
 
   const url = new URL(baseUrl || (globalThis.window === undefined ? '' : globalThis.window.location.origin) + '/character-planner');
   url.searchParams.set('build', encoded);
@@ -162,11 +184,11 @@ export function parseBuildUrl(url: string): {
     };
 
     if (statsParam) {
-      const decoded = atob(statsParam);
+      const decoded = safeBase64Decode(statsParam);
       baseStats = JSON.parse(decoded);
     }
 
-    const decoded = atob(buildData);
+    const decoded = safeBase64Decode(buildData);
     const data = JSON.parse(decoded);
 
     const items = new Map<ItemSlotType, EquippedItem>();

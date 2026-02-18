@@ -4,6 +4,28 @@ import ItemSlot from './ItemSlot';
 import { ItemSlotType, EquippedItem, BaseStats, CharacterStats } from './useCharacterState';
 import { calculateItemStats } from '../Item';
 
+/**
+ * Unicode-safe base64 encoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Encode(str: string): string {
+  // Convert string to UTF-8 bytes, then to base64
+  return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => {
+    return String.fromCharCode(Number.parseInt(p1, 16));
+  }));
+}
+
+/**
+ * Unicode-safe base64 decoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Decode(str: string): string {
+  // Decode from base64 to UTF-8 bytes, then to string
+  return decodeURIComponent(Array.prototype.map.call(atob(str), (c: string) => {
+    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+}
+
 interface CompactBuildDisplayProps {
   /** Full query string from character planner URL (RECOMMENDED - simplest method)
    * Example: "build=eyJoZWxtZXQ...&level=100&stats=eyJzdHJlbmd0aCI6MTQ0..."
@@ -228,14 +250,14 @@ function decodeBuildData(
 
     if (statsString) {
       try {
-        const decoded = atob(statsString);
+        const decoded = safeBase64Decode(statsString);
         baseStats = JSON.parse(decoded);
       } catch (e) {
         console.error('Failed to decode stats:', e);
       }
     }
 
-    const decoded = atob(buildString);
+    const decoded = safeBase64Decode(buildString);
     const data = JSON.parse(decoded);
 
     const items = new Map<ItemSlotType, EquippedItem>();
@@ -280,14 +302,14 @@ function loadBuildFromUrl(): { items: Map<ItemSlotType, EquippedItem>; level: nu
 
     if (statsParam) {
       try {
-        const decoded = atob(statsParam);
+        const decoded = safeBase64Decode(statsParam);
         baseStats = JSON.parse(decoded);
       } catch (e) {
         console.error('Failed to load stats from URL:', e);
       }
     }
 
-    const decoded = atob(buildData);
+    const decoded = safeBase64Decode(buildData);
     const data = JSON.parse(decoded);
 
     const items = new Map<ItemSlotType, EquippedItem>();
@@ -378,9 +400,9 @@ export default function CompactBuildDisplay({
     });
 
     const json = JSON.stringify(itemsObj);
-    const encoded = btoa(json);
+    const encoded = safeBase64Encode(json);
     const statsJson = JSON.stringify(buildData.baseStats);
-    const statsEncoded = btoa(statsJson);
+    const statsEncoded = safeBase64Encode(statsJson);
 
     // Build query string manually to ensure proper encoding
     const queryParams = new URLSearchParams();

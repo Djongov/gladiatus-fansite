@@ -176,21 +176,99 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
     setSuccess(false);
 
     try {
-      const response = await fetch('https://gladiatus-player-parser.gladiatus.workers.dev', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          profile_url: profileUrl.trim(),
-        }),
-      });
+      let response: Response;
+      let usedFallback = false;
 
-      if (!response.ok) {
-        throw new Error(`API request failed: ${response.status} ${response.statusText}`);
+      // Try primary API (Cloudflare Worker)
+      try {
+        console.log('Attempting primary API (Cloudflare Worker)...');
+        response = await fetch('https://gladiatus-player-parser.gladiatus.workers.dev', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            profile_url: profileUrl.trim(),
+          }),
+        });
+
+        console.log('Primary API Response status:', response.status, response.statusText);
+
+        // If we get a 500 error, try the fallback API
+        if (response.status === 500) {
+          console.log('Primary API returned 500, trying fallback API...');
+          throw new Error('Primary API returned 500');
+        }
+      } catch (primaryError) {
+        console.log('Primary API failed, attempting fallback API...');
+        console.log('Primary API error:', primaryError instanceof Error ? primaryError.message : primaryError);
+        
+        // Try fallback API
+        const formData = new URLSearchParams();
+        formData.append('profile_url', profileUrl.trim());
+        
+        response = await fetch('https://gladiatus-api.gamerz-bg.com/api/fetch-player', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: formData.toString(),
+        });
+        
+        console.log('Fallback API Response status:', response.status, response.statusText);
+        usedFallback = true;
       }
 
-      const data: ApiResponse = await response.json();
+      if (!response.ok) {
+        // Try to get detailed error message from API response
+        let errorMessage = `API request failed: ${response.status} ${response.statusText}`;
+        console.log('Response not ok, attempting to read error details...');
+        try {
+          const contentType = response.headers.get('content-type');
+          console.log('Content-Type:', contentType);
+          if (contentType?.includes('application/json')) {
+            console.log('Attempting to parse JSON error response...');
+            const errorData = await response.json();
+            console.log('Error data:', errorData);
+            if (errorData.error) {
+              errorMessage = errorData.error;
+            } else if (errorData.message) {
+              errorMessage = errorData.message;
+            }
+          } else {
+            // Try to read as text for non-JSON responses
+            console.log('Attempting to read text error response...');
+            const textResponse = await response.text();
+            console.log('Text response length:', textResponse.length);
+            if (textResponse && textResponse.length < 500) {
+              errorMessage = `${errorMessage} - ${textResponse}`;
+            }
+          }
+        } catch (parseError) {
+          // If parsing fails, use the default error message
+          // This is expected for malformed or HTML error responses
+          console.error('Error while parsing error response:', parseError);
+          if (parseError instanceof Error) {
+            console.error('Parse error message:', parseError.message);
+            console.error('Parse error stack:', parseError.stack);
+          }
+        }
+        console.log('About to throw error with message:', errorMessage);
+        throw new Error(errorMessage);
+      }
+
+      console.log(`Response ok from ${usedFallback ? 'fallback' : 'primary'} API, parsing success data...`);
+      let responseData = await response.json();
+      
+      // Handle different response formats
+      // Fallback API wraps data in { result: "success", data: { ... } }
+      // Primary API returns data directly
+      if (responseData.result && responseData.data) {
+        console.log('Detected wrapped response format (fallback API), unwrapping...');
+        responseData = responseData.data;
+      }
+      
+      const data: ApiResponse = responseData;
 
       // Map base stats
       const baseStats: BaseStats = {
@@ -261,7 +339,21 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
       setTimeout(() => setSuccess(false), 3000);
     } catch (err) {
       console.error('Import error:', err);
-      setError(err instanceof Error ? err.message : 'Failed to import profile');
+      
+      let errorMessage = 'Failed to import profile';
+      
+      if (err instanceof Error) {
+        errorMessage = err.message;
+        
+        // Provide more helpful messages for common errors
+        if (errorMessage.includes('Failed to fetch') || errorMessage.includes('NetworkError')) {
+          errorMessage = 'Network error: Unable to connect to the server. Please check your internet connection.';
+        } else if (errorMessage.includes('CORS')) {
+          errorMessage = 'Unable to access the profile. This may be a browser security restriction.';
+        }
+      }
+      
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }

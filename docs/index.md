@@ -13,6 +13,14 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 ![News Announcements](https://gladiatusfansite.blob.core.windows.net/images/announcement_imperator.png "News Announcements")
 
+## Open Questions
+
+Hey guys. We have a couple of open questions that need answering. Like formulas mostly. If you are someone who knows the answer to any of the below, please contact me on Discord - Skarsburning.
+
+1. What is the formula for materials needed when the item has both prefix and suffix
+2. What is the formula for gold value/Durability/Conditioning of an item when it receives a suffix/prefix or both and with rarity levels (green, orange, red and etc)
+3. How do we know if an item is conditioned from the anonymous profile page of a player
+
 ## Latest Gladiatus News
 
 ### New Servers

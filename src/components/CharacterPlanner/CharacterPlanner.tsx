@@ -9,6 +9,28 @@ import PlayerName from './PlayerName';
 import { useCharacterState, ItemSlotType } from './useCharacterState';
 
 /**
+ * Unicode-safe base64 encoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Encode(str: string): string {
+  // Convert string to UTF-8 bytes, then to base64
+  return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => {
+    return String.fromCharCode(Number.parseInt(p1, 16));
+  }));
+}
+
+/**
+ * Unicode-safe base64 decoding
+ * Handles special characters, emojis, and international characters
+ */
+function safeBase64Decode(str: string): string {
+  // Decode from base64 to UTF-8 bytes, then to string
+  return decodeURIComponent(Array.prototype.map.call(atob(str), (c: string) => {
+    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+}
+
+/**
  * Main Character Planner Component
  * Allows users to plan their character build by equipping items and viewing stats
  * Supports URL sharing for builds
@@ -56,9 +78,11 @@ export default function CharacterPlanner() {
       });
 
       const json = JSON.stringify(itemsObj);
-      const encoded = btoa(json);
+      console.log('handleShare: Encoding build JSON, length:', json.length);
+      const encoded = safeBase64Encode(json);
       const statsJson = JSON.stringify(baseStats);
-      const statsEncoded = btoa(statsJson);
+      console.log('handleShare: Encoding stats JSON:', statsJson);
+      const statsEncoded = safeBase64Encode(statsJson);
 
       const url = new URL(globalThis.window.location.href);
       url.searchParams.set('build', encoded);
@@ -74,15 +98,18 @@ export default function CharacterPlanner() {
       }
     } catch (error) {
       console.error('Failed to copy URL:', error);
+      if (error instanceof Error) {
+        console.error('Error details:', error.message, error.stack);
+      }
       // Fallback: show the URL in a prompt
       const itemsObj: Record<string, any> = {};
       equippedItems.forEach((item, slot) => {
         itemsObj[slot] = item;
       });
       const json = JSON.stringify(itemsObj);
-      const encoded = btoa(json);
+      const encoded = safeBase64Encode(json);
       const statsJson = JSON.stringify(baseStats);
-      const statsEncoded = btoa(statsJson);
+      const statsEncoded = safeBase64Encode(statsJson);
       const url = new URL(globalThis.window.location.href);
       url.searchParams.set('build', encoded);
       url.searchParams.set('level', characterLevel.toString());
@@ -99,9 +126,9 @@ export default function CharacterPlanner() {
       });
 
       const json = JSON.stringify(itemsObj);
-      const encoded = btoa(json);
+      const encoded = safeBase64Encode(json);
       const statsJson = JSON.stringify(baseStats);
-      const statsEncoded = btoa(statsJson);
+      const statsEncoded = safeBase64Encode(statsJson);
 
       // Build query string without the base URL
       const queryString = `build=${encoded}&level=${characterLevel}&stats=${statsEncoded}`;
@@ -119,9 +146,9 @@ export default function CharacterPlanner() {
         itemsObj[slot] = item;
       });
       const json = JSON.stringify(itemsObj);
-      const encoded = btoa(json);
+      const encoded = safeBase64Encode(json);
       const statsJson = JSON.stringify(baseStats);
-      const statsEncoded = btoa(statsJson);
+      const statsEncoded = safeBase64Encode(statsJson);
       const queryString = `build=${encoded}&level=${characterLevel}&stats=${statsEncoded}`;
       prompt('Copy this query string:', queryString);
     }
@@ -130,10 +157,23 @@ export default function CharacterPlanner() {
   const equippedCount = equippedItems.size;
 
   // Calculate item level ranges based on character level
-  const maxUsableItemLevel = characterLevel + 16;
-  const maxMarketItemLevel = characterLevel + 9;
-  const minAuctionItemLevel = characterLevel - 22;
-  const maxAuctionItemLevel = characterLevel + 14;
+  // Maximum level of item we can equip
+  const maxUsableItemLevel = characterLevel >= 33 
+    ? characterLevel + 16 
+    : Math.ceil(1.25 * characterLevel + 7.75);
+  
+  // Maximum level seen on the market
+  const maxMarketItemLevel = characterLevel >= 36 
+    ? characterLevel + 9 
+    : Math.floor(1.25 * characterLevel);
+  
+  // Minimum level seen in auctions
+  const minAuctionItemLevel = Math.floor(0.75 * characterLevel);
+  
+  // Maximum level seen in auctions
+  const maxAuctionItemLevel = characterLevel >= 33 
+    ? characterLevel + 14 
+    : Math.ceil(1.25 * characterLevel + 5.75);
 
   return (
     <div className={styles.characterPlanner}>
@@ -173,10 +213,10 @@ export default function CharacterPlanner() {
               Can use items up to <strong>{maxUsableItemLevel}</strong> level.
             </div>
             <div className={styles.levelInfoItem}>
-              Can see items on the market up to <strong>{maxMarketItemLevel}</strong> level.
+              Can see items on the market up to <strong>{maxMarketItemLevel}</strong> level (can be increased with Praetor's seal).
             </div>
             <div className={styles.levelInfoItem}>
-              Can see items on the auction from <strong>{minAuctionItemLevel}</strong> to <strong>{maxAuctionItemLevel}</strong> level.
+              Can see items on the auction from <strong>{minAuctionItemLevel}</strong> to <strong>{maxAuctionItemLevel}</strong> level (can be increased with Praetor's seal).
             </div>
           </div>
           <span className={styles.equippedCount}>
