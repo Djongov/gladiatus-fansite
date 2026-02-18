@@ -103,6 +103,15 @@ Expeditions from level 120 - 200
 | Germania | Teuton Camp          | 104         | 112–118      | No                         | No                      |
 | Germania | Koman Mountain       | 108         | 116–122      | No                         | No                      |
 | Germania | Dragon Remains       | 112         | 120–126      | Late Revenge               | Alpha & Omega           |
+| Britannia | Bank of the Thames  | 120         | 130–140      | No                         | No                      |
+| Britannia | Forest Fortress     | 130         | 140–150      | No                         | No                      |
+| Britannia | The Moor            | 140         | 150–160      | No                         | No                      |
+| Britannia | Camp Cassivellaunus | 150         | 160–170      | No                         | No                      |
+| Britannia | Kent                | 160         | 170–180      | No                         | No                      |
+| Britannia | The Ford            | 170         | 180–190      | No                         | No                      |
+| Britannia | Camulodunum         | 180         | 190–200      | No                         | No                      |
+| Britannia | Cambria             | 190         | 200–210      | No                         | No                      |
+| Britannia | Mona Isle           | 200         | 210–220      | No                         | No                      |
 
 ## Expeditions Sorted by Country
 
@@ -132,3 +141,12 @@ Expeditions from level 120 - 200
 | Germania | Teuton Camp        | 104         | 112–118      | No                         | No                      |
 | Germania | Koman Mountain     | 108         | 116–122      | No                         | No                      |
 | Germania | Dragon Remains     | 112         | 120–126      | Late Revenge               | Alpha & Omega           |
+| Britannia | Bank of the Thames | 120         | 130–140      | No                         | No                      |
+| Britannia | Forest Fortress    | 130         | 140–150      | No                         | No                      |
+| Britannia | The Moor           | 140         | 150–160      | No                         | No                      |
+| Britannia | Camp Cassivellaunus | 150        | 160–170      | No                         | No                      |
+| Britannia | Kent               | 160         | 170–180      | No                         | No                      |
+| Britannia | The Ford           | 170         | 180–190      | No                         | No                      |
+| Britannia | Camulodunum        | 180         | 190–200      | No                         | No                      |
+| Britannia | Cambria            | 190         | 200–210      | No                         | No                      |
+| Britannia | Mona Isle          | 200         | 210–220      | No                         | No                      |
