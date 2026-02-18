@@ -123,13 +123,18 @@ function calculateCharacterStats(
     // Add armor
     if (itemStats.armour) {
       totalArmor += itemStats.armour;
+    } else if (itemStats.prefixArmor) {
+      // For items without base armor (rings/amulets), use prefixArmor
+      totalArmor += itemStats.prefixArmor;
     }
 
-    // Add enchant bonus
+    // Add enchant bonus based on item type (legacy system)
     if (equippedItem.enchantValue) {
       if (slot === 'mainHand') {
+        // Grindstone for weapons
         enchantDamageBonus += equippedItem.enchantValue;
-      } else {
+      } else if (slot === 'helmet' || slot === 'chest' || slot === 'gloves' || slot === 'shoes' || slot === 'offHand') {
+        // Protective gear for armor pieces only (not rings or amulets)
         enchantArmorBonus += equippedItem.enchantValue;
       }
     }
@@ -193,6 +198,8 @@ function calculateCharacterStats(
   });
 
   // Apply enchant bonuses
+  const armorFromItems = totalArmor;
+  const armorFromEnchants = enchantArmorBonus;
   totalArmor += enchantArmorBonus;
   const weaponDamageFromEnchants = enchantDamageBonus + bonusDamageFromItems;
   totalDamageMin += weaponDamageFromEnchants;
@@ -203,7 +210,8 @@ function calculateCharacterStats(
   const minAbsorption = Math.ceil((totalArmor / 74) - (totalArmor / 74) / 660 + 1);
   const minDamageAbsorbed = Math.max(0, minAbsorption);
   // Maximal armour absorption = (Armour/66)+(Armour/660) [round down]
-  const maxDamageAbsorbed = Math.floor((totalArmor / 66) + (totalArmor / 660));
+  // Ensure max is at least equal to min
+  const maxDamageAbsorbed = Math.max(minDamageAbsorbed, Math.floor((totalArmor / 66) + (totalArmor / 660)));
 
   // Calculate final agility value (base + flat bonuses + percentage bonuses), capped at max
   const agilityStat = combinedStats.get('Agility') || { flat: 0, percent: 0 };
@@ -219,7 +227,8 @@ function calculateCharacterStats(
   const totalResilience = resilienceFromAgility + resilienceFromItems;
   
   // Calculate Maximum Resilience Cap: FLOOR(24.5*4*(level-8)/52)+1
-  const maxResilience = Math.floor((24.5 * 4 * (characterLevel - 8) / 52) + 1);
+  // Ensure max is never negative for low-level characters
+  const maxResilience = Math.max(0, Math.floor((24.5 * 4 * (characterLevel - 8) / 52) + 1));
   
   // Calculate Chance to avoid critical hits: (Resilience * 52 / (level-8)) / 4
   // Cap at 25% maximum
@@ -241,7 +250,8 @@ function calculateCharacterStats(
   const totalBlocking = blockingFromStrength + blockingFromItems;
   
   // Calculate Maximum Blocking Cap: FLOOR((49.5*6*(level-8)/52)+1)
-  const maxBlocking = Math.floor((49.5 * 6 * (characterLevel - 8) / 52) + 1);
+  // Ensure max is never negative for low-level characters
+  const maxBlocking = Math.max(0, Math.floor((49.5 * 6 * (characterLevel - 8) / 52) + 1));
   
   // Calculate Chance to block a hit: (Blocking value * 52 / (level-8)) / 6
   const blockChance = characterLevel > 8
@@ -262,7 +272,8 @@ function calculateCharacterStats(
   const totalCriticalAttack = criticalAttackFromDexterity + criticalAttackFromItems;
   
   // Calculate Maximum Critical Attack Cap: FLOOR((49.5*5*(level-8)/52)+1)
-  const maxCriticalAttack = Math.floor((49.5 * 5 * (characterLevel - 8) / 52) + 1);
+  // Ensure max is never negative for low-level characters
+  const maxCriticalAttack = Math.max(0, Math.floor((49.5 * 5 * (characterLevel - 8) / 52) + 1));
   
   // Calculate Chance for critical hit: (Critical attack value * 52 / (level-8)) / 5
   const criticalHitChance = characterLevel > 8
@@ -311,6 +322,8 @@ function calculateCharacterStats(
 
   return {
     totalArmor,
+    armorFromItems,
+    armorFromEnchants,
     minDamageAbsorbed,
     maxDamageAbsorbed,
     totalResilience,
@@ -616,7 +629,12 @@ export default function CompactBuildDisplay({
                 
                 <div className={styles.statRow}>
                   <span className={styles.statLabel}>Armour:</span>
-                  <span className={styles.statValue}>{stats.totalArmor}</span>
+                  <span className={styles.statValue}>
+                    {stats.totalArmor}
+                    <div className={styles.statBreakdown}>
+                      (Items: {stats.armorFromItems} + Enchants: {stats.armorFromEnchants})
+                    </div>
+                  </span>
                 </div>
                 
                 {stats.totalHealth > 0 && (

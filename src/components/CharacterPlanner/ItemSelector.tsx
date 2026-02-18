@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import styles from './ItemSelector.module.css';
 import { ItemSlotType, EquippedItem, Upgrade, AppliedUpgrade } from './useCharacterState';
 import Item, { BaseItem, PrefixSuffix, ItemRarity } from '../Item';
@@ -95,6 +95,13 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
     );
   }, [selectedBase]);
 
+  // Clear enchantValue when rings or amulets are selected (they can't have protective gear)
+  useEffect(() => {
+    if (selectedBase && (selectedBase.type === 'rings' || selectedBase.type === 'amulets')) {
+      setEnchantValue(0);
+    }
+  }, [selectedBase]);
+
   const handleEquip = () => {
     if (!selectedBase) return;
 
@@ -104,7 +111,8 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
       suffix: selectedSuffix || undefined,
       rarity: selectedRarity,
       conditioned,
-      enchantValue: enchantValue > 0 ? enchantValue : undefined,
+      // Only save enchantValue for items that can have protective gear/grindstone (not rings/amulets)
+      enchantValue: (selectedBase.type !== 'rings' && selectedBase.type !== 'amulets' && enchantValue > 0) ? enchantValue : undefined,
       upgrades: selectedUpgrades.length > 0 ? selectedUpgrades : undefined,
     };
 
@@ -314,8 +322,8 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                   </label>
                 </div>
 
-                {/* Enchant Value - only for weapons and armor pieces (not amulets/rings) */}
-                {selectedBase.type !== 'amulets' && selectedBase.type !== 'rings' && (
+                {/* Enchant Value - only for weapons and armor pieces (not rings/amulets) */}
+                {selectedBase && selectedBase.type !== 'amulets' && selectedBase.type !== 'rings' && (
                   <div className={styles.customField}>
                     <label htmlFor="enchant-input">
                       Enchant {selectedBase.type === 'weapons' ? '(Grindstone +Damage)' : '(Protective gear +Armor)'}:
@@ -343,7 +351,8 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                       {availableUpgrades.map((upgrade) => {
                         const existingUpgrade = selectedUpgrades.find(u => u.upgrade.name === upgrade.name);
                         const isSelected = !!existingUpgrade;
-                        const isPowderDisabled = enchantValue > 0;
+                        // Powders are only disabled by enchant for items that CAN have enchants (not rings/amulets)
+                        const isPowderDisabled = selectedBase && selectedBase.type !== 'rings' && selectedBase.type !== 'amulets' && enchantValue > 0;
                         const statName = upgrade.stat.charAt(0).toUpperCase() + upgrade.stat.slice(1);
                         
                         return (

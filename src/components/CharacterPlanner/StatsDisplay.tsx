@@ -76,7 +76,12 @@ export default function StatsDisplay({ stats }: StatsDisplayProps) {
           
           <div className={styles.statRow}>
             <span className={styles.statName}>Armour:</span>
-            <span className={styles.statValue}>{stats.totalArmor}</span>
+            <span className={styles.statValue}>
+              {stats.totalArmor}
+              <div className={styles.statBreakdown}>
+                (Items: {stats.armorFromItems} + Enchants: {stats.armorFromEnchants})
+              </div>
+            </span>
           </div>
           
           <div className={styles.statRowNested}>

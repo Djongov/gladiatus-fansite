@@ -20,6 +20,7 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 1. What is the formula for materials needed when the item has both prefix and suffix
 2. What is the formula for gold value/Durability/Conditioning of an item when it receives a suffix/prefix or both and with rarity levels (green, orange, red and etc)
 3. How do we know if an item is conditioned from the anonymous profile page of a player
+4. What happens when you wear broken items?
 
 ## Latest Gladiatus News
 

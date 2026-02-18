@@ -239,7 +239,7 @@ export function calculateItemStats(
         const totalLevel = prefixLevel + suffixLevel;
         calculatedArmor = baseItem.armour + (5 + totalLevel / 40) * totalLevel;
       } else {
-        // Chest/Helmet formula: baseArmor + (10 + prefixLevel/20 + suffixLevel/20) * (levelMultiplier - 1)
+        // Chest/Shield formula: baseArmor + (10 + prefixLevel/20 + suffixLevel/20) * (levelMultiplier - 1)
         const levelMultiplier = prefixLevel + suffixLevel + 1;
         const armorMultiplier = 10 + (prefixLevel / 20) + (suffixLevel / 20);
         calculatedArmor = baseItem.armour + armorMultiplier * (levelMultiplier - 1);
@@ -548,7 +548,8 @@ export default function Item({
             );
           })}
 
-          {enchantValue && (
+          {/* Only show enchantValue for weapons and armor pieces, not rings/amulets */}
+          {enchantValue && resolvedBaseItem.type !== 'rings' && resolvedBaseItem.type !== 'amulets' && (
             <div className={styles.enchant}>
               +{enchantValue} {resolvedBaseItem.type === 'weapons' ? 'Damage' : 'Armour'}
             </div>
@@ -562,7 +563,7 @@ export default function Item({
             
             return (
               <div key={`upgrade-${index}`} className={styles.enchant}>
-                {statName} +{bonus}
+                +{bonus} {statName}
               </div>
             );
           })}

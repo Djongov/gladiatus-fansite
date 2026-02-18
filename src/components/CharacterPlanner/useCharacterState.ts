@@ -97,6 +97,9 @@ export interface CharacterStats {
   damageFromWeapons: { min: number; max: number };
   damageFromStrength: number;
   damageFromItems: number;
+  // Armor breakdown
+  armorFromItems: number;
+  armorFromEnchants: number;
   // Health breakdown
   healthFromLevel: number;
   healthFromConstitution: number;
@@ -384,6 +387,9 @@ export function useCharacterState(): CharacterState {
       // Add armor
       if (itemStats.armour) {
         totalArmor += itemStats.armour;
+      } else if (itemStats.prefixArmor) {
+        // For items without base armor (rings/amulets), use prefixArmor
+        totalArmor += itemStats.prefixArmor;
       }
 
       // Add enchant bonus based on item type (legacy system)
@@ -391,8 +397,8 @@ export function useCharacterState(): CharacterState {
         if (slot === 'mainHand') {
           // Grindstone for weapons
           enchantDamageBonus += equippedItem.enchantValue;
-        } else {
-          // Protective gear for armor pieces (including shields)
+        } else if (slot === 'helmet' || slot === 'chest' || slot === 'gloves' || slot === 'shoes' || slot === 'offHand') {
+          // Protective gear for armor pieces only (not rings or amulets)
           enchantArmorBonus += equippedItem.enchantValue;
         }
       }
@@ -443,6 +449,8 @@ export function useCharacterState(): CharacterState {
     });
 
     // Add enchant bonuses to totals
+    const armorFromItems = totalArmor;
+    const armorFromEnchants = enchantArmorBonus;
     totalArmor += enchantArmorBonus;
 
     // Calculate Damage Absorption
@@ -450,7 +458,8 @@ export function useCharacterState(): CharacterState {
     const minAbsorption = Math.ceil((totalArmor / 74) - (totalArmor / 74) / 660 + 1);
     const minDamageAbsorbed = Math.max(0, minAbsorption);
     // Maximal armour absorption = (Armour/66)+(Armour/660) [round down]
-    const maxDamageAbsorbed = Math.floor((totalArmor / 66) + (totalArmor / 660));
+    // Ensure max is at least equal to min
+    const maxDamageAbsorbed = Math.max(minDamageAbsorbed, Math.floor((totalArmor / 66) + (totalArmor / 660)));
 
     // Calculate final agility value (base + flat bonuses + percentage bonuses), capped at max
     const agilityStat = combinedStats.get('Agility') || { flat: 0, percent: 0 };
@@ -466,7 +475,8 @@ export function useCharacterState(): CharacterState {
     const totalResilience = resilienceFromAgility + resilienceFromItems;
     
     // Calculate Maximum Resilience Cap: FLOOR(24.5*4*(level-8)/52)+1
-    const maxResilience = Math.floor((24.5 * 4 * (characterLevel - 8) / 52) + 1);
+    // Ensure max is never negative for low-level characters
+    const maxResilience = Math.max(0, Math.floor((24.5 * 4 * (characterLevel - 8) / 52) + 1));
     
     // Calculate Chance to avoid critical hits: (Resilience * 52 / (level-8)) / 4
     // Protect against division by zero for low levels
@@ -489,7 +499,8 @@ export function useCharacterState(): CharacterState {
     const totalBlocking = blockingFromStrength + blockingFromItems;
     
     // Calculate Maximum Blocking Cap: FLOOR((49.5*6*(level-8)/52)+1)
-    const maxBlocking = Math.floor((49.5 * 6 * (characterLevel - 8) / 52) + 1);
+    // Ensure max is never negative for low-level characters
+    const maxBlocking = Math.max(0, Math.floor((49.5 * 6 * (characterLevel - 8) / 52) + 1));
     
     // Calculate Chance to block a hit: (Blocking value * 52 / (level-8)) / 6
     const blockChance = characterLevel > 8
@@ -510,7 +521,8 @@ export function useCharacterState(): CharacterState {
     const totalCriticalAttack = criticalAttackFromDexterity + criticalAttackFromItems;
     
     // Calculate Maximum Critical Attack Cap: FLOOR((49.5*5*(level-8)/52)+1)
-    const maxCriticalAttack = Math.floor((49.5 * 5 * (characterLevel - 8) / 52) + 1);
+    // Ensure max is never negative for low-level characters
+    const maxCriticalAttack = Math.max(0, Math.floor((49.5 * 5 * (characterLevel - 8) / 52) + 1));
     
     // Calculate Chance for critical hit: (Critical attack value * 52 / (level-8)) / 5
     const criticalHitChance = characterLevel > 8
@@ -574,6 +586,8 @@ export function useCharacterState(): CharacterState {
 
     return {
       totalArmor,
+      armorFromItems,
+      armorFromEnchants,
       minDamageAbsorbed,
       maxDamageAbsorbed,
       totalResilience,

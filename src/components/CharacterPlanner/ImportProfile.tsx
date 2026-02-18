@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import styles from './ImportProfile.module.css';
 import type { BaseItem, PrefixSuffix, ItemRarity } from '../Item';
-import type { ItemSlotType, BaseStats, EquippedItem, CharacterIdentity } from './useCharacterState';
+import type { ItemSlotType, BaseStats, EquippedItem, CharacterIdentity, Upgrade, AppliedUpgrade } from './useCharacterState';
 
 // Import data files
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
+import upgradesData from '@site/static/data/items/upgrades.json';
 
 interface ImportProfileProps {
   onImport: (level: number, baseStats: BaseStats, items: Map<ItemSlotType, EquippedItem>, identity: CharacterIdentity) => void;
@@ -303,10 +304,32 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
         // Use conditioned value directly from API
         const conditioned = apiItem.conditioned;
 
-        // Parse enchant value
-        const enchantValue = apiItem.enchant?.value 
-          ? parseInt(apiItem.enchant.value, 10) 
-          : undefined;
+        // Parse enchant - different meaning for rings/amulets vs other items
+        let enchantValue: number | undefined;
+        let upgrades: AppliedUpgrade[] | undefined;
+        
+        if (apiItem.enchant && apiItem.enchant.value) {
+          const enchantLevel = parseInt(apiItem.enchant.value, 10);
+          
+          // For rings and amulets, enchant contains powder data
+          if (baseItem.type === 'rings' || baseItem.type === 'amulets') {
+            // Find the powder upgrade by stat type
+            const powderStat = apiItem.enchant.type.toLowerCase();
+            const powderUpgrade = (upgradesData as Upgrade[]).find(
+              upgrade => upgrade.type === 'powder' && upgrade.stat.toLowerCase() === powderStat
+            );
+            
+            if (powderUpgrade) {
+              upgrades = [{
+                upgrade: powderUpgrade,
+                level: enchantLevel
+              }];
+            }
+          } else {
+            // For other items, enchant is protective gear/grindstone
+            enchantValue = enchantLevel;
+          }
+        }
 
         const equippedItem: EquippedItem = {
           baseItem,
@@ -315,7 +338,7 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
           rarity,
           conditioned,
           enchantValue,
-          upgrades: [], // We don't have upgrade data from the API yet
+          upgrades,
         };
 
         itemsMap.set(slot, equippedItem);
