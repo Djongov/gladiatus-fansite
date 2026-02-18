@@ -53,6 +53,24 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
+.statRowNested {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px 6px 24px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-left: 12px;
+  margin-top: 4px;
+  font-size: 13px;
+  border-left: 3px solid #c4ac70;
+  transition: background 0.2s;
+}
+
+.statRowNested:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
 .statName {
   color: #5a4a2f;
   font-weight: 600;
@@ -63,6 +81,14 @@
   color: #8b6914;
   font-weight: bold;
   font-size: 16px;
+}
+
+.statBreakdown {
+  font-size: 10px;
+  font-weight: normal;
+  color: #7a6a4f;
+  font-style: italic;
+  margin-top: 2px;
 }
 
 .emptyState {
@@ -106,6 +132,15 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+[data-theme='dark'] .statRowNested {
+  background: rgba(0, 0, 0, 0.2);
+  border-left-color: #8b7355;
+}
+
+[data-theme='dark'] .statRowNested:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 [data-theme='dark'] .statName {
   color: #c9a876;
 }
@@ -113,6 +148,10 @@
 [data-theme='dark'] .statValue {
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] .statBreakdown {
+  color: #a89968;
 }
 
 [data-theme='dark'] .emptyState {
@@ -132,6 +171,12 @@
   
   .statRow {
     padding: 6px 10px;
+  }
+  
+  .statRowNested {
+    padding: 5px 10px 5px 20px;
+    margin-left: 8px;
+    font-size: 12px;
   }
   
   .statName {

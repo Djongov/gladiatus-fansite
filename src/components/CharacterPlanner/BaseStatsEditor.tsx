@@ -109,44 +109,6 @@ export default function BaseStatsEditor({ baseStats, setBaseStats, characterStat
           );
         })}
       </div>
-
-      <div className={styles.derivedStats}>
-        <div className={styles.derivedStat}>
-          <span className={styles.derivedLabel}>Life Points:</span>
-          <div className={styles.damageContainer}>
-            <span className={styles.derivedValue}>{characterStats.totalHealth}</span>
-            <div className={styles.damageBreakdown}>
-              <div>Level: {characterStats.healthFromLevel}</div>
-              <div>Constitution: {characterStats.healthFromConstitution > 0 ? '+' : ''}{characterStats.healthFromConstitution}</div>
-              {characterStats.healthFromItems !== 0 && (
-                <div>Items: {characterStats.healthFromItems > 0 ? '+' : ''}{characterStats.healthFromItems}</div>
-              )}
-              <div style={{ marginTop: '4px', borderTop: '1px solid #8b7355', paddingTop: '4px' }}>
-                Regen/hour: {characterStats.healthRegenPerHour}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.derivedStat}>
-          <span className={styles.derivedLabel}>Total Armour:</span>
-          <span className={styles.derivedValue}>{characterStats.totalArmor}</span>
-        </div>
-        <div className={styles.derivedStat}>
-          <span className={styles.derivedLabel}>Total Damage:</span>
-          <div className={styles.damageContainer}>
-            <span className={styles.derivedValue}>
-              {characterStats.totalDamageMin} - {characterStats.totalDamageMax}
-            </span>
-            <div className={styles.damageBreakdown}>
-              <div>Weapon: {characterStats.damageFromWeapons.min}-{characterStats.damageFromWeapons.max}</div>
-              <div>Strength: +{characterStats.damageFromStrength}</div>
-              {characterStats.damageFromItems !== 0 && (
-                <div>Items: {characterStats.damageFromItems > 0 ? '+' : ''}{characterStats.damageFromItems}</div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
