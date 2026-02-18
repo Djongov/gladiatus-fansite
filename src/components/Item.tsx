@@ -104,10 +104,31 @@ export function calculateItemStats(
     totalMultiplier += 0.5;
   }
 
-  // Apply multipliers to durability/conditioning/gold
-  const applyBonus = (value: number | null | undefined): number | null => {
+  // Get rarity tier number for durability bonus
+  const getRarityTier = (): number => {
+    const tierMap: Record<ItemRarity, number> = {
+      common: 0,
+      green: 0,
+      blue: 1,
+      purple: 2,
+      orange: 3,
+      red: 4,
+    };
+    return tierMap[rarity];
+  };
+
+  // Apply multipliers to durability/conditioning
+  const applyDurabilityBonus = (value: number | null | undefined): number | null => {
     if (value === null || value === undefined) return null;
-    return Math.round(value * totalMultiplier);
+    return Math.round(value * totalMultiplier) + getRarityTier();
+  };
+  
+  const applyConditioningBonus = (value: number | null | undefined): number | null => {
+    if (value === null || value === undefined) return null;
+    // Conditioning adjustment: blue/purple: -1, orange/red: -2
+    const tier = getRarityTier();
+    const conditioningAdjustment = tier >= 3 ? 2 : (tier > 0 ? 1 : 0);
+    return Math.floor(value * totalMultiplier) - conditioningAdjustment;
   };
 
   // Calculate final level (base + prefix + suffix)
@@ -393,9 +414,9 @@ export function calculateItemStats(
     }
   });
 
-  // Calculate total gold value (uses same multipliers as damage)
-  const goldMultiplier = getDamageMultiplier();
-  const baseGold = baseItem.gold ? Math.round(baseItem.gold * goldMultiplier) : 0;
+  // Calculate total gold value
+  const rarityMultiplier = getDamageMultiplier(); // Uses rarity: blue=1.15, purple=1.30, orange=1.50, red=1.75, red+=2.0
+  const baseGold = baseItem.gold ? Math.ceil(baseItem.gold * rarityMultiplier) : 0;
   const totalGold = baseGold + (prefix?.gold || 0) + (suffix?.gold || 0);
 
   return {
@@ -405,10 +426,10 @@ export function calculateItemStats(
     damage,
     armour,
     prefixArmor,
-    prefixHealth,    prefixDamage,    durability: applyBonus(baseItem.durability) || undefined,
+    prefixHealth,    prefixDamage,    durability: applyDurabilityBonus(baseItem.durability) || undefined,
     conditioning: {
-      current: conditioned && baseItem.conditioning ? applyBonus(baseItem.conditioning)! : 0,
-      max: applyBonus(baseItem.conditioning) || 0,
+      current: conditioned && baseItem.conditioning ? applyConditioningBonus(baseItem.conditioning)! : 0,
+      max: applyConditioningBonus(baseItem.conditioning) || 0,
     },
     gold: totalGold || undefined,
     stats,
