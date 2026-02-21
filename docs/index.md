@@ -80,6 +80,10 @@ New servers arrive on Friday 06 February 2026. Reported list is:
 - +50% more dungeon points
 - +10% chance of finding ruby on expeditions
 
+Also there will be a Happy Day Event
+
++20% more Rubies
+
 ### 25.02.2026 00:00 – 27.02.2026 23:59
 
 - +20% chance to obtain additional loot on expeditions and in dungeons
