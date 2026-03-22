@@ -1,0 +1,9 @@
+{
+  "label": "Items",
+  "position": 5,
+  "link": {
+    "type": "doc",
+    "id": "items/index"
+  },
+  "collapsed": true
+}

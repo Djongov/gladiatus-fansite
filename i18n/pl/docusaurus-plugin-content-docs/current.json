@@ -1,0 +1,110 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Expeditions": {
+    "message": "Expeditions",
+    "description": "The label for category 'Expeditions' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Italy Expeditions": {
+    "message": "Italy Expeditions",
+    "description": "The label for category 'Italy Expeditions' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Africa Expeditions": {
+    "message": "Africa Expeditions",
+    "description": "The label for category 'Africa Expeditions' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Germania Expeditions": {
+    "message": "Germania Expeditions",
+    "description": "The label for category 'Germania Expeditions' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Britannia Expeditions": {
+    "message": "Britannia Expeditions",
+    "description": "The label for category 'Britannia Expeditions' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Dungeons": {
+    "message": "Dungeons",
+    "description": "The label for category 'Dungeons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Italy Dungeons": {
+    "message": "Italy Dungeons",
+    "description": "The label for category 'Italy Dungeons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Africa Dungeons": {
+    "message": "Africa Dungeons",
+    "description": "The label for category 'Africa Dungeons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Germania Dungeons": {
+    "message": "Germania Dungeons",
+    "description": "The label for category 'Germania Dungeons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Britannia Dungeons": {
+    "message": "Britannia Dungeons",
+    "description": "The label for category 'Britannia Dungeons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Underworld": {
+    "message": "Underworld",
+    "description": "The label for category 'Underworld' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Events": {
+    "message": "Events",
+    "description": "The label for category 'Events' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Items": {
+    "message": "Items",
+    "description": "The label for category 'Items' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Forging": {
+    "message": "Forging",
+    "description": "The label for category 'Forging' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Forging Goods": {
+    "message": "Forging Goods",
+    "description": "The label for category 'Forging Goods' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Flasks": {
+    "message": "Flasks",
+    "description": "The label for category 'Flasks' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Gemstones": {
+    "message": "Gemstones",
+    "description": "The label for category 'Gemstones' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Materials": {
+    "message": "Materials",
+    "description": "The label for category 'Materials' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Monster Parts": {
+    "message": "Monster Parts",
+    "description": "The label for category 'Monster Parts' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Ores": {
+    "message": "Ores",
+    "description": "The label for category 'Ores' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Runes": {
+    "message": "Runes",
+    "description": "The label for category 'Runes' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Costumes": {
+    "message": "Costumes",
+    "description": "The label for category 'Costumes' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Game Guide": {
+    "message": "Game Guide",
+    "description": "The label for category 'Game Guide' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Pantheon": {
+    "message": "Pantheon",
+    "description": "The label for category 'Pantheon' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Premium": {
+    "message": "Premium",
+    "description": "The label for category 'Premium' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Guild": {
+    "message": "Guild",
+    "description": "The label for category 'Guild' in sidebar 'tutorialSidebar'"
+  }
+}

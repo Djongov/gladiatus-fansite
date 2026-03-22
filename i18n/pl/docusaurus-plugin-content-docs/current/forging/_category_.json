@@ -1,0 +1,9 @@
+{
+  "label": "Forging",
+  "position": 8,
+  "link": {
+    "type": "doc",
+    "id": "forging/index"
+  },
+  "collapsed": true
+}

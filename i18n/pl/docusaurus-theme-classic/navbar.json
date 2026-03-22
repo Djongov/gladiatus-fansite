@@ -1,0 +1,46 @@
+{
+  "title": {
+    "message": "Gladiatus Fansite",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo Gladiatus Fansite",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Dokumentacja",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Calculators": {
+    "message": "Kalkulatory",
+    "description": "Navbar item with label Calculators"
+  },
+  "item.label.Loot Explorer": {
+    "message": "Eksploracja Łupów",
+    "description": "Navbar item with label Loot Explorer"
+  },
+  "item.label.Item Planner": {
+    "message": "Planer Przedmiotów",
+    "description": "Navbar item with label Item Planner"
+  },
+  "item.label.Character Planner": {
+    "message": "Planer Postaci",
+    "description": "Navbar item with label Character Planner"
+  },
+  "item.label.Global Ranking": {
+    "message": "Globalny Ranking",
+    "description": "Navbar item with label Global Ranking"
+  },
+  "item.label.Contribute": {
+    "message": "Wsparcie",
+    "description": "Navbar item with label Contribute"
+  },
+  "item.label.About Me": {
+    "message": "O mnie",
+    "description": "Navbar item with label About Me"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
