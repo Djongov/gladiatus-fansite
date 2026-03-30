@@ -40,12 +40,12 @@ Insert
 | ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif) **Gold** | 0 | 0 | 0 | 0 |
 | ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif) **Experience** | 0 | 0 | 0 | 0 |
 | ![Honour](https://gladiatusfansite.blob.core.windows.net/images/icon_honor_small.gif) **Honour** | 0 | 0 | 0 | 0 |
-| **Strength** | 0 | 0 | 0 | 627 |
-| **Dexterity** | 0 | 0 | 0 | 2821 |
-| **Agility** | 0 | 0 | 0 | 3218 |
-| **Constitution** | 0 | 0 | 0 | 1839 |
-| **Charisma** | 0 | 0 | 0 | 3950 |
-| **Intelligence** | 0 | 0 | 0 | 2424 |
-| **Armour** | 0 | 0 | 0 | 49630 |
-| **Damage** | 0-0 | 0-0 | 0-0 | 1866-2291 |
+| **Strength** | 1400 | 2307 | 1372 | 627 |
+| **Dexterity** | 2450 | 2369 | 2704 | 2392 |
+| **Agility** | 2240 | 2163 | 2839 | 2839 |
+| **Constitution** | 1760 | 2389 | 1456 | 1839 |
+| **Charisma** | 1540 | 3532 | 2038 | 3950 |
+| **Intelligence** | 1280 | 1648 | 1830 | 2424 |
+| **Armour** | 71800 | 49984 |  | 65703 |
+| **Damage** | 1478-1814 | 1268-1557 | 1345-1651 | 1409-1729 |
 | **Item Level Drop** | 1 | 1 | 1 | 1 |
