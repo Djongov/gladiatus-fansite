@@ -6992,7 +6992,7 @@
         "flat": 0,
         "percent": 49
       },
-      "critical_attack_value": {
+      "block_value": {
         "flat": 33,
         "percent": 0
       },
