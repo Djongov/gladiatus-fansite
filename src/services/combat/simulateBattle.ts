@@ -46,39 +46,41 @@ function strike(
       finalDamage: 0,
       defenderHpAfter: defender.hp,
     });
-    return;
+  } else {
+    const damageRolled = rollInt(random, attacker.damageMin, attacker.damageMax);
+    const isCrit = random() * 100 < effectiveCrit;
+    let damage = isCrit ? damageRolled * 2 : damageRolled;
+
+    const isBlocked = random() * 100 < defender.blockChance;
+    if (isBlocked) {
+      damage = Math.floor(damage / 2);
+    }
+
+    const absorbed = rollInt(random, defender.armourAbsorbMin, defender.armourAbsorbMax);
+    const finalDamage = Math.max(0, damage - absorbed);
+
+    defender.hp = Math.max(0, defender.hp - finalDamage);
+
+    strikes.push({
+      attacker: attacker.name,
+      defender: defender.name,
+      result: 'hit',
+      isCrit,
+      isBlocked,
+      isSecondHalfOfDoubleHit: isSecondHalf,
+      damageRolled,
+      damageAfterMods: damage,
+      absorbed,
+      finalDamage,
+      defenderHpAfter: defender.hp,
+    });
   }
-
-  const damageRolled = rollInt(random, attacker.damageMin, attacker.damageMax);
-  const isCrit = random() * 100 < effectiveCrit;
-  let damage = isCrit ? damageRolled * 2 : damageRolled;
-
-  const isBlocked = random() * 100 < defender.blockChance;
-  if (isBlocked) {
-    damage = Math.floor(damage / 2);
-  }
-
-  const absorbed = rollInt(random, defender.armourAbsorbMin, defender.armourAbsorbMax);
-  const finalDamage = Math.max(0, damage - absorbed);
-
-  defender.hp = Math.max(0, defender.hp - finalDamage);
-
-  strikes.push({
-    attacker: attacker.name,
-    defender: defender.name,
-    result: 'hit',
-    isCrit,
-    isBlocked,
-    isSecondHalfOfDoubleHit: isSecondHalf,
-    damageRolled,
-    damageAfterMods: damage,
-    absorbed,
-    finalDamage,
-    defenderHpAfter: defender.hp,
-  });
 
   if (defender.hp <= 0 || isSecondHalf) return;
 
+  // The double-hit attempt rolls whether or not the first strike landed —
+  // live reports show the same side missing twice in one round (e.g. rounds
+  // 15, 17 and 18 of a L126 Dracolich fight).
   const doublePct = chanceToDoubleHit(attacker.charisma, attacker.dexterity, defender.intelligence, defender.agility);
   if (random() * 100 < doublePct) {
     strike(attacker, defender, effectiveCrit, strikes, random, true);
@@ -144,6 +146,8 @@ export function simulateBattle(
   }
 
   if (!earlyKo) {
+    // Rounds exhausted with both sides alive: whoever dealt more total
+    // damage wins (user-confirmed live rule, applies to PVE and PVP alike).
     let attackerDealt = 0;
     let defenderDealt = 0;
     for (const round of rounds) {

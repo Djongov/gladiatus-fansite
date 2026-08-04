@@ -47,10 +47,22 @@ export function rollEnemyAsCombatant(enemy: Enemy, random: () => number = Math.r
   const armour = lerpInt(enemy.armour, t);
   const life = lerpInt(enemy.life, t);
 
-  // damage shape is { min: Range, max: Range } where the two ranges span
-  // the enemy's level range. Interpolate each.
-  const damageMin = lerpInt(enemy.damage.min, t);
-  const damageMax = lerpInt(enemy.damage.max, t);
+  // damage shape is { min: Range, max: Range } where `min` is the full
+  // tooltip range at level.min and `max` is the full tooltip range at
+  // level.max (legacy "A-B / C-D" table cells). So the mob's displayed
+  // minimum damage runs min.min → max.min across the level range, and its
+  // maximum damage runs min.max → max.max. Validated against the PHP
+  // per-level samples (69/112 exact, rest ±1-2) and a live L126 Dracolich
+  // (582 - 714). Single-level enemies use the no-slash "A-B" cell form,
+  // stored as { min: {A,A}, max: {B,B} } — for those the tooltip is simply
+  // min.min - max.max.
+  const singleLevel = enemy.level.min === enemy.level.max;
+  const damageMin = singleLevel
+    ? enemy.damage.min.min
+    : lerpInt({ min: enemy.damage.min.min, max: enemy.damage.max.min }, t);
+  const damageMax = singleLevel
+    ? enemy.damage.max.max
+    : lerpInt({ min: enemy.damage.min.max, max: enemy.damage.max.max }, t);
 
   // Observed live-game crit/block chances on expedition mobs don't follow the
   // player-side formula (floor(stat/10) gives values too low). Empirical fit
@@ -71,7 +83,13 @@ export function rollEnemyAsCombatant(enemy: Enemy, random: () => number = Math.r
   //       Soulless L57 (str 168, raw 0):    max(0, formula(0))  = 0%   (live 0%)
   //       Necro Prince L72 (str 115, raw 15): max(15, formula(17))= 15% (live 15%)
   //       Teuton L114 (str 342, raw 7):     max(7, formula(194)) ≈ 16% (live 17%)
-  //       Dragon L120 (str 456, raw 0):     max(0, formula(287)) ≈ 22% (live 22%)
+  //       Dragon L120 (str 456, raw 5):     max(5, formula(287)) ≈ 22% (live 22%)
+  //
+  //   * Caveat: some expeditions carry PLACEHOLDER raw data in the PHP dump —
+  //     Dragon Remains and Bank of the Thames list 15/13/0 for every mob, and
+  //     Kent through Mona Isle list critRaw 5 with no block data. Raw values
+  //     there don't match live (live L124-126 Dracolich: crit 25%, block 41%
+  //     vs dump 15/13) and need live-tooltip corrections in expeditions.json.
   const strBlockValue = Math.max(0, Math.floor(strength * (rolledLevel - 57) / 100));
   const strBlockChance = blockChanceFromBlockValue(strBlockValue, rolledLevel);
   const enemyBlockChance = Math.max(enemy.blockRaw ?? 0, strBlockChance);
@@ -96,11 +114,10 @@ export function rollEnemyAsCombatant(enemy: Enemy, random: () => number = Math.r
     intelligence,
     critChance: enemyCritChance,
     blockChance: enemyBlockChance,
-    // Observed in the live game: expedition mobs always show 0% avoid-crit
-    // regardless of their agility. Forcing 0 here matches in-game behaviour
-    // even though the formula floor(agi/10) would otherwise yield non-zero
-    // values for high-agility enemies. If this ever turns out to be wrong,
-    // change to: critAvoidChanceFromResilience(Math.floor(agility / 10) + (enemy.avoidCritRaw ?? 0), rolledLevel)
+    // Confirmed game design: expedition mobs always have 0% avoid-crit
+    // regardless of their agility (verified across live tooltips, incl.
+    // L124-126 Dracolich). The player-side resilience formula does not
+    // apply to mobs.
     critAvoidChance: 0,
   };
 

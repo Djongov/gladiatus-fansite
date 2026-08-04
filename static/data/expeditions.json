@@ -7203,11 +7203,11 @@
               "max": 135
             },
             "life": {
-              "min": 8700,
-              "max": 8700
+              "min": 7676,
+              "max": 7676
             },
-            "critRaw": 15,
-            "blockRaw": 13,
+            "critRaw": 25,
+            "blockRaw": 41,
             "avoidCritRaw": 0
           }
         ]
