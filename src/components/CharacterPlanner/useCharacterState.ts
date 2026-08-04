@@ -11,6 +11,7 @@ import {
   blockChanceFromBlockValue,
   critAvoidChanceFromResilience,
 } from '@site/src/services/combat/chanceFormulas';
+import { getTrainingCap } from '@site/src/utils/trainingCap';
 
 /**
  * Compress and encode string for URL
@@ -704,8 +705,8 @@ export function useCharacterState(): CharacterState {
    */
   const setBaseStats = (newStats: Partial<BaseStats>) => {
     // Calculate training cap based on character level
-    const trainingCap = characterLevel <= 40 ? 200 : characterLevel * 5;
-    
+    const trainingCap = getTrainingCap(characterLevel);
+
     // Cap each stat at the training limit
     const cappedStats: Partial<BaseStats> = {};
     for (const [key, value] of Object.entries(newStats)) {

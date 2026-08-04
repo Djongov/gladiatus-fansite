@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useActiveCharacter } from '@site/src/hooks/useActiveCharacter';
 import { decodeCharacterState } from '@site/src/components/CharacterPlanner/useCharacterState';
+import { getTrainingCap } from '@site/src/utils/trainingCap';
 
 export default function TrainingCalculator() {
   // initial state
@@ -11,6 +12,7 @@ export default function TrainingCalculator() {
     constitutionFrom: 5, constitutionTo: '',
     charismaFrom: 5, charismaTo: '',
     intelligenceFrom: 5, intelligenceTo: '',
+    characterLevel: '',
     trainingGroundLevel: 0,
     costumeDiscount: 0,
     furtherDiscount: 0,
@@ -42,6 +44,7 @@ export default function TrainingCalculator() {
         constitutionFrom: b.constitution, constitutionTo: b.constitution,
         charismaFrom: b.charisma,     charismaTo: b.charisma,
         intelligenceFrom: b.intelligence, intelligenceTo: b.intelligence,
+        characterLevel: character.level,
       }));
       setPrefilledFrom(character.identity.name);
     } catch (err) {
@@ -65,6 +68,7 @@ export default function TrainingCalculator() {
       constitutionFrom: 5, constitutionTo: '',
       charismaFrom: 5,     charismaTo: '',
       intelligenceFrom: 5, intelligenceTo: '',
+      characterLevel: '',
     }));
     setPrefilledFrom(null);
   };
@@ -138,6 +142,26 @@ export default function TrainingCalculator() {
     }));
   };
 
+  const trainingCap = Number.isInteger(stats.characterLevel) && stats.characterLevel > 0
+    ? getTrainingCap(stats.characterLevel)
+    : null;
+
+  const handleSetToMax = (stat) => {
+    if (trainingCap === null) return;
+    const toKey = `${stat}To`;
+    const fromKey = `${stat}From`;
+    setStats(prev => ({
+      ...prev,
+      [toKey]: Number(prev[toKey]) === trainingCap ? prev[fromKey] : trainingCap,
+    }));
+  };
+
+  const getMaxButtonTitle = (stat, isAtMax) => {
+    if (trainingCap === null) return 'Enter a Character Level first';
+    if (isAtMax) return `Set back to current value (${stats[stat + 'From']})`;
+    return `Set to max trainable at this level (${trainingCap})`;
+  };
+
   const GoldIcon = () => (
     <img 
       src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif" 
@@ -173,7 +197,22 @@ export default function TrainingCalculator() {
         <h3 style={{ marginTop: 0, marginBottom: '15px' }}>Discount Configuration</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '15px' }}>
           <div>
-            <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>
+            <label htmlFor="characterLevel" style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>
+              Character Level
+            </label>
+            <input
+              type="number"
+              min={1}
+              id="characterLevel"
+              value={stats.characterLevel}
+              onChange={handleChange}
+              style={{ width: '100%', padding: '5px', boxSizing: 'border-box' }}
+            />
+            <small style={{ color: '#424242' }}>Used for the "Max" button on each stat</small>
+          </div>
+
+          <div>
+            <label htmlFor="trainingGroundLevel" style={{ display: 'block', fontWeight: 'bold', marginBottom: '5px' }}>
               Training Grounds Level
             </label>
             <select 
@@ -258,7 +297,7 @@ export default function TrainingCalculator() {
                     style={{ width: '90px', padding: '5px' }}
                   />
                 </td>
-                <td>
+                <td style={{ whiteSpace: 'nowrap' }}>
                   <input
                     type="number"
                     min={1}
@@ -267,6 +306,26 @@ export default function TrainingCalculator() {
                     onChange={handleChange}
                     style={{ width: '90px', padding: '5px' }}
                   />
+                  {(() => {
+                    const isAtMax = trainingCap !== null && Number(stats[`${stat}To`]) === trainingCap;
+                    return (
+                      <button
+                        type="button"
+                        onClick={() => handleSetToMax(stat)}
+                        disabled={trainingCap === null}
+                        title={getMaxButtonTitle(stat, isAtMax)}
+                        style={{
+                          marginLeft: '6px',
+                          padding: '4px 8px',
+                          fontSize: '12px',
+                          width: '48px',
+                          cursor: trainingCap === null ? 'not-allowed' : 'pointer',
+                        }}
+                      >
+                        {isAtMax ? 'Base' : 'Max'}
+                      </button>
+                    );
+                  })()}
                 </td>
                 <td>
                   {hasCost && (

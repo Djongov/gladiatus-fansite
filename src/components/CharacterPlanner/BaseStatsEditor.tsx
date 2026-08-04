@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './BaseStatsEditor.module.css';
 import { BaseStats, CharacterStats } from './useCharacterState';
 import { PactId } from './PactDefinitions';
+import { getTrainingCap } from '@site/src/utils/trainingCap';
 
 interface BaseStatsEditorProps {
   baseStats: BaseStats;
@@ -21,14 +22,9 @@ const STAT_PACT: Partial<Record<keyof BaseStats, PactId>> = {
 };
 
 export default function BaseStatsEditor({ baseStats, setBaseStats, characterStats, characterLevel, activePacts }: BaseStatsEditorProps) {
-  // Calculate training cap: 200 for levels 1-40, level*5 for 41+
-  const getTrainingCap = (): number => {
-    return characterLevel <= 40 ? 200 : characterLevel * 5;
-  };
-
   const handleStatChange = (stat: keyof BaseStats, value: string) => {
     const numValue = Number.parseInt(value, 10);
-    const trainingCap = getTrainingCap();
+    const trainingCap = getTrainingCap(characterLevel);
     if (!Number.isNaN(numValue) && numValue >= 0 && numValue <= trainingCap) {
       setBaseStats({ [stat]: numValue });
     }
@@ -72,7 +68,7 @@ export default function BaseStatsEditor({ baseStats, setBaseStats, characterStat
         {statNames.map(({ key, display }) => {
           const finalValue = calculateFinalStat(baseStats[key], display, key);
           const maxValue = calculateMaxStat(baseStats[key], key);
-          const trainingCap = getTrainingCap();
+          const trainingCap = getTrainingCap(characterLevel);
           const equipBonus = characterStats.stats.get(display);
           const hasBonus = finalValue !== baseStats[key];
           
