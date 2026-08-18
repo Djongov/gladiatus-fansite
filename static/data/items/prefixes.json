@@ -6665,7 +6665,7 @@
         "flat": 0,
         "percent": 50
       },
-      "blocking_value": {
+      "block_value": {
         "flat": 60,
         "percent": 0
       },
