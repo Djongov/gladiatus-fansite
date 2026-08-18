@@ -29,7 +29,7 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 
 ### Rise of the Forgotten
 
-From Monday, 18.05.2026 at 00:00h until Tuesday, 02.06.2026 at 23:59h (server time).
+From Wednesday, 12.08.2026 at 00:00h until Thursday, 27.08.2026 at 23:59h (server time).
 
 ---
 

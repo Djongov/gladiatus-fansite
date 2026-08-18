@@ -2,10 +2,22 @@ import React from 'react';
 import styles from './ForgingGood.module.css';
 import forgingGoodsData from '@site/static/data/items/forging-goods.json';
 
+export interface ForgingGoodDrop {
+  percentage: number;
+  mob: string;
+  location: string;
+}
+
+// Full shape of an entry in forging-goods.json. Only the fields present on
+// every entry are required; the rest stay optional so the cast never breaks.
 export interface ForgingGood {
   name: string;
   type: 'material' | 'ore' | 'flask' | 'gemstone' | 'monster_part' | 'rune';
   spriteId: string;
+  id?: number;
+  description?: string;
+  scarcity?: string;
+  drops?: ForgingGoodDrop[];
 }
 
 export type ForgingGoodRarity = 'common' | 'green' | 'blue' | 'purple' | 'orange' | 'red';

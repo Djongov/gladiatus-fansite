@@ -57,7 +57,9 @@ An evil cult has gathered around the enticing promise of power and riches, allyi
 
 **Enemies are your character level + 1**
 
-<div className="player_name_bg"><div className="playername">Cult of the Depths</div></div>
+<div className="player_name_bg">
+  <div className="playername">Cult of the Depths</div>
+</div>
 ![Cult of the Depths](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/cult-of-the-depths.png "Cult of the Depths")
 
 ![Wave 1](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/overview.jpg "Wave 1")
@@ -68,7 +70,9 @@ The souls of the dead were never meant to be dragged back across the river Styx,
 
 **Enemies are your character level + 2**
 
-<div className="player_name_bg"><div className="playername">The Defiled Exiles</div></div>
+<div className="player_name_bg">
+  <div className="playername">The Defiled Exiles</div>
+</div>
 ![The Defiled Exiles](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/the-defiled-exiles.png "The Defiled Exiles")
 
 ![Wave 2](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/overview-2.jpg "Wave 2")
@@ -79,7 +83,9 @@ The souls of the dead were never meant to be dragged back across the river Styx,
 
 **Enemies are your character level + 5**
 
-<div className="player_name_bg"><div className="playername">The Restless Dead</div></div>
+<div className="player_name_bg">
+  <div className="playername">The Restless Dead</div>
+</div>
 ![The Defiled Exiles](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/the-restless-dead.png "The Restless Dead")
 
 ![Wave 3](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/overview-3.jpg "Wave 3")
@@ -90,7 +96,9 @@ Rumours surround the evil ruler of the monsters from the deep like a thick fog. 
 
 **Boss your character level + 9**
 
-<div className="player_name_bg"><div className="playername">Lord Maldark, Tormentor of Souls</div></div>
+<div className="player_name_bg">
+  <div className="playername">Lord Maldark, Tormentor of Souls</div>
+</div>
 ![Lord Maldark, Tormentor of Souls](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/lord-maldark-tormentor-of-souls.png "Lord Maldark, Tormentor of Souls")
 
 ![Boss](https://gladiatusfansite.blob.core.windows.net/images/Events/rise-of-the-forgotten/overview-4.jpg "Boss")

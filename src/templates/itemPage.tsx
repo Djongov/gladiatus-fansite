@@ -6,6 +6,7 @@ import prefixes from '@site/static/data/items/prefixes.json';
 import suffixes from '@site/static/data/items/suffixes.json';
 import forgingGoods from '@site/static/data/items/forging-goods.json';
 import { calcAffixGoldRange, formatGoldDots } from '@site/src/utils/affixGold';
+import type { ForgingGood } from '@site/src/components/ForgingGood';
 
 const slugify = (value?: string) =>
   typeof value === 'string'
@@ -140,9 +141,9 @@ export default function ItemPage() {
               marginTop: '16px'
             }}>
               {Object.entries(item.materials).map(([material, quantity]) => {
-                const good = (forgingGoods as { name: string; spriteId: string; type: string }[]).find(g => g.name === material);
+                const good = (forgingGoods as ForgingGood[]).find(g => g.name === material);
 
-                const typeToPath: Record<string, string> = {
+                const typeToPath: Record<ForgingGood['type'], string> = {
                   flask: 'flasks',
                   ore: 'ores',
                   gemstone: 'gemstones',

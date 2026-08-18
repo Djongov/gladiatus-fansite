@@ -9,6 +9,7 @@ import affixesRecipes from '@site/static/data/items/prefixes_suffixes_recipes.js
 import ForgingGood from '@site/src/components/ForgingGood';
 import Item, { calculateItemStats } from '@site/src/components/Item';
 import type { BaseItem, PrefixSuffix } from '@site/src/components/Item';
+import type { ForgingGood as ForgingGoodEntry } from '@site/src/components/ForgingGood';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -712,7 +713,9 @@ export default function ForgeSimulator() {
 
   const materialIdToName = useMemo(() => {
     const map: Record<number, string> = {};
-    (forgingGoodsData as { id: number; name: string }[]).forEach(g => { map[g.id] = g.name; });
+    (forgingGoodsData as ForgingGoodEntry[]).forEach(g => {
+      if (g.id !== undefined) map[g.id] = g.name;
+    });
     return map;
   }, []);
 

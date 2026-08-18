@@ -3,27 +3,12 @@ import styles from './ForgingGoodInfo.module.css';
 import forgingGoodsData from '@site/static/data/items/forging-goods.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
-
-interface Drop {
-  percentage: number;
-  mob: string;
-  location: string;
-}
+import type { ForgingGood } from './ForgingGood';
 
 interface PrefixSuffix {
   name: string;
   id: number;
   quantity: number;
-}
-
-interface ForgingGoodData {
-  name: string;
-  type: string;
-  image: string;
-  description?: string;
-  scarcity?: string;
-  drops?: Drop[];
-  id?: number;
 }
 
 interface PrefixData {
@@ -55,7 +40,7 @@ const ForgingGoodInfo: React.FC<ForgingGoodInfoProps> = ({
   displayPrefixes = true,
   displaySuffixes = true,
 }) => {
-  const material = (forgingGoodsData as ForgingGoodData[]).find(
+  const material = (forgingGoodsData as ForgingGood[]).find(
     (item) => item.name === name
   );
 
