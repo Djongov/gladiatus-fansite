@@ -173,9 +173,9 @@ Here is a list of the available stats on an item. They come from prefixes or suf
 
 'critical_attack_value'. Also known as Critical attack value. Shown on the tooltip as "Critical attack value +{ammount}"
 
-'hardening_value'. Also known as Resilience or Hardening value. Shown on the tooltip as "hardening value +{ammount}"
-
 'block_value'. Also known as Block value. Shown on the tooltip as "Block value +{ammount}"
+
+'hardening_value'. Also known as Resilience or Hardening value. Shown on the tooltip as "hardening value +{ammount}"
 
 'threat'. Also known as Threat. Shown on the tooltip as "Threat +{ammount}"
 

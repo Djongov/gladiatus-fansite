@@ -334,7 +334,7 @@ export function calculateItemStats(
   // Define stat order as in-game: Damage first, then Armor (for weapons), then Strength, Dexterity, Agility, Constitution, Charisma, Intelligence, then others
   const statOrder = ['damage', 'armour', 'strength', 'dexterity', 'agility', 'constitution', 'charisma', 'intelligence', 
                      'critical_hit', 'double_hit', 'avoid_critical_hit', 'avoid_double_hit', 
-                     'block_chance', 'healing', 'critical_healing_value', 'critical_attack_value', 'hardening_value', 'block_value', 'threat'];
+                     'block_chance', 'healing', 'critical_healing_value', 'critical_attack_value', 'block_value', 'hardening_value', 'threat'];
   
   // Sort stats by predefined order
   const sortedStats = Object.entries(statsMap)
