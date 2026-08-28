@@ -33,6 +33,70 @@ From Wednesday, 12.08.2026 at 00:00h until Thursday, 27.08.2026 at 23:59h (serve
 
 ---
 
+## Events – September 2026
+
+### 01.09.2026 0:00:00 - 03.09.2026 23:59:59
+
+- 100% dungeon XP
+- 200% arena XP
+- 50% expedition XP
+- 50% more dungeon points
+- 50% more expedition points
+
+### 05.09.2026 0:00:00 - 06.09.2026 23:59:59
+
+- -50% Forging time (and smelting)
+- -15% Ruby costs at Malefica
+
+### 08.09.2026 0:00:00 - 09.09.2026 23:59:59
+
+- 20% forge helper drop chance
+
+### 11.09.2026 0:00:00 - 12.09.2026 23:59:59
+
+- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
+- 25% more dungeon points
+- 25% faster regeneration of dungeon points
+
+### 14.09.2026 0:00:00 - 15.09.2026 23:59:59
+
+- 50% more dungeon points
+- 50% more expedition points
+- 50% faster regeneration of expedition points
+- -50% cooldown for quests
+- 10% chance of finding ruby on expedition
+
+### 17.09.2026 0:00:00 - 18.09.2026 23:59:59
+
+- No durability loss
+- 20% gold loot on expeditions
+- 20% gold loot in dungeons
+
+### 20.09.2026 0:00:00 - 21.09.2026 23:59:59
+
+- -25% training costs
+
+### 23.09.2026 0:00:00 - 24.09.2026 23:59:59
+
+- 25% forging success
+- -10% forge duration
+- 10% chance of a resource / scroll
+- 30% chance of finding an item
+
+### 26.09.2026 0:00:00 - 27.09.2026 23:59:59
+
+- 30% gold loot on expeditions
+- 50% expedition XP
+- 10% chance of finding an item
+
+### 29.09.2026 0:00:00 - 30.09.2026 23:59:59
+
+- 100% Pantheon quest gold, experience, grace, honor
+- -50% cooldown for quests
+- 50% more expedition points
+
+---
+
 ## Events – August 2026
 
 ### 01.08.2026 0:00:00 - 03.08.2026 23:59:59
