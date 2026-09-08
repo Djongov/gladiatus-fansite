@@ -7512,7 +7512,7 @@
             },
             "itemLevelDrop": {
               "min": 125,
-              "max": 139
+              "max": 144
             },
             "life": {
               "min": 14123,
