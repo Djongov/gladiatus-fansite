@@ -60,3 +60,37 @@ export function simulateOddsPvP(
   }
   return { total: n, ran: n, wins, losses, draws };
 }
+
+export type OddsPercentages = {
+  wins: number;
+  losses: number;
+  draws: number;
+};
+
+/**
+ * Convert raw fight counts into whole-number percentages that always sum to
+ * exactly 100. Rounding each share independently can produce totals like 101%
+ * (e.g. 995/5/0 → 100% + 1% + 0%), so this uses the largest-remainder method:
+ * floor every share, then hand the leftover points to the shares with the
+ * biggest fractional parts (ties favour the smaller share).
+ */
+export function oddsToPercentages(
+  result: Pick<OddsResult, 'ran' | 'wins' | 'losses' | 'draws'>,
+): OddsPercentages {
+  const { ran, wins, losses, draws } = result;
+  const shares = [wins, losses, draws].map((count) => (count / ran) * 100);
+  const floored = shares.map(Math.floor);
+  let remaining = 100 - floored.reduce((sum, value) => sum + value, 0);
+
+  const byRemainder = shares
+    .map((share, index) => ({ index, remainder: share - floored[index] }))
+    // Ties go to the smaller share so a handful of losses never displays as 0%.
+    .sort((a, b) => b.remainder - a.remainder || floored[a.index] - floored[b.index]);
+  for (const { index } of byRemainder) {
+    if (remaining <= 0) break;
+    floored[index] += 1;
+    remaining -= 1;
+  }
+
+  return { wins: floored[0], losses: floored[1], draws: floored[2] };
+}

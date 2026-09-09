@@ -7,7 +7,7 @@ import {
   calculateCharacterStats,
 } from '@site/src/components/CharacterPlanner/useCharacterState';
 import { characterToCombatant } from '@site/src/services/combat/characterToCombatant';
-import { simulateOdds } from '@site/src/services/combat/simulateOdds';
+import { simulateOdds, oddsToPercentages } from '@site/src/services/combat/simulateOdds';
 import type { Combatant } from '@site/src/services/combat/types';
 import type {
   Enemy,
@@ -172,13 +172,7 @@ export default function ExpeditionSimulatorPage(): React.ReactElement {
       ? 'No combat data available for this enemy yet.'
       : '';
 
-  const oddsPct = oddsResult && oddsResult.ran > 0
-    ? {
-        wins: Math.round((oddsResult.wins / oddsResult.ran) * 100),
-        losses: Math.round((oddsResult.losses / oddsResult.ran) * 100),
-        draws: Math.round((oddsResult.draws / oddsResult.ran) * 100),
-      }
-    : null;
+  const oddsPct = oddsResult && oddsResult.ran > 0 ? oddsToPercentages(oddsResult) : null;
 
   return (
     <Layout title="Expedition Simulator">

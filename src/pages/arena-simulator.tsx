@@ -13,7 +13,7 @@ import {
 } from '@site/src/components/CharacterPlanner/useCharacterState';
 import type { PactId } from '@site/src/components/CharacterPlanner/PactDefinitions';
 import { characterToCombatant } from '@site/src/services/combat/characterToCombatant';
-import { simulateOddsPvP } from '@site/src/services/combat/simulateOdds';
+import { simulateOddsPvP, oddsToPercentages } from '@site/src/services/combat/simulateOdds';
 import type { Combatant } from '@site/src/services/combat/types';
 import AttackModal from '@site/src/components/AttackModal/AttackModal';
 import CharacterPortrait from '@site/src/components/CharacterPortrait/CharacterPortrait';
@@ -181,13 +181,7 @@ export default function ArenaSimulatorPage(): React.ReactElement {
   const buttonsDisabled = !opponent;
   const disabledReason = !opponent ? 'Import an opponent first.' : '';
 
-  const oddsPct = oddsResult && oddsResult.ran > 0
-    ? {
-        wins: Math.round((oddsResult.wins / oddsResult.ran) * 100),
-        losses: Math.round((oddsResult.losses / oddsResult.ran) * 100),
-        draws: Math.round((oddsResult.draws / oddsResult.ran) * 100),
-      }
-    : null;
+  const oddsPct = oddsResult && oddsResult.ran > 0 ? oddsToPercentages(oddsResult) : null;
 
   return (
     <Layout title="Arena Simulator">
