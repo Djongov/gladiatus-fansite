@@ -45,6 +45,8 @@ export interface PrefixSuffix {
   level: number;
   stats: Record<string, { flat: number; percent: number }>;
   materials: Record<string, number>;
+  /** Flagged in the data files for affixes added in a recent game update */
+  new?: boolean;
 }
 
 export type ItemRarity = 'common' | 'green' | 'blue' | 'purple' | 'orange' | 'red';

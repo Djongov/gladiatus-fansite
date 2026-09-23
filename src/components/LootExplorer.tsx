@@ -363,6 +363,8 @@ export default function LootExplorer() {
   const [selectedPrefix, setSelectedPrefix] = useState<string>('');
   const [selectedSuffix, setSelectedSuffix] = useState<string>('');
   const [nameFilter, setNameFilter]         = useState<string>('');
+  const [newPrefixesOnly, setNewPrefixesOnly] = useState<boolean>(false);
+  const [newSuffixesOnly, setNewSuffixesOnly] = useState<boolean>(false);
   const [sortKeys, setSortKeys]             = useState<SortKey[]>([{ stat: 'level', dir: 'asc' }]);
   const [filterStats, setFilterStats]       = useState<string[]>([]);
   const [page, setPage] = useState(0);
@@ -411,16 +413,21 @@ export default function LootExplorer() {
   );
 
   const allCombos = useMemo<ItemCombo[]>(() => {
+    // "New only" also drops the no-affix entry — an item without a prefix cannot have a new one
     const prefixList: (PrefixSuffix | undefined)[] = resolvedPrefix
-      ? [resolvedPrefix]
-      : [undefined, ...(prefixesData as PrefixSuffix[])];
+      ? (newPrefixesOnly && !resolvedPrefix.new ? [] : [resolvedPrefix])
+      : newPrefixesOnly
+        ? (prefixesData as PrefixSuffix[]).filter((p) => p.new)
+        : [undefined, ...(prefixesData as PrefixSuffix[])];
 
     const suffixList: (PrefixSuffix | undefined)[] = resolvedSuffix
-      ? [resolvedSuffix]
-      : [undefined, ...(suffixesData as PrefixSuffix[])];
+      ? (newSuffixesOnly && !resolvedSuffix.new ? [] : [resolvedSuffix])
+      : newSuffixesOnly
+        ? (suffixesData as PrefixSuffix[]).filter((s) => s.new)
+        : [undefined, ...(suffixesData as PrefixSuffix[])];
 
     return buildCombos(bases, prefixList, suffixList, characterLevel, maxLevel);
-  }, [bases, resolvedPrefix, resolvedSuffix, characterLevel, maxLevel]);
+  }, [bases, resolvedPrefix, resolvedSuffix, newPrefixesOnly, newSuffixesOnly, characterLevel, maxLevel]);
 
   // Pre-build damage and armour maps once per allCombos/rarity/conditioning change — O(1) lookup for filter and sort
   const comboDamageMap = useMemo<DamageMap>(() => {
@@ -639,6 +646,16 @@ export default function LootExplorer() {
             placeholder="Search prefix…"
             anyLabel="Any prefix"
           />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '6px' }}>
+            <input
+              id="ilc-new-prefixes"
+              type="checkbox"
+              checked={newPrefixesOnly}
+              onChange={(e) => { setNewPrefixesOnly(e.target.checked); resetPage(); }}
+              style={{ cursor: 'pointer', width: '16px', height: '16px' }}
+            />
+            <label htmlFor="ilc-new-prefixes" style={{ cursor: 'pointer' }}>New prefixes only</label>
+          </div>
         </div>
 
         <div style={{ minWidth: '220px' }}>
@@ -651,6 +668,16 @@ export default function LootExplorer() {
             placeholder="Search suffix…"
             anyLabel="Any suffix"
           />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '6px' }}>
+            <input
+              id="ilc-new-suffixes"
+              type="checkbox"
+              checked={newSuffixesOnly}
+              onChange={(e) => { setNewSuffixesOnly(e.target.checked); resetPage(); }}
+              style={{ cursor: 'pointer', width: '16px', height: '16px' }}
+            />
+            <label htmlFor="ilc-new-suffixes" style={{ cursor: 'pointer' }}>New suffixes only</label>
+          </div>
         </div>
 
         <div>
@@ -828,6 +855,8 @@ export default function LootExplorer() {
         <strong>{characterLevel}</strong> (levels <strong>{characterLevel}–{maxLevel}</strong>)
         {selectedPrefix && <> · prefix <strong>{selectedPrefix}</strong></>}
         {selectedSuffix && <> · suffix <strong>{selectedSuffix}</strong></>}
+        {newPrefixesOnly && <> · <strong>new prefixes</strong> only</>}
+        {newSuffixesOnly && <> · <strong>new suffixes</strong> only</>}
         {nameFilter && <> · name contains <strong>&ldquo;{nameFilter}&rdquo;</strong></>}
         {filterStats.length > 0 && (
           <> · has <strong>{filterStats.map((s) => STAT_OPTIONS.find((o) => o.value === s)?.label ?? s).join(' + ')}</strong></>
