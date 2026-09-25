@@ -4956,7 +4956,7 @@
   {
     "name": "Gaias",
     "level": 130,
-    "underworld": true,
+    "underworld": false,
     "stats": {
       "damage": {
         "flat": 20,
