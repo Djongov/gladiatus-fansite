@@ -7803,7 +7803,10 @@
                 "max": 965
               }
             },
-            "itemLevelDrop": null,
+            "itemLevelDrop": {
+              "min": 138,
+              "max": 151
+            },
             "life": {
               "min": 9946,
               "max": 9946
