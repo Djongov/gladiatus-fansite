@@ -27,418 +27,78 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 
 ## Latest Gladiatus News
 
-### Rise of the Forgotten
+### Desert of Nightmare
 
-From Wednesday, 12.08.2026 at 00:00h until Thursday, 27.08.2026 at 23:59h (server time).
+11.10.2026 - 24.10.2026 - Important cosutme will be available and -80% training cost possibility!
 
 ---
 
-## Events – September 2026
+## Events – October 2026
 
-### 01.09.2026 0:00:00 - 03.09.2026 23:59:59
-
-- 100% dungeon XP
-- 200% arena XP
-- 50% expedition XP
-- 50% more dungeon points
-- 50% more expedition points
-
-### 05.09.2026 0:00:00 - 06.09.2026 23:59:59
+### 02.10.2026 0:00:00 - 03.10.2026 23:59:59
 
 - -50% Forging time (and smelting)
-- -15% Ruby costs at Malefica
+- 15% forging success
 
-### 08.09.2026 0:00:00 - 09.09.2026 23:59:59
+### 05.10.2026 0:00:00 - 07.10.2026 23:59:59
 
-- 20% forge helper drop chance
-
-### 11.09.2026 0:00:00 - 12.09.2026 23:59:59
-
-- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
-- 25% more dungeon points
-- 25% faster regeneration of dungeon points
-
-### 14.09.2026 0:00:00 - 15.09.2026 23:59:59
-
+- 100% dungeon XP
+- 50% gold loot in dungeons
 - 50% more dungeon points
+- 10% chance of finding an item
+
+### 09.10.2026 0:00:00 - 11.10.2026 23:59:59 - New servers only
+
 - 50% more expedition points
 - 50% faster regeneration of expedition points
-- -50% cooldown for quests
-- 10% chance of finding ruby on expedition
+- 50% gold loot on expeditions
+- 100% expedition XP
+- -25% training costs
+- 10% chance of finding an item
 
-### 17.09.2026 0:00:00 - 18.09.2026 23:59:59
+### 10.10.2026 0:00:00 - 11.10.2026 23:59:59 - Old servers only
+
+- No durability loss
+- 50% gold loot on expeditions
+- 30% expedition XP
+- 200% arena XP
+- 100% dungeon XP
+- -25% Forging time (and smelting)
+
+### 13.10.2026 0:00:00 - 14.10.2026 23:59:59
+
+- -20% training costs
+
+### 16.10.2026 0:00:00 - 17.10.2026 23:59:59
 
 - No durability loss
 - 20% gold loot on expeditions
-- 20% gold loot in dungeons
+- 10% chance of finding ruby on expedition
 
-### 20.09.2026 0:00:00 - 21.09.2026 23:59:59
-
-- -25% training costs
-
-### 23.09.2026 0:00:00 - 24.09.2026 23:59:59
-
-- 25% forging success
-- -10% forge duration
-- 10% chance of a resource / scroll
-- 30% chance of finding an item
-
-### 26.09.2026 0:00:00 - 27.09.2026 23:59:59
-
-- 30% gold loot on expeditions
-- 50% expedition XP
-- 10% chance of finding an item
-
-### 29.09.2026 0:00:00 - 30.09.2026 23:59:59
-
-- 100% Pantheon quest gold, experience, grace, honor
-- -50% cooldown for quests
-- 50% more expedition points
-
----
-
-## Events – August 2026
-
-### 01.08.2026 0:00:00 - 03.08.2026 23:59:59
+### 19.10.2026 0:00:00 - 20.10.2026 23:59:59
 
 - 100% dungeon XP
 - 200% arena XP
 - 30% expedition XP
 
-### 05.08.2026 0:00:00 - 06.08.2026 23:59:59
-
-- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
-- 25% more expedition points
-- 25% faster regeneration of expedition points
-- -35% guild expansion cost
-
-### 08.08.2026 0:00:00 - 09.08.2026 23:59:59
-
-- No durability loss
-- 20% gold loot on expeditions
-- 10% chance of finding ruby on expedition
-
-### 11.08.2026 0:00:00 - 13.08.2026 23:59:59
+### 22.10.2026 0:00:00 - 24.10.2026 23:59:59
 
 - 100% Pantheon quest gold, experience, grace, honor
 - -50% cooldown for quests
 - 50% more expedition points
 
-### 15.08.2026 0:00:00 - 16.08.2026 23:59:59
-
-- -25% training costs
-
-### 18.08.2026 0:00:00 - 19.08.2026 23:59:59
-
-- -50% Forging time (and smelting)
-- 15% forging success
-
-### 21.08.2026 0:00:00 - 23.08.2026 23:59:59
-
-- 100% dungeon XP
-- 50% gold loot in dungeons
-- 50% more dungeon points
-- 10% chance of finding an item
-
-### 25.08.2026 0:00:00 - 27.08.2026 23:59:59
+### 26.10.2026 0:00:00 - 28.10.2026 23:59:59
 
 - 25% forging success
 - -10% forge duration
 - 10% chance of a resource / scroll
 - 30% chance of finding an item
 
-### 29.08.2026 0:00:00 - 30.08.2026 23:59:59
-
-- 20% chance of a resource / scroll
-
----
-
-## Events – July 2026
-
-### 02.07.2026 0:00:00 - 04.07.2026 23:59:59
-
-- 100% dungeon XP
-- 200% arena XP
-- 50% expedition XP
-- 50% more expedition points
-- 50% more dungeon points
-
-### 06.07.2026 0:00:00 - 07.07.2026 23:59:59
-
-- 50% more expedition points
-- 50% faster regeneration of expedition points
-- 10% chance of finding ruby on expedition
-- -50% cooldown for quests
-- 50% more dungeon points
-
-### 09.07.2026 0:00:00 - 11.07.2026 23:59:59
-
-- 30% chance of finding an item
-- 25% forging success
-- -10% forge duration
-- 10% chance of a resource / scroll
-
-### 13.07.2026 0:00:00 - 14.07.2026 23:59:59
-
-- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
-- 25% faster regeneration of dungeon points
-- 25% more dungeon points
-
-### 16.07.2026 0:00:00 - 17.07.2026 23:59:59
-
-- No durability loss
-- 20% gold loot on expeditions
-- 20% gold loot in dungeons
-
-### 19.07.2026 0:00:00 - 20.07.2026 23:59:59
-
-- 100% Pantheon quest gold, experience, grace, honor
-- -50% cooldown for quests
-- 50% more expedition points
-
-### 22.07.2026 0:00:00 - 23.07.2026 23:59:59
-
-- -20% training costs
-
-### 28.07.2026 0:00:00 - 30.07.2026 23:59:59
-
-- 30% gold loot on expeditions
-- 10% chance of finding an item
-- 50% expedition XP
-
----
-
-## Events – June 2026
-
-### 01.06.2026 0:00:00 - 02.06.2026 23:59:59
-
-- No durability loss
-- 20% gold loot on expeditions
-- 10% chance of finding ruby on expedition
-
-### 04.06.2026 0:00:00 - 05.06.2026 23:59:59
-
-- -50% Forging time (and smelting)
-- -15% Ruby costs at Malefica
-
-### 07.06.2026 0:00:00 - 08.06.2026 23:59:59
-
-- 30% gold loot on expeditions
-- 10% chance of finding an item
-- 50% expedition XP
-
-### 10.06.2026 0:00:00 - 12.06.2026 23:59:59
-
-- 100% dungeon XP
-- 200% arena XP
-- 30% expedition XP
-
-### 14.06.2026 0:00:00 - 15.06.2026 23:59:59
-
-- 100% Pantheon quest gold, experience, grace, honor
-- -50% cooldown for quests
-- 50% more expedition points
-
-### 17.06.2026 0:00:00 - 18.06.2026 23:59:59
-
-- 100% dungeon XP
-- 50% gold loot in dungeons
-- 50% more dungeon points
-- 10% chance of finding an item
-
-### 20.06.2026 0:00:00 - 21.06.2026 23:59:59
-
-- 20% forge helper drop chance
-
-### 23.06.2026 0:00:00 - 24.06.2026 23:59:59
-
-- 20% chance of a resource / scroll
-
-### 26.06.2026 0:00:00 - 27.06.2026 23:59:59
-
-- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
-- 25% faster regeneration of dungeon points
-- 25% more dungeon points
-
-### 29.06.2026 0:00:00 - 30.06.2026 23:59:59
-
-- -25% training costs
-
----
-
-## Events – May 2026
-
-### 04.05.2026 0:00:00 - 05.05.2026 23:59:59
-
-- 50% more expedition points
-- 50% faster regeneration of expedition points
-- -50% cooldown for quests
-- 50% more dungeon points
-- 10% chance of finding ruby on expedition
-
-### 07.05.2026 0:00:00 - 08.05.2026 23:59:59
-
-- 10% chance of finding an item
-- -20% ruby costs for auction house
-- -15% training costs
-- 20% gold loot on expeditions
-
-### 10.05.2026 0:00:00 - 11.05.2026 23:59:59
-
-- 30% gold loot on expeditions
-- 10% chance of finding an item
-- 50% expedition XP
-
-### 13.05.2026 0:00:00 - 15.05.2026 23:59:59
-
-- 100% dungeon XP
-- 50% gold loot in dungeons
-- 50% more dungeon points
-- 10% chance of finding an item
-
-### 17.05.2026 0:00:00 - 18.05.2026 23:59:59
-
-- 30% chance of finding an item
-- 25% forging success
-- -10% forge duration
-- 10% chance of a resource / scroll
-
-### 20.05.2026 0:00:00 - 21.05.2026 23:59:59
-
-- 20% gold loot on expeditions
-- 20% gold loot in dungeons
-- No durability loss
-
-### 23.05.2026 0:00:00 - 24.05.2026 23:59:59
-
-- -50% Forging time (and smelting)
-- 15% forging success
-
-### 26.05.2026 0:00:00 - 27.05.2026 23:59:59
-
-- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
-- 25% more expedition points
-- 25% faster regeneration of expedition points
-- -35% guild expansion cost
-
-### 29.05.2026 0:00:00 - 30.05.2026 23:59:59
-
-- 20% chance of a resource / scroll
-
----
-
-## Events – April 2026
-
-### 02.04.2026 0:00:00 - 04.04.2026 23:59:59
-
-- 30% chance of finding an item
-- 25% forging success
-- -10% forge duration
-- 10% chance of a resource / scroll
-
-### 06.04.2026 0:00:00 - 08.04.2026 23:59:59
-
-- 100% Pantheon quest gold, experience, grace, honor
-- -50% cooldown for quests
-- 50% more expedition points
-
-### 10.04.2026 0:00:00 - 11.04.2026 23:59:59
-
-- 20% chance of a resource / scroll
-
-### 12.04.2026 0:00:00 - 13.04.2026 23:59:59
+### 30.10.2026 0:00:00 - 31.10.2026 23:59:59
 
 - The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
 - 25% more dungeon points
 - 25% more expedition points
-
-### 15.04.2026 0:00:00 - 16.04.2026 23:59:59
-
-- 20% forge helper drop chance
-
-### 18.04.2026 0:00:00 - 19.04.2026 23:59:59
-
-- 50% more expedition points
-- 50% faster regeneration of expedition points
-- -50% cooldown for quests
-- 50% more dungeon points
-- 10% chance of finding ruby on expedition
-
-### 21.04.2026 0:00:00 - 22.04.2026 23:59:59
-
-- -50% Forging time (and smelting)
-- -15% Ruby costs at Malefica
-
-### 24.04.2026 0:00:00 - 26.04.2026 23:59:59
-
-- 200% dungeon XP
-- 200% arena XP
-- 50% expedition XP
-- 50% more dungeon points
-- 50% more expedition points
-
-### 28.04.2026 0:00:00 - 29.04.2026 23:59:59
-
-- -20% training costs
-
----
-
-## Events – March 2026
-
-### 01.03.2026 0:00:00  - 04.03.2026 23:59:59
-
-- 200% dungeon XP
-- 200% arena XP
-- 50% expedition XP
-- 50% more expedition points
-- 50% more dungeon points
-
-### 06.03.2026 0:00:00  - 07.03.2026 23:59:59
-
-- 100% Pantheon quest gold, experience, grace, honor
-- -50% cooldown for quests
-- 50% more expedition points
-
-### 08.03.2026 0:00:00 - 10.03.2026 23:59:59
-
-- 30% chance of finding an item
-- 25% forging success
-- -10% forge duration
-- 10% chance of a resource / scroll
-
-### 08.03.2026 00:00:00 - 14.03.2026 23:59:59 - Battle at Hadrian's Wall
-
-- The Hadrian's wall event - [Battle at Hadrian's Wall](/events/battle-at-hadrian-s-wall "Battle at Hadrian's Wall")
-
-### 12.03.2026 0:00:00 - 14.03.2026 23:59:59
-
-- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
-- 25% faster regeneration of dungeon points
-- 25% more dungeon points
-
-### 16.03.2026 0:00:00 - 17.03.2026 23:59:59
-
-- -25% training costs
-
-### 19.03.2026 0:00:00 - 20.03.2026 23:59:59
-
-- 20% forge helper drop chance
-
-### 22.03.2026 0:00:00 - 24.03.2026 23:59:59
-
-- 20% gold loot on expeditions
-- No durability loss
-
-### 26.03.2026 0:00:00 - 28.03.2026 23:59:59
-
-- 10% chance of finding an item
-- -20% ruby costs for auction house
-- -15% training costs
-- 20% gold loot on expeditions
-
-### 30.03.2026 0:00:00 - 31.03.2026 23:59:59
-
-- -50% Forging time (and smelting)
 
 ---
 
