@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import ImportProfile from '@site/src/components/CharacterPlanner/ImportProfile';
+import { describeProfileFetchError } from '@site/src/components/CharacterPlanner/fetchCharacterProfile';
 import { useActiveCharacter } from '@site/src/hooks/useActiveCharacter';
 import { resolveCharacterPortrait } from '@site/src/utils/characterFaceImage';
 import styles from '@site/src/css/Character.module.css';
@@ -17,7 +18,27 @@ function formatRelative(timestamp: number): string {
 }
 
 export default function CharacterPage(): React.ReactElement {
-  const { character, login, logout } = useActiveCharacter();
+  const { character, login, refresh, logout } = useActiveCharacter();
+  const [refreshing, setRefreshing] = useState(false);
+  const [refreshError, setRefreshError] = useState<string | null>(null);
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    setRefreshError(null);
+    try {
+      await refresh();
+    } catch (err) {
+      console.error('Refresh error:', err);
+      setRefreshError(describeProfileFetchError(err));
+    } finally {
+      setRefreshing(false);
+    }
+  };
+
+  const handleLogout = () => {
+    setRefreshError(null);
+    logout();
+  };
 
   return (
     <Layout title="Character" description="Import and persist your Gladiatus character locally">
@@ -70,11 +91,24 @@ export default function CharacterPage(): React.ReactElement {
                 </div>
               </div>
               <div className={styles.actions}>
-                <button className={styles.button} onClick={logout}>Switch character</button>
-                <button className={`${styles.button} ${styles.dangerButton}`} onClick={logout}>
+                <button
+                  className={styles.button}
+                  onClick={handleRefresh}
+                  disabled={refreshing || !character.profileUrl}
+                  title={
+                    character.profileUrl
+                      ? 'Fetch the latest stats and gear from your Gladiatus profile'
+                      : 'Log out and re-import once to enable refresh'
+                  }
+                >
+                  {refreshing ? 'Refreshing…' : 'Refresh profile'}
+                </button>
+                <button className={styles.button} onClick={handleLogout}>Switch character</button>
+                <button className={`${styles.button} ${styles.dangerButton}`} onClick={handleLogout}>
                   Log out
                 </button>
               </div>
+              {refreshError && <div className={styles.error}>{refreshError}</div>}
             </div>
             <p className={styles.privacyNote}>
               Logged-in state lives only in this browser. Switching browsers or clearing site data

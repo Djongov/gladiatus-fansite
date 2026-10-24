@@ -103,12 +103,16 @@ const HAMMER = {
 
 // ── Event multipliers ─────────────────────────────────────────────────────────
 // Events apply the same way as Clover — multiplicatively on top of it.
-// Current known values: ×1.15 and ×1.25 from in-game event descriptions.
+// Current known values: ×1.15, ×1.2 and ×1.25 from in-game event descriptions.
 const EVENT_OPTIONS = [
   { value: 1,    label: 'No Event' },
   { value: 1.15, label: '×1.15 — increased success chance' },
+  { value: 1.2,  label: '×1.2 — increased success chance' },
   { value: 1.25, label: '×1.25 — increased success chance' },
 ] as const;
+
+// Sun Rune — a consumable success bonus that applies exactly like an event.
+const SUN_RUNE_SUCCESS_MULT = 1.2;
 
 // ── Resources event reductions ─────────────────────────────────────────────────
 // Reduces material cost, stacking additively with the Bellows and the
@@ -204,15 +208,19 @@ function baseSuccessRate(charLevel: number, itemLevel: number): number {
  *   NOT: 40 × 2 × 1.25 = 100%                 ← wrong (multiplicative)
  *
  * Bronze Clover ×1.2, Silver ×1.5, Gold ×2.0 (per wiki).
+ *
+ * Every other success bonus (events, Sun Rune) works like the event:
+ * each adds base × (mult − 1).
  */
 function calcSuccessChance(
   charLevel: number,
   itemLevel: number,
   cloverTier: ToolTier,
-  eventMult: number,
+  bonusMults: number[],
 ): number {
   const base = baseSuccessRate(charLevel, itemLevel);
-  return clamp(base * (CLOVER.multipliers[cloverTier] + eventMult - 1), 0, 100);
+  const bonus = bonusMults.reduce((sum, mult) => sum + (mult - 1), 0);
+  return clamp(base * (CLOVER.multipliers[cloverTier] + bonus), 0, 100);
 }
 
 // Forging duration scales with the item's GOLD VALUE, not its level — two items
@@ -686,6 +694,7 @@ export default function ForgeSimulator() {
   const [hammerTier, setHammerTier] = useState<ToolTier>('none');
   const [hasCostume, setHasCostume] = useState(false);
   const [hasMiniPumpkin, setHasMiniPumpkin] = useState(false);
+  const [hasSunRune, setHasSunRune] = useState(false);
   const [eventMult, setEventMult] = useState<number>(1);
   const [resourceEventReduction, setResourceEventReduction] = useState(0);
   const [timeEventReduction, setTimeEventReduction] = useState(0);
@@ -782,8 +791,8 @@ export default function ForgeSimulator() {
   );
 
   const successChance = useMemo(
-    () => calcSuccessChance(charLevel, itemLevel, cloverTier, eventMult),
-    [charLevel, itemLevel, cloverTier, eventMult],
+    () => calcSuccessChance(charLevel, itemLevel, cloverTier, [eventMult, hasSunRune ? SUN_RUNE_SUCCESS_MULT : 1]),
+    [charLevel, itemLevel, cloverTier, eventMult, hasSunRune],
   );
 
   // Hammer and time-event reductions stack MULTIPLICATIVELY, not additively.
@@ -935,6 +944,10 @@ export default function ForgeSimulator() {
             <label className={styles.checkLabel}>
               <input type="checkbox" checked={hasMiniPumpkin} onChange={e => setHasMiniPumpkin(e.target.checked)} className={styles.checkbox} />{' '}
               Mini-Pumpkin{' '}<span className={styles.checkDesc}>(−20% materials)</span>
+            </label>
+            <label className={styles.checkLabel}>
+              <input type="checkbox" checked={hasSunRune} onChange={e => setHasSunRune(e.target.checked)} className={styles.checkbox} />{' '}
+              Sun Rune{' '}<span className={styles.checkDesc}>(×{SUN_RUNE_SUCCESS_MULT} success rate)</span>
             </label>
             <div className={styles.eventBonusRow}>
               <label htmlFor="eventMult" className={styles.eventBonusLabel}>Forging Success Bonus Event:</label>
@@ -1100,7 +1113,10 @@ export default function ForgeSimulator() {
                 <div>× Clover {cloverTier} (×{CLOVER.multipliers[cloverTier]}): {(baseRate * CLOVER.multipliers[cloverTier]).toFixed(1)}%</div>
               )}
               {eventMult !== 1 && (
-                <div>× Event (×{eventMult}): {successChance.toFixed(1)}%</div>
+                <div>+ Event (×{eventMult}): +{(baseRate * (eventMult - 1)).toFixed(1)}%</div>
+              )}
+              {hasSunRune && (
+                <div>+ Sun Rune (×{SUN_RUNE_SUCCESS_MULT}): +{(baseRate * (SUN_RUNE_SUCCESS_MULT - 1)).toFixed(1)}%</div>
               )}
             </div>
           </div>

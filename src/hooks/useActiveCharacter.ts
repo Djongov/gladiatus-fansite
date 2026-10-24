@@ -7,6 +7,7 @@ import {
   type CharacterIdentity,
 } from '@site/src/components/CharacterPlanner/useCharacterState';
 import type { PactId } from '@site/src/components/CharacterPlanner/PactDefinitions';
+import { fetchCharacterProfile } from '@site/src/components/CharacterPlanner/fetchCharacterProfile';
 
 const STORAGE_KEY = 'gladiatus.activeCharacter';
 const SCHEMA_VERSION = 1 as const;
@@ -17,6 +18,8 @@ export type ActiveCharacterRecord = {
   identity: CharacterIdentity;
   level: number;
   savedAt: number;
+  /** Absent on records saved before refresh support; such characters can't be refreshed. */
+  profileUrl?: string;
 };
 
 export type UseActiveCharacter = {
@@ -27,7 +30,10 @@ export type UseActiveCharacter = {
     items: Map<ItemSlotType, EquippedItem>,
     identity: CharacterIdentity,
     pacts?: Set<PactId>,
+    profileUrl?: string,
   ): void;
+  /** Re-fetches the character from its saved profile URL. Rejects on failure, leaving the stored character untouched. */
+  refresh(): Promise<void>;
   logout(): void;
 };
 
@@ -65,7 +71,7 @@ export function useActiveCharacter(): UseActiveCharacter {
     return () => globalThis.removeEventListener('storage', onStorage);
   }, []);
 
-  const login = useCallback<UseActiveCharacter['login']>((level, baseStats, items, identity, pacts) => {
+  const login = useCallback<UseActiveCharacter['login']>((level, baseStats, items, identity, pacts, profileUrl) => {
     if (typeof globalThis === 'undefined' || !globalThis.localStorage) {
       console.warn('[useActiveCharacter] localStorage unavailable; cannot persist.');
       return;
@@ -77,10 +83,20 @@ export function useActiveCharacter(): UseActiveCharacter {
       identity,
       level,
       savedAt: Date.now(),
+      profileUrl,
     };
     globalThis.localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
     setCharacter(record);
   }, []);
+
+  const refresh = useCallback(async () => {
+    const profileUrl = character?.profileUrl;
+    if (!profileUrl) {
+      throw new Error('This character has no saved profile URL. Log out and import it again to enable refresh.');
+    }
+    const profile = await fetchCharacterProfile(profileUrl);
+    login(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, profileUrl);
+  }, [character?.profileUrl, login]);
 
   const logout = useCallback(() => {
     if (typeof globalThis === 'undefined' || !globalThis.localStorage) return;
@@ -88,5 +104,5 @@ export function useActiveCharacter(): UseActiveCharacter {
     setCharacter(null);
   }, []);
 
-  return { character, login, logout };
+  return { character, login, refresh, logout };
 }

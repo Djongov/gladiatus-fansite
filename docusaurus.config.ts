@@ -161,7 +161,6 @@ const config: Config = {
             {
               to: '/item-simulation',
               label: 'Optimal Build Simulation',
-              className: 'navbar-item--new',
             },
             {
               to: '/forge-simulator',
@@ -171,12 +170,10 @@ const config: Config = {
             {
               to: '/expedition-simulator',
               label: 'Expedition Simulator',
-              className: 'navbar-item--new',
             },
             {
               to: '/arena-simulator',
               label: 'Arena Simulator',
-              className: 'navbar-item--new',
             },
           ],
         },

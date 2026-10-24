@@ -80,8 +80,21 @@
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover:not(:disabled) {
   background: #1a1a1a;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 12px;
+  border: 1px solid #cf4040;
+  padding: 8px 12px;
+  color: #ff8080;
+  font-size: 14px;
 }
 
 .dangerButton {
