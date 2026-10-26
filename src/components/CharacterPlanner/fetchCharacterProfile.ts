@@ -1,6 +1,16 @@
 import type { BaseItem, PrefixSuffix, ItemRarity } from '../Item';
 import type { ItemSlotType, BaseStats, EquippedItem, CharacterIdentity, Upgrade, AppliedUpgrade } from './useCharacterState';
 import type { PactId } from './PactDefinitions';
+import { ATTRIBUTE_KEYS } from './turmaTypes';
+import type {
+  AttributeKey,
+  AttributeStat,
+  DollStats,
+  ImportedDoll,
+  ImportedTurma,
+  MercenaryContract,
+  MissingDataEntry,
+} from './turmaTypes';
 
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
@@ -16,9 +26,20 @@ export interface ImportedProfile {
   items: Map<ItemSlotType, EquippedItem>;
   identity: CharacterIdentity;
   pacts?: Set<PactId>;
+  stats: DollStats;
+  /** Absent when the importer predates Circus Turma support */
+  turma?: ImportedTurma;
+  /** Ids on the player's gear (all dolls) that our item data doesn't have yet */
+  missingData: MissingDataEntry[];
 }
 
-interface ApiResponse {
+/** What an import adds beyond the planner state; saved with the active character. */
+export type ImportDetails = Pick<ImportedProfile, 'stats' | 'turma' | 'missingData'>;
+
+type ReportMissing = (entry: Omit<MissingDataEntry, 'doll'>) => void;
+
+/** The fields every doll page shares (main character, Turma profile, mercenaries). */
+interface ApiDoll {
   name: string;
   title?: string;
   costume?: string;
@@ -45,11 +66,42 @@ interface ApiResponse {
   armour?: number;
   damage_min?: number;
   damage_max?: number;
+  healing?: number | null;
+  threat?: number | null;
   items: ApiItem[];
   pacts?: Record<string, boolean>;
 }
 
+interface ApiContract {
+  name: string;
+  base_item_id: string;
+  rarity: string;
+  level: number;
+  gold: number;
+  life_points?: number | null;
+  strength?: number | null;
+  dexterity?: number | null;
+  agility?: number | null;
+  constitution?: number | null;
+  charisma?: number | null;
+  intelligence?: number | null;
+}
+
+type ApiTurmaDoll =
+  | (ApiDoll & { status: 'ok'; role: string | null; contract?: ApiContract })
+  | { status: 'empty' | 'locked' }
+  | { status: 'error'; error: string };
+
+interface ApiResponse extends ApiDoll {
+  turma_profile?: ApiTurmaDoll;
+  mercenary_slot_1?: ApiTurmaDoll;
+  mercenary_slot_2?: ApiTurmaDoll;
+  mercenary_slot_3?: ApiTurmaDoll;
+  mercenary_slot_4?: ApiTurmaDoll;
+}
+
 interface ApiItem {
+  name?: string;
   base_item_id?: string;
   base_item_name: string;
   level: number;
@@ -227,12 +279,29 @@ async function readErrorMessage(response: Response): Promise<string> {
   return errorMessage;
 }
 
-function mapApiItem(apiItem: ApiItem): EquippedItem | null {
+function mapApiItem(apiItem: ApiItem, slot: ItemSlotType, reportMissing: ReportMissing): EquippedItem | null {
+  const reportMissingId = (kind: MissingDataEntry['kind'], id: string) =>
+    reportMissing({
+      slot,
+      kind,
+      id,
+      itemName: apiItem.name ?? apiItem.base_item_name,
+      level: apiItem.level,
+      rarity: apiItem.rarity,
+    });
+
   const baseItem = findBaseItem(apiItem.base_item_id, apiItem.base_item_name, apiItem.item_type);
   if (!baseItem) {
     console.warn(`Base item not found: ${apiItem.base_item_id || apiItem.base_item_name} (type: ${apiItem.item_type})`);
+    reportMissingId('base item', apiItem.base_item_id ?? apiItem.base_item_name);
     return null;
   }
+
+  // Id 0 means the item has no prefix/suffix
+  const prefix = apiItem.prefix_id ? findPrefix(apiItem.prefix_id) : undefined;
+  if (apiItem.prefix_id && !prefix) reportMissingId('prefix', String(apiItem.prefix_id));
+  const suffix = apiItem.suffix_id ? findSuffix(apiItem.suffix_id) : undefined;
+  if (apiItem.suffix_id && !suffix) reportMissingId('suffix', String(apiItem.suffix_id));
 
   // Parse enchant - different meaning for rings/amulets vs other items
   let enchantValue: number | undefined;
@@ -258,8 +327,8 @@ function mapApiItem(apiItem: ApiItem): EquippedItem | null {
 
   return {
     baseItem,
-    prefix: apiItem.prefix_id ? findPrefix(apiItem.prefix_id) : undefined,
-    suffix: apiItem.suffix_id ? findSuffix(apiItem.suffix_id) : undefined,
+    prefix: prefix ?? undefined,
+    suffix: suffix ?? undefined,
     rarity: mapRarity(apiItem.rarity),
     conditioned: apiItem.conditioned,
     enchantValue,
@@ -281,39 +350,134 @@ export async function fetchCharacterProfile(profileUrl: string): Promise<Importe
   }
   const data: ApiResponse = responseData;
 
+  const missingData: MissingDataEntry[] = [];
+  const reportMissingOn = (doll: string): ReportMissing => (entry) => missingData.push({ doll, ...entry });
+
+  return {
+    ...mapDoll(data, reportMissingOn(data.name)),
+    pacts: data.pacts ? mapPacts(data.pacts) : undefined,
+    stats: mapDollStats(data),
+    turma: data.turma_profile ? mapTurma(data, reportMissingOn) : undefined,
+    missingData,
+  };
+}
+
+/** One mapping for every doll page: main character, Turma profile and mercenaries. */
+function mapDoll(apiDoll: ApiDoll, reportMissing: ReportMissing): Pick<ImportedProfile, 'level' | 'baseStats' | 'items' | 'identity'> {
   const baseStats: BaseStats = {
-    strength: data.strength_base,
-    dexterity: data.dexterity_base,
-    agility: data.agility_base,
-    constitution: data.constitution_base,
-    charisma: data.charisma_base,
-    intelligence: data.intelligence_base,
+    strength: apiDoll.strength_base,
+    dexterity: apiDoll.dexterity_base,
+    agility: apiDoll.agility_base,
+    constitution: apiDoll.constitution_base,
+    charisma: apiDoll.charisma_base,
+    intelligence: apiDoll.intelligence_base,
   };
 
   const items = new Map<ItemSlotType, EquippedItem>();
-  for (const apiItem of data.items) {
+  for (const apiItem of apiDoll.items) {
     const slot = SLOT_MAP[apiItem.slot];
     if (!slot) {
       console.warn(`Unknown slot type: ${apiItem.slot}`);
       continue;
     }
-    const equippedItem = mapApiItem(apiItem);
+    const equippedItem = mapApiItem(apiItem, slot, reportMissing);
     if (equippedItem) items.set(slot, equippedItem);
   }
 
   const identity: CharacterIdentity = {
-    name: data.name,
-    title: data.title || undefined,
-    costume: data.costume || undefined,
+    name: apiDoll.name,
+    title: apiDoll.title || undefined,
+    costume: apiDoll.costume || undefined,
     gender: 'male', // Default for imported characters since we don't get gender from API
   };
 
+  return { level: apiDoll.level, baseStats, items, identity };
+}
+
+const numberOrNull = (value: number | null | undefined): number | null =>
+  typeof value === 'number' && Number.isFinite(value) ? value : null;
+
+/** "1370/4474" → items currently add 1370 of a possible 4474 */
+function parseFromItems(fromItems: string | undefined): { applied: number | null; possible: number | null } {
+  const [applied, possible] = (fromItems ?? '').split('/').map((part) => Number.parseInt(part, 10));
+  return { applied: numberOrNull(applied), possible: numberOrNull(possible) };
+}
+
+function mapAttributes(apiDoll: ApiDoll): Record<AttributeKey, AttributeStat> {
+  const entries = ATTRIBUTE_KEYS.map((key): [AttributeKey, AttributeStat] => {
+    const base = apiDoll[`${key}_base`];
+    const items = parseFromItems(apiDoll[`${key}_from_items`]);
+    return [key, {
+      // The game's displayed value: base plus what items currently add (already capped at the maximum)
+      total: base + (items.applied ?? 0),
+      base,
+      max: numberOrNull(apiDoll[`${key}_max`]),
+      itemsApplied: items.applied,
+      itemsPossible: items.possible,
+    }];
+  });
+  return Object.fromEntries(entries) as Record<AttributeKey, AttributeStat>;
+}
+
+function mapDollStats(apiDoll: ApiDoll): DollStats {
   return {
-    level: data.level,
-    baseStats,
-    items,
-    identity,
-    pacts: data.pacts ? mapPacts(data.pacts) : undefined,
+    lifePoints: numberOrNull(apiDoll.max_life_points),
+    armour: numberOrNull(apiDoll.armour),
+    damageMin: numberOrNull(apiDoll.damage_min),
+    damageMax: numberOrNull(apiDoll.damage_max),
+    healing: numberOrNull(apiDoll.healing),
+    threat: numberOrNull(apiDoll.threat),
+    attributes: mapAttributes(apiDoll),
+  };
+}
+
+function mapContract(apiContract: ApiContract): MercenaryContract {
+  return {
+    name: apiContract.name,
+    rarity: mapRarity(apiContract.rarity),
+    level: apiContract.level,
+    gold: apiContract.gold,
+    lifePoints: numberOrNull(apiContract.life_points),
+    strength: numberOrNull(apiContract.strength),
+    dexterity: numberOrNull(apiContract.dexterity),
+    agility: numberOrNull(apiContract.agility),
+    constitution: numberOrNull(apiContract.constitution),
+    charisma: numberOrNull(apiContract.charisma),
+    intelligence: numberOrNull(apiContract.intelligence),
+    baseItemId: apiContract.base_item_id,
+  };
+}
+
+function mapTurmaDoll(
+  apiDoll: ApiTurmaDoll | undefined,
+  dollLabel: (name: string) => string,
+  reportMissingOn: (doll: string) => ReportMissing,
+): ImportedDoll {
+  if (!apiDoll) return { status: 'error', error: 'missing from import' };
+  if (apiDoll.status === 'error') return { status: 'error', error: apiDoll.error };
+  if (apiDoll.status !== 'ok') return { status: apiDoll.status };
+
+  return {
+    status: 'ok',
+    ...mapDoll(apiDoll, reportMissingOn(dollLabel(apiDoll.name))),
+    role: apiDoll.role ?? null,
+    stats: mapDollStats(apiDoll),
+    contract: apiDoll.contract ? mapContract(apiDoll.contract) : undefined,
+  };
+}
+
+function mapTurma(data: ApiResponse, reportMissingOn: (doll: string) => ReportMissing): ImportedTurma {
+  const mercenary = (apiDoll: ApiTurmaDoll | undefined, slotNumber: number) =>
+    mapTurmaDoll(apiDoll, (name) => `${name} (mercenary ${slotNumber})`, reportMissingOn);
+
+  return {
+    profile: mapTurmaDoll(data.turma_profile, () => 'Turma profile', reportMissingOn),
+    mercenaries: [
+      mercenary(data.mercenary_slot_1, 1),
+      mercenary(data.mercenary_slot_2, 2),
+      mercenary(data.mercenary_slot_3, 3),
+      mercenary(data.mercenary_slot_4, 4),
+    ],
   };
 }
 

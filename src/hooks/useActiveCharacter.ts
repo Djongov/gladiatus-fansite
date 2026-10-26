@@ -7,7 +7,15 @@ import {
   type CharacterIdentity,
 } from '@site/src/components/CharacterPlanner/useCharacterState';
 import type { PactId } from '@site/src/components/CharacterPlanner/PactDefinitions';
-import { fetchCharacterProfile } from '@site/src/components/CharacterPlanner/fetchCharacterProfile';
+import { fetchCharacterProfile, type ImportDetails } from '@site/src/components/CharacterPlanner/fetchCharacterProfile';
+import type {
+  DollStats,
+  ImportedDoll,
+  ImportedTurma,
+  MissingDataEntry,
+  StoredDoll,
+  StoredTurma,
+} from '@site/src/components/CharacterPlanner/turmaTypes';
 
 const STORAGE_KEY = 'gladiatus.activeCharacter';
 const SCHEMA_VERSION = 1 as const;
@@ -20,6 +28,11 @@ export type ActiveCharacterRecord = {
   savedAt: number;
   /** Absent on records saved before refresh support; such characters can't be refreshed. */
   profileUrl?: string;
+  /** Absent on records saved before Circus Turma support; filled on the next refresh. */
+  stats?: DollStats;
+  turma?: StoredTurma;
+  /** Ids on the player's gear our item data lacks; replaced on every import. Absent on older records. */
+  missingData?: MissingDataEntry[];
 };
 
 export type UseActiveCharacter = {
@@ -31,6 +44,8 @@ export type UseActiveCharacter = {
     identity: CharacterIdentity,
     pacts?: Set<PactId>,
     profileUrl?: string,
+    /** Stats, Turma and missing ids from the import. Without a Turma, the previously stored one is kept. */
+    details?: ImportDetails,
   ): void;
   /** Re-fetches the character from its saved profile URL. Rejects on failure, leaving the stored character untouched. */
   refresh(): Promise<void>;
@@ -58,6 +73,28 @@ function readRecord(): ActiveCharacterRecord | null {
   }
 }
 
+function toStoredDoll(doll: ImportedDoll): StoredDoll {
+  if (doll.status !== 'ok') return doll;
+  const { level, baseStats, identity, items, role, stats, contract } = doll;
+  return {
+    status: 'ok',
+    // Same compact format as ?s= share links, decoded with decodeCharacterState
+    encoded: encodeCharacterState(level, baseStats, identity, items, new Set()),
+    identity,
+    level,
+    role,
+    stats,
+    contract,
+  };
+}
+
+function toStoredTurma(turma: ImportedTurma): StoredTurma {
+  return {
+    profile: toStoredDoll(turma.profile),
+    mercenaries: turma.mercenaries.map(toStoredDoll),
+  };
+}
+
 export function useActiveCharacter(): UseActiveCharacter {
   const [character, setCharacter] = useState<ActiveCharacterRecord | null>(null);
 
@@ -71,12 +108,16 @@ export function useActiveCharacter(): UseActiveCharacter {
     return () => globalThis.removeEventListener('storage', onStorage);
   }, []);
 
-  const login = useCallback<UseActiveCharacter['login']>((level, baseStats, items, identity, pacts, profileUrl) => {
+  const login = useCallback<UseActiveCharacter['login']>((level, baseStats, items, identity, pacts, profileUrl, details) => {
     if (typeof globalThis === 'undefined' || !globalThis.localStorage) {
       console.warn('[useActiveCharacter] localStorage unavailable; cannot persist.');
       return;
     }
     const encoded = encodeCharacterState(level, baseStats, identity, items, pacts ?? new Set());
+    // An importer without Turma support leaves stats/turma undefined: keep what this same character had,
+    // but never carry one character's Turma over onto a different one
+    const previous = readRecord();
+    const carriedOver = previous?.profileUrl !== undefined && previous.profileUrl === profileUrl ? previous : null;
     const record: ActiveCharacterRecord = {
       v: SCHEMA_VERSION,
       encoded,
@@ -84,6 +125,9 @@ export function useActiveCharacter(): UseActiveCharacter {
       level,
       savedAt: Date.now(),
       profileUrl,
+      stats: details?.stats ?? carriedOver?.stats,
+      turma: details?.turma ? toStoredTurma(details.turma) : carriedOver?.turma,
+      missingData: details?.missingData,
     };
     globalThis.localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
     setCharacter(record);
@@ -95,7 +139,7 @@ export function useActiveCharacter(): UseActiveCharacter {
       throw new Error('This character has no saved profile URL. Log out and import it again to enable refresh.');
     }
     const profile = await fetchCharacterProfile(profileUrl);
-    login(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, profileUrl);
+    login(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, profileUrl, profile);
   }, [character?.profileUrl, login]);
 
   const logout = useCallback(() => {

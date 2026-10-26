@@ -5,10 +5,13 @@ import { ItemSlotType, EquippedItem, BaseStats } from './useCharacterState';
 
 interface CharacterDollProps {
   readonly equippedItems: Map<ItemSlotType, EquippedItem>;
-  readonly onSlotClick: (slot: ItemSlotType) => void;
-  readonly onSlotRemove: (slot: ItemSlotType) => void;
+  /** Omit both handlers for a read-only doll. */
+  readonly onSlotClick?: (slot: ItemSlotType) => void;
+  readonly onSlotRemove?: (slot: ItemSlotType) => void;
   readonly characterLevel?: number;
   readonly characterBaseStats?: BaseStats;
+  /** Each item's level in its top-left corner, in the rarity colour. On by default; pass false to hide */
+  readonly showLevelBadges?: boolean;
 }
 
 /**
@@ -16,21 +19,21 @@ interface CharacterDollProps {
  * Positions are approximate and can be adjusted
  */
 const SLOT_POSITIONS: Record<ItemSlotType, { top: number; left: number }> = {
-  helmet: { top: 20, left: 100 },
-  amulet: { top: 52, left: 180 },
-  chest: { top: 90, left: 100 },
-  gloves: { top: 200, left: 22 },
-  mainHand: { top: 90, left: 22 },
-  offHand: { top: 90, left: 181 },
-  ring1: { top: 200, left: 180 },
-  ring2: { top: 200, left: 215 },
-  shoes: { top: 200, left: 100 },
+  helmet: { top: 23, left: 100 },
+  amulet: { top: 55, left: 180 },
+  chest: { top: 93, left: 100 },
+  gloves: { top: 203, left: 22 },
+  mainHand: { top: 93, left: 22 },
+  offHand: { top: 93, left: 181 },
+  ring1: { top: 203, left: 180 },
+  ring2: { top: 203, left: 215 },
+  shoes: { top: 203, left: 100 },
 };
 
-const SLOT_LABELS: Record<ItemSlotType, string> = {
+export const SLOT_LABELS: Record<ItemSlotType, string> = {
   helmet: 'Helmet',
   amulet: 'Amulet',
-  chest: 'Chest Armor',
+  chest: 'Chest Armour',
   gloves: 'Gloves',
   mainHand: 'Main Hand',
   offHand: 'Off Hand',
@@ -48,7 +51,8 @@ export default function CharacterDoll({
   onSlotClick, 
   onSlotRemove,
   characterLevel,
-  characterBaseStats 
+  characterBaseStats,
+  showLevelBadges,
 }: CharacterDollProps) {
   return (
     <div className={styles.characterDoll}>
@@ -76,12 +80,13 @@ export default function CharacterDoll({
                 key={slot}
                 slotName={SLOT_LABELS[slot]}
                 item={equippedItems.get(slot) || null}
-                onClick={() => onSlotClick(slot)}
-                onRemove={() => onSlotRemove(slot)}
+                onClick={onSlotClick && (() => onSlotClick(slot))}
+                onRemove={onSlotRemove && (() => onSlotRemove(slot))}
                 position={SLOT_POSITIONS[slot]}
                 size={size}
                 characterLevel={characterLevel}
                 characterBaseStats={characterBaseStats}
+                showLevelBadge={showLevelBadges}
               />
             );
           })}

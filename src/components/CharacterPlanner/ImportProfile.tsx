@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './ImportProfile.module.css';
 import type { ItemSlotType, BaseStats, EquippedItem, CharacterIdentity } from './useCharacterState';
 import type { PactId } from './PactDefinitions';
-import { fetchCharacterProfile, describeProfileFetchError } from './fetchCharacterProfile';
+import { fetchCharacterProfile, describeProfileFetchError, type ImportDetails } from './fetchCharacterProfile';
 
 interface ImportProfileProps {
   onImport: (
@@ -12,6 +12,7 @@ interface ImportProfileProps {
     identity: CharacterIdentity,
     pacts: Set<PactId> | undefined,
     profileUrl: string,
+    details?: ImportDetails,
   ) => void;
 }
 
@@ -34,7 +35,7 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
 
     try {
       const profile = await fetchCharacterProfile(trimmedUrl);
-      onImport(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, trimmedUrl);
+      onImport(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, trimmedUrl, profile);
 
       setSuccess(true);
       // Clear success message after 3 seconds

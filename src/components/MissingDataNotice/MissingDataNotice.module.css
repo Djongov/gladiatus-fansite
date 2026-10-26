@@ -1,0 +1,28 @@
+.notice {
+  margin: 16px 0;
+}
+
+.doll {
+  margin-top: 12px;
+}
+
+.dollName {
+  font-weight: bold;
+}
+
+.list {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.discordHint {
+  font-size: 13px;
+}
