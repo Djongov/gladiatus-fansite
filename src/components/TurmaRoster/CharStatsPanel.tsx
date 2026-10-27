@@ -6,7 +6,7 @@ import styles from './CharStatsPanel.module.css';
 
 const MISSING_VALUE = '—';
 
-const ATTRIBUTE_LABELS: Record<AttributeKey, string> = {
+export const ATTRIBUTE_LABELS: Record<AttributeKey, string> = {
   strength: 'Strength',
   dexterity: 'Dexterity',
   agility: 'Agility',
@@ -39,24 +39,24 @@ function attributeTooltipLines(label: string, attribute: AttributeStat): Tooltip
 }
 
 /** A row with a bar, like the game's life points and primary stats (charstats_text + charstats_balken). */
-function BarRow({
+export function BarRow({
   label,
   value,
   fillPercent,
-  barClassName,
+  bar,
   tooltipLines,
 }: {
   readonly label: string;
   readonly value: string;
   readonly fillPercent: number;
-  readonly barClassName: string;
+  readonly bar: 'life' | 'attribute';
   readonly tooltipLines?: TooltipLine[];
 }) {
   return (
     <div className={styles.row}>
       <span className={styles.text}>{label}</span>
       <div className={styles.barTrack}>
-        <div className={barClassName} style={{ width: `${Math.max(0, Math.min(100, fillPercent))}%` }} />
+        <div className={bar === 'life' ? styles.lifeBar : styles.attributeBar} style={{ width: `${Math.max(0, Math.min(100, fillPercent))}%` }} />
       </div>
       <span className={styles.barValue}>{value}</span>
       {tooltipLines && <StatTooltip lines={tooltipLines} />}
@@ -65,7 +65,7 @@ function BarRow({
 }
 
 /** A plain label/value row, like the game's level, armour and damage (charstats_value21/22). */
-function ValueRow({
+export function ValueRow({
   label,
   value,
   tooltipLines,
@@ -124,6 +124,17 @@ function DerivedChanceRows({ derived }: { readonly derived: CharacterStats }) {
   );
 }
 
+/** The panel's frame (#charstats): its top and bottom edges around the rows. */
+export function StatPanelFrame({ children }: { readonly children: React.ReactNode }) {
+  return (
+    <div className={styles.panel}>
+      <div className={styles.top} />
+      {children}
+      <div className={styles.bottom} />
+    </div>
+  );
+}
+
 const formatValue = (value: number | null | undefined): string => (typeof value === 'number' ? String(value) : MISSING_VALUE);
 
 /**
@@ -150,14 +161,13 @@ export default function CharStatsPanel({
     stats?.damageMin != null && stats.damageMax != null ? `${stats.damageMin} - ${stats.damageMax}` : MISSING_VALUE;
 
   return (
-    <div className={styles.panel}>
-      <div className={styles.top} />
+    <StatPanelFrame>
       <ValueRow label="Level" value={String(level)} />
       <BarRow
         label="Life points"
         value={formatValue(stats?.lifePoints)}
         fillPercent={100}
-        barClassName={styles.lifeBar}
+        bar="life"
         tooltipLines={stats?.lifePoints == null ? undefined : [{ text: `Life points: ${stats.lifePoints}`, highlight: true }]}
       />
       {ATTRIBUTE_KEYS.map((key) => {
@@ -169,7 +179,7 @@ export default function CharStatsPanel({
             label={label}
             value={formatValue(attribute?.total)}
             fillPercent={attribute?.max ? (attribute.total / attribute.max) * 100 : 0}
-            barClassName={styles.attributeBar}
+            bar="attribute"
             tooltipLines={attribute ? attributeTooltipLines(label, attribute) : undefined}
           />
         );
@@ -179,7 +189,6 @@ export default function CharStatsPanel({
       <ValueRow label="Threat" value={formatValue(threat)} tooltipLines={threatTooltip} />
       <ValueRow label="Healing" value={formatValue(stats?.healing)} />
       {derived && <DerivedChanceRows derived={derived} />}
-      <div className={styles.bottom} />
-    </div>
+    </StatPanelFrame>
   );
 }

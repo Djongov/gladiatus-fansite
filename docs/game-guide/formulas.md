@@ -119,7 +119,7 @@ Example: Character Level = 115. 115\*5 = 575
 
 **Critical healing** = 2\*normal healing
 
-**Threat:** basic threat per round for mercs in "draw attention to oneself mode"= (Charisma/10) \[round down\] + threat from objects (Not confirmed)
+**Threat:** Threat = FLOOR(Charisma × 0.71) + threat from items (healers: items only). Not fully confirmed.
 
 ---
 

@@ -13,7 +13,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "test:combat": "node scripts/test-combat.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.1",
@@ -31,6 +32,7 @@
     "@docusaurus/module-type-aliases": "^3.10.1",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "esbuild": "^0.28.2",
     "typescript": "~5.6.2"
   },
   "browserslist": {

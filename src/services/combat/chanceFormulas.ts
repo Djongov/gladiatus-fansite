@@ -18,3 +18,31 @@ export function blockChanceFromBlockValue(blockValue: number, level: number): nu
 export function critAvoidChanceFromResilience(resilience: number, level: number): number {
   return level > 8 ? Math.min((resilience * 52 / (level - 8)) / 4, 25) : 0;
 }
+
+/** Chance (integer %) that an attacker's swing lands: their Dexterity against the target's Agility. */
+export function chanceToHit(attackerDexterity: number, targetAgility: number): number {
+  if (attackerDexterity + targetAgility <= 0) return 0;
+  return Math.floor((attackerDexterity / (attackerDexterity + targetAgility)) * 100);
+}
+
+/** Chance (unrounded %) of a second swing in the same action. */
+export function chanceToDoubleHit(
+  attackerCharisma: number,
+  attackerDexterity: number,
+  targetIntelligence: number,
+  targetAgility: number,
+): number {
+  if (targetIntelligence <= 0 || targetAgility <= 0) return 0;
+  return (attackerCharisma * attackerDexterity * 10) / (targetIntelligence * targetAgility);
+}
+
+/**
+ * Damage range armour absorbs per hit.
+ * The maximum is verified against all 10 fighters of a live Circus Turma report;
+ * the minimum is approximate (it reads about 2 low at ~450, and no simple formula fits).
+ */
+export function armourAbsorption(armour: number): { min: number; max: number } {
+  const min = Math.max(0, Math.ceil(armour / 74 - armour / 74 / 660 + 1));
+  const max = Math.max(min, Math.floor(armour / 66) + Math.floor(armour / 660));
+  return { min, max };
+}

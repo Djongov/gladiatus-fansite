@@ -1,5 +1,8 @@
 import React from 'react';
 import type { BattleLog, Combatant, StrikeEvent } from '@site/src/services/combat/types';
+import { chanceToDoubleHit, chanceToHit } from '@site/src/services/combat/chanceFormulas';
+import { damageDealtBySide } from '@site/src/services/combat/simulateBattle';
+import FightStage from '@site/src/components/FightReplay/FightStage';
 import styles from './BattleReport.module.css';
 
 export type Rewards = { gold: number; experience: number; honour: number };
@@ -10,29 +13,6 @@ type Props = {
 };
 
 const GOLD_ICON_URL = 'https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif';
-
-const CDN_PREFIX = 'https://gladiatusfansite.blob.core.windows.net/images/';
-
-/**
- * Resolve a combatant's image to a full URL. The player's `image` field is
- * already a full Gladiatus costume URL (https://...); enemy images are
- * CDN-relative paths (e.g. `Expeditions/Italy/Grimwood/Rat.jpg`).
- */
-function resolveImage(image: string | undefined): string | null {
-  if (!image) return null;
-  if (/^https?:\/\//i.test(image)) return image;
-  return `${CDN_PREFIX}${image}`;
-}
-
-function chanceToHit(attackerDex: number, defenderAgi: number): number {
-  if (attackerDex + defenderAgi <= 0) return 0;
-  return Math.floor((attackerDex / (attackerDex + defenderAgi)) * 100);
-}
-
-function chanceToDoubleHit(attackerCha: number, attackerDex: number, defenderInt: number, defenderAgi: number): number {
-  if (defenderInt <= 0 || defenderAgi <= 0) return 0;
-  return Math.round((attackerCha * attackerDex * 10) / (defenderInt * defenderAgi));
-}
 
 function headerClass(log: BattleLog): string {
   if (log.outcome === 'attacker_wins') return styles.headerWin;
@@ -46,38 +26,6 @@ function headerText(log: BattleLog): string {
   return 'Draw — fight ended after the round limit';
 }
 
-/* ----- VS block ----- */
-
-function VsBlock({ log }: { log: BattleLog }) {
-  const attackerImage = resolveImage(log.attacker.image);
-  const defenderImage = resolveImage(log.defender.image);
-  return (
-    <div className={styles.vsBlock}>
-      <div className={styles.fighterSide}>
-        <div className={styles.fighterStack}>
-          <div className="player_name_bg">
-            <div className="playername">{log.attacker.name}</div>
-          </div>
-          {attackerImage && (
-            <div className={styles.fighterImage} style={{ backgroundImage: `url(${attackerImage})` }} />
-          )}
-        </div>
-      </div>
-      <div className={styles.vsLabel}>VS</div>
-      <div className={styles.fighterSide}>
-        <div className={styles.fighterStack}>
-          <div className="player_name_bg">
-            <div className="playername">{log.defender.name}</div>
-          </div>
-          {defenderImage && (
-            <div className={styles.fighterImage} style={{ backgroundImage: `url(${defenderImage})` }} />
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 /* ----- Stats panel ----- */
 
 type PanelProps = {
@@ -88,7 +36,7 @@ type PanelProps = {
 
 function StatsPanel({ self, opponent, mirrored = false }: PanelProps) {
   const hit = chanceToHit(self.dexterity, opponent.agility);
-  const dbl = chanceToDoubleHit(self.charisma, self.dexterity, opponent.intelligence, opponent.agility);
+  const dbl = Math.round(chanceToDoubleHit(self.charisma, self.dexterity, opponent.intelligence, opponent.agility));
 
   const rowClass = `${styles.statRow}${mirrored ? ' ' + styles.statRowMirror : ''}`;
 
@@ -128,15 +76,8 @@ function StatsPanel({ self, opponent, mirrored = false }: PanelProps) {
 /* ----- Damage statistics ----- */
 
 function DamageStats({ log }: { log: BattleLog }) {
-  // Total damage dealt by each side
-  let attackerDealt = 0;
-  let defenderDealt = 0;
-  for (const r of log.rounds) {
-    for (const s of r.strikes) {
-      if (s.attacker === log.attacker.name) attackerDealt += s.finalDamage;
-      else defenderDealt += s.finalDamage;
-    }
-  }
+  // By side, not name: a fight against yourself has the same name on both sides
+  const { attacker: attackerDealt, defender: defenderDealt } = damageDealtBySide(log.rounds);
   const attackerHpAfter = Math.max(0, log.attacker.maxHp - defenderDealt);
   const defenderHpAfter = Math.max(0, log.defender.maxHp - attackerDealt);
 
@@ -207,7 +148,7 @@ function BattleLogTable({ log }: { log: BattleLog }) {
               </th>
             </tr>
             {round.strikes.map((strike, idx) => {
-              const isDefenderStriking = strike.attacker === log.defender.name;
+              const isDefenderStriking = strike.attackerSide === 'defender';
               return (
                 <tr
                   key={idx}
@@ -257,7 +198,7 @@ export default function BattleReport({ log, rewards }: Props): React.ReactElemen
 
       {rewards && <RewardSection playerName={log.attacker.name} rewards={rewards} />}
 
-      <VsBlock log={log} />
+      <FightStage log={log} />
 
       <div className={styles.statsRow}>
         <StatsPanel self={log.attacker} opponent={log.defender} />

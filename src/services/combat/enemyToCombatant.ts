@@ -4,25 +4,52 @@ import {
   critChanceFromAttackValue,
   blockChanceFromBlockValue,
   critAvoidChanceFromResilience,
+  armourAbsorption,
 } from './chanceFormulas';
+import { rollInt } from './strike';
 
 export type RolledEnemy = { combatant: Combatant; rolledLevel: number };
-
-function rollInt(random: () => number, min: number, max: number): number {
-  if (max < min) return min;
-  return Math.floor(random() * (max - min + 1)) + min;
-}
 
 function lerpInt(range: Range, t: number): number {
   return Math.round(range.min + (range.max - range.min) * t);
 }
 
-function armourAbsorbMin(armour: number): number {
-  return Math.max(0, Math.ceil(armour / 74 - (armour / 74) / 660 + 1));
+/**
+ * Observed live-game crit/block chances on expedition mobs don't follow the
+ * player-side formula (floor(stat/10) gives values too low). Empirical fit
+ * from cross-checked live data points:
+ *
+ *   * Crit: live displayed % matches the PHP critRaw field directly.
+ *       Teuton Hero L114 critRaw=13 → live 13%. Dragon L120 critRaw=12 → live 12%.
+ *     So mob crit chance is just `min(critRaw, 50)` with no level scaling.
+ *
+ *   * Block: empirical fit across four observed live values.
+ *     The str-derived block value is `floor(str * (level - 57) / 100)`,
+ *     converted to a chance via the standard formula. The final displayed
+ *     chance is `max(blockRaw, str_derived_chance)` — blockRaw acts as a
+ *     floor for mobs where str alone gives a low value (e.g. Necromancer
+ *     Prince L72, str 115, blockRaw 15 → live 15%; str alone would give 2%).
+ *     For mobs where str dominates (Teuton, Dragon), the str-derived value
+ *     wins and blockRaw is ignored.
+ *       Soulless L57 (str 168, raw 0):    max(0, formula(0))  = 0%   (live 0%)
+ *       Necro Prince L72 (str 115, raw 15): max(15, formula(17))= 15% (live 15%)
+ *       Teuton L114 (str 342, raw 7):     max(7, formula(194)) ≈ 16% (live 17%)
+ *       Dragon L120 (str 456, raw 5):     max(5, formula(287)) ≈ 22% (live 22%)
+ *
+ *   * Caveat: some expeditions carry PLACEHOLDER raw data in the PHP dump —
+ *     Dragon Remains and Bank of the Thames list 15/13/0 for every mob, and
+ *     Kent through Mona Isle list critRaw 5 with no block data. Raw values
+ *     there don't match live (live L124-126 Dracolich: crit 25%, block 41%
+ *     vs dump 15/13) and need live-tooltip corrections in expeditions.json.
+ */
+export function expeditionBlockChance(blockRaw: number | null, strength: number, level: number): number {
+  const strBlockValue = Math.max(0, Math.floor(strength * (level - 57) / 100));
+  return Math.max(blockRaw ?? 0, blockChanceFromBlockValue(strBlockValue, level));
 }
 
-function armourAbsorbMax(armour: number): number {
-  return Math.max(armourAbsorbMin(armour), Math.floor(armour / 66 + armour / 660));
+/** An expedition mob's crit chance: its raw value, as the game shows it (see expeditionBlockChance). */
+export function expeditionCritChance(critRaw: number | null): number {
+  return Math.min(critRaw ?? 0, 50);
 }
 
 /**
@@ -45,6 +72,7 @@ export function rollEnemyAsCombatant(enemy: Enemy, random: () => number = Math.r
   const charisma = lerpInt(enemy.charisma, t);
   const intelligence = lerpInt(enemy.intelligence, t);
   const armour = lerpInt(enemy.armour, t);
+  const absorb = armourAbsorption(armour);
   const life = lerpInt(enemy.life, t);
 
   // damage shape is { min: Range, max: Range } where `min` is the full
@@ -64,36 +92,8 @@ export function rollEnemyAsCombatant(enemy: Enemy, random: () => number = Math.r
     ? enemy.damage.max.max
     : lerpInt({ min: enemy.damage.min.max, max: enemy.damage.max.max }, t);
 
-  // Observed live-game crit/block chances on expedition mobs don't follow the
-  // player-side formula (floor(stat/10) gives values too low). Empirical fit
-  // from cross-checked live data points:
-  //
-  //   * Crit: live displayed % matches the PHP critRaw field directly.
-  //       Teuton Hero L114 critRaw=13 → live 13%. Dragon L120 critRaw=12 → live 12%.
-  //     So mob crit chance is just `min(critRaw, 50)` with no level scaling.
-  //
-  //   * Block: empirical fit across four observed live values.
-  //     The str-derived block value is `floor(str * (level - 57) / 100)`,
-  //     converted to a chance via the standard formula. The final displayed
-  //     chance is `max(blockRaw, str_derived_chance)` — blockRaw acts as a
-  //     floor for mobs where str alone gives a low value (e.g. Necromancer
-  //     Prince L72, str 115, blockRaw 15 → live 15%; str alone would give 2%).
-  //     For mobs where str dominates (Teuton, Dragon), the str-derived value
-  //     wins and blockRaw is ignored.
-  //       Soulless L57 (str 168, raw 0):    max(0, formula(0))  = 0%   (live 0%)
-  //       Necro Prince L72 (str 115, raw 15): max(15, formula(17))= 15% (live 15%)
-  //       Teuton L114 (str 342, raw 7):     max(7, formula(194)) ≈ 16% (live 17%)
-  //       Dragon L120 (str 456, raw 5):     max(5, formula(287)) ≈ 22% (live 22%)
-  //
-  //   * Caveat: some expeditions carry PLACEHOLDER raw data in the PHP dump —
-  //     Dragon Remains and Bank of the Thames list 15/13/0 for every mob, and
-  //     Kent through Mona Isle list critRaw 5 with no block data. Raw values
-  //     there don't match live (live L124-126 Dracolich: crit 25%, block 41%
-  //     vs dump 15/13) and need live-tooltip corrections in expeditions.json.
-  const strBlockValue = Math.max(0, Math.floor(strength * (rolledLevel - 57) / 100));
-  const strBlockChance = blockChanceFromBlockValue(strBlockValue, rolledLevel);
-  const enemyBlockChance = Math.max(enemy.blockRaw ?? 0, strBlockChance);
-  const enemyCritChance = Math.min(enemy.critRaw ?? 0, 50);
+  const enemyBlockChance = expeditionBlockChance(enemy.blockRaw, strength, rolledLevel);
+  const enemyCritChance = expeditionCritChance(enemy.critRaw);
 
   const combatant: Combatant = {
     name: enemy.name,
@@ -104,8 +104,8 @@ export function rollEnemyAsCombatant(enemy: Enemy, random: () => number = Math.r
     damageMin,
     damageMax,
     armour,
-    armourAbsorbMin: armourAbsorbMin(armour),
-    armourAbsorbMax: armourAbsorbMax(armour),
+    armourAbsorbMin: absorb.min,
+    armourAbsorbMax: absorb.max,
     strength,
     dexterity,
     agility,

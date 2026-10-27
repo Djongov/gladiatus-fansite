@@ -10,6 +10,7 @@ import {
   critChanceFromAttackValue,
   blockChanceFromBlockValue,
   critAvoidChanceFromResilience,
+  armourAbsorption,
 } from '@site/src/services/combat/chanceFormulas';
 import { getTrainingCap } from '@site/src/utils/trainingCap';
 
@@ -314,6 +315,12 @@ function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
  * Calculate total character stats from equipped items, base stats, level and active pacts.
  * Exported so CompactBuildDisplay can reuse the exact same logic.
  */
+/**
+ * Threat each point of Charisma gives. Fitted against the game's own threat on imported Turma dolls
+ * (Samnits with no threat items: Charisma 437 -> 310, 460 -> 326). In-game, healers lose this part.
+ */
+export const THREAT_PER_CHARISMA = 0.71;
+
 export function calculateCharacterStats(
   equippedItems: Map<ItemSlotType, EquippedItem>,
   characterLevel: number,
@@ -392,9 +399,7 @@ export function calculateCharacterStats(
   const armorFromEnchants = enchantArmorBonus;
   totalArmor += enchantArmorBonus;
 
-  const minAbsorption = Math.ceil((totalArmor / 74) - (totalArmor / 74) / 660 + 1);
-  const minDamageAbsorbed = Math.max(0, minAbsorption);
-  const maxDamageAbsorbed = Math.max(minDamageAbsorbed, Math.floor((totalArmor / 66) + (totalArmor / 660)));
+  const { min: minDamageAbsorbed, max: maxDamageAbsorbed } = armourAbsorption(totalArmor);
 
   const agilityStat = combinedStats.get('Agility') || { flat: 0, percent: 0 };
   const agilityPercentBonus = Math.round(baseStats.agility * (agilityStat.percent / 100));
@@ -449,7 +454,7 @@ export function calculateCharacterStats(
   const finalCharisma = Math.min(uncappedCharisma, maxCharisma + charismaPactBonus);
 
   const threatStat = combinedStats.get('Threat') || { flat: 0, percent: 0 };
-  const threatFromCharisma = Math.floor(finalCharisma / 10);
+  const threatFromCharisma = Math.floor(finalCharisma * THREAT_PER_CHARISMA);
   const threatFromItems = threatStat.flat;
   const totalThreat = threatFromCharisma + threatFromItems;
 

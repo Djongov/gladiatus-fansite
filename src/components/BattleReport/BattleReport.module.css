@@ -29,44 +29,6 @@
   background: linear-gradient(to bottom, #6a6a6a, #3a3a3a);
 }
 
-/* VS / fighter block */
-.vsBlock {
-  display: grid;
-  grid-template-columns: 1fr 80px 1fr;
-  gap: 12px;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.fighterSide {
-  text-align: center;
-}
-
-.fighterStack {
-  /* Width matches the .player_name_bg nameplate (172px) so the image and the
-     badge line up perfectly. */
-  width: 172px;
-  margin: 0 auto;
-}
-
-.fighterImage {
-  width: 168px;
-  height: 194px;
-  margin: 8px auto 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #1a1a1a;
-  border: 1px solid #8E753F;
-}
-
-.vsLabel {
-  font-weight: 700;
-  text-align: center;
-  font-size: 24px;
-  color: #4a3818;
-}
-
 /* Stats panels */
 .statsRow {
   display: grid;

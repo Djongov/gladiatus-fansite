@@ -24,3 +24,6 @@ yarn-error.log*
 
 # Brainstorming mockups and agent scratch (superpowers)
 .superpowers/
+
+# Saved game pages (battle reports) used as research samples
+/sample/

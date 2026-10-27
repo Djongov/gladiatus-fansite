@@ -5,6 +5,7 @@ import type { PactId } from './PactDefinitions';
 import { fetchCharacterProfile, describeProfileFetchError, type ImportDetails } from './fetchCharacterProfile';
 
 interface ImportProfileProps {
+  /** Return a message when the profile loaded but can't be used here; it's shown instead of the success message. */
   onImport: (
     level: number,
     baseStats: BaseStats,
@@ -13,7 +14,7 @@ interface ImportProfileProps {
     pacts: Set<PactId> | undefined,
     profileUrl: string,
     details?: ImportDetails,
-  ) => void;
+  ) => string | void;
 }
 
 export default function ImportProfile({ onImport }: ImportProfileProps) {
@@ -35,7 +36,11 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
 
     try {
       const profile = await fetchCharacterProfile(trimmedUrl);
-      onImport(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, trimmedUrl, profile);
+      const rejection = onImport(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, trimmedUrl, profile);
+      if (rejection) {
+        setError(rejection);
+        return;
+      }
 
       setSuccess(true);
       // Clear success message after 3 seconds

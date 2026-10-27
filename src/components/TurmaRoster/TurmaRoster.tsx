@@ -4,6 +4,7 @@ import type { PactId } from '@site/src/components/CharacterPlanner/PactDefinitio
 import type { StoredDoll } from '@site/src/components/CharacterPlanner/turmaTypes';
 import type { ActiveCharacterRecord } from '@site/src/hooks/useActiveCharacter';
 import { resolveCharacterPortrait } from '@site/src/utils/characterFaceImage';
+import { mercenaryPortraitUrl } from '@site/src/utils/mercenaryPortrait';
 import DollRow, { PlaceholderRow } from './DollRow';
 import styles from './TurmaRoster.module.css';
 
@@ -12,17 +13,6 @@ const EMPTY_SLOT_MESSAGE = 'No mercenary in this slot';
 const FAILED_SLOT_MESSAGE = "Couldn't load this doll — try Refresh profile";
 const REFRESH_HINT = 'Refresh your profile to load your Circus Turma.';
 const NO_PACTS: Set<PactId> = new Set();
-
-/** The game's own mercenary picture; its number is the contract's subcategory (contract "15-6" → merc/6.jpg). */
-function mercenaryPortraitUrl(profileUrl: string | undefined, contractBaseItemId: string | undefined): string | null {
-  const portraitNumber = contractBaseItemId?.split('-')[1];
-  if (!profileUrl || !portraitNumber) return null;
-  try {
-    return `https://${new URL(profileUrl).hostname}/cdn/img/npc/merc/${portraitNumber}.jpg`;
-  } catch {
-    return null;
-  }
-}
 
 type StoredDollRowProps = {
   readonly doll: StoredDoll;

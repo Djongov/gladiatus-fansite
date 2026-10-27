@@ -6,18 +6,18 @@ import type {
   ExpeditionsData,
   Expedition as ExpeditionData,
   Enemy,
-  Range,
 } from '@site/src/types/expeditions';
 import { useActiveCharacter } from '@site/src/hooks/useActiveCharacter';
 import AttackModal from '@site/src/components/AttackModal/AttackModal';
+import EnemyPortrait, { IMAGE_CDN_PREFIX } from '@site/src/components/EnemyPortrait/EnemyPortrait';
 import { ExpeditionBonusesCell, type BonusId } from '@site/src/components/ExpeditionBonuses/ExpeditionBonuses';
+import EnemyStatsPanel from '@site/src/components/EnemyStatsPanel/EnemyStatsPanel';
+import { expeditionPanelValues, formatRange } from '@site/src/components/EnemyStatsPanel/expeditionPanelValues';
 
-const CDN_PREFIX = 'https://gladiatusfansite.blob.core.windows.net/images/';
-const BOSS_FRAME_URL = `${CDN_PREFIX}Expeditions/boss_picture.png`;
-const ICON_LEVEL = `${CDN_PREFIX}icon_level.gif`;
-const ICON_GOLD = `${CDN_PREFIX}icon_gold.gif`;
-const ICON_EXP = `${CDN_PREFIX}icon_level_small.gif`;
-const ICON_HONOUR = `${CDN_PREFIX}icon_honor_small.gif`;
+const ICON_LEVEL = `${IMAGE_CDN_PREFIX}icon_level.gif`;
+const ICON_GOLD = `${IMAGE_CDN_PREFIX}icon_gold.gif`;
+const ICON_EXP = `${IMAGE_CDN_PREFIX}icon_level_small.gif`;
+const ICON_HONOUR = `${IMAGE_CDN_PREFIX}icon_honor_small.gif`;
 
 type ExpeditionProps = {
   slug: string;
@@ -31,39 +31,6 @@ function findExpedition(slug: string): ExpeditionData | null {
     }
   }
   return null;
-}
-
-function formatRange(r: Range | null): string {
-  if (r === null) return '—';
-  return r.min === r.max ? String(r.min) : `${r.min}-${r.max}`;
-}
-
-function formatDamage(d: Enemy['damage'] | null, hasLevelSpread: boolean): string {
-  if (d === null) return '—';
-  // The markdown convention is: an enemy whose level is a single value uses
-  // the no-slash "A-B" damage form (Kent etc.); an enemy whose level is a
-  // range uses the "A-B/C-D" form (Grimwood etc.), even when one or both
-  // sides happen to be degenerate (e.g. Rat's "1-1/2-2").
-  if (!hasLevelSpread) {
-    return `${d.min.min}-${d.max.min}`;
-  }
-  return `${d.min.min}-${d.min.max}/${d.max.min}-${d.max.max}`;
-}
-
-function formatNullable(n: number | null): string {
-  return n === null ? '—' : String(n);
-}
-
-function EnemyImage({ enemy }: { enemy: Enemy }) {
-  const src = `${CDN_PREFIX}${enemy.image}`;
-  const img = <img src={src} alt={enemy.name} title={enemy.name} className={styles.enemyImage} />;
-  if (!enemy.isBoss) return img;
-  return (
-    <div className={styles.bossImageWrap}>
-      {img}
-      <img src={BOSS_FRAME_URL} alt="Boss" className={styles.bossFrame} />
-    </div>
-  );
 }
 
 function PlayerName({ name }: { name: string }) {
@@ -166,7 +133,13 @@ export default function Expedition({ slug }: ExpeditionProps) {
           <tr>
             <AttributeCell label="Image" />
             {exp.enemies.map((e, i) => (
-              <td key={`img-${i}`}><EnemyImage enemy={e} /></td>
+              <td key={`img-${i}`}><EnemyPortrait name={e.name} image={e.image} isBoss={e.isBoss} /></td>
+            ))}
+          </tr>
+          <tr>
+            <AttributeCell label="Stats" />
+            {exp.enemies.map((e, i) => (
+              <td key={`stats-${i}`}><EnemyStatsPanel values={expeditionPanelValues(e)} /></td>
             ))}
           </tr>
           {activeCharacter !== null && (
@@ -226,54 +199,6 @@ export default function Expedition({ slug }: ExpeditionProps) {
           <tr>
             <AttributeCell icon={ICON_HONOUR} label="Honour" />
             {exp.enemies.map((e, i) => <td key={`hon-${i}`}>{formatRange(e.honour)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Strength" />
-            {exp.enemies.map((e, i) => <td key={`str-${i}`}>{formatRange(e.strength)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Dexterity" />
-            {exp.enemies.map((e, i) => <td key={`dex-${i}`}>{formatRange(e.dexterity)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Agility" />
-            {exp.enemies.map((e, i) => <td key={`agi-${i}`}>{formatRange(e.agility)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Constitution" />
-            {exp.enemies.map((e, i) => <td key={`con-${i}`}>{formatRange(e.constitution)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Charisma" />
-            {exp.enemies.map((e, i) => <td key={`cha-${i}`}>{formatRange(e.charisma)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Intelligence" />
-            {exp.enemies.map((e, i) => <td key={`int-${i}`}>{formatRange(e.intelligence)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Life" />
-            {exp.enemies.map((e, i) => <td key={`life-${i}`}>{formatRange(e.life)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Critical" />
-            {exp.enemies.map((e, i) => <td key={`crit-${i}`}>{formatNullable(e.critRaw)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Block" />
-            {exp.enemies.map((e, i) => <td key={`blk-${i}`}>{formatNullable(e.blockRaw)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Avoid Critical" />
-            {exp.enemies.map((e, i) => <td key={`avd-${i}`}>{formatNullable(e.avoidCritRaw)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Armour" />
-            {exp.enemies.map((e, i) => <td key={`arm-${i}`}>{formatRange(e.armour)}</td>)}
-          </tr>
-          <tr>
-            <AttributeCell label="Damage" />
-            {exp.enemies.map((e, i) => <td key={`dmg-${i}`}>{formatDamage(e.damage, e.level.min !== e.level.max)}</td>)}
           </tr>
           <tr>
             <AttributeCell label="Item Level Drop" />

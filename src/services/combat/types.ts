@@ -24,8 +24,13 @@ export type Combatant = {
   critAvoidChance: number;     // 0..25 %
 };
 
+/** Which side of the fight a fighter is on: the one who started it, or the one attacked. */
+export type FighterSide = 'attacker' | 'defender';
+
 export type StrikeEvent = {
   attacker: string;
+  /** Names can repeat (a fight against yourself), so replays and totals go by side */
+  attackerSide: FighterSide;
   defender: string;
   result: 'miss' | 'hit';
   isCrit: boolean;

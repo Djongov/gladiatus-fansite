@@ -1,0 +1,127 @@
+/* Shared report look (banner, tables, log rows) comes from BattleReport.module.css */
+
+.points {
+  margin: 8px 12px;
+  font-weight: 700;
+}
+
+.tableScroll {
+  overflow-x: auto;
+}
+
+.rowLabel {
+  text-align: left !important;
+  white-space: nowrap;
+}
+
+.detail {
+  display: block;
+  font-size: 0.8em;
+  color: #717171;
+}
+
+.lifePanels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+@media (max-width: 720px) {
+  .lifePanels {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lifePanel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lifeRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'label threat'
+    'bar value';
+  gap: 1px 8px;
+  font-size: 12px;
+}
+
+.lifeLabel {
+  grid-area: label;
+  font-weight: 700;
+}
+
+.lifeLoss {
+  margin-left: 4px;
+  color: #640000;
+}
+
+.lifeGain {
+  margin-left: 4px;
+  color: #1d6b00;
+}
+
+.bar {
+  grid-area: bar;
+  height: 8px;
+  align-self: center;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #8e753f;
+}
+
+.barFillAttacker,
+.barFillDefender {
+  height: 100%;
+}
+
+.barFillAttacker {
+  background: #3f8a2a;
+}
+
+.barFillDefender {
+  background: #b32a1d;
+}
+
+.lifeValue {
+  grid-area: value;
+  text-align: right;
+}
+
+.threat {
+  grid-area: threat;
+  text-align: right;
+  color: #5b4a22;
+}
+
+.toggle {
+  display: block;
+  margin: 8px auto;
+  background: none;
+  border: 0;
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.resultHeal {
+  color: #1d8a00;
+}
+
+.resultCritHeal {
+  color: #0b4f00;
+  font-weight: 700;
+}
+
+/* Shield hits show several result lines ("absorbs …", "*Shield removed*", "receives …"), one per line */
+.resultLine {
+  display: block;
+}
+
+.resultPlainBold {
+  color: #2c1f0c;
+  font-weight: 700;
+}

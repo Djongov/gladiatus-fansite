@@ -1,0 +1,13 @@
+/* Page chrome (wrapper, notice, opponent column) comes from ArenaSimulator.module.css */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

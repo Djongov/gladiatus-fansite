@@ -9,6 +9,7 @@ import {
 import { characterToCombatant } from '@site/src/services/combat/characterToCombatant';
 import { simulateOdds, oddsToPercentages } from '@site/src/services/combat/simulateOdds';
 import type { Combatant } from '@site/src/services/combat/types';
+import { chanceToHit } from '@site/src/services/combat/chanceFormulas';
 import type {
   Enemy,
   ExpeditionsData,
@@ -38,11 +39,6 @@ function lossColor(pct: number): string {
   // 0% loss → green, 100% loss → red (inverted)
   const hue = (100 - pct) * 1.2;
   return `hsl(${hue}, 65%, 42%)`;
-}
-
-function chanceToHit(attackerDex: number, defenderAgi: number): number {
-  if (attackerDex + defenderAgi <= 0) return 0;
-  return Math.floor((attackerDex / (attackerDex + defenderAgi)) * 100);
 }
 
 export default function ExpeditionSimulatorPage(): React.ReactElement {
