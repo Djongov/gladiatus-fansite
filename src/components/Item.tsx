@@ -41,12 +41,16 @@ export interface EventItem {
 
 // Prefix/Suffix will have stats that modify the base item
 export interface PrefixSuffix {
+  /** The game's affix id */
+  id: number;
   name: string;
   level: number;
   stats: Record<string, { flat: number; percent: number }>;
   materials: Record<string, number>;
   /** Flagged in the data files for affixes added in a recent game update */
   new?: boolean;
+  /** Underworld affix: items carrying one get a red outline */
+  underworld?: boolean;
 }
 
 export type ItemRarity = 'common' | 'green' | 'blue' | 'purple' | 'orange' | 'red';
@@ -493,6 +497,8 @@ export default function Item({
     ? (suffixesData as PrefixSuffix[]).find(s => s.name === suffix)
     : suffix;
 
+  const isUnderworld = Boolean(resolvedPrefix?.underworld || resolvedSuffix?.underworld);
+
   // Auto-detect rarity if not provided
   const effectiveRarity: ItemRarity = rarity || (resolvedPrefix || resolvedSuffix ? 'green' : 'common');
 
@@ -549,7 +555,7 @@ export default function Item({
 
   return (
     <span className={styles.wrapper}>
-      <div className={`item-i-${resolvedBaseItem.id} ${styles.icon}`} />
+      <div className={`item-i-${resolvedBaseItem.id} ${styles.icon} ${isUnderworld ? styles.underworld : ''}`} />
       {showLevelBadge && <ItemLevelBadge level={calculatedStats.level} rarity={effectiveRarity} />}
 
       {!hideTooltip && (

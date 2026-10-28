@@ -61,6 +61,25 @@ export function damageDealtBySide(rounds: RoundEvent[]): Record<FighterSide, num
   return dealt;
 }
 
+/** How one side's swings went: each half of a double hit is its own attack. */
+export type StrikeTally = { attacks: number; criticalHits: number; misses: number; blockedByOpponent: number };
+
+/** Each side's attacks, critical hits, misses and attacks the opponent blocked, for the report. */
+export function strikeTallyBySide(rounds: RoundEvent[]): Record<FighterSide, StrikeTally> {
+  const empty = (): StrikeTally => ({ attacks: 0, criticalHits: 0, misses: 0, blockedByOpponent: 0 });
+  const tally: Record<FighterSide, StrikeTally> = { attacker: empty(), defender: empty() };
+  for (const round of rounds) {
+    for (const s of round.strikes) {
+      const side = tally[s.attackerSide];
+      side.attacks += 1;
+      if (s.isCrit) side.criticalHits += 1;
+      if (s.result === 'miss') side.misses += 1;
+      if (s.isBlocked) side.blockedByOpponent += 1;
+    }
+  }
+  return tally;
+}
+
 export function simulateBattle(
   attacker: Combatant,
   defender: Combatant,

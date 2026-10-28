@@ -286,6 +286,8 @@ export interface CharacterState {
   setItem: (slot: ItemSlotType, item: EquippedItem | null) => void;
   removeItem: (slot: ItemSlotType) => void;
   clearAll: () => void;
+  /** Back to a new level 1 character: starting stats, no items, no pacts */
+  resetCharacter: () => void;
   characterStats: CharacterStats;
   loadFromUrl: () => void;
   importProfile: (level: number, stats: BaseStats, items: Map<ItemSlotType, EquippedItem>, identity: CharacterIdentity, pacts?: Set<PactId>) => void;
@@ -541,22 +543,26 @@ function generateRandomRomanName(): string {
  * Custom hook to manage character planner state
  * Handles equipped items, stat calculations, and URL sharing
  */
+const STARTING_BASE_STATS: BaseStats = {
+  strength: 5,
+  dexterity: 5,
+  agility: 5,
+  constitution: 5,
+  charisma: 5,
+  intelligence: 5,
+};
+
+const newCharacterIdentity = (): CharacterIdentity => ({
+  name: generateRandomRomanName(),
+  title: undefined,
+  gender: 'male',
+});
+
 export function useCharacterState(): CharacterState {
   const [equippedItems, setEquippedItems] = useState<Map<ItemSlotType, EquippedItem>>(new Map());
   const [characterLevel, setCharacterLevel] = useState<number>(1);
-  const [characterIdentity, setCharacterIdentity] = useState<CharacterIdentity>(() => ({
-    name: generateRandomRomanName(),
-    title: undefined,
-    gender: 'male',
-  }));
-  const [baseStats, setBaseStatsState] = useState<BaseStats>({
-    strength: 5,
-    dexterity: 5,
-    agility: 5,
-    constitution: 5,
-    charisma: 5,
-    intelligence: 5,
-  });
+  const [characterIdentity, setCharacterIdentity] = useState<CharacterIdentity>(newCharacterIdentity);
+  const [baseStats, setBaseStatsState] = useState<BaseStats>(STARTING_BASE_STATS);
   const isInitialMount = useRef(true);
   const [activePacts, setActivePacts] = useState<Set<PactId>>(new Set());
 
@@ -705,6 +711,14 @@ export function useCharacterState(): CharacterState {
     setEquippedItems(new Map());
   };
 
+  const resetCharacter = () => {
+    setEquippedItems(new Map());
+    setCharacterLevel(1);
+    setBaseStatsState(STARTING_BASE_STATS);
+    setCharacterIdentity(newCharacterIdentity());
+    setActivePacts(new Set());
+  };
+
   /**
    * Update base stats (partial update supported)
    */
@@ -779,6 +793,7 @@ export function useCharacterState(): CharacterState {
     setItem,
     removeItem,
     clearAll,
+    resetCharacter,
     characterStats,
     loadFromUrl,
     importProfile,

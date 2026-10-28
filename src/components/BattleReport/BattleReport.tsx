@@ -1,7 +1,7 @@
 import React from 'react';
 import type { BattleLog, Combatant, StrikeEvent } from '@site/src/services/combat/types';
 import { chanceToDoubleHit, chanceToHit } from '@site/src/services/combat/chanceFormulas';
-import { damageDealtBySide } from '@site/src/services/combat/simulateBattle';
+import { damageDealtBySide, strikeTallyBySide } from '@site/src/services/combat/simulateBattle';
 import FightStage from '@site/src/components/FightReplay/FightStage';
 import styles from './BattleReport.module.css';
 
@@ -101,6 +101,44 @@ function DamageStats({ log }: { log: BattleLog }) {
           <td>{defenderDealt}</td>
           <td>{defenderHpAfter}</td>
         </tr>
+      </tbody>
+    </table>
+  );
+}
+
+/** A count with its share of the fighter's attacks, e.g. "12 (30%)". */
+function countWithShare(count: number, attacks: number): string {
+  return attacks > 0 ? `${count} (${Math.round((count / attacks) * 100)}%)` : '0';
+}
+
+function StrikeSummary({ log }: { log: BattleLog }) {
+  const tally = strikeTallyBySide(log.rounds);
+  const rows = [
+    { side: 'attacker', name: log.attacker.name, ...tally.attacker },
+    { side: 'defender', name: log.defender.name, ...tally.defender },
+  ];
+
+  return (
+    <table className={styles.statsTable}>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Attacks</th>
+          <th>Critical hits</th>
+          <th>Misses</th>
+          <th>Blocked by opponent</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr key={row.side}>
+            <td>{row.name}</td>
+            <td>{row.attacks}</td>
+            <td>{countWithShare(row.criticalHits, row.attacks)}</td>
+            <td>{countWithShare(row.misses, row.attacks)}</td>
+            <td>{countWithShare(row.blockedByOpponent, row.attacks)}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
@@ -207,6 +245,7 @@ export default function BattleReport({ log, rewards }: Props): React.ReactElemen
 
       <div className={styles.sectionHeader}>Statistics</div>
       <DamageStats log={log} />
+      <StrikeSummary log={log} />
 
       <div className={styles.sectionHeader}>Battle Report</div>
       <BattleLogTable log={log} />

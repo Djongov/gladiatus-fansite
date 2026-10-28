@@ -880,9 +880,9 @@ export default function LootExplorer() {
 
             const statValue = primarySort.stat === 'level' ? 0 : resolveComboStat(combo, primarySort.stat, comboDamageMap, comboArmourMap);
 
-            const plannerParams = new URLSearchParams({ base: combo.base.name });
-            if (combo.prefix) plannerParams.set('prefix', combo.prefix.name);
-            if (combo.suffix) plannerParams.set('suffix', combo.suffix.name);
+            const plannerParams = new URLSearchParams({ base: String(combo.base.id) });
+            if (combo.prefix) plannerParams.set('prefix', String(combo.prefix.id));
+            if (combo.suffix) plannerParams.set('suffix', String(combo.suffix.id));
             const plannerHref = `/item-planner?${plannerParams.toString()}`;
 
             return (

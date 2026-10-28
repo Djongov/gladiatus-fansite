@@ -3,6 +3,10 @@ import { maxUsableItemLevel } from "@site/src/utils/itemLevelLimits";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import BaseStatsEditor from "../CharacterPlanner/BaseStatsEditor";
 import CharacterDoll from "../CharacterPlanner/CharacterDoll";
+import {
+  PrefilledBanner,
+  useActiveCharacterPrefill,
+} from "../CharacterPlanner/ActiveCharacterPrefill";
 import ImportProfile from "../CharacterPlanner/ImportProfile";
 import PactSelector, { ActivePactsBar } from "../CharacterPlanner/PactSelector";
 import StatsDisplay from "../CharacterPlanner/StatsDisplay";
@@ -76,7 +80,14 @@ export default function ItemSimulator() {
     togglePact,
     removeItem,
     clearAll,
+    resetCharacter,
   } = useCharacterState();
+
+  // Attributes only: the simulation finds the items
+  const { prefilledFrom, startFresh } = useActiveCharacterPrefill(
+    { equippedItems, baseStats, characterLevel, activePacts, importProfile, resetCharacter },
+    { withItems: false },
+  );
 
   const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_WEIGHTS);
   const [statToggles, setStatToggles] = useState<StatToggles>({
@@ -217,6 +228,8 @@ export default function ItemSimulator() {
           stat priorities.
         </p>
       </div>
+
+      {prefilledFrom && <PrefilledBanner name={prefilledFrom} onClear={startFresh} />}
 
       {/* Profile import */}
       <div className={styles.importSection}>
