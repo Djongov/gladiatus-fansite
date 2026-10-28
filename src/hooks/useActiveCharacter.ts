@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useSyncExternalStore } from 'react';
 import {
   encodeCharacterState,
   type BaseStats,
@@ -8,32 +8,17 @@ import {
 } from '@site/src/components/CharacterPlanner/useCharacterState';
 import type { PactId } from '@site/src/components/CharacterPlanner/PactDefinitions';
 import { fetchCharacterProfile, type ImportDetails } from '@site/src/components/CharacterPlanner/fetchCharacterProfile';
-import type {
-  DollStats,
-  ImportedDoll,
-  ImportedTurma,
-  MissingDataEntry,
-  StoredDoll,
-  StoredTurma,
-} from '@site/src/components/CharacterPlanner/turmaTypes';
+import type { ImportedDoll, ImportedTurma, StoredDoll, StoredTurma } from '@site/src/components/CharacterPlanner/turmaTypes';
+import {
+  ACTIVE_CHARACTER_SCHEMA_VERSION,
+  clearActiveCharacter,
+  getActiveCharacter,
+  saveActiveCharacter,
+  subscribeActiveCharacter,
+  type ActiveCharacterRecord,
+} from './activeCharacterStore';
 
-const STORAGE_KEY = 'gladiatus.activeCharacter';
-const SCHEMA_VERSION = 1 as const;
-
-export type ActiveCharacterRecord = {
-  v: typeof SCHEMA_VERSION;
-  encoded: string;
-  identity: CharacterIdentity;
-  level: number;
-  savedAt: number;
-  /** Absent on records saved before refresh support; such characters can't be refreshed. */
-  profileUrl?: string;
-  /** Absent on records saved before Circus Turma support; filled on the next refresh. */
-  stats?: DollStats;
-  turma?: StoredTurma;
-  /** Ids on the player's gear our item data lacks; replaced on every import. Absent on older records. */
-  missingData?: MissingDataEntry[];
-};
+export type { ActiveCharacterRecord } from './activeCharacterStore';
 
 export type UseActiveCharacter = {
   character: ActiveCharacterRecord | null;
@@ -51,27 +36,6 @@ export type UseActiveCharacter = {
   refresh(): Promise<void>;
   logout(): void;
 };
-
-function readRecord(): ActiveCharacterRecord | null {
-  if (typeof globalThis === 'undefined' || !globalThis.localStorage) return null;
-  const raw = globalThis.localStorage.getItem(STORAGE_KEY);
-  if (!raw) return null;
-  try {
-    const parsed = JSON.parse(raw) as Partial<ActiveCharacterRecord>;
-    if (parsed?.v !== SCHEMA_VERSION) {
-      console.warn(`[useActiveCharacter] schema version mismatch (got ${String(parsed?.v)}, expected ${SCHEMA_VERSION}); ignoring stored character.`);
-      return null;
-    }
-    if (!parsed.encoded || !parsed.identity || typeof parsed.level !== 'number') {
-      console.warn('[useActiveCharacter] stored record is missing required fields; ignoring.');
-      return null;
-    }
-    return parsed as ActiveCharacterRecord;
-  } catch (err) {
-    console.warn('[useActiveCharacter] failed to parse stored record:', err);
-    return null;
-  }
-}
 
 function toStoredDoll(doll: ImportedDoll): StoredDoll {
   if (doll.status !== 'ok') return doll;
@@ -96,30 +60,18 @@ function toStoredTurma(turma: ImportedTurma): StoredTurma {
 }
 
 export function useActiveCharacter(): UseActiveCharacter {
-  const [character, setCharacter] = useState<ActiveCharacterRecord | null>(null);
-
-  useEffect(() => {
-    setCharacter(readRecord());
-    function onStorage(e: StorageEvent) {
-      if (e.key !== STORAGE_KEY) return;
-      setCharacter(readRecord());
-    }
-    globalThis.addEventListener('storage', onStorage);
-    return () => globalThis.removeEventListener('storage', onStorage);
-  }, []);
+  // One shared character for every component: a login or logout anywhere reaches the navbar too.
+  // The server render (and hydration) sees no character
+  const character = useSyncExternalStore(subscribeActiveCharacter, getActiveCharacter, () => null);
 
   const login = useCallback<UseActiveCharacter['login']>((level, baseStats, items, identity, pacts, profileUrl, details) => {
-    if (typeof globalThis === 'undefined' || !globalThis.localStorage) {
-      console.warn('[useActiveCharacter] localStorage unavailable; cannot persist.');
-      return;
-    }
     const encoded = encodeCharacterState(level, baseStats, identity, items, pacts ?? new Set());
     // An importer without Turma support leaves stats/turma undefined: keep what this same character had,
     // but never carry one character's Turma over onto a different one
-    const previous = readRecord();
+    const previous = getActiveCharacter();
     const carriedOver = previous?.profileUrl !== undefined && previous.profileUrl === profileUrl ? previous : null;
     const record: ActiveCharacterRecord = {
-      v: SCHEMA_VERSION,
+      v: ACTIVE_CHARACTER_SCHEMA_VERSION,
       encoded,
       identity,
       level,
@@ -129,8 +81,7 @@ export function useActiveCharacter(): UseActiveCharacter {
       turma: details?.turma ? toStoredTurma(details.turma) : carriedOver?.turma,
       missingData: details?.missingData,
     };
-    globalThis.localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
-    setCharacter(record);
+    if (!saveActiveCharacter(record)) console.warn('[useActiveCharacter] localStorage unavailable; cannot persist.');
   }, []);
 
   const refresh = useCallback(async () => {
@@ -142,11 +93,7 @@ export function useActiveCharacter(): UseActiveCharacter {
     login(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, profileUrl, profile);
   }, [character?.profileUrl, login]);
 
-  const logout = useCallback(() => {
-    if (typeof globalThis === 'undefined' || !globalThis.localStorage) return;
-    globalThis.localStorage.removeItem(STORAGE_KEY);
-    setCharacter(null);
-  }, []);
+  const logout = useCallback(clearActiveCharacter, []);
 
   return { character, login, refresh, logout };
 }
