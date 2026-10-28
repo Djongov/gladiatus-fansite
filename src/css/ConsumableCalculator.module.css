@@ -1,13 +1,25 @@
 .wrapper {
+  --calc-gold: #8a6d2f;
+  --calc-background: transparent;
+  --calc-field-background: var(--ifm-background-color);
+  --calc-text: var(--ifm-font-color-base);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   margin: 16px 0;
   padding: 16px;
-  border: 1px solid #c2a66a;
-  background: linear-gradient(#1a1a1a, #0b0b0b);
-  color: #dcdcdc;
+  border: 1px solid var(--calc-gold);
+  background: var(--calc-background);
+  color: var(--calc-text);
+}
+
+/* Dark theme keeps the game's black-and-gold look */
+[data-theme='dark'] .wrapper {
+  --calc-gold: #c2a66a;
+  --calc-background: linear-gradient(#1a1a1a, #0b0b0b);
+  --calc-field-background: #0b0b0b;
+  --calc-text: #dcdcdc;
 }
 
 .controls {
@@ -26,18 +38,23 @@
 }
 
 .control label {
-  color: #c2a66a;
+  color: var(--calc-gold);
   font-weight: 700;
 }
 
 .control input,
 .control select {
-  background: #0b0b0b;
-  color: #dcdcdc;
-  border: 1px solid #c2a66a;
+  background: var(--calc-field-background);
+  color: var(--calc-text);
+  border: 1px solid var(--calc-gold);
   padding: 4px 6px;
   font-size: 13px;
   min-width: 80px;
+}
+
+.derived {
+  color: var(--calc-text);
+  font-size: 12px;
 }
 
 .preview {

@@ -1,0 +1,74 @@
+.section {
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #f5efd8 0%, #E7DDBA 100%);
+  border: 2px solid #c4ac70;
+  border-radius: 8px;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.heading h3 {
+  margin: 0;
+  color: #5a3e00;
+}
+
+.note {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-style: italic;
+  color: #5a3e00;
+}
+
+.contract {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5a3e00;
+}
+
+.field select {
+  padding: 6px 8px;
+  border: 1px solid #8b6914;
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+[data-theme='dark'] .section {
+  background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);
+  border-color: #8b7355;
+}
+
+[data-theme='dark'] .heading h3,
+[data-theme='dark'] .note,
+[data-theme='dark'] .field {
+  color: #c9a876;
+}
+
+[data-theme='dark'] .field select {
+  border-color: #8b7355;
+}

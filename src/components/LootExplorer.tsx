@@ -3,6 +3,8 @@ import Item, { BaseItem, PrefixSuffix, ItemRarity } from './Item';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
+import SearchableSelect from './SearchableSelect/SearchableSelect';
+import { affixOptions } from './SearchableSelect/affixOptions';
 
 type ItemType =
   | 'weapons'
@@ -77,111 +79,6 @@ const inputStyle: React.CSSProperties = {
   backgroundColor: 'var(--ifm-background-color)',
   color: 'var(--ifm-font-color-base)',
 };
-
-// ─── Searchable dropdown ───────────────────────────────────────────────────
-
-interface SearchableSelectProps {
-  id: string;
-  options: Array<{ value: string; label: string }>;
-  value: string;
-  onChange: (v: string) => void;
-  placeholder: string;
-  label: string;
-  anyLabel?: string;
-}
-
-function SearchableSelect({
-  id,
-  options,
-  value,
-  onChange,
-  placeholder,
-  label,
-  anyLabel = 'Any',
-}: Readonly<SearchableSelectProps>) {
-  const [search, setSearch] = useState('');
-  const [open, setOpen] = useState(false);
-
-  const allOptions = useMemo(
-    () => [{ value: '', label: anyLabel }, ...options],
-    [options, anyLabel],
-  );
-
-  const filtered = useMemo(
-    () =>
-      allOptions.filter((o) =>
-        o.label.toLowerCase().includes(search.toLowerCase()),
-      ),
-    [allOptions, search],
-  );
-
-  const selectedLabel = allOptions.find((o) => o.value === value)?.label ?? anyLabel;
-
-  return (
-    <div style={{ position: 'relative', minWidth: '200px' }}>
-      <label
-        htmlFor={id}
-        style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}
-      >
-        {label}
-      </label>
-      <input
-        id={id}
-        type="text"
-        value={open ? search : ''}
-        placeholder={selectedLabel}
-        onChange={(e) => setSearch(e.target.value)}
-        onFocus={() => { setOpen(true); setSearch(''); }}
-        onBlur={() => setTimeout(() => setOpen(false), 150)}
-        style={{ ...inputStyle, width: '100%', boxSizing: 'border-box' }}
-      />
-      {open && (
-        <div
-          style={{
-            position: 'absolute',
-            zIndex: 1000,
-            top: '100%',
-            left: 0,
-            right: 0,
-            maxHeight: '220px',
-            overflowY: 'auto',
-            background: 'var(--ifm-background-color)',
-            border: '1px solid var(--ifm-color-emphasis-300)',
-            borderRadius: '4px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
-          }}
-        >
-          {filtered.length === 0 ? (
-            <div style={{ padding: '8px', color: 'var(--ifm-color-emphasis-500)' }}>
-              No results
-            </div>
-          ) : (
-            filtered.map((o) => (
-              <button
-                key={o.value}
-                type="button"
-                onMouseDown={() => { onChange(o.value); setSearch(''); setOpen(false); }}
-                style={{
-                  display: 'block',
-                  width: '100%',
-                  textAlign: 'left',
-                  padding: '6px 10px',
-                  cursor: 'pointer',
-                  background: o.value === value ? 'var(--ifm-color-emphasis-200)' : 'transparent',
-                  fontSize: '13px',
-                  border: 'none',
-                  color: 'var(--ifm-font-color-base)',
-                }}
-              >
-                {o.label}
-              </button>
-            ))
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
 
 // ─── Combination type ──────────────────────────────────────────────────────
 
@@ -380,19 +277,16 @@ export default function LootExplorer() {
   );
 
   const prefixOptions = useMemo(
-    () =>
-      (prefixesData as PrefixSuffix[]).map((p) => ({
-        value: p.name,
-        label: `${p.name} (lv.${p.level})`,
-      })),
+    () => affixOptions(prefixesData as PrefixSuffix[], { noneLabel: 'Any prefix' }),
     [],
   );
 
   const suffixOptions = useMemo(
     () =>
-      (suffixesData as (PrefixSuffix & { id?: number })[])
-        .filter((s) => !(s.id !== undefined && s.id >= 100 && s.id <= 108))
-        .map((s) => ({ value: s.name, label: `${s.name} (lv.${s.level})` })),
+      affixOptions(
+        (suffixesData as PrefixSuffix[]).filter((s) => !(s.id >= 100 && s.id <= 108)),
+        { noneLabel: 'Any suffix' },
+      ),
     [],
   );
 
@@ -638,13 +532,11 @@ export default function LootExplorer() {
       >
         <div style={{ minWidth: '220px' }}>
           <SearchableSelect
-            id="ilc-prefix"
             label="Prefix"
             options={prefixOptions}
             value={selectedPrefix}
             onChange={(v) => { setSelectedPrefix(v); resetPage(); }}
             placeholder="Search prefix…"
-            anyLabel="Any prefix"
           />
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '6px' }}>
             <input
@@ -660,13 +552,11 @@ export default function LootExplorer() {
 
         <div style={{ minWidth: '220px' }}>
           <SearchableSelect
-            id="ilc-suffix"
             label="Suffix"
             options={suffixOptions}
             value={selectedSuffix}
             onChange={(v) => { setSelectedSuffix(v); resetPage(); }}
             placeholder="Search suffix…"
-            anyLabel="Any suffix"
           />
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '6px' }}>
             <input

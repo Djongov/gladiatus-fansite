@@ -6,7 +6,7 @@ import suffixes from '@site/static/data/items/suffixes.json';
 
 test('affixes still on placeholder ids are found, by level, then name', () => {
   const missing = placeholderAffixes(prefixes);
-  assert.equal(missing.length, 15);
+  assert.equal(missing.length, 14);
   assert.deepEqual(missing[0], { name: 'Darius`', level: 155 });
   assert.deepEqual(missing.at(-1), { name: 'Bassianus`', level: 217 });
   assert.ok(!missing.some((affix) => affix.name === 'Victorinus`'), 'Victorinus` has its real id, 206');
@@ -28,6 +28,8 @@ test('affixes still on placeholder ids are found, by level, then name', () => {
     "Melior's": 240,
     'Cassius`': 191,
     'Aquilius': 243,
+    // Learned from mercenary contracts (their hidden prefix id)
+    'Acilius`': 235,
   };
   for (const [name, id] of Object.entries(fixedFromReports)) {
     assert.equal(prefixes.find((prefix) => prefix.name === name)?.id, id, name);

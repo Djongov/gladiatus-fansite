@@ -3,24 +3,9 @@ import CharacterDoll from '@site/src/components/CharacterPlanner/CharacterDoll';
 import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 import type { BaseStats, CharacterStats, EquippedItem, ItemSlotType } from '@site/src/components/CharacterPlanner/useCharacterState';
 import type { DollStats, MercenaryContract } from '@site/src/components/CharacterPlanner/turmaTypes';
+import { CONTRACT_STAT_COLOUR, contractTooltipLines } from '@site/src/utils/mercenaryContract';
 import CharStatsPanel from './CharStatsPanel';
 import styles from './TurmaRoster.module.css';
-
-function contractTooltipLines(contract: MercenaryContract): string[] {
-  const lines: Array<[string, number | null]> = [
-    ['Life points', contract.lifePoints],
-    ['Strength', contract.strength],
-    ['Dexterity', contract.dexterity],
-    ['Agility', contract.agility],
-    ['Constitution', contract.constitution],
-    ['Charisma', contract.charisma],
-    ['Intelligence', contract.intelligence],
-  ];
-  // As in the game's contract tooltip: "Life points: 9072", plain numbers
-  return lines.filter(([, value]) => value !== null).map(([label, value]) => `${label}: ${value}`);
-}
-
-const CONTRACT_STAT_COLOUR = '#BA9700';
 
 type DollRowProps = {
   readonly name: string;
@@ -60,7 +45,7 @@ export default function DollRow({ name, level, roleLabel, portraitUrl, items, ba
               level={contract.level}
               stats={contractTooltipLines(contract)}
               statsColor={CONTRACT_STAT_COLOUR}
-              gold={contract.gold.toLocaleString()}
+              gold={contract.gold?.toLocaleString()}
             />
           </div>
         )}

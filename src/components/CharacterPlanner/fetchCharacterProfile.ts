@@ -85,6 +85,8 @@ interface ApiContract {
   constitution?: number | null;
   charisma?: number | null;
   intelligence?: number | null;
+  prefix_id?: number;
+  suffix_id?: number;
 }
 
 type ApiTurmaDoll =
@@ -92,7 +94,7 @@ type ApiTurmaDoll =
   | { status: 'empty' | 'locked' }
   | { status: 'error'; error: string };
 
-interface ApiResponse extends ApiDoll {
+export interface ApiResponse extends ApiDoll {
   turma_profile?: ApiTurmaDoll;
   mercenary_slot_1?: ApiTurmaDoll;
   mercenary_slot_2?: ApiTurmaDoll;
@@ -348,8 +350,11 @@ export async function fetchCharacterProfile(profileUrl: string): Promise<Importe
   if (responseData.result && responseData.data) {
     responseData = responseData.data;
   }
-  const data: ApiResponse = responseData;
+  return mapProfileResponse(responseData);
+}
 
+/** The importer's JSON (Worker or fallback API, unwrapped) → the planner's profile. */
+export function mapProfileResponse(data: ApiResponse): ImportedProfile {
   const missingData: MissingDataEntry[] = [];
   const reportMissingOn = (doll: string): ReportMissing => (entry) => missingData.push({ doll, ...entry });
 
@@ -445,6 +450,8 @@ function mapContract(apiContract: ApiContract): MercenaryContract {
     charisma: numberOrNull(apiContract.charisma),
     intelligence: numberOrNull(apiContract.intelligence),
     baseItemId: apiContract.base_item_id,
+    prefixId: apiContract.prefix_id || undefined,
+    suffixId: apiContract.suffix_id || undefined,
   };
 }
 

@@ -6926,11 +6926,11 @@
         "percent": 0
       },
       "strength": {
-        "flat": 44,
+        "flat": 45,
         "percent": 0
       },
       "dexterity": {
-        "flat": 6,
+        "flat": 7,
         "percent": 6
       },
       "agility": {
@@ -6946,7 +6946,7 @@
         "percent": -34
       },
       "intelligence": {
-        "flat": 87,
+        "flat": 88,
         "percent": 0
       }
     },
@@ -6957,7 +6957,7 @@
       "Soul Essence": 6,
       "Mead": 5
     },
-    "id": 9952
+    "id": 235
   },
   {
     "name": "Faustus`",
@@ -7148,10 +7148,6 @@
       "dexterity": {
         "flat": 0,
         "percent": 29
-      },
-      "agility": {
-        "flat": 31,
-        "percent": 0
       },
       "constitution": {
         "flat": 25,

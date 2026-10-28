@@ -30,7 +30,8 @@ export type MercenaryContract = {
   name: string;
   rarity: ItemRarity;
   level: number;
-  gold: number;
+  /** Absent on contracts planned in the Character Planner (contract gold isn't known yet) */
+  gold?: number;
   lifePoints: number | null;
   strength: number | null;
   dexterity: number | null;
@@ -40,6 +41,9 @@ export type MercenaryContract = {
   intelligence: number | null;
   /** e.g. "15-6"; the second part is also the mercenary's portrait number */
   baseItemId: string;
+  /** The hidden affixes the game doesn't display; absent when the contract has none (or was imported before they were kept) */
+  prefixId?: number;
+  suffixId?: number;
 };
 
 type DollWithoutData = { status: 'empty' | 'locked' } | { status: 'error'; error: string };

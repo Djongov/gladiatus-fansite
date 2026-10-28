@@ -9,6 +9,15 @@ export const RARITY_MULTIPLIERS: Record<ItemRarity, number> = {
   red: 1.75,
 };
 
+/** The rarities an item with a prefix or suffix can roll, for calculator dropdowns. */
+export const RARITY_OPTIONS: { value: Exclude<ItemRarity, 'common'>; label: string }[] = [
+  { value: 'green', label: 'Green' },
+  { value: 'blue', label: 'Blue' },
+  { value: 'purple', label: 'Purple' },
+  { value: 'orange', label: 'Orange' },
+  { value: 'red', label: 'Red' },
+];
+
 const CONDITIONED_PROMOTION: Record<ItemRarity, ItemRarity> = {
   common: 'common',
   green: 'blue',

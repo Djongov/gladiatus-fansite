@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
 import Grindstone from './Grindstone';
 import type { ItemRarity } from './Item';
+import { RARITY_OPTIONS } from '@site/src/utils/rarity';
 import styles from '@site/src/css/ConsumableCalculator.module.css';
 
 type GrindstoneCalculatorProps = {
   defaultLevel?: number;
   defaultRarity?: ItemRarity;
 };
-
-const RARITY_OPTIONS: { value: ItemRarity; label: string }[] = [
-  { value: 'green', label: 'Green' },
-  { value: 'blue', label: 'Blue' },
-  { value: 'purple', label: 'Purple' },
-  { value: 'orange', label: 'Orange' },
-  { value: 'red', label: 'Red' },
-];
 
 export default function GrindstoneCalculator({
   defaultLevel = 97,

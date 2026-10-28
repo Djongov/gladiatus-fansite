@@ -185,84 +185,6 @@
   margin-right: 8px;
 }
 
-.dropdownList {
-  max-height: 200px;
-  overflow-y: auto;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #8b7355;
-  border-radius: 4px;
-  margin-top: 8px;
-}
-
-.dropdownItem {
-  padding: 10px 12px;
-  cursor: pointer;
-  transition: background 0.2s;
-  color: #000;
-  font-size: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.dropdownItem:last-child {
-  border-bottom: none;
-}
-
-.dropdownItem:hover {
-  background: rgba(139, 115, 85, 0.2);
-}
-
-.dropdownItem:focus {
-  outline: 2px solid #8b6914;
-  outline-offset: -2px;
-}
-
-.selectedDropdownItem {
-  background: #C6AF7F;
-  color: #000;
-  font-weight: bold;
-}
-
-.dropdownHint {
-  padding: 10px 12px;
-  color: #555;
-  font-size: 13px;
-  font-style: italic;
-  text-align: center;
-}
-
-.selectedItem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 12px;
-  background: #CAB486;
-  border: 1px solid #8b6914;
-  border-radius: 4px;
-  margin-top: 8px;
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.clearSelection {
-  background: none;
-  border: none;
-  color: #5a3e00;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.2s;
-}
-
-.clearSelection:hover {
-  color: #000;
-}
-
 .preview {
   margin-top: 20px;
   padding: 15px;
@@ -469,47 +391,6 @@
 
 [data-theme='dark'] .customField label {
   color: #c9a876;
-}
-
-[data-theme='dark'] .dropdownList {
-  background: rgba(0, 0, 0, 0.5);
-  border-color: #8b7355;
-}
-
-[data-theme='dark'] .dropdownItem {
-  color: #c9a876;
-  border-bottom-color: rgba(139, 115, 85, 0.2);
-}
-
-[data-theme='dark'] .dropdownItem:hover {
-  background: rgba(139, 115, 85, 0.3);
-}
-
-[data-theme='dark'] .dropdownItem:focus {
-  outline-color: #d4af37;
-}
-
-[data-theme='dark'] .selectedDropdownItem {
-  background: #55461C;
-  color: #f0d060;
-}
-
-[data-theme='dark'] .dropdownHint {
-  color: #8b7355;
-}
-
-[data-theme='dark'] .selectedItem {
-  background: #423718;
-  border-color: #d4af37;
-  color: #f0d060;
-}
-
-[data-theme='dark'] .clearSelection {
-  color: #d4af37;
-}
-
-[data-theme='dark'] .clearSelection:hover {
-  color: #e6c84a;
 }
 
 [data-theme='dark'] .preview {

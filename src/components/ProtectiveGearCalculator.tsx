@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
 import ProtectiveGear from './ProtectiveGear';
 import type { ItemRarity } from './Item';
+import { RARITY_OPTIONS } from '@site/src/utils/rarity';
 import styles from '@site/src/css/ConsumableCalculator.module.css';
 
 type ProtectiveGearCalculatorProps = {
   defaultLevel?: number;
   defaultRarity?: ItemRarity;
 };
-
-const RARITY_OPTIONS: { value: ItemRarity; label: string }[] = [
-  { value: 'green', label: 'Green' },
-  { value: 'blue', label: 'Blue' },
-  { value: 'purple', label: 'Purple' },
-  { value: 'orange', label: 'Orange' },
-  { value: 'red', label: 'Red' },
-];
 
 export default function ProtectiveGearCalculator({
   defaultLevel = 112,

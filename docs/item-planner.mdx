@@ -11,129 +11,13 @@ import suffixesData from '@site/static/data/items/suffixes.json';
 import forgingGoodsData from '@site/static/data/items/forging-goods.json';
 import affixesRecipes from '@site/static/data/items/prefixes_suffixes_recipes.json';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import SearchableSelect from '@site/src/components/SearchableSelect/SearchableSelect';
+import { affixOptions } from '@site/src/components/SearchableSelect/affixOptions';
 
 # Item Planner
 
 Plan your perfect item by selecting a base item, prefix, and suffix to see all rarity variations.
 
-export const SearchableSelect = ({ options, value, onChange, placeholder, label }) => {
-  const [search, setSearch] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
-  
-  const filteredOptions = options.filter(opt => 
-    opt.label.toLowerCase().includes(search.toLowerCase())
-  );
-  
-  const selectedOption = options.find(opt => opt.value === value);
-  
-  return (
-    <div style={{ position: 'relative' }}>
-      <label>{label}</label>
-      <div>
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          onFocus={() => setIsOpen(true)}
-          placeholder={selectedOption ? selectedOption.label : placeholder}
-          style={{ 
-            padding: '5px', 
-            minWidth: '200px',
-            width: '100%'
-          }}
-        />
-        {value && (
-          <button
-            onClick={() => {
-              onChange('');
-              setSearch('');
-            }}
-            style={{
-              position: 'absolute',
-              right: '5px',
-              top: '28px',
-              border: 'none',
-              background: 'transparent',
-              cursor: 'pointer',
-              fontSize: '16px'
-            }}
-          >
-            ×
-          </button>
-        )}
-      </div>
-      {isOpen && (
-        <>
-          <div
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              zIndex: 1
-            }}
-            onClick={() => setIsOpen(false)}
-          />
-          <div
-            style={{
-              position: 'absolute',
-              top: '100%',
-              left: 0,
-              right: 0,
-              maxHeight: '300px',
-              overflowY: 'auto',
-              backgroundColor: 'var(--ifm-background-color)',
-              color: 'var(--ifm-font-color-base)',
-              border: '1px solid var(--ifm-color-emphasis-300)',
-              borderRadius: '4px',
-              zIndex: 2,
-              boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
-            }}
-          >
-            {filteredOptions.map(opt => (
-              <div
-                key={opt.value + opt.label}
-                onClick={() => {
-                  if (!opt.isHeader) {
-                    onChange(opt.value);
-                    setSearch('');
-                    setIsOpen(false);
-                  }
-                }}
-                style={{
-                  padding: '8px 12px',
-                  cursor: opt.isHeader ? 'default' : 'pointer',
-                  backgroundColor: 'transparent',
-                  fontWeight: opt.isHeader ? 'bold' : 'normal',
-                  fontSize: opt.isHeader ? '14px' : '13px',
-                  color: opt.isHeader ? 'var(--ifm-color-primary)' : 'inherit',
-                  borderBottom: opt.isHeader ? '1px solid var(--ifm-color-emphasis-300)' : 'none',
-                  marginTop: opt.isHeader ? '4px' : '0'
-                }}
-                onMouseEnter={(e) => {
-                  if (!opt.isHeader) {
-                    e.target.style.backgroundColor = 'var(--ifm-color-emphasis-200)';
-                  }
-                }}
-                onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
-              >
-                {opt.label}
-              </div>
-            ))}
-            {filteredOptions.length === 0 && (
-              <div style={{ padding: '8px 12px', color: 'var(--ifm-color-emphasis-600)' }}>
-                No results found
-              </div>
-            )}
-          </div>
-        </>
-      )}
-    </div>
-  );
-};
-
-{/* Selections are held as ids (as strings, to match the URL and the select values) */}
 export const findById = (entries, id) => entries.find(entry => String(entry.id) === id);
 
 {/* A URL param as an id. Links made before the switch to ids carry names, so those still resolve */}
@@ -269,10 +153,7 @@ export const ItemPlanner = () => {
     return discounted;
   }, [combinedMaterials, selectedBellows, hasCostume, hasMiniPumpkin]);
   
-  const prefixOptions = [
-    { value: '', label: 'None' },
-    ...prefixesData.map(p => ({ value: String(p.id), label: `${p.name} (${p.level})` }))
-  ];
+  const prefixOptions = affixOptions(prefixesData, { valueFor: (prefix) => String(prefix.id) });
   
   // Group base items by type
   const groupedBases = basesData.reduce((acc, item) => {
@@ -291,10 +172,7 @@ export const ItemPlanner = () => {
     }))
   ]);
   
-  const suffixOptions = [
-    { value: '', label: 'None' },
-    ...suffixesData.map(s => ({ value: String(s.id), label: `${s.name} (${s.level})` }))
-  ];
+  const suffixOptions = affixOptions(suffixesData, { valueFor: (suffix) => String(suffix.id) });
   
   const rarities = [
     { rarity: 'green', conditioned: false, label: 'Green', color: '#00ff00' },
