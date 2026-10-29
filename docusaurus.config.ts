@@ -172,8 +172,18 @@ const config: Config = {
               label: 'Expedition Simulator',
             },
             {
+              to: '/dungeon-simulator',
+              label: 'Dungeon Simulator',
+              className: 'navbar-item--new',
+            },
+            {
               to: '/arena-simulator',
               label: 'Arena Simulator',
+            },
+            {
+              to: '/turma-simulator',
+              label: 'Turma Simulator',
+              className: 'navbar-item--new',
             },
           ],
         },
@@ -186,6 +196,11 @@ const config: Config = {
           to: '/contributing',
           position: 'left',
           label: 'Contribute',
+        },
+        {
+          to: '/data-missing',
+          position: 'left',
+          label: 'Data missing',
         },
         {
           to: '/about-me',

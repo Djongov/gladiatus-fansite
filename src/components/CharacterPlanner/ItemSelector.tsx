@@ -7,6 +7,8 @@ import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
 import upgradesData from '@site/static/data/items/upgrades.json';
 import { maxUsableItemLevel } from '@site/src/utils/itemLevelLimits';
+import SearchableSelect from '../SearchableSelect/SearchableSelect';
+import { affixOptions } from '../SearchableSelect/affixOptions';
 
 interface ItemSelectorProps {
   readonly slotType: ItemSlotType;
@@ -51,8 +53,6 @@ export default function ItemSelector({
   const [selectedUpgrades, setSelectedUpgrades] = useState<AppliedUpgrade[]>(currentItem?.upgrades || []);
   const [searchTerm, setSearchTerm] = useState('');
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
-  const [prefixSearch, setPrefixSearch] = useState('');
-  const [suffixSearch, setSuffixSearch] = useState('');
 
   const wearableCap = maxUsableItemLevel(characterLevel);
 
@@ -84,13 +84,9 @@ export default function ItemSelector({
     return (suffixesData as PrefixSuffix[]);
   }, []);
 
-  // Filter prefixes/suffixes by search term and strict item level
-  const filteredPrefixes = useMemo(() => {
-    const searchTerm = prefixSearch.toLowerCase();
+  // With strict item level, only affixes that keep the item wearable
+  const wearablePrefixes = useMemo(() => {
     return availablePrefixes.filter((prefix) => {
-      if (searchTerm && !prefix.name.toLowerCase().includes(searchTerm)) {
-        return false;
-      }
       if (strictItemLevel && selectedBase) {
         const combined =
           (selectedBase.level ?? 0) +
@@ -102,19 +98,14 @@ export default function ItemSelector({
     });
   }, [
     availablePrefixes,
-    prefixSearch,
     strictItemLevel,
     selectedBase,
     selectedSuffix,
     wearableCap,
   ]);
 
-  const filteredSuffixes = useMemo(() => {
-    const searchTerm = suffixSearch.toLowerCase();
+  const wearableSuffixes = useMemo(() => {
     return availableSuffixes.filter((suffix) => {
-      if (searchTerm && !suffix.name.toLowerCase().includes(searchTerm)) {
-        return false;
-      }
       if (strictItemLevel && selectedBase) {
         const combined =
           (selectedBase.level ?? 0) +
@@ -126,12 +117,14 @@ export default function ItemSelector({
     });
   }, [
     availableSuffixes,
-    suffixSearch,
     strictItemLevel,
     selectedBase,
     selectedPrefix,
     wearableCap,
   ]);
+
+  const prefixOptions = useMemo(() => affixOptions(wearablePrefixes), [wearablePrefixes]);
+  const suffixOptions = useMemo(() => affixOptions(wearableSuffixes), [wearableSuffixes]);
 
   // Get available upgrades for the selected item type
   // Only show powders in upgrades list (enchants like Grindstone/Protective gear have their own field)
@@ -257,102 +250,24 @@ export default function ItemSelector({
               <div className={styles.customization}>
                 {/* Prefix Selection */}
                 <div className={styles.customField}>
-                  <label htmlFor="prefix-search">Prefix (Optional):</label>
-                  <input
-                    id="prefix-search"
-                    type="text"
+                  <SearchableSelect
+                    label="Prefix (Optional)"
+                    options={prefixOptions}
+                    value={selectedPrefix?.name ?? ''}
+                    onChange={(name) => setSelectedPrefix(wearablePrefixes.find((prefix) => prefix.name === name) ?? null)}
                     placeholder="Search prefixes..."
-                    value={prefixSearch}
-                    onChange={(e) => setPrefixSearch(e.target.value)}
-                    className={styles.searchInput}
                   />
-                  {selectedPrefix && (
-                    <div className={styles.selectedItem}>
-                      Selected: {selectedPrefix.name} (Lvl {selectedPrefix.level})
-                      <button
-                        onClick={() => setSelectedPrefix(null)}
-                        className={styles.clearSelection}
-                      >
-                        ×
-                      </button>
-                    </div>
-                  )}
-                  <div className={styles.dropdownList}>
-                    {filteredPrefixes.map((prefix) => (
-                      <div
-                        key={prefix.name}
-                        className={`${styles.dropdownItem} ${selectedPrefix?.name === prefix.name ? styles.selectedDropdownItem : ''}`}
-                        onClick={() => {
-                          setSelectedPrefix(prefix);
-                          setPrefixSearch('');
-                        }}
-                        onKeyDown={(e) => {
-                          if (e.key === 'Enter') {
-                            setSelectedPrefix(prefix);
-                            setPrefixSearch('');
-                          }
-                        }}
-                        tabIndex={0}
-                      >
-                        {prefix.name} (Lvl {prefix.level})
-                      </div>
-                    ))}
-                    {filteredPrefixes.length === 0 && (
-                      <div className={styles.dropdownHint}>
-                        No prefixes found
-                      </div>
-                    )}
-                  </div>
                 </div>
 
                 {/* Suffix Selection */}
                 <div className={styles.customField}>
-                  <label htmlFor="suffix-search">Suffix (Optional):</label>
-                  <input
-                    id="suffix-search"
-                    type="text"
+                  <SearchableSelect
+                    label="Suffix (Optional)"
+                    options={suffixOptions}
+                    value={selectedSuffix?.name ?? ''}
+                    onChange={(name) => setSelectedSuffix(wearableSuffixes.find((suffix) => suffix.name === name) ?? null)}
                     placeholder="Search suffixes..."
-                    value={suffixSearch}
-                    onChange={(e) => setSuffixSearch(e.target.value)}
-                    className={styles.searchInput}
                   />
-                  {selectedSuffix && (
-                    <div className={styles.selectedItem}>
-                      Selected: {selectedSuffix.name} (Lvl {selectedSuffix.level})
-                      <button
-                        onClick={() => setSelectedSuffix(null)}
-                        className={styles.clearSelection}
-                      >
-                        ×
-                      </button>
-                    </div>
-                  )}
-                  <div className={styles.dropdownList}>
-                    {filteredSuffixes.map((suffix) => (
-                      <div
-                        key={suffix.name}
-                        className={`${styles.dropdownItem} ${selectedSuffix?.name === suffix.name ? styles.selectedDropdownItem : ''}`}
-                        onClick={() => {
-                          setSelectedSuffix(suffix);
-                          setSuffixSearch('');
-                        }}
-                        onKeyDown={(e) => {
-                          if (e.key === 'Enter') {
-                            setSelectedSuffix(suffix);
-                            setSuffixSearch('');
-                          }
-                        }}
-                        tabIndex={0}
-                      >
-                        {suffix.name} (Lvl {suffix.level})
-                      </div>
-                    ))}
-                    {filteredSuffixes.length === 0 && (
-                      <div className={styles.dropdownHint}>
-                        No suffixes found
-                      </div>
-                    )}
-                  </div>
                 </div>
 
                 {/* Rarity Selection */}

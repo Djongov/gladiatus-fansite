@@ -33,35 +33,10 @@
   margin: 16px 0;
 }
 
-.cardRow {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.meta {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.level {
-  color: #9b9b9b;
-  font-size: 14px;
-}
-
 .savedAt {
   color: #9b9b9b;
   font-size: 12px;
   font-style: italic;
-}
-
-.costumeImage {
-  display: block;
-  max-width: 168px;
-  height: auto;
-  border: 1px solid #c2a66a;
 }
 
 .actions {

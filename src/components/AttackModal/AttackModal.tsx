@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import type { Enemy } from '@site/src/types/expeditions';
 import type { ActiveCharacterRecord } from '@site/src/hooks/useActiveCharacter';
 import type { BonusId } from '@site/src/components/ExpeditionBonuses/ExpeditionBonuses';
@@ -11,6 +11,7 @@ import { characterToCombatant } from '@site/src/services/combat/characterToComba
 import { rollEnemyAsCombatant } from '@site/src/services/combat/enemyToCombatant';
 import type { BattleLog, Combatant } from '@site/src/services/combat/types';
 import BattleReport from '@site/src/components/BattleReport/BattleReport';
+import ReportModal from './ReportModal';
 import styles from './AttackModal.module.css';
 
 export type Rewards = { gold: number; experience: number; honour: number };
@@ -37,12 +38,14 @@ function rollInRange(range: { min: number; max: number }): number {
   return Math.floor(Math.random() * (range.max - range.min + 1)) + range.min;
 }
 
-function usePveResult(enemy: Enemy, character: ActiveCharacterRecord, bonuses: Set<BonusId>): {
-  log: BattleLog | null;
-  rewards: Rewards | null;
-  error: string | null;
-} {
-  return useMemo(() => {
+type FightResult = { log: BattleLog | null; rewards: Rewards | null; error: string | null };
+
+/**
+ * The fight is rolled once, when the report opens: a parent re-rendering (a new bonuses
+ * Set, a refreshed character) must never swap the fight under the open report and its replay.
+ */
+function usePveResult(enemy: Enemy, character: ActiveCharacterRecord, bonuses: Set<BonusId>): FightResult {
+  const [result] = useState<FightResult>(() => {
     let decoded;
     try {
       decoded = decodeCharacterState(character.encoded, character.identity.name);
@@ -87,38 +90,22 @@ function usePveResult(enemy: Enemy, character: ActiveCharacterRecord, bonuses: S
       : null;
 
     return { log, rewards, error: null };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [enemy, character, bonuses]);
+  });
+  return result;
 }
 
-function usePvpResult(attacker: Combatant, defender: Combatant): {
-  log: BattleLog | null;
-  rewards: Rewards | null;
-  error: string | null;
-} {
-  return useMemo(() => {
+function usePvpResult(attacker: Combatant, defender: Combatant): FightResult {
+  const [result] = useState<FightResult>(() => {
     const log = simulateBattle(attacker, defender, {
       maxRounds: 15,
       firstAttacker: 'coinflip',
     });
     return { log, rewards: null, error: null };
-  }, [attacker, defender]);
+  });
+  return result;
 }
 
 export default function AttackModal(props: Props): React.ReactElement {
-  const [closing, setClosing] = useState(false);
-
-  useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') {
-        setClosing(true);
-        props.onClose();
-      }
-    }
-    globalThis.addEventListener('keydown', onKey);
-    return () => globalThis.removeEventListener('keydown', onKey);
-  }, [props]);
-
   // Stable placeholders so we can always call both hooks (Rules of Hooks).
   const placeholderEnemy = useMemo<Enemy>(() => ({
     name: '', image: '', isBoss: false,
@@ -153,23 +140,10 @@ export default function AttackModal(props: Props): React.ReactElement {
     ? `Attacking ${props.enemy.name}`
     : `Attacking ${props.defender.name}`;
 
-  if (closing) return <></>;
-
   return (
-    <div
-      className={styles.backdrop}
-      onClick={(e) => { if (e.target === e.currentTarget) props.onClose(); }}
-    >
-      <div className={styles.dialog} role="dialog" aria-modal="true">
-        <div className={styles.header}>
-          <span>{title}</span>
-          <button className={styles.closeButton} onClick={props.onClose} aria-label="Close">×</button>
-        </div>
-        <div className={styles.body}>
-          {error && <div className={styles.error}>{error}</div>}
-          {log && <BattleReport log={log} rewards={rewards} />}
-        </div>
-      </div>
-    </div>
+    <ReportModal title={title} onClose={props.onClose}>
+      {error && <div className={styles.error}>{error}</div>}
+      {log && <BattleReport log={log} rewards={rewards} />}
+    </ReportModal>
   );
 }

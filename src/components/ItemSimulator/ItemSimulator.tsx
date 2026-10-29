@@ -3,6 +3,10 @@ import { maxUsableItemLevel } from "@site/src/utils/itemLevelLimits";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import BaseStatsEditor from "../CharacterPlanner/BaseStatsEditor";
 import CharacterDoll from "../CharacterPlanner/CharacterDoll";
+import {
+  PrefilledBanner,
+  useActiveCharacterPrefill,
+} from "../CharacterPlanner/ActiveCharacterPrefill";
 import ImportProfile from "../CharacterPlanner/ImportProfile";
 import PactSelector, { ActivePactsBar } from "../CharacterPlanner/PactSelector";
 import StatsDisplay from "../CharacterPlanner/StatsDisplay";
@@ -16,7 +20,7 @@ import {
 import type { ItemRarity } from "../Item";
 import {
   fightStatsFromCharacterStats,
-  withReportedTotals,
+  withProfileStats,
 } from "@site/src/services/combat/characterToCombatant";
 import type { FightStats } from "@site/src/services/combat/expectedOutcome";
 import { simulateOddsPvP } from "@site/src/services/combat/simulateOdds";
@@ -113,7 +117,14 @@ export default function ItemSimulator() {
     togglePact,
     removeItem,
     clearAll,
+    resetCharacter,
   } = useCharacterState();
+
+  // Attributes only: the simulation finds the items
+  const { prefilledFrom, startFresh } = useActiveCharacterPrefill(
+    { equippedItems, baseStats, characterLevel, activePacts, importProfile, resetCharacter },
+    { withItems: false },
+  );
 
   const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_WEIGHTS);
   const [powders, setPowders] = useState<PowderToggles>({
@@ -281,6 +292,8 @@ export default function ItemSimulator() {
         </p>
       </div>
 
+      {prefilledFrom && <PrefilledBanner name={prefilledFrom} onClear={startFresh} />}
+
       {/* Profile import */}
       <div className={styles.importSection}>
         <ImportProfile
@@ -328,15 +341,15 @@ export default function ItemSimulator() {
               the stat priorities below are not used.
             </p>
             <ImportProfile
-              onImport={(level, stats, items, identity, pacts, _url, reportedTotals) => {
+              onImport={(level, stats, items, identity, pacts, _url, details) => {
                 const planned = fightStatsFromCharacterStats(
                   calculateCharacterStats(items, level, stats, pacts ?? new Set()),
                 );
                 setOpponent({
                   name: identity.name,
                   level,
-                  fightStats: reportedTotals ? withReportedTotals(planned, reportedTotals) : planned,
-                  usesProfileTotals: !!reportedTotals,
+                  fightStats: details ? withProfileStats(planned, details.stats) : planned,
+                  usesProfileTotals: !!details,
                 });
                 setArenaVerdict(null);
               }}

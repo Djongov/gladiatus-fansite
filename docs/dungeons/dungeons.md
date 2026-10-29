@@ -17,17 +17,22 @@ Dungeons in Gladiatus are adventures against mighty enemies. You and your group 
 ## Dungeon Facts
 
 - Dungeons become available at level 10
-- There are 34 dungeons in the game
-- Dungeon opponents are harder than expedition opponents because you fight them with a 5 member party of your dungeon version of your characters + 4 NPCs
+- There are 34 dungeons in the game: 10 in Italy, 8 in Africa, 7 in Germania and 9 in Britannia
+- You fight dungeons with your Circus Turma: your character and up to 4 mercenaries. Every fight is your whole team against a single enemy; dungeon enemies never bring companions
 - Defeating the dungeon boss usually is really hard if you try it on the same level as the entry level, except for the first two dungeons
 - Dungeon boss drops a minimum of **Blue** quality item with 100% chance to drop an item
 - Dungeon bosses drop higher item level than minions, very often even higher than what the player can equip
 - Dungeon monsters and boss share the same level range. Boss isn't higher level than the minions but is always far stronger
-- Dungeon monsters within a dungeon are levels = Entry level + 9-11 levels. Example: Dark Catacombs. Entry level is 40 so all the mobs inside spawn randomly from 49-51 level, including the boss
-- Stats of the monsters in a dungeon vary depending on the spawned level
+- Dungeon monsters in Italy, Africa and Germania are Entry level + 9-11 levels. Example: Dark Catacombs. Entry level is 40 so all the mobs inside spawn randomly from 49-51 level, including the boss. In Britannia they are Entry level + 14-16: The Corrupted World Tree opens at 135 and its monsters are 149-151
+- Stats of the monsters in a dungeon vary depending on the spawned level, and a little from fight to fight even at the same level: the Barkskin Dwarf has been seen with 20,297, 20,533 and 21,790 life
+- There is no round limit in dungeon fights: real fights have gone 49, 72 and 140 rounds. The fight only ends when one side is dead
+- From round 61 every dungeon enemy enrages. Each round its damage and its accuracy grow by another 10% of their base, so it hits twice as hard by round 70 and five times as hard by round 100. If you can't kill an enemy in about 60 rounds, it will eventually kill you
+- Bosses use their special abilities on a schedule (round 1, then every few rounds). A boss that uses an ability doesn't attack in that round, it uses at most one ability per round, and when two are due together the second waits a round
+- Like players, dungeon enemies block more against lower-level attackers: +2% block chance for every level you are below them, up to 50%
 - Dungeon monsters are known to drop **Orange** quality items more than expedition monsters, at least on low-mid levels
 - You can have **Orange** drops in dungeons on lower levels but the drop % chance is really low. It becomes a little bit higher in [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine") (Level 102) and above.
-- The quickest dungeon is Gustavos Country House (Level 10) 4 dungeon points to complete in Italy and the longest is Alpha & Omega (Level 120) in Germania with 20 dungeon points to complete
+- The quickest dungeon is Gustavos Country House (Level 10) in Italy with 4-6 dungeon points to complete, and the longest are Alpha & Omega (Level 120) in Germania and The Final Bastion (Level 165) in Britannia with 20 dungeon points to complete
+- You can test your Turma against any dungeon enemy with the [Dungeon Simulator](/dungeon-simulator). Boss abilities nobody has worked out yet are listed on [Data missing](/data-missing)
 - Normal regeneration of a dungeon point is 1 hour 30 minutes for 1 point. With Centurion this is reduced to 1 hour for dungeon point. Different costumes can lower that even more or micro events throughout the year
 - Dungeon points start at 12 and can become 24 with Centurion. [Underworld](/underworld "Underworld") medium difficulty costume prize can increase them to 48 dungeon points
 - First really hard bosses are Zagrash in Italy at level 78 ([Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort")) and Papa Sasama in Africa at level 80 ([Fairground](/dungeons/africa-dungeons/fairground "Fairground")). These two bosses can really be a roadblock for you, even if you are decently geared. At that level (78 or 80) you will be comfortably farming Fenrirson in Italy starting from level 73 ([Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage")). Quick dungeon and easy boss. However, at around 78 you might want to go and progress and this is where you hit the wall. You can't beat those two bosses who are next in line and therefore going to Africa at 80 is a bit pointless. You just need to gear up and give them a hard time. The guide to handle this is here - [Zagrash's Fort on Level 78](/dungeons/italy-dungeons/zagrash-fort-level-78 "Zagrash's Fort on Level 78")
@@ -58,28 +63,28 @@ Dungeons in Gladiatus are adventures against mighty enemies. You and your group 
 | [With All Its Might](/dungeons/germania-dungeons/with-all-its-might) | Germania | 45 | [The Green Forest](/expeditions/germania-expeditions/the-green-forest) | 9 | 11 | 10 | 54 | 56 | 55 | 52 | 58 | 55 | Oak Lord | 52 | 64 | 58 | Medium |
 | [Viking Camp](/dungeons/germania-dungeons/viking-camp) | Germania | 50 | [Cursed Village](/expeditions/germania-expeditions/cursed-village) | 11 | 11 | 11 | 59 | 61 | 60 | 56 | 63 | 59.5 | Homo Nautilus | 58 | 70 | 64 | Easy |
 | [Hidden Grave](/dungeons/italy-dungeons/hidden-grave) | Italy | 60 | [Ancient Temple](/expeditions/italy-expeditions/ancient-temple) | 8 | 13 | 10.5 | 69 | 71 | 70 | 67 | 73 | 70 | Nekromar | 68 | 80 | 74 | Hard |
-| [In Enemy Hands](/dungeons/italy-dungeons/in-enemy-hands) | Italy | 65 | [Barbarian Village](/expeditions/italy-expeditions/barbarian-village) | 13 | 13 | 13 | 74 | 76 | 75 | 70 | 76 | 73 | Trakovar | 71 | 84 | 77.5 | Easy |
+| [In Enemy Hands](/dungeons/italy-dungeons/in-enemy-hands) | Italy | 65 | [Barbarian Village](/expeditions/italy-expeditions/barbarian-village) | 13 | 13 | 13 | 72 | 74 | 73 | 70 | 76 | 73 | Trakovar | 71 | 84 | 77.5 | Easy |
 | [The Last Resort](/dungeons/italy-dungeons/the-last-resort) | Italy | 68 | [Pirate Harbour (A)](/expeditions/italy-expeditions/pirate-harbour) | 14 | 14 | 14 | 77 | 79 | 78 | 75 | 81 | 78 | Captain Kratos | 76 | 89 | 82.5 | Easy |
-| [The True Owner](/dungeons/italy-dungeons/the-true-owner) | Italy | 70 | [Misty Mountains (A)](/expeditions/italy-expeditions/misty-mountains) | 12 | 12 | 12 | 79 | 81 | 80 | 77 | 83 | 80 | Gernasch | 78 | 91 | 84.5 | Easy |
+| [The True Owner](/dungeons/italy-dungeons/the-true-owner) | Italy | 70 | [Misty Mountains (A)](/expeditions/italy-expeditions/misty-mountains) | 12 | 12 | 12 | 77 | 83 | 80 | 77 | 83 | 80 | Gernasch | 78 | 91 | 84.5 | Easy |
 | [Gioll Passage](/dungeons/italy-dungeons/gioll-passage) | Italy | 73 | [Wolf Cave (A)](/expeditions/italy-expeditions/wolf-cave) | 6 | 6 | 6 | 82 | 84 | 83 | 80 | 86 | 83 | Fenrirson | 83 | 92 | 87.5 | Hard |
 | [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort) | Italy | 78 | [Barbarian Village (A)](/expeditions/italy-expeditions/barbarian-village) | 15 | 15 | 15 | 87 | 89 | 88 | 85 | 91 | 88 | Zagrash | 86 | 99 | 92.5 | Extremely Hard |
-| [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory) | Germania | 80 | [Death Hill](/expeditions/germania-expeditions/death-hill) | 5 | 10 | 7.5 | 89 | 91 | 90 | 87 | 93 | 90 | Frank N. Stein | 88 | 100 | 94 | Hard |
+| [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory) | Germania | 80 | [Death Hill](/expeditions/germania-expeditions/death-hill) | 5 | 10 | 7.5 | 89 | 91 | 90 | 87 | 93 | 90 | Frank N. Stein | 88 | 101 | 94.5 | Hard |
 | [Fairground](/dungeons/africa-dungeons/fairground) | Africa | 80 | [Umpokta Tribe](/expeditions/africa-expeditions/umpokta-tribe) | 12 | 12 | 12 | 89 | 91 | 90 | 87 | 93 | 90 | Papa Sasama | 88 | 100 | 94 | Extremely Hard |
 | [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky) | Africa | 86 | [Bridge (A)](/expeditions/africa-expeditions/bridge) | 14 | 14 | 14 | 95 | 97 | 96 | 93 | 99 | 96 | Shetu bin Seth | 96 | 107 | 101.5 | Easy |
 | [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay) | Africa | 90 | [Lost Harbour (A)](/expeditions/africa-expeditions/lost-harbour) | 15 | 15 | 15 | 99 | 101 | 100 | 97 | 103 | 100 | Corruption | 99 | 111 | 105 | Medium |
-| [Sasama's Last Journey](/dungeons/africa-dungeons/sasama-s-last-journey) | Africa | 92 | [Umpokta Tribe (A)](/expeditions/africa-expeditions/umpokta-tribe) | 11 | 11 | 11 | 101 | 103 | 102 | 97 | 107 | 102 | Ahehu | 100 | 113 | 106.5 | Medium |
-| [Externsteine](/dungeons/germania-dungeons/externsteine) | Germania | 102 | [The Green Forest (A)](/expeditions/germania-expeditions/the-green-forest) | 6 | 6 | 6 | 111 | 113 | 112 | 107 | 117 | 112 | Wrath of the Mountain | 109 | 123 | 116 | Hard |
+| [Sasama's Last Journey](/dungeons/africa-dungeons/sasama-s-last-journey) | Africa | 92 | [Umpokta Tribe (A)](/expeditions/africa-expeditions/umpokta-tribe) | 11 | 11 | 11 | 101 | 103 | 102 | 97 | 107 | 102 | Akhekhu | 100 | 113 | 106.5 | Medium |
+| [Externsteine](/dungeons/germania-dungeons/externsteine) | Germania | 102 | [The Green Forest (A)](/expeditions/germania-expeditions/the-green-forest) | 6 | 6 | 6 | 111 | 113 | 112 | 107 | 117 | 112 | Wrath Mountain | 109 | 123 | 116 | Hard |
 | [Late Revenge](/dungeons/germania-dungeons/late-revenge) | Germania | 112 | [Dragon Remains](/expeditions/germania-expeditions/dragon-remains) | 18 | 18 | 18 | 121 | 123 | 122 | 117 | 127 | 122 | Valerius Filius Gustavo | 120 | 133 | 126.5 | Medium |
 | [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega) | Germania | 120 | [Dragon Remains (A)](/expeditions/germania-expeditions/dragon-remains) | 20 | 20 | 20 | 129 | 131 | 130 | 127 | 133 | 130 | Dracolich | 128 | 141 | 134.5 | Hard |
-| [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast) | Britannia | 120 | [Bank of the Thames](/expeditions/britannia-expeditions/bank-of-the-thames) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [The Corrupted World Tree](/dungeons/britannia-dungeons/the-corrupted-world-tree) | Britannia | 135 | [Forest Fortress](/expeditions/britannia-expeditions/forest-fortress) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [Marshes of Death](/dungeons/britannia-dungeons/marshes-of-death) | Britannia | 150 | [The Moor](/expeditions/britannia-expeditions/the-moor) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [The Final Bastion](/dungeons/britannia-dungeons/the-final-bastion) | Britannia | 165 | [Camp Cassivellaunus](/expeditions/britannia-expeditions/camp-cassivellaunus) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [Before the Dawn](/dungeons/britannia-dungeons/before-the-dawn) | Britannia | 180 | [Kent](/expeditions/britannia-expeditions/kent) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [Madness in the Fog](/dungeons/britannia-dungeons/madness-in-the-fog) | Britannia | 195 | [The Ford](/expeditions/britannia-expeditions/the-ford) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [Ashes of War](/dungeons/britannia-dungeons/ashes-of-war) | Britannia | 210 | [Camulodunum](/expeditions/britannia-expeditions/camulodunum) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [Forest Ambush](/dungeons/britannia-dungeons/forest-ambush) | Britannia | 230 | [Cambria](/expeditions/britannia-expeditions/cambria) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
-| [The Great Ritual](/dungeons/britannia-dungeons/the-great-ritual) | Britannia | 250 | [Mona Isle](/expeditions/britannia-expeditions/mona-isle) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast) | Britannia | 120 | [Bank of the Thames](/expeditions/britannia-expeditions/bank-of-the-thames) | 12 | 12 | 12 | 134 | 136 | 135 | 132 | 138 | 135 | Dubnovellaunus | 135 | 144 | 139.5 | ??? |
+| [The Corrupted World Tree](/dungeons/britannia-dungeons/the-corrupted-world-tree) | Britannia | 135 | [Forest Fortress](/expeditions/britannia-expeditions/forest-fortress) | 16 | 16 | 16 | 149 | 151 | 150 | ??? | ??? | ??? | Evil Fairy Queen Clíodhna | ??? | ??? | ??? | ??? |
+| [Marshes of Death](/dungeons/britannia-dungeons/marshes-of-death) | Britannia | 150 | [The Moor](/expeditions/britannia-expeditions/the-moor) | 14 | 14 | 14 | 164 | 166 | 165 | ??? | ??? | ??? | Athair Nathra | ??? | ??? | ??? | ??? |
+| [The Final Bastion](/dungeons/britannia-dungeons/the-final-bastion) | Britannia | 165 | [Camp Cassivellaunus](/expeditions/britannia-expeditions/camp-cassivellaunus) | 20 | 20 | 20 | 179 | 181 | 180 | ??? | ??? | ??? | Nennius | ??? | ??? | ??? | ??? |
+| [Before the Dawn](/dungeons/britannia-dungeons/before-the-dawn) | Britannia | 180 | [Kent](/expeditions/britannia-expeditions/kent) | 16 | 16 | 16 | 194 | 196 | 195 | ??? | ??? | ??? | Lugotrix | ??? | ??? | ??? | ??? |
+| [Madness in the Fog](/dungeons/britannia-dungeons/madness-in-the-fog) | Britannia | 195 | [The Ford](/expeditions/britannia-expeditions/the-ford) | 14 | 14 | 14 | 209 | 211 | 210 | ??? | ??? | ??? | Glashtyn | ??? | ??? | ??? | ??? |
+| [Ashes of War](/dungeons/britannia-dungeons/ashes-of-war) | Britannia | 210 | [Camulodunum](/expeditions/britannia-expeditions/camulodunum) | 15 | 15 | 15 | 224 | 226 | 225 | ??? | ??? | ??? | Daruven | ??? | ??? | ??? | ??? |
+| [Forest Ambush](/dungeons/britannia-dungeons/forest-ambush) | Britannia | 230 | [Cambria](/expeditions/britannia-expeditions/cambria) | 12 | 12 | 12 | 244 | 246 | 245 | ??? | ??? | ??? | Edern & Dwrgi | ??? | ??? | ??? | ??? |
+| [The Great Ritual](/dungeons/britannia-dungeons/the-great-ritual) | Britannia | 250 | [Mona Isle](/expeditions/britannia-expeditions/mona-isle) | 18 | 18 | 18 | 264 | 266 | 265 | ??? | ??? | ??? | Jago, Avatar of Antenociticus | ??? | ??? | ??? | ??? |
 
 ## Dungeon Arc
 
@@ -96,8 +101,8 @@ In short - **Italy -> Africa -> Germania -> Italy -> Africa -> Germania**. Here 
 7. At level 90 [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay") unlocks. Not a hugely hard dungeon but the loot becomes very sweet. Lucius starts to drop and some high damage weapons. Make sure you are geared enough to farm In the Heart of Decay and this dungeon will gear you up
 8. Weirdly, at level 92 Fairground's advanced dungeon unlocks - [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey"). It just 2 levels after In the Heart of Decay so you might not be ready to face the mighty boss in Sasama's last journey. Just take your time, there isn't any reason to hurry. Sasama's last journey is the final dungeon in Africa and you next dungeon is in Germania and is in 10 levels on 102. Make sure that you start farming Sasama's last journey as soon as possible. Item level drop there is high and will prepare you for the high levels (100+)
 9. After a long fight in Sasama's last journey, (10 levels from 92 to 102) you will travel to Germania and face the first of the high level dungeons in Germania - [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine"). The dungeon is quick and offers high level drops and most of all - **Orange** drops will now be a lot more frequent than before. The bad news is that from Externsteine on level 102, your next dungeon is again 10 levels ahead - on 112. And another bad news is that the it will take you more than a year of regular playing to get from 102 to 112 so prepare yourself with patience and enjoy the game. It is very exciting at level 102+
-10. Once you reach the long-waited 112 level you can now enter the last dungeon in the game - [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge"). Item level drops would seem significantly higher than Externsteine and will reward you well if you are lucky with some more **Orange** drops. However, it is known that Late Revenge seems to be a lot lower in terms of **Orange** drops chance than Externsteine. Not to worry, by level 112 Forging will be a huge part of the game and what drops from the dungeon will matter but will worry you a lot less
-11. Another 8 levels after (on level 120) awaits you the last (currently) dungeon in the game. The advanced dungeon of Late Revenge - **[Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega")**. However, you will be at a crossroad. To stay and fight in Germania and try yourself in Alpha & Omega or travel to the new continent - Britannia where the expeditions are legendary and now Britannia also hosts its own dungeons starting from [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast") at level 120.
+10. Once you reach the long-waited 112 level you can now enter the next dungeon in Germania - [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge"). Item level drops would seem significantly higher than Externsteine and will reward you well if you are lucky with some more **Orange** drops. However, it is known that Late Revenge seems to be a lot lower in terms of **Orange** drops chance than Externsteine. Not to worry, by level 112 Forging will be a huge part of the game and what drops from the dungeon will matter but will worry you a lot less
+11. Another 8 levels after (on level 120) awaits you the last dungeon in Germania. The advanced dungeon of Late Revenge - **[Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega")**. However, you will be at a crossroad. To stay and fight in Germania and try yourself in Alpha & Omega or travel to the new continent - Britannia where the expeditions are legendary and now Britannia also hosts its own dungeons starting from [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast") at level 120.
 
 ## Dungeons and bosses sorted by Level
 
@@ -217,7 +222,7 @@ Hit chance, Double hit, Chance for critical hit, Chance to block a hit, Chance t
 
 **Name of the dungeon:** [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave")  
 **Name of the Boss:** Nekromar  
-**Level:** 59-61  
+**Level:** 69-71  
 **Required Level for the area:** 60  
 **Location:** Italy – Ancient Temple – Normal
 
@@ -227,7 +232,7 @@ Hit chance, Double hit, Chance for critical hit, Chance to block a hit, Chance t
 
 **Name of the dungeon:** [In enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In enemy hands")  
 **Name of the Boss:** Trakovar  
-**Level:** 74-76  
+**Level:** 72-74  
 **Required Level for the area:** 65  
 **Location:** Italy – Barbarian Village – Normal
 
@@ -247,7 +252,7 @@ Hit chance, Double hit, Chance for critical hit, Chance to block a hit, Chance t
 
 **Name of the dungeon:** [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner")  
 **Name of the Boss:** Gernasch  
-**Level:** 79-81  
+**Level:** 77-83  
 **Required Level for the area:** 70  
 **Location:** Italy – Misty Mountains – Advanced
 
@@ -276,12 +281,12 @@ Hit chance, Double hit, Chance for critical hit, Chance to block a hit, Chance t
 ---
 
 **Name of the dungeon:** [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory "Mysterious Laboratory")  
-**Name of the Boss:** Frank N.Stein  
+**Name of the Boss:** Frank N. Stein  
 **Level:** 89-91  
 **Required Level for the area:** 80  
 **Location:** Germania – Death Hill – Normal
 
-![Frank N.Stein](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Mysterious_Laboratory/Frank_N_Stein.jpg)
+![Frank N. Stein](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Mysterious_Laboratory/Frank_N_Stein.jpg)
 
 ---
 

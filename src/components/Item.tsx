@@ -41,12 +41,16 @@ export interface EventItem {
 
 // Prefix/Suffix will have stats that modify the base item
 export interface PrefixSuffix {
+  /** The game's affix id */
+  id: number;
   name: string;
   level: number;
   stats: Record<string, { flat: number; percent: number }>;
   materials: Record<string, number>;
   /** Flagged in the data files for affixes added in a recent game update */
   new?: boolean;
+  /** Underworld affix: items carrying one get a red outline */
+  underworld?: boolean;
 }
 
 export type ItemRarity = 'common' | 'green' | 'blue' | 'purple' | 'orange' | 'red';
@@ -77,6 +81,7 @@ interface ItemProps {
   enchantValue?: number;
   upgrades?: AppliedUpgrade[]; // Powders and other upgrades
   hideTooltip?: boolean; // For character planner - just show icon
+  showLevelBadge?: boolean; // Item level in the icon's top-left corner, in the rarity colour. On by default; pass false to hide
   // Character context for planner-specific rendering
   characterLevel?: number; // If provided, show red level when item is not usable
   characterBaseStats?: { // If provided, show actual stat values after percentages
@@ -415,6 +420,11 @@ export function calculateItemStats(
 /**
  * Item component - displays an item with tooltip based on base item + modifiers
  */
+/** The item level drawn in the icon's top-left corner, coloured like the item's name. */
+function ItemLevelBadge({ level, rarity }: { readonly level: number; readonly rarity: ItemRarity }) {
+  return <span className={`${styles.levelBadge} ${styles[rarity]}`}>{level}</span>;
+}
+
 export default function Item({
   baseItem,
   prefix,
@@ -424,6 +434,7 @@ export default function Item({
   enchantValue,
   upgrades,
   hideTooltip = false,
+  showLevelBadge = true,
   characterLevel,
   characterBaseStats,
 }: ItemProps) {
@@ -441,6 +452,7 @@ export default function Item({
     return (
       <span className={styles.wrapper}>
         <div className={`item-i-${resolvedEventItem.id} ${styles.icon}`} />
+        {showLevelBadge && <ItemLevelBadge level={resolvedEventItem.level} rarity={resolvedEventItem.rarity} />}
         {!hideTooltip && (
           <span className={styles.tooltip}>
             <div className={`${styles.title} ${styles[resolvedEventItem.rarity]}`}>
@@ -484,6 +496,8 @@ export default function Item({
   const resolvedSuffix: PrefixSuffix | undefined = typeof suffix === 'string'
     ? (suffixesData as PrefixSuffix[]).find(s => s.name === suffix)
     : suffix;
+
+  const isUnderworld = Boolean(resolvedPrefix?.underworld || resolvedSuffix?.underworld);
 
   // Auto-detect rarity if not provided
   const effectiveRarity: ItemRarity = rarity || (resolvedPrefix || resolvedSuffix ? 'green' : 'common');
@@ -541,7 +555,8 @@ export default function Item({
 
   return (
     <span className={styles.wrapper}>
-      <div className={`item-i-${resolvedBaseItem.id} ${styles.icon}`} />
+      <div className={`item-i-${resolvedBaseItem.id} ${styles.icon} ${isUnderworld ? styles.underworld : ''}`} />
+      {showLevelBadge && <ItemLevelBadge level={calculatedStats.level} rarity={effectiveRarity} />}
 
       {!hideTooltip && (
         <span className={styles.tooltip}>

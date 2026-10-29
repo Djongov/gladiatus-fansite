@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import styles from './ImportProfile.module.css';
 import type { ItemSlotType, BaseStats, EquippedItem, CharacterIdentity } from './useCharacterState';
 import type { PactId } from './PactDefinitions';
-import { fetchCharacterProfile, describeProfileFetchError, type ReportedTotals } from './fetchCharacterProfile';
+import { fetchCharacterProfile, describeProfileFetchError, type ImportDetails } from './fetchCharacterProfile';
 
 interface ImportProfileProps {
+  /** Return a message when the profile loaded but can't be used here; it's shown instead of the success message. */
   onImport: (
     level: number,
     baseStats: BaseStats,
@@ -12,8 +13,8 @@ interface ImportProfileProps {
     identity: CharacterIdentity,
     pacts: Set<PactId> | undefined,
     profileUrl: string,
-    reportedTotals: ReportedTotals | undefined,
-  ) => void;
+    details?: ImportDetails,
+  ) => string | void;
 }
 
 export default function ImportProfile({ onImport }: ImportProfileProps) {
@@ -35,7 +36,11 @@ export default function ImportProfile({ onImport }: ImportProfileProps) {
 
     try {
       const profile = await fetchCharacterProfile(trimmedUrl);
-      onImport(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, trimmedUrl, profile.reportedTotals);
+      const rejection = onImport(profile.level, profile.baseStats, profile.items, profile.identity, profile.pacts, trimmedUrl, profile);
+      if (rejection) {
+        setError(rejection);
+        return;
+      }
 
       setSuccess(true);
       // Clear success message after 3 seconds

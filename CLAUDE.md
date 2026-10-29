@@ -94,7 +94,7 @@ Charisma is one of the now lesser important stats. It increases the chance for d
 
 Formula for how much gold each Charisma stat costs: Each point costs `(currentStatValue - 4)^2.5` gold before buying it. Total = `FLOOR(SUM of (n - 4)^2.5 for each n from currentPoints up to targetPoints - 1)`.
 
-Formula for how much double hit it provides: `(Charisma × Dexterity × 10) / (EnemyIntelligence × EnemyAgility)` % — Charisma is the attacker's component alongside Dexterity. Threat from Charisma: `FLOOR(Charisma / 10)`
+Formula for how much double hit it provides: `(Charisma × Dexterity × 10) / (EnemyIntelligence × EnemyAgility)` % — Charisma is the attacker's component alongside Dexterity. Threat from Charisma: `FLOOR(Charisma × 0.71)` (healers get none from Charisma; total threat = this + item threat)
 
 #### Character combat stats
 

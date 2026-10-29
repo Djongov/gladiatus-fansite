@@ -4,8 +4,8 @@ import type {
 } from '@site/src/components/CharacterPlanner/useCharacterState';
 import { resolveCharacterPortrait } from '@site/src/utils/characterFaceImage';
 import type { Combatant } from './types';
-import type { ReportedTotals } from '@site/src/components/CharacterPlanner/fetchCharacterProfile';
-import { armourAbsorptionRange } from './chanceFormulas';
+import type { DollStats } from '@site/src/components/CharacterPlanner/turmaTypes';
+import { armourAbsorption } from './chanceFormulas';
 import type { FightStats } from './expectedOutcome';
 
 /** The fight-relevant numbers of a planner character. */
@@ -27,23 +27,24 @@ export function fightStatsFromCharacterStats(stats: CharacterStats): FightStats 
 }
 
 /**
- * Replace planner-calculated values with the game's own profile totals, which
- * include buffs the planner cannot see. Chances (crit, block, avoidance) are
- * not shown on the profile, so the planner's values are kept for those.
+ * Replace planner-calculated values with the game's own profile stats, which
+ * include buffs the planner cannot see. Missing values and chances (crit, block,
+ * avoidance — not shown on the profile) keep the planner's values.
  */
-export function withReportedTotals(fight: FightStats, totals: ReportedTotals): FightStats {
-  const absorption = armourAbsorptionRange(totals.armour);
+export function withProfileStats(fight: FightStats, profile: DollStats): FightStats {
+  const attributes = profile.attributes;
+  const armour = profile.armour === null ? null : armourAbsorption(profile.armour);
   return {
     ...fight,
-    maxHp: totals.maxHp,
-    damageMin: totals.damageMin,
-    damageMax: totals.damageMax,
-    armourAbsorbMin: absorption.min,
-    armourAbsorbMax: absorption.max,
-    dexterity: totals.dexterity,
-    agility: totals.agility,
-    charisma: totals.charisma,
-    intelligence: totals.intelligence,
+    maxHp: profile.lifePoints ?? fight.maxHp,
+    damageMin: profile.damageMin ?? fight.damageMin,
+    damageMax: profile.damageMax ?? fight.damageMax,
+    armourAbsorbMin: armour?.min ?? fight.armourAbsorbMin,
+    armourAbsorbMax: armour?.max ?? fight.armourAbsorbMax,
+    dexterity: attributes?.dexterity.total ?? fight.dexterity,
+    agility: attributes?.agility.total ?? fight.agility,
+    charisma: attributes?.charisma.total ?? fight.charisma,
+    intelligence: attributes?.intelligence.total ?? fight.intelligence,
   };
 }
 

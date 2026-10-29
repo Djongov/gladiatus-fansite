@@ -1,6 +1,8 @@
 import React from 'react';
 import type { BattleLog, Combatant, StrikeEvent } from '@site/src/services/combat/types';
 import { chanceToDoubleHit, chanceToHit } from '@site/src/services/combat/chanceFormulas';
+import { damageDealtBySide, strikeTallyBySide } from '@site/src/services/combat/simulateBattle';
+import FightStage from '@site/src/components/FightReplay/FightStage';
 import styles from './BattleReport.module.css';
 
 export type Rewards = { gold: number; experience: number; honour: number };
@@ -12,20 +14,6 @@ type Props = {
 
 const GOLD_ICON_URL = 'https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif';
 
-const CDN_PREFIX = 'https://gladiatusfansite.blob.core.windows.net/images/';
-
-/**
- * Resolve a combatant's image to a full URL. The player's `image` field is
- * already a full Gladiatus costume URL (https://...); enemy images are
- * CDN-relative paths (e.g. `Expeditions/Italy/Grimwood/Rat.jpg`).
- */
-function resolveImage(image: string | undefined): string | null {
-  if (!image) return null;
-  if (/^https?:\/\//i.test(image)) return image;
-  return `${CDN_PREFIX}${image}`;
-}
-
-
 function headerClass(log: BattleLog): string {
   if (log.outcome === 'attacker_wins') return styles.headerWin;
   if (log.outcome === 'defender_wins') return styles.headerLoss;
@@ -36,38 +24,6 @@ function headerText(log: BattleLog): string {
   if (log.outcome === 'attacker_wins') return `Winner: ${log.attacker.name}`;
   if (log.outcome === 'defender_wins') return `Winner: ${log.defender.name}`;
   return 'Draw — fight ended after the round limit';
-}
-
-/* ----- VS block ----- */
-
-function VsBlock({ log }: { log: BattleLog }) {
-  const attackerImage = resolveImage(log.attacker.image);
-  const defenderImage = resolveImage(log.defender.image);
-  return (
-    <div className={styles.vsBlock}>
-      <div className={styles.fighterSide}>
-        <div className={styles.fighterStack}>
-          <div className="player_name_bg">
-            <div className="playername">{log.attacker.name}</div>
-          </div>
-          {attackerImage && (
-            <div className={styles.fighterImage} style={{ backgroundImage: `url(${attackerImage})` }} />
-          )}
-        </div>
-      </div>
-      <div className={styles.vsLabel}>VS</div>
-      <div className={styles.fighterSide}>
-        <div className={styles.fighterStack}>
-          <div className="player_name_bg">
-            <div className="playername">{log.defender.name}</div>
-          </div>
-          {defenderImage && (
-            <div className={styles.fighterImage} style={{ backgroundImage: `url(${defenderImage})` }} />
-          )}
-        </div>
-      </div>
-    </div>
-  );
 }
 
 /* ----- Stats panel ----- */
@@ -120,15 +76,8 @@ function StatsPanel({ self, opponent, mirrored = false }: PanelProps) {
 /* ----- Damage statistics ----- */
 
 function DamageStats({ log }: { log: BattleLog }) {
-  // Total damage dealt by each side
-  let attackerDealt = 0;
-  let defenderDealt = 0;
-  for (const r of log.rounds) {
-    for (const s of r.strikes) {
-      if (s.attacker === log.attacker.name) attackerDealt += s.finalDamage;
-      else defenderDealt += s.finalDamage;
-    }
-  }
+  // By side, not name: a fight against yourself has the same name on both sides
+  const { attacker: attackerDealt, defender: defenderDealt } = damageDealtBySide(log.rounds);
   const attackerHpAfter = Math.max(0, log.attacker.maxHp - defenderDealt);
   const defenderHpAfter = Math.max(0, log.defender.maxHp - attackerDealt);
 
@@ -152,6 +101,44 @@ function DamageStats({ log }: { log: BattleLog }) {
           <td>{defenderDealt}</td>
           <td>{defenderHpAfter}</td>
         </tr>
+      </tbody>
+    </table>
+  );
+}
+
+/** A count with its share of the fighter's attacks, e.g. "12 (30%)". */
+function countWithShare(count: number, attacks: number): string {
+  return attacks > 0 ? `${count} (${Math.round((count / attacks) * 100)}%)` : '0';
+}
+
+function StrikeSummary({ log }: { log: BattleLog }) {
+  const tally = strikeTallyBySide(log.rounds);
+  const rows = [
+    { side: 'attacker', name: log.attacker.name, ...tally.attacker },
+    { side: 'defender', name: log.defender.name, ...tally.defender },
+  ];
+
+  return (
+    <table className={styles.statsTable}>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Attacks</th>
+          <th>Critical hits</th>
+          <th>Misses</th>
+          <th>Blocked by opponent</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr key={row.side}>
+            <td>{row.name}</td>
+            <td>{row.attacks}</td>
+            <td>{countWithShare(row.criticalHits, row.attacks)}</td>
+            <td>{countWithShare(row.misses, row.attacks)}</td>
+            <td>{countWithShare(row.blockedByOpponent, row.attacks)}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
@@ -199,7 +186,7 @@ function BattleLogTable({ log }: { log: BattleLog }) {
               </th>
             </tr>
             {round.strikes.map((strike, idx) => {
-              const isDefenderStriking = strike.attacker === log.defender.name;
+              const isDefenderStriking = strike.attackerSide === 'defender';
               return (
                 <tr
                   key={idx}
@@ -249,7 +236,7 @@ export default function BattleReport({ log, rewards }: Props): React.ReactElemen
 
       {rewards && <RewardSection playerName={log.attacker.name} rewards={rewards} />}
 
-      <VsBlock log={log} />
+      <FightStage log={log} />
 
       <div className={styles.statsRow}>
         <StatsPanel self={log.attacker} opponent={log.defender} />
@@ -258,6 +245,7 @@ export default function BattleReport({ log, rewards }: Props): React.ReactElemen
 
       <div className={styles.sectionHeader}>Statistics</div>
       <DamageStats log={log} />
+      <StrikeSummary log={log} />
 
       <div className={styles.sectionHeader}>Battle Report</div>
       <BattleLogTable log={log} />

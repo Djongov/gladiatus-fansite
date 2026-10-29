@@ -1,0 +1,37 @@
+---
+title: Data Missing
+description: What the fansite doesn't know yet - open formula questions, dungeon boss abilities we can't simulate and item prefix and suffix ids.
+slug: /data-missing
+sidebar_class_name: hidden
+keywords: [Gladiatus, missing data, dungeon bosses, boss abilities, prefix ids, suffix ids]
+---
+
+import MissingBossAbilities from '@site/src/components/MissingBossAbilities/MissingBossAbilities';
+import MissingAffixIds from '@site/src/components/MissingAffixIds/MissingAffixIds';
+
+# Data Missing
+
+## Open Questions
+
+Hey guys. We have a couple of open questions that need answering. Like formulas mostly. If you are someone who knows the answer to any of the below, please contact me on Discord - Skarsburning.
+
+1. What is the formula for materials needed in Forging when the item has both prefix and suffix. It is no longer the sum of materials from prefix + suffix + base.
+2. What is the formula for gold value/Durability/Conditioning of an item when it receives a suffix/prefix or both and with rarity levels (green, orange, red and etc)
+3. How do we know if an item is conditioned from the anonymous profile page of a player
+4. What happens when you wear broken items
+5. What is the formula for experience needed for level after level 80
+6. What is the formula for the gold value of a mercenary contract
+7. Quietus or of Heroism: one of them has Intelligence 1 higher than our data says. A contract carrying both showed it, but we can't tell which one
+8. Claudius\` (Level 173) or of Hazard (Level 132): one of the levels is wrong. A Level 296 contract carrying both means they add up to 295, not 305
+9. Acilius\` and Melior's were corrected from mercenary contracts, not from gear. Acilius\` is Strength +45, Dexterity +7, Intelligence +88 (was 44 / 6 / 87) and Melior's has no flat Agility (was +31, possibly it is +31% instead). If you have either on a green unconditioned item, a tooltip screenshot would confirm it
+10. Which account effect gives about 1.4% more healing and threat (threat from Charisma becomes 0.71 instead of 0.70)? Both accounts we saw it on wear costume 15
+11. Why does a weapon's Strength % count only about half on some mercenaries (seen on a blue Druid Master and a blue Medicine man)?
+12. The Character Planner works out stats from gear only. Temporary buffs (oils, god buffs) and anything else outside the gear are not included, so an imported character can show more damage than the planner
+
+## Dungeon Boss Abilities
+
+<MissingBossAbilities />
+
+## Missing Prefix and Suffix Ids
+
+<MissingAffixIds />

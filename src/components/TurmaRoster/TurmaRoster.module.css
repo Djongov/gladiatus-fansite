@@ -1,0 +1,85 @@
+.roster {
+  margin: 24px 0;
+}
+
+.label {
+  margin: 24px 0 4px;
+  color: #c2a66a;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Same game-style panel as the logged-in card, so the grey/gold text reads in both site themes */
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin: 12px 0;
+  padding: 16px;
+  border: 1px solid #c2a66a;
+  background: linear-gradient(#1a1a1a, #0b0b0b);
+  color: #dcdcdc;
+}
+
+.portrait {
+  flex: none;
+  width: 110px;
+  height: 150px;
+  overflow: hidden;
+  border: 1px solid #8b7355;
+  border-radius: 4px;
+  background: #111;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  min-width: 160px;
+}
+
+.name {
+  color: #e8c37a;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.role {
+  margin: 2px 0 10px;
+  color: #9b9b9b;
+  font-size: 13px;
+}
+
+.contract {
+  margin-top: 12px;
+}
+
+.placeholderRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  margin: 12px 0;
+  border: 1px dashed #8b7355;
+  background: linear-gradient(#1a1a1a, #0b0b0b);
+  color: #9b9b9b;
+  font-size: 13px;
+}
+
+.hint {
+  color: var(--ifm-font-color-base);
+  font-size: 14px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}

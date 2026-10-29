@@ -7,6 +7,8 @@ import suffixesData from '@site/static/data/items/suffixes.json';
 import forgingGoodsData from '@site/static/data/items/forging-goods.json';
 import affixesRecipes from '@site/static/data/items/prefixes_suffixes_recipes.json';
 import ForgingGood from '@site/src/components/ForgingGood';
+import SearchableSelect from '@site/src/components/SearchableSelect/SearchableSelect';
+import { affixOptions } from '@site/src/components/SearchableSelect/affixOptions';
 import Item, { calculateItemStats } from '@site/src/components/Item';
 import type { BaseItem, PrefixSuffix } from '@site/src/components/Item';
 import type { ForgingGood as ForgingGoodEntry } from '@site/src/components/ForgingGood';
@@ -370,70 +372,6 @@ function resolveAffixMaterials(
   if (prefix?.materials) addEntries(mats, prefix.materials);
   if (suffix?.materials) addEntries(mats, suffix.materials);
   return { mats, usingFallback: Boolean(prefix || suffix) };
-}
-
-// ─── SearchableSelect ─────────────────────────────────────────────────────────
-
-interface SelectOpt { value: string; label: string; isHeader?: boolean }
-
-function SearchableSelect({ options, value, onChange, placeholder, label }: Readonly<{
-  options: SelectOpt[];
-  value: string;
-  onChange: (v: string) => void;
-  placeholder: string;
-  label: string;
-}>) {
-  const [search, setSearch] = useState('');
-  const [open, setOpen] = useState(false);
-  const selected = options.find(o => o.value === value);
-  const filtered = options.filter(o => o.label.toLowerCase().includes(search.toLowerCase()));
-
-  return (
-    <div className={styles.selectWrapper}>
-      <label className={styles.selectLabel}>{label}</label>
-      <div style={{ position: 'relative' }}>
-        <input
-          className={styles.selectInput}
-          type="text"
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-          onFocus={() => setOpen(true)}
-          placeholder={selected ? selected.label : placeholder}
-        />
-        {value && (
-          <button className={styles.clearBtn} onClick={() => { onChange(''); setSearch(''); }} title="Clear">×</button>
-        )}
-      </div>
-      {open && (
-        <>
-          <button
-            type="button"
-            className={styles.selectBackdrop}
-            aria-label="Close dropdown"
-            onClick={() => setOpen(false)}
-            onKeyDown={e => { if (e.key === 'Escape') setOpen(false); }}
-          />
-          <div className={styles.selectDropdown}>
-            {filtered.map(opt => (
-              opt.isHeader
-                ? <div key={opt.value + opt.label} className={styles.selectOptionHeader}>{opt.label}</div>
-                : (
-                  <button
-                    key={opt.value + opt.label}
-                    type="button"
-                    className={styles.selectOption}
-                    onClick={() => { onChange(opt.value); setSearch(''); setOpen(false); }}
-                  >
-                    {opt.label}
-                  </button>
-                )
-            ))}
-            {filtered.length === 0 && <div className={styles.selectNoResults}>No results found</div>}
-          </div>
-        </>
-      )}
-    </div>
-  );
 }
 
 // ─── ToolCard ─────────────────────────────────────────────────────────────────
@@ -820,15 +758,8 @@ export default function ForgeSimulator() {
     ]),
   ], [groupedBases]);
 
-  const prefixOptions = useMemo(() => [
-    { value: '', label: 'None' },
-    ...(prefixesData as PrefixSuffix[]).map(p => ({ value: p.name, label: `${p.name} (Lv. ${p.level})` })),
-  ], []);
-
-  const suffixOptions = useMemo(() => [
-    { value: '', label: 'None' },
-    ...(suffixesData as PrefixSuffix[]).map(s => ({ value: s.name, label: `${s.name} (Lv. ${s.level})` })),
-  ], []);
+  const prefixOptions = useMemo(() => affixOptions(prefixesData as PrefixSuffix[]), []);
+  const suffixOptions = useMemo(() => affixOptions(suffixesData as PrefixSuffix[]), []);
 
   // ── Handlers ─────────────────────────────────────────────────────────────
 

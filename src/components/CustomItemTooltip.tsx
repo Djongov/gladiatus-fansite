@@ -10,6 +10,8 @@ type Props = {
   stats?: string[];
   enchantValue?: number;
   gold?: string;
+  /** Stat line colour, e.g. the gold #BA9700 the game uses on mercenary contracts. Default: tooltip text colour. */
+  statsColor?: string;
 };
 
 export default function CustomItemTooltip({
@@ -21,6 +23,7 @@ export default function CustomItemTooltip({
   stats = [],
   enchantValue,
   gold,
+  statsColor,
 }: Props) {
   return (
     <span className={styles.wrapper}>
@@ -34,7 +37,7 @@ export default function CustomItemTooltip({
         {damage && <div>Damage {damage}</div>}
 
         {stats && stats.map((stat, i) => (
-          <div key={i}>{stat}</div>
+          <div key={i} style={statsColor ? { color: statsColor } : undefined}>{stat}</div>
         ))}
 
         {enchantValue && <div className={styles.enchant}>+{enchantValue} Damage</div>}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './CharacterPlanner.module.css';
 import CharacterDoll from './CharacterDoll';
 import StatsDisplay from './StatsDisplay';
@@ -6,9 +6,17 @@ import ItemSelector from './ItemSelector';
 import BaseStatsEditor from './BaseStatsEditor';
 import ImportProfile from './ImportProfile';
 import PlayerName from './PlayerName';
-import { useCharacterState, ItemSlotType, decodeCharacterState } from './useCharacterState';
+import { useCharacterState, ItemSlotType } from './useCharacterState';
+import type { BaseStats, CharacterIdentity, EquippedItem } from './useCharacterState';
+import type { ImportDetails } from './fetchCharacterProfile';
+import type { PactId } from './PactDefinitions';
+import { EMPTY_TEAM, encodeTeamState, memberDoll, teamFromStored, teamFromUrlParam, useTeamState } from './useTeamState';
+import type { CharacterBasics } from './useTeamState';
+import TeamMemberSection from './TeamMemberSection';
+import Link from '@docusaurus/Link';
+import { toStoredTurma, useActiveCharacter } from '@site/src/hooks/useActiveCharacter';
 import PactSelector, { ActivePactsBar } from './PactSelector';
-import { useActiveCharacter } from '@site/src/hooks/useActiveCharacter';
+import { useActiveCharacterPrefill, PrefilledBanner } from './ActiveCharacterPrefill';
 import {
   maxUsableItemLevel,
   maxMarketItemLevel,
@@ -27,50 +35,84 @@ export default function CharacterPlanner() {
     characterLevel,
     baseStats,
     characterIdentity,
-    setCharacterLevel,
-    setBaseStats,
-    setCharacterGender,
-    setItem,
-    removeItem,
-    clearAll,
+    setCharacterLevel: setLevelOnly,
+    setBaseStats: setBaseStatsOnly,
+    setCharacterGender: setGenderOnly,
+    setItem: setItemOnly,
+    removeItem: removeItemOnly,
+    clearAll: clearAllOnly,
+    resetCharacter,
     characterStats,
     importProfile,
     activePacts,
-    togglePact,
+    togglePact: togglePactOnly,
   } = useCharacterState();
 
-  const [prefilledFrom, setPrefilledFrom] = useState<string | null>(null);
-  const { character: activeCharacter } = useActiveCharacter();
+  const { team, dispatch: dispatchTeam } = useTeamState();
 
+  const { prefilledFrom, startFresh } = useActiveCharacterPrefill(
+    { equippedItems, baseStats, characterLevel, activePacts, importProfile, resetCharacter },
+    { withItems: true, team: dispatchTeam },
+  );
+
+  // Section 1 counts as edited unless it is exactly the logged-in character, untouched since loading
+  const [characterTouched, setCharacterTouched] = useState(false);
+  useEffect(() => setCharacterTouched(false), [prefilledFrom]);
+  const characterEdited = !prefilledFrom || characterTouched;
+  /** Every section-1 edit; level, base stats and pacts are shared with the Turma profile */
+  const touchCharacter = (sharedWithTurmaProfile: boolean) => {
+    setCharacterTouched(true);
+    if (sharedWithTurmaProfile) dispatchTeam({ type: 'characterChanged' });
+  };
+  const setCharacterLevel = (level: number) => { touchCharacter(true); setLevelOnly(level); };
+  const setBaseStats = (stats: Partial<BaseStats>) => { touchCharacter(true); setBaseStatsOnly(stats); };
+  const togglePact = (id: PactId) => { touchCharacter(true); togglePactOnly(id); };
+  const setCharacterGender = (gender: 'male' | 'female') => { touchCharacter(false); setGenderOnly(gender); };
+  const setItem = (slot: ItemSlotType, item: EquippedItem | null) => { touchCharacter(false); setItemOnly(slot, item); };
+  const removeItem = (slot: ItemSlotType) => { touchCharacter(false); removeItemOnly(slot); };
+  const clearAll = () => { touchCharacter(false); clearAllOnly(); };
+  /** A profile loaded here replaces section 1 and brings its own Turma, keeping that profile's game numbers */
+  const importProfileWithTeam = (
+    level: number, stats: BaseStats, items: Map<ItemSlotType, EquippedItem>, identity: CharacterIdentity,
+    pacts: Set<PactId> | undefined, _profileUrl: string, details?: ImportDetails,
+  ) => {
+    setCharacterTouched(true);
+    importProfile(level, stats, items, identity, pacts);
+    dispatchTeam({ type: 'load', state: teamFromStored(details?.turma ? toStoredTurma(details.turma) : undefined) });
+  };
+
+  // The team travels in the `t` URL param beside the character's `s`
+  const teamLoadedFromUrl = useRef(false);
   useEffect(() => {
-    if (typeof globalThis.window === 'undefined') return;
-    if (new URLSearchParams(globalThis.window.location.search).get('s')) return;
-    if (!activeCharacter) return;
+    if (globalThis.window === undefined) return;
+    const param = new URLSearchParams(globalThis.window.location.search).get('t');
+    if (param) dispatchTeam({ type: 'load', state: teamFromUrlParam(param) });
+    teamLoadedFromUrl.current = true;
+  }, [dispatchTeam]);
+  useEffect(() => {
+    if (globalThis.window === undefined || !teamLoadedFromUrl.current) return;
+    const url = new URL(globalThis.window.location.href);
+    if (team === EMPTY_TEAM) url.searchParams.delete('t');
+    else url.searchParams.set('t', encodeTeamState(team));
+    globalThis.window.history.replaceState({}, '', url.toString());
+  }, [team]);
 
-    const isDefaults = (
-      equippedItems.size === 0 &&
-      baseStats.strength === 5 && baseStats.dexterity === 5 &&
-      baseStats.agility === 5 && baseStats.constitution === 5 &&
-      baseStats.charisma === 5 && baseStats.intelligence === 5 &&
-      characterLevel === 1 &&
-      activePacts.size === 0
-    );
-    if (!isDefaults) return;
+  const characterBasics: CharacterBasics = { level: characterLevel, baseStats, pacts: activePacts };
 
-    try {
-      const decoded = decodeCharacterState(activeCharacter.encoded, '');
-      if (!decoded) return;
-      importProfile(decoded.level, decoded.baseStats, decoded.items, decoded.identity, decoded.pacts);
-      setPrefilledFrom(activeCharacter.identity.name);
-    } catch (err) {
-      console.warn('[CharacterPlanner] failed to decode active character; skipping auto-load:', err);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeCharacter]);
-
-  const handleClearAndStartFresh = () => {
-    clearAll();
-    setPrefilledFrom(null);
+  const { character: activeCharacter, importBuild } = useActiveCharacter();
+  const handleImportBuild = () => {
+    importBuild({
+      level: characterLevel,
+      baseStats,
+      identity: characterIdentity,
+      items: equippedItems,
+      pacts: activePacts,
+      characterEdited,
+      team,
+    });
+    setShareMessage('Build imported: every simulator now uses it');
+    setShowShareDialog(true);
+    setTimeout(() => setShowShareDialog(false), 3000);
   };
 
   const [selectedSlot, setSelectedSlot] = useState<ItemSlotType | null>(null);
@@ -149,24 +191,11 @@ export default function CharacterPlanner() {
         </p>
       </div>
 
-      {prefilledFrom && (
-        <div style={{
-          marginBottom: 12,
-          padding: '8px 12px',
-          background: 'var(--ifm-color-emphasis-100)',
-          borderLeft: '3px solid #c2a66a',
-          fontSize: 14,
-        }}>
-          Loaded from <strong>{prefilledFrom}</strong>{' '}
-          <a href="#" onClick={(e) => { e.preventDefault(); handleClearAndStartFresh(); }}>
-            Clear and start fresh
-          </a>
-        </div>
-      )}
+      {prefilledFrom && <PrefilledBanner name={prefilledFrom} onClear={startFresh} />}
 
       {/* Import Profile */}
       <div className={styles.importSection}>
-        <ImportProfile onImport={importProfile} />
+        <ImportProfile onImport={importProfileWithTeam} />
       </div>
 
       <div className={styles.toolbar}>
@@ -244,6 +273,20 @@ export default function CharacterPlanner() {
         </div>
       </div>
 
+      <div className={styles.importBuild}>
+        <button className={styles.shareButton} onClick={handleImportBuild} title="Use this build in every simulator">
+          <span className={styles.newBadge}>New</span> Import this build
+        </button>
+        <p>
+          Replaces your imported profile with this build: your character and the whole Turma team.{' '}
+          {activeCharacter?.profileUrl
+            ? <>To get your real profile back, use the refresh button on <Link to="/character">/character</Link>.</>
+            : <>To get your real profile back, load it again on <Link to="/character">/character</Link>.</>}
+          <br />
+          <strong>Tip:</strong> this way you can use this Character Planner build in all simulators.
+        </p>
+      </div>
+
       <div className={styles.content}>
         {/* Active Pacts Display */}
         <ActivePactsBar
@@ -307,6 +350,35 @@ export default function CharacterPlanner() {
             </ul>
           </div>
         </div>
+      </div>
+
+      {/* Circus Turma team: Turma profile and four mercenaries, stacked under the character */}
+      <div className={styles.team}>
+        <TeamMemberSection
+          title="Turma profile"
+          memberRef="turmaProfile"
+          member={team.turmaProfile}
+          doll={memberDoll(team.turmaProfile, 'turmaProfile', characterBasics)}
+          strictItemLevel={strictItemLevel}
+          dispatch={dispatchTeam}
+        />
+        {([0, 1, 2, 3] as const).map((index) => {
+          const member = team.mercenaries[index];
+          const doll = memberDoll(member, 'mercenary', characterBasics);
+          const name = doll?.contract?.name ?? member.stored?.identity.name;
+          const title = name && doll ? `Mercenary ${index + 1} · ${name} · Level ${doll.level}` : `Mercenary ${index + 1} · empty`;
+          return (
+            <TeamMemberSection
+              key={index}
+              title={title}
+              memberRef={index}
+              member={member}
+              doll={doll}
+              strictItemLevel={strictItemLevel}
+              dispatch={dispatchTeam}
+            />
+          );
+        })}
       </div>
 
       {/* Item Selection Modal */}

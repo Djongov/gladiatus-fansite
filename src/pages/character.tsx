@@ -3,7 +3,8 @@ import Layout from '@theme/Layout';
 import ImportProfile from '@site/src/components/CharacterPlanner/ImportProfile';
 import { describeProfileFetchError } from '@site/src/components/CharacterPlanner/fetchCharacterProfile';
 import { useActiveCharacter } from '@site/src/hooks/useActiveCharacter';
-import { resolveCharacterPortrait } from '@site/src/utils/characterFaceImage';
+import TurmaRoster from '@site/src/components/TurmaRoster/TurmaRoster';
+import MissingDataNotice from '@site/src/components/MissingDataNotice/MissingDataNotice';
 import styles from '@site/src/css/Character.module.css';
 
 function formatRelative(timestamp: number): string {
@@ -70,25 +71,8 @@ export default function CharacterPage(): React.ReactElement {
           <>
             <h1 className={styles.heading}>Logged in</h1>
             <div className={styles.card}>
-              <div className={styles.cardRow}>
-                <div className="player_name_bg">
-                  <div className="playername">{character.identity.name}</div>
-                </div>
-                <div className={styles.meta}>
-                  <div className={styles.level}>Level {character.level}</div>
-                  <img
-                    src={resolveCharacterPortrait({
-                      costume: character.identity.costume,
-                      level: character.level,
-                      gender: character.identity.gender,
-                    })}
-                    alt="Character portrait"
-                    className={styles.costumeImage}
-                  />
-                  <div className={styles.savedAt}>
-                    Imported {formatRelative(character.savedAt)}
-                  </div>
-                </div>
+              <div className={styles.savedAt}>
+                Imported {formatRelative(character.savedAt)}
               </div>
               <div className={styles.actions}>
                 <button
@@ -110,6 +94,8 @@ export default function CharacterPage(): React.ReactElement {
               </div>
               {refreshError && <div className={styles.error}>{refreshError}</div>}
             </div>
+            <MissingDataNotice entries={character.missingData ?? []} profileUrl={character.profileUrl} />
+            <TurmaRoster character={character} />
             <p className={styles.privacyNote}>
               Logged-in state lives only in this browser. Switching browsers or clearing site data
               will log you out.

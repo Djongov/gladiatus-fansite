@@ -13,21 +13,13 @@ import {
 } from '@site/src/components/CharacterPlanner/useCharacterState';
 import type { PactId } from '@site/src/components/CharacterPlanner/PactDefinitions';
 import { characterToCombatant } from '@site/src/services/combat/characterToCombatant';
-import { simulateOddsPvP, oddsToPercentages } from '@site/src/services/combat/simulateOdds';
-import { chanceToHit } from '@site/src/services/combat/chanceFormulas';
+import { simulateOddsPvP } from '@site/src/services/combat/simulateOdds';
 import type { Combatant } from '@site/src/services/combat/types';
 import AttackModal from '@site/src/components/AttackModal/AttackModal';
 import CharacterPortrait from '@site/src/components/CharacterPortrait/CharacterPortrait';
+import FightControls from '@site/src/components/FightControls/FightControls';
 import styles from '@site/src/css/ArenaSimulator.module.css';
-
-function winColor(pct: number): string {
-  const hue = pct * 1.2;
-  return `hsl(${hue}, 65%, 42%)`;
-}
-function lossColor(pct: number): string {
-  const hue = (100 - pct) * 1.2;
-  return `hsl(${hue}, 65%, 42%)`;
-}
+import { chanceToHit } from '@site/src/services/combat/chanceFormulas';
 
 function CharacterPanel({
   combatant,
@@ -98,13 +90,6 @@ export default function ArenaSimulatorPage(): React.ReactElement {
   }, [character]);
 
   const [opponent, setOpponent] = useState<Combatant | null>(null);
-  const [oddsResult, setOddsResult] = useState<{
-    wins: number;
-    losses: number;
-    draws: number;
-    ran: number;
-  } | null>(null);
-  const [sampleSize, setSampleSize] = useState<number>(500);
   const [showAttackModal, setShowAttackModal] = useState(false);
 
   const handleOpponentImport = (
@@ -118,7 +103,6 @@ export default function ArenaSimulatorPage(): React.ReactElement {
       const stats = calculateCharacterStats(items, level, baseStats, pacts ?? new Set());
       const combatant = characterToCombatant({ identity, level, stats });
       setOpponent(combatant);
-      setOddsResult(null);
     } catch (err) {
       console.warn('[ArenaSimulator] opponent build failed:', err);
     }
@@ -126,23 +110,12 @@ export default function ArenaSimulatorPage(): React.ReactElement {
 
   const handleChangeOpponent = () => {
     setOpponent(null);
-    setOddsResult(null);
   };
 
   const handleAttack = () => {
     if (attackerCombatant && opponent) setShowAttackModal(true);
   };
 
-  const handleSimulateOdds = () => {
-    if (!attackerCombatant || !opponent) return;
-    const result = simulateOddsPvP(attackerCombatant, opponent, sampleSize);
-    setOddsResult({
-      wins: result.wins,
-      losses: result.losses,
-      draws: result.draws,
-      ran: result.ran,
-    });
-  };
 
   if (!character) {
     return (
@@ -175,10 +148,6 @@ export default function ArenaSimulatorPage(): React.ReactElement {
     );
   }
 
-  const buttonsDisabled = !opponent;
-  const disabledReason = !opponent ? 'Import an opponent first.' : '';
-
-  const oddsPct = oddsResult && oddsResult.ran > 0 ? oddsToPercentages(oddsResult) : null;
 
   return (
     <Layout title="Arena Simulator">
@@ -210,71 +179,11 @@ export default function ArenaSimulatorPage(): React.ReactElement {
                 >
                   Change opponent
                 </button>
-                <div className={styles.buttonsRow}>
-                  <div className={styles.buttonColumn}>
-                    <button
-                      className="awesome-button big"
-                      onClick={handleAttack}
-                      disabled={buttonsDisabled}
-                      title={disabledReason || undefined}
-                    >
-                      Attack
-                    </button>
-                    <p className={styles.buttonDescription}>
-                      Run one fight. Opens the round-by-round battle report.
-                    </p>
-                  </div>
-                  <div className={styles.buttonColumn}>
-                    <button
-                      className="awesome-button big"
-                      onClick={handleSimulateOdds}
-                      disabled={buttonsDisabled}
-                      title={disabledReason || undefined}
-                    >
-                      Simulate Odds
-                    </button>
-                    <p className={styles.buttonDescription}>
-                      Run {sampleSize.toLocaleString()} fights against this opponent. Win/loss/draw odds shown below.
-                    </p>
-                    <div className={styles.sampleSizeRow}>
-                      <label htmlFor="arena-sample-size-select">Sample size:</label>
-                      <select
-                        id="arena-sample-size-select"
-                        value={sampleSize}
-                        onChange={(e) => setSampleSize(Number(e.target.value))}
-                        disabled={buttonsDisabled}
-                      >
-                        <option value={100}>100</option>
-                        <option value={500}>500</option>
-                        <option value={1000}>1,000</option>
-                        <option value={2000}>2,000</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                {oddsPct && (
-                  <div className={styles.oddsResult}>
-                    <div className={styles.oddsTile}>
-                      <div className={styles.oddsLabel}>Wins</div>
-                      <div className={styles.oddsValue} style={{ color: winColor(oddsPct.wins) }}>
-                        {oddsPct.wins}%
-                      </div>
-                    </div>
-                    <div className={styles.oddsTile}>
-                      <div className={styles.oddsLabel}>Losses</div>
-                      <div className={styles.oddsValue} style={{ color: lossColor(oddsPct.losses) }}>
-                        {oddsPct.losses}%
-                      </div>
-                    </div>
-                    <div className={styles.oddsTile}>
-                      <div className={styles.oddsLabel}>Draws</div>
-                      <div className={styles.oddsValue} style={{ color: '#777' }}>
-                        {oddsPct.draws}%
-                      </div>
-                    </div>
-                  </div>
-                )}
+                <FightControls
+                  subject="this opponent"
+                  onAttack={handleAttack}
+                  onSimulate={(sampleSize) => simulateOddsPvP(attackerCombatant, opponent, sampleSize)}
+                />
               </>
             )}
           </div>

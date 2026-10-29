@@ -1,0 +1,118 @@
+/* Recreates the game's #charstats panel (game.css: charstats_bg, charstats_text, charstats_balken, charstats_value*) */
+.panel {
+  flex: none;
+  width: 173px;
+  color: #695220;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+
+.top,
+.bottom {
+  width: 173px;
+  height: 5px;
+  background-image: url(/img/charstats/char_status_kopf.jpg);
+}
+
+.bottom {
+  background-image: url(/img/charstats/char_status_abschluss.jpg);
+}
+
+.row {
+  position: relative;
+  display: block;
+  width: 173px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url(/img/charstats/char_status_grund_klein.jpg);
+  background-repeat: no-repeat;
+}
+
+/* Value rows (Level, Armour, Damage, Threat, Healing) */
+.label {
+  margin-left: 10px;
+}
+
+.value {
+  position: absolute;
+  right: 5px;
+  font-weight: bold;
+  color: #540400;
+}
+
+/* Bar rows (Life points, primary stats): label above a 102px bar, value on the right */
+.text {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  font-size: 0.9em;
+  line-height: 14px;
+}
+
+.barTrack {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 102px;
+  height: 6px;
+  overflow: hidden;
+  background-image: url(/img/charstats/energie_balken_grund.gif);
+}
+
+.lifeBar,
+.attributeBar {
+  height: 6px;
+  background-repeat: repeat-x;
+}
+
+.lifeBar {
+  background-image: url(/img/charstats/energie_rot.gif);
+}
+
+.attributeBar {
+  background-image: url(/img/charstats/energie_gruen.gif);
+}
+
+.barValue {
+  position: absolute;
+  right: 5px;
+  width: 60px;
+  text-align: right;
+  font-weight: bold;
+  color: #540400;
+}
+
+/* Hover breakdown, styled like the game's dark tooltips */
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 10001;
+  min-width: 200px;
+  padding: 6px 10px;
+  border: 1px solid #c2a66a;
+  background: linear-gradient(#1a1a1a, #0b0b0b);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.row:hover .tooltip {
+  display: block;
+}
+
+.tooltipHighlight,
+.tooltipLine {
+  display: block;
+  font-weight: bold;
+}
+
+.tooltipHighlight {
+  color: #ba9700;
+}
+
+.tooltipLine {
+  color: #dddddd;
+}

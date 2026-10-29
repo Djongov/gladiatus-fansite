@@ -1,0 +1,33 @@
+.enemy {
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
+}
+
+/* Stat panel below the portrait, the Attack button below that; the column is only as wide as its content */
+.enemyBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* `awesome-button big` is full width: here that's the column's width, matching the stat panel */
+.attack {
+  align-self: stretch;
+}
+
+/* Above the Attack button: as wide as the column, small print */
+.warning {
+  align-self: stretch;
+  width: 0;
+  min-width: 100%;
+  padding: 6px 8px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.missing {
+  color: var(--ifm-color-danger);
+}

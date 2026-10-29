@@ -1,5 +1,6 @@
-import type { Combatant, StrikeEvent, RoundEvent, BattleLog } from './types';
+import type { Combatant, StrikeEvent, RoundEvent, BattleLog, FighterSide } from './types';
 import { chanceToDoubleHit, chanceToHit } from './chanceFormulas';
+import { rollStrike } from './strike';
 
 export type SimulationOptions = {
   maxRounds?: number;          // default 20 (PVE)
@@ -9,64 +10,36 @@ export type SimulationOptions = {
 
 const DEFAULT_MAX_ROUNDS = 20;
 
-function rollInt(random: () => number, min: number, max: number): number {
-  if (max < min) return min;
-  return Math.floor(random() * (max - min + 1)) + min;
-}
-
-
 function strike(
   attacker: Combatant,
+  attackerSide: FighterSide,
   defender: Combatant,
   effectiveCrit: number,
   strikes: StrikeEvent[],
   random: () => number,
   isSecondHalf: boolean
 ): void {
-  const hitPct = chanceToHit(attacker.dexterity, defender.agility);
-  if (random() * 100 >= hitPct) {
-    strikes.push({
-      attacker: attacker.name,
-      defender: defender.name,
-      result: 'miss',
-      isCrit: false,
-      isBlocked: false,
-      isSecondHalfOfDoubleHit: isSecondHalf,
-      damageRolled: 0,
-      damageAfterMods: 0,
-      absorbed: 0,
-      finalDamage: 0,
-      defenderHpAfter: defender.hp,
-    });
-  } else {
-    const damageRolled = rollInt(random, attacker.damageMin, attacker.damageMax);
-    const isCrit = random() * 100 < effectiveCrit;
-    let damage = isCrit ? damageRolled * 2 : damageRolled;
-
-    const isBlocked = random() * 100 < defender.blockChance;
-    if (isBlocked) {
-      damage = Math.floor(damage / 2);
-    }
-
-    const absorbed = rollInt(random, defender.armourAbsorbMin, defender.armourAbsorbMax);
-    const finalDamage = Math.max(0, damage - absorbed);
-
-    defender.hp = Math.max(0, defender.hp - finalDamage);
-
-    strikes.push({
-      attacker: attacker.name,
-      defender: defender.name,
-      result: 'hit',
-      isCrit,
-      isBlocked,
-      isSecondHalfOfDoubleHit: isSecondHalf,
-      damageRolled,
-      damageAfterMods: damage,
-      absorbed,
-      finalDamage,
-      defenderHpAfter: defender.hp,
-    });
-  }
+  const roll = rollStrike(
+    { hit: chanceToHit(attacker.dexterity, defender.agility), crit: effectiveCrit, block: defender.blockChance },
+    { min: attacker.damageMin, max: attacker.damageMax },
+    { min: defender.armourAbsorbMin, max: defender.armourAbsorbMax },
+    random,
+  );
+  defender.hp = Math.max(0, defender.hp - roll.finalDamage);
+  strikes.push({
+    attacker: attacker.name,
+    attackerSide,
+    defender: defender.name,
+    result: roll.landed ? 'hit' : 'miss',
+    isCrit: roll.isCrit,
+    isBlocked: roll.isBlocked,
+    isSecondHalfOfDoubleHit: isSecondHalf,
+    damageRolled: roll.damageRolled,
+    damageAfterMods: roll.damageAfterMods,
+    absorbed: roll.absorbed,
+    finalDamage: roll.finalDamage,
+    defenderHpAfter: defender.hp,
+  });
 
   if (defender.hp <= 0 || isSecondHalf) return;
 
@@ -75,8 +48,36 @@ function strike(
   // 15, 17 and 18 of a L126 Dracolich fight).
   const doublePct = chanceToDoubleHit(attacker.charisma, attacker.dexterity, defender.intelligence, defender.agility);
   if (random() * 100 < doublePct) {
-    strike(attacker, defender, effectiveCrit, strikes, random, true);
+    strike(attacker, attackerSide, defender, effectiveCrit, strikes, random, true);
   }
+}
+
+/** Damage each side dealt over the fight: decides a fight that runs out of rounds. */
+export function damageDealtBySide(rounds: RoundEvent[]): Record<FighterSide, number> {
+  const dealt: Record<FighterSide, number> = { attacker: 0, defender: 0 };
+  for (const round of rounds) {
+    for (const s of round.strikes) dealt[s.attackerSide] += s.finalDamage;
+  }
+  return dealt;
+}
+
+/** How one side's swings went: each half of a double hit is its own attack. */
+export type StrikeTally = { attacks: number; criticalHits: number; misses: number; blockedByOpponent: number };
+
+/** Each side's attacks, critical hits, misses and attacks the opponent blocked, for the report. */
+export function strikeTallyBySide(rounds: RoundEvent[]): Record<FighterSide, StrikeTally> {
+  const empty = (): StrikeTally => ({ attacks: 0, criticalHits: 0, misses: 0, blockedByOpponent: 0 });
+  const tally: Record<FighterSide, StrikeTally> = { attacker: empty(), defender: empty() };
+  for (const round of rounds) {
+    for (const s of round.strikes) {
+      const side = tally[s.attackerSide];
+      side.attacks += 1;
+      if (s.isCrit) side.criticalHits += 1;
+      if (s.result === 'miss') side.misses += 1;
+      if (s.isBlocked) side.blockedByOpponent += 1;
+    }
+  }
+  return tally;
 }
 
 export function simulateBattle(
@@ -113,10 +114,12 @@ export function simulateBattle(
 
     const first = defenderStrikesFirst ? D : A;
     const second = defenderStrikesFirst ? A : D;
+    const firstSide: FighterSide = defenderStrikesFirst ? 'defender' : 'attacker';
+    const secondSide: FighterSide = defenderStrikesFirst ? 'attacker' : 'defender';
     const firstCrit = defenderStrikesFirst ? defenderEffectiveCrit : attackerEffectiveCrit;
     const secondCrit = defenderStrikesFirst ? attackerEffectiveCrit : defenderEffectiveCrit;
 
-    strike(first, second, firstCrit, strikes, random, false);
+    strike(first, firstSide, second, firstCrit, strikes, random, false);
     if (second.hp <= 0) {
       outcome = (second === D) ? 'attacker_wins' : 'defender_wins';
       outcomeReason = (second === D) ? 'defender_killed' : 'attacker_killed';
@@ -125,7 +128,7 @@ export function simulateBattle(
       break;
     }
 
-    strike(second, first, secondCrit, strikes, random, false);
+    strike(second, secondSide, first, secondCrit, strikes, random, false);
     if (first.hp <= 0) {
       outcome = (first === D) ? 'attacker_wins' : 'defender_wins';
       outcomeReason = (first === D) ? 'defender_killed' : 'attacker_killed';
@@ -140,11 +143,9 @@ export function simulateBattle(
   if (!earlyKo) {
     // Rounds exhausted with both sides alive: whoever dealt more total
     // damage wins (user-confirmed live rule, applies to PVE and PVP alike).
-    // Measured as life points lost, so fighters with the same name are told apart.
-    const attackerDealt = D.maxHp - D.hp;
-    const defenderDealt = A.maxHp - A.hp;
-    if (attackerDealt > defenderDealt) outcome = 'attacker_wins';
-    else if (defenderDealt > attackerDealt) outcome = 'defender_wins';
+    const dealt = damageDealtBySide(rounds);
+    if (dealt.attacker > dealt.defender) outcome = 'attacker_wins';
+    else if (dealt.defender > dealt.attacker) outcome = 'defender_wins';
     else outcome = 'draw';
     outcomeReason = 'rounds_exhausted';
   }

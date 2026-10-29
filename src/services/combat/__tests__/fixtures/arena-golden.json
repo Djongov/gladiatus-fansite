@@ -1,0 +1,6874 @@
+{
+ "pve-1": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 859,
+      "damageAfterMods": 859,
+      "absorbed": 415,
+      "finalDamage": 444,
+      "defenderHpAfter": 20981
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 758,
+      "damageAfterMods": 379,
+      "absorbed": 464,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 838,
+      "damageAfterMods": 419,
+      "absorbed": 354,
+      "finalDamage": 65,
+      "defenderHpAfter": 20916
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 857,
+      "damageAfterMods": 428,
+      "absorbed": 355,
+      "finalDamage": 73,
+      "defenderHpAfter": 20843
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20843
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20843
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 816,
+      "damageAfterMods": 816,
+      "absorbed": 490,
+      "finalDamage": 326,
+      "defenderHpAfter": 33924
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 870,
+      "damageAfterMods": 435,
+      "absorbed": 360,
+      "finalDamage": 75,
+      "defenderHpAfter": 20768
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20768
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33924
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20768
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 773,
+      "damageAfterMods": 773,
+      "absorbed": 541,
+      "finalDamage": 232,
+      "defenderHpAfter": 33692
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20768
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33692
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 884,
+      "damageAfterMods": 884,
+      "absorbed": 378,
+      "finalDamage": 506,
+      "defenderHpAfter": 20262
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33692
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20262
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 837,
+      "damageAfterMods": 837,
+      "absorbed": 460,
+      "finalDamage": 377,
+      "defenderHpAfter": 33315
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 864,
+      "damageAfterMods": 864,
+      "absorbed": 345,
+      "finalDamage": 519,
+      "defenderHpAfter": 19743
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33315
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 829,
+      "damageAfterMods": 414,
+      "absorbed": 350,
+      "finalDamage": 64,
+      "defenderHpAfter": 19679
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33315
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 812,
+      "damageAfterMods": 812,
+      "absorbed": 391,
+      "finalDamage": 421,
+      "defenderHpAfter": 19258
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 793,
+      "damageAfterMods": 396,
+      "absorbed": 528,
+      "finalDamage": 0,
+      "defenderHpAfter": 33315
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19258
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33315
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 747,
+      "damageAfterMods": 373,
+      "absorbed": 521,
+      "finalDamage": 0,
+      "defenderHpAfter": 33315
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19258
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 827,
+      "damageAfterMods": 827,
+      "absorbed": 471,
+      "finalDamage": 356,
+      "defenderHpAfter": 32959
+     }
+    ]
+   },
+   {
+    "roundIndex": 15,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 839,
+      "damageAfterMods": 419,
+      "absorbed": 407,
+      "finalDamage": 12,
+      "defenderHpAfter": 19246
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32959
+     }
+    ]
+   },
+   {
+    "roundIndex": 16,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19246
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 781,
+      "damageAfterMods": 390,
+      "absorbed": 475,
+      "finalDamage": 0,
+      "defenderHpAfter": 32959
+     }
+    ]
+   },
+   {
+    "roundIndex": 17,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19246
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 752,
+      "damageAfterMods": 1504,
+      "absorbed": 487,
+      "finalDamage": 1017,
+      "defenderHpAfter": 31942
+     }
+    ]
+   },
+   {
+    "roundIndex": 18,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 880,
+      "damageAfterMods": 880,
+      "absorbed": 379,
+      "finalDamage": 501,
+      "defenderHpAfter": 18745
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31942
+     }
+    ]
+   },
+   {
+    "roundIndex": 19,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 852,
+      "damageAfterMods": 852,
+      "absorbed": 343,
+      "finalDamage": 509,
+      "defenderHpAfter": 18236
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31942
+     }
+    ]
+   }
+  ],
+  "outcome": "defender_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pve-2": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 796,
+      "damageAfterMods": 796,
+      "absorbed": 498,
+      "finalDamage": 298,
+      "defenderHpAfter": 33952
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33952
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 881,
+      "damageAfterMods": 440,
+      "absorbed": 391,
+      "finalDamage": 49,
+      "defenderHpAfter": 21376
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33952
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33952
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 811,
+      "damageAfterMods": 405,
+      "absorbed": 411,
+      "finalDamage": 0,
+      "defenderHpAfter": 21376
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33952
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 845,
+      "damageAfterMods": 422,
+      "absorbed": 379,
+      "finalDamage": 43,
+      "defenderHpAfter": 21333
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 836,
+      "damageAfterMods": 418,
+      "absorbed": 547,
+      "finalDamage": 0,
+      "defenderHpAfter": 33952
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21333
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 809,
+      "damageAfterMods": 1618,
+      "absorbed": 540,
+      "finalDamage": 1078,
+      "defenderHpAfter": 32874
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 892,
+      "damageAfterMods": 1784,
+      "absorbed": 414,
+      "finalDamage": 1370,
+      "defenderHpAfter": 19963
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32874
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 883,
+      "damageAfterMods": 883,
+      "absorbed": 363,
+      "finalDamage": 520,
+      "defenderHpAfter": 19443
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32874
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 800,
+      "damageAfterMods": 400,
+      "absorbed": 373,
+      "finalDamage": 27,
+      "defenderHpAfter": 19416
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32874
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 819,
+      "damageAfterMods": 819,
+      "absorbed": 394,
+      "finalDamage": 425,
+      "defenderHpAfter": 18991
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 771,
+      "damageAfterMods": 771,
+      "absorbed": 451,
+      "finalDamage": 320,
+      "defenderHpAfter": 32554
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18991
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32554
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 838,
+      "damageAfterMods": 838,
+      "absorbed": 415,
+      "finalDamage": 423,
+      "defenderHpAfter": 18568
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 812,
+      "damageAfterMods": 1624,
+      "absorbed": 527,
+      "finalDamage": 1097,
+      "defenderHpAfter": 31457
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 831,
+      "damageAfterMods": 415,
+      "absorbed": 354,
+      "finalDamage": 61,
+      "defenderHpAfter": 18507
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31457
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 856,
+      "damageAfterMods": 428,
+      "absorbed": 383,
+      "finalDamage": 45,
+      "defenderHpAfter": 18462
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31457
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 849,
+      "damageAfterMods": 1698,
+      "absorbed": 373,
+      "finalDamage": 1325,
+      "defenderHpAfter": 17137
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31457
+     }
+    ]
+   },
+   {
+    "roundIndex": 15,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 17137
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 765,
+      "damageAfterMods": 765,
+      "absorbed": 500,
+      "finalDamage": 265,
+      "defenderHpAfter": 31192
+     }
+    ]
+   },
+   {
+    "roundIndex": 16,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 823,
+      "damageAfterMods": 411,
+      "absorbed": 414,
+      "finalDamage": 0,
+      "defenderHpAfter": 17137
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31192
+     }
+    ]
+   },
+   {
+    "roundIndex": 17,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 872,
+      "damageAfterMods": 436,
+      "absorbed": 370,
+      "finalDamage": 66,
+      "defenderHpAfter": 17071
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31192
+     }
+    ]
+   },
+   {
+    "roundIndex": 18,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 888,
+      "damageAfterMods": 888,
+      "absorbed": 403,
+      "finalDamage": 485,
+      "defenderHpAfter": 16586
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 774,
+      "damageAfterMods": 774,
+      "absorbed": 539,
+      "finalDamage": 235,
+      "defenderHpAfter": 30957
+     }
+    ]
+   },
+   {
+    "roundIndex": 19,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 886,
+      "damageAfterMods": 886,
+      "absorbed": 344,
+      "finalDamage": 542,
+      "defenderHpAfter": 16044
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 30957
+     }
+    ]
+   }
+  ],
+  "outcome": "defender_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pve-3": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 806,
+      "damageAfterMods": 806,
+      "absorbed": 376,
+      "finalDamage": 430,
+      "defenderHpAfter": 20995
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 770,
+      "damageAfterMods": 385,
+      "absorbed": 457,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20995
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20995
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20995
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 828,
+      "damageAfterMods": 828,
+      "absorbed": 525,
+      "finalDamage": 303,
+      "defenderHpAfter": 33947
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20995
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 813,
+      "damageAfterMods": 813,
+      "absorbed": 496,
+      "finalDamage": 317,
+      "defenderHpAfter": 33630
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20995
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33630
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20995
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 851,
+      "damageAfterMods": 851,
+      "absorbed": 375,
+      "finalDamage": 476,
+      "defenderHpAfter": 20519
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 799,
+      "damageAfterMods": 799,
+      "absorbed": 515,
+      "finalDamage": 284,
+      "defenderHpAfter": 33346
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20519
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 837,
+      "damageAfterMods": 837,
+      "absorbed": 516,
+      "finalDamage": 321,
+      "defenderHpAfter": 33025
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20519
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 852,
+      "damageAfterMods": 426,
+      "absorbed": 381,
+      "finalDamage": 45,
+      "defenderHpAfter": 20474
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 789,
+      "damageAfterMods": 789,
+      "absorbed": 488,
+      "finalDamage": 301,
+      "defenderHpAfter": 32724
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 893,
+      "damageAfterMods": 893,
+      "absorbed": 398,
+      "finalDamage": 495,
+      "defenderHpAfter": 19979
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 814,
+      "damageAfterMods": 814,
+      "absorbed": 387,
+      "finalDamage": 427,
+      "defenderHpAfter": 19552
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32724
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19552
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32724
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19552
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32724
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 858,
+      "damageAfterMods": 1716,
+      "absorbed": 381,
+      "finalDamage": 1335,
+      "defenderHpAfter": 18217
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32724
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32724
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 841,
+      "damageAfterMods": 420,
+      "absorbed": 390,
+      "finalDamage": 30,
+      "defenderHpAfter": 18187
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 839,
+      "damageAfterMods": 419,
+      "absorbed": 449,
+      "finalDamage": 0,
+      "defenderHpAfter": 32724
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18187
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32724
+     }
+    ]
+   },
+   {
+    "roundIndex": 15,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18187
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 757,
+      "damageAfterMods": 757,
+      "absorbed": 506,
+      "finalDamage": 251,
+      "defenderHpAfter": 32473
+     }
+    ]
+   },
+   {
+    "roundIndex": 16,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 893,
+      "damageAfterMods": 1786,
+      "absorbed": 354,
+      "finalDamage": 1432,
+      "defenderHpAfter": 16755
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 786,
+      "damageAfterMods": 393,
+      "absorbed": 516,
+      "finalDamage": 0,
+      "defenderHpAfter": 32473
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 819,
+      "damageAfterMods": 409,
+      "absorbed": 485,
+      "finalDamage": 0,
+      "defenderHpAfter": 32473
+     }
+    ]
+   },
+   {
+    "roundIndex": 17,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 16755
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 817,
+      "damageAfterMods": 1634,
+      "absorbed": 398,
+      "finalDamage": 1236,
+      "defenderHpAfter": 15519
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32473
+     }
+    ]
+   },
+   {
+    "roundIndex": 18,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 832,
+      "damageAfterMods": 416,
+      "absorbed": 349,
+      "finalDamage": 67,
+      "defenderHpAfter": 15452
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 746,
+      "damageAfterMods": 746,
+      "absorbed": 487,
+      "finalDamage": 259,
+      "defenderHpAfter": 32214
+     }
+    ]
+   },
+   {
+    "roundIndex": 19,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 15452
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 775,
+      "damageAfterMods": 387,
+      "absorbed": 525,
+      "finalDamage": 0,
+      "defenderHpAfter": 32214
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 780,
+      "damageAfterMods": 390,
+      "absorbed": 505,
+      "finalDamage": 0,
+      "defenderHpAfter": 32214
+     }
+    ]
+   }
+  ],
+  "outcome": "defender_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pve-42": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 851,
+      "damageAfterMods": 851,
+      "absorbed": 405,
+      "finalDamage": 446,
+      "defenderHpAfter": 20979
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 828,
+      "damageAfterMods": 414,
+      "absorbed": 468,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20979
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 789,
+      "damageAfterMods": 394,
+      "absorbed": 508,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 750,
+      "damageAfterMods": 1500,
+      "absorbed": 502,
+      "finalDamage": 998,
+      "defenderHpAfter": 33252
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 816,
+      "damageAfterMods": 816,
+      "absorbed": 401,
+      "finalDamage": 415,
+      "defenderHpAfter": 20564
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 748,
+      "damageAfterMods": 1496,
+      "absorbed": 508,
+      "finalDamage": 988,
+      "defenderHpAfter": 32264
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20564
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 815,
+      "damageAfterMods": 815,
+      "absorbed": 469,
+      "finalDamage": 346,
+      "defenderHpAfter": 31918
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 806,
+      "damageAfterMods": 806,
+      "absorbed": 392,
+      "finalDamage": 414,
+      "defenderHpAfter": 20150
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 834,
+      "damageAfterMods": 834,
+      "absorbed": 462,
+      "finalDamage": 372,
+      "defenderHpAfter": 31546
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 834,
+      "damageAfterMods": 834,
+      "absorbed": 408,
+      "finalDamage": 426,
+      "defenderHpAfter": 19724
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19724
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31546
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19724
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31546
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 897,
+      "damageAfterMods": 897,
+      "absorbed": 372,
+      "finalDamage": 525,
+      "defenderHpAfter": 19199
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 801,
+      "damageAfterMods": 801,
+      "absorbed": 478,
+      "finalDamage": 323,
+      "defenderHpAfter": 31223
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19199
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31223
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 852,
+      "damageAfterMods": 426,
+      "absorbed": 392,
+      "finalDamage": 34,
+      "defenderHpAfter": 19165
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31223
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 846,
+      "damageAfterMods": 423,
+      "absorbed": 413,
+      "finalDamage": 10,
+      "defenderHpAfter": 19155
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31223
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 839,
+      "damageAfterMods": 839,
+      "absorbed": 365,
+      "finalDamage": 474,
+      "defenderHpAfter": 18681
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31223
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 877,
+      "damageAfterMods": 438,
+      "absorbed": 405,
+      "finalDamage": 33,
+      "defenderHpAfter": 18648
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 815,
+      "damageAfterMods": 815,
+      "absorbed": 539,
+      "finalDamage": 276,
+      "defenderHpAfter": 30947
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18648
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 749,
+      "damageAfterMods": 749,
+      "absorbed": 478,
+      "finalDamage": 271,
+      "defenderHpAfter": 30676
+     }
+    ]
+   },
+   {
+    "roundIndex": 15,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 801,
+      "damageAfterMods": 801,
+      "absorbed": 383,
+      "finalDamage": 418,
+      "defenderHpAfter": 18230
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 761,
+      "damageAfterMods": 380,
+      "absorbed": 488,
+      "finalDamage": 0,
+      "defenderHpAfter": 30676
+     }
+    ]
+   },
+   {
+    "roundIndex": 16,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 866,
+      "damageAfterMods": 433,
+      "absorbed": 408,
+      "finalDamage": 25,
+      "defenderHpAfter": 18205
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 803,
+      "damageAfterMods": 803,
+      "absorbed": 472,
+      "finalDamage": 331,
+      "defenderHpAfter": 30345
+     }
+    ]
+   },
+   {
+    "roundIndex": 17,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 830,
+      "damageAfterMods": 415,
+      "absorbed": 352,
+      "finalDamage": 63,
+      "defenderHpAfter": 18142
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 756,
+      "damageAfterMods": 378,
+      "absorbed": 506,
+      "finalDamage": 0,
+      "defenderHpAfter": 30345
+     }
+    ]
+   },
+   {
+    "roundIndex": 18,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18142
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 30345
+     }
+    ]
+   },
+   {
+    "roundIndex": 19,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18142
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 827,
+      "damageAfterMods": 827,
+      "absorbed": 538,
+      "finalDamage": 289,
+      "defenderHpAfter": 30056
+     }
+    ]
+   }
+  ],
+  "outcome": "attacker_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pve-1337": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 817,
+      "damageAfterMods": 817,
+      "absorbed": 372,
+      "finalDamage": 445,
+      "defenderHpAfter": 20980
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20980
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 838,
+      "damageAfterMods": 838,
+      "absorbed": 382,
+      "finalDamage": 456,
+      "defenderHpAfter": 20524
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 819,
+      "damageAfterMods": 409,
+      "absorbed": 371,
+      "finalDamage": 38,
+      "defenderHpAfter": 20486
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 865,
+      "damageAfterMods": 865,
+      "absorbed": 355,
+      "finalDamage": 510,
+      "defenderHpAfter": 19976
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 798,
+      "damageAfterMods": 399,
+      "absorbed": 476,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 768,
+      "damageAfterMods": 768,
+      "absorbed": 478,
+      "finalDamage": 290,
+      "defenderHpAfter": 33960
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19976
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 826,
+      "damageAfterMods": 826,
+      "absorbed": 453,
+      "finalDamage": 373,
+      "defenderHpAfter": 33587
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 811,
+      "damageAfterMods": 811,
+      "absorbed": 364,
+      "finalDamage": 447,
+      "defenderHpAfter": 19529
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 760,
+      "damageAfterMods": 760,
+      "absorbed": 501,
+      "finalDamage": 259,
+      "defenderHpAfter": 33328
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19529
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 825,
+      "damageAfterMods": 412,
+      "absorbed": 361,
+      "finalDamage": 51,
+      "defenderHpAfter": 19478
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33328
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19478
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33328
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19478
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 782,
+      "damageAfterMods": 782,
+      "absorbed": 545,
+      "finalDamage": 237,
+      "defenderHpAfter": 33091
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19478
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 746,
+      "damageAfterMods": 746,
+      "absorbed": 539,
+      "finalDamage": 207,
+      "defenderHpAfter": 32884
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19478
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 791,
+      "damageAfterMods": 791,
+      "absorbed": 454,
+      "finalDamage": 337,
+      "defenderHpAfter": 32547
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 807,
+      "damageAfterMods": 807,
+      "absorbed": 485,
+      "finalDamage": 322,
+      "defenderHpAfter": 32225
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19478
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 809,
+      "damageAfterMods": 1618,
+      "absorbed": 454,
+      "finalDamage": 1164,
+      "defenderHpAfter": 31061
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 867,
+      "damageAfterMods": 867,
+      "absorbed": 352,
+      "finalDamage": 515,
+      "defenderHpAfter": 18963
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 818,
+      "damageAfterMods": 409,
+      "absorbed": 491,
+      "finalDamage": 0,
+      "defenderHpAfter": 31061
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 820,
+      "damageAfterMods": 820,
+      "absorbed": 407,
+      "finalDamage": 413,
+      "defenderHpAfter": 18550
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31061
+     }
+    ]
+   },
+   {
+    "roundIndex": 15,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 888,
+      "damageAfterMods": 444,
+      "absorbed": 346,
+      "finalDamage": 98,
+      "defenderHpAfter": 18452
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 772,
+      "damageAfterMods": 772,
+      "absorbed": 498,
+      "finalDamage": 274,
+      "defenderHpAfter": 30787
+     }
+    ]
+   },
+   {
+    "roundIndex": 16,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18452
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 821,
+      "damageAfterMods": 1642,
+      "absorbed": 478,
+      "finalDamage": 1164,
+      "defenderHpAfter": 29623
+     }
+    ]
+   },
+   {
+    "roundIndex": 17,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 820,
+      "damageAfterMods": 820,
+      "absorbed": 366,
+      "finalDamage": 454,
+      "defenderHpAfter": 17998
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 824,
+      "damageAfterMods": 412,
+      "absorbed": 461,
+      "finalDamage": 0,
+      "defenderHpAfter": 29623
+     }
+    ]
+   },
+   {
+    "roundIndex": 18,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 17998
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 29623
+     }
+    ]
+   },
+   {
+    "roundIndex": 19,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 17998
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 17998
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 29623
+     }
+    ]
+   }
+  ],
+  "outcome": "attacker_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pvp-1": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 795,
+      "damageAfterMods": 795,
+      "absorbed": 477,
+      "finalDamage": 318,
+      "defenderHpAfter": 33932
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 791,
+      "damageAfterMods": 791,
+      "absorbed": 473,
+      "finalDamage": 318,
+      "defenderHpAfter": 33614
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 874,
+      "damageAfterMods": 437,
+      "absorbed": 343,
+      "finalDamage": 94,
+      "defenderHpAfter": 21331
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21331
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 764,
+      "damageAfterMods": 764,
+      "absorbed": 524,
+      "finalDamage": 240,
+      "defenderHpAfter": 33374
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 818,
+      "damageAfterMods": 409,
+      "absorbed": 524,
+      "finalDamage": 0,
+      "defenderHpAfter": 33374
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 839,
+      "damageAfterMods": 419,
+      "absorbed": 395,
+      "finalDamage": 24,
+      "defenderHpAfter": 21307
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 803,
+      "damageAfterMods": 803,
+      "absorbed": 358,
+      "finalDamage": 445,
+      "defenderHpAfter": 20862
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33374
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33374
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33374
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 802,
+      "damageAfterMods": 401,
+      "absorbed": 406,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33374
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 756,
+      "damageAfterMods": 378,
+      "absorbed": 514,
+      "finalDamage": 0,
+      "defenderHpAfter": 33374
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 821,
+      "damageAfterMods": 410,
+      "absorbed": 465,
+      "finalDamage": 0,
+      "defenderHpAfter": 33374
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 756,
+      "damageAfterMods": 756,
+      "absorbed": 479,
+      "finalDamage": 277,
+      "defenderHpAfter": 33097
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 793,
+      "damageAfterMods": 396,
+      "absorbed": 528,
+      "finalDamage": 0,
+      "defenderHpAfter": 33097
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 762,
+      "damageAfterMods": 1524,
+      "absorbed": 481,
+      "finalDamage": 1043,
+      "defenderHpAfter": 32054
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20862
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32054
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 839,
+      "damageAfterMods": 419,
+      "absorbed": 407,
+      "finalDamage": 12,
+      "defenderHpAfter": 20850
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32054
+     }
+    ]
+   }
+  ],
+  "outcome": "attacker_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pvp-2": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 772,
+      "damageAfterMods": 772,
+      "absorbed": 512,
+      "finalDamage": 260,
+      "defenderHpAfter": 33990
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 876,
+      "damageAfterMods": 1752,
+      "absorbed": 355,
+      "finalDamage": 1397,
+      "defenderHpAfter": 20028
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33990
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20028
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 831,
+      "damageAfterMods": 831,
+      "absorbed": 468,
+      "finalDamage": 363,
+      "defenderHpAfter": 33627
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 861,
+      "damageAfterMods": 430,
+      "absorbed": 375,
+      "finalDamage": 55,
+      "defenderHpAfter": 19973
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 836,
+      "damageAfterMods": 418,
+      "absorbed": 547,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19973
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 800,
+      "damageAfterMods": 400,
+      "absorbed": 373,
+      "finalDamage": 27,
+      "defenderHpAfter": 19946
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 862,
+      "damageAfterMods": 862,
+      "absorbed": 411,
+      "finalDamage": 451,
+      "defenderHpAfter": 19495
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 777,
+      "damageAfterMods": 388,
+      "absorbed": 477,
+      "finalDamage": 0,
+      "defenderHpAfter": 33627
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19495
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 782,
+      "damageAfterMods": 782,
+      "absorbed": 547,
+      "finalDamage": 235,
+      "defenderHpAfter": 33392
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19495
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19495
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33392
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 863,
+      "damageAfterMods": 863,
+      "absorbed": 395,
+      "finalDamage": 468,
+      "defenderHpAfter": 19027
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33392
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33392
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33392
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19027
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 793,
+      "damageAfterMods": 1586,
+      "absorbed": 493,
+      "finalDamage": 1093,
+      "defenderHpAfter": 32299
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19027
+     }
+    ]
+   }
+  ],
+  "outcome": "defender_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pvp-3": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 788,
+      "damageAfterMods": 1576,
+      "absorbed": 497,
+      "finalDamage": 1079,
+      "defenderHpAfter": 33171
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 825,
+      "damageAfterMods": 412,
+      "absorbed": 346,
+      "finalDamage": 66,
+      "defenderHpAfter": 21359
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21359
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 810,
+      "damageAfterMods": 810,
+      "absorbed": 501,
+      "finalDamage": 309,
+      "defenderHpAfter": 32862
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 828,
+      "damageAfterMods": 828,
+      "absorbed": 525,
+      "finalDamage": 303,
+      "defenderHpAfter": 32559
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21359
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21359
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 846,
+      "damageAfterMods": 846,
+      "absorbed": 391,
+      "finalDamage": 455,
+      "defenderHpAfter": 20904
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32559
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 780,
+      "damageAfterMods": 780,
+      "absorbed": 490,
+      "finalDamage": 290,
+      "defenderHpAfter": 32269
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20904
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32269
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 867,
+      "damageAfterMods": 867,
+      "absorbed": 414,
+      "finalDamage": 453,
+      "defenderHpAfter": 20451
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32269
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20451
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 852,
+      "damageAfterMods": 426,
+      "absorbed": 381,
+      "finalDamage": 45,
+      "defenderHpAfter": 20406
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20406
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 32269
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 835,
+      "damageAfterMods": 835,
+      "absorbed": 525,
+      "finalDamage": 310,
+      "defenderHpAfter": 31959
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 814,
+      "damageAfterMods": 814,
+      "absorbed": 387,
+      "finalDamage": 427,
+      "defenderHpAfter": 19979
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31959
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19979
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 804,
+      "damageAfterMods": 402,
+      "absorbed": 508,
+      "finalDamage": 0,
+      "defenderHpAfter": 31959
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19979
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19979
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19979
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 785,
+      "damageAfterMods": 392,
+      "absorbed": 516,
+      "finalDamage": 0,
+      "defenderHpAfter": 31959
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19979
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 745,
+      "damageAfterMods": 1490,
+      "absorbed": 512,
+      "finalDamage": 978,
+      "defenderHpAfter": 30981
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 30981
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 811,
+      "damageAfterMods": 811,
+      "absorbed": 383,
+      "finalDamage": 428,
+      "defenderHpAfter": 19551
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19551
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 30981
+     }
+    ]
+   }
+  ],
+  "outcome": "attacker_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pvp-42": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 825,
+      "damageAfterMods": 412,
+      "absorbed": 501,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21425
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 886,
+      "damageAfterMods": 443,
+      "absorbed": 354,
+      "finalDamage": 89,
+      "defenderHpAfter": 21336
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 21336
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 801,
+      "damageAfterMods": 801,
+      "absorbed": 455,
+      "finalDamage": 346,
+      "defenderHpAfter": 33904
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33904
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 825,
+      "damageAfterMods": 825,
+      "absorbed": 480,
+      "finalDamage": 345,
+      "defenderHpAfter": 33559
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 802,
+      "damageAfterMods": 1604,
+      "absorbed": 385,
+      "finalDamage": 1219,
+      "defenderHpAfter": 20117
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 773,
+      "damageAfterMods": 773,
+      "absorbed": 499,
+      "finalDamage": 274,
+      "defenderHpAfter": 33285
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 828,
+      "damageAfterMods": 1656,
+      "absorbed": 391,
+      "finalDamage": 1265,
+      "defenderHpAfter": 18852
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 834,
+      "damageAfterMods": 834,
+      "absorbed": 462,
+      "finalDamage": 372,
+      "defenderHpAfter": 32913
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 834,
+      "damageAfterMods": 834,
+      "absorbed": 408,
+      "finalDamage": 426,
+      "defenderHpAfter": 18426
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18426
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 812,
+      "damageAfterMods": 1624,
+      "absorbed": 531,
+      "finalDamage": 1093,
+      "defenderHpAfter": 31820
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18426
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 799,
+      "damageAfterMods": 799,
+      "absorbed": 481,
+      "finalDamage": 318,
+      "defenderHpAfter": 31502
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 843,
+      "damageAfterMods": 843,
+      "absorbed": 415,
+      "finalDamage": 428,
+      "defenderHpAfter": 17998
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 17998
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 811,
+      "damageAfterMods": 811,
+      "absorbed": 539,
+      "finalDamage": 272,
+      "defenderHpAfter": 31230
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 17998
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31230
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31230
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 815,
+      "damageAfterMods": 407,
+      "absorbed": 355,
+      "finalDamage": 52,
+      "defenderHpAfter": 17946
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 820,
+      "damageAfterMods": 410,
+      "absorbed": 535,
+      "finalDamage": 0,
+      "defenderHpAfter": 31230
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 872,
+      "damageAfterMods": 872,
+      "absorbed": 409,
+      "finalDamage": 463,
+      "defenderHpAfter": 17483
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 762,
+      "damageAfterMods": 1524,
+      "absorbed": 519,
+      "finalDamage": 1005,
+      "defenderHpAfter": 30225
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 832,
+      "damageAfterMods": 832,
+      "absorbed": 415,
+      "finalDamage": 417,
+      "defenderHpAfter": 17066
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 761,
+      "damageAfterMods": 380,
+      "absorbed": 488,
+      "finalDamage": 0,
+      "defenderHpAfter": 30225
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 866,
+      "damageAfterMods": 433,
+      "absorbed": 408,
+      "finalDamage": 25,
+      "defenderHpAfter": 17041
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 17041
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 30225
+     }
+    ]
+   }
+  ],
+  "outcome": "defender_wins",
+  "outcomeReason": "rounds_exhausted"
+ },
+ "pvp-1337": {
+  "attacker": {
+   "name": "Attacker",
+   "level": 143,
+   "hp": 21425,
+   "maxHp": 21425,
+   "damageMin": 745,
+   "damageMax": 839,
+   "armour": 24978,
+   "armourAbsorbMin": 340,
+   "armourAbsorbMax": 415,
+   "strength": 1206,
+   "dexterity": 1594,
+   "agility": 1442,
+   "constitution": 692,
+   "charisma": 602,
+   "intelligence": 1236,
+   "critChance": 50,
+   "blockChance": 39,
+   "critAvoidChance": 25
+  },
+  "defender": {
+   "name": "Defender",
+   "level": 143,
+   "hp": 34250,
+   "maxHp": 34250,
+   "damageMin": 799,
+   "damageMax": 897,
+   "armour": 32986,
+   "armourAbsorbMin": 449,
+   "armourAbsorbMax": 548,
+   "strength": 1229,
+   "dexterity": 1229,
+   "agility": 1584,
+   "constitution": 1229,
+   "charisma": 1229,
+   "intelligence": 1229,
+   "critChance": 40,
+   "blockChance": 46,
+   "critAvoidChance": 25
+  },
+  "rounds": [
+   {
+    "roundIndex": 0,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 879,
+      "damageAfterMods": 879,
+      "absorbed": 368,
+      "finalDamage": 511,
+      "defenderHpAfter": 20914
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     }
+    ]
+   },
+   {
+    "roundIndex": 1,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 34250
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 838,
+      "damageAfterMods": 838,
+      "absorbed": 382,
+      "finalDamage": 456,
+      "defenderHpAfter": 20458
+     }
+    ]
+   },
+   {
+    "roundIndex": 2,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 763,
+      "damageAfterMods": 763,
+      "absorbed": 478,
+      "finalDamage": 285,
+      "defenderHpAfter": 33965
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 20458
+     }
+    ]
+   },
+   {
+    "roundIndex": 3,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 865,
+      "damageAfterMods": 865,
+      "absorbed": 355,
+      "finalDamage": 510,
+      "defenderHpAfter": 19948
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 798,
+      "damageAfterMods": 399,
+      "absorbed": 476,
+      "finalDamage": 0,
+      "defenderHpAfter": 33965
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 768,
+      "damageAfterMods": 768,
+      "absorbed": 478,
+      "finalDamage": 290,
+      "defenderHpAfter": 33675
+     }
+    ]
+   },
+   {
+    "roundIndex": 4,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 789,
+      "damageAfterMods": 789,
+      "absorbed": 517,
+      "finalDamage": 272,
+      "defenderHpAfter": 33403
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": true,
+      "damageRolled": 769,
+      "damageAfterMods": 769,
+      "absorbed": 474,
+      "finalDamage": 295,
+      "defenderHpAfter": 33108
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 821,
+      "damageAfterMods": 410,
+      "absorbed": 395,
+      "finalDamage": 15,
+      "defenderHpAfter": 19933
+     }
+    ]
+   },
+   {
+    "roundIndex": 5,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33108
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 816,
+      "damageAfterMods": 816,
+      "absorbed": 357,
+      "finalDamage": 459,
+      "defenderHpAfter": 19474
+     }
+    ]
+   },
+   {
+    "roundIndex": 6,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 33108
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19474
+     }
+    ]
+   },
+   {
+    "roundIndex": 7,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 19474
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 782,
+      "damageAfterMods": 782,
+      "absorbed": 545,
+      "finalDamage": 237,
+      "defenderHpAfter": 32871
+     }
+    ]
+   },
+   {
+    "roundIndex": 8,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": true,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 777,
+      "damageAfterMods": 777,
+      "absorbed": 512,
+      "finalDamage": 265,
+      "defenderHpAfter": 32606
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 859,
+      "damageAfterMods": 429,
+      "absorbed": 377,
+      "finalDamage": 52,
+      "defenderHpAfter": 19422
+     }
+    ]
+   },
+   {
+    "roundIndex": 9,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 747,
+      "damageAfterMods": 747,
+      "absorbed": 503,
+      "finalDamage": 244,
+      "defenderHpAfter": 32362
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 868,
+      "damageAfterMods": 868,
+      "absorbed": 391,
+      "finalDamage": 477,
+      "defenderHpAfter": 18945
+     }
+    ]
+   },
+   {
+    "roundIndex": 10,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 756,
+      "damageAfterMods": 756,
+      "absorbed": 509,
+      "finalDamage": 247,
+      "defenderHpAfter": 32115
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 867,
+      "damageAfterMods": 867,
+      "absorbed": 359,
+      "finalDamage": 508,
+      "defenderHpAfter": 18437
+     }
+    ]
+   },
+   {
+    "roundIndex": 11,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18437
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 787,
+      "damageAfterMods": 787,
+      "absorbed": 488,
+      "finalDamage": 299,
+      "defenderHpAfter": 31816
+     }
+    ]
+   },
+   {
+    "roundIndex": 12,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 888,
+      "damageAfterMods": 444,
+      "absorbed": 346,
+      "finalDamage": 98,
+      "defenderHpAfter": 18339
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 772,
+      "damageAfterMods": 772,
+      "absorbed": 498,
+      "finalDamage": 274,
+      "defenderHpAfter": 31542
+     }
+    ]
+   },
+   {
+    "roundIndex": 13,
+    "firstAttacker": "Attacker",
+    "strikes": [
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": true,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 747,
+      "damageAfterMods": 373,
+      "absorbed": 526,
+      "finalDamage": 0,
+      "defenderHpAfter": 31542
+     },
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 18339
+     }
+    ]
+   },
+   {
+    "roundIndex": 14,
+    "firstAttacker": "Defender",
+    "strikes": [
+     {
+      "attacker": "Defender",
+      "attackerSide": "defender",
+      "defender": "Attacker",
+      "result": "hit",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 862,
+      "damageAfterMods": 862,
+      "absorbed": 361,
+      "finalDamage": 501,
+      "defenderHpAfter": 17838
+     },
+     {
+      "attacker": "Attacker",
+      "attackerSide": "attacker",
+      "defender": "Defender",
+      "result": "miss",
+      "isCrit": false,
+      "isBlocked": false,
+      "isSecondHalfOfDoubleHit": false,
+      "damageRolled": 0,
+      "damageAfterMods": 0,
+      "absorbed": 0,
+      "finalDamage": 0,
+      "defenderHpAfter": 31542
+     }
+    ]
+   }
+  ],
+  "outcome": "defender_wins",
+  "outcomeReason": "rounds_exhausted"
+ }
+}

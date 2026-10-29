@@ -12,7 +12,7 @@ import {
   critChanceFromAttackValue,
   blockChanceFromBlockValue,
   critAvoidChanceFromResilience,
-  armourAbsorptionRange,
+  armourAbsorption,
 } from '@site/src/services/combat/chanceFormulas';
 import { getTrainingCap } from '@site/src/utils/trainingCap';
 
@@ -20,14 +20,14 @@ import { getTrainingCap } from '@site/src/utils/trainingCap';
  * Compress and encode string for URL
  * Uses LZ compression to dramatically reduce URL size
  */
-function compressForUrl(str: string): string {
+export function compressForUrl(str: string): string {
   return LZString.compressToEncodedURIComponent(str);
 }
 
 /**
  * Decompress string from URL (LZ compression)
  */
-function decompressFromUrl(str: string): string | null {
+export function decompressFromUrl(str: string): string | null {
   try {
     return LZString.decompressFromEncodedURIComponent(str);
   } catch (error) {
@@ -44,7 +44,7 @@ const RARITIES: ItemRarity[] = ['common', 'green', 'blue', 'purple', 'orange', '
  * Stores only the names of base item, prefix, suffix, and upgrades — the full
  * objects are looked up from the static data files on decode.
  */
-function serializeEquippedItem(item: EquippedItem): Record<string, unknown> {
+export function serializeEquippedItem(item: EquippedItem): Record<string, unknown> {
   const compact: Record<string, unknown> = {
     n: item.baseItem.name,
     r: RARITIES.indexOf(item.rarity),
@@ -63,7 +63,7 @@ function serializeEquippedItem(item: EquippedItem): Record<string, unknown> {
  * Deserialize a compact item back into a full EquippedItem by looking up names
  * in the static data files. Returns null if the base item cannot be found.
  */
-function deserializeEquippedItem(compact: Record<string, any>): EquippedItem | null {
+export function deserializeEquippedItem(compact: Record<string, any>): EquippedItem | null {
   const baseItem = (basesData as BaseItem[]).find(b => b.name === compact.n);
   if (!baseItem) return null;
 
@@ -240,6 +240,8 @@ export interface CharacterStats {
   blockingFromStrength: number;
   blockingFromItems: number;
   totalThreat: number;
+  /** Healing per heal: floor(Intelligence × 0.8) plus Healing from items */
+  totalHealing: number;
   threatFromCharisma: number;
   threatFromItems: number;
   totalCriticalAttack: number;
@@ -275,6 +277,8 @@ export interface CharacterStats {
   finalConstitution: number;
   finalCharisma: number;
   finalIntelligence: number;
+  /** The highest each attribute can reach through items (base + half base + level, plus pact bonuses) */
+  attributeMaximums: Record<'strength' | 'dexterity' | 'agility' | 'constitution' | 'charisma' | 'intelligence', number>;
 }
 
 export interface CharacterState {
@@ -288,6 +292,8 @@ export interface CharacterState {
   setItem: (slot: ItemSlotType, item: EquippedItem | null) => void;
   removeItem: (slot: ItemSlotType) => void;
   clearAll: () => void;
+  /** Back to a new level 1 character: starting stats, no items, no pacts */
+  resetCharacter: () => void;
   characterStats: CharacterStats;
   loadFromUrl: () => void;
   importProfile: (level: number, stats: BaseStats, items: Map<ItemSlotType, EquippedItem>, identity: CharacterIdentity, pacts?: Set<PactId>) => void;
@@ -314,6 +320,28 @@ function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
 }
 
 /**
+ * Threat each point of Charisma gives (floored). Exact for 7 of 9 accounts in sample/turma-profiles.json
+ * (e.g. Charisma 1298 -> 908, 3417 -> 2391). The two accounts wearing costume 15 get 0.71 instead, along with
+ * ~1.4% more healing: an account-wide effect we haven't identified (Missing Data page). Healers lose this part.
+ */
+export const THREAT_PER_CHARISMA = 0.7;
+
+/** Healing each point of Intelligence gives (floored), for every role. Exact on 38 of 54 sampled dolls; see THREAT_PER_CHARISMA. */
+const HEALING_PER_INTELLIGENCE = 0.8;
+
+const ATTRIBUTE_BY_STAT_NAME: Record<string, keyof BaseStats> = {
+  Strength: 'strength',
+  Dexterity: 'dexterity',
+  Agility: 'agility',
+  Constitution: 'constitution',
+  Charisma: 'charisma',
+  Intelligence: 'intelligence',
+};
+
+/** An attribute pact raises the cap to exactly twice the base plus level, so it adds the other half rounded up. */
+const pactCapBonus = (base: number) => Math.ceil(base / 2);
+
+/**
  * Calculate total character stats from equipped items, base stats, level and active pacts.
  * Exported so CompactBuildDisplay can reuse the exact same logic.
  *
@@ -335,6 +363,9 @@ export function calculateCharacterStats(
   let enchantDamageBonus = 0;
   let enchantArmorBonus = 0;
   const combinedStats = new Map<string, { flat: number; percent: number }>();
+  const percentBonusFromItems: Record<keyof BaseStats, number> = {
+    strength: 0, dexterity: 0, agility: 0, constitution: 0, charisma: 0, intelligence: 0,
+  };
 
   equippedItems.forEach((equippedItem, slot) => {
     let itemStats = itemStatsCache?.get(equippedItem);
@@ -396,6 +427,11 @@ export function calculateCharacterStats(
     itemStats.stats.forEach(stat => {
       const existing = combinedStats.get(stat.name) || { flat: 0, percent: 0 };
       combinedStats.set(stat.name, { flat: existing.flat + stat.flat, percent: existing.percent + stat.percent });
+      // The game rounds each item's percentage of the base attribute on its own, then adds them up
+      const attribute = ATTRIBUTE_BY_STAT_NAME[stat.name];
+      if (attribute && stat.percent !== 0) {
+        percentBonusFromItems[attribute] += Math.round(baseStats[attribute] * (stat.percent / 100));
+      }
     });
   });
 
@@ -403,13 +439,13 @@ export function calculateCharacterStats(
   const armorFromEnchants = enchantArmorBonus;
   totalArmor += enchantArmorBonus;
 
-  const { min: minDamageAbsorbed, max: maxDamageAbsorbed } = armourAbsorptionRange(totalArmor);
+  const { min: minDamageAbsorbed, max: maxDamageAbsorbed } = armourAbsorption(totalArmor);
 
   const agilityStat = combinedStats.get('Agility') || { flat: 0, percent: 0 };
-  const agilityPercentBonus = Math.round(baseStats.agility * (agilityStat.percent / 100));
+  const agilityPercentBonus = percentBonusFromItems.agility;
   const uncappedAgility = baseStats.agility + agilityStat.flat + agilityPercentBonus;
   const maxAgility = baseStats.agility + Math.floor(baseStats.agility / 2) + characterLevel;
-  const agilityPactBonus = activePacts.has('sk_assassins') ? Math.floor(baseStats.agility / 2) : 0;
+  const agilityPactBonus = activePacts.has('sk_assassins') ? pactCapBonus(baseStats.agility) : 0;
   const finalAgility = Math.min(uncappedAgility, maxAgility + agilityPactBonus);
 
   const hardeningValueStat = combinedStats.get('hardening value') || { flat: 0, percent: 0 };
@@ -420,10 +456,10 @@ export function calculateCharacterStats(
   const critAvoidanceChance = critAvoidChanceFromResilience(totalResilience, characterLevel);
 
   const strengthStat = combinedStats.get('Strength') || { flat: 0, percent: 0 };
-  const strengthPercentBonus = Math.round(baseStats.strength * (strengthStat.percent / 100));
+  const strengthPercentBonus = percentBonusFromItems.strength;
   const uncappedStrength = baseStats.strength + strengthStat.flat + strengthPercentBonus;
   const maxStrength = baseStats.strength + Math.floor(baseStats.strength / 2) + characterLevel;
-  const strengthPactBonus = activePacts.has('honour_hero') ? Math.floor(baseStats.strength / 2) : 0;
+  const strengthPactBonus = activePacts.has('honour_hero') ? pactCapBonus(baseStats.strength) : 0;
   const finalStrength = Math.min(uncappedStrength, maxStrength + strengthPactBonus);
 
   const blockValueStat = combinedStats.get('Block value') || { flat: 0, percent: 0 };
@@ -434,10 +470,10 @@ export function calculateCharacterStats(
   const blockChance = blockChanceFromBlockValue(totalBlocking, characterLevel);
 
   const dexterityStat = combinedStats.get('Dexterity') || { flat: 0, percent: 0 };
-  const dexterityPercentBonus = Math.round(baseStats.dexterity * (dexterityStat.percent / 100));
+  const dexterityPercentBonus = percentBonusFromItems.dexterity;
   const uncappedDexterity = baseStats.dexterity + dexterityStat.flat + dexterityPercentBonus;
   const maxDexterity = baseStats.dexterity + Math.floor(baseStats.dexterity / 2) + characterLevel;
-  const dexterityPactBonus = activePacts.has('honour_armourer') ? Math.floor(baseStats.dexterity / 2) : 0;
+  const dexterityPactBonus = activePacts.has('honour_armourer') ? pactCapBonus(baseStats.dexterity) : 0;
   const finalDexterity = Math.min(uncappedDexterity, maxDexterity + dexterityPactBonus);
 
   const criticalAttackValueStat = combinedStats.get('Critical attack value') || { flat: 0, percent: 0 };
@@ -451,32 +487,35 @@ export function calculateCharacterStats(
   const chanceToHit = Math.floor((finalDexterity / (finalDexterity + maxAgility)) * 100);
 
   const charismaStat = combinedStats.get('Charisma') || { flat: 0, percent: 0 };
-  const charismaPercentBonus = Math.round(baseStats.charisma * (charismaStat.percent / 100));
+  const charismaPercentBonus = percentBonusFromItems.charisma;
   const uncappedCharisma = baseStats.charisma + charismaStat.flat + charismaPercentBonus;
   const maxCharisma = baseStats.charisma + Math.floor(baseStats.charisma / 2) + characterLevel;
-  const charismaPactBonus = activePacts.has('blessing_venus') ? Math.floor(baseStats.charisma / 2) : 0;
+  const charismaPactBonus = activePacts.has('blessing_venus') ? pactCapBonus(baseStats.charisma) : 0;
   const finalCharisma = Math.min(uncappedCharisma, maxCharisma + charismaPactBonus);
 
   const threatStat = combinedStats.get('Threat') || { flat: 0, percent: 0 };
-  const threatFromCharisma = Math.floor(finalCharisma / 10);
+  const threatFromCharisma = Math.floor(finalCharisma * THREAT_PER_CHARISMA);
   const threatFromItems = threatStat.flat;
   const totalThreat = threatFromCharisma + threatFromItems;
 
   const intelligenceStat = combinedStats.get('Intelligence') || { flat: 0, percent: 0 };
-  const intelligencePercentBonus = Math.round(baseStats.intelligence * (intelligenceStat.percent / 100));
+  const intelligencePercentBonus = percentBonusFromItems.intelligence;
   const uncappedIntelligence = baseStats.intelligence + intelligenceStat.flat + intelligencePercentBonus;
   const maxIntelligence = baseStats.intelligence + Math.floor(baseStats.intelligence / 2) + characterLevel;
   const finalIntelligence = Math.min(uncappedIntelligence, maxIntelligence);
+
+  const healingStat = combinedStats.get('Healing') || { flat: 0, percent: 0 };
+  const totalHealing = Math.floor(finalIntelligence * HEALING_PER_INTELLIGENCE) + healingStat.flat;
 
   const chanceToDoubleHit = (finalCharisma * finalDexterity * 10) / (maxIntelligence * maxAgility);
 
   const strengthDamage = Math.floor(finalStrength * 0.1);
 
   const constitutionStat = combinedStats.get('Constitution') || { flat: 0, percent: 0 };
-  const constitutionPercentBonus = Math.round(baseStats.constitution * (constitutionStat.percent / 100));
+  const constitutionPercentBonus = percentBonusFromItems.constitution;
   const uncappedConstitution = baseStats.constitution + constitutionStat.flat + constitutionPercentBonus;
   const maxConstitution = baseStats.constitution + Math.floor(baseStats.constitution / 2) + characterLevel;
-  const constitutionPactBonus = activePacts.has('sk_immortals') ? Math.floor(baseStats.constitution / 2) : 0;
+  const constitutionPactBonus = activePacts.has('sk_immortals') ? pactCapBonus(baseStats.constitution) : 0;
   const finalConstitution = Math.min(uncappedConstitution, maxConstitution + constitutionPactBonus);
 
   const healthFromLevel = characterLevel * 25;
@@ -499,16 +538,23 @@ export function calculateCharacterStats(
     totalDamageMax += berserkerBonus;
   }
 
-  // suppress unused-var lint for maxConstitution (used transitively)
-  void maxConstitution;
+  const attributeMaximums = {
+    strength: maxStrength + strengthPactBonus,
+    dexterity: maxDexterity + dexterityPactBonus,
+    agility: maxAgility + agilityPactBonus,
+    constitution: maxConstitution + constitutionPactBonus,
+    charisma: maxCharisma + charismaPactBonus,
+    intelligence: maxIntelligence,
+  };
 
   return {
     finalStrength, finalDexterity, finalAgility, finalConstitution, finalCharisma, finalIntelligence,
+    attributeMaximums,
     totalArmor, armorFromItems, armorFromEnchants,
     minDamageAbsorbed, maxDamageAbsorbed,
     totalResilience, maxResilience, critAvoidanceChance, resilienceFromAgility, resilienceFromItems,
     totalBlocking, maxBlocking, blockChance, blockingFromStrength, blockingFromItems,
-    totalThreat, threatFromCharisma, threatFromItems,
+    totalThreat, threatFromCharisma, threatFromItems, totalHealing,
     totalCriticalAttack, maxCriticalAttack, criticalHitChance, criticalAttackFromDexterity, criticalAttackFromItems,
     chanceToHit, chanceToDoubleHit,
     totalDamageMin, totalDamageMax,
@@ -545,22 +591,26 @@ function generateRandomRomanName(): string {
  * Custom hook to manage character planner state
  * Handles equipped items, stat calculations, and URL sharing
  */
+const STARTING_BASE_STATS: BaseStats = {
+  strength: 5,
+  dexterity: 5,
+  agility: 5,
+  constitution: 5,
+  charisma: 5,
+  intelligence: 5,
+};
+
+const newCharacterIdentity = (): CharacterIdentity => ({
+  name: generateRandomRomanName(),
+  title: undefined,
+  gender: 'male',
+});
+
 export function useCharacterState(): CharacterState {
   const [equippedItems, setEquippedItems] = useState<Map<ItemSlotType, EquippedItem>>(new Map());
   const [characterLevel, setCharacterLevel] = useState<number>(1);
-  const [characterIdentity, setCharacterIdentity] = useState<CharacterIdentity>(() => ({
-    name: generateRandomRomanName(),
-    title: undefined,
-    gender: 'male',
-  }));
-  const [baseStats, setBaseStatsState] = useState<BaseStats>({
-    strength: 5,
-    dexterity: 5,
-    agility: 5,
-    constitution: 5,
-    charisma: 5,
-    intelligence: 5,
-  });
+  const [characterIdentity, setCharacterIdentity] = useState<CharacterIdentity>(newCharacterIdentity);
+  const [baseStats, setBaseStatsState] = useState<BaseStats>(STARTING_BASE_STATS);
   const isInitialMount = useRef(true);
   const [activePacts, setActivePacts] = useState<Set<PactId>>(new Set());
 
@@ -709,6 +759,14 @@ export function useCharacterState(): CharacterState {
     setEquippedItems(new Map());
   };
 
+  const resetCharacter = () => {
+    setEquippedItems(new Map());
+    setCharacterLevel(1);
+    setBaseStatsState(STARTING_BASE_STATS);
+    setCharacterIdentity(newCharacterIdentity());
+    setActivePacts(new Set());
+  };
+
   /**
    * Update base stats (partial update supported)
    */
@@ -783,6 +841,7 @@ export function useCharacterState(): CharacterState {
     setItem,
     removeItem,
     clearAll,
+    resetCharacter,
     characterStats,
     loadFromUrl,
     importProfile,

@@ -9,6 +9,7 @@ import {
 import { characterToCombatant } from '@site/src/services/combat/characterToCombatant';
 import { simulateOdds, oddsToPercentages } from '@site/src/services/combat/simulateOdds';
 import type { Combatant } from '@site/src/services/combat/types';
+import { chanceToHit } from '@site/src/services/combat/chanceFormulas';
 import type {
   Enemy,
   ExpeditionsData,
@@ -22,7 +23,6 @@ import {
   ExpeditionBonusesCell,
   type BonusId,
 } from '@site/src/components/ExpeditionBonuses/ExpeditionBonuses';
-import { chanceToHit } from '@site/src/services/combat/chanceFormulas';
 import styles from '@site/src/css/ExpeditionSimulator.module.css';
 
 const data = expeditionsData as ExpeditionsData;

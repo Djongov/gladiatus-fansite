@@ -6,12 +6,14 @@ import Item from '../Item';
 export interface ItemSlotProps {
   readonly slotName: string;
   readonly item: EquippedItem | null;
-  readonly onClick: () => void;
+  /** Absent for read-only dolls (e.g. the /character profile): the slot is then not interactive. */
+  readonly onClick?: () => void;
   readonly onRemove?: () => void;
   readonly position: { top: number; left: number };
   readonly size?: 'small' | 'normal' | 'tall';
   readonly characterLevel?: number;
   readonly characterBaseStats?: BaseStats;
+  readonly showLevelBadge?: boolean;
 }
 
 /**
@@ -26,7 +28,8 @@ export default function ItemSlot({
   position, 
   size = 'normal',
   characterLevel,
-  characterBaseStats 
+  characterBaseStats,
+  showLevelBadge,
 }: ItemSlotProps) {
   let sizeClass = '';
   if (size === 'small') {
@@ -35,17 +38,23 @@ export default function ItemSlot({
     sizeClass = styles.tallSlot;
   }
   
+  const interactiveProps = onClick
+    ? {
+        onClick,
+        onKeyDown: (e: React.KeyboardEvent) => e.key === 'Enter' && onClick(),
+        tabIndex: 0,
+      }
+    : {};
+
   return (
-    <div 
-      className={`${styles.itemSlot} ${sizeClass}`}
+    <div
+      className={`${styles.itemSlot} ${sizeClass} ${onClick ? '' : styles.readOnly}`}
       style={{ top: `${position.top}px`, left: `${position.left}px` }}
       title={slotName}
     >
-      <div 
-        className={styles.slotContainer} 
-        onClick={onClick}
-        onKeyDown={(e) => e.key === 'Enter' && onClick()}
-        tabIndex={0}
+      <div
+        className={styles.slotContainer}
+        {...interactiveProps}
       >
         {item ? (
           <div className={styles.equippedItem}>
@@ -59,11 +68,12 @@ export default function ItemSlot({
               upgrades={item.upgrades}
               characterLevel={characterLevel}
               characterBaseStats={characterBaseStats}
+              showLevelBadge={showLevelBadge}
             />
           </div>
         ) : (
           <div className={styles.emptySlot}>
-            <span className={styles.slotIcon}>+</span>
+            {onClick && <span className={styles.slotIcon}>+</span>}
           </div>
         )}
       </div>

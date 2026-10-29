@@ -9,6 +9,15 @@
   display: inline-block;
 }
 
+/* An item with an Underworld prefix or suffix: the game's red outline (box-shadow), thickened by
+   the drop-shadows the Gladiatus Crazy Addon's item shadow lays over it, as players see it live */
+.underworld {
+  box-shadow: red 0 0 3px 2px;
+  filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.4)) drop-shadow(1px -1px 1px rgba(255, 0, 0, 0.4))
+    drop-shadow(-1px -1px 1px rgba(255, 0, 0, 0.4)) drop-shadow(-1px 1px 1px rgba(255, 0, 0, 0.4));
+  border-radius: 5px;
+}
+
 .tooltip {
   display: none;
   position: absolute;
@@ -28,6 +37,20 @@
 
 .wrapper:hover .tooltip {
   display: block;
+}
+
+/* Optional item level in the icon's top-left corner, coloured by rarity (combine with a rarity class) */
+.levelBadge {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 1;
+  pointer-events: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .title {

@@ -4,6 +4,9 @@ import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import SearchableSelect from './SearchableSelect/SearchableSelect';
+import { affixOptions } from './SearchableSelect/affixOptions';
+import type { PrefixSuffix } from './Item';
 
 interface ItemShowcaseProps {
   baseItem?: string; // Individual item name
@@ -30,128 +33,6 @@ const rarityNames: Record<ItemRarity, string> = {
   purple: 'Purple',
   orange: 'Orange',
   red: 'Red',
-};
-
-// Simple searchable select component
-const SearchableSelect = ({ options, value, onChange, placeholder, label }: {
-  options: Array<{ value: string; label: string }>;
-  value: string;
-  onChange: (value: string) => void;
-  placeholder: string;
-  label: string;
-}) => {
-  const [search, setSearch] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
-  
-  const filteredOptions = options.filter(opt => 
-    opt.label.toLowerCase().includes(search.toLowerCase())
-  );
-  
-  const selectedOption = options.find(opt => opt.value === value);
-  
-  return (
-    <div style={{ position: 'relative', marginBottom: '10px' }}>
-      <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>{label}</label>
-      <div>
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          onFocus={() => setIsOpen(true)}
-          placeholder={selectedOption ? selectedOption.label : placeholder}
-          style={{ 
-            padding: '8px', 
-            minWidth: '200px',
-            width: '100%',
-            border: '1px solid var(--ifm-color-emphasis-300)',
-            borderRadius: '4px',
-            backgroundColor: 'var(--ifm-background-color)',
-            color: 'var(--ifm-font-color-base)'
-          }}
-        />
-        {value && (
-          <button
-            onClick={() => {
-              onChange('');
-              setSearch('');
-            }}
-            style={{
-              position: 'absolute',
-              right: '5px',
-              top: '33px',
-              border: 'none',
-              background: 'transparent',
-              cursor: 'pointer',
-              fontSize: '18px',
-              fontWeight: 'bold',
-              color: 'var(--ifm-font-color-base)'
-            }}
-          >
-            ×
-          </button>
-        )}
-      </div>
-      {isOpen && (
-        <>
-          <div
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              zIndex: 1
-            }}
-            onClick={() => setIsOpen(false)}
-          />
-          <div
-            style={{
-              position: 'absolute',
-              top: '100%',
-              left: 0,
-              right: 0,
-              maxHeight: '300px',
-              overflowY: 'auto',
-              backgroundColor: 'var(--ifm-background-color)',
-              border: '1px solid var(--ifm-color-emphasis-300)',
-              borderRadius: '4px',
-              zIndex: 2,
-              boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
-            }}
-          >
-            {filteredOptions.map(opt => (
-              <div
-                key={opt.value + opt.label}
-                onClick={() => {
-                  onChange(opt.value);
-                  setSearch('');
-                  setIsOpen(false);
-                }}
-                style={{
-                  padding: '8px 12px',
-                  cursor: 'pointer',
-                  backgroundColor: 'transparent'
-                }}
-                onMouseEnter={(e) => {
-                  (e.target as HTMLElement).style.backgroundColor = 'var(--ifm-color-emphasis-200)';
-                }}
-                onMouseLeave={(e) => {
-                  (e.target as HTMLElement).style.backgroundColor = 'transparent';
-                }}
-              >
-                {opt.label}
-              </div>
-            ))}
-            {filteredOptions.length === 0 && (
-              <div style={{ padding: '8px 12px', color: 'var(--ifm-color-emphasis-600)' }}>
-                No results found
-              </div>
-            )}
-          </div>
-        </>
-      )}
-    </div>
-  );
 };
 
 /**
@@ -239,15 +120,9 @@ export default function ItemShowcase({
   }
   
   // Prepare prefix/suffix options
-  const prefixOptions = [
-    { value: '', label: 'None' },
-    ...prefixesData.map(p => ({ value: p.name, label: `${p.name} (${p.level})` }))
-  ];
+  const prefixOptions = affixOptions(prefixesData as PrefixSuffix[]);
   
-  const suffixOptions = [
-    { value: '', label: 'None' },
-    ...suffixesData.map(s => ({ value: s.name, label: `${s.name} (${s.level})` }))
-  ];
+  const suffixOptions = affixOptions(suffixesData as PrefixSuffix[]);
   
   const prefix = prefixesData.find(p => p.name === selectedPrefix);
   const suffix = suffixesData.find(s => s.name === selectedSuffix);

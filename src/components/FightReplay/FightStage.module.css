@@ -1,0 +1,196 @@
+/* The report's VS block as a fight replay. Every animation's length is divided by
+   --fight-speed (1, 2 or 4), set on .stage. */
+.stage {
+  --fight-speed: 1;
+  margin-bottom: 16px;
+}
+
+.arena {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.fighter {
+  /* Width matches the .player_name_bg nameplate (172px) so the image and the badge line up */
+  width: 172px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.centre {
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  white-space: nowrap;
+  color: #4a3818;
+}
+
+.portraitArea {
+  position: relative;
+  margin: 8px auto 0;
+  width: 168px;
+  height: 194px;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1a1a1a;
+  border: 1px solid #8E753F;
+  transition: filter 0.6s;
+}
+
+/* A fighter with no life left */
+.defeated {
+  filter: grayscale(1);
+}
+
+/* ----- The attacker's lunge toward the opponent ----- */
+.lungeRight {
+  animation: lungeRight calc(0.6s / var(--fight-speed)) ease-in-out;
+}
+
+.lungeLeft {
+  animation: lungeLeft calc(0.6s / var(--fight-speed)) ease-in-out;
+}
+
+@keyframes lungeRight {
+  40% { transform: translateX(38%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes lungeLeft {
+  40% { transform: translateX(-38%); }
+  100% { transform: translateX(0); }
+}
+
+/* ----- The target's recoil, after the blow lands ----- */
+.rock {
+  animation: rock calc(0.45s / var(--fight-speed)) ease-in-out calc(0.2s / var(--fight-speed));
+}
+
+.rockHard {
+  animation: rockHard calc(0.55s / var(--fight-speed)) ease-in-out calc(0.2s / var(--fight-speed));
+}
+
+@keyframes rock {
+  25% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(6deg) translateX(3px); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: none; }
+}
+
+@keyframes rockHard {
+  20% { transform: rotate(-10deg) translateX(-8px); }
+  45% { transform: rotate(10deg) translateX(8px); }
+  70% { transform: rotate(-5deg) translateX(-4px); }
+  100% { transform: none; }
+}
+
+/* ----- Floating text over the target ----- */
+.caption {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  text-shadow: 0 0 3px #000, 0 0 6px #000;
+  opacity: 0;
+  pointer-events: none;
+  animation: floatUp calc(1s / var(--fight-speed)) ease-out calc(0.2s / var(--fight-speed)) forwards;
+}
+
+@keyframes floatUp {
+  0% { opacity: 0; transform: translateY(0); }
+  15% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-64px); }
+}
+
+.captionSmall {
+  font-size: 17px;
+}
+
+.captionDamage {
+  color: #ff4a3d;
+}
+
+.captionCrit {
+  color: #ff9f1a;
+  font-size: 28px;
+}
+
+.captionBlocked {
+  color: #c9c9c9;
+}
+
+.captionMiss {
+  color: #b5b5b5;
+}
+
+/* ----- Life ----- */
+.lifeTrack {
+  height: 8px;
+  margin-top: 6px;
+  border: 1px solid #8E753F;
+  background: #3a2a14;
+}
+
+.lifeFill {
+  height: 100%;
+  background: linear-gradient(to bottom, #d23a2a, #8a1a10);
+  transition: width calc(0.4s / var(--fight-speed)) ease-out;
+}
+
+.lifeText {
+  font-size: 12px;
+  font-weight: 700;
+  color: #540400;
+}
+
+/* ----- Controls ----- */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.speeds {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.speedActive {
+  filter: brightness(0.8);
+  font-weight: 700;
+}
+
+.autoPlay {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+/* No lunges, recoils or floating numbers; the life bars and the round still change */
+@media (prefers-reduced-motion: reduce) {
+  .portrait,
+  .lifeFill {
+    /* Comes after the lunge/recoil rules, so it wins at the same specificity */
+    animation: none;
+    transition: none;
+  }
+
+  .caption {
+    display: none;
+  }
+}

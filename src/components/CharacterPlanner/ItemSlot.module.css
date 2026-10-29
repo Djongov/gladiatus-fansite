@@ -6,6 +6,11 @@
   transition: transform 0.2s;
 }
 
+/* Read-only dolls (profile page): hover still shows the item tooltip */
+.readOnly {
+  cursor: default;
+}
+
 /* Small slots for amulet and rings */
 .smallSlot {
   width: 29px;
