@@ -11,15 +11,15 @@ sidebar_class_name: hidden
 
 Hey friends, I am happy to announce that the website has a 10 year anniversary and for it, it will get a complete makeover. It will move from a Joomla 3.10 CMS to the great static site generator - Docusaurus. On top of that, It will go on Github and will be public
 
-![News Announcements](https://gladiatusfansite.blob.core.windows.net/images/announcement_imperator.png "News Announcements")
-
 ## Latest Gladiatus News
+
+![News Announcements](https://gladiatusfansite.blob.core.windows.net/images/announcement_imperator.png "News Announcements")
 
 None right now
 
-![Events](https://gladiatusfansite.blob.core.windows.net/images/Events/Micro_Events/Micro_event.gif "Events")
-
 ## Events – November 2026
+
+![Events](https://gladiatusfansite.blob.core.windows.net/images/Events/Micro_Events/Micro_event.gif "Events")
 
 ### 02.11.2026 0:00:00 - 04.11.2026 23:59:59
 
