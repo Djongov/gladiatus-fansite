@@ -1,4 +1,5 @@
 import type { Combatant, StrikeEvent, RoundEvent, BattleLog } from './types';
+import { chanceToDoubleHit, chanceToHit } from './chanceFormulas';
 
 export type SimulationOptions = {
   maxRounds?: number;          // default 20 (PVE)
@@ -13,15 +14,6 @@ function rollInt(random: () => number, min: number, max: number): number {
   return Math.floor(random() * (max - min + 1)) + min;
 }
 
-function chanceToHit(attackerDex: number, defenderAgi: number): number {
-  if (attackerDex + defenderAgi <= 0) return 0;
-  return Math.floor((attackerDex / (attackerDex + defenderAgi)) * 100);
-}
-
-function chanceToDoubleHit(attackerCha: number, attackerDex: number, defenderInt: number, defenderAgi: number): number {
-  if (defenderInt <= 0 || defenderAgi <= 0) return 0;
-  return (attackerCha * attackerDex * 10) / (defenderInt * defenderAgi);
-}
 
 function strike(
   attacker: Combatant,
@@ -148,14 +140,9 @@ export function simulateBattle(
   if (!earlyKo) {
     // Rounds exhausted with both sides alive: whoever dealt more total
     // damage wins (user-confirmed live rule, applies to PVE and PVP alike).
-    let attackerDealt = 0;
-    let defenderDealt = 0;
-    for (const round of rounds) {
-      for (const s of round.strikes) {
-        if (s.attacker === A.name) attackerDealt += s.finalDamage;
-        else defenderDealt += s.finalDamage;
-      }
-    }
+    // Measured as life points lost, so fighters with the same name are told apart.
+    const attackerDealt = D.maxHp - D.hp;
+    const defenderDealt = A.maxHp - A.hp;
     if (attackerDealt > defenderDealt) outcome = 'attacker_wins';
     else if (defenderDealt > attackerDealt) outcome = 'defender_wins';
     else outcome = 'draw';

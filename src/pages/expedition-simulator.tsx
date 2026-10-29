@@ -22,6 +22,7 @@ import {
   ExpeditionBonusesCell,
   type BonusId,
 } from '@site/src/components/ExpeditionBonuses/ExpeditionBonuses';
+import { chanceToHit } from '@site/src/services/combat/chanceFormulas';
 import styles from '@site/src/css/ExpeditionSimulator.module.css';
 
 const data = expeditionsData as ExpeditionsData;
@@ -38,11 +39,6 @@ function lossColor(pct: number): string {
   // 0% loss → green, 100% loss → red (inverted)
   const hue = (100 - pct) * 1.2;
   return `hsl(${hue}, 65%, 42%)`;
-}
-
-function chanceToHit(attackerDex: number, defenderAgi: number): number {
-  if (attackerDex + defenderAgi <= 0) return 0;
-  return Math.floor((attackerDex / (attackerDex + defenderAgi)) * 100);
 }
 
 export default function ExpeditionSimulatorPage(): React.ReactElement {

@@ -1,5 +1,6 @@
 import React from 'react';
 import type { BattleLog, Combatant, StrikeEvent } from '@site/src/services/combat/types';
+import { chanceToDoubleHit, chanceToHit } from '@site/src/services/combat/chanceFormulas';
 import styles from './BattleReport.module.css';
 
 export type Rewards = { gold: number; experience: number; honour: number };
@@ -24,15 +25,6 @@ function resolveImage(image: string | undefined): string | null {
   return `${CDN_PREFIX}${image}`;
 }
 
-function chanceToHit(attackerDex: number, defenderAgi: number): number {
-  if (attackerDex + defenderAgi <= 0) return 0;
-  return Math.floor((attackerDex / (attackerDex + defenderAgi)) * 100);
-}
-
-function chanceToDoubleHit(attackerCha: number, attackerDex: number, defenderInt: number, defenderAgi: number): number {
-  if (defenderInt <= 0 || defenderAgi <= 0) return 0;
-  return Math.round((attackerCha * attackerDex * 10) / (defenderInt * defenderAgi));
-}
 
 function headerClass(log: BattleLog): string {
   if (log.outcome === 'attacker_wins') return styles.headerWin;
@@ -88,7 +80,7 @@ type PanelProps = {
 
 function StatsPanel({ self, opponent, mirrored = false }: PanelProps) {
   const hit = chanceToHit(self.dexterity, opponent.agility);
-  const dbl = chanceToDoubleHit(self.charisma, self.dexterity, opponent.intelligence, opponent.agility);
+  const dbl = Math.round(chanceToDoubleHit(self.charisma, self.dexterity, opponent.intelligence, opponent.agility));
 
   const rowClass = `${styles.statRow}${mirrored ? ' ' + styles.statRowMirror : ''}`;
 

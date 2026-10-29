@@ -1,6 +1,8 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import LZString from 'lz-string';
 import { BaseItem, PrefixSuffix, ItemRarity, calculateItemStats } from '../Item';
+
+type ItemStatsResult = ReturnType<typeof calculateItemStats>;
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
@@ -10,6 +12,7 @@ import {
   critChanceFromAttackValue,
   blockChanceFromBlockValue,
   critAvoidChanceFromResilience,
+  armourAbsorptionRange,
 } from '@site/src/services/combat/chanceFormulas';
 import { getTrainingCap } from '@site/src/utils/trainingCap';
 
@@ -313,12 +316,16 @@ function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
 /**
  * Calculate total character stats from equipped items, base stats, level and active pacts.
  * Exported so CompactBuildDisplay can reuse the exact same logic.
+ *
+ * `itemStatsCache` lets hot loops (e.g. the Item Simulator) reuse per-item
+ * results across calls; it is only safe when EquippedItem objects are not mutated.
  */
 export function calculateCharacterStats(
   equippedItems: Map<ItemSlotType, EquippedItem>,
   characterLevel: number,
   baseStats: BaseStats,
-  activePacts: Set<PactId>
+  activePacts: Set<PactId>,
+  itemStatsCache?: WeakMap<EquippedItem, ItemStatsResult>,
 ): CharacterStats {
   let totalArmor = 0;
   let totalDamageMin = 0;
@@ -330,13 +337,17 @@ export function calculateCharacterStats(
   const combinedStats = new Map<string, { flat: number; percent: number }>();
 
   equippedItems.forEach((equippedItem, slot) => {
-    const itemStats = calculateItemStats(
-      equippedItem.baseItem,
-      equippedItem.rarity,
-      equippedItem.conditioned,
-      equippedItem.prefix,
-      equippedItem.suffix
-    );
+    let itemStats = itemStatsCache?.get(equippedItem);
+    if (!itemStats) {
+      itemStats = calculateItemStats(
+        equippedItem.baseItem,
+        equippedItem.rarity,
+        equippedItem.conditioned,
+        equippedItem.prefix,
+        equippedItem.suffix
+      );
+      itemStatsCache?.set(equippedItem, itemStats);
+    }
 
     if (itemStats.armour) {
       totalArmor += itemStats.armour;
@@ -392,9 +403,7 @@ export function calculateCharacterStats(
   const armorFromEnchants = enchantArmorBonus;
   totalArmor += enchantArmorBonus;
 
-  const minAbsorption = Math.ceil((totalArmor / 74) - (totalArmor / 74) / 660 + 1);
-  const minDamageAbsorbed = Math.max(0, minAbsorption);
-  const maxDamageAbsorbed = Math.max(minDamageAbsorbed, Math.floor((totalArmor / 66) + (totalArmor / 660)));
+  const { min: minDamageAbsorbed, max: maxDamageAbsorbed } = armourAbsorptionRange(totalArmor);
 
   const agilityStat = combinedStats.get('Agility') || { flat: 0, percent: 0 };
   const agilityPercentBonus = Math.round(baseStats.agility * (agilityStat.percent / 100));

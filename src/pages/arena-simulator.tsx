@@ -14,6 +14,7 @@ import {
 import type { PactId } from '@site/src/components/CharacterPlanner/PactDefinitions';
 import { characterToCombatant } from '@site/src/services/combat/characterToCombatant';
 import { simulateOddsPvP, oddsToPercentages } from '@site/src/services/combat/simulateOdds';
+import { chanceToHit } from '@site/src/services/combat/chanceFormulas';
 import type { Combatant } from '@site/src/services/combat/types';
 import AttackModal from '@site/src/components/AttackModal/AttackModal';
 import CharacterPortrait from '@site/src/components/CharacterPortrait/CharacterPortrait';
@@ -26,10 +27,6 @@ function winColor(pct: number): string {
 function lossColor(pct: number): string {
   const hue = (100 - pct) * 1.2;
   return `hsl(${hue}, 65%, 42%)`;
-}
-function chanceToHit(attackerDex: number, defenderAgi: number): number {
-  if (attackerDex + defenderAgi <= 0) return 0;
-  return Math.floor((attackerDex / (attackerDex + defenderAgi)) * 100);
 }
 
 function CharacterPanel({

@@ -7,18 +7,55 @@ import ImportProfile from "../CharacterPlanner/ImportProfile";
 import PactSelector, { ActivePactsBar } from "../CharacterPlanner/PactSelector";
 import StatsDisplay from "../CharacterPlanner/StatsDisplay";
 import {
+  calculateCharacterStats,
   encodeCharacterState,
   useCharacterState,
+  type EquippedItem,
+  type ItemSlotType,
 } from "../CharacterPlanner/useCharacterState";
 import type { ItemRarity } from "../Item";
+import {
+  fightStatsFromCharacterStats,
+  withReportedTotals,
+} from "@site/src/services/combat/characterToCombatant";
+import type { FightStats } from "@site/src/services/combat/expectedOutcome";
+import { simulateOddsPvP } from "@site/src/services/combat/simulateOdds";
+import type { Combatant } from "@site/src/services/combat/types";
 import styles from "./ItemSimulator.module.css";
 import {
   getDefaultArmourEnchantValue,
   getDefaultWeaponEnchantValue,
   runSimulation,
   SimulationWeights,
-  StatToggles,
+  PowderToggles,
 } from "./simulationEngine";
+
+// Fights used to verify a build's arena win chance with the real battle engine
+const VERIFICATION_FIGHTS = 2000;
+
+interface ArenaOpponent {
+  name: string;
+  level: number;
+  fightStats: FightStats;
+  /** True when the fight stats come from the game's profile totals (includes buffs). */
+  usesProfileTotals: boolean;
+}
+
+interface ArenaVerdict {
+  opponentName: string;
+  optimisedWinChance: number;
+  profileGearWinChance?: number;
+}
+
+/** Arena win chance (0..1) from simulateOddsPvP, counting draws as half a win. */
+function verifiedWinChance(attacker: FightStats, opponent: FightStats): number {
+  const asCombatant = (fight: FightStats, name: string): Combatant =>
+    ({ ...fight, name, level: 0, hp: fight.maxHp, armour: 0, strength: 0, constitution: 0 });
+  const odds = simulateOddsPvP(asCombatant(attacker, "attacker"), asCombatant(opponent, "defender"), VERIFICATION_FIGHTS);
+  return (odds.wins + odds.draws / 2) / odds.ran;
+}
+
+const formatPercent = (chance: number) => `${(chance * 100).toFixed(1)}%`;
 
 const DEFAULT_WEIGHTS: SimulationWeights = {
   critDamage: 25,
@@ -35,22 +72,22 @@ const WEIGHT_CONFIG: {
   {
     key: "critDamage",
     label: "Critical Damage",
-    desc: "Maximises critical hit chance via critical attack value and Dexterity",
+    desc: "Critical hit chance (critical attack value and Dexterity)",
   },
   {
     key: "block",
     label: "Block",
-    desc: "Maximises block chance via block value and Strength",
+    desc: "Block chance (block value and Strength)",
   },
   {
     key: "damage",
     label: "Damage",
-    desc: "Maximises total damage output including weapon and flat damage",
+    desc: "Average damage, hit chance (Dexterity) and double hits (Charisma)",
   },
   {
     key: "armor",
     label: "Armour",
-    desc: "Maximises armour, resilience, and health",
+    desc: "Armour, crit avoidance (resilience), dodge (Agility) and Intelligence",
   },
 ];
 
@@ -79,7 +116,7 @@ export default function ItemSimulator() {
   } = useCharacterState();
 
   const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_WEIGHTS);
-  const [statToggles, setStatToggles] = useState<StatToggles>({
+  const [powders, setPowders] = useState<PowderToggles>({
     dexterity: true,
     agility: true,
     strength: true,
@@ -88,6 +125,12 @@ export default function ItemSimulator() {
   const [evaluationRarity, setEvaluationRarity] = useState<ItemRarity>("red");
   const [isSimulating, setIsSimulating] = useState(false);
   const [notification, setNotification] = useState("");
+  const [opponent, setOpponent] = useState<ArenaOpponent | null>(null);
+  // Gear from the imported own profile, kept only to compare it with the optimised build
+  const [profileGear, setProfileGear] = useState<Map<ItemSlotType, EquippedItem> | null>(null);
+  const [arenaVerdict, setArenaVerdict] = useState<ArenaVerdict | null>(null);
+  // Overrides the wear limit, e.g. for Circus Turma (no wear limit): null means use the wear limit
+  const [maxItemLevelOverride, setMaxItemLevelOverride] = useState<number | null>(null);
 
   const usableItemLevel = maxUsableItemLevel(characterLevel);
 
@@ -107,16 +150,20 @@ export default function ItemSimulator() {
     );
   }, [characterLevel, evaluationRarity]);
 
-  useEffect(() => {
+  // Only a manual level change resets base stats to fully trained (level × 5).
+  // Doing this in an effect would overwrite stats from an imported profile or a shared URL.
+  const handleLevelChange = (level: number) => {
+    setCharacterLevel(level);
+    const fullyTrained = level * 5;
     setBaseStats({
-      strength: characterLevel * 5,
-      dexterity: characterLevel * 5,
-      agility: characterLevel * 5,
-      constitution: characterLevel * 5,
-      charisma: characterLevel * 5,
-      intelligence: characterLevel * 5,
+      strength: fullyTrained,
+      dexterity: fullyTrained,
+      agility: fullyTrained,
+      constitution: fullyTrained,
+      charisma: fullyTrained,
+      intelligence: fullyTrained,
     });
-  }, [characterLevel]);
+  };
 
   const showNotification = (msg: string) => {
     setNotification(msg);
@@ -135,16 +182,31 @@ export default function ItemSimulator() {
     // Yield to React so the loading state renders before the synchronous computation
     setTimeout(() => {
       try {
-        const result = runSimulation(
+        const result = runSimulation({
           characterLevel,
           baseStats,
           activePacts,
           weights,
-          statToggles,
+          powders,
           evaluationRarity,
-          weaponEnchant,
-          armourEnchant,
-        );
+          weaponEnchantValue: weaponEnchant,
+          armourEnchantValue: armourEnchant,
+          opponent: opponent?.fightStats,
+          maxItemLevel: maxItemLevelOverride ?? undefined,
+        });
+        if (opponent) {
+          const fightStatsFor = (items: Map<ItemSlotType, EquippedItem>) =>
+            fightStatsFromCharacterStats(calculateCharacterStats(items, characterLevel, baseStats, activePacts));
+          setArenaVerdict({
+            opponentName: opponent.name,
+            optimisedWinChance: verifiedWinChance(fightStatsFor(result.build), opponent.fightStats),
+            profileGearWinChance: profileGear && profileGear.size > 0
+              ? verifiedWinChance(fightStatsFor(profileGear), opponent.fightStats)
+              : undefined,
+          });
+        } else {
+          setArenaVerdict(null);
+        }
         importProfile(
           characterLevel,
           baseStats,
@@ -167,10 +229,13 @@ export default function ItemSimulator() {
     baseStats,
     activePacts,
     weights,
-    statToggles,
+    powders,
     evaluationRarity,
     weaponEnchant,
     armourEnchant,
+    opponent,
+    maxItemLevelOverride,
+    profileGear,
     characterIdentity,
     importProfile,
   ]);
@@ -186,8 +251,6 @@ export default function ItemSimulator() {
       );
     }
   };
-
-  const minConsideredItemLevel = Math.max(1, characterLevel - 30);
 
   const hasResults = equippedItems.size > 0;
 
@@ -221,11 +284,65 @@ export default function ItemSimulator() {
       {/* Profile import */}
       <div className={styles.importSection}>
         <ImportProfile
-          onImport={(level, stats, _items, identity, pacts) => {
-            // Import character attributes but discard profile items — simulation will find new ones
+          onImport={(level, stats, items, identity, pacts) => {
+            // Import character attributes but not the gear — the simulation finds new gear.
+            // The gear is kept aside so an arena run can compare it with the optimised build.
             importProfile(level, stats, new Map(), identity, pacts);
+            setProfileGear(items);
+            setArenaVerdict(null);
           }}
         />
+      </div>
+
+      {/* Optional arena opponent */}
+      <div className={styles.setupCard}>
+        <h3 className={styles.cardTitle}>Arena Opponent (optional)</h3>
+        {opponent ? (
+          <>
+            <p className={styles.sectionDesc}>
+              Optimising for arena win chance against{" "}
+              <strong>{opponent.name}</strong> (level {opponent.level}):{" "}
+              {opponent.fightStats.maxHp.toLocaleString()} life points, damage{" "}
+              {opponent.fightStats.damageMin}–{opponent.fightStats.damageMax},
+              crit {Math.round(opponent.fightStats.critChance)}%, block{" "}
+              {Math.round(opponent.fightStats.blockChance)}%.
+              {opponent.usesProfileTotals
+                ? " Uses the totals shown on their profile, including buffs."
+                : " Uses planner-calculated stats from their gear."}
+            </p>
+            <button
+              className={styles.clearButton}
+              onClick={() => {
+                setOpponent(null);
+                setArenaVerdict(null);
+              }}
+            >
+              Remove opponent
+            </button>
+          </>
+        ) : (
+          <>
+            <p className={styles.sectionDesc}>
+              Import the profile of a player you want to beat. The simulation
+              then optimises your arena win chance against them directly, and
+              the stat priorities below are not used.
+            </p>
+            <ImportProfile
+              onImport={(level, stats, items, identity, pacts, _url, reportedTotals) => {
+                const planned = fightStatsFromCharacterStats(
+                  calculateCharacterStats(items, level, stats, pacts ?? new Set()),
+                );
+                setOpponent({
+                  name: identity.name,
+                  level,
+                  fightStats: reportedTotals ? withReportedTotals(planned, reportedTotals) : planned,
+                  usesProfileTotals: !!reportedTotals,
+                });
+                setArenaVerdict(null);
+              }}
+            />
+          </>
+        )}
       </div>
 
       {/* Character setup */}
@@ -244,13 +361,34 @@ export default function ItemSimulator() {
               value={characterLevel}
               onChange={(e) => {
                 const v = Number.parseInt(e.target.value, 10);
-                if (v >= 1 && v <= 1000) setCharacterLevel(v);
+                if (v >= 1 && v <= 1000) handleLevelChange(v);
               }}
               className={styles.levelInput}
             />
             <span className={styles.levelHint}>
-              Searching items level <strong>{minConsideredItemLevel}</strong>–
-              <strong>{usableItemLevel}</strong>
+              Searching items up to level{" "}
+              <strong>{maxItemLevelOverride ?? usableItemLevel}</strong>
+            </span>
+          </div>
+          <div className={styles.levelRow}>
+            <label htmlFor="sim-max-item-level" className={styles.levelLabel}>
+              Max item level:
+            </label>
+            <input
+              id="sim-max-item-level"
+              type="number"
+              min="1"
+              max="1000"
+              value={maxItemLevelOverride ?? usableItemLevel}
+              onChange={(e) => {
+                const v = Number.parseInt(e.target.value, 10);
+                if (v >= 1 && v <= 1000) setMaxItemLevelOverride(v === usableItemLevel ? null : v);
+              }}
+              className={styles.levelInput}
+            />
+            <span className={styles.levelHint}>
+              Defaults to your wear limit. Circus Turma has no wear limit — set
+              this to the highest item level you can actually get.
             </span>
           </div>
 
@@ -281,10 +419,9 @@ export default function ItemSimulator() {
       <div className={styles.weightsSection}>
         <h3 className={styles.sectionTitle}>Stat Priorities</h3>
         <p className={styles.sectionDesc}>
-          Set the importance (0–100) of each combat objective. The simulation
-          weighs items relative to these values. Agility, Dexterity,
-          Constitution, and Strength from items are already factored through the
-          combat stats above.
+          {opponent
+            ? "Not used while an arena opponent is set — the build is optimised for win chance against them."
+            : "Set the importance (0–100) of each combat objective. Each stat's value is calibrated from arena fight simulations, so equal priorities aim for the best arena win chance against an equal opponent."}
         </p>
 
         {WEIGHT_CONFIG.map(({ key, label, desc }) => {
@@ -303,6 +440,7 @@ export default function ItemSimulator() {
                   type="range"
                   min="0"
                   max="100"
+                  disabled={!!opponent}
                   value={weights[key]}
                   onChange={(e) =>
                     handleWeightChange(key, Number.parseInt(e.target.value, 10))
@@ -322,22 +460,23 @@ export default function ItemSimulator() {
           );
         })}
 
-        {/* Stat-efficiency toggles */}
+        {/* Powders the simulation may put on rings and the amulet */}
         <div className={styles.statToggleRow}>
+          <span>Powders to try on jewellery:</span>
           {(
             [
-              { key: "dexterity", label: "Dexterity ×1.0" },
-              { key: "agility", label: "Agility ×0.8" },
-              { key: "strength", label: "Strength ×0.5" },
-              { key: "intelligence", label: "Intelligence ×0.5" },
-            ] as { key: keyof StatToggles; label: string }[]
+              { key: "dexterity", label: "Dexterity" },
+              { key: "agility", label: "Agility" },
+              { key: "strength", label: "Strength" },
+              { key: "intelligence", label: "Intelligence" },
+            ] as { key: keyof PowderToggles; label: string }[]
           ).map(({ key, label }) => (
             <label key={key} className={styles.statToggle}>
               <input
                 type="checkbox"
-                checked={statToggles[key]}
+                checked={powders[key]}
                 onChange={(e) =>
-                  setStatToggles((prev) => ({
+                  setPowders((prev) => ({
                     ...prev,
                     [key]: e.target.checked,
                   }))
@@ -441,6 +580,16 @@ export default function ItemSimulator() {
       {hasResults && (
         <div className={styles.results}>
           <h3 className={styles.sectionTitle}>Optimal Build</h3>
+
+          {arenaVerdict && (
+            <p className={styles.sectionDesc}>
+              Arena win chance against <strong>{arenaVerdict.opponentName}</strong>:{" "}
+              <strong>{formatPercent(arenaVerdict.optimisedWinChance)}</strong>
+              {arenaVerdict.profileGearWinChance !== undefined &&
+                ` (your imported gear: ${formatPercent(arenaVerdict.profileGearWinChance)})`}
+              {` — verified with ${VERIFICATION_FIGHTS.toLocaleString()} simulated fights.`}
+            </p>
+          )}
 
           <ActivePactsBar
             activePacts={activePacts}

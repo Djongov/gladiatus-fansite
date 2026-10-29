@@ -10,12 +10,30 @@ import upgradesData from '@site/static/data/items/upgrades.json';
 const PRIMARY_API_URL = 'https://gladiatus-player-parser.gladiatus.workers.dev';
 const FALLBACK_API_URL = 'https://gladiatus-api.gamerz-bg.com/api/fetch-player';
 
+/**
+ * Totals exactly as the game's profile page shows them. They include effects the
+ * planner cannot see from items alone (buffs, guild bonuses, events…).
+ */
+export interface ReportedTotals {
+  maxHp: number;
+  damageMin: number;
+  damageMax: number;
+  armour: number;
+  strength: number;
+  dexterity: number;
+  agility: number;
+  constitution: number;
+  charisma: number;
+  intelligence: number;
+}
+
 export interface ImportedProfile {
   level: number;
   baseStats: BaseStats;
   items: Map<ItemSlotType, EquippedItem>;
   identity: CharacterIdentity;
   pacts?: Set<PactId>;
+  reportedTotals?: ReportedTotals;
 }
 
 interface ApiResponse {
@@ -267,6 +285,23 @@ function mapApiItem(apiItem: ApiItem): EquippedItem | null {
   };
 }
 
+function mapReportedTotals(data: ApiResponse): ReportedTotals | undefined {
+  const totals = {
+    maxHp: data.max_life_points,
+    damageMin: data.damage_min,
+    damageMax: data.damage_max,
+    armour: data.armour,
+    strength: data.strength_max,
+    dexterity: data.dexterity_max,
+    agility: data.agility_max,
+    constitution: data.constitution_max,
+    charisma: data.charisma_max,
+    intelligence: data.intelligence_max,
+  };
+  // Older parser responses omit some totals; only report a complete set
+  return Object.values(totals).every(value => typeof value === 'number') ? totals as ReportedTotals : undefined;
+}
+
 /** Fetches a Gladiatus profile through the parser APIs and maps it to planner state. */
 export async function fetchCharacterProfile(profileUrl: string): Promise<ImportedProfile> {
   const response = await requestProfile(profileUrl.trim());
@@ -314,6 +349,7 @@ export async function fetchCharacterProfile(profileUrl: string): Promise<Importe
     items,
     identity,
     pacts: data.pacts ? mapPacts(data.pacts) : undefined,
+    reportedTotals: mapReportedTotals(data),
   };
 }
 

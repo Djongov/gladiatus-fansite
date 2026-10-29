@@ -9,15 +9,18 @@ import ItemSimulator from '@site/src/components/ItemSimulator/ItemSimulator';
 # Optimal Build Simulation
 
 Automatically find the optimal item combination for your character by setting the importance of each combat stat.
-The simulator searches all valid items in your level range and runs a greedy multi-pass optimisation across all 9 equipment slots.
+The simulator searches all valid items in your level range and optimises all 9 equipment slots together: each slot is re-fitted against the rest of the build, then pairs and groups of slots are re-fitted jointly so stats can be moved between slots once they hit their caps.
 
 **How it works:**
 
 1. Enter your character level and base training stats (or import them via your profile link).
-2. Set stat priorities — how much you care about Critical Damage, Block, Damage, and Armour.
-3. Choose the rarity at which to evaluate items.
-4. Click **Find Optimal Build** and see the recommended gear with full stat breakdowns.
+2. Optionally import an **arena opponent**. The simulator then maximises your arena win chance against that player and reports it, verified with simulated fights from the [Arena Simulator](/arena-simulator)'s battle engine.
+3. Otherwise, set stat priorities — how much you care about Critical Damage, Block, Damage, and Armour. Each stat's value comes from arena fight simulations, so equal priorities aim for the best arena win chance against an equal opponent.
+4. Choose the rarity at which to evaluate items.
+5. Click **Find Optimal Build** and see the recommended gear with full stat breakdowns.
 
-> The result is a greedy optimum — it may not be the global optimum for all possible combinations, but it converges quickly and gives strong practical results.
+> Arena fights last 15 rounds and between similar players almost never end early, so the winner is usually whoever dealt more damage. That is why life points barely affect the arena result while crit chance, crit avoidance (resilience), block and damage matter most.
+
+> The result is a strong local optimum — checking every possible combination is not feasible, so it is not guaranteed to be the global optimum, but the same inputs always give the same build.
 
 <ItemSimulator />
