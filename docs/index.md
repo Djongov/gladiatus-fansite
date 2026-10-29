@@ -17,6 +17,65 @@ Hey friends, I am happy to announce that the website has a 10 year anniversary a
 
 None right now
 
+![Events](https://gladiatusfansite.blob.core.windows.net/images/Events/Micro_Events/Micro_event.gif "Events")
+
+## Events – November 2026
+
+### 02.11.2026 0:00:00 - 04.11.2026 23:59:59
+
+- 100% dungeon XP
+- 200% arena XP
+- 50% expedition XP
+- 50% more dungeon points
+- 50% more expedition points
+
+### 06.11.2026 0:00:00 - 07.11.2026 23:59:59
+
+- -25% training costs
+
+### 09.11.2026 0:00:00 - 11.11.2026 23:59:59
+
+- No durability loss
+- 20% gold loot on expeditions
+- 20% gold loot in dungeons
+
+### 13.11.2026 0:00:00 - 14.11.2026 23:59:59
+
+- 30% gold loot on expeditions
+- 50% expedition XP
+- 10% chance of finding an item
+
+### 16.11.2026 0:00:00 - 18.11.2026 23:59:59
+
+- 20% chance of a resource / scroll
+
+### 20.11.2026 0:00:00 - 21.11.2026 23:59:59
+
+- 50% more dungeon points
+- 50% more expedition points
+- 50% faster regeneration of expedition points
+- -50% cooldown for quests
+- 10% chance of finding ruby on expedition
+
+### 23.11.2026 0:00:00 - 25.11.2026 23:59:59
+
+- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
+- 25% more expedition points
+- 25% faster regeneration of expedition points
+- -35% guild expansion cost
+
+### 27.11.2026 0:00:00 - 28.11.2026 23:59:59
+
+- -50% Forging time (and smelting)
+- 15% forging success
+
+### 29.11.2026 0:00:00 - 30.11.2026 23:59:59
+
+- 25% forging success
+- -10% forge duration
+- 10% chance of a resource / scroll
+- 30% chance of finding an item
+
 ## Events – October 2026
 
 ### 02.10.2026 0:00:00 - 03.10.2026 23:59:59
