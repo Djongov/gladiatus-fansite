@@ -1,8 +1,6 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import LZString from 'lz-string';
 import { BaseItem, PrefixSuffix, ItemRarity, calculateItemStats } from '../Item';
-
-type ItemStatsResult = ReturnType<typeof calculateItemStats>;
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
@@ -15,6 +13,8 @@ import {
   armourAbsorption,
 } from '@site/src/services/combat/chanceFormulas';
 import { getTrainingCap } from '@site/src/utils/trainingCap';
+
+type ItemStatsResult = ReturnType<typeof calculateItemStats>;
 
 /**
  * Compress and encode string for URL

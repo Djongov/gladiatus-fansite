@@ -64,6 +64,14 @@ export interface SimulationWeights {
   armor: number;
 }
 
+/** Equal priorities — the score then tracks arena win chance against an equal opponent. */
+export const DEFAULT_SIMULATION_WEIGHTS: SimulationWeights = {
+  critDamage: 25,
+  block: 25,
+  damage: 25,
+  armor: 25,
+};
+
 /** Which stat powders may be applied to rings and the amulet. */
 export interface PowderToggles {
   dexterity: boolean;
@@ -193,18 +201,19 @@ function itemLevelOf(base: BaseItem, prefix?: PrefixSuffix, suffix?: PrefixSuffi
   return base.level + (prefix?.level ?? 0) + (suffix?.level ?? 0);
 }
 
-export function runSimulation({
-  characterLevel,
-  baseStats,
-  activePacts,
-  weights,
-  powders,
-  evaluationRarity = 'red',
-  weaponEnchantValue,
-  armourEnchantValue,
-  opponent,
-  maxItemLevel,
-}: SimulationInput): SimulationResult {
+export function runSimulation(input: SimulationInput): SimulationResult {
+  const {
+    characterLevel,
+    baseStats,
+    activePacts,
+    weights,
+    powders,
+    evaluationRarity = 'red',
+    weaponEnchantValue,
+    armourEnchantValue,
+    opponent,
+    maxItemLevel,
+  } = input;
   // Against a known opponent, rank builds by the fight's z-score: monotonic in
   // win chance but it keeps separating builds when the chance is near 0 or 1
   const scoreStats = (stats: CharacterStats): number => opponent
@@ -256,7 +265,13 @@ export function runSimulation({
     return item;
   };
 
-  let currentBuild = new Map<ItemSlotType, EquippedItem>();
+  // Against an opponent, start from the balanced priority build rather than an empty one.
+  // Chances such as crit are worthless until they pass the opponent's avoidance, so
+  // one-slot changes from an empty build cannot reach them; and since every step
+  // below only accepts improvements, the result never scores worse than this seed.
+  let currentBuild = opponent
+    ? new Map(runSimulation({ ...input, opponent: undefined, weights: DEFAULT_SIMULATION_WEIGHTS }).build)
+    : new Map<ItemSlotType, EquippedItem>();
   // Candidate items are never mutated, so their per-item stats can be reused across evaluations
   const itemStatsCache: Parameters<typeof calculateCharacterStats>[4] = new WeakMap();
   const statsOf = (build: Map<ItemSlotType, EquippedItem>) =>

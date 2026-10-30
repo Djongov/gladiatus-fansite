@@ -27,6 +27,7 @@ import { simulateOddsPvP } from "@site/src/services/combat/simulateOdds";
 import type { Combatant } from "@site/src/services/combat/types";
 import styles from "./ItemSimulator.module.css";
 import {
+  DEFAULT_SIMULATION_WEIGHTS,
   getDefaultArmourEnchantValue,
   getDefaultWeaponEnchantValue,
   runSimulation,
@@ -60,13 +61,6 @@ function verifiedWinChance(attacker: FightStats, opponent: FightStats): number {
 }
 
 const formatPercent = (chance: number) => `${(chance * 100).toFixed(1)}%`;
-
-const DEFAULT_WEIGHTS: SimulationWeights = {
-  critDamage: 25,
-  block: 25,
-  damage: 25,
-  armor: 25,
-};
 
 const WEIGHT_CONFIG: {
   key: keyof SimulationWeights;
@@ -126,7 +120,7 @@ export default function ItemSimulator() {
     { withItems: false },
   );
 
-  const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_WEIGHTS);
+  const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_SIMULATION_WEIGHTS);
   const [powders, setPowders] = useState<PowderToggles>({
     dexterity: true,
     agility: true,
