@@ -25,15 +25,19 @@ export function chanceToHit(attackerDexterity: number, targetAgility: number): n
   return Math.floor((attackerDexterity / (attackerDexterity + targetAgility)) * 100);
 }
 
-/** Chance (unrounded %) of a second swing in the same action. */
+/**
+ * Chance (unrounded %) of a second swing in the same action; may exceed 100.
+ * Lower target Intelligence/Agility means more double hits, so values below 1
+ * (possible with heavy negative-% affixes) are treated as 1, never as "no double hits".
+ */
 export function chanceToDoubleHit(
   attackerCharisma: number,
   attackerDexterity: number,
   targetIntelligence: number,
   targetAgility: number,
 ): number {
-  if (targetIntelligence <= 0 || targetAgility <= 0) return 0;
-  return (attackerCharisma * attackerDexterity * 10) / (targetIntelligence * targetAgility);
+  return (Math.max(0, attackerCharisma) * Math.max(0, attackerDexterity) * 10) /
+    (Math.max(1, targetIntelligence) * Math.max(1, targetAgility));
 }
 
 /**

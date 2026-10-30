@@ -1,2 +1,2 @@
 export { default } from './ItemSimulator';
-export type { SimulationWeights, StatToggles, SimulationResult } from './simulationEngine';
+export type { SimulationWeights, PowderToggles, SimulationResult } from './simulationEngine';
