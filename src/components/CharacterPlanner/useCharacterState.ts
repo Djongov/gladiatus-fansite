@@ -14,6 +14,8 @@ import {
 } from '@site/src/services/combat/chanceFormulas';
 import { getTrainingCap } from '@site/src/utils/trainingCap';
 
+type ItemStatsResult = ReturnType<typeof calculateItemStats>;
+
 /**
  * Compress and encode string for URL
  * Uses LZ compression to dramatically reduce URL size
@@ -318,10 +320,6 @@ function calculateUpgradeBonus(upgrade: Upgrade, level: number): number {
 }
 
 /**
- * Calculate total character stats from equipped items, base stats, level and active pacts.
- * Exported so CompactBuildDisplay can reuse the exact same logic.
- */
-/**
  * Threat each point of Charisma gives (floored). Exact for 7 of 9 accounts in sample/turma-profiles.json
  * (e.g. Charisma 1298 -> 908, 3417 -> 2391). The two accounts wearing costume 15 get 0.71 instead, along with
  * ~1.4% more healing: an account-wide effect we haven't identified (Missing Data page). Healers lose this part.
@@ -343,11 +341,19 @@ const ATTRIBUTE_BY_STAT_NAME: Record<string, keyof BaseStats> = {
 /** An attribute pact raises the cap to exactly twice the base plus level, so it adds the other half rounded up. */
 const pactCapBonus = (base: number) => Math.ceil(base / 2);
 
+/**
+ * Calculate total character stats from equipped items, base stats, level and active pacts.
+ * Exported so CompactBuildDisplay can reuse the exact same logic.
+ *
+ * `itemStatsCache` lets hot loops (e.g. the Item Simulator) reuse per-item
+ * results across calls; it is only safe when EquippedItem objects are not mutated.
+ */
 export function calculateCharacterStats(
   equippedItems: Map<ItemSlotType, EquippedItem>,
   characterLevel: number,
   baseStats: BaseStats,
-  activePacts: Set<PactId>
+  activePacts: Set<PactId>,
+  itemStatsCache?: WeakMap<EquippedItem, ItemStatsResult>,
 ): CharacterStats {
   let totalArmor = 0;
   let totalDamageMin = 0;
@@ -362,13 +368,17 @@ export function calculateCharacterStats(
   };
 
   equippedItems.forEach((equippedItem, slot) => {
-    const itemStats = calculateItemStats(
-      equippedItem.baseItem,
-      equippedItem.rarity,
-      equippedItem.conditioned,
-      equippedItem.prefix,
-      equippedItem.suffix
-    );
+    let itemStats = itemStatsCache?.get(equippedItem);
+    if (!itemStats) {
+      itemStats = calculateItemStats(
+        equippedItem.baseItem,
+        equippedItem.rarity,
+        equippedItem.conditioned,
+        equippedItem.prefix,
+        equippedItem.suffix
+      );
+      itemStatsCache?.set(equippedItem, itemStats);
+    }
 
     if (itemStats.armour) {
       totalArmor += itemStats.armour;
